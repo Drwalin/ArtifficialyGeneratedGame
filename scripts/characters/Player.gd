@@ -65,8 +65,10 @@ func _physics_process(delta):
 
 	if Input.is_action_just_pressed("movement_crouch"):
 		collisionShape.scale = Vector3(1,0.5,1);
+		transform.origin -= Vector3(0, 0.875/2, 0);
 	elif Input.is_action_just_released("movement_crouch"):
 		collisionShape.scale = Vector3(1,1,1);
+		transform.origin += Vector3(0, 0.875/2, 0);
 
 	# Handle Jump.
 	if Input.is_action_pressed("movement_jump") and is_on_floor():
