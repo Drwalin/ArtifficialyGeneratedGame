@@ -1,0 +1,359 @@
+You are a game master and a game creator in a game similar to DnD and Morrowind.
+Generate a random weapon, armor, wearable or junk item.
+
+Use following  json format:
+```
+{
+	"name": "@provide item name here",
+	"durability": "@provide item durability",
+	"item_usage": "@provide item usage from available: one_hand, two_hand, wear_hand, wear_head, wear_feet, wear_legs, wear_torso, wear_back",
+	"item_recipee": [
+		"@ingredient 1",
+		"@ingredient 2",
+		@...
+	],
+	"dmg": {
+		"@one of available damage types: dmg_physical, dmg_nature, dmg_ice, dmg_lightning, dmg_fire, dmg_water, dmg_mental, dmg_air, dmg_dark, dmg_light, dmg_earth, dmg_mana, dmg_stamina": @provide numerical value of damage: positive when damaging, negative while healing,
+		@...
+	},
+	"usage_requirements": {
+		"@one of the base stats: str, dex, con, int, wis, cha, per, luck", @minimal numerical required value of this stat,
+		@...
+	}
+	"weight": @numerical weight value in kg,
+	"special_weapon_skils": [
+		{
+			"name": "@skill name",
+			"description": "@very short description"
+		}
+	]
+}
+```
+
+Fill all places with apropriate values and formats where value starts at '@'.
+Some can be ommited when not applicable, for example:
+
+```
+{
+	"name": "Stick",
+	"durability": "1",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 2
+	},
+	"weight": 0.7,
+}
+```
+
+ChatGPT
+
+2 / 2
+
+json
+Copy code
+{
+	"name": "Blade of Frostbite",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"item_recipee": [
+		"Ice Crystal",
+		"Enchanted Steel Ingot",
+		"Leather Handle"
+	],
+	"dmg": {
+		"dmg_physical": 12,
+		"dmg_ice": 20
+	},
+	"usage_requirements": {
+		"str": 10,
+		"dex": 14
+	},
+	"weight": 1.2,
+	"special_weapon_skils": [
+		{
+			"name": "Frozen Strikes",
+			"description": "Unleashes chilling strikes that can freeze enemies temporarily."
+		},
+		{
+			"name": "Icy Mastery",
+			"description": "Increases the effectiveness of ice-based abilities while wielding the Blade of Frostbite."
+		}
+	]
+}
+
+
+
+User
+Generate another random not enchanted weapon in the same form.
+ChatGPT
+json
+Copy code
+{
+	"name": "Rusty Broadsword",
+	"durability": 80,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 18
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 2.5
+}
+
+
+
+User
+Generate a weapon for a ranger.
+ChatGPT
+json
+Copy code
+{
+	"name": "Hawkeye Longbow",
+	"durability": 120,
+	"item_usage": "two_hand",
+	"item_recipee": [
+		"Ancient Oak Wood",
+		"Eagle Feather String",
+		"Elk Leather Grip"
+	],
+	"dmg": {
+		"dmg_physical": 10,
+		"dmg_nature": 8
+	},
+	"usage_requirements": {
+		"dex": 16
+	},
+	"weight": 1.8,
+	"special_weapon_skils": [
+		{
+			"name": "Eagle Eye",
+			"description": "Enhances the ranger's accuracy, allowing for precise shots even at long distances."
+		},
+		{
+			"name": "Nature's Marksmanship",
+			"description": "Empowers the bow's nature damage, increasing the lethality of shots against natural creatures."
+		}
+	]
+}
+
+
+
+User
+Generate normal arrow for a bow to fire and enchanted arrow.
+ChatGPT
+Sure, here are the JSON representations for a normal arrow and an enchanted arrow:
+
+Normal Arrow:
+
+json
+Copy code
+{
+	"name": "Steel-Tipped Arrow",
+	"item_usage": "junk",
+	"weight": 0.05
+}
+Enchanted Arrow:
+
+json
+Copy code
+{
+	"name": "Aetheric Piercer",
+	"item_usage": "junk",
+	"item_recipee": [
+		"Essence of Air",
+		"Silver-Tipped Arrow",
+		"Arcane Feather"
+	],
+	"weight": 0.1,
+	"dmg": {
+		"dmg_physical": 8,
+		"dmg_air": 15
+	}
+}
+
+
+
+User
+Generate a staff for fire mage.
+ChatGPT
+json
+Copy code
+{
+	"name": "Inferno Staff",
+	"durability": 100,
+	"item_usage": "two_hand",
+	"item_recipee": [
+		"Dragonwood Branch",
+		"Phoenix Feather Core",
+		"Flame Quartz Crystal"
+	],
+	"dmg": {
+		"dmg_fire": 25
+	},
+	"usage_requirements": {
+		"int": 18
+	},
+	"weight": 1.5,
+	"special_weapon_skils": [
+		{
+			"name": "Flame Mastery",
+			"description": "Amplifies the power of fire spells cast while wielding the Inferno Staff."
+		},
+		{
+			"name": "Phoenix's Embrace",
+			"description": "Allows the mage to temporarily become immune to fire damage and boosts fire spell damage after casting a powerful fire spell."
+		}
+	]
+}
+
+
+
+User
+Generate a staff for a druid.
+ChatGPT
+json
+Copy code
+{
+	"name": "Verdant Grove Staff",
+	"durability": 120,
+	"item_usage": "two_hand",
+	"item_recipee": [
+		"Enchanted Oak Branch",
+		"Earth Essence",
+		"Nature's Embrace Crystal"
+	],
+	"dmg": {
+		"dmg_nature": 20
+	},
+	"usage_requirements": {
+		"wis": 16
+	},
+	"weight": 1.8,
+	"special_weapon_skils": [
+		{
+			"name": "Nature's Harmony",
+			"description": "Enhances the druid's connection to nature, increasing the potency of nature-based spells while wielding the Verdant Grove Staff."
+		},
+		{
+			"name": "Thicket Sanctuary",
+			"description": "Allows the druid to create a protective barrier of vines and leaves, reducing incoming damage and providing healing over time."
+		}
+	]
+}
+
+
+
+User
+Generate some armor parts for vanguard fighters.
+ChatGPT
+Certainly, here are JSON representations for different armor parts suitable for vanguard fighters:
+
+Helmet:
+
+json
+Copy code
+{
+	"name": "Ironclad Helm",
+	"durability": 120,
+	"item_usage": "wear_head",
+	"item_recipee": [
+		"Iron Plate",
+		"Rivets",
+		"Battle Leather Padding"
+	],
+	"defense": {
+		"physical": 15
+	},
+	"usage_requirements": {
+		"str": 14,
+		"con": 12
+	},
+	"weight": 4.0
+}
+Chestplate:
+
+json
+Copy code
+{
+	"name": "Warlord's Plate",
+	"durability": 180,
+	"item_usage": "wear_torso",
+	"item_recipee": [
+		"Reinforced Steel Plates",
+		"Warbear Fur Lining",
+		"Iron Buckles"
+	],
+	"defense": {
+		"physical": 25
+	},
+	"usage_requirements": {
+		"str": 18,
+		"con": 16
+	},
+	"weight": 12.0
+}
+Gauntlets:
+
+json
+Copy code
+{
+	"name": "Brutal Gauntlets",
+	"durability": 100,
+	"item_usage": "wear_hand",
+	"item_recipee": [
+		"Solid Iron Gauntlets",
+		"Spiked Knuckles",
+		"Chainmail Lining"
+	],
+	"defense": {
+		"physical": 10
+	},
+	"usage_requirements": {
+		"str": 14
+	},
+	"weight": 2.5
+}
+Greaves:
+
+json
+Copy code
+{
+	"name": "Legionnaire Greaves",
+	"durability": 150,
+	"item_usage": "wear_legs",
+	"item_recipee": [
+		"Steel Leg Plates",
+		"Leather Straps",
+		"Reinforced Knee Guards"
+	],
+	"defense": {
+		"physical": 20
+	},
+	"usage_requirements": {
+		"str": 16,
+		"con": 14
+	},
+	"weight": 8.0
+}
+Boots:
+
+json
+Copy code
+{
+	"name": "Vanguard Warboots",
+	"durability": 130,
+	"item_usage": "wear_feet",
+	"item_recipee": [
+		"Thick Leather Boots",
+		"Iron Toe Caps",
+		"Sturdy Laces"
+	],
+	"defense": {
+		"physical": 12
+	},
+	"usage_requirements": {
+		"str": 14
+	},
+	"weight": 3.5
+}

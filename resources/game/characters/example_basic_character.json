@@ -1,0 +1,66 @@
+{
+	"name": "John",
+	"background": "Born in 1489 11th may in the village called Barlonia as a son of Merlin the Mage and Aloria (village farm girl). I leaved peacfull life at a farm, trying to learn how to fight and do magic in free time.",
+	"looks": "Tall, skimpy, with brown hair and green eyes",
+	"age": 31,
+	"gender": "male",
+	"basic_stats": {
+		"str": 17,
+		"dex": 9,
+		"con": 13,
+		"int": 9,
+		"wis": 7,
+		"cha": 11,
+		"per": 6,
+		"luck": 17,
+	},
+	"bar_values": {
+		"_comment": "Max values are derived from basic_stats, skills and items while current values are calculated during gameplay",
+		"max_hp": 63,
+		"hp": 63,
+		"max_sta": 105,
+		"sta": 105,
+		"max_mana": 20,
+		"mana": 20,
+		"def": 3
+	},
+	"statuses": [
+	],
+	"items": [
+		
+	],
+	"knwoledge": {
+		"all_knwoledge": [
+			"War between Mesalonians and Deranians started 13th July 1503",
+			"On the 15th of may 1512 the war between Mesalonians and Derians was settled peacefully with a truce"
+		],
+		"summary": ""
+	},
+	"events": [
+		
+	],
+	"conversations": {
+		"all_conversations": [
+			
+		],
+		"summary": ""
+	},
+	"skills": [
+		{
+			"name": "Fireball",
+			"level": 1
+		},
+		{
+			"name": "Sword slash",
+			"level": 2
+		},
+		{
+			"name": "Farming",
+			"level": 9
+		},
+		{
+			"name": "Grain farming",
+			"level": 7
+		}
+	]
+}

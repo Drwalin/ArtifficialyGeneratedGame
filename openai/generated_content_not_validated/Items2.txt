@@ -1,0 +1,617 @@
+You are a game master and a game creator in a game similar to DnD and Morrowind.
+Generate a random weapon, armor, wearable or junk item.
+
+Use following json format:
+```json
+{
+	"name": "@provide item name here",
+	"durability": "@provide item durability",
+	"item_usage": "@provide item usage from available: one_hand, two_hand, wear_hand, wear_head, wear_feet, wear_legs, wear_torso, wear_back, util, junk",
+	"item_recipee": [
+		"@ingredient 1",
+		"@ingredient 2",
+		@...
+	],
+	"dmg": {
+		"@one of available damage types: dmg_physical, dmg_nature, dmg_ice, dmg_lightning, dmg_fire, dmg_water, dmg_mental, dmg_air, dmg_dark, dmg_light, dmg_earth, dmg_mana, dmg_stamina": @provide numerical value of damage: positive when damaging, negative while healing,
+		@...
+	},
+	"stat_bonus": {
+		"@bonuses for stats: str, dex, con, int, wis, cha, per, luck, hp, mp, sta, def, spd": @positive or negative bonuses to stats during item usage,
+		@...
+	},
+	"usage_requirements": {
+		"@one of the base stats: str, dex, con, int, wis, cha, per, luck", @minimal numerical required value of this stat,
+		@...
+	},
+	"weight": @numerical weight value in kg,
+	"special_weapon_skils": [
+		{
+			"name": "@skill name",
+			"description": "@very short description"
+		}
+	]
+}
+```
+
+Fill all places with apropriate values and formats where value starts at '@'.
+Some can be ommited when not applicable, for example:
+```json
+{
+	"name": "Stick",
+	"durability": "1",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 2
+	},
+	"weight": 0.7,
+}
+```
+
+```json
+{
+	"name": "Ison chainmail",
+	"durability": "120",
+	"item_usage": "wear_torso",
+	"item_recipee": [
+		"iron ingot",
+		"iron ingot"
+	],
+	"stat_bonus": {
+		"dex": -1,
+		"str": -1,
+		"def": 5
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 3.7
+}
+```
+
+ChatGPT
+Here's a randomly generated item in the provided JSON format:
+
+json
+Copy code
+{
+	"name": "Stormcaller",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"item_recipee": [
+		"Essence of Lightning",
+		"Enchanted Oak Branch",
+		"Silver Ingot"
+	],
+	"dmg": {
+		"dmg_physical": 15,
+		"dmg_lightning": 30
+	},
+	"stat_bonus": {
+		"int": 3,
+		"luck": 2,
+		"mp": 50
+	},
+	"usage_requirements": {
+		"int": 20
+	},
+	"weight": 2.5,
+	"special_weapon_skils": [
+		{
+			"name": "Lightning Mastery",
+			"description": "Increases lightning damage by 15%."
+		}
+	]
+}
+In this example, I've created a weapon named "Stormcaller." It's a one-handed weapon with high lightning damage. It requires a significant amount of intelligence to wield effectively and provides bonuses to intelligence, luck, and maximum mana. It also has a special skill called "Lightning Mastery" that enhances its lightning damage further.
+
+
+
+
+User
+Generate some armor parts for a hunter.
+ChatGPT
+Certainly! Here are some armor parts tailored for a hunter character:
+
+Huntmaster's Hood
+json
+Copy code
+{
+	"name": "Huntmaster's Hood",
+	"durability": 80,
+	"item_usage": "wear_head",
+	"item_recipee": [
+		"Beast Hide",
+		"Enchanted Thread"
+	],
+	"stat_bonus": {
+		"dex": 2,
+		"per": 1,
+		"def": 4
+	},
+	"usage_requirements": {
+		"dex": 15
+	},
+	"weight": 1.2
+}
+Stalker's Vest
+json
+Copy code
+{
+	"name": "Stalker's Vest",
+	"durability": 120,
+	"item_usage": "wear_torso",
+	"item_recipee": [
+		"Leather",
+		"Silk Thread"
+	],
+	"stat_bonus": {
+		"dex": 3,
+		"def": 6
+	},
+	"usage_requirements": {
+		"dex": 18
+	},
+	"weight": 2.8
+}
+Tracker's Gloves
+json
+Copy code
+{
+	"name": "Tracker's Gloves",
+	"durability": 60,
+	"item_usage": "wear_hand",
+	"item_recipee": [
+		"Soft Leather",
+		"Metal Clasp"
+	],
+	"stat_bonus": {
+		"dex": 1,
+		"per": 1,
+		"luck": 1,
+		"def": 3
+	},
+	"usage_requirements": {
+		"dex": 12
+	},
+	"weight": 0.8
+}
+Predator's Leggings
+json
+Copy code
+{
+	"name": "Predator's Leggings",
+	"durability": 100,
+	"item_usage": "wear_legs",
+	"item_recipee": [
+		"Thick Hide",
+		"Steel Buckles"
+	],
+	"stat_bonus": {
+		"dex": 2,
+		"def": 5,
+		"spd": 1
+	},
+	"usage_requirements": {
+		"dex": 16
+	},
+	"weight": 2.4
+}
+Silentstride Boots
+json
+Copy code
+{
+	"name": "Silentstride Boots",
+	"durability": 90,
+	"item_usage": "wear_feet",
+	"item_recipee": [
+		"Fine Leather",
+		"Shadow Essence"
+	],
+	"stat_bonus": {
+		"dex": 2,
+		"per": 1,
+		"def": 4
+	},
+	"usage_requirements": {
+		"dex": 14
+	},
+	"weight": 1.5
+}
+These armor parts are designed to enhance a hunter's dexterity, perception, and defense, aligning with their role as skilled trackers and marksmen. Each piece comes with unique stat bonuses and usage requirements, making them a well-rounded set for a hunter character.
+
+
+
+
+User
+Generate some very light armor or cloth pieces for a mage.
+ChatGPT
+Of course! Here are some lightweight armor and cloth pieces tailored for a mage character:
+
+Aetherweave Hood
+json
+Copy code
+{
+	"name": "Aetherweave Hood",
+	"durability": 60,
+	"item_usage": "wear_head",
+	"item_recipee": [
+		"Aetherial Silk",
+		"Silver Thread"
+	],
+	"stat_bonus": {
+		"int": 2,
+		"mp": 20
+	},
+	"usage_requirements": {
+		"int": 15
+	},
+	"weight": 0.5
+}
+Arcane Robes
+json
+Copy code
+{
+	"name": "Arcane Robes",
+	"durability": 80,
+	"item_usage": "wear_torso",
+	"item_recipee": [
+		"Enchanted Silk",
+		"Essence of Mana"
+	],
+	"stat_bonus": {
+		"int": 3,
+		"mp": 30
+	},
+	"usage_requirements": {
+		"int": 18
+	},
+	"weight": 1.0
+}
+Spellweaver Gloves
+json
+Copy code
+{
+	"name": "Spellweaver Gloves",
+	"durability": 40,
+	"item_usage": "wear_hand",
+	"item_recipee": [
+		"Fine Linen",
+		"Arcane Dust"
+	],
+	"stat_bonus": {
+		"int": 1,
+		"mp": 15
+	},
+	"usage_requirements": {
+		"int": 12
+	},
+	"weight": 0.3
+}
+Mystic Leggings
+json
+Copy code
+{
+	"name": "Mystic Leggings",
+	"durability": 70,
+	"item_usage": "wear_legs",
+	"item_recipee": [
+		"Ethereal Fabric",
+		"Starlight Crystal"
+	],
+	"stat_bonus": {
+		"int": 2,
+		"mp": 25
+	},
+	"usage_requirements": {
+		"int": 16
+	},
+	"weight": 0.8
+}
+Sorcerer's Slippers
+json
+Copy code
+{
+	"name": "Sorcerer's Slippers",
+	"durability": 50,
+	"item_usage": "wear_feet",
+	"item_recipee": [
+		"Silken Thread",
+		"Mystic Feather"
+	],
+	"stat_bonus": {
+		"int": 1,
+		"mp": 10
+	},
+	"usage_requirements": {
+		"int": 14
+	},
+	"weight": 0.4
+}
+These cloth and lightweight armor pieces cater to the needs of a mage, offering intelligence and mana bonuses while maintaining a low weight to allow for quick and agile spellcasting.
+
+
+
+
+User
+Generate some weapons useful for an assassin or thief.
+ChatGPT
+Certainly! Here are some weapons that would be useful for an assassin or thief character:
+
+Shadowblade Dagger
+json
+Copy code
+{
+	"name": "Shadowblade Dagger",
+	"durability": 50,
+	"item_usage": "one_hand",
+	"item_recipee": [
+		"Obsidian Shard",
+		"Nightshade Extract"
+	],
+	"dmg": {
+		"dmg_physical": 12,
+		"dmg_dark": 10
+	},
+	"stat_bonus": {
+		"dex": 2,
+		"luck": 1
+	},
+	"usage_requirements": {
+		"dex": 15
+	},
+	"weight": 0.6,
+	"special_weapon_skils": [
+		{
+			"name": "Backstab",
+			"description": "Deals double damage when attacking from behind."
+		}
+	]
+}
+Silentstrike Shortbow
+json
+Copy code
+{
+	"name": "Silentstrike Shortbow",
+	"durability": 80,
+	"item_usage": "two_hand",
+	"item_recipee": [
+		"Whisperwood",
+		"Spider Silk"
+	],
+	"dmg": {
+		"dmg_physical": 18
+	},
+	"stat_bonus": {
+		"dex": 3,
+		"per": 1
+	},
+	"usage_requirements": {
+		"dex": 16
+	},
+	"weight": 1.2,
+	"special_weapon_skils": [
+		{
+			"name": "Precise Shot",
+			"description": "Increases accuracy and critical chance."
+		}
+	]
+}
+Venomblade Dagger
+json
+Copy code
+{
+	"name": "Venomblade Dagger",
+	"durability": 45,
+	"item_usage": "one_hand",
+	"item_recipee": [
+		"Envenomed Fang",
+		"Shadow Oil"
+	],
+	"dmg": {
+		"dmg_physical": 10,
+		"dmg_poison": 15
+	},
+	"stat_bonus": {
+		"dex": 1,
+		"luck": 2
+	},
+	"usage_requirements": {
+		"dex": 14
+	},
+	"weight": 0.7,
+	"special_weapon_skils": [
+		{
+			"name": "Toxic Strike",
+			"description": "Applies a potent poison on hit."
+		}
+	]
+}
+Assassin's Kunai
+json
+Copy code
+{
+	"name": "Assassin's Kunai",
+	"durability": 60,
+	"item_usage": "one_hand",
+	"item_recipee": [
+		"Forged Steel",
+		"Shrouded Cloth"
+	],
+	"dmg": {
+		"dmg_physical": 14
+	},
+	"stat_bonus": {
+		"dex": 2,
+		"luck": 1
+	},
+	"usage_requirements": {
+		"dex": 15
+	},
+	"weight": 0.5,
+	"special_weapon_skils": [
+		{
+			"name": "Evasion",
+			"description": "Chance to dodge enemy attacks."
+		}
+	]
+}
+Thief's Garrote
+json
+Copy code
+{
+	"name": "Thief's Garrote",
+	"durability": 30,
+	"item_usage": "util",
+	"item_recipee": [
+		"Steel Wire",
+		"Silk Ribbon"
+	],
+	"dmg": {
+		"dmg_physical": 8,
+		"dmg_dark": 5
+	},
+	"stat_bonus": {
+		"dex": 1,
+		"luck": 1
+	},
+	"usage_requirements": {
+		"dex": 12
+	},
+	"weight": 0.3,
+	"special_weapon_skils": [
+		{
+			"name": "Silent Strangulation",
+			"description": "Can be used to incapacitate enemies silently."
+		}
+	]
+}
+These weapons are designed to cater to the stealthy and agile playstyle of assassins and thieves, offering a range of utility and damage options for different situations.
+
+
+
+
+User
+Here is a example potion:
+```json
+{
+	"name": "Minor healing potion",
+	"description": "This potion can restore health and heal minor wounds.",
+	"looks": "Vial of red liquid.",
+	"durability": "1",
+	"item_usage": "consumable",
+	"item_recipee": [
+		"White Laurel",
+		"Light essence",
+		"Glass vial",
+		"Imp Stool Mushroom"
+	],
+	"dmg": {
+		"dmg_light": -5
+		"dmg_nature": -5
+	},
+	"stat_bonus": {
+		"hp": 10
+	},
+	"weight": 0.1
+}
+```
+
+Generate few potions for general use during, before or after battle.
+ChatGPT
+Certainly! Here are a few potion examples for general use during, before, or after battle:
+
+Elixir of Vigor
+json
+Copy code
+{
+	"name": "Elixir of Vigor",
+	"description": "This elixir grants a temporary burst of energy, increasing stamina.",
+	"looks": "Sparkling blue potion.",
+	"durability": "1",
+	"item_usage": "consumable",
+	"item_recipee": [
+		"Ironwood Bark",
+		"Earth Essence",
+		"Crystal Phial"
+	],
+	"stat_bonus": {
+		"sta": 20
+	},
+	"weight": 0.2
+}
+Fireheart Brew
+json
+Copy code
+{
+	"name": "Fireheart Brew",
+	"description": "Consuming this brew grants resistance to fire damage for a short duration.",
+	"looks": "Smoking orange liquid.",
+	"durability": "1",
+	"item_usage": "consumable",
+	"item_recipee": [
+		"Firebloom Petals",
+		"Fire Essence",
+		"Ruby Flask"
+	],
+	"dmg": {
+		"dmg_fire": -10
+	},
+	"weight": 0.3
+}
+Aetherial Elixir
+json
+Copy code
+{
+	"name": "Aetherial Elixir",
+	"description": "Drinking this elixir enhances magic power, increasing spell damage.",
+	"looks": "Translucent violet potion.",
+	"durability": "1",
+	"item_usage": "consumable",
+	"item_recipee": [
+		"Crystalized Mana",
+		"Astral Essence",
+		"Amethyst Vial"
+	],
+	"stat_bonus": {
+		"mp": 30
+	},
+	"weight": 0.2
+}
+Tonic of Renewal
+json
+Copy code
+{
+	"name": "Tonic of Renewal",
+	"description": "This tonic accelerates natural healing, restoring health over time.",
+	"looks": "Bubbling green liquid.",
+	"durability": "1",
+	"item_usage": "consumable",
+	"item_recipee": [
+		"Healing Herb",
+		"Water Essence",
+		"Glass Bottle"
+	],
+	"stat_bonus": {
+		"hp": 5
+	},
+	"weight": 0.15
+}
+Elixir of Invisibility
+json
+Copy code
+{
+	"name": "Elixir of Invisibility",
+	"description": "This elixir grants temporary invisibility, allowing the user to sneak past enemies unnoticed.",
+	"looks": "Clear potion with a faint shimmer.",
+	"durability": "1",
+	"item_usage": "consumable",
+	"item_recipee": [
+		"Ghostcap Spores",
+		"Shadow Essence",
+		"Crystal Flask"
+	],
+	"special_effects": "The user becomes invisible for 30 seconds.",
+	"weight": 0.3
+}
+These potion examples offer a variety of effects that can be useful before, during, or after battle, providing buffs, healing, and other advantages to the player's character.

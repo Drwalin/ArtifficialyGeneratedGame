@@ -1,0 +1,48 @@
+Use following json format:
+{
+	"name": "@provide item name here",
+	"description": "@provide item description here",
+	"looks": "@provide description of how the item looks",
+	"durability": "@provide item durability",
+	"item_usage": "@provide item usage from available: consumable, trinket, one_hand, two_hand, wear_hand, wear_head, wear_feet, wear_legs, wear_torso, wear_back, util, junk",
+	"item_recipee": [
+		"@ingredient 1",
+		"@ingredient 2",
+		@...
+	],
+	"dmg": {
+		"@one of available damage types: dmg_physical, dmg_nature, dmg_ice, dmg_lightning, dmg_fire, dmg_water, dmg_mental, dmg_air, dmg_dark, dmg_light, dmg_earth, dmg_mana, dmg_stamina": @provide numerical value of damage: positive when damaging, negative while healing,
+		@...
+	},
+	"dmg_over_time": {
+		"@one of available damage types, same as in 'dmg'": [
+			@numerical value of total damage,
+			@numerical value of time in secends ofer what the damage is dealt
+		],
+		@...
+	}
+	"stat_bonus": {
+		"@bonuses for stats: str, dex, con, int, wis, cha, per, luck, max_hp, max_mp, max_sta, def, spd": @positive or negative bonuses to stats during item usage,
+		@...
+	},
+	"usage_requirements": {
+		"@one of the base stats: str, dex, con, int, wis, cha, per, luck", @minimal numerical required value of this stat,
+		@...
+	},
+	"weight": @numerical weight value in kg,
+	"special_weapon_skils": [
+		{
+			"name": "@skill name",
+			"description": "@very short description"
+		},
+		@...
+	],
+	"special_effects": {
+		"@special effect name": "@special effect short description",
+		@...
+	}
+}
+
+Fill all places with apropriate values and formats where value starts at '@'.
+Some can be ommited when not applicable, for example:
+

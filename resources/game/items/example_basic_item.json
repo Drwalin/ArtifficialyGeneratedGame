@@ -1,0 +1,22 @@
+{
+	"name": "Iron rusty sword",
+	"looks": "Just a regular plain old rusty one handed sword",
+	"type": "one handed weapon",
+	"durability": 7,
+	"max_durability": 20,
+	"use_requirements": {
+		"str": 10,
+		"dex": 7
+	},
+	"usage_modifiers": {
+		"on_attack": [
+			["phys_dmg", +5]
+		],
+		"on_defense": [
+			["phys_def", +1]
+		],
+		"on_equiped": [
+			["dex", -1]
+		]
+	}
+}
