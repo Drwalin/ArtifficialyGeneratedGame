@@ -1,5 +1,53 @@
 [
 {
+	"name": "Stick",
+	"durability": "1",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 2
+	},
+	"weight": 0.7
+},
+{
+	"name": "Iron chainmail",
+	"durability": "120",
+	"item_usage": "wear_torso",
+	"item_recipee": [
+		"iron ingot",
+		"iron ingot"
+	],
+	"stat_bonus": {
+		"dex": -1,
+		"str": -1,
+		"def": 5
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 3.7
+},
+{
+	"name": "Minor healing potion",
+	"description": "This potion can restore health and heal minor wounds.",
+	"looks": "Vial of red liquid.",
+	"durability": "1",
+	"item_usage": "consumable",
+	"item_recipee": [
+		"White Laurel",
+		"Light essence",
+		"Glass vial",
+		"Imp Stool Mushroom"
+	],
+	"dmg": {
+		"dmg_light": -5,
+		"dmg_nature": -5
+	},
+	"stat_bonus": {
+		"hp": 10
+	},
+	"weight": 0.1
+},
+{
 	"name": "Blade of Frostbite",
 	"durability": 150,
 	"item_usage": "one_hand",
