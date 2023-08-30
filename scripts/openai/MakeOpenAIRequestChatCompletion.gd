@@ -78,6 +78,8 @@ func CallChatAPIWithDefaultSystem(callback, message:String,
 	];
 	
 	var data_to_send = JSON.stringify(body);
+	#print("\n\n\n\n\n\n", system_message, "\n\n\n\n");
+	#return;
 	var err = xhttp.request(HTTPClient.METHOD_POST, endpoint, headers, data_to_send);
 	print("Request error: ", err);
 	if err != 0:

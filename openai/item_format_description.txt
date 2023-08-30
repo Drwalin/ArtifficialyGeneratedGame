@@ -11,18 +11,18 @@ Use following json format:
 		@...
 	],
 	"dmg": {
-		"@one of available damage types: dmg_physical, dmg_nature, dmg_ice, dmg_lightning, dmg_fire, dmg_water, dmg_mental, dmg_air, dmg_dark, dmg_light, dmg_earth, dmg_mana, dmg_stamina": @provide numerical value of damage: positive when damaging, negative while healing,
+		"@one of available damage types: dmg_physical, dmg_nature, dmg_ice, dmg_lightning, dmg_fire, dmg_water, dmg_mental, dmg_air, dmg_dark, dmg_light, dmg_earth, dmg_mana, dmg_stamina, or any other you deem relevant": @provide numerical value of damage: positive when damaging, negative while healing,
 		@...
 	},
 	"dmg_over_time": {
 		"@one of available damage types, same as in 'dmg'": [
-			@numerical value of total damage,
-			@numerical value of time in secends ofer what the damage is dealt
+			@numerical value of total damage positive takes damage and negative heals,
+			@numerical value of time in secends over which above damage is dealt
 		],
 		@...
 	}
 	"stat_bonus": {
-		"@bonuses for stats: str, dex, con, int, wis, cha, per, luck, max_hp, max_mp, max_sta, def, spd": @positive or negative bonuses to stats during item usage,
+		"@bonuses for stats: str, dex, con, int, wis, cha, per, luck, max_hp, max_mp, max_sta, def, spd, resistance_acid, resistance_poison, and any other resistance you deem relevant": @positive or negative bonuses to stats during item usage,
 		@...
 	},
 	"usage_requirements": {
@@ -44,5 +44,13 @@ Use following json format:
 }
 
 Fill all places with apropriate values and formats where value starts at '@'.
-Some can be ommited when not applicable, for example:
+Some can be ommited when not applicable.
+
+Never write that some statisitic is 0 or unknown in item json - just ommit this
+entry.
+
+If recipee is unknown then just ommit the field. If item has no special effects
+then ommit this field as mell. Do the same for special weapon skills. If there
+are no requirements for use then ommit that field as well. If no stat bonuses of
+damage then ommit that fields as well.
 
