@@ -1,0 +1,45 @@
+
+{
+	"description": "No one knows the true power of this amulet. It emanates a faint aura of mystery and intrigue.",
+	"dmg": {
+		"dmg_physical": 0
+	},
+	"dmg_over_time": {
+
+	},
+	"durability": "1",
+	"item_recipee": [
+		"Unknown ingredients"
+	],
+	"item_usage": "trinket",
+	"looks": "A small silver amulet with intricate carvings and a black gemstone at the center.",
+	"name": "Mysterious Amulet",
+	"special_effects": {
+		"Mysterious Aura": "Grants a random temporary stat boost every hour."
+	},
+	"stat_bonus": {
+		"luck": 5
+	},
+	"usage_requirements": {
+
+	},
+	"weight": 0.2
+}
+
+{
+	"description": "A small dagger made of pure silver.",
+	"dmg": {
+		"dmg_physical": 10
+	},
+	"durability": "100",
+	"item_usage": "one_hand",
+	"looks": "A shiny silver blade with an ornate handle.",
+	"name": "Silver Dagger",
+	"stat_bonus": {
+		"dex": 2
+	},
+	"usage_requirements": {
+		"dex": 12
+	},
+	"weight": 0.4
+}
