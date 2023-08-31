@@ -1,0 +1,417 @@
+[
+{
+	"name": "Sword of Fire",
+	"description": "A fearsome sword imbued with the power of fire.",
+	"looks": "The sword has a gleaming red blade with fiery runes engraved on it. The hilt is wrapped in black leather, and it emits a faint heat.",
+	"durability": "100",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10,
+		"dmg_fire": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"def": 3
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 3,
+	"special_weapon_skills": {
+		"fire_magic": "Allows the user to cast fire spells more effectively."
+	},
+	"special_effects": {
+		"fire_damage_over_time": "The sword applies a burning effect to enemies, dealing additional fire damage over time."
+	}
+},
+{
+	"name": "Sword of Fire",
+	"description": "A powerful sword imbued with the element of fire.",
+	"looks": "The sword has a fiery red blade with intricate carvings along the handle. It emits a glowing heat.",
+	"durability": "High",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20,
+		"dmg_fire": 30
+	},
+	"stat_bonus": {
+		"str": 10
+	},
+	"weight": 5,
+	"special_weapon_skills": {
+		"Flame Strike": "Allows the wielder to unleash a powerful fiery attack."
+	},
+	"special_effects": {
+		"Fire Aura": "Emits a burning aura that damages nearby enemies."
+	}
+},
+{
+	"name": "Sword of Fire",
+	"description": "A flaming sword capable of dealing fire damage",
+	"looks": "This sword has a blade that is constantly enveloped in flames, giving off a warm glow. The hilt is made of a black, heat-resistant material with intricate engravings.",
+	"durability": "100",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10,
+		"dmg_fire": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"max_hp": 50
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 3,
+	"special_weapon_skils": {
+		"Fire Mastery": "Increases fire damage dealt by the wielder by 25%"
+	},
+	"special_effects": {
+		"Flame Burst": "Has a chance to release a burst of flames upon striking an enemy, dealing additional fire damage"
+	}
+},
+{
+	"name": "Silver Sword",
+	"description": "A finely crafted sword made of pure silver.",
+	"looks": "The sword has a shining silver blade with intricate engravings. The hilt is wrapped in black leather and adorned with a silver pommel.",
+	"durability": "High",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 12
+	},
+	"stat_bonus": {
+		"str": 2
+	},
+	"weight": 3.5,
+	"special_weapon_skils": {
+		"Sword Mastery": "Increases damage dealt with swords by 10%"
+	}
+},
+{
+  "name": "Sword of Fire",
+  "description": "A fiery sword that burns enemies upon impact.",
+  "looks": "The sword has a long, silver blade with intricate engravings. The hilt is wrapped in red leather, and flames can be seen flickering along the edge of the blade.",
+  "durability": "50",
+  "item_usage": "one_hand",
+  "dmg": {
+    "dmg_physical": 30,
+    "dmg_fire": 15
+  },
+  "stat_bonus": {
+    "str": 10,
+    "max_hp": 50
+  },
+  "weight": 3,
+  "special_effects": {
+    "Burn": "Has a chance to inflict burn damage on enemies."
+  }
+},
+{
+	"name": "Ruby Ring",
+	"description": "A beautifully crafted ring made of pure ruby.",
+	"looks": "The ring has a simple design with a single large ruby set in the middle.",
+	"durability": "High",
+	"item_usage": "wear_hand",
+	"dmg": {},
+	"dmg_over_time": {},
+	"stat_bonus": {
+		"cha": 2
+	},
+	"usage_requirements": {},
+	"weight": 0.5,
+	"special_weapon_skills": {},
+	"special_effects": {}
+},
+{
+	"name": "Searing Blade",
+	"description": "A fiery blade forged in the heart of a volcano.",
+	"looks": "The Searing Blade is a longsword with a blackened hilt and a blade that glows with a red-hot fire.",
+	"durability": "80%",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 40,
+		"dmg_fire": 20
+	},
+	"stat_bonus": {
+		"str": 10,
+		"dex": -5,
+		"max_hp": 50
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 2.5,
+	"special_weapon_skills": {
+		"Fiery Strikes": "Each successful hit has a chance to burn the target, dealing additional fire damage over time."
+	},
+	"special_effects": {
+		"Fury of the Volcano": "Increases fire damage by 10%."
+	}
+},
+{
+	"name": "Sword of Fire",
+	"description": "A powerful sword imbued with the element of fire.",
+	"looks": "The sword has a long, curved blade with intricate designs etched into it. The blade emits a faint red glow, and the hilt is made of blackened steel. Flames dance along the edge of the blade.",
+	"durability": "100/100",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 50,
+		"dmg_fire": 20
+	},
+	"stat_bonus": {
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 4.5,
+	"special_weapon_skills": {
+		"Fire Mastery": "Increases fire damage by 10%"
+	},
+	"special_effects": {
+		"Burning Strikes": "Chance to ignite enemies on hit, dealing additional fire damage over time."
+	}
+},
+{
+	"name": "Sword of Thunder",
+	"description": "A powerful sword crackling with electric energy.",
+	"looks": "The Sword of Thunder has a long, silver blade with intricate lightning bolt engravings. The hilt is wrapped in blue leather and has a small gemstone embedded in the pommel.",
+	"durability": "80/100",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20,
+		"dmg_lightning": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 2
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 2.5,
+	"special_weapon_skills": {
+		"Lightning Strike": "Allows the wielder to unleash a powerful lightning strike that has a chance to stun the target."
+	},
+	"special_effects": {
+		"Static Charge": "When attacking, has a chance to apply a static charge to the target, dealing additional lightning damage over time."
+	}
+},
+{
+	"name": "Sword of Fury",
+	"description": "A powerful sword imbued with the essence of fury.",
+	"looks": "The Sword of Fury is a large and menacing blade with a fiery red aura surrounding it. The hilt is wrapped in black leather and adorned with golden accents.",
+	"durability": "100",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 50,
+		"dmg_fire": 20
+	},
+	"stat_bonus": {
+		"str": 10
+	},
+	"weight": 3.5,
+	"special_weapon_skils": {
+		"Sword Mastery": "Increases damage and accuracy when wielding a sword."
+	},
+	"special_effects": {
+		"Fury Strike": "Chance to deal additional fire damage with each attack."
+	}
+},
+{
+	"name": "Enchanted Dagger",
+	"description": "A small, silver dagger that glows with a faint magical aura.",
+	"looks": "The dagger has a slender blade and a hilt wrapped in black leather. The blade is engraved with ancient runes.",
+	"durability": "100/100",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20
+	},
+	"stat_bonus": {
+		"dex": 5
+	},
+	"weight": 0.75,
+	"special_effects": {
+		"combat_boost": "Increases attack speed by 10%"
+	}
+},
+{
+	"name": "Steel Sword",
+	"description": "A sturdy steel sword with a sharp blade.",
+	"looks": "The steel sword has a long, straight blade with a hilt wrapped in leather.",
+	"durability": "100",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20
+	},
+	"stat_bonus": {
+		"str": 5,
+		"def": 2
+	},
+	"weight": 2
+},
+{
+	"name": "Rusty Sword",
+	"description": "A worn-out sword with a rusty blade.",
+	"looks": "The blade of this sword is rusty and shows signs of wear. The hilt is wrapped in tattered leather.",
+	"durability": "50",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10
+	},
+	"weight": 3,
+	"stat_bonus": {
+		"str": 2
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"special_effects": {
+		"bleed": "Has a chance to cause the target to bleed."
+	}
+},
+{
+	"name": "Sword of Fire",
+	"description": "A powerful sword that radiates a fiery aura.",
+	"looks": "The hilt is made of blackened steel with intricate engravings of flames. The blade itself is made of a shimmering red metal that seems to be on fire.",
+	"durability": "100%",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10,
+		"dmg_fire": 20
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"usage_requirements": {
+		"str": 8,
+		"dex": 5
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"fire_damage": "Deals additional fire damage with each hit."
+	}
+},
+{
+	"name": "Mystic Wand",
+	"description": "A powerful wand infused with magical energy.",
+	"looks": "The wand is made of polished wood and is adorned with intricate carvings. It emits a faint glow.",
+	"durability": "100",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_mental": 10
+	},
+	"stat_bonus": {
+		"int": 5,
+		"wis": 3,
+		"max_mp": 50
+	},
+	"usage_requirements": {
+		"int": 10
+	},
+	"weight": 0.5,
+	"special_effects": {
+		"mana_regeneration": "Regenerates 10 mana per minute."
+	}
+},
+{
+	"name": "Rusty Sword",
+	"description": "An old and worn-out sword with a rusty blade.",
+	"looks": "The sword has a tarnished hilt with a worn leather grip. The blade is covered in rust spots and looks dull.",
+	"durability": "Low",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 5
+	},
+	"stat_bonus": {
+		"str": 2
+	},
+	"weight": 3
+},
+{
+	"name": "Iron Sword",
+	"description": "A sturdy sword made of iron.",
+	"looks": "The blade is slightly tarnished but still sharp, with a leather-wrapped handle.",
+	"durability": "80",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10
+	},
+	"stat_bonus": {
+		"str": 2
+	},
+	"usage_requirements": {
+		"str": 6
+	},
+	"weight": 3
+},
+{
+	"name": "Mystic Staff",
+	"description": "A powerful staff imbued with magical energies",
+	"looks": "The staff is made of pure crystal with runes engraved along its length",
+	"durability": "150",
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_mental": 25
+	},
+	"dmg_over_time": {
+		"dmg_mental": [10, 3]
+	},
+	"stat_bonus": {
+		"max_mp": 50,
+		"int": 10
+	},
+	"weight": 4,
+	"special_effects": {
+		"Spell Power": "Increases the power of all spells by 10%"
+	}
+},
+{
+	"name": "Sword of the Moon",
+	"description": "A gleaming silver sword with a crescent moon-shaped hilt",
+	"looks": "The Sword of the Moon is a beautifully crafted weapon, with a blade that shines like moonlight. The hilt is adorned with intricate designs depicting phases of the moon.",
+	"durability": "150",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 25
+	},
+	"dmg_over_time": {},
+	"stat_bonus": {},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 5,
+	"special_weapon_skills": {
+		"Swordsmanship": "Increases the wielder's proficiency with swords"
+	},
+	"special_effects": {
+		"Lunar Fury": "Has a chance to deal bonus damage during the night"
+	}
+},
+{
+	"name": "Golden Sword",
+	"description": "A shining golden sword with intricate engravings",
+	"looks": "The golden sword has a long, curved blade with a golden hilt adorned with precious gemstones.",
+	"durability": "100",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10
+	},
+	"stat_bonus": {
+		"str": 5,
+		"spd": 2,
+		"def": 3
+	},
+	"usage_requirements": {
+		"str": 8
+	},
+	"weight": 2.5,
+	"special_weapon_skills": {
+		"Swordsmanship": "Increases damage with swords"
+	},
+	"special_effects": {
+		"Golden Aura": "Emits a golden aura that boosts nearby allies' morale"
+	}
+}
+]

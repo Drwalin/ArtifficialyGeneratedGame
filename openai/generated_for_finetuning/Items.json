@@ -1,695 +1,578 @@
 [
 {
-	"name": "Stick",
-	"durability": "1",
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": "150",
 	"item_usage": "one_hand",
 	"dmg": {
-		"dmg_physical": 2
-	},
-	"weight": 0.7
-},
-{
-	"name": "Iron chainmail",
-	"durability": "120",
-	"item_usage": "wear_torso",
-	"item_recipee": [
-		"iron ingot",
-		"iron ingot"
-	],
-	"stat_bonus": {
-		"dex": -1,
-		"str": -1,
-		"def": 5
-	},
-	"usage_requirements": {
-		"str": 10
-	},
-	"weight": 3.7
-},
-{
-	"name": "Minor healing potion",
-	"description": "This potion can restore health and heal minor wounds.",
-	"looks": "Vial of red liquid.",
-	"durability": "1",
-	"item_usage": "consumable",
-	"item_recipee": [
-		"White Laurel",
-		"Light essence",
-		"Glass vial",
-		"Imp Stool Mushroom"
-	],
-	"dmg": {
-		"dmg_light": -5,
-		"dmg_nature": -5
+		"dmg_physical": 15
 	},
 	"stat_bonus": {
-		"hp": 10
+		"str": 5,
+		"dex": 3
 	},
-	"weight": 0.1
-},
-{
-	"name": "Blade of Frostbite",
-	"durability": 150,
-	"item_usage": "one_hand",
-	"item_recipee": [
-		"Ice Crystal",
-		"Enchanted Steel Ingot",
-		"Leather Handle"
-	],
-	"dmg": {
-		"dmg_physical": 12,
-		"dmg_ice": 20
-	},
-	"usage_requirements": {
-		"str": 10,
-		"dex": 14
-	},
-	"weight": 1.2,
-	"special_weapon_skils": [
-		{
-			"name": "Frozen Strikes",
-			"description": "Unleashes chilling strikes that can freeze enemies temporarily."
-		},
-		{
-			"name": "Icy Mastery",
-			"description": "Increases the effectiveness of ice-based abilities while wielding the Blade of Frostbite."
-		}
-	]
-},
-{
-	"name": "Rusty Broadsword",
-	"durability": 80,
-	"item_usage": "one_hand",
-	"dmg": {
-		"dmg_physical": 18
-	},
-	"usage_requirements": {
-		"str": 12
-	},
-	"weight": 2.5
-},
-{
-	"name": "Hawkeye Longbow",
-	"durability": 120,
-	"item_usage": "two_hand",
-	"item_recipee": [
-		"Ancient Oak Wood",
-		"Eagle Feather String",
-		"Elk Leather Grip"
-	],
-	"dmg": {
-		"dmg_physical": 10,
-		"dmg_nature": 8
-	},
-	"usage_requirements": {
-		"dex": 16
-	},
-	"weight": 1.8,
-	"special_weapon_skils": [
-		{
-			"name": "Eagle Eye",
-			"description": "Enhances the ranger's accuracy, allowing for precise shots even at long distances."
-		},
-		{
-			"name": "Nature's Marksmanship",
-			"description": "Empowers the bow's nature damage, increasing the lethality of shots against natural creatures."
-		}
-	]
-},
-{
-	"name": "Steel-Tipped Arrow",
-	"item_usage": "junk",
-	"weight": 0.05
-},
-{
-	"name": "Aetheric Piercer",
-	"item_usage": "junk",
-	"item_recipee": [
-		"Essence of Air",
-		"Silver-Tipped Arrow",
-		"Arcane Feather"
-	],
-	"weight": 0.1,
-	"dmg": {
-		"dmg_physical": 8,
-		"dmg_air": 15
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
 	}
 },
 {
-	"name": "Inferno Staff",
-	"durability": 100,
-	"item_usage": "two_hand",
-	"item_recipee": [
-		"Dragonwood Branch",
-		"Phoenix Feather Core",
-		"Flame Quartz Crystal"
-	],
-	"dmg": {
-		"dmg_fire": 25
-	},
-	"usage_requirements": {
-		"int": 18
-	},
-	"weight": 1.5,
-	"special_weapon_skils": [
-		{
-			"name": "Flame Mastery",
-			"description": "Amplifies the power of fire spells cast while wielding the Inferno Staff."
-		},
-		{
-			"name": "Phoenix's Embrace",
-			"description": "Allows the mage to temporarily become immune to fire damage and boosts fire spell damage after casting a powerful fire spell."
-		}
-	]
-},
-{
-	"name": "Verdant Grove Staff",
-	"durability": 120,
-	"item_usage": "two_hand",
-	"item_recipee": [
-		"Enchanted Oak Branch",
-		"Earth Essence",
-		"Nature's Embrace Crystal"
-	],
-	"dmg": {
-		"dmg_nature": 20
-	},
-	"usage_requirements": {
-		"wis": 16
-	},
-	"weight": 1.8,
-	"special_weapon_skils": [
-		{
-			"name": "Nature's Harmony",
-			"description": "Enhances the druid's connection to nature, increasing the potency of nature-based spells while wielding the Verdant Grove Staff."
-		},
-		{
-			"name": "Thicket Sanctuary",
-			"description": "Allows the druid to create a protective barrier of vines and leaves, reducing incoming damage and providing healing over time."
-		}
-	]
-},
-{
-	"name": "Ironclad Helm",
-	"durability": 120,
-	"item_usage": "wear_head",
-	"item_recipee": [
-		"Iron Plate",
-		"Rivets",
-		"Battle Leather Padding"
-	],
-	"defense": {
-		"physical": 15
-	},
-	"usage_requirements": {
-		"str": 14,
-		"con": 12
-	},
-	"weight": 4.0
-},
-{
-	"name": "Warlord's Plate",
-	"durability": 180,
-	"item_usage": "wear_torso",
-	"item_recipee": [
-		"Reinforced Steel Plates",
-		"Warbear Fur Lining",
-		"Iron Buckles"
-	],
-	"defense": {
-		"physical": 25
-	},
-	"usage_requirements": {
-		"str": 18,
-		"con": 16
-	},
-	"weight": 12.0
-},
-{
-	"name": "Brutal Gauntlets",
-	"durability": 100,
-	"item_usage": "wear_hand",
-	"item_recipee": [
-		"Solid Iron Gauntlets",
-		"Spiked Knuckles",
-		"Chainmail Lining"
-	],
-	"defense": {
-		"physical": 10
-	},
-	"usage_requirements": {
-		"str": 14
-	},
-	"weight": 2.5
-},
-{
-	"name": "Legionnaire Greaves",
-	"durability": 150,
-	"item_usage": "wear_legs",
-	"item_recipee": [
-		"Steel Leg Plates",
-		"Leather Straps",
-		"Reinforced Knee Guards"
-	],
-	"defense": {
-		"physical": 20
-	},
-	"usage_requirements": {
-		"str": 16,
-		"con": 14
-	},
-	"weight": 8.0
-},
-{
-	"name": "Vanguard Warboots",
-	"durability": 130,
-	"item_usage": "wear_feet",
-	"item_recipee": [
-		"Thick Leather Boots",
-		"Iron Toe Caps",
-		"Sturdy Laces"
-	],
-	"defense": {
-		"physical": 12
-	},
-	"usage_requirements": {
-		"str": 14
-	},
-	"weight": 3.5
-},
-{
-	"name": "Stormcaller",
-	"durability": 150,
+	"name": "Sword of Lightning",
+	"description": "A powerful sword infused with lightning energy.",
+	"looks": "The sword has a blade crackling with electricity and a hilt made of pure silver.",
+	"durability": "200",
 	"item_usage": "one_hand",
-	"item_recipee": [
-		"Essence of Lightning",
-		"Enchanted Oak Branch",
-		"Silver Ingot"
-	],
 	"dmg": {
-		"dmg_physical": 15,
-		"dmg_lightning": 30
+		"dmg_physical": 50,
+		"dmg_lightning": 100
 	},
 	"stat_bonus": {
-		"int": 3,
-		"luck": 2,
-		"mp": 50
+		"str": 10,
+		"spd": 5
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 3,
+	"special_weapon_skills": {
+		"Swordsmanship": "Increases damage with swords by 20%.",
+		"Lightning Mastery": "Increases lightning damage by 50%."
+	}
+},
+{
+	"name": "Mystic Wand",
+	"description": "A magical wand that emanates a mysterious energy",
+	"looks": "The wand is made of polished wood and adorned with intricate carvings. It glows faintly with a soft blue light.",
+	"durability": "100",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_lightning": 10
+	},
+	"stat_bonus": {
+		"int": 5,
+		"max_mp": 50
 	},
 	"usage_requirements": {
 		"int": 20
 	},
+	"weight": 0.5,
+	"special_effects": {
+		"mana_leech": "Drains 2 mana from the target with each successful hit"
+	}
+},
+{
+	"name": "Sword of the Thunderstorm",
+	"description": "A mythical sword that harnesses the power of lightning.",
+	"looks": "The Sword of the Thunderstorm has a long, silver blade with intricate engravings. The hilt is made of black leather, adorned with small lightning bolts.",
+	"durability": "250",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 12,
+		"dmg_lightning": 10
+	},
+	"stat_bonus": {
+		"str": 5,
+		"spd": 2
+	},
+	"usage_requirements": {
+		"str": 10
+	},
 	"weight": 2.5,
-	"special_weapon_skils": [
-		{
-			"name": "Lightning Mastery",
-			"description": "Increases lightning damage by 15%."
-		}
-	]
+	"special_weapon_skills": {
+		"Swordsmanship": "Increases sword handling and damage"
+	},
+	"special_effects": {
+		"Thunderbolt Strike": "25% chance to deal additional lightning damage upon successful hit"
+	}
 },
 {
-	"name": "Huntmaster's Hood",
-	"durability": 80,
+	"name": "Sword of the Elements",
+	"description": "A powerful sword empowered by the elements.",
+	"looks": "The sword has a sleek design with a blade that shimmers with different elemental colors.",
+	"durability": "75",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10,
+		"dmg_fire": 5,
+		"dmg_water": 5,
+		"dmg_air": 5,
+		"dmg_earth": 5,
+		"dmg_lightning": 5
+	},
+	"stat_bonus": {
+		"str": 10,
+		"dex": -5
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 2.5,
+	"special_weapon_skills": {
+		"elemental_mastery": "Increases the damage of elemental spells by 25%."
+	},
+	"special_effects": {
+		"elemental_fury": "20% chance to deal double damage with elemental attacks."
+	}
+},
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": "100",
 	"item_usage": "wear_head",
-	"item_recipee": [
-		"Beast Hide",
-		"Enchanted Thread"
-	],
 	"stat_bonus": {
-		"dex": 2,
-		"per": 1,
-		"def": 4
-	},
-	"usage_requirements": {
-		"dex": 15
-	},
-	"weight": 1.2
-},
-{
-	"name": "Stalker's Vest",
-	"durability": 120,
-	"item_usage": "wear_torso",
-	"item_recipee": [
-		"Leather",
-		"Silk Thread"
-	],
-	"stat_bonus": {
-		"dex": 3,
-		"def": 6
-	},
-	"usage_requirements": {
-		"dex": 18
-	},
-	"weight": 2.8
-},
-{
-	"name": "Tracker's Gloves",
-	"durability": 60,
-	"item_usage": "wear_hand",
-	"item_recipee": [
-		"Soft Leather",
-		"Metal Clasp"
-	],
-	"stat_bonus": {
-		"dex": 1,
-		"per": 1,
-		"luck": 1,
-		"def": 3
-	},
-	"usage_requirements": {
-		"dex": 12
-	},
-	"weight": 0.8
-},
-{
-	"name": "Predator's Leggings",
-	"durability": 100,
-	"item_usage": "wear_legs",
-	"item_recipee": [
-		"Thick Hide",
-		"Steel Buckles"
-	],
-	"stat_bonus": {
-		"dex": 2,
 		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+	"name": "Steel Helmet",
+	"description": "A sturdy helmet made of steel",
+	"looks": "The helmet is made of smooth steel with a silver tint. It has a visor that can be opened and closed.",
+	"durability": "200",
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 10,
+		"max_hp": 50
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 5
+},
+{
+	"name": "Iron Plate Armor",
+	"description": "A sturdy armor made from iron plates",
+	"looks": "The armor is made up of overlapping iron plates, covering the entire torso and extending down to the thighs. It also has shoulder and elbow guards.",
+	"durability": "200",
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"def": 12
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 20
+},
+{
+	"name": "Cloak of the Arcane",
+	"description": "A lightweight robe woven with intricate enchantments, designed to enhance the wearer's magical abilities.",
+	"looks": "The Cloak of the Arcane has a deep purple color, with shimmering silver threads embedded in the fabric. It has a hood and intricate patterns of arcane symbols embroidered along the edges.",
+	"durability": "80",
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"max_mp": 50,
+		"int": 5,
+		"wis": 3,
+		"def": 10,
+		"regen_mp": 5
+	},
+	"weight": 1.5
+},
+{
+	"name": "Shadowcloth Robe",
+	"description": "A lightweight robe made from enchanted shadowcloth. It provides excellent protection against magical attacks while allowing for agile movements.",
+	"looks": "The Shadowcloth Robe is a long, flowing black garment that shimmers with faint magical energy. It has a high collar and intricate silver embroidery along the edges.",
+	"durability": "60",
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"max_mp": 50,
+		"spd": 10,
+		"resistance_mental": 20
+	},
+	"usage_requirements": {
+		"int": 50
+	},
+	"weight": 2,
+	"special_effects": {
+		"stealth": "Grants a bonus to Stealth skill when worn."
+	}
+},
+{
+	"name": "Mage Robe",
+	"description": "A flowing robe made for mages, providing comfort and freedom of movement.",
+	"looks": "The robe is made of a lightweight and breathable fabric, adorned with intricate patterns and symbols that shimmer with magical energy.",
+	"durability": "75",
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"max_hp": 20,
+		"max_mp": 50,
+		"max_sta": 10,
+		"def": 10,
+		"resistance_mental": 15,
+		"regen_mp": 1,
+		"cast_speed": 1
+	},
+	"usage_requirements": {
+		"int": 20,
+		"wis": 15
+	},
+	"weight": 2.5
+},
+{
+	"name": "Silk Robe",
+	"description": "A lightweight and comfortable robe made from the finest silk.",
+	"looks": "The silk robe has a flowing design, with intricate patterns woven into the fabric.",
+	"durability": "70",
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"max_mp": 50,
+		"def": 5
+	},
+	"usage_requirements": {
+		"wis": 15
+	},
+	"weight": 1.5
+},
+{
+	"name": "Silk Robe",
+	"description": "A light and flowing robe made from the finest silk fabric.",
+	"looks": "The Silk Robe is ankle-length and features loose sleeves. It is decorated with intricate embroidery of magical symbols.",
+	"durability": "Low",
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"max_mp": 50,
+		"def": 5
+	},
+	"usage_requirements": {
+		"int": 20
+	},
+	"weight": 1
+},
+{
+	"name": "Leather Tunic",
+	"description": "A lightweight tunic made of soft leather.",
+	"looks": "The leather tunic is a simple piece of armor that covers the torso. It has a round neckline and short sleeves.",
+	"durability": "110",
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"def": 2,
+		"spd": 1
+	},
+	"weight": 2
+},
+{
+	"name": "Leather Chestpiece",
+	"description": "A light and flexible chestpiece made from high-quality leather.",
+	"looks": "The leather chestpiece is a sleeveless vest that covers the chest and upper torso. It is made from brown leather with reinforced stitching and adjustable buckle straps for a secure fit.",
+	"durability": "140",
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"def": 10,
+		"spd": 2
+	},
+	"weight": 2.5
+},
+{
+	"name": "Leather Vest",
+	"description": "A lightweight vest made of high-quality leather.",
+	"looks": "The leather vest has a slim and form-fitting design, providing both protection and ease of movement. It is dyed a dark brown color and has intricate stitching along the edges.",
+	"durability": "90",
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"def": 10,
+		"dex": 2,
+		"con": 1,
 		"spd": 1
 	},
 	"usage_requirements": {
 		"dex": 16
 	},
-	"weight": 2.4
+	"weight": 2.5
 },
 {
-	"name": "Silentstride Boots",
-	"durability": 90,
-	"item_usage": "wear_feet",
-	"item_recipee": [
-		"Fine Leather",
-		"Shadow Essence"
-	],
+	"name": "Crossbow",
+	"description": "A powerful ranged weapon that uses a mechanism to shoot arrows with high accuracy and force",
+	"looks": "The crossbow is made of a sturdy wooden frame with intricate carvings. It has a metallic limb and a strong string attached to it. The front end of the crossbow features a metal rail for loading and aiming the arrows.",
+	"durability": "150",
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_piercing": 20
+	},
+	"weight": 3.5
+},
+{
+	"name": "Bow of Frost",
+	"description": "A magical bow that shoots icy arrows.",
+	"looks": "The bow is made of polished wood with intricate ice crystals embedded in the limbs. The string is made of woven ice fibers.",
+	"durability": "220",
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_ice": 15,
+		"dmg_piercing": 5
+	},
 	"stat_bonus": {
-		"dex": 2,
-		"per": 1,
-		"def": 4
+		"dex": 5,
+		"cha": -2
 	},
 	"usage_requirements": {
-		"dex": 14
+		"dex": 10
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"freeze": "Arrows have a chance to freeze the target, slowing them down."
+	}
+},
+{
+	"name": "Ancient Bow",
+	"description": "A powerful bow crafted by ancient elven craftsmen.",
+	"looks": "The bow is made of shimmering silver wood, adorned with intricate engravings of elven symbols. It is adorned with a string made of golden thread.",
+	"durability": "250",
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_physical": 40,
+		"dmg_light": 20
+	},
+	"stat_bonus": {
+		"dex": 2
+	},
+	"usage_requirements": {
+		"dex": 20,
+		"str": 26
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"critical_strike": "Allows for a higher chance of landing critical hits."
+	}
+},
+{
+	"name": "Mace",
+	"description": "A heavy blunt weapon with a spiked head.",
+	"looks": "The mace is made of iron and has a wooden handle. The head of the mace is spiked, designed to crush bones and armor upon impact.",
+	"durability": "250",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_blunt": 20
+	},
+	"stat_bonus": {
+		"str": 5,
+		"spd": -2
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 3.5
+},
+{
+	"name": "Iron Mace",
+	"description": "A sturdy iron mace with a spiked head, designed for dealing heavy blunt damage.",
+	"looks": "The iron mace has a long handle made of solid iron, with a spiked head at the end. It has a rough texture and weighs about 2 kg.",
+	"durability": "150",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_blunt": 25
+	},
+	"stat_bonus": {
+		"str": 3
+	},
+	"weight": 2,
+	"special_effects": {
+		"stun": "Has a chance to stun the enemy for 1 second upon successful hit."
+	}
+},
+{
+	"name": "Axe",
+	"description": "A sharp and heavy axe that can be used for chopping wood or enemies.",
+	"looks": "The axe has a long wooden handle with a sharp metal blade at the end. It has a leather strap at the end of the handle for better grip.",
+	"durability": "180",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5
+	},
+	"weight": 2.5
+},
+{
+	"name": "Steel Mace",
+	"description": "A sturdy mace made of steel.",
+	"looks": "The steel mace has a long handle with a round metal head. It is well-crafted and has a polished finish.",
+	"durability": "280",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_blunt": 15
+	},
+	"weight": 2.5
+},
+{
+	"name": "Warhammer",
+	"description": "A heavy two-handed hammer used by warriors in battle.",
+	"looks": "The warhammer is made of solid steel and has a long handle for powerful swings.",
+	"durability": "300",
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_blunt": 20
+	},
+	"stat_bonus": {
+		"str": 3,
+		"def": 5
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 5,
+	"special_weapon_skills": {
+		"hammer_mastery": "Increases critical hit chance with warhammers."
+	},
+	"special_effects": {
+		"stunning_hit": "Has a chance to stun the target on successful hit."
+	}
+},
+{
+	"name": "Mighty Warhammer",
+	"description": "A large and heavy warhammer with a steel head and a sturdy wooden handle. It is designed for crushing blows and can deal devastating damage.",
+	"looks": "The warhammer has a thick steel head with intricately carved patterns. The handle is made of polished dark oak and has a comfortable grip.",
+	"durability": "500",
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_blunt": 35
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": -2
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 8,
+	"special_effects": {
+		"crushing_blow": "Has a chance to stun the target on hit."
+	}
+},
+{
+	"name": "Iron Dagger",
+	"description": "A small, sharp dagger made of iron.",
+	"looks": "The dagger has a thin blade with a sharp point, perfect for stabbing.",
+	"durability": "200",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_piercing": 8
+	},
+	"stat_bonus": {
+		"dex": 2
 	},
 	"weight": 1.5
 },
 {
-	"name": "Aetherweave Hood",
-	"durability": 60,
-	"item_usage": "wear_head",
-	"item_recipee": [
-		"Aetherial Silk",
-		"Silver Thread"
-	],
-	"stat_bonus": {
-		"int": 2,
-		"mp": 20
-	},
-	"usage_requirements": {
-		"int": 15
-	},
-	"weight": 0.5
-},
-{
-	"name": "Arcane Robes",
-	"durability": 80,
-	"item_usage": "wear_torso",
-	"item_recipee": [
-		"Enchanted Silk",
-		"Essence of Mana"
-	],
-	"stat_bonus": {
-		"int": 3,
-		"mp": 30
-	},
-	"usage_requirements": {
-		"int": 18
-	},
-	"weight": 1.0
-},
-{
-	"name": "Spellweaver Gloves",
-	"durability": 40,
-	"item_usage": "wear_hand",
-	"item_recipee": [
-		"Fine Linen",
-		"Arcane Dust"
-	],
-	"stat_bonus": {
-		"int": 1,
-		"mp": 15
-	},
-	"usage_requirements": {
-		"int": 12
-	},
-	"weight": 0.3
-},
-{
-	"name": "Mystic Leggings",
-	"durability": 70,
-	"item_usage": "wear_legs",
-	"item_recipee": [
-		"Ethereal Fabric",
-		"Starlight Crystal"
-	],
-	"stat_bonus": {
-		"int": 2,
-		"mp": 25
-	},
-	"usage_requirements": {
-		"int": 16
-	},
-	"weight": 0.8
-},
-{
-	"name": "Sorcerer's Slippers",
-	"durability": 50,
-	"item_usage": "wear_feet",
-	"item_recipee": [
-		"Silken Thread",
-		"Mystic Feather"
-	],
-	"stat_bonus": {
-		"int": 1,
-		"mp": 10
-	},
-	"usage_requirements": {
-		"int": 14
-	},
-	"weight": 0.4
-},
-{
-	"name": "Shadowblade Dagger",
-	"durability": 50,
-	"item_usage": "one_hand",
-	"item_recipee": [
-		"Obsidian Shard",
-		"Nightshade Extract"
-	],
-	"dmg": {
-		"dmg_physical": 12,
-		"dmg_dark": 10
-	},
-	"stat_bonus": {
-		"dex": 2,
-		"luck": 1
-	},
-	"usage_requirements": {
-		"dex": 15
-	},
-	"weight": 0.6,
-	"special_weapon_skils": [
-		{
-			"name": "Backstab",
-			"description": "Deals double damage when attacking from behind."
-		}
-	]
-},
-{
-	"name": "Silentstrike Shortbow",
-	"durability": 80,
+	"name": "Fire Staff",
+	"description": "A powerful staff imbued with the element of fire.",
+	"looks": "The staff is made of solid oak and has intricate carvings of flames along its length. The top of the staff is adorned with a large ruby that glows with a fiery red light.",
+	"durability": "300",
 	"item_usage": "two_hand",
-	"item_recipee": [
-		"Whisperwood",
-		"Spider Silk"
-	],
 	"dmg": {
-		"dmg_physical": 18
+		"dmg_fire": 20
 	},
 	"stat_bonus": {
-		"dex": 3,
-		"per": 1
+		"int": 5,
+		"max_mp": 50
 	},
 	"usage_requirements": {
-		"dex": 16
+		"int": 10
 	},
-	"weight": 1.2,
-	"special_weapon_skils": [
-		{
-			"name": "Precise Shot",
-			"description": "Increases accuracy and critical chance."
-		}
-	]
+	"weight": 5.5,
+	"special_effects": {
+		"burning_touch": "Attacks have a chance to ignite the target, causing additional fire damage over time."
+	}
 },
 {
-	"name": "Venomblade Dagger",
-	"durability": 45,
-	"item_usage": "one_hand",
-	"item_recipee": [
-		"Envenomed Fang",
-		"Shadow Oil"
-	],
+	"name": "Battle Axe",
+	"description": "A large and heavy two-handed axe with a long handle and a sharp blade.",
+	"looks": "The battle axe has a wooden handle with leather wrappings for grip. The blade is made of steel and is quite sharp.",
+	"durability": "250",
+	"item_usage": "two_hand",
 	"dmg": {
-		"dmg_physical": 10,
-		"dmg_poison": 15
+		"dmg_physical": 25
 	},
 	"stat_bonus": {
-		"dex": 1,
-		"luck": 2
+		"str": 5,
+		"dex": -2
 	},
 	"usage_requirements": {
-		"dex": 14
+		"str": 12
 	},
-	"weight": 0.7,
-	"special_weapon_skils": [
-		{
-			"name": "Toxic Strike",
-			"description": "Applies a potent poison on hit."
-		}
-	]
+	"weight": 8,
+	"special_effects": {
+		"heavy_swing": "Allows for a powerful overhead swing that deals additional damage."
+	}
 },
 {
-	"name": "Assassin's Kunai",
-	"durability": 60,
-	"item_usage": "one_hand",
-	"item_recipee": [
-		"Forged Steel",
-		"Shrouded Cloth"
-	],
-	"dmg": {
-		"dmg_physical": 14
-	},
-	"stat_bonus": {
-		"dex": 2,
-		"luck": 1
-	},
-	"usage_requirements": {
-		"dex": 15
-	},
-	"weight": 0.5,
-	"special_weapon_skils": [
-		{
-			"name": "Evasion",
-			"description": "Chance to dodge enemy attacks."
-		}
-	]
-},
-{
-	"name": "Thief's Garrote",
-	"durability": 30,
-	"item_usage": "util",
-	"item_recipee": [
-		"Steel Wire",
-		"Silk Ribbon"
-	],
-	"dmg": {
-		"dmg_physical": 8,
-		"dmg_dark": 5
-	},
-	"stat_bonus": {
-		"dex": 1,
-		"luck": 1
-	},
-	"usage_requirements": {
-		"dex": 12
-	},
-	"weight": 0.3,
-	"special_weapon_skils": [
-		{
-			"name": "Silent Strangulation",
-			"description": "Can be used to incapacitate enemies silently."
-		}
-	]
-},
-{
-	"name": "Elixir of Vigor",
-	"description": "This elixir grants a temporary burst of energy, increasing stamina.",
-	"looks": "Sparkling blue potion.",
+	"name": "Health Restoration Potion",
+	"description": "A potion that restores a small amount of health.",
+	"looks": "The potion is a small glass vial filled with a glowing blue liquid.",
 	"durability": "1",
 	"item_usage": "consumable",
-	"item_recipee": [
-		"Ironwood Bark",
-		"Earth Essence",
-		"Crystal Phial"
-	],
 	"stat_bonus": {
-		"sta": 20
+		"hp": 50
+	},
+	"weight": 0.1
+},
+{
+	"name": "Slow Healing Potion",
+	"description": "A potion that restores health points.",
+	"looks": "A small, glass vial filled with a glowing, green liquid.",
+	"durability": "1",
+	"item_usage": "consumable",
+	"dmg_over_time": {
+		"dmg_light": [-80, 10]
+	},
+	"weight": 0.1
+},
+{
+	"name": "Health Potion",
+	"description": "A potion that enhances health for some amount of time.",
+	"looks": "A small glass bottle filled with a red liquid.",
+	"durability": "1",
+	"item_usage": "consumable",
+	"dmg": {
+		"dmg_poison": -1
+	},
+	"stat_bonus": {
+		"max_hp": 50
 	},
 	"weight": 0.2
 },
 {
-	"name": "Fireheart Brew",
-	"description": "Consuming this brew grants resistance to fire damage for a short duration.",
-	"looks": "Smoking orange liquid.",
+	"name": "Mana Potion",
+	"description": "A potion that grants more mana to user for certain amount of time.",
+	"looks": "The potion is a small vial filled with a shimmering blue liquid.",
 	"durability": "1",
 	"item_usage": "consumable",
-	"item_recipee": [
-		"Firebloom Petals",
-		"Fire Essence",
-		"Ruby Flask"
-	],
-	"dmg": {
-		"dmg_fire": -10
+	"stat_bonus": {
+		"max_mp": 25
 	},
-	"weight": 0.3
+	"weight": 0.1
 },
 {
-	"name": "Aetherial Elixir",
-	"description": "Drinking this elixir enhances magic power, increasing spell damage.",
-	"looks": "Translucent violet potion.",
+	"name": "Mana Restoration Potion",
+	"description": "Restores a portion of the user's mana",
+	"looks": "A small vial filled with a shimmering blue liquid",
+	"durability": "Single use",
+	"item_usage": "consumable",
+	"stat_bonus": {
+		"mp": 50
+	},
+	"weight": 0.1
+},
+{
+	"name": "Strength Potion",
+	"description": "A potion that temporarily boosts the drinker's strength and melee damage.",
+	"looks": "The potion is a vibrant red color, swirling with energy.",
 	"durability": "1",
 	"item_usage": "consumable",
 	"item_recipee": [
-		"Crystalized Mana",
-		"Astral Essence",
-		"Amethyst Vial"
+		"Brewer's Yeast",
+		"Enchanted Ruby"
 	],
 	"stat_bonus": {
-		"mp": 30
+		"str": 5
 	},
-	"weight": 0.2
-},
-{
-	"name": "Tonic of Renewal",
-	"description": "This tonic accelerates natural healing, restoring health over time.",
-	"looks": "Bubbling green liquid.",
-	"durability": "1",
-	"item_usage": "consumable",
-	"item_recipee": [
-		"Healing Herb",
-		"Water Essence",
-		"Glass Bottle"
-	],
-	"stat_bonus": {
-		"hp": 5
-	},
-	"weight": 0.15
-},
-{
-	"name": "Elixir of Invisibility",
-	"description": "This elixir grants temporary invisibility, allowing the user to sneak past enemies unnoticed.",
-	"looks": "Clear potion with a faint shimmer.",
-	"durability": "1",
-	"item_usage": "consumable",
-	"item_recipee": [
-		"Ghostcap Spores",
-		"Shadow Essence",
-		"Crystal Flask"
-	],
-	"special_effects": "The user becomes invisible for 30 seconds.",
-	"weight": 0.3
+	"weight": 0.1
 }
 ]

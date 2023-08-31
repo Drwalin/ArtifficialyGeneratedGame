@@ -1,0 +1,176 @@
+[
+{
+	"name": "Mana Potion",
+	"description": "A potion that restores mana.",
+	"looks": "The potion is a small vial filled with a shimmering blue liquid.",
+	"durability": "Single-use item",
+	"item_usage": "consumable",
+	"dmg": {},
+	"dmg_over_time": {},
+	"stat_bonus": {
+		"max_mp": 25
+	},
+	"usage_requirements": {},
+	"weight": 0.1,
+	"special_weapon_skills": {},
+	"special_effects": {}
+},
+{
+	"name": "Strength Potion",
+	"description": "A potion that increases the drinker's strength temporarily.",
+	"looks": "The potion is a vibrant red color, with a swirling liquid inside.",
+	"durability": "Single use",
+	"item_usage": "consumable",
+	"dmg": {},
+	"dmg_over_time": {},
+	"stat_bonus": {
+		"str": 10
+	},
+	"usage_requirements": {},
+	"weight": 0.3,
+	"special_weapon_skils": {},
+	"special_effects": {}
+},
+{
+	"name": "Strength Potion",
+	"description": "A potion that enhances the user's strength for a limited time.",
+	"looks": "The potion is a deep red color with a swirling golden liquid inside.",
+	"durability": "Single use",
+	"item_usage": "consumable",
+	"dmg": {
+		"dmg_physical": 0
+	},
+	"dmg_over_time": {},
+	"stat_bonus": {
+		"str": 5
+	},
+	"usage_requirements": {},
+	"weight": 0.2,
+	"special_effects": {
+		"Strength Boost": "Increases the user's strength by 5 points for 1 hour."
+	}
+},
+{
+	"name": "Mana Potion",
+	"description": "Restores a portion of the user's mana",
+	"looks": "A small vial filled with a shimmering blue liquid",
+	"durability": "Single use",
+	"item_usage": "consumable",
+	"dmg": {},
+	"dmg_over_time": {},
+	"stat_bonus": {
+		"max_mp": 50
+	},
+	"usage_requirements": {},
+	"weight": 0.1,
+	"special_weapon_skils": {},
+	"special_effects": {}
+},
+{
+	"name": "Strength Potion",
+	"description": "A potion that temporarily boosts the drinker's strength and melee damage.",
+	"looks": "The potion is a vibrant red color, swirling with energy.",
+	"durability": "Single use",
+	"item_usage": "consumable",
+	"item_recipee": [
+		"@Brewer's Yeast",
+		"@Enchanted Ruby"
+	],
+	"dmg": {
+		"dmg_physical": 0
+	},
+	"dmg_over_time": {},
+	"stat_bonus": {
+		"str": 5
+	},
+	"usage_requirements": {},
+	"weight": 0.1,
+	"special_weapon_skills": {},
+	"special_effects": {}
+},
+{
+	"name": "Mana Potion",
+	"description": "Restores a portion of the user's mana.",
+	"looks": "A small glass bottle filled with glowing blue liquid.",
+	"durability": "Single-use item",
+	"item_usage": "consumable",
+	"dmg": {},
+	"dmg_over_time": {},
+	"stat_bonus": {},
+	"usage_requirements": {},
+	"weight": 0.1,
+	"special_weapon_skils": {},
+	"special_effects": {},
+	"item_recipee": [
+		"Blue Lotus Flower",
+		"Essence of Magic"
+	]
+},
+{
+    "name": "Strength Potion",
+    "description": "A potion that enhances the strength of the drinker.",
+    "looks": "A small glass bottle containing a red liquid.",
+    "durability": "Single-use",
+    "item_usage": "consumable",
+    "dmg": {},
+    "dmg_over_time": {},
+    "stat_bonus": {
+        "str": 5
+    },
+    "usage_requirements": {},
+    "weight": 0.1,
+    "item_recipee": [
+        "@herb1",
+        "@herb2",
+        "@water"
+    ],
+    "special_weapon_skils": {},
+    "special_effects": {}
+},
+{
+	"name": "Mysterious Potion",
+	"description": "A mysterious potion with unknown effects.",
+	"looks": "The potion is a vibrant purple color and gives off a faint glow.",
+	"durability": "N/A",
+	"item_usage": "consumable",
+	"dmg": {},
+	"dmg_over_time": {},
+	"stat_bonus": {},
+	"usage_requirements": {},
+	"weight": 0.5,
+	"special_weapon_skils": {},
+	"special_effects": {}
+},
+{
+	"name": "Mana Potion",
+	"description": "Restores a portion of mana when consumed",
+	"looks": "A small vial filled with shimmering blue liquid",
+	"durability": "Single use",
+	"item_usage": "consumable",
+	"dmg": {},
+	"dmg_over_time": {},
+	"stat_bonus": {
+		"max_mp": 50
+	},
+	"usage_requirements": {},
+	"weight": 0.1,
+	"special_weapon_skills": {},
+	"special_effects": {}
+},
+{
+	"name": "Strength Potion",
+	"description": "A potion that temporarily boosts the user's strength.",
+	"looks": "The potion is a thick, vibrant red liquid contained in a small glass vial.",
+	"durability": "Single use",
+	"item_usage": "consumable",
+	"dmg": {},
+	"dmg_over_time": {},
+	"stat_bonus": {
+		"str": 5
+	},
+	"usage_requirements": {},
+	"weight": 0.1,
+	"special_weapon_skils": {},
+	"special_effects": {}
+}
+]

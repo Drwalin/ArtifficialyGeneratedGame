@@ -1,0 +1,89 @@
+[
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": "High",
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+	"name": "Steel Helmet",
+	"description": "A sturdy helmet made of steel",
+	"looks": "The helmet is made of smooth steel with a silver tint. It has a visor that can be opened and closed.",
+	"durability": "150",
+	"item_usage": "wear_head",
+	"dmg": {
+		"dmg_physical": -5
+	},
+	"stat_bonus": {
+		"def": 10,
+		"max_hp": 50
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 5
+},
+{
+	"name": "Iron Plate Mail",
+	"description": "A heavy and sturdy plate mail made of iron.",
+	"looks": "The iron plate mail is a full-body armour made up of separate iron plates that cover the chest, back, shoulders, arms, legs, and feet. The plates are held together with thick leather straps.",
+	"durability": "60",
+	"item_usage": "wear_torso",
+	"dmg": {},
+	"dmg_over_time": {},
+	"stat_bonus": {
+		"def": 40,
+		"max_hp": 100
+	},
+	"usage_requirements": {
+		"str": 60
+	},
+	"weight": 40,
+	"special_weapon_skills": {},
+	"special_effects": {}
+},
+{
+	"name": "Iron Plate Armor",
+	"description": "A sturdy armor made from iron plates",
+	"looks": "The armor is made up of overlapping iron plates, covering the entire torso and extending down to the thighs. It also has shoulder and elbow guards.",
+	"durability": "High",
+	"item_usage": "wear_torso",
+	"dmg": {
+		"dmg_physical": 0
+	},
+	"dmg_over_time": {},
+	"stat_bonus": {
+		"def": 5
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 20,
+	"special_weapon_skils": {},
+	"special_effects": {}
+},
+{
+	"name": "Plate Mail",
+	"description": "A sturdy suit of plate mail made from the finest steel.",
+	"looks": "The plate mail consists of overlapping metal plates that cover the entire body. It is adorned with intricate engravings and a polished finish.",
+	"durability": "High",
+	"item_usage": "wear_torso",
+	"dmg": {
+		"dmg_physical": -5
+	},
+	"stat_bonus": {
+		"def": 15
+	},
+	"weight": 25
+}
+]

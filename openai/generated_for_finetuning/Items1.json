@@ -1,0 +1,387 @@
+[
+{
+	"description": "A mystical amulet that radiates with ancient energy.",
+	"dmg": {
+		"dmg_mental": 5
+	},
+	"durability": "Infinite",
+	"item_usage": "trinket",
+	"looks": "A small, silver amulet with intricate carvings and a glowing gem at its center.",
+	"name": "Mystic Amulet",
+	"special_effects": {
+		"enlightened_mind": "Increases mental damage by 10%."
+	},
+	"stat_bonus": {
+		"int": 2,
+		"wis": 2
+	},
+	"weight": 0.3
+},
+{
+	"description": "A mystical amulet with an enchanting glow.",
+	"durability": "Unbreakable",
+	"item_usage": "trinket",
+	"looks": "A shimmering amulet with a small crystal at its center.",
+	"name": "Enchanted Amulet",
+	"special_effects": {
+		"magic_resist": "Increases resistance to magical damage by 10%"
+	},
+	"special_weapon_skils": [],
+	"stat_bonus": {
+		"cha": 2,
+		"int": 2,
+		"luck": 5,
+		"max_hp": 20,
+		"max_mp": 15,
+		"max_sta": 10,
+		"str": 2,
+		"wis": 2
+	},
+	"weight": 0.5
+},
+{
+	"description": "A mysterious amulet with unknown powers.",
+	"dmg": {
+		"dmg_mental": 0
+	},
+	"durability": "100",
+	"item_recipee": [
+		"Unknown"
+	],
+	"item_usage": "trinket",
+	"looks": "An intricately designed amulet with a glowing gem in the center.",
+	"name": "Mysterious Amulet",
+	"special_effects": {
+		"Mystic Aura": "Increases the chance of finding rare items."
+	},
+	"stat_bonus": {
+		"luck": 3,
+		"wis": 2
+	},
+	"usage_requirements": {
+		"luck": 5
+	},
+	"weight": 0.2
+},
+{
+	"description": "This amulet is said to hold ancient powers and can offer protection to its wearer.",
+	"durability": "1",
+	"item_usage": "trinket",
+	"looks": "A small silver amulet with intricate engravings.",
+	"name": "Mysterious Amulet",
+	"special_weapon_skils": [],
+	"stat_bonus": {
+		"def": 2,
+		"luck": 1,
+		"resistance_magic": 3
+	},
+	"weight": 0.3
+},
+{
+	"dmg": {
+		"dmg_fire": 5,
+		"dmg_physical": 10
+	},
+	"durability": 100,
+	"item_recipee": [
+		"Steel Ingot",
+		"Coal"
+	],
+	"item_usage": "one_hand",
+	"name": "Firebrand Sword",
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 2.5
+},
+{
+	"dmg": {
+		"dmg_fire": 3,
+		"dmg_physical": 5
+	},
+	"durability": "50",
+	"item_usage": "one_hand",
+	"name": "Fiery Dagger",
+	"usage_requirements": {
+		"dex": 8
+	},
+	"weight": 0.5
+},
+{
+	"dmg": {
+		"dmg_ice": 10
+	},
+	"durability": 80,
+	"item_recipee": [
+		"Frozen Crystal",
+		"Steel Ingot",
+		"Leather Handle"
+	],
+	"item_usage": "one_hand",
+	"name": "Frostbite Dagger",
+	"special_weapon_skills": [
+		{
+			"description": "Chance to freeze the target on hit.",
+			"name": "Frozen Blade"
+		}
+	],
+	"usage_requirements": {
+		"dex": 12
+	},
+	"weight": 0.8
+},
+{
+	"description": "A round crystal orb that emits a faint mysterious glow.",
+	"dmg": {
+		"dmg_mental": 0
+	},
+	"dmg_over_time": {
+		"dmg_mental": [
+			-5,
+			5
+		]
+	},
+	"durability": "1",
+	"item_usage": "trinket",
+	"looks": "A perfectly smooth and translucent orb with swirling colors inside.",
+	"name": "Mysterious Orb",
+	"special_effects": {
+		"Mystic Aura": "Emits a protective aura that grants a small bonus to magical resistance.",
+		"Telepathic Bond": "Allows the user to communicate with other nearby creatures telepathically."
+	},
+	"stat_bonus": {
+		"luck": 2,
+		"wis": 3
+	},
+	"usage_requirements": {
+		"wis": 10
+	},
+	"weight": 0.5
+},
+{
+	"description": "A mystical amulet with an unknown power.",
+	"durability": "1",
+	"item_usage": "trinket",
+	"looks": "A small silver amulet with intricate engravings.",
+	"name": "Mystic Amulet",
+	"special_effects": {
+		"unknown_power": "The amulet has an unknown power that manifests randomly."
+	},
+	"usage_requirements": {
+		"per": 10
+	},
+	"weight": 0.3
+},
+{
+	"description": "A mysterious orb that radiates an otherworldly energy.",
+	"dmg": {
+
+	},
+	"dmg_over_time": {
+
+	},
+	"durability": "Unbreakable",
+	"item_recipee": [
+		"Unknown"
+	],
+	"item_usage": "trinket",
+	"looks": "A crystal orb with swirling colors inside.",
+	"name": "Mystic Orb",
+	"special_effects": {
+		"Mystic Power": "Increases the effectiveness of magic-based abilities."
+	},
+	"special_weapon_skils": [],
+	"stat_bonus": {
+		"max_mp": 50,
+		"per": 5
+	},
+	"usage_requirements": {
+
+	},
+	"weight": 0.3
+},
+{
+	"description": "A magical wand imbued with mysterious powers.",
+	"dmg": {
+		"dmg_mental": 15
+	},
+	"durability": "100",
+	"item_usage": "one_hand",
+	"looks": "A slender wooden wand with intricate carvings and a glowing crystal at the tip.",
+	"name": "Mystic Wand",
+	"special_effects": {
+		"Conjuring": "Allows the user to summon elemental spirits for assistance in battle.",
+		"Healing Wave": "Can unleash a wave of healing energy to restore health to friendly targets.",
+		"Mind Control": "Enables the user to temporarily control the actions of one target."
+	},
+	"stat_bonus": {
+		"int": 5,
+		"wis": 3
+	},
+	"usage_requirements": {
+		"int": 10
+	},
+	"weight": 0.5
+},
+{
+	"description": "A legendary sword forged by the ancient warriors of a fallen civilization.",
+	"dmg": {
+		"dmg_physical": 30
+	},
+	"durability": "150",
+	"item_recipee": [
+		"Forgotten Steel Ingot",
+		"Shadow Essence",
+		"Ancient Dragon Scale"
+	],
+	"item_usage": "one_hand",
+	"looks": "A gleaming silver sword with intricate engravings of mythical creatures on its blade.",
+	"name": "Sword of the Fallen",
+	"special_effects": {
+		"Ancient Power": "Increases damage against undead creatures.",
+		"Cursed Blade": "Inflicts a curse upon enemies, draining their health over time."
+	},
+	"stat_bonus": {
+		"dex": 3,
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 2.8
+},
+{
+	"dmg": {
+		"dmg_physical": 10
+	},
+	"durability": "50",
+	"item_usage": "one_hand",
+	"name": "Random Sword",
+	"usage_requirements": {
+		"str": 8
+	},
+	"weight": 1.5
+},
+{
+	"dmg": {
+		"dmg_fire": 5,
+		"dmg_physical": 8
+	},
+	"durability": "80",
+	"item_recipee": [
+		"Steel Ingot",
+		"Leather Handle"
+	],
+	"item_usage": "one_hand",
+	"name": "Blazing Sword",
+	"special_weapon_skils": [
+		{
+			"description": "Unleashes fiery strikes that can ignite enemies.",
+			"name": "Inferno Strikes"
+		}
+	],
+	"usage_requirements": {
+		"dex": 10,
+		"str": 10
+	},
+	"weight": 1.5
+},
+{
+	"description": "A seemingly ordinary ring with unknown properties.",
+	"durability": "N/A",
+	"item_usage": "trinket",
+	"looks": "A simple silver ring with no visible engravings or gemstones.",
+	"name": "Mysterious Ring",
+	"special_effects": {
+		"Mystery Aura": "Emits a mysterious energy that cannot be identified.",
+		"Unknown Power": "Possesses an unknown power that continues to baffle scholars and mages alike."
+	},
+	"weight": 0.1
+},
+{
+	"description": "A wand that emits a mysterious aura. Its origin and purpose are unknown.",
+	"dmg": {
+		"dmg_mental": 10
+	},
+	"durability": "80",
+	"item_usage": "one_hand",
+	"looks": "A slim wooden wand with intricate carvings and a glowing crystal at its tip.",
+	"name": "Mysterious Wand",
+	"stat_bonus": {
+		"int": 3
+	},
+	"usage_requirements": {
+		"int": 10
+	},
+	"weight": 0.5
+},
+{
+	"description": "A magical wand imbued with mysterious energies.",
+	"dmg": {
+		"dmg_mental": 15
+	},
+	"durability": "100",
+	"item_recipee": [
+		"Arcane Wood",
+		"Crystal Shard",
+		"Silver Wire"
+	],
+	"item_usage": "one_hand",
+	"looks": "A sleek wooden wand with intricate carvings and a glowing crystal at the tip.",
+	"name": "Mystic Wand",
+	"stat_bonus": {
+		"int": 10
+	},
+	"usage_requirements": {
+		"int": 14
+	},
+	"weight": 0.5
+},
+{
+	"description": "A randomly generated sword.",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"durability": "100",
+	"item_usage": "one_hand",
+	"looks": "It has a hilt made of gold and a blade made of silver.",
+	"name": "Random Sword",
+	"stat_bonus": {
+		"dex": 2,
+		"str": 2
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 2.2
+},
+{
+	"dmg": {
+		"dmg_physical": 10
+	},
+	"durability": "100",
+	"item_usage": "one_hand",
+	"name": "Sword",
+	"usage_requirements": {
+		"str": 8
+	},
+	"weight": 1.5
+},
+{
+	"description": "A crystal with mysterious properties.",
+	"dmg": {
+
+	},
+	"durability": "1",
+	"item_usage": "trinket",
+	"looks": "A translucent crystal that glows with a faint blue light.",
+	"name": "Mystic Crystal",
+	"special_effects": {
+		"Increased Mana": "Increases maximum mana by 10%"
+	},
+	"stat_bonus": {
+
+	},
+	"weight": 0.2
+}
+]

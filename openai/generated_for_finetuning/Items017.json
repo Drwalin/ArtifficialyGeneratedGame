@@ -1,0 +1,165 @@
+[
+{
+	"name": "Healing Potion",
+	"description": "A potion that restores a small amount of health.",
+	"looks": "The potion is a small glass vial filled with a glowing blue liquid.",
+	"durability": "Single use",
+	"item_usage": "consumable",
+	"dmg": {},
+	"dmg_over_time": {},
+	"stat_bonus": {},
+	"usage_requirements": {},
+	"weight": 0.1,
+	"special_weapon_skills": {},
+	"special_effects": {
+		"healing": "Restores 50 health points"
+	}
+},
+{
+	"name": "Health Potion",
+	"description": "A healing potion that restores a portion of the user's health.",
+	"looks": "A small glass bottle filled with a glowing red liquid.",
+	"durability": "Single use",
+	"item_usage": "consumable",
+	"dmg": {},
+	"dmg_over_time": {},
+	"stat_bonus": {
+		"max_hp": 50
+	},
+	"usage_requirements": {},
+	"weight": 0.2,
+	"special_weapon_skills": {},
+	"special_effects": {}
+},
+{
+	"name": "Health Potion",
+	"description": "A potion that restores a certain amount of health to the user.",
+	"looks": "A small glass bottle filled with a red liquid.",
+	"durability": "Single use",
+	"item_usage": "consumable",
+	"dmg": {},
+	"dmg_over_time": {},
+	"stat_bonus": {},
+	"usage_requirements": {},
+	"weight": 0.1,
+	"item_recipee": [
+		"Red Herb",
+		"Short Glass Bottle",
+		"Water"
+	],
+	"special_weapon_skils": {},
+	"special_effects": {}
+},
+{
+	"name": "Health Potion",
+	"description": "Restores a portion of the character's health",
+	"looks": "A small vial filled with red liquid",
+	"durability": "Single-use item",
+	"item_usage": "consumable",
+	"item_recipee": [
+		"Herbs",
+		"Water"
+	],
+	"dmg": {},
+	"dmg_over_time": {},
+	"stat_bonus": {},
+	"usage_requirements": {},
+	"weight": 0.1,
+	"special_weapon_skils": {},
+	"special_effects": {
+		"healing": "Restores character health"
+	}
+},
+{
+	"name": "Health Potion",
+	"description": "A potion that restores a portion of the user's health.",
+	"looks": "The potion is a small glass vial filled with a red liquid.",
+	"durability": "Single-use",
+	"item_usage": "consumable",
+	"dmg": {},
+	"dmg_over_time": {},
+	"stat_bonus": {},
+	"usage_requirements": {},
+	"weight": 0.2,
+	"special_weapon_skils": {},
+	"special_effects": {
+		"Healing": "Restores 50 HP to the user."
+	}
+},
+{
+	"name": "Healing Potion",
+	"description": "A potion that restores health to the user.",
+	"looks": "The potion is a small glass vial filled with a glowing red liquid.",
+	"durability": "Single use",
+	"item_usage": "consumable",
+	"dmg": {},
+	"dmg_over_time": {},
+	"stat_bonus": {},
+	"usage_requirements": {},
+	"weight": 0.1,
+	"special_weapon_skils": {},
+	"special_effects": {
+		"Healing": "Restores 50 HP to the user."
+	}
+},
+{
+	"name": "Health Potion",
+	"description": "A magical potion that restores health to the drinker.",
+	"looks": "A small glass bottle filled with a vibrant red liquid.",
+	"durability": "Single use",
+	"item_usage": "consumable",
+	"dmg": {},
+	"dmg_over_time": {},
+	"stat_bonus": {},
+	"usage_requirements": {},
+	"weight": 0.1,
+	"special_weapon_skills": {},
+	"special_effects": {
+		"Heal": "Restores a certain amount of health to the drinker."
+	}
+},
+{
+	"name": "Health Potion",
+	"description": "A healing potion that restores a certain amount of health to the user.",
+	"looks": "A small glass bottle filled with a red liquid.",
+	"durability": "Single use",
+	"item_usage": "consumable",
+	"dmg": {
+		"dmg_poison": -10
+	},
+	"stat_bonus": {
+		"max_hp": 50
+	},
+	"weight": 0.2
+},
+{
+	"name": "Healing Potion",
+	"description": "A potion that restores health points.",
+	"looks": "A small, glass vial filled with a glowing, green liquid.",
+	"durability": "Single use",
+	"item_usage": "consumable",
+	"dmg": {},
+	"dmg_over_time": {},
+	"stat_bonus": {},
+	"usage_requirements": {},
+	"weight": 0.1,
+	"special_weapon_skils": {},
+	"special_effects": {
+		"Healing": "Restores a certain amount of health points."
+	}
+},
+{
+	"name": "Healing Potion",
+	"description": "A potion that restores a small amount of health.",
+	"looks": "A small vial filled with a glowing blue liquid.",
+	"durability": "Single-use",
+	"item_usage": "consumable",
+	"dmg": {},
+	"dmg_over_time": {},
+	"stat_bonus": {"max_hp": 50},
+	"usage_requirements": {},
+	"weight": 0.2,
+	"special_weapon_skils": {},
+	"special_effects": {}
+}
+]

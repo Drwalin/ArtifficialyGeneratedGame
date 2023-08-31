@@ -1,0 +1,60 @@
+[
+{
+	"name": "Iron Mace",
+	"description": "A sturdy iron mace with a spiked head, designed for dealing heavy blunt damage.",
+	"looks": "The iron mace has a long handle made of solid iron, with a spiked head at the end. It has a rough texture and weighs about 2 kg.",
+	"durability": "150",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_blunt": 25
+	},
+	"stat_bonus": {
+		"str": 3
+	},
+	"weight": 2,
+	"special_effects": {
+		"stun": "Has a chance to stun the enemy for 1 second upon successful hit."
+	}
+},
+{
+	"name": "Random Blunt Weapon",
+	"description": "A randomly generated blunt weapon.",
+	"looks": "It is a simple, yet sturdy blunt weapon with a wooden handle and a heavy, metal head.",
+	"durability": "High",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_blunt": 8
+	},
+	"stat_bonus": {
+	},
+	"usage_requirements": {
+	},
+	"weight": 2.5,
+	"special_weapon_skils": {
+		"Blunt Weapon Proficiency": "Increases proficiency in using blunt weapons."
+	},
+	"special_effects": {
+	}
+},
+{
+	"name": "Mace",
+	"description": "A heavy blunt weapon with a spiked head.",
+	"looks": "The mace is made of iron and has a wooden handle. The head of the mace is spiked, designed to crush bones and armor upon impact.",
+	"durability": "High",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_blunt": 20
+	},
+	"stat_bonus": {
+		"str": 5,
+		"spd": -2
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 3.5,
+	"special_weapon_skills": {
+		"Blunt Weapons": "Increases damage done with blunt weapons."
+	}
+}
+]

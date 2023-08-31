@@ -1,0 +1,105 @@
+[
+{
+	"name": "Cloak of the Arcane",
+	"description": "A lightweight robe woven with intricate enchantments, designed to enhance the wearer's magical abilities.",
+	"looks": "The Cloak of the Arcane has a deep purple color, with shimmering silver threads embedded in the fabric. It has a hood and intricate patterns of arcane symbols embroidered along the edges.",
+	"durability": "Medium",
+	"item_usage": "wear_back",
+	"dmg": {},
+	"dmg_over_time": {},
+	"stat_bonus": {
+		"max_mp": 50,
+		"int": 5,
+		"wis": 3,
+		"def": 10
+	},
+	"usage_requirements": {},
+	"weight": 1.5,
+	"special_weapon_skils": {},
+	"special_effects": {
+		"mana_regeneration": "Increases mana regeneration rate by 50%"
+	}
+},
+{
+	"name": "Shadowcloth Robe",
+	"description": "A lightweight robe made from enchanted shadowcloth. It provides excellent protection against magical attacks while allowing for agile movements.",
+	"looks": "The Shadowcloth Robe is a long, flowing black garment that shimmers with faint magical energy. It has a high collar and intricate silver embroidery along the edges.",
+	"durability": "60/60",
+	"item_usage": "wear_torso",
+	"dmg": {
+		"dmg_physical": -5
+	},
+	"stat_bonus": {
+		"max_mp": 50,
+		"spd": 10,
+		"resistance_mental": 20
+	},
+	"usage_requirements": {
+		"int": 50
+	},
+	"weight": 2,
+	"special_effects": {
+		"stealth": "Grants a bonus to Stealth skill when worn."
+	}
+},
+{
+	"name": "Mage Robe",
+	"description": "A flowing robe made for mages, providing comfort and freedom of movement.",
+	"looks": "The robe is made of a lightweight and breathable fabric, adorned with intricate patterns and symbols that shimmer with magical energy.",
+	"durability": "Medium",
+	"item_usage": "wear_torso",
+	"dmg": {
+		"dmg_physical": -2
+	},
+	"stat_bonus": {
+		"max_hp": 20,
+		"max_mp": 50,
+		"max_sta": 10,
+		"def": 10,
+		"resistance_mental": 15
+	},
+	"usage_requirements": {
+		"int": 20,
+		"wis": 15
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"mana_regeneration": "Increases mana regeneration by 10%.",
+		"spell_casting_bonus": "Increases spell casting damage by 5%."
+	}
+},
+{
+	"name": "Silk Robe",
+	"description": "A lightweight and comfortable robe made from the finest silk.",
+	"looks": "The silk robe has a flowing design, with intricate patterns woven into the fabric.",
+	"durability": "Medium",
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"max_mp": 50,
+		"def": 5
+	},
+	"usage_requirements": {
+		"wis": 15
+	},
+	"weight": 1.5
+},
+{
+	"name": "Silk Robe",
+	"description": "A light and flowing robe made from the finest silk fabric.",
+	"looks": "The Silk Robe is ankle-length and features loose sleeves. It is decorated with intricate embroidery of magical symbols.",
+	"durability": "Low",
+	"item_usage": "wear_torso",
+	"dmg": {},
+	"dmg_over_time": {},
+	"stat_bonus": {
+		"max_mp": 50,
+		"def": 5
+	},
+	"usage_requirements": {
+		"int": 20
+	},
+	"weight": 1,
+	"special_weapon_skills": {},
+	"special_effects": {}
+}
+]

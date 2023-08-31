@@ -3,7 +3,7 @@ Use following json format:
 	"name": "@provide item name here",
 	"description": "@provide item description here",
 	"looks": "@provide description of how the item looks",
-	"durability": "@provide item durability",
+	"durability": "@provide item durability in numerical value",
 	"item_usage": "@provide item usage from available: consumable, trinket, one_hand, two_hand, wear_hand, wear_head, wear_feet, wear_legs, wear_torso, wear_back, util, junk",
 	"item_recipee": [
 		"@ingredient 1",
@@ -30,13 +30,10 @@ Use following json format:
 		@...
 	},
 	"weight": @numerical weight value in kg,
-	"special_weapon_skils": [
-		{
-			"name": "@skill name",
-			"description": "@very short description"
-		},
+	"special_weapon_skils": {
+		"@weapon skill name": "@skill short description",
 		@...
-	],
+	},
 	"special_effects": {
 		"@special effect name": "@special effect short description",
 		@...
@@ -53,4 +50,66 @@ If recipee is unknown then just ommit the field. If item has no special effects
 then ommit this field as mell. Do the same for special weapon skills. If there
 are no requirements for use then ommit that field as well. If no stat bonuses of
 damage then ommit that fields as well.
+
+
+Base stats used in game:
+	- str - strength - infuences character HP and STA, determines physical DMG, and carrying capacity
+	- dex - dexterity - influences character STA, determines item/weapon/tool handling capability, attacks accuracy, etc.
+	- con - constitution - influences character STA, HP, resistance to attacks, poisons, stunt, etc.
+	- int - intelligence - determines character MP, spell power, ability to gain knowledge, learn new skills and spells
+	- wis - wisdom - influences knowledge character has, ability to gain insight about skills or spells
+	- cha - charisma - influences ability to persuade people, barter, etc.
+	- per - perception - ability to see, hear and percieve hidden things
+	- luck - luck - determines how lucky character is with attacks, drops, loots, story, etc.
+Derived stats used in game (these are determined from base stats and skill or item bonuses):
+	- max_hp - maximum amount of hit points
+	- max_mp - maximum amount of mana
+	- max_sta - maximum amount of stamina
+	- spd - speed, determines character movement (walking, running, swimming, etc.) speed and attack speed
+	- def - defense, determines armor strength which protects against piercing and slashing damage
+	- regen_hp - hit points regeneration
+	- regen_mp - mana regeneration
+	- regen_sta - stamina regeneration
+	- cast_speed - spell cast speed
+Other stats:
+	- hp - character hit points
+	- mp - character mana
+	- sta - charachter stamin
+Affinities:
+	- affinity_fire
+	- affinity_water
+	- affinity_air
+	- affinity_earth
+	- affinity_light
+	- affinity_dark
+	- affinity_lightning
+	- affinity_healing
+Resistances:
+	- resistance_fire
+	- resistance_water
+	- resistance_air
+	- resistance_earth
+	- resistance_light
+	- resistance_dark
+	- resistance_lightning
+	- resistance_poison
+	- resistance_mental
+	- resistance_acid
+	- resistance_fall
+Damage types:
+	- dmg_fire
+	- dmg_water
+	- dmg_air
+	- dmg_earth
+	- dmg_light
+	- dmg_dark
+	- dmg_lightning
+	- dmg_poison
+	- dmg_mental
+	- dmg_acid
+	- dmg_fall
+	- dmg_blunt
+	- dmg_piercing
+
+
 

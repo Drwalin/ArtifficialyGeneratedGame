@@ -1,0 +1,62 @@
+[
+{
+	"name": "Crossbow",
+	"description": "A powerful ranged weapon that uses a mechanism to shoot arrows with high accuracy and force",
+	"looks": "The crossbow is made of a sturdy wooden frame with intricate carvings. It has a metallic limb and a strong string attached to it. The front end of the crossbow features a metal rail for loading and aiming the arrows.",
+	"durability": "Medium",
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_piercing": 20
+	},
+	"dmg_over_time": {},
+	"stat_bonus": {},
+	"usage_requirements": {},
+	"weight": 3.5,
+	"special_weapon_skills": {
+		"Archery": "Boosts accuracy and damage with ranged weapons"
+	},
+	"special_effects": {}
+},
+{
+	"name": "Bow of Frost",
+	"description": "A magical bow that shoots icy arrows.",
+	"looks": "The bow is made of polished wood with intricate ice crystals embedded in the limbs. The string is made of woven ice fibers.",
+	"durability": "High",
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_ice": 15
+	},
+	"stat_bonus": {
+		"dex": 5,
+		"cha": -2
+	},
+	"usage_requirements": {
+		"dex": 10
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"freeze": "Arrows have a chance to freeze the target, slowing them down."
+	}
+},
+{
+	"name": "Ancient Bow",
+	"description": "A powerful bow crafted by ancient elven craftsmen.",
+	"looks": "The bow is made of shimmering silver wood, adorned with intricate engravings of elven symbols. It is adorned with a string made of golden thread.",
+	"durability": "250/250",
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_physical": 40,
+		"dmg_light": 20
+	},
+	"stat_bonus": {
+		"dex": 10
+	},
+	"usage_requirements": {
+		"dex": 30
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"critical_strike": "Allows for a higher chance of landing critical hits."
+	}
+}
+]

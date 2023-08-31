@@ -1,0 +1,118 @@
+[
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": "High",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
+	}
+},
+{
+	"name": "Sword of Lightning",
+	"description": "A powerful sword infused with lightning energy.",
+	"looks": "The sword has a blade crackling with electricity and a hilt made of pure silver.",
+	"durability": "200",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 50,
+		"dmg_lightning": 100
+	},
+	"stat_bonus": {
+		"str": 10,
+		"spd": 5
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 3,
+	"special_weapon_skills": {
+		"Swordsmanship": "Increases damage with swords by 20%.",
+		"Lightning Mastery": "Increases lightning damage by 50%."
+	}
+},
+{
+	"name": "Mystic Wand",
+	"description": "A magical wand that emanates a mysterious energy",
+	"looks": "The wand is made of polished wood and adorned with intricate carvings. It glows faintly with a soft blue light.",
+	"durability": "100",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_lightning": 10
+	},
+	"stat_bonus": {
+		"int": 5,
+		"max_mp": 50
+	},
+	"usage_requirements": {
+		"int": 20
+	},
+	"weight": 0.5,
+	"special_effects": {
+		"mana_leech": "Drains 2 mana from the target with each successful hit"
+	}
+},
+{
+	"name": "Sword of the Thunderstorm",
+	"description": "A mythical sword that harnesses the power of lightning.",
+	"looks": "The Sword of the Thunderstorm has a long, silver blade with intricate engravings. The hilt is made of black leather, adorned with small lightning bolts.",
+	"durability": "Very high",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 12,
+		"dmg_lightning": 10
+	},
+	"stat_bonus": {
+		"str": 5,
+		"spd": 2
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 2.5,
+	"special_weapon_skills": {
+		"Swordsmanship": "Increases sword handling and damage"
+	},
+	"special_effects": {
+		"Thunderbolt Strike": "25% chance to deal additional lightning damage upon successful hit"
+	}
+},
+{
+	"name": "Sword of the Elements",
+	"description": "A powerful sword empowered by the elements.",
+	"looks": "The sword has a sleek design with a blade that shimmers with different elemental colors.",
+	"durability": "High",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10,
+		"dmg_fire": 5,
+		"dmg_water": 5,
+		"dmg_air": 5,
+		"dmg_earth": 5,
+		"dmg_lightning": 5
+	},
+	"stat_bonus": {
+		"str": 10,
+		"dex": -5
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 2.5,
+	"special_weapon_skills": {
+		"elemental_mastery": "Increases the damage of elemental spells by 25%."
+	},
+	"special_effects": {
+		"elemental_fury": "20% chance to deal double damage with elemental attacks."
+	}
+}
+]

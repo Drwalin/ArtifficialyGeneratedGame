@@ -1,0 +1,190 @@
+[
+{
+	"name": "Axe",
+	"description": "A sharp and heavy axe that can be used for chopping wood or enemies.",
+	"looks": "The axe has a long wooden handle with a sharp metal blade at the end. It has a leather strap at the end of the handle for better grip.",
+	"durability": "High",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5
+	},
+	"weight": 2.5,
+	"special_weapon_skills": {
+		"axe_mastery": "Increases damage dealt with axes."
+	}
+},
+{
+	"name": "Steel Mace",
+	"description": "A sturdy mace made of steel.",
+	"looks": "The steel mace has a long handle with a round metal head. It is well-crafted and has a polished finish.",
+	"durability": "High",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_blunt": 15
+	},
+	"dmg_over_time": {},
+	"stat_bonus": {},
+	"usage_requirements": {},
+	"weight": 2.5,
+	"special_weapon_skills": {},
+	"special_effects": {}
+},
+{
+	"name": "Warhammer",
+	"description": "A heavy two-handed hammer used by warriors in battle.",
+	"looks": "The warhammer is made of solid steel and has a long handle for powerful swings.",
+	"durability": "High",
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_blunt": 20
+	},
+	"stat_bonus": {
+		"str": 3,
+		"def": 5
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 5,
+	"special_weapon_skills": {
+		"hammer_mastery": "Increases critical hit chance with warhammers."
+	},
+	"special_effects": {
+		"stunning_hit": "Has a chance to stun the target on successful hit."
+	}
+},
+{
+	"name": "Axe",
+	"description": "Axe is a two-handed weapon with a long handle and a single-bladed head. It is commonly used for chopping wood but can also be a deadly weapon in combat.",
+	"looks": "The axe has a sturdy wooden handle with a sharp, metal blade at the end. The blade is curved and designed for optimal chopping efficiency.",
+	"durability": "Axe has a high durability and can withstand heavy use and impact.",
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"Cleave": "Has a chance to deal damage to nearby enemies when swung."
+	}
+},
+{
+	"name": "Mighty Warhammer",
+	"description": "A large and heavy warhammer with a steel head and a sturdy wooden handle. It is designed for crushing blows and can deal devastating damage.",
+	"looks": "The warhammer has a thick steel head with intricately carved patterns. The handle is made of polished dark oak and has a comfortable grip.",
+	"durability": "Very high",
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_blunt": 35
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": -2
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 8,
+	"special_effects": {
+		"crushing_blow": "Has a chance to stun the target on hit."
+	}
+},
+{
+	"name": "Iron Dagger",
+	"description": "A small, sharp dagger made of iron.",
+	"looks": "The dagger has a thin blade with a sharp point, perfect for stabbing.",
+	"durability": "200",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 8
+	},
+	"stat_bonus": {
+		"dex": 2
+	},
+	"weight": 1.5,
+	"special_weapon_skils": {
+		"dagger_combat": "Increases damage dealt with daggers by 10%"
+	}
+},
+{
+	"name": "Fire Staff",
+	"description": "A powerful staff imbued with the element of fire.",
+	"looks": "The staff is made of solid oak and has intricate carvings of flames along its length. The top of the staff is adorned with a large ruby that glows with a fiery red light.",
+	"durability": "High",
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_fire": 20
+	},
+	"stat_bonus": {
+		"int": 5,
+		"max_mp": 50
+	},
+	"usage_requirements": {
+		"int": 10
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"burning_touch": "Attacks have a chance to ignite the target, causing additional fire damage over time."
+	}
+},
+{
+	"name": "Axe",
+	"description": "A heavy cutting tool with a long handle and a sharp blade.",
+	"looks": "The axe has a wooden handle and a metal blade with a curved edge. The blade is sharpened on both sides and has a jagged edge, giving it a menacing appearance.",
+	"durability": "The axe is made of sturdy materials and is highly durable. It can withstand heavy use and is built to last.",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_slashing": 10,
+	},
+	"stat_bonus": {},
+	"weight": 2.5,
+	"special_weapon_skills": {},
+	"special_effects": {}
+},
+{
+	"name": "Warhammer",
+	"description": "A heavy hammer with a long handle, designed for powerful strikes.",
+	"looks": "The warhammer has a large, blunt metal head on one end of a sturdy wooden handle. The head is engraved with intricate patterns and symbols.",
+	"durability": "High",
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_blunt": 15
+	},
+	"dmg_over_time": {},
+	"stat_bonus": {},
+	"usage_requirements": {},
+	"weight": 5,
+	"special_weapon_skills": {
+		"Hammer Mastery": "Increases damage and accuracy with warhammers."
+	},
+	"special_effects": {
+		"Armor Breaker": "Has a chance to ignore a portion of the target's armor."
+	}
+},
+{
+	"name": "Battle Axe",
+	"description": "A large and heavy two-handed axe with a long handle and a sharp blade.",
+	"looks": "The battle axe has a wooden handle with leather wrappings for grip. The blade is made of steel and is quite sharp.",
+	"durability": "The battle axe is highly durable and can withstand heavy use.",
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_physical": 25
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": -2
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 8,
+	"special_effects": {
+		"heavy_swing": "Allows for a powerful overhead swing that deals additional damage."
+	}
+}
+]

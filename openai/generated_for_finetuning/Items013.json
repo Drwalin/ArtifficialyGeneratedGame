@@ -1,0 +1,88 @@
+[
+{
+	"name": "Leather Tunic",
+	"description": "A lightweight tunic made of soft leather.",
+	"looks": "The leather tunic is a simple piece of armor that covers the torso. It has a round neckline and short sleeves.",
+	"durability": "Medium",
+	"item_usage": "wear_torso",
+	"dmg": {
+		"dmg_physical": -2
+	},
+	"stat_bonus": {
+		"def": 2,
+		"spd": 1
+	},
+	"weight": 2
+},
+{
+	"name": "Leather Chestpiece",
+	"description": "A light and flexible chestpiece made from high-quality leather.",
+	"looks": "The leather chestpiece is a sleeveless vest that covers the chest and upper torso. It is made from brown leather with reinforced stitching and adjustable buckle straps for a secure fit.",
+	"durability": "Medium",
+	"item_usage": "wear_torso",
+	"dmg": {
+		"dmg_physical": -5
+	},
+	"stat_bonus": {
+		"def": 10,
+		"spd": 2
+	},
+	"weight": 2.5
+},
+{
+	"name": "Leather Tunic",
+	"description": "A light and comfortable tunic made of high-quality leather",
+	"looks": "The Leather Tunic is a sleeveless garment that reaches down to the hips. It is made of brown leather and has intricate stitching patterns on the edges.",
+	"durability": "80",
+	"item_usage": "wear_torso",
+	"dmg": {},
+	"dmg_over_time": {},
+	"stat_bonus": {
+		"def": "+10",
+		"spd": "+2",
+		"resistance_piercing": "+5"
+	},
+	"usage_requirements": {},
+	"weight": 5,
+	"special_weapon_skills": {},
+	"special_effects": {}
+},
+{
+	"name": "Leather Vest",
+	"description": "A light and flexible leather vest that offers basic protection.",
+	"looks": "The leather vest is made from high-quality leather, stitched together with strong thread. It has a simple design, with no frills or intricate patterns.",
+	"durability": "70/100",
+	"item_usage": "wear_torso",
+	"dmg": {
+		"dmg_physical": -1
+	},
+	"stat_bonus": {
+		"def": 5,
+		"spd": 2
+	},
+	"usage_requirements": {
+		"dex": 12
+	},
+	"weight": 1.5,
+	"special_effects": {}
+},
+{
+	"name": "Leather Vest",
+	"description": "A lightweight vest made of high-quality leather.",
+	"looks": "The leather vest has a slim and form-fitting design, providing both protection and ease of movement. It is dyed a dark brown color and has intricate stitching along the edges.",
+	"durability": "Medium",
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"def": 10,
+		"dex": 2,
+		"con": 1
+	},
+	"usage_requirements": {
+		"dex": 8
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"agility": "Increases movement speed by 5%"
+	}
+}
+]
