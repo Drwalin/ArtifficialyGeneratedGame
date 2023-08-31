@@ -1,0 +1,270 @@
+[
+{
+	"name": "Ancient Sword",
+	"description": "A powerful and ancient sword with a rich history.",
+	"looks": "The Ancient Sword has a long and curved blade made of a mysterious metal. The hilt is adorned with intricate carvings and gemstones. The sword exudes an aura of power and mystique.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 50
+	},
+	"stat_bonus": {
+		"str": 10,
+		"dex": 5
+	},
+	"usage_requirements": {
+		"str": 20,
+		"dex": 15
+	},
+	"weight": 4,
+	"special_weapon_skils": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill."
+	},
+	"special_effects": {
+		"enchantment": "The Ancient Sword has been enchanted with a powerful spell that increases its damage."
+	}
+},
+{
+	"name": "Fireball Scroll",
+	"description": "A scroll containing the Fireball spell, which allows the user to cast a powerful fireball at their enemies.",
+	"looks": "The Fireball Scroll is made of aged parchment, with intricate runes and symbols etched onto its surface in bright red ink.",
+	"durability": 1,
+	"item_usage": "util",
+	"item_recipee": [
+		"Blank Scroll",
+		"Fire Essence",
+		"Dragon's Blood",
+		"Gold Dust"
+	],
+	"dmg": {
+		"dmg_fire": -60
+	},
+	"usage_requirements": {
+		"int": 25
+	},
+	"weight": 0.5,
+	"special_effects": {
+		"ignite": "Has a chance to set targets on fire, causing additional damage over time."
+	}
+},
+{
+	"name": "Fireball Scroll",
+	"description": "A scroll containing the Fireball spell, which allows the user to shoot a powerful ball of fire at their enemies.",
+	"looks": "The scroll is made of aged and worn parchment, with intricate symbols and runes inscribed in red ink. It is tied with a crimson ribbon.",
+	"durability": 1,
+	"item_usage": "util",
+	"dmg": {
+		"dmg_fire": -50
+	},
+	"usage_requirements": {
+		"int": 10
+	},
+	"weight": 0.1,
+	"special_effects": {
+		"spell_cast": "Allows the user to cast the Fireball spell."
+	}
+},
+{
+	"name": "Steel Sword",
+	"description": "A sturdy sword made of steel",
+	"looks": "The steel sword has a long, straight blade with a silver finish. The handle is wrapped with a leather grip for better grip and control.",
+	"durability": 300,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_slashing": 15,
+		"spd": 3
+	},
+	"usage_requirements": {
+		"str": 20,
+		"dex": 15
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"sword_mastery": "Increases damage done with swords."
+	}
+},
+{
+	"name": "Steel Plate Armor",
+	"description": "A heavyweight armor made from steel plates",
+	"looks": "The armor is made up of overlapping steel plates, covering the entire torso and extending down to the thighs. It also has shoulder and elbow guards.",
+	"durability": 250,
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"def": 15,
+		"max_hp": 75,
+		"resistance_physical": 10
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 25
+},
+{
+	"name": "Steel Gauntlets",
+	"description": "A pair of sturdy gauntlets made from steel.",
+	"looks": "The gauntlets are made from polished steel and cover the hands and lower arms. They have articulated joints for flexibility and small spikes on the knuckles for added protection.",
+	"durability": 150,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 8,
+		"str": 2,
+		"dex": 2
+	},
+	"usage_requirements": {
+		"str": 12,
+		"dex": 12
+	},
+	"weight": 3
+},
+{
+	"name": "Steel Gauntlets",
+	"description": "Heavy steel gauntlets that provide excellent hand protection.",
+	"looks": "These steel gauntlets are made of thick plates, covering the entire hand and extending up the forearm. They have a medieval design with a rounded shape and multiple metal rivets.",
+	"durability": 150,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 8,
+		"str": 3
+	},
+	"usage_requirements": {
+		"str": 12,
+		"dex": 8
+	},
+	"weight": 4
+},
+{
+	"name": "Leather Gloves",
+	"description": "A pair of flexible gloves made from high-quality leather.",
+	"looks": "The leather gloves are made from soft, supple leather that fits snugly on the hands. They have reinforced stitching on the palms and fingers for added durability.",
+	"durability": 80,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 3,
+		"dex": 2
+	},
+	"usage_requirements": {
+		"dex": 10
+	},
+	"weight": 0.5
+},
+{
+	"name": "Steel Gauntlets",
+	"description": "Heavy gauntlets made of solid steel, providing excellent protection for the hands.",
+	"looks": "The steel gauntlets cover the entire hand and extend up the forearm. They have a polished silver finish and are engraved with intricate patterns.",
+	"durability": 150,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 8,
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 18
+	},
+	"weight": 4
+},
+{
+	"name": "Steel Sword",
+	"description": "A sturdy steel sword with a sharp blade and a leather-wrapped handle.",
+	"looks": "The steel sword has a straight, double-edged blade that is approximately 30 inches long. The blade is polished to a reflective sheen and has a slight curve towards the tip. The handle is wrapped in black leather for a comfortable grip.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_slashing": 10,
+		"def": 2
+	},
+	"weight": 3,
+	"special_weapon_skills": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill when wielded."
+	}
+},
+{
+	"name": "Warrior's Sword",
+	"description": "A sturdy sword designed for skilled warriors.",
+	"looks": "The Warrior's Sword has a blade made of polished steel with a slight curve. The hilt is wrapped in leather for a firm grip, and the pommel is ornately decorated.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3,
+		"def": 2
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3,
+	"special_weapon_skills": {
+		"swordsmanship": "Increases damage and accuracy with swords."
+	}
+},
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": 100,
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+	"name": "Iron Sword",
+	"description": "A sturdy iron sword with a sharp blade.",
+	"looks": "The iron sword has a straight, double-edged blade made of iron. It has a simple hilt wrapped in leather for a comfortable grip.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10
+	},
+	"stat_bonus": {
+		"str": 3
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 2.5,
+	"special_weapon_skils": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill when equipped."
+	}
+},
+{
+	"name": "Grass Cutter",
+	"description": "A tool used to cut grass and shrubs",
+	"looks": "The grass cutter is a long-handled tool with a sharp metal blade at the end. It has a wooden handle and a curved blade for easier cutting.",
+	"durability": 50,
+	"item_usage": "util",
+	"stat_bonus": {
+		"dex": 2
+	},
+	"weight": 1.5
+},
+{
+	"name": "Iron Sword",
+	"description": "A sturdy iron sword with a sharp blade.",
+	"looks": "The iron sword has a straight blade with a sharp edge and a hilt wrapped in leather for a comfortable grip.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20
+	},
+	"stat_bonus": {
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill."
+	}
+}
+]

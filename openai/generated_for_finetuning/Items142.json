@@ -1,0 +1,290 @@
+[
+{
+	"name": "Goblin Club",
+	"description": "A crude club made by goblins, usually used to bludgeon enemies in close combat.",
+	"looks": "The goblin club is made from a large, gnarled tree branch with a rough, uneven surface. It has a heavy, blunt end that is used for striking opponents.",
+	"durability": 50,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_blunt": 5,
+		"str": 2,
+		"dex": -1
+	},
+	"usage_requirements": {
+		"str": 8
+	},
+	"weight": 4
+},
+{
+	"name": "Elven Bow",
+	"description": "An intricately crafted bow made from the wood of the ancient elven trees.",
+	"looks": "The Elven Bow is made from a beautiful golden wood, with delicate carvings of elven symbols along its length. It has a smooth and elegant shape, with perfectly curved limbs and a reinforced grip.",
+	"durability": 150,
+	"item_usage": "two_hand",
+	"stat_bonus": {
+		"dex": 10,
+		"spd": 2,
+		"dmg_physical": 20
+	},
+	"usage_requirements": {
+		"dex": 20
+	},
+	"weight": 1.5,
+	"special_weapon_skils": {
+		"archery": "Increases the damage and accuracy of ranged attacks."
+	}
+},
+{
+	"name": "Amulet of Wisdom",
+	"description": "An enchanted amulet that enhances the wearer's wisdom and magical abilities.",
+	"looks": "The Amulet of Wisdom is made of a silver chain with a crystal pendant in the shape of a swirling potion bottle. The crystal is vibrant blue and emits a soft glow.",
+	"durability": 50,
+	"item_usage": "trinket",
+	"stat_bonus": {
+		"wis": 5,
+		"max_mp": 20,
+		"resistance_mental": 10
+	},
+	"usage_requirements": {
+		"int": 10
+	},
+	"weight": 0.5,
+	"special_effects": {
+		"spell_power": "Increases the power of spells cast by the wearer."
+	}
+},
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": 100,
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+	"name": "Short Sword",
+	"description": "A simple short sword with a straight blade and a basic hilt. It is a versatile weapon suitable for close combat.",
+	"looks": "The short sword has a straight blade that tapers to a sharp point. The blade is made of steel and is about two feet long. The hilt is made of wood and is wrapped in leather for a secure grip.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10
+	},
+	"stat_bonus": {
+		"dex": 2,
+		"def": 1
+	},
+	"usage_requirements": {
+		"str": 8,
+		"dex": 12
+	},
+	"weight": 2.5,
+	"special_weapon_skils": {
+		"sword": "The user gains a bonus to Sword skill when wielding this weapon."
+	}
+},
+{
+	"name": "Ruby Ring",
+	"description": "A beautiful ring adorned with a sparkling ruby gemstone.",
+	"looks": "The Ruby Ring is made of polished gold, with intricate filigree designs on the band. The center of the ring holds a large ruby gemstone that catches the light and sparkles with a deep red hue.",
+	"durability": 50,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"cha": 2,
+		"luck": 3
+	},
+	"usage_requirements": {
+		"cha": 10
+	},
+	"weight": 0.5,
+	"special_effects": {
+		"luck_boost": "Increases luck stat by 5."
+	}
+},
+{
+	"name": "Steel Sword",
+	"description": "A sharp and sturdy sword made of steel.",
+	"looks": "The steel sword has a straight, double-edged blade with a silver finish. The hilt is wrapped in leather for a comfortable grip.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20
+	},
+	"stat_bonus": {
+		"str": 5,
+		"def": 2
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 2.5,
+	"special_weapon_skills": {
+		"sword_fighting": "Grants a bonus to Sword Fighting skill."
+	}
+},
+{
+	"name": "Steel Gauntlets",
+	"description": "Heavy steel gauntlets that provide excellent hand protection.",
+	"looks": "The steel gauntlets are made of thick steel plates with reinforced padding on the inside. They cover the entire hand, extending up to the forearm.",
+	"durability": 150,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 8,
+		"str": 3
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 4
+},
+{
+	"name": "Longsword of the Falcon",
+	"description": "A finely crafted longsword with a falcon motif engraved on the hilt. It is known for its speed and precision in battle.",
+	"looks": "The Longsword of the Falcon has a polished steel blade with a slight curve. The hilt is made of leather and wrapped tightly around the grip. The pommel features a detailed falcon head design.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 25
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 8,
+		"spd": 3
+	},
+	"usage_requirements": {
+		"str": 20,
+		"dex": 25
+	},
+	"weight": 2.5,
+	"special_weapon_skils": {
+		"swordmanship": "Grants a bonus to Swordmanship skill when wielded."
+	},
+	"special_effects": {
+		"falcon_strike": "Has a chance to deal extra damage with a powerful strike."
+	}
+},
+{
+	"name": "Steel Gauntlets",
+	"description": "Durable gauntlets made from steel",
+	"looks": "The gauntlets are made of solid steel with a brushed finish. They have a fingerless design, allowing for better dexterity and grip.",
+	"durability": 150,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 8,
+		"dex": 3
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 3
+},
+{
+	"name": "Broad Sword",
+	"description": "A large, heavy sword with a wide blade, designed for powerful swings and maximum damage.",
+	"looks": "The broad sword has a long, straight blade with a double-edged design. The handle is wrapped in leather for a comfortable grip, and it has a simple yet solid crossguard.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_slashing": 25,
+		"str": 10
+	},
+	"usage_requirements": {
+		"str": 20,
+		"dex": 15
+	},
+	"weight": 5.5,
+	"special_effects": {
+		"bleed": "Has a chance to cause bleeding damage on hit."
+	}
+},
+{
+	"name": "Mithril Sword",
+	"description": "A legendary sword forged from pure mithril, known for its unparalleled strength and sharpness.",
+	"looks": "The Mithril Sword has a slender blade that glows with a faint blue hue. The hilt is intricately designed with engravings of mythical creatures, and the handle is wrapped in fine leather for a comfortable grip.",
+	"durability": 300,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"usage_requirements": {
+		"str": 20,
+		"dex": 15
+	},
+	"weight": 2.8,
+	"special_weapon_skils": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill when wielded."
+	},
+	"special_effects": {
+		"critical_strike_chance": "Increases critical strike chance by 10%."
+	}
+},
+{
+	"name": "Steel Helmet",
+	"description": "A sturdy helmet made of steel",
+	"looks": "The helmet is made of smooth steel with a silver tint. It has a visor that can be opened and closed.",
+	"durability": 200,
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 10,
+		"max_hp": 50
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 5
+},
+{
+	"name": "Iron Sword",
+	"description": "A basic iron sword",
+	"looks": "The iron sword has a straight blade with a simple crossguard and a wooden handle wrapped in leather.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10
+	},
+	"stat_bonus": {
+		"str": 2
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"sword": "Grants a bonus to Sword skill when wielded."
+	}
+},
+{
+	"name": "Steel Sword",
+	"description": "A sharp steel sword.",
+	"looks": "The steel sword has a long blade with a curved edge. The hilt is made of leather and has a simple crossguard.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 10,
+		"dex": 8
+	},
+	"weight": 4,
+	"special_weapon_skils": {
+		"sword": "Grants a bonus to Sword skill when wielded."
+	}
+}
+]

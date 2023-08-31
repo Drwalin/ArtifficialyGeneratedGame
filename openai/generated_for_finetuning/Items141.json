@@ -1,0 +1,304 @@
+[
+{
+	"name": "Steel Longsword",
+	"description": "A sturdy longsword made from high-quality steel.",
+	"looks": "The steel longsword has a straight, double-edged blade with a simple crossguard. The hilt is wrapped in leather for a comfortable grip.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_slashing": 20,
+		"def": 5
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 12
+	},
+	"weight": 3.5,
+	"special_weapon_skills": {
+		"swordmanship": "Grants a bonus to Swordmanship skill when wielded."
+	}
+},
+{
+	"name": "Iron Axe",
+	"description": "A heavy iron axe with a wooden handle.",
+	"looks": "The iron axe has a sharp, double-edged blade attached to a sturdy wooden handle. The blade has a dull silver color, and the handle has a polished sheen.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"str": 5,
+		"dex": 2,
+		"dmg_slashing": 10
+	},
+	"usage_requirements": {
+		"str": 10,
+		"dex": 8
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"axe_mastery": "Increases damage dealt with axes."
+	}
+},
+{
+	"name": "Staff of Fire",
+	"description": "A staff imbued with the power of fire, allowing its wielder to unleash devastating fire-based attacks.",
+	"looks": "The staff is made of a polished oak wood, with intricate carvings and a fiery red gemstone at the top. It radiates with a warm glow and flickers with flames.",
+	"durability": 150,
+	"item_usage": "two_hand",
+	"stat_bonus": {
+		"dmg_fire": 20,
+		"int": 5,
+		"max_mp": 50,
+		"cast_speed": 2
+	},
+	"usage_requirements": {
+		"int": 25,
+		"wis": 15
+	},
+	"weight": 2,
+	"special_weapon_skils": {
+		"fire_magic": "Increases effectiveness of fire magic spells."
+	},
+	"special_effects": {
+		"fireball": "Allows the wielder to cast Fireball spell."
+	}
+},
+{
+	"name": "Wand of Fireball",
+	"description": "A wand infused with the power of fire, allowing the user to cast fireballs.",
+	"looks": "The wand is made of polished oak and is adorned with intricate carvings of flames. It has a smooth handle that fits comfortably in the hand.",
+	"durability": 30,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"max_mp": 20,
+		"int": 3,
+		"cha": 1,
+		"dmg_fire": 10,
+		"cast_speed": 1
+	},
+	"usage_requirements": {
+		"int": 10
+	},
+	"weight": 0.5,
+	"special_weapon_skils": {
+		"fire_magic": "Allows the user to cast fire spells more effectively."
+	},
+	"special_effects": {
+		"fireball": "Allows the user to cast the fireball spell, dealing fire damage to enemies."
+	}
+},
+{
+	"name": "Forest Bow",
+	"description": "A hand-crafted bow made from sturdy wood, perfect for hunting in the forest.",
+	"looks": "The Forest Bow is made from a single piece of dark, polished wood, with intricate carvings of leaves and animals along its length. It has a comfortable grip wrapped in soft leather, and a strong string made from sinew.",
+	"durability": 80,
+	"item_usage": "two_hand",
+	"stat_bonus": {
+		"dex": 5,
+		"spd": 2,
+		"dmg_physical": 20
+	},
+	"usage_requirements": {
+		"dex": 12
+	},
+	"weight": 1.5,
+	"special_weapon_skills": {
+		"archery": "Improves accuracy and damage with bows"
+	}
+},
+{
+	"name": "Dragonbone Sword",
+	"description": "A mighty sword forged from the bones of a dragon. It radiates with a powerful aura, instilling fear into the hearts of enemies.",
+	"looks": "The Dragonbone Sword has a long and slender blade made from pure dragonbone. The hilt is adorned with intricate engravings of dragons and is wrapped in fine leather. The pommel is shaped like a dragon's head with ruby eyes that glow with an otherworldly light.",
+	"durability": 500,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_physical": 30,
+		"def": 5,
+		"str": 10,
+		"luck": 5
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 5,
+	"special_weapon_skills": {
+		"dragon_slayer": "Increases damage against dragons."
+	},
+	"special_effects": {
+		"dragonbane": "Deals bonus damage to dragons."
+	}
+},
+{
+	"name": "Staff of the Elements",
+	"description": "A powerful staff that channels the forces of the elements",
+	"looks": "The staff is made of a sturdy wooden shaft with a crystal orb at the top. The orb is filled with swirling colors representing the different elements.",
+	"durability": 150,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_fire": 20,
+		"dmg_water": 20,
+		"dmg_air": 20,
+		"dmg_earth": 20,
+		"dmg_lightning": 20
+	},
+	"stat_bonus": {
+		"int": 10,
+		"wis": 5,
+		"max_mp": 100,
+		"cast_speed": 2
+	},
+	"usage_requirements": {
+		"int": 50
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_mastery": "Increases the power of elemental spells"
+	}
+},
+{
+	"name": "Iron Sword",
+	"description": "A sturdy iron sword suitable for close combat.",
+	"looks": "The iron sword has a straight blade with a single cutting edge and a sharp point. It has a hilt made of leather wrapped around the metal tang, providing a comfortable grip. The blade is engraved with intricate patterns and the pommel has a decorative design.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 2
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 2.5,
+	"special_weapon_skills": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill when wielded."
+	}
+},
+{
+	"name": "Steel Sword",
+	"description": "A sturdy sword made of steel.",
+	"looks": "The steel sword has a straight blade with a silver shine. The hilt is made of black leather and has a simple crossguard.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20
+	},
+	"stat_bonus": {
+		"str": 10
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 4,
+	"special_weapon_skils": {
+		"sword": "Grants a bonus to Sword skill when used."
+	}
+},
+{
+	"name": "Steel Plate Armor",
+	"description": "A heavy armor made from reinforced steel plates",
+	"looks": "The armor is made up of thick, overlapping steel plates, covering the entire torso and extending down to the thighs. It also has sturdy shoulder and elbow guards.",
+	"durability": 300,
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"def": 15,
+		"max_hp": 100,
+		"con": 5
+	},
+	"usage_requirements": {
+		"str": 18,
+		"con": 15
+	},
+	"weight": 25
+},
+{
+	"name": "Steel Shield",
+	"description": "A sturdy shield made of steel, providing excellent defensive capabilities.",
+	"looks": "The steel shield is a large, round shield made entirely of steel. It has a smooth surface, with a handle on the back for gripping and a metal rim around the edge.",
+	"durability": 150,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 15,
+		"resistance_physical": 10
+	},
+	"usage_requirements": {
+		"str": 20,
+		"con": 15
+	},
+	"weight": 7.5
+},
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": 100,
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+	"name": "Iron Sword",
+	"description": "A basic sword made of iron",
+	"looks": "The iron sword has a simple and utilitarian design. Its blade is straight and double-edged, with a crossguard for hand protection. The handle is wrapped in leather for a comfortable grip.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 2
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 5
+},
+{
+	"name": "Steel Plate Armor",
+	"description": "A heavy and durable armor made from steel plates",
+	"looks": "The armor is made up of thick steel plates that encase the entire torso, legs, and arms. It has intricate engravings and decorative patterns along the edges, giving it a regal and intimidating appearance.",
+	"durability": 300,
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"def": 20,
+		"max_hp": 100,
+		"resistance_slashing": 25,
+		"resistance_piercing": 20
+	},
+	"usage_requirements": {
+		"str": 30
+	},
+	"weight": 25
+},
+{
+	"name": "Scroll of Fireball",
+	"description": "A magical scroll containing the Fireball spell. When used, it conjures a ball of fire that explodes upon impact.",
+	"looks": "The scroll is made of aged parchment, with intricate symbols and runes etched onto the surface. It emits a faint glow, indicating its magical nature.",
+	"durability": 1,
+	"item_usage": "util",
+	"dmg": {
+		"dmg_fire": -50
+	},
+	"stat_bonus": {
+		"cast_speed": 2
+	},
+	"usage_requirements": {
+		"int": 20
+	},
+	"weight": 0.5,
+	"special_effects": {
+		"explodes": "The Fireball spell causes an explosive blast upon impact, dealing damage to all nearby enemies."
+	}
+}
+]

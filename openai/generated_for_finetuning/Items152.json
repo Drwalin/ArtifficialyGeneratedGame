@@ -1,0 +1,292 @@
+[
+{
+	"name": "Dagger",
+	"description": "A small and sharp weapon used for close-quarters combat.",
+	"looks": "The dagger has a double-edged blade with a sharp point. The handle has a grip for better control and is made of wood.",
+	"durability": 50,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10
+	},
+	"stat_bonus": {
+		"dex": 2
+	},
+	"usage_requirements": {
+		"dex": 10
+	},
+	"weight": 0.5,
+	"special_weapon_skils": {
+		"dagger_proficiency": "Grants a bonus to Dagger skill when used."
+	}
+},
+{
+	"name": "Iron Axe",
+	"description": "A heavy iron axe with a sharp blade, capable of dealing significant slashing damage.",
+	"looks": "The iron axe has a long wooden handle and a curved iron blade. The blade is sharp and has a few nicks and scratches from previous battles.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_slashing": 25
+	},
+	"stat_bonus": {
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 4.5
+},
+{
+	"name": "Iron Sword",
+	"description": "A sturdy iron sword with a sharp blade.",
+	"looks": "The iron sword has a straight blade with a single cutting edge. The hilt is made of wood and wrapped in leather for a comfortable grip.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20
+	},
+	"stat_bonus": {
+		"str": 5,
+		"def": 2
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 4
+},
+{
+	"name": "Steel Plate Armor",
+	"description": "A heavy armor made from steel plates",
+	"looks": "The armor is made up of overlapping steel plates, covering the entire torso and extending down to the thighs. It also has shoulder and elbow guards.",
+	"durability": 250,
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"def": 15,
+		"max_hp": 100
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 25
+},
+{
+	"name": "Obsidian Sword",
+	"description": "A sharp and sturdy sword made from obsidian, a volcanic glass known for its exceptional cutting edge.",
+	"looks": "The obsidian sword has a sleek black blade with a razor-sharp edge. The hilt is wrapped in leather for a comfortable grip, and the pommel is adorned with a small obsidian gem.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20
+	},
+	"stat_bonus": {
+		"str": 10,
+		"dex": 5
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill when wielded."
+	}
+},
+{
+	"name": "Silver Longsword",
+	"description": "A longsword made from silver, known for its ability to harm supernatural creatures.",
+	"looks": "The silver longsword has a polished blade with a slight curve. The hilt is adorned with intricate engravings of symbols and runes.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_physical": 15,
+		"def": 5
+	},
+	"usage_requirements": {
+		"str": 12,
+		"dex": 10
+	},
+	"weight": 4,
+	"special_effects": {
+		"supernatural_damage": "Deals additional damage to supernatural creatures."
+	}
+},
+{
+	"name": "Iron Sword",
+	"description": "A sturdy sword made from iron",
+	"looks": "The iron sword has a straight and double-edged blade with a crossguard for hand protection. The hilt is wrapped in leather for a secure grip.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_slashing": 10,
+		"atk_speed": 1
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 5,
+	"special_weapon_skils": {
+		"swordsmanship": "Increases damage and accuracy with swords."
+	}
+},
+{
+	"name": "Silver Sword",
+	"description": "A sleek and deadly sword made from pure silver.",
+	"looks": "The Silver Sword has a long, slender blade with a curved point. The hilt is made of polished silver, with an ornate design and a handle wrapped in black leather.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_slashing": 30,
+		"spd": 5,
+		"luck": 10
+	},
+	"usage_requirements": {
+		"str": 20,
+		"dex": 15
+	},
+	"weight": 4.5,
+	"special_weapon_skills": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill."
+	},
+	"special_effects": {
+		"silver_enchantment": "Deals extra damage to creatures vulnerable to silver."
+	}
+},
+{
+	"name": "Iron Shield",
+	"description": "A sturdy iron shield that offers excellent protection against physical attacks.",
+	"looks": "The iron shield is made of a solid iron plate, reinforced with rivets around the edges. It has a curved shape, designed to deflect incoming attacks.",
+	"durability": 150,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 10,
+		"max_hp": 20,
+		"spd": -2
+	},
+	"usage_requirements": {
+		"str": 12,
+		"dex": 8
+	},
+	"weight": 5
+},
+{
+	"name": "Iron Sword",
+	"description": "A sturdy iron sword with a sharp blade.",
+	"looks": "The iron sword has a straight blade with a single edge and a sharp point. The hilt is wrapped in leather for a comfortable grip and has a simple crossguard.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 35
+	},
+	"stat_bonus": {
+		"dex": 5
+	},
+	"usage_requirements": {
+		"str": 12,
+		"dex": 10
+	},
+	"weight": 2.5,
+	"special_weapon_skils": {
+		"swordsmanship": "Increases proficiency in sword fighting."
+	}
+},
+{
+	"name": "Iron Greatsword",
+	"description": "A large two-handed sword made of iron",
+	"looks": "The Iron Greatsword has a long, broad blade with a slight curve and a double-edged design. The hilt is made of sturdy leather and has a crossguard for added protection.",
+	"durability": 150,
+	"item_usage": "two_hand",
+	"stat_bonus": {
+		"dmg_slashing": 20,
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 10,
+	"special_weapon_skils": {
+		"Swordsmanship": "Increases damage dealt with swords by 10%"
+	}
+},
+{
+	"name": "Fireball Scroll",
+	"description": "A scroll containing a spell that allows the caster to unleash a powerful fireball at a target.",
+	"looks": "The Fireball Scroll is made of aged parchment and is sealed with red wax. It has intricate runes and symbols inscribed along the edges.",
+	"durability": 1,
+	"item_usage": "util",
+	"dmg": {
+		"dmg_fire": -50
+	},
+	"stat_bonus": {
+		"int": 5,
+		"wis": 3,
+		"cast_speed": 1
+	},
+	"usage_requirements": {
+		"int": 8
+	},
+	"weight": 0.5,
+	"special_effects": {
+		"burn": "Has a chance to set the target on fire, dealing additional damage over time."
+	}
+},
+{
+	"name": "Adamantine Sword",
+	"description": "A powerful sword forged from adamantine, known for its incredible durability and sharpness.",
+	"looks": "The Adamantine Sword has a gleaming silver blade that is razor-sharp. The hilt is made of a black, polished metal with intricate engravings of mythical creatures. The pommel is adorned with a large blue gemstone.",
+	"durability": 300,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_slashing": 20,
+		"def": 5
+	},
+	"usage_requirements": {
+		"str": 18,
+		"dex": 15
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill when wielded."
+	}
+},
+{
+	"name": "Iron Sword",
+	"description": "A basic sword made of iron",
+	"looks": "The iron sword has a straight, double-edged blade with a simple hilt made of iron. It is a sturdy and reliable weapon.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_physical": 10
+	},
+	"usage_requirements": {
+		"str": 10,
+		"dex": 5
+	},
+	"weight": 5
+},
+{
+	"name": "Magician's Staff",
+	"description": "A powerful staff used by magicians to channel their spells.",
+	"looks": "The magician's staff is made of polished wood and is adorned with intricate carvings and magical runes. It has a crystal orb at the top that glows with a soft, pulsating light.",
+	"durability": 150,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_earth": -10,
+		"dmg_fire": 20
+	},
+	"stat_bonus": {
+		"int": 10,
+		"wis": 5,
+		"max_mp": 50,
+		"def": 5,
+		"cast_speed": 2
+	},
+	"usage_requirements": {
+		"int": 30
+	},
+	"weight": 3.5,
+	"special_weapon_skills": {
+		"magic_strikes": "Allows the user to perform powerful magical strikes."
+	}
+}
+]

@@ -1,0 +1,290 @@
+[
+{
+	"name": "Durability Kit",
+	"description": "A kit containing tools and materials for repairing items and restoring their durability.",
+	"looks": "The kit is a small wooden box filled with various tools and materials for item repair.",
+	"durability": 1,
+	"item_usage": "util",
+	"item_recipee": [
+		"Hammer",
+		"Nails",
+		"Thread",
+		"Leather Patch"
+	],
+	"weight": 0.5
+},
+{
+	"name": "Explosive Bomb",
+	"description": "A small bomb that explodes upon impact, dealing damage to nearby enemies.",
+	"looks": "The bomb is a small round object covered in metal spikes.",
+	"durability": 1,
+	"item_usage": "util",
+	"dmg": {
+		"dmg_fire": 50
+	},
+	"special_effects": {
+		"explosion": "Upon impact, the bomb releases a fiery explosion that damages enemies within range."
+	},
+	"weight": 0.5
+},
+{
+	"name": "Speed Elixir",
+	"description": "A potion that grants a temporary boost to movement speed.",
+	"looks": "The elixir is a sparkling blue liquid contained in a small glass bottle.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"dmg_over_time": {
+		"dmg_dark": [-10, 30]
+	},
+	"stat_bonus": {
+		"spd": 10
+	},
+	"weight": 0.2
+},
+{
+	"name": "Poisoned Dagger",
+	"description": "A small dagger coated with a deadly poison.",
+	"looks": "The dagger has a slender, curved blade and a jeweled hilt.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_piercing": 20,
+		"dmg_poison": 5
+	},
+	"stat_bonus": {
+		"dex": 3
+	},
+	"usage_requirements": {
+		"dex": 15
+	},
+	"weight": 0.5,
+	"special_weapon_skils": {
+		"assassination": "Increases critical strike chance and damage with daggers."
+	},
+	"special_effects": {
+		"poison_damage": "Applies a poison effect on successful hits."
+	}
+},
+{
+	"name": "Fireball Scroll",
+	"description": "A scroll that allows the user to cast a powerful fireball spell.",
+	"looks": "The scroll is made of ancient parchment, with intricate runes and symbols etched on its surface.",
+	"durability": 1,
+	"item_usage": "util",
+	"usage_requirements": {
+		"int": 10,
+		"wis": 8
+	},
+	"dmg": {
+		"dmg_fire": 150
+	},
+	"weight": 0.2,
+	"special_effects": {
+		"Increased Spell Power": "Increases the damage of all fire spells."
+	}
+},
+{
+	"name": "Strength Potion",
+	"description": "A potion that temporarily boosts the drinker's strength and melee damage.",
+	"looks": "The potion is a vibrant red color, swirling with energy.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"item_recipee": [
+		"Brewer's Yeast",
+		"Enchanted Ruby"
+	],
+	"stat_bonus": {
+		"str": 5
+	},
+	"weight": 0.1
+},
+{
+	"name": "Fireball Scroll",
+	"description": "A scroll that contains the fireball spell.",
+	"looks": "The scroll is made of aged, yellowed parchment with intricate runes and symbols etched into it.",
+	"durability": 1,
+	"item_usage": "util",
+	"item_recipee": [
+		"Ink",
+		"Parchment"
+	],
+	"dmg": {
+		"dmg_fire": 80
+	},
+	"usage_requirements": {
+		"int": 10
+	},
+	"weight": 0.2,
+	"special_effects": {
+		"Burning": "The fireball has a chance to set enemies on fire, dealing additional damage over time."
+	}
+},
+{
+	"name": "Slow Healing Potion",
+	"description": "A potion that restores health points.",
+	"looks": "A small, glass vial filled with a glowing, green liquid.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"dmg_over_time": {
+		"dmg_light": [-80, 10]
+	},
+	"weight": 0.1
+},
+{
+	"name": "Fireball Scroll",
+	"description": "A scroll containing the spell to conjure a powerful fireball.",
+	"looks": "The scroll is made of aged parchment and is sealed with a wax seal.",
+	"durability": 1,
+	"item_usage": "util",
+	"item_recipee": [
+		"Magic Ink",
+		"Enchanted Paper"
+	],
+	"dmg": {
+		"dmg_fire": 100
+	},
+	"usage_requirements": {
+		"int": 10
+	},
+	"weight": 0.2
+},
+{
+	"name": "Fireball Scroll",
+	"description": "A scroll that allows the user to cast a fireball spell.",
+	"looks": "The scroll is made of ancient parchment and is sealed with a wax seal.",
+	"durability": 1,
+	"item_usage": "util",
+	"item_recipee": [
+		"Incinerated Bat Wing",
+		"Charred Oak Branch",
+		"Ink of Ignition"
+	],
+	"dmg": {
+		"dmg_fire": -50
+	},
+	"stat_bonus": {
+		"cast_speed": 10
+	},
+	"usage_requirements": {
+		"int": 15
+	},
+	"weight": 0.2,
+	"special_effects": {
+		"Area of Effect": "The fireball spell affects all targets in a small radius."
+	}
+},
+{
+	"name": "Excalibur",
+	"description": "A legendary sword said to be wielded by King Arthur himself.",
+	"looks": "Excalibur is a magnificent sword with a shining silver blade and a golden hilt. The blade is engraved with ancient symbols, and the hilt is adorned with precious gems.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 50
+	},
+	"stat_bonus": {
+		"str": 10
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 5,
+	"special_weapon_skills": {
+		"Sword Mastery": "Increases damage with swords by 10%."
+	},
+	"special_effects": {
+		"Divine Blessing": "Chance to heal 10% of max health on successful hit."
+	}
+},
+{
+	"name": "Magic Wand",
+	"description": "A wooden wand imbued with magical energy.",
+	"looks": "The wand is made of polished mahogany and has intricate carvings along its length.",
+	"durability": 50,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_lightning": 10
+	},
+	"stat_bonus": {
+		"int": 3
+	},
+	"usage_requirements": {
+		"int": 10
+	},
+	"weight": 0.5,
+	"special_weapon_skills": {
+		"wand_mastery": "Increases damage dealt with wands by 10%."
+	},
+	"special_effects": {
+		"spell_power_increase": "Increases spell power by 5%."
+	}
+},
+{
+	"name": "Flame Sword",
+	"description": "A powerful sword with a flaming blade",
+	"looks": "The Flame Sword is a long, curved blade with a hilt made of fiery red metal.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 50,
+		"dmg_fire": 100
+	},
+	"stat_bonus": {
+		"str": 10
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 2,
+	"special_weapon_skills": {
+		"Swordsmanship": "Grants bonus damage with swords"
+	},
+	"special_effects": {
+		"Inferno": "Has a chance to ignite enemies, dealing additional fire damage over time"
+	}
+},
+{
+    "name": "Speed Enhancement Elixir",
+    "description": "An elixir that increases the user's speed for a short duration.",
+    "looks": "The elixir is a small, glass bottle filled with a sparkling blue liquid.",
+    "durability": 1,
+    "item_usage": "consumable",
+    "dmg_over_time": {
+        "dmg_dark": [-50, 10]
+    },
+    "stat_bonus": {
+        "spd": 25
+    },
+    "usage_requirements": {
+        "dex": 10
+    },
+    "weight": 0.2,
+    "special_effects": {
+        "temporary_speed_boost": "Increases the user's movement speed by 25%"
+    }
+},
+{
+	"name": "Fireball Scroll",
+	"description": "A scroll imbued with the power of fire, allowing the user to cast a powerful fireball spell.",
+	"looks": "The scroll is made of aged parchment, with intricate runes written in red ink.",
+	"durability": 1,
+	"item_usage": "util",
+	"item_recipee": [
+		"Blank Scroll",
+		"Fire Essence"
+	],
+	"dmg": {
+		"dmg_fire": 100
+	},
+	"stat_bonus": {
+		"cast_speed": 0.5
+	},
+	"usage_requirements": {
+		"int": 10
+	},
+	"weight": 0.3,
+	"special_effects": {
+		"ignite": "Upon impact, the fireball has a chance to set the target on fire, dealing additional damage over time."
+	}
+}
+]

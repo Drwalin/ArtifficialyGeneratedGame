@@ -1,0 +1,290 @@
+[
+{
+	"name": "Dragonplate Armor",
+	"description": "A legendary suit of armor made from the scales of a dragon. It is said to offer unmatched protection and resilience.",
+	"looks": "The Dragonplate Armor is a massive suit of armor made from dark, metallic scales. It covers the entire body and has an imposing appearance. The scales are intricately patterned and give off a faint glow.",
+	"durability": 500,
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"def": 20,
+		"max_hp": 100,
+		"resistance_fire": 50,
+		"resistance_lightning": 30
+	},
+	"usage_requirements": {
+		"str": 50,
+		"con": 40
+	},
+	"weight": 40
+},
+{
+	"name": "Silver Sword",
+	"description": "A finely crafted sword made from pure silver.",
+	"looks": "The Silver Sword has a polished silver blade with a curved design. The hilt is wrapped in black leather and has a silver crossguard and pommel.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 25,
+		"dmg_silver": 15
+	},
+	"stat_bonus": {
+		"dex": 5,
+		"luck": 2
+	},
+	"usage_requirements": {
+		"dex": 15
+	},
+	"weight": 2.5,
+	"special_weapon_skils": {
+		"swordsmanship": "Increases damage and accuracy with swords."
+	}
+},
+{
+	"name": "Flaming Sword",
+	"description": "A sword enchanted with fire, causing burning damage to enemies.",
+	"looks": "The Flaming Sword has a straight, double-edged blade made of gleaming steel. The hilt is wrapped in red leather and has a pommel in the shape of a flame.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20,
+		"dmg_fire": 10
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3,
+		"def": 2
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"weapon_skill_fire": "Increases proficiency with fire-based weapons."
+	},
+	"special_effects": {
+		"burning": "Chance to inflict burning damage on enemies."
+	}
+},
+{
+	"name": "Adamantium Sword",
+	"description": "A legendary sword crafted from the rare and incredibly durable metal known as adamantium.",
+	"looks": "The Adamantium Sword has a long, straight blade with a sharp point and a single-edge. The hilt is wrapped in black leather, and the guard is made of polished silver. The blade has a faint blue glow, indicating the presence of magical enchantments intertwined with the metal.",
+	"durability": 1000,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_physical": 50,
+		"str": 10,
+		"spd": 5
+	},
+	"usage_requirements": {
+		"str": 50
+	},
+	"weight": 8,
+	"special_weapon_skills": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill."
+	},
+	"special_effects": {
+		"elemental_damage": "Has a chance to deal additional elemental damage based on the wielder's affinity."
+	}
+},
+{
+	"name": "Iron Sword",
+	"description": "A sturdy iron sword with a sharp blade.",
+	"looks": "The iron sword has a straight blade with a single sharp edge. The hilt is made of leather and wrapped with strips of cloth for a secure grip.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20
+	},
+	"stat_bonus": {
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 2,
+	"special_weapon_skils": {
+		"sword_skill": "Increases damage and accuracy when using swords."
+	}
+},
+{
+	"name": "Flaming Sword",
+	"description": "A sword imbued with the power of fire, capable of dealing burning damage to enemies.",
+	"looks": "The Flaming Sword has a long, steel blade that glows with a fiery red hue. The hilt is wrapped in black leather, and the pommel is shaped like a flaming torch.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 25,
+		"dmg_fire": 10
+	},
+	"stat_bonus": {
+		"str": 10,
+		"dex": 5
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"weapon_proficiency_sword": "Increases damage and accuracy when using swords."
+	},
+	"special_effects": {
+		"burning": "Has a chance to ignite enemies, dealing additional fire damage over time."
+	}
+},
+{
+	"name": "Steel Gauntlets",
+	"description": "A pair of sturdy gauntlets made of steel.",
+	"looks": "The steel gauntlets are made of solid steel plates that cover the hands and extend to the wrists. They have a textured surface for a better grip and small ventilation holes for airflow.",
+	"durability": 150,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 8,
+		"str": 3,
+		"dex": 2
+	},
+	"usage_requirements": {
+		"str": 12,
+		"dex": 10
+	},
+	"weight": 2.2
+},
+{
+	"name": "Flaming Sword",
+	"description": "A sword imbued with the power of fire, causing extra burning damage to enemies.",
+	"looks": "The Flaming Sword has a blade that appears to be made of pure fire, with flames licking along its edges. The hilt is made of blackened metal, with intricate carvings of flames.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_fire": 20,
+		"str": 5,
+		"spd": 2
+	},
+	"usage_requirements": {
+		"str": 10,
+		"dex": 10
+	},
+	"weight": 3,
+	"special_weapon_skils": {
+		"fire_sword": "Grants the Fire Sword skill, allowing the wielder to unleash powerful fire-based attacks."
+	}
+},
+{
+	"name": "Iron Gauntlets",
+	"description": "Sturdy iron gauntlets that protect the hands and wrists.",
+	"looks": "The iron gauntlets are made of solid iron plates, with reinforced sections over the knuckles and finger joints. They have leather straps for secure fastening.",
+	"durability": 150,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 8,
+		"str": 3
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 2.5
+},
+{
+	"name": "Dagger of Slicing",
+	"description": "A small, sharp dagger with a thin blade that is perfect for stealthy attacks.",
+	"looks": "The Dagger of Slicing has a slender, double-edged blade made of polished steel. The handle is wrapped in leather for a comfortable grip.",
+	"durability": 50,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_piercing": 10
+	},
+	"stat_bonus": {
+		"dex": 3,
+		"spd": 2
+	},
+	"usage_requirements": {
+		"dex": 15
+	},
+	"weight": 0.5,
+	"special_weapon_skills": {
+		"dagger": "Increases damage with daggers by 10%."
+	}
+},
+{
+	"name": "Steel Chestplate",
+	"description": "A heavy chestplate made of hardened steel plates, providing excellent protection.",
+	"looks": "The steel chestplate consists of overlapping steel plates, covering the entire torso. It has a reinforced collar and adjustable buckle straps for a secure fit. The surface of the plates is polished to a mirror-like shine.",
+	"durability": 300,
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"def": 25,
+		"max_hp": 100
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 25
+},
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": 100,
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+	"name": "Amulet of Vitality",
+	"description": "An enchanted amulet that enhances the wearer's vitality and fortitude.",
+	"looks": "The amulet is made of a polished silver metal, with a large translucent gem at the center that glows with a soft green light. The gem is encased in a silver frame with intricate carvings of leaves and vines.",
+	"durability": 120,
+	"item_usage": "trinket",
+	"stat_bonus": {
+		"max_hp": 100,
+		"con": 10,
+		"regen_hp": 5,
+		"resistance_poison": 15
+	},
+	"weight": 0.5,
+	"special_effects": {
+		"vitality_boost": "Grants a temporary boost to maximum HP."
+	}
+},
+{
+	"name": "Silver Ring",
+	"description": "A simple silver ring adorned with a small gemstone.",
+	"looks": "The silver ring is made from polished silver and has a small gemstone set in the center. The band is smooth and comfortable to wear.",
+	"durability": 50,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 1,
+		"resistance_acid": 5,
+		"resistance_poison": 5
+	},
+	"weight": 0.5
+},
+{
+	"name": "Steel Sword",
+	"description": "A sturdy sword made of steel",
+	"looks": "The steel sword has a long, curved blade with a silver tint. The hilt is wrapped in leather for a secure grip.",
+	"durability": 250,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_slashing": 20,
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill when wielded."
+	}
+}
+]

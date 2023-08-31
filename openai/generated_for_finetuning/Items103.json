@@ -1,0 +1,272 @@
+[
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": 100,
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": "100",
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+	"name": "Iron Sword",
+	"description": "A sturdy iron sword suitable for close-quarters combat.",
+	"looks": "The iron sword has a straight blade with a single cutting edge. The hilt is made of leather-wrapped wood and has a crossguard for hand protection.",
+	"durability": "150",
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_physical": 20,
+		"spd": 5
+	},
+	"damage_over_time": {
+		"dmg_physical": [-10, 5]
+	},
+	"usage_requirements": {
+		"str": 12,
+		"dex": 10
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"sword_skill": "Grants a bonus to Sword skill when wielded."
+	}
+},
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": 100,
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": "100",
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+	"name": "Steel Gauntlets",
+	"description": "Strong and reliable gauntlets made of steel",
+	"looks": "The gauntlets are made of polished steel with intricate engravings. They have multiple overlapping plates to protect the hands and fingers.",
+	"durability": "150",
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 8
+	},
+	"usage_requirements": {
+		"str": 12,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+	"name": "Steel Gauntlets",
+	"description": "Sturdy gauntlets made of steel, providing excellent protection for the hands and fingers.",
+	"looks": "The steel gauntlets are made up of multiple overlapping plates, providing flexibility and protection. They have reinforced knuckles and finger guards.",
+	"durability": "150",
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 8,
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 4
+},
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": 100,
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3.2
+},
+{
+	"name": "Iron Sword",
+	"description": "A basic iron sword, suitable for beginners.",
+	"looks": "The iron sword has a simple design, with a straight blade and a hilt wrapped in leather for a comfortable grip.",
+	"durability": "150",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 12
+	},
+	"stat_bonus": {
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 4
+},
+{
+	"name": "Diamond Sword",
+	"description": "A powerful sword made from pure diamond, capable of inflicting massive damage.",
+	"looks": "The Diamond Sword has a long, slender blade made entirely of diamond. It has an elaborate hilt with intricate designs carved into the handle. The blade glows with a faint blue light.",
+	"durability": "1000",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 150
+	},
+	"stat_bonus": {
+		"str": 50,
+		"dex": 30,
+		"max_hp": 100
+	},
+	"usage_requirements": {
+		"str": 80
+	},
+	"weight": 10,
+	"special_weapon_skills": {
+		"sword_mastery": "Increases damage and accuracy with swords."
+	},
+	"special_effects": {
+		"critical_strike": "Has a chance to deal bonus damage on critical hits."
+	}
+},
+{
+	"name": "Steel Plate Armor",
+	"description": "A heavy suit of armor made from solid steel plates.",
+	"looks": "The Steel Plate Armor is a formidable piece of protection, covering the entire body from head to toe. It consists of individual steel plates that are interlocked and reinforced with rivets. The armor has a polished silver finish and a commanding presence.",
+	"durability": "300",
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"def": 15,
+		"max_hp": 100
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 25
+},
+{
+	"name": "Silver Broadsword",
+	"description": "A strong and reliable broadsword made of silver.",
+	"looks": "The Silver Broadsword has a long and wide blade with a sharp edge. The hilt is made of polished silver, with an ornate design and a comfortable grip.",
+	"durability": "200",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 25
+	},
+	"stat_bonus": {
+		"str": 5,
+		"def": 3
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 4.5
+},
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": "100",
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+	"name": "Fireball Scroll",
+	"description": "A scroll containing the spell Fireball, which allows the user to cast a powerful fireball at their enemies.",
+	"looks": "The scroll is made of aged parchment, with intricate symbols and glyphs written in red ink. It has a small seal at the top to keep it rolled up.",
+	"durability": "1",
+	"item_usage": "util",
+	"dmg": {
+		"dmg_fire": 50
+	},
+	"stat_bonus": {
+		"int": 5,
+		"wis": 3,
+		"max_mp": 10
+	},
+	"usage_requirements": {
+		"int": 10
+	},
+	"weight": 0.5,
+	"special_effects": {
+		"dmg_over_time": "The fireball will also cause the target to burn for an additional 20 damage over 5 seconds."
+	}
+},
+{
+	"name": "Fireball Scroll",
+	"description": "A scroll containing the fireball spell. When used, it releases a ball of fire that explodes on impact, damaging all enemies in the area.",
+	"looks": "The scroll is made of parchment, with the fireball spell's incantation written in elegant script using red ink.",
+	"durability": "1",
+	"item_usage": "consumable",
+	"item_recipee": [
+		"parchment",
+		"red ink",
+		"fire essence"
+	],
+	"dmg": {
+		"dmg_fire": 50
+	},
+	"stat_bonus": {
+		"int": 5
+	},
+	"usage_requirements": {
+		"int": 30
+	},
+	"weight": 0.2,
+	"special_effects": {
+		"area_damage": "The fireball explodes on impact, damaging all enemies in the area of effect."
+	}
+}
+]

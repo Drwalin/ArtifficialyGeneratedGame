@@ -1,0 +1,278 @@
+[
+{
+	"name": "Fire Staff",
+	"description": "A staff imbued with the power of fire, allowing the wielder to cast fiery spells",
+	"looks": "The Fire Staff has a long wooden shaft with intricate carvings and a cylindrical crystal embedded at the top. The crystal glows with a fiery orange light, and flames dance along the staff when it is invoked.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_fire": 20
+	},
+	"stat_bonus": {
+		"max_mp": 50,
+		"int": 10,
+		"wis": 5,
+		"cast_speed": 1
+	},
+	"usage_requirements": {
+		"int": 20
+	},
+	"weight": 3,
+	"special_weapon_skils": {
+		"fire_magic": "Increases damage and effectiveness of fire spells"
+	},
+	"special_effects": {
+		"fire_immunity": "Grants immunity to fire damage while equipped"
+	}
+},
+{
+	"name": "Crimson Blade",
+	"description": "A deadly sword imbued with the power of fire.",
+	"looks": "The Crimson Blade is a longsword with a curved blade that is forged from a unique red metal. The hilt is wrapped in dark leather, and the pommel is adorned with a ruby gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_fire": 20
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 2
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 4,
+	"special_weapon_skils": {
+		"fire_sword": "Grants a bonus to Fire Sword skill."
+	}
+},
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good head protection.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": 100,
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+	"name": "Steel Chestplate",
+	"description": "A heavy chestplate made from durable steel plates.",
+	"looks": "The Steel Chestplate is a strong and sturdy piece of armor that covers the entire torso. It is made from thick steel plates that are riveted together, providing excellent protection.",
+	"durability": 300,
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"def": 15,
+		"max_hp": 100
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 25
+},
+{
+	"name": "Steel Gauntlets",
+	"description": "Heavy-duty gauntlets made from steel to provide maximum protection for the hands.",
+	"looks": "The gauntlets are made of thick steel plates with reinforced joints. They have a layered design that covers the entire hand and extends up to the forearm. There are leather straps and metal buckles for secure fastening.",
+	"durability": 150,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 8,
+		"str": 3
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 4
+},
+{
+	"name": "Steel Gauntlets",
+	"description": "A pair of sturdy gauntlets made from steel.",
+	"looks": "The gauntlets are made of polished steel and have a slightly curved shape to protect the wearer's hands and fingers. They have small openings for the fingers and adjustable straps to secure them in place.",
+	"durability": 150,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 8,
+		"str": 2
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 4
+},
+{
+	"name": "Steel Sword",
+	"description": "A sharp and sturdy steel sword",
+	"looks": "The steel sword has a straight, double-edged blade with a polished silver finish. The hilt is wrapped in black leather and has a simple crossguard.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 2
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 4
+},
+{
+	"name": "Steel Shield",
+	"description": "A sturdy shield made of steel",
+	"looks": "The shield is made of polished steel, with a rounded shape and a handle on the back for gripping.",
+	"durability": 250,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"def": 15,
+		"max_hp": 20
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 8
+},
+{
+	"name": "Fireball Scroll",
+	"description": "A scroll containing the incantation for the Fireball spell. When read, it allows the user to cast a powerful fireball projectile.",
+	"looks": "The scroll is made from aged parchment and is sealed with a red wax seal. The incantation for the Fireball spell is written in elegant script.",
+	"durability": 1,
+	"item_usage": "util",
+	"dmg": {
+		"dmg_fire": -50
+	},
+	"stat_bonus": {
+		"int": 5,
+		"wis": 3
+	},
+	"usage_requirements": {
+		"int": 10,
+		"wis": 8
+	},
+	"weight": 0.1,
+	"special_effects": {
+		"spell_fireball": "Allows the user to cast the Fireball spell."
+	}
+},
+{
+	"name": "Golden Ring",
+	"description": "A beautiful ring made of pure gold.",
+	"looks": "The golden ring is adorned with intricate designs and has a polished golden surface that shines brightly.",
+	"durability": 100,
+	"item_usage": "trinket",
+	"stat_bonus": {
+		"cha": 5,
+		"luck": 5
+	},
+	"weight": 0.5
+},
+{
+	"name": "Silver Sword",
+	"description": "A finely crafted sword made from pure silver.",
+	"looks": "The Silver Sword has a slender and elegant design, with a silver blade that gleams in the light. The hilt is wrapped in black leather and adorned with intricate engravings.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_slashing": 15,
+		"spd": 5
+	},
+	"usage_requirements": {
+		"dex": 12
+	},
+	"weight": 2,
+	"special_weapon_skills": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill when wielded."
+	}
+},
+{
+	"name": "Silver Longsword",
+	"description": "A well-crafted longsword made from silver, imbued with magical energy.",
+	"looks": "The silver longsword has a shining blade with intricate engravings that glow faintly. The handle is made of polished silver and wrapped with black leather for a comfortable grip.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 35
+	},
+	"stat_bonus": {
+		"str": 10,
+		"dex": 5
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 3,
+	"special_weapon_skils": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill when wielded."
+	},
+	"special_effects": {
+		"silver_effect": "Deals extra damage to creatures vulnerable to silver."
+	}
+},
+{
+	"name": "Enchanted Silver Sword",
+	"description": "A beautiful silver sword imbued with powerful enchantments",
+	"looks": "The enchanted silver sword has a gleaming silver blade that reflects light. The hilt is adorned with intricate engravings and a gemstone inlay.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_physical": 20,
+		"spd": 5
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"swordsmanship": "Increases damage and accuracy with swords",
+		"magic_strike": "Enables the use of magic-infused strikes"
+	}
+},
+{
+	"name": "Adamantine Greataxe",
+	"description": "A massive greataxe made from adamantine, known for its incredible strength and durability.",
+	"looks": "The Adamantine Greataxe is a large, two-handed weapon with a long handle made of blackened steel. The axe head is made from shimmering adamantine, with razor-sharp edges and a spiked pommel at the end.",
+	"durability": 500,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_physical": 50
+	},
+	"stat_bonus": {
+		"str": 10,
+		"max_hp": 20,
+		"def": 5
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 15,
+	"special_weapon_skils": {
+		"axe_mastery": "Grants a bonus to Axe Mastery skill."
+	},
+	"special_effects": {
+		"armor_piercing": "Has a chance to ignore a percentage of the target's armor."
+	}
+},
+{
+	"name": "Iron Greaves",
+	"description": "Sturdy iron greaves that protect the lower legs.",
+	"looks": "The iron greaves are made of solid iron plates, covering the front and sides of the lower legs. They are secured with leather straps and buckles.",
+	"durability": 120,
+	"item_usage": "wear_legs",
+	"stat_bonus": {
+		"def": 8,
+		"spd": -1
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 4
+}
+]

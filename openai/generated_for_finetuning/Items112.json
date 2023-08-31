@@ -1,0 +1,298 @@
+[
+{
+	"name": "Sword of Fire",
+	"description": "A flaming sword that burns foes with each strike",
+	"looks": "The Sword of Fire has a shining blade made with enchanted steel. Flames flicker along the edge, giving off a warm glow.",
+	"durability": "200",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10,
+		"dmg_fire": 20
+	},
+	"stat_bonus": {
+		"str": 5,
+		"def": 2
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 4,
+	"special_weapon_skils": {
+		"fire_sword_mastery": "Increases damage and chance to ignite enemies when using the Sword of Fire."
+	}
+},
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": "100",
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+	"name": "Elven Bow",
+	"description": "A beautifully crafted bow made by elven artisans",
+	"looks": "The Elven Bow is made from a combination of polished wood and intricate silver designs. It is lightweight and has a sleek, curved shape.",
+	"durability": "150",
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_physical": 20
+	},
+	"special_weapon_skils": {
+		"archery": "Increases damage and accuracy with bows"
+	},
+	"weight": 1.5
+},
+{
+	"name": "Golden Ring",
+	"description": "A beautiful ring made of solid gold.",
+	"looks": "The Golden Ring is made of pure gold and has a smooth, polished surface. It is circular in shape with a small gemstone embedded in the center.",
+	"durability": "100",
+	"item_usage": "trinket",
+	"stat_bonus": {
+		"luck": 5
+	},
+	"usage_requirements": {
+		"luck": 10
+	},
+	"weight": 0.5
+},
+{
+	"name": "Dagger of the Shadow",
+	"description": "A lightweight dagger imbued with shadow magic, perfect for quick and stealthy attacks.",
+	"looks": "The Dagger of the Shadow is a small, sleek dagger with a black blade. The hilt is wrapped in dark leather and has a small gem embedded in the pommel.",
+	"durability": 75,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10,
+		"dmg_shadow": 5
+	},
+	"stat_bonus": {
+		"dex": 5,
+		"spd": 10
+	},
+	"usage_requirements": {
+		"dex": 15
+	},
+	"weight": 0.5,
+	"special_weapon_skills": {
+		"assassination": "Increases backstab damage."
+	}
+},
+{
+	"name": "Steel Chestplate",
+	"description": "A heavy and protective chestplate made from steel.",
+	"looks": "The steel chestplate is a thick and solid piece of armor that covers the chest and upper torso. It is made from polished steel with intricate engravings along the edges. The front of the chestplate has a prominent emblem of a roaring lion.",
+	"durability": "250",
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"def": 15,
+		"max_hp": 100
+	},
+	"usage_requirements": {
+		"str": 20,
+		"dex": 10,
+		"con": 15
+	},
+	"weight": 30
+},
+{
+	"name": "Sword of Justice",
+	"description": "A powerful sword imbued with the essence of justice.",
+	"looks": "The Sword of Justice has a shining silver blade with intricate engravings of scales and a blindfolded woman holding a balance. The hilt is made of polished golden metal, with a jewel embedded in the pommel.",
+	"durability": "1000",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 50
+	},
+	"stat_bonus": {
+		"str": 10,
+		"def": 5
+	},
+	"weight": 2,
+	"special_weapon_skils": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill when wielded."
+	},
+	"special_effects": {
+		"justice_strike": "Chance to deal extra damage based on target's alignment."
+	}
+},
+{
+	"name": "Steel Sword",
+	"description": "A finely crafted sword made from the finest steel.",
+	"looks": "The steel sword has a polished blade with a silver hue. The hilt is adorned with intricate engravings and a sturdy leather grip.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_slashing": 15,
+		"str": 5,
+		"dex": 5
+	},
+	"usage_requirements": {
+		"str": 12,
+		"dex": 10
+	},
+	"weight": 4,
+	"special_weapon_skils": {
+		"swordsmanship": "Increases damage and accuracy with swords."
+	}
+},
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": "100",
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+	"name": "Burning Dagger",
+	"description": "A wicked dagger imbued with the power of fire.",
+	"looks": "The burning dagger has a serrated blade that constantly flickers with flames. The handle is wrapped in black leather and has an intricate design of fire symbols.",
+	"durability": "150",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20,
+		"dmg_fire": 10
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"usage_requirements": {
+		"dex": 15
+	},
+	"weight": 1,
+	"special_weapon_skils": {
+		"daggers": "Grants a bonus to Dagger skill when wielded."
+	},
+	"special_effects": {
+		"burn": "Chance to ignite the target on hit."
+	}
+},
+{
+	"name": "Steel Sword",
+	"description": "A sturdy sword made of steel",
+	"looks": "The sword has a straight blade made of polished steel with a sharp edge. The hilt is wrapped in leather for a comfortable grip.",
+	"durability": "150",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 2
+	},
+	"usage_requirements": {
+		"str": 10,
+		"dex": 8
+	},
+	"weight": 2,
+	"special_weapon_skills": {
+		"swordfighting": "Grants a bonus to Swordfighting skill when used."
+	}
+},
+{
+	"name": "Flaming Sword",
+	"description": "A sword with a blade that burns with flames, causing additional fire damage to enemies",
+	"looks": "The Flaming Sword has a long, curved blade that glows with a vibrant orange color. Flames dance along the length of the blade, giving off a steady heat. The hilt is made of dark iron and wrapped in leather for a secure grip.",
+	"durability": "150",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20,
+		"dmg_fire": 10
+	},
+	"stat_bonus": {
+		"str": 5,
+		"def": 2
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 4,
+	"special_weapon_skils": {
+		"sword_skill": "Grants bonus to Sword skill when equipped."
+	},
+	"special_effects": {
+		"burning": "Has a chance to apply a burn effect to enemies, causing additional fire damage over time."
+	}
+},
+{
+	"name": "Flaming Sword",
+	"description": "A sword with a blade that is constantly engulfed in flames.",
+	"looks": "The flaming sword has a long, curved blade made of shimmering steel. The blade is wreathed in flames that emit a bright red glow and give off intense heat. The hilt is made of blackened metal with an intricate design of flames carved into it.",
+	"durability": "150",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_slashing": 20,
+		"dmg_fire": 10
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 4,
+	"special_effects": {
+		"fire_damage": "Deals additional fire damage with each hit."
+	},
+	"special_weapon_skills": {
+		"sword_mastery": "Grants a bonus to Sword Mastery skill."
+	}
+},
+{
+	"name": "Amulet of Strength",
+	"description": "An amulet imbued with the power of strength, enhancing the wearer's physical abilities.",
+	"looks": "The Amulet of Strength is a small pendant made of silver, engraved with ancient symbols of strength. It hangs from a leather cord and emits a faint golden glow.",
+	"durability": "100",
+	"item_usage": "trinket",
+	"stat_bonus": {
+		"str": 5,
+		"def": 3,
+		"max_hp": 5,
+		"spd": 1
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 0.5,
+	"special_effects": {
+		"strength_aura": "Provides a small bonus to nearby allies' strength."
+	}
+},
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": "100",
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+}
+]

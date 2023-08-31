@@ -1,0 +1,277 @@
+[
+{
+	"name": "Iron Sword",
+	"description": "A basic sword made of iron",
+	"looks": "The iron sword has a straight blade and a simple hilt with a leather-wrapped handle. It is a practical and versatile weapon.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_slashing": 10,
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"sword": "Grants a bonus to Sword skill when wielded."
+	}
+},
+{
+	"name": "Axe of the Blacksmith",
+	"description": "A large and heavy axe forged by a skilled blacksmith.",
+	"looks": "The Axe of the Blacksmith has a solid steel head with a sharp blade that curves inward. The handle is made of sturdy wood and wrapped in leather for a comfortable grip. The entire weapon has a rugged and worn appearance, showing signs of heavy use.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"str": 10,
+		"dmg_slashing": 15
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 5,
+	"special_weapon_skills": {
+		"axe_mastery": "Grants a bonus to Axe Mastery skill when wielded."
+	}
+},
+{
+	"name": "Iron Sword",
+	"description": "A solid iron sword with a sharp blade.",
+	"looks": "The iron sword has a straight blade with a single cutting edge. The hilt is made of leather-wrapped wood and has a simple crossguard.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20
+	},
+	"stat_bonus": {
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 4
+},
+{
+	"name": "Steel Plate Armor",
+	"description": "Heavy armor made from steel plates, providing excellent protection.",
+	"looks": "The steel plate armor consists of large, interlocking steel plates that completely cover the wearer's torso, back, shoulders, arms, and legs. It is designed to distribute the weight evenly and provide maximum protection.",
+	"durability": 300,
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"def": 15,
+		"max_hp": 100
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 25
+},
+{
+	"name": "Longsword",
+	"description": "A versatile one-handed sword that is ideal for both slashing and stabbing attacks.",
+	"looks": "The longsword has a straight, double-edged blade with a tapering point. The hilt is made of a sturdy material and wrapped in leather for a comfortable grip.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_slashing": 15,
+		"dmg_piercing": 10,
+		"spd": -0.5
+	},
+	"usage_requirements": {
+		"str": 12,
+		"dex": 12
+	},
+	"weight": 2.5,
+	"special_weapon_skils": {
+		"sword_skill": "Grants a bonus to Sword skill when equipped."
+	}
+},
+{
+	"name": "Iron Axe",
+	"description": "A sturdy iron axe with a sharp blade, suitable for chopping wood or enemies.",
+	"looks": "The iron axe has a long wooden handle with a solid iron head. The head has a sharp blade on one side and a hook-like spike on the other.",
+	"durability": 120,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20
+	},
+	"stat_bonus": {
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 4,
+	"special_weapon_skils": {
+		"axe_mastery": "Grants a bonus to axe-related skills when wielded."
+	}
+},
+{
+	"name": "Amulet of Strength",
+	"description": "An amulet imbued with the power of strength, enhancing the wearer's physical abilities.",
+	"looks": "The amulet is made of a sturdy metal chain with a pendant in the shape of a clenched fist. The fist is carved from a dark stone and radiates a faint aura of power.",
+	"durability": 80,
+	"item_usage": "trinket",
+	"stat_bonus": {
+		"str": 10,
+		"max_hp": 20
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 0.5,
+	"special_effects": {
+		"strengthen": "Empowers the wearer, providing a temporary increase to strength."
+	}
+},
+{
+	"name": "Steel Sword",
+	"description": "A sturdy sword made of steel",
+	"looks": "The sword has a straight, double-edged blade with a sharp point. The hilt is made of polished steel and has a leather-wrapped grip for a secure hold.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"str": 5,
+		"dex": 2,
+		"dmg_physical": 15
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill when wielded."
+	}
+},
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": 100,
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+	"name": "Silver Dagger",
+	"description": "A small silver dagger, perfect for close combat or stealthy attacks.",
+	"looks": "The silver dagger has a short, sharp blade and a hilt wrapped in black leather. The pommel is adorned with a small silver gemstone.",
+	"durability": 80,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10
+	},
+	"stat_bonus": {
+		"dex": 2
+	},
+	"usage_requirements": {
+		"dex": 10
+	},
+	"weight": 0.5,
+	"special_weapon_skils": {
+		"dagger": "Increases effectiveness with dagger attacks."
+	}
+},
+{
+	"name": "Iron Sword",
+	"description": "A basic sword made of iron.",
+	"looks": "The iron sword has a straight blade with a single cutting edge. The hilt is made of wood and wrapped in leather for a comfortable grip.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20
+	},
+	"stat_bonus": {
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 2.5
+},
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": 100,
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+	"name": "Iron Sword",
+	"description": "A basic sword made from iron",
+	"looks": "The iron sword has a straight blade with a single cutting edge and a simple crossguard. The hilt is made of leather wrapped around the tang.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20
+	},
+	"stat_bonus": {
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 4,
+	"special_weapon_skils": {
+		"swordmanship": "Grants a bonus to Swordsmanship skill when used."
+	}
+},
+{
+	"name": "Steel Sword",
+	"description": "A sharp and sturdy sword made of steel",
+	"looks": "The steel sword has a straight blade with a sharp edge. The hilt is made of leather and has a crossguard to protect the hand.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_slashing": 20,
+		"str": 5,
+		"dex": 2
+	},
+	"usage_requirements": {
+		"str": 12,
+		"dex": 8
+	},
+	"weight": 2,
+	"special_weapon_skills": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill when used."
+	}
+},
+{
+	"name": "Diamond Sword",
+	"description": "A powerful sword made from a single diamond crystal.",
+	"looks": "The Diamond Sword has a gleaming blade that is perfectly cut from a single diamond crystal. The hilt is crafted from silver and adorned with intricate engravings.",
+	"durability": 500,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 100
+	},
+	"stat_bonus": {
+		"str": 10,
+		"dex": 5
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 5,
+	"special_weapon_skills": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill."
+	}
+}
+]

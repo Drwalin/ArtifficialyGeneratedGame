@@ -1,0 +1,316 @@
+[
+{
+	"name": "Iron Sword",
+	"description": "A basic iron sword for close combat.",
+	"looks": "A simple blade with a hilt made of iron.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 2
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 2
+},
+{
+	"name": "Sword of the Dragon",
+	"description": "A powerful sword forged with dragon scales.",
+	"looks": "The Sword of the Dragon has a shiny blade made of silver and is adorned with intricate dragon engravings.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 50,
+		"dmg_fire": 20
+	},
+	"stat_bonus": {
+		"str": 10,
+		"luck": 5
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 5,
+	"special_weapon_skills": {
+		"swordsmanship": "Increases damage dealt with swords."
+	},
+	"special_effects": {
+		"dragon_slayer": "Deals bonus damage against dragons."
+	}
+},
+{
+	"name": "Sword of Fire",
+	"description": "A blazing sword that burns its enemies.",
+	"looks": "The sword has a long, curved blade with flames dancing along its edge. The hilt is made of blackened steel adorned with intricate engravings.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10,
+		"dmg_fire": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 2
+	},
+	"usage_requirements": {
+		"str": 8
+	},
+	"weight": 3,
+	"special_effects": {
+		"burning_touch": "Chance to set targets on fire with each hit."
+	}
+},
+{
+	"name": "Steel Sword",
+	"description": "A sturdy steel sword suitable for close combat.",
+	"looks": "The sword has a long, straight blade with a silver hilt adorned with intricate engravings.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 2,
+		"dex": 1
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 3.5,
+	"special_weapon_skills": {
+		"swordsmanship": "Increases damage and accuracy with swords."
+	}
+},
+{
+	"name": "Longsword",
+	"description": "A long and sturdy sword",
+	"looks": "The blade is made of steel and the hilt is wrapped in leather",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 2
+	},
+	"weight": 2
+},
+{
+	"name": "Iron Sword",
+	"description": "A basic iron sword.",
+	"looks": "A simple sword made of iron with a leather-wrapped handle.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10
+	},
+	"stat_bonus": {
+		"str": 2
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 3.5,
+	"special_weapon_skills": {
+		"swordsmanship": "Increases sword damage by 10%"
+	}
+},
+{
+	"name": "Sword of Fire",
+	"description": "A mighty sword enchanted with the power of fire.",
+	"looks": "The sword has a blade made of shimmering red hot flames, with a hilt adorned with intricately designed flames.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20,
+		"dmg_fire": 10
+	},
+	"stat_bonus": {
+		"str": 5,
+		"max_hp": 10
+	},
+	"weight": 2,
+	"special_weapon_skills": {
+		"swordsmanship": "Increases sword damage by 10%"
+	},
+	"special_effects": {
+		"fire_resistance": "Provides resistance to fire damage"
+	}
+},
+{
+	"name": "Sword of the Brave",
+	"description": "A mighty sword that instills courage in the wielder.",
+	"looks": "The Sword of the Brave is a longsword made of shining steel with an intricate hilt design and a glowing blue gem embedded in the pommel.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 25
+	},
+	"stat_bonus": {
+		"str": 5,
+		"def": 10
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 2.5,
+	"special_weapon_skills": {
+		"swordsmanship": "Increases damage with swords."
+	},
+	"special_effects": {
+		"courage": "Gives a temporary boost to courage, increasing resistance to fear effects."
+	}
+},
+{
+	"name": "Steel Sword",
+	"description": "A strong and sturdy sword made of steel.",
+	"looks": "The sword has a shiny and polished blade with a hilt wrapped in leather for a firm grip.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 2
+	},
+	"usage_requirements": {
+		"str": 10,
+		"dex": 5
+	},
+	"weight": 4
+},
+{
+	"name": "Iron Sword",
+	"description": "A basic iron sword.",
+	"looks": "The sword has a simple iron blade and a leather-wrapped hilt.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10
+	},
+	"stat_bonus": {
+		"str": 3
+	},
+	"weight": 2.5,
+	"special_weapon_skills": {
+		"sword": "Increases sword skill by 10%"
+	}
+},
+{
+	"name": "Steel Sword",
+	"description": "A sharp and sturdy sword made from steel.",
+	"looks": "The sword has a long, silver blade and a hilt wrapped in black leather. It has a balanced weight and feels comfortable to hold.",
+	"durability": 60,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 25
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 2
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"none": "No special effects."
+	}
+},
+{
+	"name": "Vorpal Blade",
+	"description": "A deadly sword with a razor-sharp edge that can slice through any material.",
+	"looks": "The Vorpal Blade is a longsword with a silver blade and a hilt adorned with intricate engravings.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 50,
+		"dmg_dark": 20
+	},
+	"stat_bonus": {
+		"str": 10,
+		"luck": 5,
+		"max_hp": 50
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 2,
+	"special_weapon_skills": {
+		"swordmanship": "Grants additional damage with swords."
+	},
+	"special_effects": {
+		"vorpal_strike": "Has a chance to instantly kill enemies with low health."
+	}
+},
+{
+	"name": "Iron Sword",
+	"description": "A sturdy sword made of iron.",
+	"looks": "The sword has a broad blade with a simple hilt and a leather-wrapped handle.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 2,
+		"dex": 1
+	},
+	"usage_requirements": {
+		"str": 10,
+		"dex": 8
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"parry": "Has a 20% chance to parry incoming attacks.",
+		"bleed": "Has a 10% chance to cause bleeding on critial hits."
+	}
+},
+{
+	"name": "Ruby Ring",
+	"description": "A beautiful ring with a large red ruby on top.",
+	"looks": "The ring is made of gold and has intricate engravings all around the band. The ruby is a deep red color and sparkles in the light.",
+	"durability": 50,
+	"item_usage": "wear_hand",
+	"dmg": {
+		"dmg_fire": 5
+	},
+	"stat_bonus": {
+		"int": 2,
+		"wis": 2,
+		"luck": 1
+	},
+	"usage_requirements": {
+		"level": 10
+	},
+	"weight": 0.5,
+	"special_effects": {
+		"fire_affinity": "Increases fire damage by 10%"
+	}
+},
+{
+	"name": "Steel Sword",
+	"description": "A sturdy steel sword with a sharp blade.",
+	"looks": "The sword has a straight, double-edged blade and a hilt wrapped in leather.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20
+	},
+	"stat_bonus": {
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 2.5,
+	"special_weapon_skills": {
+		"swordsmanship": "Increases sword damage by 10%"
+	}
+}
+]

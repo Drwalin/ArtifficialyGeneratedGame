@@ -1,0 +1,264 @@
+[
+{
+	"name": "Fireball Scroll",
+	"description": "A scroll containing a fireball spell.",
+	"looks": "The scroll is made of parchment and is adorned with intricate fire symbols.",
+	"durability": 1,
+	"item_usage": "util",
+	"dmg": {
+		"dmg_fire": 75
+	},
+	"usage_requirements": {
+		"int": 10
+	},
+	"weight": 0.05,
+	"special_effects": {
+		"burning": "Deals bonus damage over time due to fire effect."
+	}
+},
+{
+	"name": "Energy Drink",
+	"description": "A can of energy drink that provides a quick burst of energy.",
+	"looks": "The energy drink is packaged in a colorful aluminum can with bold branding.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"stat_bonus": {
+		"sta": 25,
+		"spd": 5
+	},
+	"weight": 0.3
+},
+{
+	"name": "Speed Boost Potion",
+	"description": "A potion that enhances the drinker's speed and movement capabilities.",
+	"looks": "A small glass vial filled with a sparkling yellow liquid.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"stat_bonus": {
+		"spd": 10
+	},
+	"weight": 0.1
+},
+{
+	"name": "Invisibility Potion",
+	"description": "A potion that grants the user temporary invisibility.",
+	"looks": "The potion is a small glass vial filled with a transparent liquid.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"item_recipee": [
+		"Mandrake Root",
+		"Essence of Shadow"
+	],
+	"stat_bonus": {
+		"spd": 20
+	},
+	"usage_requirements": {
+		"int": 15
+	},
+	"weight": 0.2,
+	"special_effects": {
+		"Invisibility": "Grants temporary invisibility to the user"
+	}
+},
+{
+	"name": "Gloves of Strength",
+	"description": "These gloves enhance the wearer's strength and improve their melee damage.",
+	"looks": "The gloves are made of fine leather and have intricate designs etched into them. They emit a faint red glow.",
+	"durability": 100,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"str": 3,
+		"dmg_physical": 5
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 0.5
+},
+{
+	"name": "Slow Healing Potion",
+	"description": "A potion that restores health points.",
+	"looks": "A small, glass vial filled with a glowing, green liquid.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"dmg_over_time": {
+		"dmg_light": [-80, 10]
+	},
+	"weight": 0.1
+},
+{
+	"name": "Enchanted Sword",
+	"description": "A powerful sword infused with magical energies.",
+	"looks": "The sword has a gleaming silver blade and a hilt adorned with intricate runes.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20,
+		"dmg_lightning": 5
+	},
+	"stat_bonus": {
+		"str": 10,
+		"dex": 5
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 2.5,
+	"special_weapon_skills": {
+		"Sword Mastery": "Increases damage dealt with swords",
+		"Lightning Strike": "Chance to deal bonus lightning damage on hit"
+	},
+	"special_effects": {
+		"Electrifying Aura": "Emits an electrifying aura that shocks nearby enemies"
+	}
+},
+{
+  "name": "Fireball Scroll",
+  "description": "A scroll that contains the Fireball spell, which allows the user to cast a powerful fireball at their enemies.",
+  "looks": "The scroll is made of ancient parchment, covered in intricate symbols and writings.",
+  "durability": 1,
+  "item_usage": "util",
+  "item_recipee": [
+    "Parchment",
+    "Fire Essence"
+  ],
+  "dmg": {
+    "dmg_fire": 100
+  },
+  "stat_bonus": {
+    "int": 5,
+    "max_mp": 20
+  },
+  "usage_requirements": {
+    "int": 15
+  },
+  "weight": 0.05,
+  "special_effects": {
+    "burning": "On hit, the fireball has a chance to set the target on fire, dealing additional damage over time."
+  }
+},
+{
+	"name": "Bow of Accuracy",
+	"description": "A bow that grants increased accuracy and damage to the user.",
+	"looks": "The bow is made of polished wood and adorned with intricate carvings.",
+	"durability": 100,
+	"item_usage": "two_hand",
+	"stat_bonus": {
+		"dex": 10,
+		"dmg_physical": 20
+	},
+	"usage_requirements": {
+		"dex": 15
+	},
+	"weight": 2.5,
+	"special_weapon_skills": {
+		"archery": "Increases the accuracy and damage of bows."
+	}
+},
+{
+	"name": "Fireball Scroll",
+	"description": "A scroll that allows the user to cast a powerful fireball spell.",
+	"looks": "A rolled-up parchment with intricate symbols and runes etched into the surface.",
+	"durability": 1,
+	"item_usage": "util",
+	"item_recipee": [
+		"Blank Scroll",
+		"Fire Essence"
+	],
+	"dmg": {
+		"dmg_fire": 200
+	},
+	"stat_bonus": {
+		"cast_speed": -0.5
+	},
+	"usage_requirements": {
+		"int": 10
+	},
+	"weight": 0.2,
+	"special_effects": {
+		"explodes_on_impact": "The fireball explodes upon impact, dealing additional area of effect damage."
+	}
+},
+{
+	"name": "Fire Sword",
+	"description": "A sword imbued with the power of fire, giving it the ability to deal fire damage to enemies.",
+	"looks": "The sword has a blade made of glowing red metal, with flames flickering along its edges.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 50,
+		"dmg_fire": 10
+	},
+	"stat_bonus": {
+		"dex": 10
+	},
+	"usage_requirements": {
+		"dex": 20
+	},
+	"weight": 2.5,
+	"special_weapon_skils": {
+		"Fire Mastery": "Increases fire damage and fire resistance."
+	},
+	"special_effects": {
+		"Burning": "Has a chance to set enemies on fire, dealing additional damage over time."
+	}
+},
+{
+	"name": "Mana Restoration Potion",
+	"description": "Restores a portion of the user's mana",
+	"looks": "A small vial filled with a shimmering blue liquid",
+	"durability": 1,
+	"item_usage": "consumable",
+	"stat_bonus": {
+		"mp": 50
+	},
+	"weight": 0.1
+},
+{
+	"name": "Invisibility Potion",
+	"description": "A potion that grants temporary invisibility to the user.",
+	"looks": "The potion is a clear liquid, almost transparent.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"stat_bonus": {
+		"spd": 10
+	},
+	"weight": 0.2,
+	"special_effects": {
+		"Invisibility": "Grants temporary invisibility for a certain duration."
+	}
+},
+{
+	"name": "Elixir of Fortitude",
+	"description": "A powerful elixir that increases the drinker's maximum health and provides health regeneration.",
+	"looks": "A glowing golden liquid contained in a small crystal vial.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"item_recipee": [
+		"Golden Flowers",
+		"Crystallized Essence",
+		"Mystic Water"
+	],
+	"stat_bonus": {
+		"max_hp": 100,
+		"regen_hp": 5
+	},
+	"weight": 0.2
+},
+{
+	"name": "Strength Potion",
+	"description": "A potion that temporarily boosts the drinker's strength and melee damage.",
+	"looks": "The potion is a vibrant red color, swirling with energy.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"item_recipee": [
+		"Brewer's Yeast",
+		"Enchanted Ruby"
+	],
+	"stat_bonus": {
+		"str": 5
+	},
+	"weight": 0.1
+}
+]

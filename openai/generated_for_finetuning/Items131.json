@@ -1,0 +1,282 @@
+[
+{
+	"name": "Silver Sword",
+	"description": "A beautifully crafted sword made of pure silver.",
+	"looks": "The silver sword has a shining, polished blade with intricate engravings. The hilt is wrapped in leather, providing a comfortable grip.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 25
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 2.5,
+	"special_weapon_skils": {
+		"swordsmanship": "Increases damage done with swords."
+	}
+},
+{
+	"name": "Iron Sword",
+	"description": "A basic iron sword, suitable for beginners.",
+	"looks": "The iron sword has a simple, straight blade with a single edge. The hilt is made of wooden grip wrapped in leather, and the pommel has a round shape.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 4.5
+},
+{
+	"name": "Silver Sword",
+	"description": "A finely crafted sword made from pure silver.",
+	"looks": "The Silver Sword has a gleaming blade that reflects light. The hilt is adorned with intricate engravings of mythical creatures.",
+	"durability": 300,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_physical": 15,
+		"spd": 2
+	},
+	"usage_requirements": {
+		"str": 20,
+		"dex": 15
+	},
+	"weight": 4
+},
+{
+	"name": "Longsword",
+	"description": "A versatile sword with a long blade and a hilt for two-handed grip.",
+	"looks": "The longsword has a straight, double-edged blade that is approximately three feet in length. The hilt is made of leather-wrapped wood and has a crossguard for hand protection.",
+	"durability": 150,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_physical": 20
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3,
+		"spd": 2
+	},
+	"weight": 2.5,
+	"special_weapon_skils": {
+		"sword_mastery": "Grants a bonus to Sword Mastery skill when equipped."
+	}
+},
+{
+	"name": "Iron Dagger",
+	"description": "A small dagger made of iron, perfect for close-quarter combat.",
+	"looks": "The iron dagger has a short blade, measuring about six inches long. The handle is made of leather with a simple crossguard for grip.",
+	"durability": 80,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10
+	},
+	"stat_bonus": {
+		"spd": 5,
+		"dex": 2
+	},
+	"usage_requirements": {
+		"dex": 10
+	},
+	"weight": 1.5,
+	"special_weapon_skils": {
+		"dagger_mastery": "Grants a bonus to Dagger Mastery skill when used."
+	}
+},
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": 100,
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+	"name": "Staff of Fire",
+	"description": "A powerful staff imbued with the elemental power of fire.",
+	"looks": "The Staff of Fire is a tall staff made from polished wood. It has a carved dragon head at the top, with flames painted along the length of the staff.",
+	"durability": 150,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_fire": 50
+	},
+	"stat_bonus": {
+		"int": 10,
+		"wis": 5,
+		"max_mp": 50,
+		"def": 5,
+		"resistance_fire": 20,
+		"cast_speed": 2
+	},
+	"usage_requirements": {
+		"int": 30
+	},
+	"weight": 4,
+	"special_weapon_skils": {
+		"fire_magic": "Increases the power of fire-based spells and abilities"
+	},
+	"special_effects": {
+		"pyroblast": "Has a chance to unleash a powerful fiery explosion with each attack"
+	}
+},
+{
+	"name": "Steel Gauntlets",
+	"description": "Heavy steel gauntlets that provide excellent hand protection.",
+	"looks": "The steel gauntlets are made of solid steel plates, covering the hands and extending up to the forearms. They have intricate engravings along the surface and are secured with leather straps.",
+	"durability": 150,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 8
+	},
+	"usage_requirements": {
+		"str": 12,
+		"dex": 8
+	},
+	"weight": 4
+},
+{
+	"name": "Iron Sword",
+	"description": "A sturdy iron sword with a sharp blade.",
+	"looks": "The iron sword has a straight blade with a single cutting edge. The hilt is made of leather and has a crossguard for added protection.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 25
+	},
+	"stat_bonus": {
+		"str": 5,
+		"spd": 1
+	},
+	"weight": 4
+},
+{
+	"name": "Iron Sword",
+	"description": "A basic iron sword",
+	"looks": "The iron sword has a straight, double-edged blade and a simple hilt with a leather grip. It is a standard weapon used by many warriors.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 2
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill when equipped."
+	}
+},
+{
+	"name": "Steel Gauntlets",
+	"description": "Heavy gauntlets made of steel",
+	"looks": "The gauntlets are made of thick steel plates, covering the hands and wrists. They have a rough texture and are secured with adjustable leather straps.",
+	"durability": 150,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 8,
+		"str": 2
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 3.5
+},
+{
+	"name": "Golden Sword",
+	"description": "A shining sword made of pure gold, imbued with magical properties.",
+	"looks": "The Golden Sword has a long, slender blade that gleams with a bright golden hue. The hilt is intricately designed, with golden engravings of mythical creatures. It emits a faint magical aura.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 50,
+		"dmg_light": 20
+	},
+	"stat_bonus": {
+		"dex": 10,
+		"def": 5
+	},
+	"usage_requirements": {
+		"str": 20,
+		"dex": 15
+	},
+	"weight": 3.5,
+	"special_weapon_skills": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill when wielded."
+	},
+	"special_effects": {
+		"lightning_strike": "Has a chance to unleash a powerful lightning strike on a successful hit."
+	}
+},
+{
+	"name": "Iron Sword",
+	"description": "A basic sword made of iron",
+	"looks": "The iron sword has a straight blade with a double-edged design. The handle is wrapped in leather for a better grip.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_physical": 10,
+		"str": 2
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 5
+},
+{
+	"name": "Silver Wand",
+	"description": "A slender wand made from pure silver.",
+	"looks": "The silver wand is smooth and polished, with intricate engravings along its length. It has a pointed tip and a small crystal embedded at the top.",
+	"durability": 80,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"max_mp": 30,
+		"int": 5,
+		"wis": 2,
+		"cast_speed": 1
+	},
+	"usage_requirements": {
+		"int": 15
+	},
+	"weight": 0.5,
+	"special_weapon_skils": {
+		"magic_missile": "Allows the wielder to cast the Magic Missile spell."
+	}
+},
+{
+	"name": "Steel Helmet",
+	"description": "A sturdy helmet made of steel.",
+	"looks": "The helmet is made of smooth steel with a silver tint. It has a visor that can be opened and closed.",
+	"durability": 200,
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 10,
+		"max_hp": 50
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 5
+}
+]

@@ -1,0 +1,300 @@
+[
+{
+	"name": "Sword of the Mighty",
+	"description": "A powerful sword that exudes an aura of strength and power.",
+	"looks": "The Sword of the Mighty is a large two-handed sword with a razor-sharp blade. The hilt is made of polished steel and adorned with intricate engravings.",
+	"durability": 100,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_physical": 50
+	},
+	"stat_bonus": {
+		"str": 10,
+		"spd": -5,
+		"def" : 20
+	},
+	"weight": 5,
+	"special_weapon_skils": {
+		"swordsmanship": "Increases damage dealt with swords by 10%"
+	},
+	"special_effects": {
+		"mighty_strike": "Has a chance to deal double damage on each swing"
+	}
+},
+{
+	"name": "Iron Sword",
+	"description": "A basic iron sword for melee combat.",
+	"looks": "The iron sword has a simple straight blade and a hilt with a leather grip.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"item_recipee": [
+		"Iron Ingot",
+		"Wooden Handle"
+	],
+	"dmg": {
+		"dmg_physical": 20
+	},
+	"stat_bonus": {},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 2.5,
+	"special_weapon_skills": {
+		"Swordsmanship": "Grants bonuses to Swordsmanship skill"
+	},
+	"special_effects": {}
+},
+{
+	"name": "Iron Sword",
+	"description": "A basic iron sword.",
+	"looks": "The sword has a simple design with a hilt made of leather and a blade made of iron.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10
+	},
+	"stat_bonus": {
+		"str": 2,
+		"dex": -1
+	},
+	"usage_requirements": {
+		"str": 5
+	},
+	"weight": 3.5,
+	"special_effects": {
+		"none": "No special effects."
+	}
+},
+{
+	"name": "Iron Sword",
+	"description": "A sturdy iron sword with a sharp blade.",
+	"looks": "The iron sword has a simple hilt with a crossguard and a straight blade that measures about 3 feet in length.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10
+	},
+	"stat_bonus": {
+		"str": 2
+	},
+	"usage_requirements": {
+		"str": 8
+	},
+	"weight": 2
+},
+{
+	"name": "Iron Sword",
+	"description": "A sturdy iron sword with a sharp blade.",
+	"looks": "The iron sword has a long, straight blade with a simple hilt. It has a dull gray color.",
+	"durability": 50,
+	"item_usage": "one_hand",
+	"item_recipee": [
+		"Iron Ingot",
+		"Wooden Handle"
+	],
+	"dmg": {
+		"dmg_physical": 10
+	},
+	"stat_bonus": {
+		"str": 2
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 2.5,
+	"special_weapon_skils": {
+		"Swordsmanship": "Allows the player to use the sword more effectively."
+	}
+},
+{
+	"name": "Iron Sword",
+	"description": "A sturdy iron sword with a sharp blade.",
+	"looks": "The sword has a hilt wrapped in leather and a straight blade with a slight curve near the tip.",
+	"durability": 50,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10
+	},
+	"stat_bonus": {
+		"str": 2
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 2
+},
+{
+	"name": "Sword of Flames",
+	"description": "A powerful sword imbued with the power of fire.",
+	"looks": "The sword has a long, silver blade with intricate engravings. The hilt is adorned with red gems that seem to glow with inner fire.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10,
+		"dmg_fire": 20
+	},
+	"stat_bonus": {
+		"str": 10,
+		"dex": 5
+	},
+	"weight": 2.5,
+	"special_weapon_skills": {
+		"fire_sword": "Allows the wielder to perform special fire-based sword techniques."
+	},
+	"special_effects": {
+		"flame_strike": "Has a chance to engulf enemies in flames on hit."
+	}
+},
+{
+	"name": "Iron Sword",
+	"description": "A basic sword made of iron",
+	"looks": "The sword has a simple design with a straight blade and a hilt made of leather",
+	"durability": 50,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10
+	},
+	"stat_bonus": {
+		"str": 2,
+		"dex": -1
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 3,
+	"special_weapon_skills": {
+		"sword_fighting": "Grants basic sword fighting techniques"
+	}
+},
+{
+	"name": "Iron Sword",
+	"description": "A basic iron sword.",
+	"looks": "The sword has a simple, straight blade made of iron, with a hilt wrapped in leather.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10
+	},
+	"stat_bonus": {
+		"str": 2
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 2
+},
+{
+	"name": "Iron Sword",
+	"description": "A basic sword made of iron",
+	"looks": "The sword has a simple design with a straight blade and a hilt wrapped in leather",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10
+	},
+	"stat_bonus": {
+		"str": 2
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 2
+},
+{
+	"name": "Sword of the Brave",
+	"description": "A powerful sword that boosts the courage of its wielder.",
+	"looks": "The sword has a gleaming blade with intricate engravings. The hilt is adorned with a lion's head.",
+	"durability": 250,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"def": 2
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 3,
+	"special_weapon_skils": {
+		"swordsmanship": "Grants bonus damage with swords."
+	},
+	"special_effects": {
+		"courage": "Boosts the courage of the wielder, providing a temporary bonus to defense."
+	}
+},
+{
+	"name": "Iron Sword",
+	"description": "A sturdy iron sword",
+	"looks": "The sword has a straight blade with a slightly worn hilt",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10
+	},
+	"stat_bonus": {
+		"str": 3
+	},
+	"usage_requirements": {
+		"str": 5
+	},
+	"weight": 5,
+	"special_weapon_skils": {},
+	"special_effects": {}
+},
+{
+	"name": "Sword of Fire",
+	"description": "A blazing sword imbued with the power of fire.",
+	"looks": "The sword has a long and slender blade with flame-like patterns running along its surface. The hilt is made of blackened steel with a fiery gem embedded in it.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20,
+		"dmg_fire": 10
+	},
+	"stat_bonus": {
+		"str": 5,
+		"int": -2
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 3,
+	"special_weapon_skills": {
+		"fire_skill": "Increases fire damage by 20%"
+	},
+	"special_effects": {
+		"fire_attack": "Has a chance to burn enemies on hit"
+	}
+},
+{
+	"name": "Iron Sword",
+	"description": "A basic iron sword.",
+	"looks": "The iron sword has a simple design with a plain hilt and a straight blade.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10
+	},
+	"stat_bonus": {
+		"str": 2
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 3
+},
+{"name": "Potion of Healing", 
+"description": "A magical potion that restores a small amount of health.", 
+"looks": "A small vial filled with glowing red liquid.", 
+"durability": 1, 
+"item_usage": "consumable", 
+"dmg": {}, 
+"dmg_over_time": {}, 
+"stat_bonus": {}, 
+"usage_requirements": {}, 
+"weight": 0.1, 
+"special_weapon_skils": {}, 
+"special_effects": {"Healing": "Restores 50 health."}}
+]

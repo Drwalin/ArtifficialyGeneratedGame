@@ -1,0 +1,301 @@
+[
+{
+	"name": "Steel Longsword",
+	"description": "A longsword made from sturdy steel, suitable for skilled swordsmen.",
+	"looks": "The steel longsword has a straight blade with a single cutting edge. The hilt is wrapped in leather for a secure grip. The pommel is adorned with a simple decorative design.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_slashing": 15,
+		"str": 5
+	},
+	"usage_requirements": {
+		"dex": 12,
+		"str": 15
+	},
+	"weight": 3.5,
+	"special_weapon_skills": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill when wielded."
+	},
+	"special_effects": {
+		"bleeding": "Chance to cause bleeding damage with each successful hit."
+	}
+},
+{
+	"name": "Fiery Sword",
+	"description": "A sword imbued with the power of fire, capable of dealing fire damage to enemies.",
+	"looks": "The Fiery Sword has a long, gleaming blade made of enchanted steel. The hilt is wrapped in leather and has intricate patterns carved into it. The blade emits a faint red glow, and wisps of flames dance along its edges.",
+	"durability": 250,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_fire": 25,
+		"def": 5
+	},
+	"usage_requirements": {
+		"str": 20,
+		"dex": 15
+	},
+	"weight": 4,
+	"special_weapon_skils": {
+		"Fire Mastery": "Increases damage dealt by fire-based attacks."
+	},
+	"special_effects": {
+		"Fiery Strike": "Has a chance to set enemies on fire upon successful hit."
+	}
+},
+{
+	"name": "Iron Axe",
+	"description": "A sturdy iron axe with a wooden handle. It is ideal for chopping wood or hacking enemies.",
+	"looks": "The iron axe has a sharp, curved blade made of solid iron. The handle is made of sturdy wood and has a comfortable grip.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 25
+	},
+	"stat_bonus": {
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 4,
+	"special_weapon_skils": {
+		"axe_mastery": "Grants a bonus to Axe Mastery skill when wielded."
+	}
+},
+{
+	"name": "Elven Bow",
+	"description": "A beautifully crafted bow made from the wood of the ancient elven trees.",
+	"looks": "The Elven Bow has a slender and graceful design, with intricate carvings of elven symbols along its length. The wood is smooth and polished to a glossy finish.",
+	"durability": 150,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"usage_requirements": {
+		"dex": 20
+	},
+	"weight": 2.5,
+	"special_weapon_skils": {
+		"archery": "Increases accuracy and damage with bows."
+	}
+},
+{
+	"name": "Bone Dagger",
+	"description": "A small dagger carved from a bone",
+	"looks": "The bone dagger is approximately 6 inches long and has a sharp, pointy blade. The handle is wrapped in leather for a better grip",
+	"durability": 75,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10
+	},
+	"stat_bonus": {
+		"dex": 3
+	},
+	"usage_requirements": {
+		"dex": 10
+	},
+	"weight": 0.5,
+	"special_weapon_skills": {
+		"dagger_proficiency": "Grants a bonus to Dagger skill when used"
+	}
+},
+{
+	"name": "Ruby Staff",
+	"description": "A staff imbued with the power of fire, radiating a warm glow and crackling with flames.",
+	"looks": "The Ruby Staff is a tall and slender staff made of polished wood, with a large ruby embedded at the top. The ruby glows brightly and emits sparks and flames. The staff is adorned with intricate carvings of fire symbols along its length.",
+	"durability": 200,
+	"item_usage": "two_hand",
+	"stat_bonus": {
+		"dmg_fire": 10,
+		"max_mp": 30,
+		"int": 5,
+		"def": 5
+	},
+	"usage_requirements": {
+		"int": 25,
+		"wis": 20
+	},
+	"weight": 4,
+	"special_effects": {
+		"fireball": "Allows the wielder to cast fireball spells.",
+		"burning_touch": "Adds a chance to apply a burning effect on melee attacks."
+	},
+	"special_weapon_skills": {
+		"staff": "Increases damage and accuracy when using a staff."
+	}
+},
+{
+	"name": "Steel Plate Armor",
+	"description": "A heavy and durable armor made of steel plates.",
+	"looks": "The steel plate armor is made of thick steel plates that cover the entire body. It has a polished silver finish and is adorned with intricate engravings along the edges. The armor includes a helmet, chest plate, gauntlets, and greaves to provide full-body protection.",
+	"durability": 300,
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"def": 15,
+		"max_hp": 100,
+		"weight": -10
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 30
+},
+{
+	"name": "Iron Sword",
+	"description": "A sturdy iron sword with a sharp blade, suitable for close combat.",
+	"looks": "The iron sword has a straight blade with a double-edged edge. The hilt is made of wood and wrapped in leather for a comfortable grip.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_physical": 20,
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 4,
+	"special_weapon_skils": {
+		"swordsmanship": "Increases damage and accuracy when wielding swords."
+	}
+},
+{
+	"name": "Steel Axe",
+	"description": "A heavy steel axe designed for chopping wood or carving through enemies.",
+	"looks": "The steel axe has a long wooden handle with a steel blade at the top. The blade is sharp and shiny, and the handle is wrapped with leather for a better grip.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": -2
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 4,
+	"special_weapon_skils": {
+		"axe": "Grants a bonus to Axe skill when wielded."
+	}
+},
+{
+	"name": "Steel Sword",
+	"description": "A strong and sturdy sword made of steel",
+	"looks": "The steel sword has a long, straight blade with a double-edged design. The hilt is made of polished wood and has a crossguard for added protection.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_slashing": 20,
+		"str": 5,
+		"dex": 3
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 4,
+	"special_weapon_skils": {
+		"swordmanship": "Increases damage and accuracy when using swords."
+	}
+},
+{
+	"name": "Fireball Staff",
+	"description": "A staff infused with the power of fire, allowing the wielder to cast powerful fireball spells.",
+	"looks": "The Fireball Staff is crafted from a sturdy oak wood, with intricate carvings of flames along the length of the staff. At the top, there is a glowing fire gem embedded in a metal socket.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_fire": 50
+	},
+	"stat_bonus": {
+		"wis": 5,
+		"max_mp": 100,
+		"regen_mp": 5
+	},
+	"usage_requirements": {
+		"int": 25
+	},
+	"weight": 4,
+	"special_weapon_skils": {
+		"fire_magic": "Allows the wielder to use advanced fire magic spells."
+	},
+	"special_effects": {
+		"ignite": "Chance to set targets on fire with fireball spells."
+	}
+},
+{
+	"name": "Firebrand Sword",
+	"description": "A sword imbued with the power of fire, dealing additional fire damage to enemies.",
+	"looks": "The Firebrand Sword has a curved blade with a fiery pattern etched along the surface. The hilt is wrapped in red leather, and the pommel is adorned with a small flame emblem.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15,
+		"dmg_fire": 10
+	},
+	"stat_bonus": {
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"flame_sword": "Allows the use of Flame Sword skill, which imbues the blade with fire for a short duration, increasing its damage."
+	}
+},
+{
+	"name": "Mighty Warhammer",
+	"description": "A massive warhammer capable of crushing skulls and breaking bones with a single swing.",
+	"looks": "The Mighty Warhammer is a colossal weapon, with a solid steel head and a sturdy wooden shaft. It has intricate engravings along the head, depicting scenes of battles and conquests. The handle is wrapped in leather for a secure grip.",
+	"durability": 150,
+	"item_usage": "two_hand",
+	"stat_bonus": {
+		"str": 8,
+		"dmg_blunt": 10
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 12,
+	"special_weapon_skills": {
+		"Crushing Blow": "Chance to stun the target with a powerful blow."
+	}
+},
+{
+	"name": "Stone Dagger",
+	"description": "A simple dagger made from stone",
+	"looks": "The stone dagger has a sharp, pointed blade made from a piece of stone. The handle is wrapped in leather for a better grip.",
+	"durability": 50,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_physical": 10,
+		"spd": 1
+	},
+	"usage_requirements": {
+		"dex": 10
+	},
+	"weight": 0.5
+},
+{
+	"name": "Steel Longsword",
+	"description": "A well-crafted longsword made from steel",
+	"looks": "The Steel Longsword has a blade that is approximately 3 feet long, with a single cutting edge. The hilt is wrapped in brown leather for a comfortable grip, with a simple crossguard and pommel.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_slashing": 20,
+		"def": 2
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 12
+	},
+	"weight": 4,
+	"special_weapon_skils": {
+		"sword": "Grants a bonus to Sword skill when wielded."
+	}
+}
+]

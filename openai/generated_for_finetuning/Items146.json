@@ -1,0 +1,285 @@
+[
+{
+	"name": "Leather Boots",
+	"description": "Comfortable boots made of high-quality leather.",
+	"looks": "The leather boots are ankle-length and have a lace-up closure. They are made from brown leather and have a cushioned sole for added comfort.",
+	"durability": 120,
+	"item_usage": "wear_feet",
+	"stat_bonus": {
+		"def": 3,
+		"spd": 1
+	},
+	"weight": 1.5
+},
+{
+	"name": "Flaming Sword",
+	"description": "A deadly sword imbued with the power of fire.",
+	"looks": "The Flaming Sword has a long, slender blade with fiery patterns etched into the metal. The hilt is made from blackened steel and is adorned with intricate carvings of flames.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10,
+		"dmg_fire": 5
+	},
+	"stat_bonus": {
+		"str": 5,
+		"def": -2
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 4,
+	"special_weapon_skils": {
+		"fire_mastery": "Increases fire damage and critical hit chance."
+	},
+	"special_effects": {
+		"burning": "Has a chance to ignite enemies, dealing additional fire damage over time."
+	}
+},
+{
+	"name": "Iron Sword",
+	"description": "A basic iron sword, suitable for beginners.",
+	"looks": "The iron sword has a straight blade with a double-edged design. The hilt is made of wood and wrapped in leather for a comfortable grip.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 2.5
+},
+{
+	"name": "Steel Plate Armor",
+	"description": "A heavy and durable armor made from steel plates.",
+	"looks": "The steel plate armor is composed of thick steel plates that cover the entire body. It has detailed engravings and sturdy straps that hold the plates in place.",
+	"durability": 300,
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"def": 15,
+		"max_hp": 100
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 30
+},
+{
+	"name": "Rusty Iron Sword",
+	"description": "An old and rusty iron sword that has seen better days.",
+	"looks": "The rusty iron sword has a dull and corroded blade. The hilt is worn and the handle is wrapped in fraying leather.",
+	"durability": 50,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": -2
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 6
+},
+{
+	"name": "Iron Sword",
+	"description": "A simple iron sword with a sharp blade.",
+	"looks": "The iron sword has a straight, double-edged blade with a sharp point. The hilt is made of leather and wrapped in a rough cloth for a better grip.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 4
+},
+{
+	"name": "Silver Blade",
+	"description": "An elegant and finely crafted sword made from pure silver.",
+	"looks": "The Silver Blade has a polished silver blade that gleams in the light. The hilt is made from engraved silver and wrapped in soft leather for a comfortable grip.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_slashing": 20,
+		"dex": 5,
+		"luck": 2,
+		"spd": 3
+	},
+	"usage_requirements": {
+		"dex": 15,
+		"str": 10
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"silver_blade": "Deals additional damage to creatures weak to silver."
+	}
+},
+{
+	"name": "Enchanted Staff",
+	"description": "A mystical staff imbued with powerful enchantments",
+	"looks": "The staff is made of polished oak wood and is adorned with intricate carvings and glowing runes. At the top, a large crystal radiates a soft light.",
+	"durability": 150,
+	"item_usage": "two_hand",
+	"stat_bonus": {
+		"max_mp": 100,
+		"int": 10,
+		"wis": 5,
+		"def": 5,
+		"regen_mp": 10
+	},
+	"usage_requirements": {
+		"int": 30,
+		"wis": 20
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"elemental_magic": "Allows the user to cast powerful elemental magic spells."
+	},
+	"special_effects": {
+		"spell_power": "Increases the power of spellcasting."
+	}
+},
+{
+	"name": "Silver Ring",
+	"description": "A simple silver ring that can be worn on any finger.",
+	"looks": "The silver ring is a plain band of polished silver. It has a smooth texture with no engravings or embellishments.",
+	"durability": 50,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"cha": 2,
+		"luck": 2
+	},
+	"weight": 0.5
+},
+{
+	"name": "Iron Sword",
+	"description": "A basic iron sword with a sharp blade.",
+	"looks": "The iron sword has a straight blade and a simple, hilt made of leather. The blade is engraved with intricate designs and has a shiny polished finish.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20
+	},
+	"stat_bonus": {
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill when used."
+	}
+},
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": 100,
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+	"name": "Master Sword",
+	"description": "A legendary sword said to be the chosen weapon of the Hero. It has the power to vanquish evil.",
+	"looks": "The Master Sword has a gleaming blade made of enchanted steel, adorned with runes and symbols of ancient power. The hilt is made of polished gold, with a blue gemstone embedded at its pommel.",
+	"durability": 999,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 50,
+		"dmg_light": 25
+	},
+	"stat_bonus": {
+		"str": 20,
+		"spd": 10
+	},
+	"weight": 5,
+	"special_effects": {
+		"blessing_of_hyrule": "Increases damage against evil enemies"
+	}
+},
+{
+	"name": "Excalibur",
+	"description": "A legendary sword said to have been wielded by King Arthur himself",
+	"looks": "Excalibur is a magnificent sword with a golden hilt and a gleaming blade. The hilt is decorated with intricate engravings and the blade is perfectly balanced.",
+	"durability": 1000,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 50,
+		"dmg_light": 20
+	},
+	"stat_bonus": {
+		"str": 20,
+		"def": 15
+	},
+	"usage_requirements": {
+		"str": 30,
+		"dex": 20,
+		"int": 15
+	},
+	"weight": 2.5,
+	"special_weapon_skills": {
+		"swordsmanship": "Increases damage with swords"
+	},
+	"special_effects": {
+		"divine_blessing": "Occasionally heals the wielder when landing a critical hit"
+	}
+},
+{
+	"name": "Healing Potion",
+	"description": "A small vial of potent healing potion that can restore health.",
+	"looks": "The healing potion is contained in a transparent glass vial with a cork stopper. The liquid inside is a bright green color.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"item_recipee": [
+		"@herb",
+		"@water",
+		"@glass_bottle"
+	],
+	"dmg": {},
+	"dmg_over_time": {},
+	"stat_bonus": {},
+	"usage_requirements": {},
+	"weight": 0.1
+},
+{
+	"name": "Iron Sword",
+	"description": "A sturdy iron sword with a sharp blade.",
+	"looks": "The iron sword has a long, straight blade with a single cutting edge. The hilt is made of wood and wrapped in leather for a comfortable grip.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20
+	},
+	"stat_bonus": {
+		"str": 2,
+		"def": 1
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 3.5,
+	"special_weapon_skills": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill when wielded."
+	}
+}
+]

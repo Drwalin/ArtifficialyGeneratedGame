@@ -1,0 +1,294 @@
+[
+{
+    "name": "Steel Gauntlets",
+    "description": "Heavy gauntlets made of steel, offering great protection for the hands and wrists.",
+    "looks": "The steel gauntlets are large and sturdy, made entirely of steel plates with reinforced joints. They have intricate engravings and a polished silver finish.",
+    "durability": 150,
+    "item_usage": "wear_hand",
+    "stat_bonus": {
+        "def": 8
+    },
+    "usage_requirements": {
+        "str": 18
+    },
+    "weight": 4
+},
+{
+	"name": "Iron Dagger",
+	"description": "A small, sharp dagger made of iron.",
+	"looks": "The iron dagger has a short, narrow blade and a simple handle made of wood. It is lightweight and easy to handle.",
+	"durability": 50,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10
+	},
+	"usage_requirements": {
+		"dex": 10
+	},
+	"weight": 0.5
+},
+{
+	"name": "Iron Sword",
+	"description": "A standard iron sword commonly used by adventurers and warriors.",
+	"looks": "The iron sword has a straight blade with a double-edged design. The hilt is wrapped in leather for a secure grip.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_slashing": 10,
+		"spd": 5
+	},
+	"usage_requirements": {
+		"str": 12,
+		"dex": 10
+	},
+	"weight": 4.5
+},
+{
+	"name": "Silver Dagger",
+	"description": "A small dagger made from silver, ideal for stealthy attacks.",
+	"looks": "The silver dagger has a short and slim blade, with a polished silver handle. It has a slight curve to the blade and a sharp point, perfect for piercing through armor.",
+	"durability": 60,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10
+	},
+	"stat_bonus": {
+		"def": 2,
+		"spd": 5
+	},
+	"weight": 0.75,
+	"special_weapon_skills": {
+		"stealth_attack": "Allows for special stealth attacks"
+    }
+},
+{
+	"name": "Leather Vest",
+	"description": "A lightweight vest made of high-quality leather.",
+	"looks": "The leather vest has a slim and form-fitting design, providing both protection and ease of movement. It is dyed a dark brown color and has intricate stitching along the edges.",
+	"durability": 90,
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"def": 10,
+		"dex": 2,
+		"con": 1,
+		"spd": 1
+	},
+	"usage_requirements": {
+		"dex": 16
+	},
+	"weight": 2.5
+},
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": 100,
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+	"name": "Adamantium Plate Mail",
+	"description": "An incredibly strong and durable suit of plate mail armor made from adamantium, providing exceptional protection in battle.",
+	"looks": "The plate mail armor is made up of interlocking adamantine plates that cover the entire body. It has a metallic silver color and a highly polished surface, reflecting light like a mirror. The intricate design of the plates ensures maximum flexibility and mobility while offering optimal protection.",
+	"durability": 500,
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"def": 25,
+		"max_hp": 100
+	},
+	"usage_requirements": {
+		"str": 30,
+		"con": 25
+	},
+	"weight": 40
+},
+{
+	"name": "Steel Plate Armor",
+	"description": "A heavy and durable armor made from steel plates.",
+	"looks": "The armor is made up of thick and overlapping steel plates, covering the entire torso and extending down to the thighs. It also has shoulder and elbow guards, providing maximum protection.",
+	"durability": 300,
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"def": 20,
+		"max_hp": 100
+	},
+	"usage_requirements": {
+		"str": 25
+	},
+	"weight": 25
+},
+{
+	"name": "The Sword of Valor",
+	"description": "A legendary sword said to grant its wielder great courage and strength.",
+	"looks": "The Sword of Valor is a majestic weapon with a long, straight blade made of shining silver. The handle is wrapped in a rich red velvet fabric, and the pommel is adorned with a golden lion emblem.",
+	"durability": 500,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 50,
+		"dmg_light": 20
+	},
+	"stat_bonus": {
+		"str": 10
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"sword_skill": "Increases Sword skill by 50%"
+	},
+	"special_effects": {
+		"valor": "Grants a temporary boost to strength and bravery when wielded."
+	}
+},
+{
+	"name": "Silver Sword",
+	"description": "A finely crafted sword made of silver.",
+	"looks": "The Silver Sword has a shining blade made of polished silver. The hilt is wrapped in black leather for a secure grip. Engravings of ancient symbols adorn the blade and hilt.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20
+	},
+	"stat_bonus": {
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 10,
+		"dex": 10
+	},
+	"weight": 2.5,
+	"special_weapon_skils": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill."
+	}
+},
+{
+	"name": "Enchanted Sword of Flame",
+	"description": "A beautiful, enchanted sword that bursts into flames when swung.",
+	"looks": "The Enchanted Sword of Flame has a curved blade made of polished steel. The hilt is adorned with intricate golden engravings, and the pommel is shaped like a fiery dragon's head. When swung, the blade ignites in flames, creating a mesmerizing display of fire and sparks.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 50,
+		"dmg_fire": 20
+	},
+	"stat_bonus": {
+		"str": 5,
+		"def": 5
+	},
+	"usage_requirements": {
+		"str": 25
+	},
+	"weight": 2,
+	"special_weapon_skills": {
+		"sword_mastery": "Increases damage with swords by 10%"
+	},
+	"special_effects": {
+		"burst_of_flames": "Has a chance to unleash a burst of flames on a critical hit, dealing additional fire damage."
+	}
+},
+{
+	"name": "Crystal Staff",
+	"description": "A finely crafted staff made from enchanted crystal.",
+	"looks": "The Crystal Staff is a tall and slender staff made entirely of clear crystal. It has a smooth surface that reflects light, creating a mesmerizing shimmering effect. At the top of the staff, there is a large crystal orb that emits a faint magical glow.",
+	"durability": 150,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_mental": 10
+	},
+	"stat_bonus": {
+		"max_mp": 100,
+		"int": 10,
+		"wis": 5,
+		"cast_speed": 2,
+		"regen_mp": 5
+	},
+	"usage_requirements": {
+		"int": 30,
+		"wis": 20
+	},
+	"weight": 4.5,
+	"special_weapon_skills": {
+		"staff": "Increases the effectiveness of staff-based spells."
+	},
+	"special_effects" : {
+		"spell_power" : "Increases the power of all spells cast while equipped."
+	}
+},
+{
+	"name": "Sword of the Flame",
+	"description": "A mighty sword engulfed in flames, capable of inflicting devastating fire damage.",
+	"looks": "The Sword of the Flame has a long, curved blade made of gleaming steel. The hilt is adorned with intricate engravings and a glowing, fiery gemstone at the pommel.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 25,
+		"dmg_fire": 50
+	},
+	"stat_bonus": {
+		"str": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill when wielded."
+	}
+},
+ {
+	"name": "Spear of the Forest",
+	"description": "A long wooden spear infused with the power of nature.",
+	"looks": "The Spear of the Forest is made from a sturdy wooden shaft and has a pointed tip made of sharpened steel. The handle is intricately carved with patterns of leaves and vines, and small green crystals are embedded along the length of the spear.",
+	"durability": 150,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_physical": 20,
+		"dmg_nature": 10
+	},
+	"stat_bonus": {
+		"str": 8,
+		"per": 2
+	},
+	"weight": 4,
+	"special_weapon_skils": {
+		"polearm": "Allows the wielder to use polearm-specific skills."
+	},
+	"special_effects": {
+		"forest_blessing": "Grants a bonus to nature-related skills and abilities."
+	}
+},
+{
+	"name": "Mage Staff",
+	"description": "A powerful staff imbued with arcane energy, capable of channeling devastating spells.",
+	"looks": "The Mage Staff is a long wooden staff with ornate carvings and a glowing crystal orb at the top. It crackles with energy and emits a faint humming sound.",
+	"durability": 150,
+	"item_usage": "two_hand",
+	"stat_bonus": {
+		"max_mp": 100,
+		"int": 10,
+		"wis": 5,
+		"spd": 5,
+		"cast_speed": 2
+	},
+	"usage_requirements": {
+		"int": 30
+	},
+	"weight": 3,
+	"special_weapon_skills": {
+		"Arcane Blast": "Unleash a powerful arcane blast that damages all enemies in a small area."
+	},
+	"special_effects": {
+		"Arcane Surge": "Increases spell power by 20% for 10 seconds after casting a spell."
+	}
+}
+]

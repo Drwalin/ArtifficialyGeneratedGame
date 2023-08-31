@@ -1,0 +1,301 @@
+[
+{
+	"name": "Ruby Staff",
+	"description": "A staff made from polished ruby, infused with powerful magic.",
+	"looks": "The Ruby Staff is a long and slender staff made entirely of polished ruby. It has a golden handle with intricate engravings of arcane symbols. At the top of the staff is a large ruby gem that glows with a deep red light.",
+	"durability": 150,
+	"item_usage": "two_hand",
+	"stat_bonus": {
+		"max_mp": 100,
+		"int": 10,
+		"wis": 5,
+		"def": 5,
+		"regen_mp": 5
+	},
+	"usage_requirements": {
+		"int": 30
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"arcane_magic": "Increases damage and effectiveness of arcane magic spells."
+	},
+	"special_effects": {
+		"fireball": "Allows the wielder to cast fireball spells."
+	},
+	"dmg": {
+		"dmg_fire": 20
+	}
+},
+{
+	"name": "Flaming Sword",
+	"description": "A sword enchanted with the element of fire, causing it to ignite in flames when drawn.",
+	"looks": "The Flaming Sword has a long, curved blade with a silver finish. The hilt is made of dark wood with intricate carvings and a pommel in the shape of a fireball. When drawn, the blade bursts into flames, giving off a warm glow.",
+	"durability": 250,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_fire": 10,
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"fire_magic": "Increases the power of fire spells."
+	}
+},
+{
+	"name": "Warhammer",
+	"description": "A large and heavy warhammer that deals devastating blows to armored opponents.",
+	"looks": "The warhammer has a long wooden handle with a leather grip. The head of the hammer is made of solid iron and has intricate engravings. It is designed to concentrate the force of each strike into a small area, making it ideal for crushing armor.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 35
+	},
+	"stat_bonus": {
+		"str": 10,
+		"dex": -5
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 7,
+	"special_weapon_skills": {
+		"crushing_blow": "Increases the chance to stun or stagger opponents with each strike."
+	}
+},
+{
+	"name": "Steel Breastplate",
+	"description": "A strong and protective breastplate made of steel.",
+	"looks": "The steel breastplate is a solid piece of armor that covers the chest and upper torso. It is made from polished steel plates and has intricate engravings along the edges.",
+	"durability": 250,
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"def": 15,
+		"max_hp": 100
+	},
+	"usage_requirements": {
+		"str": 20,
+		"dex": 15
+	},
+	"weight": 10
+},
+{
+	"name": "Silver Sword",
+	"description": "A finely crafted sword made from pure silver.",
+	"looks": "The Silver Sword has a polished silver blade with intricate engravings along the edges. The hilt is wrapped in black leather and adorned with a silver pommel in the shape of a falcon. The guard is made of silver and has a stylized wing design.",
+	"durability": 200,
+	"item_usage": "two_hand",
+	"stat_bonus": {
+		"dmg_physical": 50,
+		"spd": 5
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 3.5
+},
+{
+	"name": "Iron Sword",
+	"description": "A basic iron sword, suitable for beginners.",
+	"looks": "The iron sword has a straight blade with a single edge and a simple hilt. The blade is dull and slightly rusty.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 2
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 4
+},
+{
+	"name": "Flaming Sword",
+	"description": "A sword imbued with the power of fire",
+	"looks": "The flaming sword has a long, curved blade with a fiery edge. The hilt is made from blackened metal with a grip wrapped in red leather.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 50,
+		"dmg_fire": 25
+	},
+	"stat_bonus": {
+		"str": 10,
+		"def": 5
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"weapon_mastery_fire": "Grants a bonus to Fire weapon mastery skill"
+	}
+},
+{
+	"name": "Steel Gauntlets",
+	"description": "Sturdy gauntlets made of steel, providing excellent hand protection.",
+	"looks":"The steel gauntlets are made of polished steel plates, covering the hands and forearms. They are adorned with engraved patterns and have adjustable straps for a secure fit.",
+	"durability": 150,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 8
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 4
+},
+{
+	"name": "Steel Gauntlets",
+	"description": "Heavy gauntlets made of steel, providing excellent protection for the hands and wrists.",
+	"looks": "The steel gauntlets are made of thick and durable steel plates, covering the entire hand and extending up to the wrists. They have a rough texture and are secured with leather straps.",
+	"durability": 150,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 8
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 4
+},
+{
+	"name": "Acid Dagger",
+	"description": "A dagger coated with deadly acid that inflicts additional corrosion damage.",
+	"looks": "The acid dagger has a slim and sleek design, with a curved blade and a hilt wrapped in black leather. The blade is coated with a greenish liquid that constantly drips onto the ground.",
+	"durability": 80,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15,
+		"dmg_acid": 5
+	},
+	"dmg_over_time": {
+		"dmg_acid": [-10, 5]
+	},
+	"stat_bonus": {
+		"dex": 3,
+		"spd": 2
+	},
+	"usage_requirements": {
+		"dex": 20
+	},
+	"weight": 1.5,
+	"special_weapon_skills": {
+		"dagger_specialization": "Increases damage with daggers."
+	},
+	"special_effects": {
+		"corrosive_coating": "Has a chance to apply a corrosion effect on targets, reducing their armor."
+	}
+},
+{
+	"name": "Adamantite Sword",
+	"description": "A powerful sword forged from the rare and durable metal known as adamantite.",
+	"looks": "The Adamantite Sword is a long, broad blade with a curved, single-edged design. The hilt is wrapped in leather for a secure grip, and the pommel is decorated with ornate engravings.",
+	"durability": 500,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 50
+	},
+	"stat_bonus": {
+		"str": 10,
+		"dex": 5
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 4.5,
+	"special_effects": {
+		"critical_hit_chance": "Increases the chance to score a critical hit."
+	},
+	"special_weapon_skills": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill when wielding.",
+		"parry": "Grants a bonus to Parry skill when wielding."
+	}
+},
+{
+	"name": "Iron Sword",
+	"description": "A common iron sword",
+	"looks": "The iron sword has a straight blade, with a simple crossguard and grip. It is made of sturdy iron, with a slight sheen on the blade.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 2
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 2,
+	"special_weapon_skills": {
+		"sword": "Allows the use of sword-related skills and abilities"
+	}
+},
+{
+	"name": "Fireball Staff",
+	"description": "A staff imbued with the power of fire, capable of casting powerful fireball spells.",
+	"looks": "The Fireball Staff is a long wooden staff with intricate carvings along its length. At the top, there is a crystal orb that glows with a fiery red color.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"max_mp": 50,
+		"int": 10,
+		"cast_speed": 2,
+		"dmg_fire": 50
+	},
+	"usage_requirements": {
+		"int": 20
+	},
+	"weight": 2.5,
+	"special_weapon_skils": {
+		"fire_magic": "Grants a bonus to Fire Magic skill when wielded."
+	},
+	"special_effects": {
+		"fireball": "Allows casting of fireball spells."
+	}
+},
+{
+	"name": "Steel Plate Armor",
+	"description": "A heavy suit of armor made from steel plates",
+	"looks": "The armor is made up of interlocking steel plates, covering the entire body. It has a full helm with a visor that can be raised or lowered.",
+	"durability": 300,
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"def": 20,
+		"max_hp": 100
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 25
+},
+{
+	"name": "Magic Wand",
+	"description": "A wooden wand imbued with magical energy",
+	"looks": "The wand is made of polished wood with intricate carvings along its length. It has a smooth and curved handle, ending in a pointed tip.",
+	"durability": 50,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"max_mp": 30,
+		"int": 5,
+		"wis": 3
+	},
+	"usage_requirements": {
+		"int": 10
+	},
+	"weight": 0.5,
+	"special_weapon_skills": {
+		"wand_proficiency": "Increases damage and spellcasting ability with wands."
+	},
+	"special_effects": {
+		"spell_power": "Increases the potency of spells cast using this wand."
+	}
+}
+]

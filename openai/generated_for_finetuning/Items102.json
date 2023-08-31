@@ -1,0 +1,173 @@
+[
+{
+	"name": "Iron Axe",
+	"description": "A heavy iron axe with a sharp blade, designed for chopping wood or cleaving through enemies.",
+	"looks": "The iron axe has a long wooden handle with a metal head. The head is curved and has a sharp edge on one side for cutting.",
+	"durability": "150",
+	"item_usage": "two_hand",
+	"stat_bonus": {
+		"dmg_slashing": 20,
+		"dex": -5
+	},
+	"usage_requirements": {
+		"str": 18
+	},
+	"weight": 7.5,
+	"special_weapon_skils": {
+		"axe_mastery": "Grants a bonus to Axe Mastery skill."
+	}
+},
+{
+	"name": "Dagger",
+	"description": "A small and lightweight dagger, perfect for quick and precise attacks.",
+	"looks": "The dagger has a sharp and narrow blade made of polished steel. The handle is wrapped in leather for a comfortable grip.",
+	"durability": "75",
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_physical": 10,
+		"spd": 5
+	},
+	"usage_requirements": {
+		"dex": 10
+	},
+	"weight": 0.5,
+	"special_weapon_skills": {
+		"dagger_proficiency": "Increases damage and accuracy when using daggers."
+	}
+},
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": "100",
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": "100",
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+	"name": "Adamantium Sword",
+	"description": "A legendary sword forged from adamantium, known for its incredible strength and sharpness.",
+	"looks": "The Adamantium Sword is a beautifully crafted weapon with a long, silver blade. The hilt is wrapped in black leather with intricate patterns engraved into the metal.",
+	"durability": "500",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 50
+	},
+	"stat_bonus": {
+		"str": 10,
+		"dex": 5
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 5,
+	"special_weapon_skills": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill when wielded."
+	},
+	"special_effects": {
+		"paralysis": "Has a chance to paralyze the target for a short duration."
+	}
+},
+{
+	"name": "Iron Boots",
+	"description": "Sturdy iron boots that provide strong protection for the feet and ankles.",
+	"looks": "The iron boots are made of solid iron with a smooth surface. They cover the feet and ankles completely and have thick soles for added durability.",
+	"durability": 100,
+	"item_usage": "wear_feet",
+	"stat_bonus": {
+		"def": 4,
+		"max_hp": 8
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 3
+},
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": "100",
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": "100",
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+	"name": "Steel Chestplate",
+	"description": "A heavy and durable chestplate made from hardened steel.",
+	"looks": "The Steel Chestplate is a solid piece of armor that covers the entire chest and upper torso. It is made from thick steel plates with reinforced edges and has adjustable straps for a secure fit.",
+	"durability": "250",
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"def": 15,
+		"max_hp": 100,
+		"spd": -2
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 15
+},
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": "100",
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+}
+]

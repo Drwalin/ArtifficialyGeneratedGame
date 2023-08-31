@@ -1,0 +1,260 @@
+[
+{
+	"name": "Cure Poison Potion",
+	"description": "A potion that cures poison.",
+	"looks": "A small glass vial filled with a clear liquid.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"stat_bonus": {
+		"resistance_poison": 100
+	},
+	"weight": 0.1
+},
+{
+	"name": "Health Restoration Potion",
+	"description": "A potion that restores a small amount of health.",
+	"looks": "The potion is a small glass vial filled with a glowing blue liquid.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"stat_bonus": {
+		"hp": 50
+	},
+	"weight": 0.1
+},
+{
+	"name": "Spear of Thunder",
+	"description": "A powerful spear that crackles with electrifying energy.",
+	"looks": "The spear is made of a dark metal, with runes etched along the length. Blue lightning arcs along the spearhead and shaft.",
+	"durability": 150,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_physical": 75,
+		"dmg_lightning": 50
+	},
+	"stat_bonus": {
+		"str": 10,
+		"spd": 5
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 7,
+	"special_weapon_skills": {
+		"Spear Mastery": "Increases damage and accuracy when using spears."
+	},
+	"special_effects": {
+		"Electric Discharge": "Chance to shock and stun enemies on hit."
+	}
+},
+{
+	"name": "Fortifying Brew",
+	"description": "A drink that fortifies the drinker's body, increasing maximum health and providing temporary damage resistance.",
+	"looks": "A frothy, golden drink served in a tall glass.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"item_recipee": [
+		"Golden Flower Petals",
+		"Dwarf Ale"
+	],
+	"stat_bonus": {
+		"max_hp": 100,
+		"def": 10
+	},
+	"weight": 0.3
+},
+{
+	"name": "Invisibility Potion",
+	"description": "A potion that grants temporary invisibility to the user.",
+	"looks": "The potion is a small glass vial filled with a clear liquid.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"item_recipee": [
+		"Ghost Mushroom",
+		"Essence of Shadows",
+		"Silver Crown"
+	],
+	"stat_bonus": {},
+	"weight": 0.1,
+	"special_effects": {
+		"Invisibility": "Grants temporary invisibility to the user",
+		"MaxVisibilityDuration": "Lasts for 1 minute"
+	}
+},
+{
+	"name": "Poisoned Dagger",
+	"description": "A small dagger coated in a deadly poison.",
+	"looks": "The dagger has a slim, curved blade with a dark green hue.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15,
+		"dmg_poison": 5
+	},
+	"stat_bonus": {
+		"dex": 2
+	},
+	"usage_requirements": {
+		"dex": 10
+	},
+	"weight": 0.5,
+	"special_weapon_skills": {
+		"Assassin's Blade": "Grants bonus damage when attacking from stealth."
+	},
+	"special_effects": {
+		"Poisoned Blade": "Chance to apply poison effect on hit."
+	}
+},
+{
+	"name": "Fireball Scroll",
+	"description": "A scroll containing the spell Fireball, which unleashes a powerful fire projectile.",
+	"looks": "The scroll is made of aged parchment and sealed with a red wax seal.",
+	"durability": 1,
+	"item_usage": "util",
+	"dmg": {
+		"dmg_fire": 50
+	},
+	"stat_bonus": {
+		"int": 5
+	},
+	"usage_requirements": {
+		"int": 10
+	},
+	"weight": 0.2,
+	"special_effects": {
+		"Burn": "The Fireball has a chance to ignite enemies, causing them to take additional damage over time."
+	}
+},
+{
+	"name": "Speedy Boots",
+	"description": "A pair of boots that increase the wearer's movement speed.",
+	"looks": "The boots are made of fine leather with intricate stitching. They have a sleek design and are colored black.",
+	"durability": 100,
+	"item_usage": "wear_feet",
+	"stat_bonus": {
+		"spd": 5
+	},
+	"usage_requirements": {
+		"dex": 10
+	},
+	"weight": 1.5
+},
+{
+	"name": "Invisibility Cloak",
+	"description": "A magical cloak that grants the wearer invisibility.",
+	"looks": "The cloak is made of a shimmering, translucent fabric that seems to blend with its surroundings.",
+	"durability": 100,
+	"item_usage": "wear_back",
+	"stat_bonus": {},
+	"usage_requirements": {},
+	"weight": 1.5,
+	"special_effects": {
+		"Invisibility": "Grants the wearer the ability to turn invisible for a limited time."
+	}
+},
+{"name": "Speedy Shoes",
+"description": "A pair of shoes that increases the wearer's movement speed.",
+"looks": "The shoes are made of fine leather and have a sleek, streamlined design.",
+"durability": 10,
+"item_usage": "wear_feet",
+"stat_bonus": {
+	"spd": 10
+},
+"usage_requirements": {
+	"dex": 20
+},
+"weight": 0.5,
+"special_effects": {
+	"Increased Movement Speed": "Increases character's movement speed by 10%"
+}
+},
+{
+	"name": "Swift Boots",
+	"description": "A pair of boots that increase movement speed.",
+	"looks": "These boots are made of fine leather with intricate designs. They have a sleek and slim profile, making them lightweight and comfortable to wear.",
+	"durability": 50,
+	"item_usage": "wear_feet",
+	"stat_bonus": {
+		"spd": 20
+	},
+	"usage_requirements": {
+		"dex": 10
+	},
+	"weight": 0.5,
+	"special_effects": {
+		"agility": "Increases agility and movement speed."
+	}
+},
+{
+	"name": "Invisibility Cloak",
+	"description": "A mystical cloak that grants the wearer the ability to become invisible.",
+	"looks": "The cloak is made of a silvery, shimmering material that seems to blend with the surroundings.",
+	"durability": 10,
+	"item_usage": "wear_back",
+	"stat_bonus": {
+		"spd": 10
+	},
+	"usage_requirements": {
+		"dex": 15
+	},
+	"weight": 1.5,
+	"special_effects": {
+		"Invisibility": "Allows the wearer to become invisible for a short duration."
+	}
+},
+{
+	"name": "Chestplate of the Guardian",
+	"description": "A sturdy chestplate that provides strong protection to the wearer.",
+	"looks": "The chestplate is made of thick, polished steel and is adorned with intricate engravings.",
+	"durability": 100,
+	"item_usage": "wear_torso",
+	"dmg": {
+		"dmg_physical": -5
+	},
+	"stat_bonus": {
+		"def": 25,
+		"max_hp": 100
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 10
+},
+{
+	"name": "Agility Potion",
+	"description": "A potion that temporarily boosts the drinker's agility, increasing their speed and dexterity.",
+	"looks": "The potion is a clear liquid with streaks of shimmering silver.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"item_recipee": [
+		"Swiftroot Herb",
+		"Silver Powder"
+	],
+	"stat_bonus": {
+		"dex": 5,
+		"spd": 5
+	},
+	"weight": 0.1
+},
+{
+	"name": "Fireball Scroll",
+	"description": "A scroll containing a fireball spell that can be cast by a mage.",
+	"looks": "The scroll is made of aged parchment and sealed with a red wax stamp.",
+	"durability": 1,
+	"item_usage": "util",
+	"item_recipee": [
+		"Parchment",
+		"Ink",
+		"Fire Essence"
+	],
+	"dmg": {
+		"dmg_fire": 100
+	},
+	"usage_requirements": {
+		"int": 15
+	},
+	"weight": 0.05,
+	"special_effects": {
+		"burning": "Inflicts ongoing burning damage to the target."
+	}
+}
+]

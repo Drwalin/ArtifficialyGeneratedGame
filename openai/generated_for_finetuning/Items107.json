@@ -1,0 +1,268 @@
+[
+{
+	"name": "Iron Sword",
+	"description": "A basic sword made of iron.",
+	"looks": "The iron sword has a long, straight blade with a simple hilt wrapped in leather. It has a sharp edge and a sturdy construction.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10
+	},
+	"stat_bonus": {
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 10,
+		"dex": 5
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"sword_skill": "Grants a bonus to Sword skill when equipped."
+	}
+},
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": "100",
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+	"name": "Iron Sword",
+	"description": "A basic sword made from iron",
+	"looks": "The iron sword has a straight blade with a single cutting edge. The hilt is made of wood and wrapped in leather for a firm grip. The pommel is simple and functional.",
+	"durability": "150",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10
+	},
+	"stat_bonus": {
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 4
+},
+{
+	"name": "Steel Helmet",
+	"description": "A sturdy helmet made of steel",
+	"looks": "The helmet is made of smooth steel with a silver tint. It has a visor that can be opened and closed.",
+	"durability": "200",
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 10,
+		"max_hp": 50
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 5
+},
+{
+	"name": "Steel Gauntlets",
+	"description": "A pair of gauntlets made from sturdy steel",
+	"looks": "The gauntlets are made of solid steel with a polished surface. They have fingered sections and metal plates on the back of the hand for added protection.",
+	"durability": "150",
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 8,
+		"str": 2
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 3.5
+},
+{
+    "name": "Iron Sword",
+    "description": "A sturdy iron sword with a double-edged blade.",
+    "looks": "The iron sword has a straight, double-edged blade with a sharp point. The hilt is made of leather wrapped around the metal. It is medium in length and balanced for easy handling.",
+    "durability": 150,
+    "item_usage": "one_hand",
+    "dmg": {
+        "dmg_physical": 50
+    },
+    "stat_bonus": {
+        "str": 10,
+        "dex": 5
+    },
+    "usage_requirements": {
+        "str": 15
+    },
+    "weight": 2.5,
+    "special_effects": {
+        "critical_strike": "Has a chance to land a critical hit, dealing double damage."
+    }
+},
+{
+	"name": "Crystal Staff",
+	"description": "A powerful staff made from a rare crystal that enhances spellcasting abilities.",
+	"looks": "The Crystal Staff is a long, slender rod made from a deep blue crystal. It is adorned with intricate engravings and a large crystal orb at the top.",
+	"durability": "150",
+	"item_usage": "two_hand",
+	"stat_bonus": {
+		"max_mp": 100,
+		"int": 10,
+		"wis": 5,
+		"cast_speed": 2
+	},
+	"usage_requirements": {
+		"int": 30,
+		"wis": 20
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"staff_mastery": "Increases damage and accuracy with staffs."
+	},
+	"special_effects": {
+		"spell_power": "Increases the power of spells cast with the staff."
+	}
+},
+{
+	"name": "Silver Dagger",
+	"description": "A small dagger made of silver, suitable for close-quarters combat.",
+	"looks": "The silver dagger has a short and slender blade, with a hilt made of polished silver. It is lightweight and easy to handle.",
+	"durability": "120",
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_physical": 10,
+		"spd": 2
+	},
+	"usage_requirements": {
+		"dex": 12
+	},
+	"weight": 0.5
+},
+{
+	"name": "Steel Helmet",
+	"description": "A sturdy helmet made of steel",
+	"looks": "The helmet is made of smooth steel with a silver tint. It has a visor that can be opened and closed.",
+	"durability": "200",
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 10,
+		"max_hp": 50
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 5
+},
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": "100",
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": "100",
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+	"name": "Emerald Necklace",
+	"description": "A beautiful necklace adorned with a large emerald in the center.",
+	"looks": "The Emerald Necklace features a silver chain with a pendant that holds a large emerald. The emerald is faceted, reflecting light and giving off a vibrant green color.",
+	"durability": "85",
+	"item_usage": "trinket",
+	"stat_bonus": {
+		"luck": 3
+	},
+	"usage_requirements": {
+		"cha": 12
+	},
+	"weight": 0.5,
+	"special_effects": {
+		"luck_boost": "Increases the luck stat of the wearer by 3."
+	}
+},
+{
+	"name": "Iron Sword",
+	"description": "A reliable iron sword that is perfect for slicing and dicing enemies.",
+	"looks": "The iron sword has a straight blade with a single sharp edge. The hilt is wrapped in leather for a secure grip.",
+	"durability": "150",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20
+	},
+	"stat_bonus": {
+		"str": 5,
+		"spd": 2
+	},
+	"usage_requirements": {
+		"str": 10,
+		"dex": 10
+	},
+	"weight": 4,
+	"special_effects": {
+		"bleeding": "Has a chance to cause bleeding damage over time."
+	}
+},
+{
+	"name": "Steel Gauntlets",
+	"description": "Heavy and sturdy gauntlets made of steel.",
+	"looks": "The steel gauntlets are made of thick steel plates and have a hinged design that allows for ease of movement. They have small spikes on the knuckles for added protection.",
+	"durability": 150,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 8,
+		"str": 2
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 4
+},
+{
+	"name": "Elven Bow",
+	"description": "A finely crafted bow made from enchanted wood, favored by elven archers for its accuracy and speed.",
+	"looks": "The Elven Bow has a sleek design, with elegant curves and intricate carvings depicting nature scenes. It is made from a light-colored wood that seems to shimmer and glow in the sunlight.",
+	"durability": "120",
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"dex": 5,
+		"spd": 10
+	},
+	"usage_requirements": {
+		"dex": 20
+	},
+	"weight": 1.5,
+	"special_weapon_skils": {
+		"archery": "Increases damage and accuracy with bows."
+	}
+}
+]

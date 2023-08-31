@@ -1,0 +1,326 @@
+[
+{
+	"name": "Iron Sword",
+	"description": "A sturdy iron sword with a sharp blade.",
+	"looks": "The iron sword has a straight blade with a sharp point and a simple crossguard. The hilt is wrapped in leather for a secure grip.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 2
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill when wielded."
+	}
+},
+{
+	"name": "Magic Staff",
+	"description": "A powerful staff infused with magical energy, capable of unleashing devastating spells.",
+	"looks": "The magic staff is made of a smooth, polished wood, with intricate carvings along the length. It has a crystal orb at the top, which glows with a soft, ethereal light.",
+	"durability": 150,
+	"item_usage": "two_hand",
+	"stat_bonus": {
+		"max_mp": 100,
+		"wis": 5,
+		"int": 3,
+		"cast_speed": 2
+	},
+	"usage_requirements": {
+		"int": 30,
+		"wis": 25
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"arcane_blast": "Unleashes a powerful blast of arcane energy, damaging enemies in a small area.",
+		"fireball": "Launches a fireball at the target, causing significant fire damage.",
+		"healing_wave": "Channels a healing wave, restoring health to nearby allies."
+	}
+},
+{
+	"name": "Legendary Sword of Justice",
+	"description": "A fabled sword imbued with the essence of justice, said to be forged by the gods themselves.",
+	"looks": "The Legendary Sword of Justice is a magnificent weapon with a shining silver blade and a hilt adorned with golden engravings. It emits a faint, radiant light that seems to emanate from within.",
+	"durability": 500,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_physical": 100,
+		"dex": 10,
+		"luck": 10
+	},
+	"usage_requirements": {
+		"str": 20,
+		"dex": 30
+	},
+	"weight": 10,
+	"special_weapon_skills": {
+		"sword_mastery": "Grants a bonus to sword mastery when wielded."
+	},
+	"special_effects": {
+		"divine_justice": "Has a chance to deal additional Holy damage on hit."
+	}
+},
+{
+	"name": "Silver Sword",
+	"description": "A finely crafted sword made of silver, imbued with a faint magical aura.",
+	"looks": "The Silver Sword has a slender blade with a pointed tip and a silver hilt adorned with intricate engravings. The blade gleams with a bright silvery glow.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 25
+	},
+	"stat_bonus": {
+		"spd": 5,
+		"dex": 2
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3,
+	"special_weapon_skils": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill when equipped."
+	},
+	"special_effects": {
+		"silver": "Deals bonus damage against creatures vulnerable to silver."
+	}
+},
+{
+	"name": "Steel Breastplate",
+	"description": "A heavy, yet protective breastplate made of sturdy steel.",
+	"looks": "The steel breastplate is a thick and solid piece of armor that covers the chest and upper torso. It has a polished silver finish and is adorned with intricate engravings.",
+	"durability": 300,
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"def": 15,
+		"max_hp": 100
+	},
+	"usage_requirements": {
+		"str": 15,
+		"con": 10
+	},
+	"weight": 15
+},
+{
+	"name": "Silver Dagger",
+	"description": "A dagger made from pure silver.",
+	"looks": "The silver dagger has a sleek and slim design, with a sharp double-edged blade. The handle is wrapped in black leather for a secure grip.",
+	"durability": 80,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_physical": 5,
+		"dex": 2
+	},
+	"usage_requirements": {
+		"dex": 10
+	},
+	"weight": 0.5,
+	"special_weapon_skills": {
+		"dagger_mastery": "Increases damage and accuracy when using daggers."
+	}
+},
+{
+	"name": "Emerald Staff",
+	"description": "A staff made from pure emerald, radiating with magical energy.",
+	"looks": "The Emerald Staff is a long, slender staff crafted entirely from a single piece of emerald. It has a smooth and polished surface, with intricate carvings of runes along its length. At the top, there is a large, faceted emerald gem that glows with a vibrant green hue.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"max_mp": 100,
+		"int": 10,
+		"wis": 5,
+		"def": 5,
+		"regen_mp": 10,
+		"cast_speed": 2
+	},
+	"usage_requirements": {
+		"int": 20
+	},
+	"weight": 4,
+	"special_weapon_skils": {
+		"staff_combat": "Grants a bonus to Staff Combat skill when wielded."
+	},
+	"special_effects": {
+		"emerald_burst": "Has a chance to release a burst of emerald energy on successful spell cast, damaging nearby enemies."
+	}
+},
+{
+	"name": "Iron Sword",
+	"description": "A standard iron sword, commonly used by warriors.",
+	"looks": "The iron sword has a straight, double-edged blade and a simple hilt with a basic crossguard. It is a reliable and sturdy weapon.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 2
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 4,
+	"special_weapon_skils": {
+		"swordsmanship": "Increases attack speed and accuracy with swords."
+	}
+},
+{
+	"name": "Iron Sword",
+	"description": "A sturdy sword made from iron",
+	"looks": "The iron sword has a straight blade with a double-edged design. The hilt is wrapped in leather for a comfortable grip.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20
+	},
+	"stat_bonus": {
+		"str": 5,
+		"def": 2
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"sword_skill": "Increases Sword skill when equipped."
+	}
+},
+{
+	"name": "Dragon Scale Armor",
+	"description": "Legendary armor made from the scales of a powerful dragon.",
+	"looks": "The Dragon Scale Armor is an imposing set of armor made from the scales of a mighty dragon. The scales are shimmering with a mix of red, green, and gold hues, giving the armor an intimidating appearance. The armor consists of a chestplate, shoulder guards, gauntlets, leggings, and boots. The armor is adorned with intricate engravings and has a dragon motif throughout.",
+	"durability": 500,
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"max_hp": 100,
+		"def": 50,
+		"resistance_fire": 50,
+		"resistance_poison": 20
+	},
+	"usage_requirements": {
+		"str": 100,
+		"dex": 80,
+		"con": 90
+	},
+	"weight": 40,
+	"special_effects": {
+		"fire_damage": "Deals additional fire damage to enemies when attacked."
+	}
+},
+{
+	"name": "Fireball",
+	"description": "A fiery ball of magical energy that explodes upon impact, dealing fire damage to all within its radius.",
+	"looks": "The Fireball is a swirling orb of flame, emitting a bright red glow. It crackles with intense heat and releases occasional sparks.",
+	"durability": 1,
+	"item_usage": "junk",
+	"stat_bonus": {
+		"dmg_fire": 50
+	},
+	"dmg_over_time": {
+		"dmg_fire": [
+			50,
+			3
+		]
+	},
+	"usage_requirements": {
+		"int": 25,
+		"wis": 20,
+		"cha": 10
+	},
+	"weight": 0.2,
+	"special_effects": {
+		"explode": "The Fireball explodes upon impact, dealing additional damage to all nearby enemies."
+	}
+},
+{
+	"name": "Iron Sword",
+	"description": "A simple iron sword with a sharp blade.",
+	"looks": "The iron sword has a straight, single-edged blade with a sharp point. The hilt is made of leather wrapped around the tang, and the pommel is a simple metal disc.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 3,
+		"dex": 1
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 2,
+	"special_weapon_skills": {
+		"swordsmanship": "Increases damage dealt with swords."
+	}
+},
+{
+	"name": "Iron Sword",
+	"description": "A sturdy iron sword that is capable of dealing significant damage.",
+	"looks": "The iron sword has a long and straight blade with a sharp edge. The hilt is made of leather and has a simple crossguard. The pommel is rounded and provides a comfortable grip.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_physical": 15,
+		"str": 5,
+		"spd": 2
+	},
+	"usage_requirements": {
+		"str": 10,
+		"dex": 8
+	},
+	"weight": 4,
+	"special_weapon_skils": {
+		"swordsmanship": "Increases proficiency with swords, improving accuracy and damage."
+	}
+},
+{
+	"name": "Dragon Sword",
+	"description": "A powerful sword forged from the scales of a dragon. It radiates an intense heat and exudes an aura of power.",
+	"looks": "The Dragon Sword has a long, curved blade with intricate engravings depicting dragons in flight. The hilt is wrapped in dragon leather and adorned with a dragon-shaped pommel. The blade glows with a fiery red aura.",
+	"durability": 500,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_physical": 50,
+		"dmg_fire": 20,
+		"def": 15
+	},
+	"usage_requirements": {
+		"str": 30,
+		"dex": 20
+	},
+	"weight": 7,
+	"special_weapon_skills": {
+		"dragon_slaying": "Deals bonus damage to dragons."
+	},
+	"special_effects": {
+		"fire_immunity": "Grants immunity to fire damage."
+	}
+},
+{
+	"name": "Steel Longsword",
+	"description": "A well-crafted longsword made from high-quality steel.",
+	"looks": "The steel longsword has a polished silver blade with a slight curve, allowing for better slashing attacks. The hilt is wrapped in black leather and has a simple crossguard. The pommel is adorned with a small emerald.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_slashing": 20
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3,
+		"spd": 2
+	},
+	"usage_requirements": {
+		"str": 12,
+		"dex": 10
+	},
+	"weight": 2.5,
+	"special_weapon_skills": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill when wielded."
+	}
+}
+]

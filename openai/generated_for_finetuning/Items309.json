@@ -1,0 +1,224 @@
+[
+{
+	"name": "Stamina Potion",
+	"description": "A potion that restores stamina points.",
+	"looks": "A small glass bottle filled with a golden liquid.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"dmg_over_time": {
+		"dmg_light": [-50, 3]
+	},
+	"weight": 0.1
+},
+{
+    "name": "Health Restoration Potion",
+    "description": "A potion that restores a small amount of health.",
+    "looks": "The potion is a small glass vial filled with a glowing blue liquid.",
+    "durability": 1,
+    "item_usage": "consumable",
+    "stat_bonus": {
+        "hp": 50
+    },
+    "weight": 0.1
+},
+{
+	"name": "Enchanted Ruby",
+	"description": "A rare gem that radiates power and brings good fortune.",
+	"looks": "The enchanted ruby is a flawless red gemstone with a pulsating glow.",
+	"durability": 1,
+	"item_usage": "trinket",
+	"stat_bonus": {
+		"luck": 5
+	},
+	"weight": 0.5,
+	"special_effects": {
+		"Luck Boost": "Increases the wearer's luck by 5 points."
+	}
+},
+{
+	"name": "Book of Enlightenment",
+	"description": "A book that grants wisdom and knowledge to the reader.",
+	"looks": "The book is bound in worn leather with intricate gold engravings on the cover.",
+	"durability": 1,
+	"item_usage": "util",
+	"stat_bonus": {
+		"wis": 5
+	},
+	"usage_requirements": {
+		"int": 10
+	},
+	"weight": 1.5
+},
+{
+	"name": "Enchanted Sword",
+	"description": "A powerful sword infused with enchantments.",
+	"looks": "The sword has a gleaming silver blade and a jewel-encrusted hilt.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 50,
+		"dmg_light": 10
+	},
+	"stat_bonus": {
+		"str": 10,
+		"dex": 5
+	},
+	"usage_requirements": {
+		"str": 20,
+		"dex": 15
+	},
+	"weight": 2.5,
+	"special_weapon_skills": {
+		"Sword Mastery": "Increases damage with swords",
+		"Precision Strikes": "Increases critical hit chance"
+	},
+	"special_effects": {
+		"Fire Aspect": "Adds fire damage to each attack",
+		"Life Steal": "Heals the wielder for a percentage of damage dealt"
+	}
+},
+{
+	"name": "Strength Potion",
+	"description": "A potion that temporarily boosts the drinker's strength and melee damage.",
+	"looks": "The potion is a vibrant red color, swirling with energy.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"item_recipee": [
+		"Brewer's Yeast",
+		"Enchanted Ruby"
+	],
+	"stat_bonus": {
+		"str": 5
+	},
+	"weight": 0.1
+},
+{
+	"name": "Brewer's Yeast",
+	"description": "A type of yeast used in brewing potions.",
+	"looks": "This yeast appears as a fine, powdery substance.",
+	"durability": 10,
+	"item_usage": "junk",
+	"weight": 0.05
+},
+{
+	"name": "Health Restoration Potion",
+	"description": "A potion that restores a small amount of health.",
+	"looks": "The potion is a small glass vial filled with a glowing blue liquid.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"stat_bonus": {
+		"hp": 50
+	},
+	"weight": 0.1
+},
+{
+	"name": "Swiftness Potion",
+	"description": "A potion that grants temporary increase in movement speed.",
+	"looks": "The potion is a small glass vial filled with a sparkling silver liquid.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"item_recipee": [
+		"Swift Herb",
+		"Glowing Water"
+	],
+	"stat_bonus": {
+		"spd": 20
+	},
+	"weight": 0.1
+},
+{
+	"name": "Wisdom Scroll",
+	"description": "A scroll that grants temporary wisdom to the reader.",
+	"looks": "The scroll is made of ancient parchment and is adorned with mystical symbols.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"item_recipee": [
+		"Ink",
+		"Quill",
+		"Ancient Knowledge"
+	],
+	"stat_bonus": {
+		"wis": 4
+	},
+	"weight": 0.05,
+	"special_effects": {
+		"Enlightenment": "Increases the chance of gaining insight about skills or spells while reading."
+	}
+},
+{
+	"name": "Fireball Scroll",
+	"description": "A scroll that contains the spell Fireball.",
+	"looks": "The scroll is made of aged parchment and is sealed with a red wax seal.",
+	"durability": 1,
+	"item_usage": "util",
+	"usage_requirements": {
+		"int": 10
+	},
+	"weight": 0.1,
+	"special_effects": {
+		"Fireball": "Deals fire damage to a single target."
+	}
+},
+{
+	"name": "Defense Necklace",
+	"description": "A necklace that provides additional defense to the wearer.",
+	"looks": "The necklace is made of silver and has small, intricate designs",
+	"durability": 60,
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 10
+	},
+	"usage_requirements": {
+		"per": 5
+	},
+	"weight": 0.3,
+	"special_effects": {
+		"resistance_fire": "+5"
+	}
+},
+{
+	"name": "Healing Crystal",
+	"description": "A crystal that emits healing energy, restoring health to the user.",
+	"looks": "The crystal is a smooth, clear gemstone that glows with a soft white light.",
+	"durability": 1,
+	"item_usage": "trinket",
+	"stat_bonus": {
+		"hp": 30,
+		"regen_hp": 5
+	},
+	"weight": 0.2,
+	"special_effects": {
+		"Healing Aura": "Emits a healing aura that restores health to nearby allies."
+	}
+},
+{"name": "Speed Boots",
+	"description": "Boots that enhance the wearer's movement speed.",
+	"looks": "The boots are made of lightweight leather and have a sleek, streamlined design.",
+	"durability": 50,
+	"item_usage": "wear_feet",
+	"stat_bonus": {
+		"spd": 10
+	},
+	"weight": 1.5
+},
+{
+	"name": "Fireball Scroll",
+	"description": "A scroll that contains the spell Fireball. When activated, it unleashes a powerful fireball that damages enemies.",
+	"looks": "The scroll is made of aged parchment and has intricate runes inscribed on it.",
+	"durability": 1,
+	"item_usage": "util",
+	"dmg": {
+		"dmg_fire": -100
+	},
+	"stat_bonus": {
+		"cast_speed": -0.5
+	},
+	"usage_requirements": {
+		"int": 12
+	},
+	"weight": 0.05,
+	"special_effects": {
+		"ignite": "The fireball has a chance to ignite enemies, causing them to take additional fire damage over time."
+	}
+}
+]

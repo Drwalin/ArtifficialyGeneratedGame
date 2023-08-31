@@ -1,0 +1,266 @@
+[
+{
+	"name": "Dagger of the Swift",
+	"description": "A small, lightweight dagger that allows for quick and precise strikes.",
+	"looks": "The dagger has a slender, curved blade with intricate engravings. The hilt is wrapped in black leather, providing a secure grip.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_piercing": 10
+	},
+	"stat_bonus": {
+		"dex": 3,
+		"spd": 2
+	},
+	"usage_requirements": {
+		"dex": 10
+	},
+	"weight": 0.5,
+	"special_weapon_skils": {
+		"dagger_mastery": "Increases damage dealt with daggers."
+	},
+	"special_effects": {
+		"swift_strikes": "Allows the wielder to perform additional attacks in rapid succession."
+	}
+},
+{
+	"name": "Speed Potion",
+	"description": "A potion that increases the drinker's movement speed for a short duration.",
+	"looks": "The potion is a translucent green liquid that shimmers and sparkles.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"item_recipee": [
+		"Herbs",
+		"Glowing Mushroom",
+		"Magic Essence"
+	],
+	"stat_bonus": {
+		"spd": 20
+	},
+	"weight": 0.2
+},
+{
+	"name": "Poison Resistance Ring",
+	"description": "A ring that grants resistance to poison damage.",
+	"looks": "The ring is made of silver and has a green gemstone in the center.",
+	"durability": 1,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"resistance_poison": 20
+	},
+	"weight": 0.05
+},
+{
+	"name": "Healing Staff",
+	"description": "A magical staff that can be used to heal and restore health.",
+	"looks": "The staff is made of polished wood with intricate carvings and a crystal orb at the top.",
+	"durability": 100,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_light": -20
+	},
+	"stat_bonus": {
+		"max_hp": 50
+	},
+	"usage_requirements": {
+		"wis": 10
+	},
+	"weight": 2.5,
+	"special_weapon_skils": {
+		"Healing Magic": "Increases effectiveness of healing spells."
+	}
+},
+{
+	"name": "Invisibility Potion",
+	"description": "A potion that makes the user invisible for a short period of time.",
+	"looks": "The potion is a transparent, shimmering liquid in a small glass vial.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"item_recipee": [
+		"Moonstone Dust",
+		"Ghostly Fern",
+		"Essence of Shadows"
+	],
+	"special_effects": {
+		"Invisibility": "Grants invisibility to the user for a certain duration."
+	},
+	"weight": 0.2
+},
+{
+	"name": "Invisibility Cloak",
+	"description": "A cloak that grants the wearer the ability to become invisible for a short period of time.",
+	"looks": "The cloak is made of a shimmering silver fabric that seems to blend into the surroundings.",
+	"durability": 50,
+	"item_usage": "wear_back",
+	"stat_bonus": {
+		"spd": 10,
+		"def": -5
+	},
+	"usage_requirements": {
+		"dex": 20
+	},
+	"weight": 1.5,
+	"special_effects": {
+		"Invisibility": "Grants the wearer the ability to become invisible for a short period of time."
+	}
+},
+{
+	"name": "Elemental Staff",
+	"description": "A staff infused with the power of the elements.",
+	"looks": "The staff is made of polished wood with intricate carvings of fire, water, air, and earth. It emanates a faint glow and crackles with energy.",
+	"durability": 100,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_fire": 10,
+		"dmg_water": 5,
+		"dmg_air": 5,
+		"dmg_earth": 10
+	},
+	"stat_bonus": {
+		"int": 10
+	},
+	"usage_requirements": {
+		"int": 20
+	},
+	"weight": 2.5,
+	"special_weapon_skills": {
+		"elemental_magic": "Allows the wielder to cast powerful elemental spells."
+	},
+	"special_effects": {
+		"elemental_attunement": "Increases resistance to elemental damage."
+	}
+},
+{
+	"name": "Health Restoration Potion",
+	"description": "A potion that restores a small amount of health.",
+	"looks": "The potion is a small glass vial filled with a glowing blue liquid.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"stat_bonus": {
+		"hp": 50
+	},
+	"weight": 0.1
+},
+{
+	"name": "Strength Potion",
+	"description": "A potion that temporarily boosts the drinker's strength and melee damage.",
+	"looks": "The potion is a vibrant red color, swirling with energy.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"item_recipee": [
+		"Brewer's Yeast",
+		"Enchanted Ruby"
+	],
+	"stat_bonus": {
+		"str": 5
+	},
+	"weight": 0.1
+},
+{
+	"name": "Energy Potion",
+	"description": "A potion that grants a burst of energy, increasing movement speed and stamina regeneration.",
+	"looks": "The potion is a small flask filled with a sparkling yellow liquid.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"stat_bonus": {
+		"spd": 10,
+		"regen_sta": 5
+	},
+	"weight": 0.2
+},
+{
+	"name": "Amulet of Healing",
+	"description": "An amulet that grants healing abilities to the wearer.",
+	"looks": "The amulet is made of golden chain with a small crystal pendant.",
+	"durability": 1,
+	"item_usage": "trinket",
+	"stat_bonus": {
+		"regen_hp": 5
+	},
+	"weight": 0.2,
+	"special_effects": {
+		"Healing Aura": "Grants a small healing aura to the wearer."
+	}
+},
+{
+	"name": "Fireball Scroll",
+	"description": "A scroll containing the fireball spell.",
+	"looks": "The scroll is made of aged parchment, with the words 'Fireball' written in bold letters.",
+	"durability": 1,
+	"item_usage": "util",
+	"stat_bonus": {
+		"cast_speed": 0.5
+	},
+	"usage_requirements": {
+		"int": 10
+	},
+	"weight": 0.05,
+	"special_effects": {
+		"Fireball": "Casts a fireball spell that deals fire damage to enemies."
+	}
+},
+{
+	"name": "Fireball Scroll",
+	"description": "A scroll that allows the user to cast a powerful fireball spell.",
+	"looks": "The scroll is made of aged parchment and is tied with a crimson ribbon.",
+	"durability": 1,
+	"item_usage": "util",
+	"usage_requirements": {
+		"int": 10
+	},
+	"dmg": {
+		"dmg_fire": -100
+	},
+	"weight": 0.05,
+	"special_effects": {
+		"fireball": "Unleashes a fireball that explodes on impact, dealing fire damage to all enemies within range."
+	}
+},
+{
+	"name": "Explosive Fireball",
+	"description": "A powerful explosive fireball that causes massive damage to enemies.",
+	"looks": "The fireball is a burning sphere of intense heat and flame.",
+	"durability": 1,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_fire": 150
+	},
+	"stat_bonus": {
+		"int": 10
+	},
+	"usage_requirements": {
+		"int": 15
+	},
+	"weight": 0.5,
+	"special_effects": {
+		"Burn": "Causes target to burn for additional damage over time."
+	}
+},
+Astral Staff
+
+{
+	"name": "Astral Staff",
+	"description": "A powerful staff imbued with celestial energy.",
+	"looks": "The staff is made of polished oak with intricate carvings of stars and moons. It emits a faint glow.",
+	"durability": 100,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_light": 25
+	},
+	"stat_bonus": {
+		"int": 10,
+		"wis": 5,
+		"max_mp": 50
+	},
+	"usage_requirements": {
+		"int": 15
+	},
+	"weight": 2,
+	"special_weapon_skils": {
+		"staff_combat": "Increases damage and accuracy with staffs."
+	},
+	"special_effects": {
+		"celestial_burst": "Has a chance to unleash a burst of celestial energy that damages all enemies in range."
+	}
+}
+]

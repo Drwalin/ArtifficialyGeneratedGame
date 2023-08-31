@@ -1,0 +1,263 @@
+[
+{
+	"name": "Iron Sword",
+	"description": "A basic sword made of iron",
+	"looks": "The iron sword has a single-edged blade, tapering to a point. The hilt is made of wood and wrapped in leather for a better grip.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10
+	},
+	"stat_bonus": {
+		"str": 5,
+		"spd": 2,
+		"def": -2
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 2.5,
+	"special_weapon_skills": {
+		"swordsmanship": "Increases damage dealt with swords"
+	}
+},
+{
+	"name": "Steel Sword",
+	"description": "A well-crafted sword made from steel.",
+	"looks": "The steel sword has a sharp, double-edged blade with a slight curve. The hilt is wrapped in leather for a comfortable grip.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_physical": 20,
+		"str": 5,
+		"def": 2
+	},
+	"weight": 4
+},
+{
+	"name": "Sword of the Warrior",
+	"description": "A mighty sword forged for the fiercest warriors.",
+	"looks": "The Sword of the Warrior is a massive two-handed sword with a hilt wrapped in leather. The blade is adorned with intricate engravings and has a razor-sharp edge.",
+	"durability": 150,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_physical": 30
+	},
+	"stat_bonus": {
+		"str": 10,
+		"spd": 5
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 8,
+	"special_weapon_skills": {
+		"Two-Handed": "Increases damage dealt with two-handed weapons."
+	}
+},
+{
+	"name": "Steel Sword",
+	"description": "A longsword made of steel",
+	"looks": "The steel sword has a shiny steel blade with a straight edge. The hilt is made of leather wrapped around the handle, providing a comfortable grip.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 5
+	},
+	"weight": 2.5
+},
+{
+	"name": "Sword",
+	"description": "A standard longsword made from steel",
+	"looks": "The sword has a plain hilt with a simple crossguard. The blade is straight and sharp, with a fuller running down the center.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 30
+	},
+	"stat_bonus": {
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 5
+},
+{
+    "name": "Iron Sword",
+    "description": "A sturdy iron sword suitable for close combat",
+    "looks": "The iron sword has a straight blade with a sharp point and a simple crossguard. The hilt is wrapped in leather for a comfortable grip.",
+    "durability": 150,
+    "item_usage": "one_hand",
+    "dmg": {
+        "dmg_physical": 10
+    },
+    "stat_bonus": {
+        "str": 5,
+        "spd": 2
+    },
+    "usage_requirements": {
+        "str": 12
+    },
+    "weight": 4
+},
+{
+	"name": "Steel Breastplate",
+	"description": "A sturdy breastplate made of steel",
+	"looks": "The breastplate is made of polished steel with intricate engravings. It has a solid construction and covers the chest and upper torso completely.",
+	"durability": 250,
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"def": 15,
+		"max_hp": 75
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 15
+},
+{
+	"name": "Iron Longsword",
+	"description": "A versatile iron longsword that can be wielded with one or both hands.",
+	"looks": "The iron longsword has a straight blade with a single edge, a crossguard, and a handle wrapped in leather for a firm grip. The blade is about three feet in length and has a slightly curved tip.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_physical": 20,
+		"str": 5
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"sword_mastery": "Grants a bonus to Sword Mastery skill when wielded."
+	}
+},
+{
+	"name": "Steel Sword",
+	"description": "A sturdy sword made of steel",
+	"looks": "The steel sword has a straight blade with a single cutting edge. The handle is wrapped in leather for a secure grip.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_slashing": 15,
+		"def": 5
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 2.5
+},
+{
+	"name": "Steel Longsword",
+	"description": "A longsword made of hardened steel, designed for balanced handling and maximum damage output.",
+	"looks": "The steel longsword has a straight, double-edged blade with a sharp point. The handle is wrapped in leather for a comfortable grip, and the hilt has a simple crossguard.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"str": 8,
+		"dex": 3,
+		"max_hp": 5,
+		"dmg_slashing": 15
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 4,
+	"special_weapon_skils": {
+		"swordsmanship": "Increases damage and accuracy when using swords."
+	}
+},
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": 100,
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+	"name": "Steel Gauntlets",
+	"description": "Heavy gauntlets made of steel for maximum hand protection.",
+	"looks": "The steel gaunlets are made from sturdy steel plates that cover the entire hand and fingers. They have reinforced knuckles and a leather lining for comfort.",
+	"durability": 150,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 8,
+		"str": 3
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 3.5
+},
+{
+	"name": "Steel Sword",
+	"description": "A sturdy sword made of steel",
+	"looks": "The sword has a long blade made of shiny steel, with a hilt wrapped in leather for a better grip.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20
+	},
+	"stat_bonus": {
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 4.5
+},
+{
+	"name": "Longsword of the Fierce",
+	"description": "A powerful longsword with a fierce and intimidating presence.",
+	"looks": "The Longsword of the Fierce is a beautifully crafted weapon with a curved blade and a hilt adorned with intricate designs of flames. The blade itself has a dark, polished finish and a sharp edge.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 50
+	},
+	"stat_bonus": {
+		"str": 10,
+		"def": 5
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill when wielded."
+	},
+	"special_effects": {
+		"flaming_strike": "Has a chance to inflict additional fire damage on the target."
+	}
+},
+{
+	"name": "Steel Sword",
+	"description": "A sturdy sword made from steel.",
+	"looks": "The steel sword has a long, curved blade with a sharp edge and a silver finish. The hilt is wrapped in leather for a comfortable grip.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 2
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 4.5
+}
+]

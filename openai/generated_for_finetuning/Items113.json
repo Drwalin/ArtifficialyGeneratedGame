@@ -1,0 +1,276 @@
+[
+{
+	"name": "Magic Wand",
+	"description": "A wand imbued with magical energy, allowing the user to cast spells.",
+	"looks": "The magic wand is made of a smooth, polished wood and is adorned with intricate carvings. It has a crystal at the tip that glows with magical energy when spells are cast.",
+	"durability": 50,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"int": 10,
+		"max_mp": 30,
+		"cast_speed": 1
+	},
+	"weight": 0.5,
+	"special_weapon_skills": {
+		"wand_skill": "Allows the user to cast spells more efficiently."
+	}
+},
+{
+	"name": "Fireball Staff",
+	"description": "A staff imbued with the power of fire, allowing the wielder to cast devastating fire spells.",
+	"looks": "The Fireball Staff is made from polished oak wood, with a carved handle and a crystal orb at the top. The orb glows bright red when the staff is activated.",
+	"durability": 200,
+	"item_usage": "two_hand",
+	"stat_bonus": {
+		"max_mp": 100,
+		"int": 10,
+		"resistance_fire": 20
+	},
+	"usage_requirements": {
+		"int": 30
+	},
+	"weight": 4,
+	"special_weapon_skils": {
+		"fire_magic": "Increases effectiveness of fire-based spells."
+	},
+	"special_effects": {
+		"fire_damage": "Attacks deal additional fire damage."
+	}
+},
+{
+	"name": "Fireball Scroll",
+	"description": "A scroll containing the spell for casting a fireball. When activated, it releases a burst of fire that damages enemies.",
+	"looks": "The Fireball Scroll is made of thick parchment. It has intricate magical runes inscribed on its surface, which glow with a faint red light when activated.",
+	"durability": 1,
+	"item_usage": "util",
+	"stat_bonus": {
+		"max_mp": 10,
+		"int": 5,
+		"wis": 2,
+		"cast_speed": 5
+	},
+	"usage_requirements": {
+		"int": 15
+	},
+	"weight": 0.5,
+	"special_effects": {
+		"damage": "Upon activation, the scroll releases a fireball that deals damage to enemies in its area of effect."
+	}
+},
+{
+	"name": "Silver Dagger",
+	"description": "A small and lightweight dagger made of silver.",
+	"looks": "The silver dagger has a slender blade with a silver shine. The handle is wrapped in leather for a comfortable grip.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"dex": 3
+	},
+	"usage_requirements": {
+		"dex": 12
+	},
+	"weight": 0.5,
+	"special_weapon_skils": {
+		"dagger": "Increases damage dealt with dagger attacks."
+	}
+},
+{
+	"name": "Sword of Valor",
+	"description": "A legendary sword imbued with the essence of valor and honor",
+	"looks": "The Sword of Valor is a magnificent weapon, with a long and slender blade made of shining steel. The hilt is wrapped in fine leather, adorned with intricate golden engravings.",
+	"durability": 1000,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 50
+	},
+	"stat_bonus": {
+		"str": 10,
+		"def": 5
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 8,
+	"special_weapon_skills": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill when wielded."
+	},
+	"special_effects": {
+		"valor_strike": "Has a chance to deal bonus damage based on the character's valor stat."
+	}
+},
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": 100,
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+	"name": "Steel Longsword",
+	"description": "A well-crafted longsword made of steel",
+	"looks": "The longsword has a straight blade with a double-edged design. The hilt is made of polished steel with a leather grip, and the pommel is adorned with a decorative emblem.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_slashing": 20,
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 4.5,
+	"special_weapon_skils": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill when equipped."
+	}
+},
+{
+	"name": "Iron Sword",
+	"description": "A heavy iron sword that is effective for slashing and stabbing.",
+	"looks": "The iron sword has a straight blade with a sharp edge and a hilt made of leather wrapped around the handle. It has a crossguard to protect the hand and a pommel at the end for balance.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 5,
+	"special_weapon_skills": {
+		"swordsmanship": "Allows the use of advanced sword techniques."
+	}
+},
+{
+	"name": "Golden Sword",
+	"description": "A beautifully crafted sword made of pure gold.",
+	"looks": "The Golden Sword has a large blade made of pure gold, with intricate engravings and patterns. The hilt is adorned with jewels and the grip is wrapped in fine leather.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_physical": 20,
+		"def": 5
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 4.5
+},
+{
+	"name": "Sturdy Longsword",
+	"description": "A well-made longsword with a sturdy hilt and blade.",
+	"looks": "The Sturdy Longsword has a polished steel blade with a slight curve and a double-edged design. The hilt is made of wood and wrapped in leather for a comfortable grip. It has a simple crossguard and a pommel at the end.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 25
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"critical_strike": "Has a higher chance to critically strike."
+	}
+},
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": 100,
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+	"name": "Steel Gauntlets",
+	"description": "A pair of sturdy gauntlets made of steel.",
+	"looks": "The Steel Gauntlets are made of polished steel with intricate etchings along the surface. They have a full hand coverage with reinforced fingers and knuckle guards.",
+	"durability": 150,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 8,
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 3.5
+},
+{
+	"name": "Steel Sword",
+	"description": "A sturdy sword made of polished steel.",
+	"looks": "The steel sword is a straight blade with a sharp edge and a pointed tip. The hilt is wrapped in leather for a comfortable grip.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_physical": 30,
+		"spd": 5
+	},
+	"usage_requirements": {
+		"str": 20,
+		"dex": 15
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"sword": "Allows the use of special sword techniques."
+	}
+},
+{
+	"name": "Iron Sword",
+	"description": "A basic sword made of iron",
+	"looks": "The iron sword has a simple design, with a straight blade and a hilt wrapped in leather. It has a silver-gray color and a slightly worn appearance.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 2
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 4.5
+},
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": 100,
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+}
+]

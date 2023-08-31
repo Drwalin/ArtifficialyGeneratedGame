@@ -2,6 +2,8 @@
 extends EditorScript
 class_name MakeOpenAIRequestChatCompletion;
 
+var example_items : String = "";
+
 func GetNewItemsFileName(starting_file_id: int = 1) -> String:
 	for i in range(starting_file_id,100000):
 		var path:String = "res://openai/generated_for_finetuning/Items%d.json" % [i];
@@ -16,43 +18,191 @@ func _run():
 	thread.wait_to_finish();
 	
 func DoWork():
-	var args = [
-		"Generate heavy armor wear_hand",
-		"Generate heavy armor wear_head",
-		"Generate heavy armor wear_feet",
-		"Generate heavy armor wear_legs",
-		"Generate heavy armor wear_torso",
-		
-		"Generate light armor wear_hand",
-		"Generate light armor wear_head",
-		"Generate light armor wear_feet",
-		"Generate light armor wear_legs",
-		"Generate light armor wear_torso",
-		
-		"Generate mage armor wear_hand",
-		"Generate mage armor wear_head",
-		"Generate mage armor wear_feet",
-		"Generate mage armor wear_legs",
-		"Generate mage armor wear_torso",
-		
+	var args_armor = [
+		"Generate heavy armor gauntlets",
+		"Generate heavy armor helmet",
+		"Generate heavy armor boots",
+		"Generate heavy armor leggings",
+		"Generate heavy armor brestplate or chainmail",
+		"Generate light armor gloves",
+		"Generate light armor helmet or hood",
+		"Generate light armor boots",
+		"Generate light armor leggings",
+		"Generate light armor vest",
+		"Generate mage armor gloves",
+		"Generate mage armor cowl or hood",
+		"Generate mage armor sandals or boots",
+		"Generate mage armor leggings",
+		"Generate mage armor robe",
+		"Generate weak heavy armor gauntlets",
+		"Generate weak heavy armor helmet",
+		"Generate weak heavy armor boots",
+		"Generate weak heavy armor leggings",
+		"Generate weak heavy armor brestplate or chainmail",
+		"Generate weak light armor gloves",
+		"Generate weak light armor helmet or hood",
+		"Generate weak light armor boots",
+		"Generate weak light armor leggings",
+		"Generate weak light armor vest",
+		"Generate weak mage armor gloves",
+		"Generate weak mage armor cowl or hood",
+		"Generate weak mage armor sandals or boots",
+		"Generate weak mage armor leggings",
+		"Generate weak mage armor robe",
+		"Generate very powerfull heavy armor gauntlets",
+		"Generate very powerfull heavy armor helmet",
+		"Generate very powerfull heavy armor boots",
+		"Generate very powerfull heavy armor leggings",
+		"Generate very powerfull heavy armor brestplate or chainmail",
+		"Generate very powerfull light armor gloves",
+		"Generate very powerfull light armor helmet or hood",
+		"Generate very powerfull light armor boots",
+		"Generate very powerfull light armor leggings",
+		"Generate very powerfull light armor vest",
+		"Generate very powerfull mage armor gloves",
+		"Generate very powerfull mage armor cowl or hood",
+		"Generate very powerfull mage armor sandals or boots",
+		"Generate very powerfull mage armor leggings",
+		"Generate very powerfull mage armor robe",
+		"Generate legendary artifact heavy armor gauntlets",
+		"Generate legendary artifact heavy armor helmet",
+		"Generate legendary artifact heavy armor boots",
+		"Generate legendary artifact heavy armor leggings",
+		"Generate legendary artifact heavy armor brestplate or chainmail",
+		"Generate legendary artifact light armor gloves",
+		"Generate legendary artifact light armor helmet or hood",
+		"Generate legendary artifact light armor boots",
+		"Generate legendary artifact light armor leggings",
+		"Generate legendary artifact light armor vest",
+		"Generate legendary artifact mage armor gloves",
+		"Generate legendary artifact mage armor cowl or hood",
+		"Generate legendary artifact mage armor sandals or boots",
+		"Generate legendary artifact mage armor leggings",
+		"Generate legendary artifact mage armor robe",
+	];
+	
+	var args_weapon = [
+		"Generate sword",
+		"Generate two handed sword",
+		"Generate staff",
+		"Generate druid staff",
+		"Generate leric staff",
+		"Generate mage staff",
+		"Generate mace",
+		"Generate weapon",
+		"Generate axe",
+		"Generate waraxe",
+		"Generate spear",
+		"Generate whip",
+		"Generate dagger",
+		"Generate hammer",
+		"Generate bow",
+		"Generate crossbow",
+		"Generate shield",
+		"Generate weak sword",
+		"Generate weak two handed sword",
+		"Generate weak staff",
+		"Generate weak druid staff",
+		"Generate weak leric staff",
+		"Generate weak mage staff",
+		"Generate weak mace",
+		"Generate weak weapon",
+		"Generate weak axe",
+		"Generate weak waraxe",
+		"Generate weak spear",
+		"Generate weak whip",
+		"Generate weak dagger",
+		"Generate weak hammer",
+		"Generate weak bow",
+		"Generate weak crossbow",
+		"Generate weak shield",
+		"Generate very powerfull sword",
+		"Generate very powerfull two handed sword",
+		"Generate very powerfull staff",
+		"Generate very powerfull druid staff",
+		"Generate very powerfull leric staff",
+		"Generate very powerfull mage staff",
+		"Generate very powerfull mace",
+		"Generate very powerfull weapon",
+		"Generate very powerfull axe",
+		"Generate very powerfull waraxe",
+		"Generate very powerfull spear",
+		"Generate very powerfull whip",
+		"Generate very powerfull dagger",
+		"Generate very powerfull hammer",
+		"Generate very powerfull bow",
+		"Generate very powerfull crossbow",
+		"Generate very powerfull shield",
+		"Generate legendary artifact sword",
+		"Generate legendary artifact two handed sword",
+		"Generate legendary artifact staff",
+		"Generate legendary artifact druid staff",
+		"Generate legendary artifact leric staff",
+		"Generate legendary artifact mage staff",
+		"Generate legendary artifact mace",
+		"Generate legendary artifact weapon",
+		"Generate legendary artifact axe",
+		"Generate legendary artifact waraxe",
+		"Generate legendary artifact spear",
+		"Generate legendary artifact whip",
+		"Generate legendary artifact dagger",
+		"Generate legendary artifact hammer",
+		"Generate legendary artifact bow",
+		"Generate legendary artifact crossbow",
+		"Generate legendary artifact shield",
+	];
+	
+	var args_potion = [
 		"Generate potion",
 		"Generate not healing potion",
 		"Generate not healing nor mana potion",
-		"Generate artifact",
-		"Generate legendary artifact",
+		"Generate magical food",
 		"Generate non combat potion",
+		"Generate legendary potion",
+		"Generate not healing legendary potion",
+		"Generate not healing nor mana legendary potion",
+		"Generate legendary magical food",
+		"Generate non combat legendary potion",
+	];
+	
+	var args_other = [
 		"Generate util",
 		"Generate junk",
-		"Generate magical food"
+		"Generate trap",
 	];
+	
+	var full_args = [
+		[
+			args_armor,
+			"res://openai/generated_for_finetuning/Items-armor.json",
+			100
+		],
+		[
+			args_weapon,
+			"res://openai/generated_for_finetuning/Items-weapons.json",
+			200
+		],
+		[
+			args_potion,
+			"res://openai/generated_for_finetuning/Items-potions.json",
+			300
+		],
+		[	args_other,
+			"res://openai/generated_for_finetuning/Empty.json",
+			400
+		]
+	];
+	
+	
 	for i in range(0,100):
 		print("\n");
-	for m in args:
-		do_stuff(m, 20);
-		print("\n\n\nBefore sleep");
-		OS.delay_msec(1000*30);
-		print("\n\n\nAfter sleep");
-		break;
+	for arg in full_args:
+		for m in arg[0]:
+			example_items = FileAccess.open(arg[1], FileAccess.READ).get_as_text();
+			do_stuff(m, arg[2]);
+			print("\n\n\nBefore sleep");
+			OS.delay_msec(1000*70);
+			print("\n\n\nAfter sleep");
 
 func do_stuff(message: String, starting_file_id: int = 1):
 	var callback = func(json):
@@ -75,7 +225,7 @@ func do_stuff(message: String, starting_file_id: int = 1):
 		print("Saving into file: ", file_path);
 		var resps = FileAccess.open(file_path, FileAccess.WRITE);
 		resps.store_string(file_content);
-	CallChatAPIWithDefaultSystem(callback, "Generate ", "gpt-3.5-turbo-16k", 30, 1);
+	CallChatAPIWithDefaultSystem(callback, "Generate ", "gpt-3.5-turbo-16k", 15, 1);
 
 func CallChatAPIWithDefaultSystem(callback, message:String,
 		model:String="gpt-3.5-turbo", n: int=1, temperature: float=1,
@@ -146,16 +296,10 @@ func CallChatAPIWithDefaultSystem(callback, message:String,
 	
 
 func generate_system_message() -> String:
-	var items = JSON.parse_string(FileAccess.open("res://openai/generated_for_finetuning/Items2.json", FileAccess.READ).get_as_text());
+	var items = example_items;
 	var system_header = (FileAccess.open(
 			"res://openai/item_format_description.txt",
 			FileAccess.READ)
 		.get_as_text());
-	var output : String = system_header;
-#	return output;
-	
-	output += "\n\nHere are some example items:";
-	for i in items:
-		var content:String = JSON.stringify(i, "\t") as String;
-		output = output + "\n\n" + content;
+	var output : String = system_header + "\n\nHere are some example items:\n\n" + items;
 	return output;

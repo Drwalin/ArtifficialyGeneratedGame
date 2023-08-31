@@ -1,0 +1,305 @@
+[
+{
+	"name": "Wooden Bow",
+	"description": "A basic wooden bow suitable for beginners.",
+	"looks": "The wooden bow is made from a single piece of sturdy wood, with a simple design and no embellishments.",
+	"durability": 60,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_piercing": 10
+	},
+	"stat_bonus": {
+		"dex": 3,
+		"spd": 5
+	},
+	"usage_requirements": {
+		"dex": 10
+	},
+	"weight": 2.5,
+	"special_weapon_skills": {
+		"archery": "Increases accuracy and damage with bows."
+	}
+},
+{
+	"name": "Iron Sword",
+	"description": "A basic sword made of iron",
+	"looks": "The iron sword has a simple design with a single-edged blade and a hilt made of leather. It is sturdy and reliable.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10
+	},
+	"stat_bonus": {
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 4
+},
+{
+	"name": "Fireball Staff",
+	"description": "A staff imbued with the power of fire, capable of casting powerful fireball spells.",
+	"looks": "The Fireball Staff is a long, wooden staff with a carved, flaming orb at the top. The wood has a dark, burnt appearance and emanates heat.",
+	"durability": 150,
+	"item_usage": "two_hand",
+	"stat_bonus": {
+		"max_mp": 100,
+		"int": 10,
+		"wis": 5,
+		"def": 5,
+		"cast_speed": 3
+	},
+	"usage_requirements": {
+		"int": 25,
+		"wis": 20
+	},
+	"weight": 3,
+	"special_weapon_skills": {
+		"fire_magic": "Increases the power of fire magic spells."
+	},
+	"dmg": {
+		"dmg_fire": 30
+	},
+	"dmg_over_time": {
+		"dmg_fire": [
+			10,
+			5
+		]
+	},
+	"special_effects": {
+		"fireball_explode": "The fireballs created by this staff explode on impact, causing additional area of effect damage."
+	}
+},
+{
+	"name": "Steel Gauntlets",
+	"description": "A pair of durable steel gauntlets that provide enhanced protection for the hands.",
+	"looks": "The steel gauntlets are made of thick steel plates, covering the entirety of the hands and fingers. They have a smooth surface with intricate engravings and reinforced knuckles for added defense.",
+	"durability": 150,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 8,
+		"str": 2
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 3
+},
+{
+	"name": "Iron Sword",
+	"description": "A sturdy iron sword that is ideal for close combat.",
+	"looks": "The iron sword has a long, straight blade with a sharp edge. The hilt is made of leather, providing a comfortable grip. The pommel is simple, yet elegant.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_slashing": 10,
+		"def": 2
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill when used."
+	}
+},
+{
+	"name": "Silver Dagger",
+	"description": "A small and sharp dagger made of silver, perfect for stealthy attacks.",
+	"looks": "The silver dagger has a slender and curved blade, with a silver hilt adorned with intricate engravings. It has a small guard to protect the hand.",
+	"durability": 60,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20
+	},
+	"stat_bonus": {
+		"str": 3,
+		"dex": 8
+	},
+	"usage_requirements": {
+		"dex": 10
+	},
+	"weight": 0.5,
+	"special_weapon_skils": {
+		"dagger_skill": "Increases damage and accuracy with daggers."
+	}
+},
+{
+	"name": "Steel Gauntlets",
+	"description": "A pair of sturdy gauntlets made from steel.",
+	"looks": "The gauntlets are made of polished steel plates, providing excellent protection for the hands and wrists. They have a textured surface for better grip and are secured with leather straps.",
+	"durability": 150,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 8
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 4
+},
+{
+	"name": "Iron Sword",
+	"description": "A basic iron sword",
+	"looks": "The iron sword has a plain, straight blade with a sharp edge. The hilt is made of leather and has a simple crossguard.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_physical": 10
+	},
+	"usage_requirements": {
+		"str": 8,
+		"dex": 6
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill when equipped."
+	}
+},
+{
+	"name": "Steel Sword",
+	"description": "A well-crafted sword made of steel",
+	"looks": "The sword has a long, straight blade with a sharp edge. The hilt is wrapped in leather for a comfortable grip, and the pommel is decorated with intricate engravings.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"usage_requirements": {
+		"str": 10,
+		"dex": 8
+	},
+	"weight": 2.5,
+	"special_weapon_skills": {
+		"swordsmanship": "Increases damage and accuracy when wielding swords"
+	}
+},
+{
+	"name": "Iron Sword",
+	"description": "A sturdy sword made of iron.",
+	"looks": "The iron sword has a blade made of solid iron, with a double-edged design. The handle is wrapped in leather for a comfortable grip.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_physical": 10,
+		"str": 5,
+		"dex": 3
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 4
+},
+{
+	"name": "Iron Sword",
+	"description": "A basic iron sword with a sharp blade.",
+	"looks": "The iron sword is a simple weapon with a straight blade made of iron. The hilt is wrapped in leather for a secure grip.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20
+	},
+	"stat_bonus": {
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 4
+},
+{
+	"name": "Adamantium Gauntlets",
+	"description": "Powerful gauntlets made from the rarest material on earth, providing exceptional protection and strength.",
+	"looks": "The Adamantium Gauntlets are made of a dark gray metal that appears to be indestructible. They have intricate carvings and runes etched into the surface, glowing with a faint blue light.",
+	"durability": 500,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 20,
+		"str": 10,
+		"con": 5
+	},
+	"usage_requirements": {
+		"str": 30
+	},
+	"weight": 5,
+	"special_effects": {
+		"adamantium_skin": "Grants additional resistance to all damage types."
+	}
+},
+{
+    "name": "Mage Staff",
+    "description": "A powerful staff imbued with magic, perfect for casting spells.",
+    "looks": "The Mage Staff is made from a long, sturdy wooden shaft with a crystal orb at the top. The crystal glows with a faint magical energy and emits a soft light.",
+    "durability": 150,
+    "item_usage": "two_hand",
+    "stat_bonus": {
+        "max_mp": 100,
+        "int": 10,
+        "wis": 5,
+        "cast_speed": 2
+    },
+    "usage_requirements": {
+        "int": 20
+    },
+    "weight": 4,
+    "special_weapon_skills": {
+        "staff": "Grants a bonus to Staff skill when equipped."
+    }
+},
+{
+	"name": "Adamantine Longsword",
+	"description": "A legendary sword forged from the rare and powerful metal known as adamantine.",
+	"looks": "The Adamantine Longsword has a slender and elegant design, with a blade that gleams with a silver-white color. The hilt is wrapped in black leather and decorated with intricate engravings.",
+	"durability": 500,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 50
+	},
+	"stat_bonus": {
+		"str": 10,
+		"dex": 5,
+		"luck": 3
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 4,
+	"special_weapon_skils": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill when wielded."
+	},
+	"special_effects": {
+		"unyielding": "Increases physical damage by 10%."
+	}
+},
+{
+	"name": "Staff of Fireball",
+	"description": "A powerful staff that harnesses the destructive power of fire",
+	"looks": "The staff is made of polished oak and has a carved crystal orb at the top. The orb glows with a fiery red light and flickers with flames. The staff has intricate engravings of flames and runes along its length.",
+	"durability": 150,
+	"item_usage": "two_hand",
+	"stat_bonus": {
+		"int": 10,
+		"max_mp": 50,
+		"damage_fire": 20,
+		"cast_speed": 1
+	},
+	"usage_requirements": {
+		"int": 15
+	},
+	"weight": 4,
+	"special_weapon_skils": {
+		"fire_magic": "Increases damage and effectiveness of fire spells"
+	},
+	"special_effects": {
+		"fireball": "Allows the wielder to cast Fireball spell"
+	}
+}
+]

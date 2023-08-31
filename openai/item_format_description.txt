@@ -3,7 +3,7 @@ Use following json format:
 	"name": "@provide item name here",
 	"description": "@provide item description here",
 	"looks": "@provide description of how the item looks",
-	"durability": "@provide item durability in numerical value",
+	"durability": @provide item durability in numerical value,
 	"item_usage": "@provide item usage from available: consumable, trinket, one_hand, two_hand, wear_hand, wear_head, wear_feet, wear_legs, wear_torso, wear_back, util, junk",
 	"item_recipee": [
 		"@ingredient 1",
@@ -111,5 +111,6 @@ Damage types:
 	- dmg_blunt
 	- dmg_piercing
 
+Generate only one item json.
 
 

@@ -1,0 +1,289 @@
+[
+{
+	"name": "Iron Sword",
+	"description": "A basic iron sword suitable for beginners",
+	"looks": "The Iron Sword has a straight blade made of iron with a simple hilt made of leather. The pommel is rounded and the guard is basic and functional.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20
+	},
+	"stat_bonus": {
+		"str": 3,
+		"dex": 1
+	},
+	"usage_requirements": {
+		"str": 10,
+		"dex": 8
+	},
+	"weight": 4.5
+},
+{
+	"name": "Iron Sword",
+	"description": "A simple iron sword with a sharp blade.",
+	"looks": "The iron sword has a straight blade with a single cutting edge. The hilt is made of leather-wrapped iron and has a simple crossguard.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 25
+	},
+	"stat_bonus": {
+		"str": 5,
+		"spd": 2
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 3.5,
+	"special_weapon_skills": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill when equipped."
+	}
+},
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": 100,
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+	"name": "Steel Gauntlets",
+	"description": "Heavy gauntlets made of steel, providing excellent hand protection.",
+	"looks": "The steel gauntlets are made of thick steel plates, covering the hands and extending up to the forearm. They have reinforced knuckles and adjustable straps for a secure fit.",
+	"durability": 180,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 8,
+		"str": 3
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 4
+},
+{
+	"name": "Sword of the Undead",
+	"description": "A sword imbued with dark magic, said to be able to drain the life force of its enemies.",
+	"looks": "The Sword of the Undead has a black, ornate hilt with ruby red gemstones embedded in it. The blade is curved and made of a dark, shimmering metal that seems to glow with an eerie light.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_physical": 50,
+		"dmg_dark": 30,
+		"def": -5,
+		"hp": -10
+	},
+	"usage_requirements": {
+		"str": 20,
+		"int": 10
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"Life Drain": "Allows the wielder to drain the life force of enemies with each successful attack, restoring a percentage of their own HP."
+	},
+	"special_effects": {
+		"Shadowstrike": "Grants a chance to inflict extra dark damage on enemies when attacking from the shadows."
+	}
+},
+{
+	"name": "Staff of Lightning",
+	"description": "A wooden staff imbued with the power of lightning.",
+	"looks": "The Staff of Lightning is made from a smooth, dark wood with intricate carvings along its length. The top of the staff is adorned with a crystal that pulsates with electrical energy.",
+	"durability": 150,
+	"item_usage": "two_hand",
+	"stat_bonus": {
+		"dmg_lightning": 20,
+		"max_mp": 100,
+		"int": 10,
+		"wis": 5
+	},
+	"usage_requirements": {
+		"int": 30,
+		"wis": 20
+	},
+	"weight": 3.5,
+	"special_weapon_skills": {
+		"elemental_mastery": "Increases the damage of lightning spells by 10%."
+	},
+	"special_effects": {
+		"eletric_shock": "Chance to shock enemies with lightning damage on critical hits."
+	}
+},
+{
+	"name": "Steel Gauntlets",
+	"description": "A pair of sturdy gauntlets made from steel",
+	"looks": "The gauntlets are made of smooth steel with a silver tint. They have reinforced knuckles and finger guards.",
+	"durability": 150,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 8
+	},
+	"usage_requirements": {
+		"str": 12,
+		"dex": 8
+	},
+	"weight": 2
+},
+{
+	"name": "Moonstone Staff",
+	"description": "A powerful staff infused with the energy of the moon.",
+	"looks": "The Moonstone Staff is a long staff made of polished oak wood. The top of the staff is adorned with a large moonstone gem that emits a soft glow.",
+	"durability": 150,
+	"item_usage": "two_hand",
+	"stat_bonus": {
+		"max_mp": 100,
+		"int": 10,
+		"wis": 8,
+		"dmg_mental": 20
+	},
+	"usage_requirements": {
+		"int": 25
+	},
+	"weight": 4,
+	"special_weapon_skils": {
+		"staff_skill": "Grants a bonus to Staff skill when used."
+	},
+	"special_effects": {
+		"moonlight_beam": "Chance to cast a powerful moonlight beam that damages enemies."
+	}
+},
+{
+	"name": "Steel Helmet",
+	"description": "A sturdy helmet made of steel.",
+	"looks": "The helmet is made of smooth steel with a silver tint. It has a visor that can be opened and closed.",
+	"durability": 200,
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 10,
+		"max_hp": 50
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 5
+},
+{
+	"name": "Flame Sword",
+	"description": "A sword infused with the power of fire, capable of dealing burning damage to enemies.",
+	"looks": "The Flame Sword has a long, curved blade that glows with a fiery red color. The hilt is wrapped in leather and has intricate designs of flames etched into it.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 30,
+		"dmg_fire": 10
+	},
+	"stat_bonus": {
+		"str": 10,
+		"def": 5
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 4,
+	"special_weapon_skils": {
+		"fire_magic": "Allows the use of fire magic spells with increased effectiveness."
+	},
+	"special_effects": {
+		"burning_damage": "Inflicts burning damage on enemies, causing additional damage over time."
+	}
+},
+{
+	"name": "Obsidian Greatsword",
+	"description": "A massive sword crafted from obsidian, known for its devastating cutting power.",
+	"looks": "The Obsidian Greatsword is an imposing weapon, with a long, straight blade made entirely of obsidian. The hilt is wrapped in thick leather for a secure grip, and the pommel is adorned with intricate carvings.",
+	"durability": 150,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_physical": 50
+	},
+	"stat_bonus": {
+		"str": 15,
+		"def": 5
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 10,
+	"special_weapon_skils": {
+		"greatsword_mastery": "Increases damage dealt with greatswords by 25%."
+	}
+},
+{
+	"name": "Steel Gauntlets",
+	"description": "A pair of gauntlets made from durable steel, providing excellent hand protection.",
+	"looks": "The steel gauntlets are made of thick plates of steel, covering the hands and extending up to the forearms. They have intricate engravings and reinforced knuckles.",
+	"durability": 150,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 8,
+		"str": 2,
+		"dex": 2
+	},
+	"weight": 4
+},
+{
+	"name": "Golden Ring",
+	"description": "A shiny golden ring adorned with intricate engravings.",
+	"looks": "The golden ring has a polished surface that reflects light, giving it a radiant appearance. It is engraved with delicate patterns and designs.",
+	"durability": 100,
+	"item_usage": "trinket",
+	"stat_bonus": {
+		"cha": 2,
+		"luck": 5
+	},
+	"usage_requirements": {
+		"lvl": 10
+	},
+	"weight": 0.5,
+	"special_effects": {
+		"luck_boost": "Grants a bonus to Luck stat."
+	}
+},
+{
+	"name": "Warhammer",
+	"description": "A large, two-handed hammer designed for crushing opponents with powerful blows.",
+	"looks": "The head of the warhammer is made of solid steel, with a flat surface on one side and a spike on the other. The handle is made of sturdy wood and wrapped in leather for a firm grip.",
+	"durability": 150,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_blunt": 35
+	},
+	"stat_bonus": {
+		"str": 5,
+		"def": -2
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 8.5,
+	"special_weapon_skills": {
+		"crushing_blow": "Has a chance to stun the target for a brief period of time."
+	}
+},
+{
+	"name": "Steel Gauntlets",
+	"description": "A pair of sturdy gauntlets made of steel.",
+	"looks": "The steel gauntlets are crafted from thick steel plates, providing excellent protection for the hands and wrists. They have intricate engravings along the edges and reinforced knuckles.",
+	"durability": 150,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 8,
+		"str": 3,
+		"max_hp": 5
+	},
+	"usage_requirements": {
+		"str": 12,
+		"dex": 10
+	},
+	"weight": 3.5
+}
+]

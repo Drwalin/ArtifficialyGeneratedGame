@@ -1,0 +1,287 @@
+[
+{
+	"name": "Inferno Staff",
+	"description": "A staff infused with the power of fire, capable of unleashing devastating flames.",
+	"looks": "The Inferno Staff has a long wooden shaft with intricate carvings that resemble flames. At the top of the staff, there is a crystal orb that radiates a fiery glow.",
+	"durability": 150,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_fire": 15
+	},
+	"stat_bonus": {
+		"max_mp": 80,
+		"int": 10,
+		"wis": 5,
+		"cast_speed": 2
+	},
+	"usage_requirements": {
+		"int": 25,
+		"wis": 15
+	},
+	"weight": 4.5,
+	"special_weapon_skills": {
+		"fire_magic": "Increases damage and effectiveness of fire magic spells."
+	},
+	"special_effects": {
+		"fire_attunement": "Grants resistance to fire damage while wielding the staff."
+	}
+},
+{
+	"name": "Silver Sword",
+	"description": "A finely crafted sword made of silver.",
+	"looks": "The Silver Sword has a slender and elegant blade with a shiny silver finish. The hilt is adorned with intricate engravings and a pommel in the shape of a lion's head.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_slashing": 15
+	},
+	"usage_requirements": {
+		"str": 18,
+		"dex": 14
+	},
+	"weight": 2.5,
+	"special_weapon_skills": {
+		"swordmanship": "Grants a bonus to Swordmanship skill when used."
+	}
+},
+{
+	"name": "Bronze Dagger",
+	"description": "A small and sharp dagger made from bronze.",
+	"looks": "The bronze dagger has a short, double-edged blade with a sharp point. The hilt is made of leather wrapped around the tang. It is lightweight and easy to maneuver.",
+	"durability": 80,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10
+	},
+	"stat_bonus": {
+		"dex": 2
+	},
+	"usage_requirements": {
+		"dex": 10
+	},
+	"weight": 1.5,
+	"special_weapon_skils": {
+		"dagger": "Provides a bonus to Dagger skill when equipped."
+	}
+},
+{
+	"name": "Steel Sword",
+	"description": "A well-crafted sword made of steel",
+	"looks": "The steel sword has a straight blade with a single-edge and a crossguard. The hilt is wrapped in leather for a comfortable grip.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 25
+	},
+	"stat_bonus": {
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 4,
+	"special_weapon_skils": {
+		"sword": "Grants a bonus to Sword skill when wielded."
+	}
+},
+{
+	"name": "Battle Axe",
+	"description": "A large and heavy axe designed for heavy combat.",
+	"looks": "The battle axe has a long handle made of sturdy wood, with a large and sharp metal blade attached at the end. The blade has a curved shape for maximum cutting power.",
+	"durability": 150,
+	"item_usage": "two_hand",
+	"stat_bonus": {
+		"str": 10,
+		"dmg_slashing": 50,
+		"def": 5
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 6,
+	"special_weapon_skills": {
+		"axe_mastery": "Grants a bonus to Axe Mastery skill when wielded."
+	}
+},
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": 100,
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+	"name": "Dagger",
+	"description": "A small and sharp dagger, perfect for close-quarters combat.",
+	"looks": "The dagger has a slim and curved blade, with a hilt made of polished wood. It fits comfortably in the hand and is easy to conceal.",
+	"durability": 50,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_piercing": 5,
+		"spd": 2
+	},
+	"usage_requirements": {
+		"dex": 8
+	},
+	"weight": 0.5
+},
+{
+	"name": "Steel Sword",
+	"description": "A sharp and sturdy sword made of steel.",
+	"looks": "The steel sword has a straight blade with a single edge and a pointed tip. The hilt is made of solid steel with a crossguard for hand protection.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_slashing": 20,
+		"str": 5,
+		"spd": 5
+	},
+	"usage_requirements": {
+		"str": 10,
+		"dex": 10
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"sword_mastery": "Increases sword damage and accuracy."
+	}
+},
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": 100,
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+	"name": "Iron Sword",
+	"description": "A basic iron sword suitable for beginners.",
+	"looks": "The iron sword has a straight blade with a single cutting edge. The handle is wrapped in leather for a secure grip.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_physical": 10,
+		"str": 5
+	},
+	"weight": 4
+},
+{
+	"name": "Fireball Scroll",
+	"description": "A scroll containing the Fireball spell, which creates a fiery explosion at the target location.",
+	"looks": "The scroll is made of aged parchment and is sealed with a red wax seal. It has the words 'Fireball' written in elegant script on the front.",
+	"durability": 1,
+	"item_usage": "util",
+	"item_recipee": [
+		"Blank Scroll",
+		"Fire Essence",
+		"Incinerated Ash"
+	],
+	"dmg": {
+		"dmg_fire": -50
+	},
+	"special_effects": {
+		"area_of_effect": "The Fireball spell damages all enemies within a certain radius of the target location."
+	}
+},
+{
+	"name": "Golden Staff",
+	"description": "A staff made of solid gold, adorned with intricate designs and gemstones.",
+	"looks": "The Golden Staff is a long, elegant staff made entirely of gold. It has a curved top that is encrusted with various gemstones, including sapphires, emeralds, and diamonds. The staff is engraved with intricate patterns and symbols, giving it a regal and magical appearance.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_magic": 10,
+		"int": 5,
+		"wis": 3,
+		"max_mp": 30,
+		"def": 5,
+		"resistance_lightning": 15,
+		"cast_speed": 2
+	},
+	"usage_requirements": {
+		"int": 25
+	},
+	"weight": 4.5,
+	"special_weapon_skills": {
+		"staff_mastery": "Increases damage and accuracy with staves.",
+		"lightning_bolt": "Unleashes a powerful lightning bolt spell.",
+	},
+	"special_effects": {
+		"enchantment": "The Golden Staff is enchanted to enhance the wielder's magical abilities."
+	}
+},
+{
+	"name": "Steel Longsword",
+	"description": "A classic longsword made from durable steel.",
+	"looks": "The steel longsword has a straight double-edged blade with a fuller running down the center. The hilt is wrapped in leather and has a crossguard for protection.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20
+	},
+	"stat_bonus": {
+		"str": 10,
+		"dex": 5
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 3,
+	"special_weapon_skills": {
+		"sword": "Allows the use of advanced sword techniques."
+	}
+},
+{
+	"name": "Steel Chestplate",
+	"description": "A heavy and durable chestplate made from strong steel.",
+	"looks": "The steel chestplate is a solid piece of armor that provides excellent protection to the torso. It is made from polished steel plates that are riveted together. It has adjustable leather straps and buckles for a secure fit.",
+	"durability": 300,
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"def": 15,
+		"max_hp": 100
+	},
+	"usage_requirements": {
+		"str": 18,
+		"dex": 12,
+		"con": 15
+	},
+	"weight": 25
+},
+{
+	"name": "Longsword",
+	"description": "A versatile one-handed sword, suitable for both slashing and thrusting attacks.",
+	"looks": "The longsword has a double-edged blade with a straight crossguard and a grip wrapped in leather for a firm hold.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_slashing": 25
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"usage_requirements": {
+		"str": 12,
+		"dex": 8
+	},
+	"weight": 2.5
+}
+]

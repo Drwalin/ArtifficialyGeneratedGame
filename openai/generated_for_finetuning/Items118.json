@@ -1,0 +1,281 @@
+[
+{
+	"name": "Mace of the Sun",
+	"description": "A powerful mace infused with the essence of the sun. It radiates intense heat and light.",
+	"looks": "The mace is made of golden metal, with intricate carvings of sun motifs along its shaft. The head of the mace is shaped like a blazing sun, with rays of light extending outwards.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_fire": 20
+	},
+	"stat_bonus": {
+		"str": 10,
+		"def": 5
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"mace": "Increases the effectiveness of mace-based attacks."
+	},
+	"special_effects": {
+		"burning": "Has a chance to set enemies on fire, dealing additional fire damage over time."
+	}
+},
+{
+	"name": "Iron Sword",
+	"description": "A basic sword made from iron.",
+	"looks": "The iron sword has a long, straight blade with a slightly curved edge. The hilt is made of wood with a simple crossguard.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_slashing": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 3,
+	"special_weapon_skils": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill when wielded."
+	}
+},
+{
+	"name": "Steel Gauntlets",
+	"description": "Heavy steel gauntlets that provide excellent protection for the hands and fingers.",
+	"looks": "The gauntlets are made of polished steel with intricate engravings. They cover the entire hand and extend up to the forearm, with separate plates for each finger.",
+	"durability": 150,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 8,
+		"str": 2,
+		"dex": 1
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 4.5
+},
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": 100,
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+	"name": "Steel Gauntlets",
+	"description": "A pair of steel gauntlets that provide protection for the hands and wrists.",
+	"looks": "The gauntlets are made of solid steel plates with leather straps for a secure fit. They have reinforced knuckles and a smooth surface.",
+	"durability": 150,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 8
+	},
+	"usage_requirements": {
+		"str": 12,
+		"dex": 8
+	},
+	"weight": 2.5
+},
+{
+	"name": "Steel Chestplate",
+	"description": "A heavy and durable chestplate made from steel.",
+	"looks": "The steel chestplate is a sturdy piece of armor that covers the chest and upper torso. It is made from polished steel with intricate engravings and has solid metal plates that overlap for added protection.",
+	"durability": 250,
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"def": 15,
+		"max_hp": 75
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 25
+},
+{
+	"name": "Mage Staff",
+	"description": "A powerful staff imbued with arcane energy, capable of channeling and amplifying spells.",
+	"looks": "The Mage Staff is made of polished oak wood, intricately carved with symbols and runes. At the top, a crystal orb glows with a pulsating light, radiating magical energy.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"int": 10,
+		"wis": 5,
+		"max_mp": 50,
+		"cast_speed": 2
+	},
+	"usage_requirements": {
+		"int": 30
+	},
+	"weight": 4,
+	"special_effects": {
+		"spell_amplification": "Increases the power of spells cast while wielding the staff."
+	},
+	"special_weapon_skils": {
+		"spellcasting": "Grants proficiency in spellcasting while wielding the staff."
+	}
+},
+{
+	"name": "Iron Sword",
+	"description": "A basic iron sword for melee combat.",
+	"looks": "The iron sword has a silver blade with a simple crossguard and a leather-wrapped hilt. It is a standard length for a one-handed sword.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20
+	},
+	"stat_bonus": {
+		"str": 5,
+		"spd": 2
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 4.5,
+	"special_effects": {
+		"bleed": "Has a chance to cause the target to bleed, causing additional damage over time."
+	}
+},
+{
+	"name": "Silver Ring",
+	"description": "A delicate silver ring adorned with intricate patterns.",
+	"looks": "The silver ring is made of pure silver and has a slim band. It is decorated with delicate engravings of flowers and vines.",
+	"durability": 80,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"cha": 2,
+		"luck": 2
+	},
+	"weight": 0.5
+},
+{
+	"name": "Steel Sword",
+	"description": "A sturdy sword made of steel",
+	"looks": "The steel sword has a polished blade with a sharp cutting edge. The hilt is wrapped in leather for a firm grip.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 50
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 2
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 4.5
+},
+{
+	"name": "Magic Wand",
+	"description": "A wand infused with magical energies, used by spellcasters to channel their powers.",
+	"looks": "The magic wand is made of polished wood and adorned with intricate carvings and gemstones. It is about 14 inches long and has a tapered end.",
+	"durability": 50,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"max_mp": 30,
+		"int": 5,
+		"cast_speed": 2
+	},
+	"usage_requirements": {
+		"int": 10
+	},
+	"weight": 0.5,
+	"special_effects": {
+		"spell_damage": "Increases spell damage by 10%"
+	}
+},
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": 100,
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+	"name": "Steel Sword",
+	"description": "A solid steel sword forged with great craftsmanship.",
+	"looks": "The steel sword has a straight, double-edged blade with a sharp point. The hilt is wrapped in black leather and the pommel is adorned with a polished steel knob.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 50
+	},
+	"stat_bonus": {
+		"str": 10,
+		"dex": 5
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 4,
+	"special_weapon_skils": {
+		"sword_fighting": "Grants a bonus to Sword Fighting skill when wielded."
+	}
+},
+{
+	"name": "Steel Sword",
+	"description": "A sturdy sword made from high-quality steel.",
+	"looks": "The steel sword has a straight blade with a single edge and a pointed tip. The hilt is wrapped in leather for a firm grip.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 2
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"sword_fighting": "Grants a bonus to Sword Fighting skill when wielded."
+	}
+},
+{"name": "Mighty Battleaxe",
+"description": "A large and heavy battleaxe, capable of dealing devastating blows to enemies.",
+"looks": "The battleaxe is made of dark steel and has a large, double-edged blade. It has a long wooden handle with metal reinforcements and a pommel at the end.",
+"durability": 150,
+"item_usage": "two_hand",
+"dmg": {
+	"dmg_physical": 50
+},
+"stat_bonus": {
+	"str": 10,
+	"def": -5
+},
+"usage_requirements": {
+	"str": 20
+},
+"weight": 8,
+"special_weapon_skills": {
+	"Axe Mastery": "Increases damage and accuracy when using axes."
+}
+}
+]

@@ -1,0 +1,252 @@
+[
+{
+	"name": "Fireball Scroll",
+	"description": "A scroll containing the arcane incantation for the fireball spell. When read, the spell can be cast once.",
+	"looks": "The scroll is made of aged parchment, with intricate glyphs and symbols inscribed in dark ink. It is rolled up and sealed with a wax seal.",
+	"durability": 1,
+	"item_usage": "util",
+	"stat_bonus": {
+		"max_mp": 5,
+		"int": 2
+	},
+	"usage_requirements": {
+		"int": 10
+	},
+	"weight": 0.1,
+	"special_effects": {
+		"spell_fireball": "Allows the caster to cast the fireball spell."
+	}
+},
+{
+	"name": "Iron Battleaxe",
+	"description": "A heavy iron battleaxe with a double-edged blade.",
+	"looks": "The iron battleaxe has a long wooden handle with intricate carvings and a sharp double-edged blade made of iron. It has a slight curve and is designed for slashing and chopping.",
+	"durability": 150,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_physical": 20
+	},
+	"stat_bonus": {
+		"str": 5,
+		"spd": -1
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 8,
+	"special_weapon_skills": {
+		"axe_proficiency": "Increases damage with axes."
+	}
+},
+{
+	"name": "Bronze Longsword",
+	"description": "A sturdy longsword made from bronze.",
+	"looks": "The blade of the sword is made from polished bronze, with a double-edged design and a slight curve. The handle is wrapped in leather for a firm grip.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"str": 5,
+		"dex": 2,
+		"dmg_slashing": 20
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"sword_fighting": "Grants a bonus to Sword Fighting skill when wielded."
+	}
+},
+{
+	"name": "Steel Chestplate",
+	"description": "A heavy chestplate made of strong steel, providing superior protection in battles.",
+	"looks": "The steel chestplate is a strong and durable piece of armor that covers the entire chest and upper torso. It has a striking silver color and is adorned with intricate designs and engravings.",
+	"durability": 250,
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"def": 15,
+		"max_hp": 75
+	},
+	"usage_requirements": {
+		"str": 20,
+		"con": 18
+	},
+	"weight": 25
+},
+{
+	"name": "Steel Shield",
+	"description": "A sturdy shield made of steel",
+	"looks": "The shield is made of polished steel with a circular shape. It has a large handle in the center for gripping and a reinforced rim for added durability.",
+	"durability": 150,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 15,
+		"max_hp": 30
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 8
+},
+{
+	"name": "Steel Plate Armor",
+	"description": "A heavy and durable set of armor made from steel plates.",
+	"looks": "The steel plate armor consists of large steel plates that cover the entire body, providing excellent protection. It has a metallic gray color and has a polished surface. The armor is adorned with intricate engravings and has a regal appearance.",
+	"durability": 300,
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"def": 20,
+		"max_hp": 100
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 25
+},
+{
+	"name": "Steel Plate Armor",
+	"description": "A heavy armor made from steel plates",
+	"looks": "The armor is made up of overlapping steel plates, covering the entire torso and extending down to the feet. It also has shoulder and elbow guards.",
+	"durability": 300,
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"def": 20,
+		"max_hp": 100
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 40
+},
+{
+	"name": "Rusty Sword",
+	"description": "An old and worn out sword with rusted blade.",
+	"looks": "The Rusty Sword is a weathered weapon with a tarnished and rusted blade. The handle is worn and cracked, showing signs of a long history of use.",
+	"durability": 50,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": -10
+	},
+	"stat_bonus": {
+		"str": 2,
+		"dex": -1,
+		"def": -5
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 4
+},
+{
+	"name": "Iron Axe",
+	"description": "A sturdy iron axe with a wooden handle.",
+	"looks": "The iron axe has a sharp, double-edged blade attached to a sturdy wooden handle. It has a metal guard to protect the user's hand.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"axe": "Grants a bonus to Axe skill when used."
+	}
+},
+{
+	"name": "Steel Sword",
+	"description": "A sturdy sword forged from steel, perfect for cutting through enemies.",
+	"looks": "The steel sword has a straight, double-edged blade with a sharp point. The hilt is wrapped in leather for a secure grip. It has a simple yet elegant design.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_slashing": 15,
+		"spd": 2,
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 12,
+		"dex": 8
+	},
+	"weight": 4,
+	"special_weapon_skils": {
+		"swordsmanship": "Increases damage and accuracy with swords."
+	}
+},
+{
+	"name": "Iron Sword",
+	"description": "A simple iron sword, suitable for beginner adventurers.",
+	"looks": "The iron sword has a straight blade with a single cutting edge. The hilt is wrapped in leather for a comfortable grip.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 3,
+		"def": 2
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 4
+},
+{
+	"name": "Ruby Sword",
+	"description": "A magnificent sword adorned with a ruby-encrusted hilt.",
+	"looks": "The Ruby Sword has a long and slender blade made from polished steel. The hilt is crafted from gold and embedded with small rubies, giving it a luxurious and regal appearance.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_physical": 15,
+		"str": 5,
+		"spd": 3,
+		"critical_chance": 3
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 4,
+	"special_weapon_skils": {
+		"swordsmanship": "Increases damage and accuracy when using swords."
+	},
+	"special_effects": {
+		"fire_damage": "Deals additional fire damage on each hit."
+	}
+},
+{
+	"name": "Warhammer",
+	"description": "A massive and heavy warhammer, capable of crushing through armor.",
+	"looks": "The warhammer has a long handle made of solid oak, with a thick, iron head at the end. The head is large and spherical, with several sharp spikes protruding from it.",
+	"durability": 150,
+	"item_usage": "two_hand",
+	"stat_bonus": {
+		"dmg_blunt": 25
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 10
+},
+{ "name": "Leather Boots", "description": "Lightweight and comfortable boots made from soft leather.", "looks": "The leather boots have a low heel and a sleek design. They are made from supple leather and have adjustable straps for a secure fit.", "durability": 80, "item_usage": "wear_feet", "stat_bonus": { "def": 5, "spd": 2 }, "weight": 1 },
+{
+	"name": "Iron Boots",
+	"description": "Sturdy iron boots that provide good protection for the feet.",
+	"looks": "The iron boots are made of solid iron with a smooth surface. They have a thick sole and a rounded toe for extra durability. There are small iron plates covering the front and sides of the boots for added protection.",
+	"durability": 150,
+	"item_usage": "wear_feet",
+	"stat_bonus": {
+		"def": 7,
+		"max_hp": 15
+	},
+	"usage_requirements": {
+		"str": 10,
+		"con": 10
+	},
+	"weight": 4
+}
+]

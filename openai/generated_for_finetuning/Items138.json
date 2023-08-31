@@ -1,0 +1,291 @@
+[
+{
+	"name": "Iron Sword",
+	"description": "A basic iron sword, suitable for a beginner warrior.",
+	"looks": "The iron sword has a straight blade with a single edge. The handle is made of wood and wrapped with leather for a better grip.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_physical": 10,
+		"str": 2
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 2.5,
+	"special_weapon_skills": {
+		"sword": "Grants a bonus to Sword skill while equipped."
+	}
+},
+{
+	"name": "Enchanted Sword",
+	"description": "A powerful sword enchanted with magical properties.",
+	"looks": "The Enchanted Sword is a longsword made from a shiny, silver metal. It has a gemstone embedded in the hilt, glowing with a soft blue light. The blade is adorned with intricate runes.",
+	"durability": 250,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_physical": 50,
+		"wis": 5,
+		"def": 10,
+		"spd": 3
+	},
+	"usage_requirements": {
+		"str": 20,
+		"dex": 15
+	},
+	"weight": 4,
+	"special_weapon_skils": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill when wielding."
+	},
+	"special_effects": {
+		"mana_leech": "Absorbs a small portion of enemy mana with each successful hit."
+	}
+},
+{
+	"name": "Steel Longsword",
+	"description": "A longsword made of steel, known for its durability and versatility in combat.",
+	"looks": "The steel longsword has a blade length of about 90 cm, with a slight curve for better slashing and stabbing. The hilt is made of leather-wrapped steel, providing a secure grip.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_slashing": 15,
+		"str": 7,
+		"dex": 5,
+		"def": 6
+	},
+	"usage_requirements": {
+		"str": 12,
+		"dex": 10
+	},
+	"weight": 2.5,
+	"special_weapon_skills": {
+		"swordmanship": "Provides a bonus to Swordmanship skill when wielded."
+	}
+},
+{
+	"name": "Golden Crown",
+	"description": "A majestic crown made of solid gold, fit for a king or queen.",
+	"looks": "The golden crown is intricately designed with intricate patterns and embedded with sparkling gemstones. It has a rounded shape with small peaks and is adorned with engravings of royalty and power.",
+	"durability": 150,
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 8,
+		"cha": 10,
+		"luck": 5
+	},
+	"usage_requirements": {
+		"cha": 20
+	},
+	"weight": 2,
+	"special_effects": {
+		"royal_presense": "Increases the wearer's charisma and luck when interacting with others."
+	}
+},
+	"name": "Crystal Staff",
+	"description": "A powerful staff crafted from a magical crystal",
+	"looks": "The Crystal Staff is long and slender, with a crystal orb at the top. The crystal is transparent and emits a faint glow. The staff has intricate carvings along its length, depicting arcane symbols.",
+	"durability": 150,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_light": 50
+	},
+	"stat_bonus": {
+		"max_mp": 100,
+		"int": 10,
+		"wis": 5
+	},
+	"usage_requirements": {
+		"int": 30
+	},
+	"weight": 4,
+	"special_effects": {
+		"spell_power": "Increases the power of offensive spells"
+	}
+},
+{
+	"name": "Longsword",
+	"description": "A classic longsword made for skilled swordsmen.",
+	"looks": "The longsword features a double-edged blade that tapers to a pointed tip. The hilt is wrapped in leather for a comfortable grip, with a cross guard to protect the hand.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"str": 10,
+		"dex": 5,
+		"def": 5
+	},
+	"usage_requirements": {
+		"dex": 15
+	},
+	"weight": 4.5,
+	"special_weapon_skils": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill when used."
+	}
+},
+{
+	"name": "Steel Greaves",
+	"description": "A pair of steel leg guards that provide excellent protection.",
+	"looks": "The steel greaves are made of solid steel plates, covering the shins and knees. They have adjustable straps to ensure a secure fit and are polished to a shiny finish.",
+	"durability": 180,
+	"item_usage": "wear_legs",
+	"stat_bonus": {
+		"def": 8,
+		"con": 5
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 6
+},
+{
+	"name": "Steel Plate Armor",
+	"description": "A heavy and durable armor made from steel plates.",
+	"looks": "The Steel Plate Armor consists of thick steel plates that cover the entire body, providing maximum protection. It has reinforced shoulder and elbow guards and a skirt-like extension for additional leg protection.",
+	"durability": 300,
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"def": 20,
+		"max_hp": 100
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 25
+},
+{
+	"name": "Silver Sword",
+	"description": "A sharp and elegant sword made from pure silver.",
+	"looks": "The silver sword has a slender blade with a shiny silver finish. The hilt is wrapped in black leather and adorned with intricate engravings.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_physical": 20,
+		"spd": 5
+	},
+	"usage_requirements": {
+		"str": 25,
+		"dex": 20
+	},
+	"weight": 4.5,
+	"special_weapon_skils": {
+		"swordmanship": "Grants a bonus to Swordmanship skill when used."
+	}
+},
+{
+	"name": "Flamestrike Sword",
+	"description": "A powerful sword imbued with the elemental power of fire.",
+	"looks": "The Flamestrike Sword is a longsword with a blade that constantly flickers with flames. The hilt is made of obsidian and has intricate engravings of fire symbols.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20,
+		"dmg_fire": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"usage_requirements": {
+		"str": 20,
+		"dex": 15
+	},
+	"weight": 3,
+	"special_weapon_skills": {
+		"fire_burst": "Allows the wielder to release a burst of fire, damaging enemies in a small area."
+	},
+	"special_effects": {
+		"ignite": "Has a chance to ignite enemies, causing damage over time."
+	}
+},
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": 100,
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+	"name": "Leather Boots",
+	"description": "A pair of sturdy leather boots that provide comfort and protection for the feet.",
+	"looks": "The leather boots are made from durable brown leather. They have a sturdy sole and laces that can be tightened for a secure fit.",
+	"durability": 120,
+	"item_usage": "wear_feet",
+	"stat_bonus": {
+		"def": 3,
+		"spd": 1
+	},
+	"weight": 1.5
+},
+{
+	"name": "Inferno Blade",
+	"description": "A fiery sword enchanted with the power of the inferno.",
+	"looks": "The Inferno Blade is a longsword with a blade made of pure flames. It emits a constant heat and glows bright orange. The hilt is made of obsidian with intricate carvings of fire motifs.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_fire": 50,
+		"dex": 5,
+		"luck": 5
+	},
+	"usage_requirements": {
+		"dex": 15
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"fire_sword": "Grants a bonus to Fire Sword skill when wielded."
+	},
+	"special_effects": {
+		"ignite": "Has a chance to ignite enemies on hit, dealing additional fire damage over time."
+	}
+},
+{
+	"name": "Steel Sword",
+	"description": "A longsword made of steel, balanced for both cutting and thrusting attacks.",
+	"looks": "The steel sword has a straight, double-edged blade with a length of about 90 cm. The hilt is wrapped in leather for a secure grip and has a simple crossguard for hand protection.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_slashing": 12,
+		"def": 2,
+		"spd": 2
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 2.5
+},
+{
+	"name": "Iron Sword",
+	"description": "A sturdy iron sword that is capable of delivering powerful strikes.",
+	"looks": "The iron sword has a straight blade with a sharp edge. The hilt is wrapped in leather for a comfortable grip, and there is a crossguard to protect the hands.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"item_recipee": [
+		"Iron Ingot",
+		"Wooden Handle"
+	],
+	"dmg": {
+		"dmg_physical": 20
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"usage_requirements": {
+		"str": 10,
+		"dex": 8
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"swordsmanship": "Increases damage dealt with swords."
+	}
+}
+]

@@ -1,0 +1,287 @@
+[
+{
+	"name": "Steel Plate Armor",
+	"description": "A heavy and durable armor made from steel plates",
+	"looks": "The armor is made up of interlocking steel plates, covering the entire body. It has reinforced shoulder and elbow guards, as well as a plate skirt to protect the thighs.",
+	"durability": 300,
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"def": 15,
+		"max_hp": 100
+	},
+	"usage_requirements": {
+		"str": 20,
+		"dex": 15
+	},
+	"weight": 30
+},
+{
+	"name": "Enchanted Dagger",
+	"description": "A small dagger infused with powerful enchantments.",
+	"looks": "The enchanted dagger has a slim, silver blade with intricate runes etched along its surface. The hilt is made of polished wood and adorned with a small gemstone.",
+	"durability": 50,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10
+	},
+	"stat_bonus": {
+		"dex": 3
+	},
+	"usage_requirements": {
+		"dex": 15
+	},
+	"weight": 0.5,
+	"special_weapon_skills": {
+		"dagger_mastery": "Grants a bonus to Dagger Mastery skill."
+	},
+	"special_effects": {
+		"enchantment_blade": "Chance to deal additional elemental damage."
+	}
+},
+{
+	"name": "Steel Gauntlets",
+	"description": "A pair of sturdy gauntlets made of steel.",
+	"looks": "The gauntlets are made of polished steel and cover the hands and forearms. They have a plated design with reinforced knuckles for added protection.",
+	"durability": 150,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 8,
+		"str": 2,
+		"regen_sta": 1
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 2.8
+},
+{
+	"name": "Ring of Strength",
+	"description": "A ring imbued with the power of strength, increasing the wearer's physical abilities.",
+	"looks": "The ring is made of polished silver and has a symbol of a clenched fist carved into the band.",
+	"durability": 60,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"str": 5
+	},
+	"weight": 0.5,
+	"usage_requirements": {
+		"str": 10
+	},
+	"special_effects": {
+		"enhanced_carrying_capacity": "Increases the wearer's carrying capacity."
+	}
+},
+{
+	"name": "Steel Plate Armor",
+	"description": "A heavy and durable armor made from steel plates",
+	"looks": "The armor is made up of thick, overlapping steel plates that provide excellent protection. It covers the entire torso and extends down to the thighs. The armor also has reinforced shoulder and elbow guards.",
+	"durability": 300,
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"def": 20,
+		"max_hp": 100
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 30
+},
+{
+	"name": "Steel Gauntlets",
+	"description": "Heavy gauntlets made from steel",
+	"looks": "The gauntlets are made from polished steel plates. They cover the entire hand and extend up to the forearm.",
+	"durability": 150,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 8,
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 10,
+		"dex": 10
+	},
+	"weight": 4
+},
+{
+	"name": "Steel Greaves",
+	"description": "A pair of sturdy greaves made from steel",
+	"looks": "The greaves are made of polished steel plates that cover the lower legs. They are held in place by leather straps and buckles.",
+	"durability": 150,
+	"item_usage": "wear_legs",
+	"stat_bonus": {
+		"def": 8,
+		"spd": -1
+	},
+	"usage_requirements": {
+		"dex": 10
+	},
+	"weight": 7
+},
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": 100,
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+	"name": "Enchanted Dagger",
+	"description": "A small dagger imbued with magical power.",
+	"looks": "The enchanted dagger has a small, thin blade made of silver and a handle made of ebony. The blade glows with a faint blue light.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10,
+		"dmg_light": 5
+	},
+	"stat_bonus": {
+		"dex": 2,
+		"spd": 1
+	},
+	"usage_requirements": {
+		"dex": 12
+	},
+	"weight": 0.5,
+	"special_weapon_skils": {
+		"dagger_skill": "Increases proficiency with daggers, allowing for more precise strikes."
+	},
+	"special_effects": {
+		"enchanted": "Has a chance to deal bonus light damage on every hit."
+	}
+},
+{
+	"name": "Iron Sword",
+	"description": "A sturdy iron sword that can be used for slashing and piercing attacks.",
+	"looks": "The iron sword has a double-edged blade with a slight curve. The hilt is made of leather and wrapped with a sturdy grip.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_slashing": 10,
+		"dmg_piercing": 5,
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 4,
+	"special_weapon_skils": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill when equipped."
+	}
+},
+{
+	"name": "Silver Sword",
+	"description": "A shiny sword made out of pure silver.",
+	"looks": "The Silver Sword has a gleaming blade that is smooth and reflective. The hilt is made of polished silver with intricate engravings.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 50
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 2,
+	"special_weapon_skills": {
+		"sword_fighting": "Increases Sword Fighting skill when equipped."
+	}
+},
+{
+	"name": "Staff of Fire",
+	"description": "A staff infused with the power of fire, capable of unleashing devastating fire spells.",
+	"looks": "The Staff of Fire is a tall wooden staff with intricate carvings along its length. It is adorned with a large ruby at the top, that glows with a fiery red light.",
+	"durability": 150,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_fire": 50
+	},
+	"stat_bonus": {
+		"int": 10,
+		"wis": 5,
+		"max_mp": 50,
+		"def": 5
+	},
+	"usage_requirements": {
+		"int": 20,
+		"wis": 10
+	},
+	"weight": 4,
+	"special_effects": {
+		"spell_power": "Increases the power of fire spells."
+	},
+	"special_weapon_skils": {
+		"fire_magic": "Increases proficiency in fire magic."
+	}
+},
+{
+	"name": "Steel Sword",
+	"description": "A sharp and sturdy sword made of steel",
+	"looks": "The steel sword has a straight blade that tapers to a point. The hilt is made of polished steel with a crossguard for added protection.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_physical": 20,
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 2.5,
+	"special_weapon_skils": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill when wielded."
+	}
+},
+{
+	"name": "Silver Sword",
+	"description": "A finely crafted sword made from silver.",
+	"looks": "The silver sword has a intricate hilt with a crossguard shaped like a wing. The blade is beautifully engraved with delicate patterns.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_slashing": 20,
+		"spd": 5
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"sword_mastery": "Grants a bonus to Sword Mastery skill when used."
+	},
+	"special_effects": {
+		"dmg_light": "Adds light damage to attacks.",
+		"affinity_light": "Increases affinity to the light element."
+	}
+},
+{
+	"name": "Iron Sword",
+	"description": "A basic sword made from iron.",
+	"looks": "The iron sword has a straight blade with a single cutting edge. The hilt is wrapped in leather for a secure grip.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 2
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 2.5
+}
+]

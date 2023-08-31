@@ -1,0 +1,269 @@
+[
+{
+	"name": "Steel Sword",
+	"description": "A sturdy sword made of steel",
+	"looks": "The sword has a straight blade with a single cutting edge. The hilt is made of wrapped leather and has a simple crossguard.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_slashing": 10,
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 3,
+	"special_weapon_skils": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill when used."
+	}
+},
+{
+	"name": "Mystic Staff",
+	"description": "A powerful staff imbued with ancient magic.",
+	"looks": "The Mystic Staff is made of polished oak wood and adorned with runic symbols carved into its surface. It glows with a faint blue light and emits a soft humming sound.",
+	"durability": 150,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_mental": 20
+	},
+	"stat_bonus": {
+		"max_mp": 100,
+		"wis": 10,
+		"int": 5,
+		"def": 5,
+		"regen_mp": 10
+	},
+	"usage_requirements": {
+		"int": 30,
+		"wis": 40
+	},
+	"weight": 4,
+	"special_effects": {
+		"spell_power": "Increases the power of spells cast while wielding the staff."
+	}
+},
+{
+    "name": "Iron Longsword",
+    "description": "A basic longsword made of iron",
+    "looks": "The iron longsword has a straight, double-edged blade with a simple hilt and crossguard. The blade has a dull gray color with some signs of wear.",
+    "durability": 200,
+    "item_usage": "one_hand",
+    "stat_bonus": {
+        "dmg_slashing": 10,
+        "str": 4
+    },
+    "usage_requirements": {
+        "str": 12,
+        "dex": 10
+    },
+    "weight": 2,
+    "special_weapon_skils": {
+        "swordsmanship": "Grants a bonus to Swordsmanship skill when used."
+    }
+},
+{
+	"name": "Steel Plate Armor",
+	"description": "A heavy armor made from durable steel plates",
+	"looks": "The armor is made up of thick steel plates, providing excellent protection for the wearer. It covers the entire body, including the arms and legs.",
+	"durability": 250,
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"def": 15,
+		"max_hp": 100
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 25
+},
+{
+	"name": "Iron Sword",
+	"description": "A sturdy iron sword that is effective in close combat.",
+	"looks": "The iron sword is a straight blade with a crossguard and a leather-wrapped hilt. It has a slightly curved and sharpened edge.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20
+	},
+	"stat_bonus": {
+		"str": 5,
+		"def": 2
+	},
+	"weight": 4
+},
+{
+	"name": "Steel Sword",
+	"description": "A sharp and durable sword made of steel.",
+	"looks": "The steel sword has a straight blade with a single cutting edge. The hilt is made of a sturdy material and has a comfortable grip. The pommel at the end of the hilt is adorned with a decorative design.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20
+	},
+	"stat_bonus": {
+		"str": 10,
+		"spd": 2
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill when wielded."
+	}
+},
+{
+	"name": "Katana",
+	"description": "A traditional Japanese sword with a curved, single-edged blade.",
+	"looks": "The katana has a slender, curved blade with a single cutting edge. It has a circular or squared guard, a long grip, and a scabbard (saya) made of wood or lacquered metal.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_slashing": 50,
+		"def": 5,
+		"spd": 5
+	},
+	"usage_requirements": {
+		"dex": 15,
+		"str": 10
+	},
+	"weight": 1.5,
+	"special_weapon_skills": {
+		"swordsmanship": "Grants a bonus to the Swordsman skill when equipped."
+	}
+},
+{
+	"name": "Fireball Scroll",
+	"description": "A scroll containing the incantation for casting a fireball spell.",
+	"looks": "The Fireball Scroll is made of aged parchment, with intricate script and symbols written in red and gold ink. It is tightly rolled and sealed with a wax stamp depicting flames.",
+	"durability": 1,
+	"item_usage": "util",
+	"stat_bonus": {
+		"max_mp": 10,
+		"cast_speed": 1
+	},
+	"usage_requirements": {
+		"int": 15
+	},
+	"weight": 0.5,
+	"special_effects": {
+		"fireball": "Allows the user to cast a powerful fireball spell."
+	}
+},
+{
+	"name": "Iron Sword",
+	"description": "A sturdy iron sword that is effective in close combat.",
+	"looks": "The iron sword has a straight blade, a crossguard to protect the hand, and a hilt for a secure grip. The blade is engraved with intricate patterns.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 4.5,
+	"special_weapon_skills": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill when wielded."
+	}
+},
+{
+	"name": "Iron Axe",
+	"description": "A sturdy iron axe, perfect for chopping wood or cleaving through enemies.",
+	"looks": "The iron axe has a long wooden handle with a sharp, curved blade made of iron. There are engravings on the handle depicting scenes of warriors in battle.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_slashing": 20
+	},
+	"stat_bonus": {
+		"str": 5
+	},
+	"weight": 3,
+	"special_weapon_skills": {
+		"axe_mastery": "Increases damage done with axes."
+	}
+},
+{
+	"name": "Iron Sword",
+	"description": "A sturdy iron sword with a sharp blade.",
+	"looks": "The iron sword has a long, straight blade with a single-edged cutting edge. The hilt has a crossguard and a handle wrapped in leather for a comfortable grip.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10
+	},
+	"stat_bonus": {
+		"str": 5
+	},
+	"weight": 2.5
+},
+{
+	"name": "Steel Gauntlets",
+	"description": "A pair of sturdy gauntlets made of steel",
+	"looks": "The gauntlets are made of smooth steel with a silver tint. They have a reinforced metal plate on the back of the hand and individual finger plates for maximum protection.",
+	"durability": 150,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 8,
+		"str": 2
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 3
+},
+{
+	"name": "Steel Sword",
+	"description": "A sharp and sturdy sword made of steel.",
+	"looks": "The steel sword has a long blade and a hilt wrapped in leather for a comfortable grip. The blade has a silver sheen and is engraved with intricate patterns.",
+	"durability": 250,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 50
+	},
+	"stat_bonus": {
+		"str": 10,
+		"def": 5
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"swordsmanship": "Increases damage and accuracy with swords."
+	}
+},
+{
+	"name": "Steel Sword",
+	"description": "A sturdy sword made of steel",
+	"looks": "The steel sword has a long, straight blade with a single-edged design. The hilt is made of leather wrapped around a steel handle, providing a secure grip.",
+	"durability": 180,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20
+	},
+	"stat_bonus": {
+		"str": 5,
+		"def": 2
+	},
+	"weight": 4.5,
+	"special_weapon_skills": {
+		"sword_1": "Grants bonus damage to sword attacks"
+	}
+},
+{
+	"name": "Iron Sword",
+	"description": "A basic, yet reliable sword made from iron.",
+	"looks": "The iron sword has a straight blade with a single cutting edge. The hilt is made of wood with a simple crossguard.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10
+	},
+	"stat_bonus": {
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 4
+}
+]

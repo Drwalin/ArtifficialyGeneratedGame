@@ -1,0 +1,289 @@
+[
+{
+	"name": "Steel Bastard Sword",
+	"description": "A large and heavy sword made of steel, capable of dealing heavy damage to enemies.",
+	"looks": "The Steel Bastard Sword has a long, straight blade with a sharp edge. The handle is wrapped in leather for a secure grip.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"str": 15,
+		"def": 5,
+		"dmg_slashing": 20
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 8,
+	"special_weapon_skills": {
+		"two_handed_sword": "Allows the wielder to use two-handed sword skills."
+	}
+},
+{
+	"name": "Steel Longsword",
+	"description": "A long and sturdy sword made of steel.",
+	"looks": "The steel longsword has a double-edged blade with a silver tint. The handle is wrapped in leather for a comfortable grip, and the pommel is adorned with a decorative emblem.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_slashing": 20,
+		"def": 5
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 4,
+	"special_weapon_skils": {
+		"sword_proficiency": "Grants a bonus to Sword Proficiency skill."
+	}
+},
+{
+	"name": "Steel Sword",
+	"description": "A sturdy sword made of steel",
+	"looks": "The sword has a straight blade with a hilt wrapped in leather. It is about 3 feet long and has a sharp edge.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 50
+	},
+	"stat_bonus": {
+		"str": 10
+	},
+	"weight": 3,
+	"special_weapon_skils": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill when wielded."
+	}
+},
+{
+	"name": "Enchanted Amulet",
+	"description": "A magical amulet imbued with powerful enchantments.",
+	"looks": "The amulet is made of a shimmering crystal pendant suspended from a delicate silver chain. It emits a soft glow and pulses with magical energy.",
+	"durability": 50,
+	"item_usage": "trinket",
+	"stat_bonus": {
+		"max_mp": 20,
+		"resistance_mental": 10
+	},
+	"special_effects": {
+		"healing_boost": "Increases the effectiveness of healing spells."
+	},
+	"weight": 0.5
+},
+{
+	"name": "Sword of the Sun",
+	"description": "A powerful sword imbued with the essence of the sun",
+	"looks": "The Sword of the Sun has a golden hilt adorned with intricate carvings of sun rays. The blade is long and shining, as if it radiates its own light.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_physical": 50,
+		"str": 10,
+		"spd": 5
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 4,
+	"special_weapon_skils": {
+		"sword": "Increases damage and accuracy with swords."
+	},
+	"special_effects": {
+		"sunlight_strike": "Grants a chance to deal bonus fire damage on hit."
+	}
+},
+{
+	"name": "Blessed Sword",
+	"description": "A holy sword imbued with the power of divine blessings.",
+	"looks": "The Blessed Sword has a shining blade with intricate engravings of holy symbols. The hilt is made of golden metal and is adorned with white gemstones.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"str": 5,
+		"def": 3,
+		"dmg_physical": 20,
+		"resistance_dark": 10
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 2,
+	"special_weapon_skills": {
+		"divine_slayer": "Increases damage dealt to enemies with dark affinity."
+	}
+},
+{
+	"name": "Greatsword of the Dragon",
+	"description": "A powerful greatsword forged with dragon's fire, capable of cleaving through even the toughest armor.",
+	"looks": "The Greatsword of the Dragon is a massive weapon, with a long and broad blade that is adorned with intricate dragon engravings. The hilt is crafted from the bone of a dragon, giving it a unique and intimidating appearance.",
+	"durability": 250,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_physical": 50,
+		"dmg_fire": 20
+	},
+	"stat_bonus": {
+		"str": 15,
+		"def": -5
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 20,
+	"special_weapon_skils": {
+		"two_handed_sword": "Allows the wielder to use the Two-Handed Sword skill."
+	},
+	"special_effects": {
+		"dragon_slayer": "Deals bonus damage to dragon-type enemies."
+	}
+},
+{
+	"name": "Flaming Sword",
+	"description": "A sword imbued with the power of fire.",
+	"looks": "The blade of the Flaming Sword is made of a flowing red and orange energy, with flames flickering along its length. The hilt is made of blackened steel, adorned with intricate carvings of flames.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15,
+		"dmg_fire": 10
+	},
+	"stat_bonus": {
+		"str": 5,
+		"fire_affinity": 10
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"flaming_slash": "Unleashes a powerful slash attack that deals additional fire damage."
+	},
+	"special_effects": {
+		"fire_surge": "Periodically releases a burst of flames, damaging nearby enemies."
+	}
+},
+{
+	"name": "Silver Sword",
+	"description": "A sturdy sword made from silver",
+	"looks": "The sword has a silver blade with an intricate pattern engraved on it. The hilt is made from polished wood and wrapped with leather for a comfortable grip.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_slashing": 20,
+		"str": 5,
+		"dex": 2
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 3,
+	"special_weapon_skills": {
+		"swordsmanship": "Grants a bonus to swordsmanship skill."
+	}
+},
+{
+	"name": "Steel Gauntlets",
+	"description": "Sturdy gauntlets made of steel",
+	"looks": "The gauntlets are made of polished steel with intricate engravings. They have fingerless design and provide excellent hand protection.",
+	"durability": 180,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 8,
+		"str": 4
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 2.5
+},
+{
+	"name": "Bow of the Forest",
+	"description": "A longbow made from the finest wood, carved with intricate forest designs.",
+	"looks": "The Bow of the Forest is made from a combination of oak and pine wood, carefully crafted to provide both strength and flexibility. It is adorned with delicate carvings of leaves and branches, giving it a natural and harmonious appearance.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20
+	},
+	"stat_bonus": {
+		"dex": 10,
+		"per": 5
+	},
+	"usage_requirements": {
+		"dex": 15
+	},
+	"weight": 2.5,
+	"special_weapon_skills": {
+		"archery": "Increases accuracy and damage with bows."
+	},
+	"special_effects": {
+		"precision": "Increases critical hit chance with bows."
+	}
+},
+{
+	"name": "Steel Plate Armor",
+	"description": "A heavy armor made from strong steel plates.",
+	"looks": "The Steel Plate Armor consists of large steel plates that cover the entire body, providing excellent protection. It has a matte finish and is adorned with engravings of dragons and other mythical creatures.",
+	"durability": 300,
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"def": 20,
+		"max_hp": 100
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 25
+},
+{
+	"name": "Steel Greaves",
+	"description": "A pair of sturdy steel greaves that protect the lower legs.",
+	"looks": "The steel greaves are made of solid steel with a smooth surface. They cover the lower legs and have an adjustable strap that secures them in place. There are small openings for ventilation.",
+	"durability": 150,
+	"item_usage": "wear_feet",
+	"stat_bonus": {
+		"def": 8,
+		"spd": -1,
+		"con": 5
+	},
+	"usage_requirements": {
+		"str": 10,
+		"dex": 5
+	},
+	"weight": 4
+},
+{
+	"name": "Ruby Sword",
+	"description": "A sword with a blade made of ruby, known for its sharpness and durability.",
+	"looks": "The Ruby Sword has a hilt made of blackened steel and a blade crafted from a polished ruby gemstone. The blade is single-edged and razor-sharp, glimmering in the light.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 50
+	},
+	"stat_bonus": {
+		"str": 10,
+		"dex": 5,
+		"max_sta": 20,
+		"def": 5
+	},
+	"usage_requirements": {
+		"str": 20,
+		"dex": 15
+	},
+	"weight": 4.5,
+	"special_weapon_skills": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill when used."
+	}
+},
+{
+	"name": "Diamond Ring",
+	"description": "A beautiful diamond ring, symbolizing luxury and wealth.",
+	"looks": "The diamond ring features a large, sparkling diamond set in a band of gold. The diamond is cut in a classic round shape, with excellent clarity and brilliance.",
+	"durability": 100,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"cha": 5,
+		"luck": 3
+	},
+	"usage_requirements": {
+		"cha": 20
+	},
+	"weight": 0.5
+}
+]

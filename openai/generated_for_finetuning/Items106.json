@@ -1,0 +1,292 @@
+[
+{
+	"name": "Goblin Dagger",
+	"description": "A small dagger commonly used by goblins. It is lightweight and easy to conceal.",
+	"looks": "The goblin dagger is a short, curved blade with a wooden handle. It has a rough and worn appearance, showing signs of frequent use.",
+	"durability": 50,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10
+	},
+	"stat_bonus": {
+		"dex": 2,
+		"def": -2
+	},
+	"usage_requirements": {
+		"dex": 10
+	},
+	"weight": 0.5,
+	"special_effects": {
+		"bleed": "Has a chance to cause bleeding damage over time."
+	}
+},
+{
+	"name": "Silver Dagger",
+	"description": "A small dagger made of silver, perfect for quick and stealthy attacks.",
+	"looks": "The silver dagger has a slim and lightweight design, with a sharp and finely honed blade. The hilt is wrapped in black leather for a comfortable grip.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_piercing": 15
+	},
+	"stat_bonus": {
+		"dex": 5,
+		"luck": 2
+	},
+	"usage_requirements": {
+		"dex": 10
+	},
+	"weight": 0.5,
+	"special_weapon_skills": {
+		"dagger": "Grants a bonus to Dagger skill when wielded."
+	}
+},
+
+{
+	"name": "Steel Chestplate",
+	"description": "A heavy chestplate made of hardened steel.",
+	"looks": "The steel chestplate is a thick and sturdy piece of armor that covers the entire torso. It has reinforced plates and intricate engravings. The chestplate is polished to a shiny silver finish.",
+	"durability": "300",
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"def": 15,
+		"max_hp": 100,
+		"con": 5
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 25
+},
+{
+	"name": "Iron Sword",
+	"description": "A basic sword made of iron.",
+	"looks": "The iron sword has a simple design, with a straight blade and a hilt wrapped in leather.",
+	"durability": "100",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 4
+},
+{
+	"name": "Steel Gauntlets",
+	"description": "A pair of gauntlets made of strong steel, designed to protect the hands and wrists in battle.",
+	"looks": "The steel gauntlets are made of shiny steel plates that cover the hands and wrists. They have intricate engravings and silver accents.",
+	"durability": "150",
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 8,
+		"str": 2
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 2.5
+},
+{
+	"name": "Fire Staff",
+	"description": "A staff infused with the power of fire, allowing the wielder to cast fire spells with increased potency.",
+	"looks": "The fire staff is made of polished wood, with intricate carvings of flames along its length. At the top of the staff, a crystal orb glows with flickering flames.",
+	"durability": "150",
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_fire": 15
+	},
+	"stat_bonus": {
+		"max_mp": 50,
+		"int": 5
+	},
+	"usage_requirements": {
+		"int": 20
+	},
+	"weight": 4,
+	"special_weapon_skils": {
+		"fire_magic": "Increases the effectiveness of fire spells when used with this staff."
+	},
+	"special_effects": {
+		"fire_damage_increase": "Increases fire damage dealt by the wielder."
+	}
+},
+{
+	"name": "Steel Plate Armor",
+	"description": "A heavy and durable suit of armor made from steel plates.",
+	"looks": "The armor is composed of thick steel plates that cover the entire body. It includes a set of steel gauntlets, boots, and a helmet. The plates are intricately engraved with designs of dragons and other mythical creatures.",
+	"durability": "300",
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"def": 20,
+		"str": 5,
+		"max_hp": 100
+	},
+	"usage_requirements": {
+		"str": 25
+	},
+	"weight": 30
+},
+{
+	"name": "Adventurer's Sword",
+	"description": "A versatile sword commonly used by adventurers.",
+	"looks": "The Adventurer's Sword has a straight, double-edged blade with a slight curve near the point. The hilt is wrapped in leather for a comfortable grip.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_slashing": 30,
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 3,
+	"special_weapon_skils": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill when wielded."
+	}
+},
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": "100",
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+	"name": "Iron Sword",
+	"description": "A sturdy iron sword with a sharp blade.",
+	"looks": "The iron sword has a straight blade with a double-edged edge. The hilt is made of wood and wrapped in leather for a comfortable grip.",
+	"durability": "150",
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_slashing": 15,
+		"spd": 5
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 4,
+	"special_weapon_skils": {
+		"sword_mastery": "Increases damage and accuracy when using a sword."
+	}
+},
+{
+	"name": "Steel Sword",
+	"description": "A sharp and sturdy sword made of steel.",
+	"looks": "The steel sword has a long and straight blade, with a simple crossguard and a hilt wrapped in leather for a comfortable grip.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 4
+},
+{
+	"name": "Steel Sword",
+	"description": "A finely crafted sword made from steel.",
+	"looks": "The steel sword has a straight double-edged blade with a sharp point. The hilt is wrapped in leather for a secure grip.",
+	"durability": "300",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20
+	},
+	"stat_bonus": {
+		"str": 5,
+		"def": 2
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 4,
+	"special_effects": {
+		"critical_strike": "Has a chance to land a critical strike, dealing double damage."
+	},
+	"special_weapon_skills": {
+		"sword_1h": "Increases damage and attack speed when using one-handed swords."
+	}
+},
+{
+	"name": "Giant's Sword",
+	"description": "A massive sword that can only be wielded by the strongest of warriors.",
+	"looks": "The Giant's Sword is an enormous weapon, almost as tall as a person. It has a wide, double-edged blade and a hilt long enough for both hands to grasp. The blade is adorned with intricate engravings depicting battles and mythical creatures.",
+	"durability": "300",
+	"item_usage": "two_hand",
+	"stat_bonus": {
+		"str": 20,
+		"dex": -10,
+		"max_hp": 50,
+		"dmg_physical": 50
+	},
+	"usage_requirements": {
+		"str": 40
+	},
+	"weight": 15,
+	"special_weapon_skills": {
+		"mighty_strike": "Allows the wielder to perform a powerful swing that deals increased damage."
+	}
+},
+{
+	"name": "Sword of the Sun",
+	"description": "A legendary sword imbued with the power of the sun.",
+	"looks": "The Sword of the Sun has a gleaming golden blade that radiates a warm, comforting light. The hilt is adorned with intricate engravings depicting the sun in all its glory.",
+	"durability": "500",
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_physical": 50,
+		"str": 10,
+		"dex": 5,
+		"luck": 5
+	},
+	"usage_requirements": {
+		"str": 20,
+		"dex": 15
+	},
+	"weight": 8,
+	"special_weapon_skills": {
+		"sword_mastery": "Grants a bonus to Sword Mastery skill while equipped."
+	},
+	"special_effects": {
+		"sunlight_strike": "Has a chance to blind enemies with a powerful beam of sunlight on critical hits."
+	}
+},
+{
+	"name": "Iron Dagger",
+	"description": "A small, sharp weapon with an iron blade and a leather-wrapped hilt.",
+	"looks": "The iron dagger has a slim, double-edged blade with a shallow curve. The hilt is wrapped in worn leather for a better grip.",
+	"durability": "80",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10
+	},
+	"stat_bonus": {
+		"dex": 3
+	},
+	"usage_requirements": {
+		"dex": 15
+	},
+	"weight": 1.5,
+	"special_weapon_skills": {
+		"blade": "Grants a bonus to Blade skill when wielding."
+	}
+}
+]

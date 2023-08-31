@@ -1,0 +1,192 @@
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": 100,
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+}
+
+
+{
+	"name": "Steel Helmet",
+	"description": "A sturdy helmet made of steel",
+	"looks": "The helmet is made of smooth steel with a silver tint. It has a visor that can be opened and closed.",
+	"durability": 200,
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 10,
+		"max_hp": 50
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 5
+}
+
+
+{
+	"name": "Iron Plate Armor",
+	"description": "A sturdy armor made from iron plates",
+	"looks": "The armor is made up of overlapping iron plates, covering the entire torso and extending down to the thighs. It also has shoulder and elbow guards.",
+	"durability": 200,
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"def": 12
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 20
+}
+
+
+{
+	"name": "Cloak of the Arcane",
+	"description": "A lightweight robe woven with intricate enchantments, designed to enhance the wearer's magical abilities.",
+	"looks": "The Cloak of the Arcane has a deep purple color, with shimmering silver threads embedded in the fabric. It has a hood and intricate patterns of arcane symbols embroidered along the edges.",
+	"durability": 80,
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"max_mp": 50,
+		"int": 5,
+		"wis": 3,
+		"def": 10,
+		"regen_mp": 5
+	},
+	"weight": 1.5
+}
+
+
+{
+	"name": "Shadowcloth Robe",
+	"description": "A lightweight robe made from enchanted shadowcloth. It provides excellent protection against magical attacks while allowing for agile movements.",
+	"looks": "The Shadowcloth Robe is a long, flowing black garment that shimmers with faint magical energy. It has a high collar and intricate silver embroidery along the edges.",
+	"durability": 60,
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"max_mp": 50,
+		"spd": 10,
+		"resistance_mental": 20
+	},
+	"usage_requirements": {
+		"int": 50
+	},
+	"weight": 2,
+	"special_effects": {
+		"stealth": "Grants a bonus to Stealth skill when worn."
+	}
+}
+
+
+{
+	"name": "Mage Robe",
+	"description": "A flowing robe made for mages, providing comfort and freedom of movement.",
+	"looks": "The robe is made of a lightweight and breathable fabric, adorned with intricate patterns and symbols that shimmer with magical energy.",
+	"durability": 75,
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"max_hp": 20,
+		"max_mp": 50,
+		"max_sta": 10,
+		"def": 10,
+		"resistance_mental": 15,
+		"regen_mp": 1,
+		"cast_speed": 1
+	},
+	"usage_requirements": {
+		"int": 20,
+		"wis": 15
+	},
+	"weight": 2.5
+}
+
+
+{
+	"name": "Silk Robe",
+	"description": "A lightweight and comfortable robe made from the finest silk.",
+	"looks": "The silk robe has a flowing design, with intricate patterns woven into the fabric.",
+	"durability": 70,
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"max_mp": 50,
+		"def": 5
+	},
+	"usage_requirements": {
+		"wis": 15
+	},
+	"weight": 1.5
+}
+
+
+{
+	"name": "Silk Robe",
+	"description": "A light and flowing robe made from the finest silk fabric.",
+	"looks": "The Silk Robe is ankle-length and features loose sleeves. It is decorated with intricate embroidery of magical symbols.",
+	"durability": 70,
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"max_mp": 50,
+		"def": 5
+	},
+	"usage_requirements": {
+		"int": 20
+	},
+	"weight": 1
+}
+
+
+{
+	"name": "Leather Tunic",
+	"description": "A lightweight tunic made of soft leather.",
+	"looks": "The leather tunic is a simple piece of armor that covers the torso. It has a round neckline and short sleeves.",
+	"durability": 110,
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"def": 2,
+		"spd": 1
+	},
+	"weight": 2
+}
+
+
+{
+	"name": "Leather Chestpiece",
+	"description": "A light and flexible chestpiece made from high-quality leather.",
+	"looks": "The leather chestpiece is a sleeveless vest that covers the chest and upper torso. It is made from brown leather with reinforced stitching and adjustable buckle straps for a secure fit.",
+	"durability": 140,
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"def": 10,
+		"spd": 2
+	},
+	"weight": 2.5
+}
+
+
+{
+	"name": "Leather Vest",
+	"description": "A lightweight vest made of high-quality leather.",
+	"looks": "The leather vest has a slim and form-fitting design, providing both protection and ease of movement. It is dyed a dark brown color and has intricate stitching along the edges.",
+	"durability": 90,
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"def": 10,
+		"dex": 2,
+		"con": 1,
+		"spd": 1
+	},
+	"usage_requirements": {
+		"dex": 16
+	},
+	"weight": 2.5
+}
+

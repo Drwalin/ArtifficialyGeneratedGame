@@ -1,0 +1,316 @@
+[
+{
+	"name": "Giant's Club",
+	"description": "A massive club made from the femur of a giant.",
+	"looks": "The Giant's Club is a huge, heavy weapon made from a giant's femur. It is covered in crude carvings and has a spiked metal head. The club exudes an aura of power and intimidation.",
+	"durability": 150,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_physical": 50
+	},
+	"stat_bonus": {
+		"str": 10,
+		"dex": -5,
+		"max_hp": 20
+	},
+	"usage_requirements": {
+		"str": 30
+	},
+	"weight": 30,
+	"special_weapon_skils": {
+		"bludgeoning": "Increases damage done with bludgeoning weapons."
+	},
+	"special_effects": {
+		"stun": "Has a chance to stun enemies on hit."
+	}
+},
+{
+	"name": "Iron Sword",
+	"description": "A sturdy iron sword suitable for close combat.",
+	"looks": "The iron sword has a straight blade with a sharp edge. The hilt is wrapped in leather for a secure grip.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_slashing": 5
+	},
+	"usage_requirements": {
+		"str": 12,
+		"dex": 10
+	},
+	"weight": 4.5,
+	"special_weapon_skills": {
+		"sword": "Grants a bonus to Sword skill when used."
+	},
+	"special_effects": {
+		"bleeding": "Has a chance to cause bleeding damage."
+	}
+},
+{
+	"name": "Firestaff",
+	"description": "A staff imbued with the power of fire, allowing the wielder to cast powerful fire spells.",
+	"looks": "The Firestaff is a long staff made of blackened wood, with intricate carvings depicting flames along its length. At the top of the staff is a crystal orb that glows with a fiery essence.",
+	"durability": 150,
+	"item_usage": "two_hand",
+	"stat_bonus": {
+		"max_mp": 50,
+		"int": 10,
+		"wis": 5,
+		"dmg_fire": 20,
+		"resistance_fire": 10,
+		"cast_speed": 2
+	},
+	"usage_requirements": {
+		"int": 25
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"fire_magic": "Grants a bonus to Fire Magic skill when wielding the Firestaff."
+	}
+},
+{
+	"name": "Steel Gauntlets",
+	"description": "Heavy steel gauntlets that provide excellent protection for the hands.",
+	"looks": "The gauntlets are made of thick steel plates with reinforced leather straps. They have articulated fingers and a large metal plate on the back of the hand.",
+	"durability": 150,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 8,
+		"str": 2
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 4
+},
+{
+	"name": "Iron Sword",
+	"description": "A basic iron sword, suitable for beginners.",
+	"looks": "The iron sword has a straight blade with a single edge. The hilt is made of leather wrapped around a wooden core, providing a comfortable grip.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_slashing": 10
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 3,
+	"special_weapon_skills": {
+		"sword": "Allows the user to perform sword-specific skills."
+	}
+},
+{
+	"name": "Sword of the Lion",
+	"description": "A massive sword adorned with lion motifs, known for its incredible strength and power.",
+	"looks": "The Sword of the Lion has a long, curved blade made of polished steel. The hilt is wrapped in red leather and features intricate engravings of roaring lions. The pommel is shaped like a lion's head with ruby eyes.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_slashing": 30,
+		"str": 15,
+		"dex": 10,
+		"max_hp": 10,
+		"def": 5
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 8,
+	"special_weapon_skills": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill when equipped."
+	},
+	"special_effects": {
+		"berserker": "Increases damage output when health is below 50%."
+	}
+},
+{
+	"name": "Excalibur",
+	"description": "A legendary sword said to have been pulled from a stone by King Arthur.",
+	"looks": "Excalibur is a beautiful sword with a shining silver blade and a golden hilt. The hilt is adorned with intricate engravings of dragons and knights.",
+	"durability": 500,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 50,
+		"dmg_light": 25
+	},
+	"stat_bonus": {
+		"str": 10,
+		"dex": 5
+	},
+	"usage_requirements": {
+		"str": 20,
+		"dex": 15
+	},
+	"weight": 4,
+	"special_weapon_skils": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill when wielded."
+	},
+	"special_effects": {
+		"holy_damage": "Deals additional Holy damage on hit."
+	}
+},
+{
+	"name": "Iron Dagger",
+	"description": "A small dagger made of iron",
+	"looks": "The iron dagger has a short blade and a simple, wooden handle. It looks sharp and well-crafted.",
+	"durability": 60,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10
+	},
+	"stat_bonus": {
+		"str": 4,
+		"dex": 2
+	},
+	"usage_requirements": {
+		"dex": 10
+	},
+	"weight": 1.5
+},
+{
+	"name": "Golden Dagger",
+	"description": "A finely crafted dagger made of pure gold.",
+	"looks": "The golden dagger has a slim and sleek design, with a sharp, pointed blade and an ornate hilt adorned with intricate engravings. The handle is wrapped in soft leather for a comfortable grip.",
+	"durability": 50,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10
+	},
+	"stat_bonus": {
+		"dex": 5,
+		"spd": 2
+	},
+	"usage_requirements": {
+		"dex": 15
+	},
+	"weight": 1,
+	"special_weapon_skills": {
+		"dagger_skill": "Increases damage and accuracy with daggers."
+	}
+},
+{
+	"name": "Flaming Sword",
+	"description": "A powerful sword imbued with the element of fire.",
+	"looks": "The Flaming Sword has a long blade with a fiery glow that flickers and dances along its edge. The hilt is adorned with intricate carvings of flames.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 60,
+		"dmg_fire": 40
+	},
+	"stat_bonus": {
+		"str": 10,
+		"def": 5
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"fire_magic": "Grants bonus to Fire Magic skill when wielding the sword."
+	},
+	"special_effects": {
+		"burning_strike": "Has a chance to inflict burning damage on the target with each strike."
+	}
+},
+{
+	"name": "Iron Axe",
+	"description": "A sturdy iron axe designed for chopping wood and cleaving through enemies.",
+	"looks": "The iron axe has a long wooden handle with a steel blade attached at one end. The blade is curved and sharp, perfect for cutting and splitting wood or dealing heavy damage to foes.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"str": 5,
+		"def": 2
+	},
+	"usage_requirements": {
+		"str": 10,
+		"dex": 8
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"axe_mastery": "Increases damage dealt with axes by 10%."
+	}
+},
+{
+	"name": "Iron Sword",
+	"description": "A simple iron sword with a sharp blade.",
+	"looks": "The iron sword has a straight blade with a single cutting edge. The hilt is wrapped in leather for a secure grip.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_physical": 10,
+		"str": 2,
+		"dex": 1,
+		"spd": 2
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 4,
+	"special_weapon_skils": {
+		"swordsmanship": "Increases damage and accuracy with swords."
+	}
+},
+{
+	"name": "Iron Axe",
+	"description": "A sturdy iron axe suitable for chopping wood or hacking through enemies.",
+	"looks": "The iron axe has a solid iron blade and a wooden handle wrapped in leather for a better grip.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"axe_mastery": "Increases damage dealt with axes."
+	}
+},
+{
+	"name": "Iron Sword",
+	"description": "A basic iron sword",
+	"looks": "The iron sword has a straight blade with a single edge and a sharp point. The hilt is made of wood and wrapped in leather for a comfortable grip.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10
+	},
+	"stat_bonus": {
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 4
+},
+{
+	"name": "Fireball Staff",
+	"description": "A staff infused with the power of fire, allowing the wielder to cast devastating fireball spells.",
+	"looks": "The Fireball Staff is a long staff made of dark wood, with intricate carvings of flames and runes along its length. At the top of the staff, there is a crystal orb that glows with a fiery light.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_fire": -35
+	},
+	"stat_bonus": {
+		"int": 10,
+		"wis": 5,
+		"max_mp": 30,
+		"cast_speed": 2
+	},
+	"usage_requirements": {
+		"int": 25,
+		"wis": 15
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"fire_magic": "Increases the effectiveness of fire spells."
+	},
+	"special_effects": {
+		"fire_damage": "Applies burning effect to enemies hit by fireball spells."
+	}
+}
+]

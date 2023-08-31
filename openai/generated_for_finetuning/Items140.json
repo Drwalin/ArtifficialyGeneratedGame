@@ -1,0 +1,287 @@
+[
+{
+	"name": "Iron Dagger",
+	"description": "A small dagger made of iron, perfect for close-quarters combat.",
+	"looks": "The iron dagger has a short and slim blade, with a simple hilt made of wood. It has a sharp edge and a slightly curved shape.",
+	"durability": 80,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10
+	},
+	"stat_bonus": {
+		"dex": 2,
+		"spd": 1
+	},
+	"usage_requirements": {
+		"dex": 10
+	},
+	"weight": 1.5,
+	"special_weapon_skills": {
+		"dagger_proficiency": "Grants a bonus to Dagger proficiency when equipped."
+	}
+},
+{
+	"name": "Fire Staff",
+	"description": "A staff imbued with the power of fire, capable of channeling destructive fire spells.",
+	"looks": "The Fire Staff is made of polished oak and has intricate carvings of flames along its length. It has a red gemstone set at the top, which glows with an intense fiery light when the staff is activated.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_fire": 30
+	},
+	"stat_bonus": {
+		"int": 5,
+		"wis": 3,
+		"max_mp": 50,
+		"cast_speed": 1
+	},
+	"usage_requirements": {
+		"int": 20
+	},
+	"weight": 2,
+	"special_weapon_skills": {
+		"fire_magic": "Increases effectiveness of fire spells."
+	}
+},
+{
+	"name": "Silver Ring",
+	"description": "A simple silver ring, suitable for everyday wear.",
+	"looks": "The silver ring is plain and smooth, with a polished surface. It has a small, round shape with no engravings or embellishments.",
+	"durability": 50,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"cha": 2,
+		"luck": 1
+	},
+	"usage_requirements": {
+		"cha": 10
+	},
+	"weight": 0.5
+},
+{
+	"name": "Silver Sword",
+	"description": "A finely crafted sword made from pure silver.",
+	"looks": "The silver sword has a slender and elegant design, with a double-edged blade and a hilt adorned with intricate silver engravings. It glimmers with a faint silver glow.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 5,
+		"spd": 3
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 15
+	},
+	"weight": 2.8
+},
+{
+	"name": "Fiery Sword",
+	"description": "A blazing hot sword imbued with the power of flame.",
+	"looks": "The Fiery Sword has a long, curved blade made of gleaming steel. The hilt is wrapped in red leather and adorned with intricate flame designs. When wielded, the blade emits a constant stream of flames.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 50,
+		"dmg_fire": 20
+	},
+	"stat_bonus": {
+		"str": 10,
+		"def": 5
+	},
+	"usage_requirements": {
+		"str": 18,
+		"dex": 15
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"sword_fighting": "Increases sword fighting skill by 10%"
+	},
+	"special_effects": {
+		"flaming_strike": "Chance to inflict burning on target with each hit"
+	}
+},
+{
+	"name": "Steel Chestplate",
+	"description": "A heavy and durable chestplate made from strong steel.",
+	"looks": "The steel chestplate is a solid armor piece that covers the chest and upper torso. It has intricate engravings and reinforced metal plating. The chestplate features adjustable straps for a secure fit.",
+	"durability": 250,
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"def": 15,
+		"max_hp": 100
+	},
+	"usage_requirements": {
+		"str": 20,
+		"dex": 15,
+		"con": 18
+	},
+	"weight": 15
+},
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": 100,
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+	"name": "Iron Sword",
+	"description": "A sturdy iron sword with a sharp blade.",
+	"looks": "The iron sword has a straight, double-edged blade that is approximately three feet long. The hilt is made of leather-wrapped iron, providing a comfortable grip.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_physical": 15
+	},
+	"usage_requirements": {
+		"str": 10,
+		"dex": 8
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill while wielding the sword."
+	}
+},
+{
+	"name": "Steel Gauntlets",
+	"description": "Sturdy gauntlets made from steel, providing protection for the hands and fingers.",
+	"looks": "The steel gauntlets are made of solid steel that covers the hands and fingers. They have a textured surface and reinforced knuckles for added protection.",
+	"durability": 150,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 8
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 4
+},
+{
+	"name": "Steel Greatsword",
+	"description": "A massive, two-handed sword made of steel.",
+	"looks": "The steel greatsword has a long, broad blade with a sharp edge. The hilt is wrapped in leather for a secure grip, and the pommel is adorned with a decorative emblem.",
+	"durability": 150,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_physical": 50
+	},
+	"stat_bonus": {
+		"str": 10
+	},
+	"usage_requirements": {
+		"str": 20,
+		"dex": 15
+	},
+	"weight": 10,
+	"special_weapon_skills": {
+		"sword_skill": "Increases proficiency with swords."
+	}
+},
+{
+	"name": "Iron Sword",
+	"description": "A sturdy iron sword that is sharp and durable.",
+	"looks": "The iron sword has a straight blade with a single edge and a crossguard. The hilt is wrapped in leather for a comfortable grip.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20
+	},
+	"stat_bonus": {
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 4.5,
+	"special_weapon_skills": {
+		"swordsmanship": "Increases damage dealt with swords."
+	}
+},
+{
+	"name": "Diamond Sword",
+	"description": "A powerful and durable sword made from pure diamond.",
+	"looks": "The Diamond Sword has a gleaming blade made entirely of diamond. The hilt is made from a combination of diamond and gold, with intricate engravings along the handle.",
+	"durability": 500,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 50
+	},
+	"stat_bonus": {
+		"str": 20,
+		"dex": 15
+	},
+	"usage_requirements": {
+		"str": 30
+	},
+	"weight": 4,
+	"special_weapon_skils": {
+		"swordsmanship": "Increases damage dealt with swords."
+	}
+},
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": 100,
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+	"name": "Steel Gauntlets",
+	"description": "Sturdy gauntlets made of steel to protect the hands in combat.",
+	"looks": "The steel gauntlets are made of thick steel plates with padded leather lining on the inside. They cover the entire hand and extend up to the forearm.",
+	"durability": 150,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 8,
+		"str": 2
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 4
+},
+{
+	"name": "Fireball Wand",
+	"description": "A wand that harnesses the power of fire, allowing the user to cast powerful fireball spells.",
+	"looks": "The Fireball Wand is made of dark mahogany wood with intricate carvings of flames along its length. At the tip, there is a crystal orb that glows with a fiery red light.",
+	"durability": 50,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_fire": 15
+	},
+	"stat_bonus": {
+		"int": 5,
+		"max_mp": 10,
+		"cast_speed": 1
+	},
+	"special_weapon_skills": {
+		"wand_proficiency": "Increases damage and casting speed when using wands."
+	},
+	"usage_requirements": {
+		"int": 20
+	},
+	"weight": 0.5
+}
+]

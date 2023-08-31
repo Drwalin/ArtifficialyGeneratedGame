@@ -1,0 +1,252 @@
+[
+{
+	"name": "Steel Shield",
+	"description": "A heavy shield made of steel",
+	"looks": "The shield is round in shape and made of sturdy steel. It has a reinforced center and a comfortable grip on the back.",
+	"durability": 300,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 15,
+		"max_hp": 20
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 8,
+	"special_effects": {
+		"block": "Grants a bonus to Block skill when used."
+	}
+},
+{
+	"name": "Steel Sword",
+	"description": "A sturdy and sharp steel sword.",
+	"looks": "The steel sword has a straight, double-edged blade with a silver shine. The hilt is wrapped in black leather and has a simple crossguard.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_physical": 10,
+		"str": 5,
+		"dex": 2
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 2.5,
+	"special_weapon_skils": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill when wielded."
+	}
+},
+{
+	"name": "Steel Greaves",
+	"description": "Sturdy steel greaves that provide excellent leg protection.",
+	"looks": "The steel greaves are made of solid steel plates that cover the lower legs. They have adjustable straps and buckles for a secure fit.",
+	"durability": 150,
+	"item_usage": "wear_legs",
+	"stat_bonus": {
+		"def": 8,
+		"spd": -1
+	},
+	"usage_requirements": {
+		"str": 10,
+		"dex": 8
+	},
+	"weight": 8
+},
+{
+	"name": "Silver Sword",
+	"description": "A finely crafted sword made of silver, known for its ability to harm creatures of darkness.",
+	"looks": "The silver sword has a sleek and elegant design, with a polished silver blade and a hilt adorned with intricate silver filigree.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 30,
+		"dmg_dark": -20
+	},
+	"stat_bonus": {
+		"str": 10,
+		"luck": 5
+	},
+	"weight": 2,
+	"special_weapon_skils": {
+		"two_handed_sword": "Allows the wielder to use the Two-Handed Sword skill."
+	},
+	"special_effects": {
+		"bonus_damage_vs_dark": "Deals bonus damage against creatures of darkness."
+	}
+},
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": 100,
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+	"name": "Iron Sword",
+	"description": "A basic iron sword with a sharp blade and a simple hilt.",
+	"looks": "The iron sword has a straight double-edged blade with a slight curve towards the tip. The hilt is made of wood and wrapped in leather for a better grip.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20
+	},
+	"stat_bonus": {
+		"def": -2,
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill when wielded."
+	}
+},
+{
+	"name": "Steel Sword",
+	"description": "A sturdy sword made of steel",
+	"looks": "The sword has a silver blade with a curved edge and a sharp point. The hilt is made of polished steel and wrapped in leather for a comfortable grip.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_physical": 20,
+		"spd": 5,
+		"def": 2
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 4,
+	"special_weapon_skils": {
+		"sword": "Grants a bonus to Sword skill when wielded."
+	}
+},
+{
+	"name": "Steel Gauntlets",
+	"description": "Heavy gauntlets made from hardened steel",
+	"looks": "The gauntlets are made from polished steel plates, providing excellent protection for the hands and wrists. They have reinforced knuckles and articulated fingers for flexibility.",
+	"durability": 150,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 8,
+		"str": 3
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 6
+},
+{
+	"name": "Silver Ring",
+	"description": "A simple silver ring with an elegant design.",
+	"looks": "The silver ring is a sleek and polished band, with a small engraved pattern along the edges.",
+	"durability": 50,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"luck": 2,
+		"resistance_dark": 5
+	},
+	"weight": 0.5
+},
+{
+	"name": "Steel Gauntlets",
+	"description": "Sturdy steel gauntlets that provide excellent protection for the hands.",
+	"looks": "The steel gauntlets are made of strong steel plates, covering the entire hand and extending up to the forearm. They have intricate engravings on the back and adjustable straps for a secure fit.",
+	"durability": 150,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 8,
+		"str": 3
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 4.5
+},
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": 100,
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+	"name": "Steel Greaves",
+	"description": "Strong and durable greaves made from steel.",
+	"looks": "The steel greaves are made of polished steel plates that cover the legs from the knees to the ankles. They provide excellent protection while allowing for easy movement.",
+	"durability": 150,
+	"item_usage": "wear_legs",
+	"stat_bonus": {
+		"def": 8
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 8
+},
+{
+	"name": "Amulet of Strength",
+	"description": "A powerful amulet that enhances the wearer's strength.",
+	"looks": "The amulet is made of a gleaming silver material and is adorned with a large, intricately carved gemstone. The gemstone emits a faint glow that seems to pulse with power.",
+	"durability": 100,
+	"item_usage": "trinket",
+	"stat_bonus": {
+		"str": 10
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 0.5,
+	"special_effects": {
+		"strength_boost": "Temporarily increases strength by 20% when activated."
+	}
+},
+{
+	"name": "Steel Sword",
+	"description": "A sturdy steel sword that is designed for slashing and stabbing.",
+	"looks": "The steel sword has a straight blade that is about 3 feet long. The hilt is wrapped in leather for a comfortable grip, and the sword has a crossguard for added protection.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_slashing": 15
+	},
+	"usage_requirements": {
+		"str": 12,
+		"dex": 10
+	},
+	"weight": 2.5
+},
+{
+	"name": "Iron Sword",
+	"description": "A simple iron sword",
+	"looks": "The iron sword is a simple, straight-bladed weapon with a hilt wrapped in leather for a better grip. It has a basic crossguard and a pommel at the end of the hilt.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_physical": 10
+	},
+	"usage_requirements": {
+		"str": 12,
+		"dex": 10
+	},
+	"weight": 2.5
+}
+]

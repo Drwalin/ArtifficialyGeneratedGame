@@ -1,0 +1,364 @@
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
+	}
+}
+
+
+{
+	"name": "Sword of Lightning",
+	"description": "A powerful sword infused with lightning energy.",
+	"looks": "The sword has a blade crackling with electricity and a hilt made of pure silver.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 50,
+		"dmg_lightning": 100
+	},
+	"stat_bonus": {
+		"str": 10,
+		"spd": 5
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 3,
+	"special_weapon_skills": {
+		"Swordsmanship": "Increases damage with swords by 20%.",
+		"Lightning Mastery": "Increases lightning damage by 50%."
+	}
+}
+
+
+{
+	"name": "Mystic Wand",
+	"description": "A magical wand that emanates a mysterious energy",
+	"looks": "The wand is made of polished wood and adorned with intricate carvings. It glows faintly with a soft blue light.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_lightning": 10
+	},
+	"stat_bonus": {
+		"int": 5,
+		"max_mp": 50
+	},
+	"usage_requirements": {
+		"int": 20
+	},
+	"weight": 0.5,
+	"special_effects": {
+		"mana_leech": "Drains 2 mana from the target with each successful hit"
+	}
+}
+
+
+{
+	"name": "Sword of the Thunderstorm",
+	"description": "A mythical sword that harnesses the power of lightning.",
+	"looks": "The Sword of the Thunderstorm has a long, silver blade with intricate engravings. The hilt is made of black leather, adorned with small lightning bolts.",
+	"durability": 250,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 12,
+		"dmg_lightning": 10
+	},
+	"stat_bonus": {
+		"str": 5,
+		"spd": 2
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 2.5,
+	"special_weapon_skills": {
+		"Swordsmanship": "Increases sword handling and damage"
+	},
+	"special_effects": {
+		"Thunderbolt Strike": "25% chance to deal additional lightning damage upon successful hit"
+	}
+}
+
+
+{
+	"name": "Sword of the Elements",
+	"description": "A powerful sword empowered by the elements.",
+	"looks": "The sword has a sleek design with a blade that shimmers with different elemental colors.",
+	"durability": 75,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10,
+		"dmg_fire": 5,
+		"dmg_water": 5,
+		"dmg_air": 5,
+		"dmg_earth": 5,
+		"dmg_lightning": 5
+	},
+	"stat_bonus": {
+		"str": 10,
+		"dex": -5
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 2.5,
+	"special_weapon_skills": {
+		"elemental_mastery": "Increases the damage of elemental spells by 25%."
+	},
+	"special_effects": {
+		"elemental_fury": "20% chance to deal double damage with elemental attacks."
+	}
+}
+
+
+{
+	"name": "Crossbow",
+	"description": "A powerful ranged weapon that uses a mechanism to shoot arrows with high accuracy and force",
+	"looks": "The crossbow is made of a sturdy wooden frame with intricate carvings. It has a metallic limb and a strong string attached to it. The front end of the crossbow features a metal rail for loading and aiming the arrows.",
+	"durability": "150",
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_piercing": 20
+	},
+	"weight": 3.5
+}
+
+
+{
+	"name": "Bow of Frost",
+	"description": "A magical bow that shoots icy arrows.",
+	"looks": "The bow is made of polished wood with intricate ice crystals embedded in the limbs. The string is made of woven ice fibers.",
+	"durability": "220",
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_ice": 15,
+		"dmg_piercing": 5
+	},
+	"stat_bonus": {
+		"dex": 5,
+		"cha": -2
+	},
+	"usage_requirements": {
+		"dex": 10
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"freeze": "Arrows have a chance to freeze the target, slowing them down."
+	}
+}
+
+
+{
+	"name": "Ancient Bow",
+	"description": "A powerful bow crafted by ancient elven craftsmen.",
+	"looks": "The bow is made of shimmering silver wood, adorned with intricate engravings of elven symbols. It is adorned with a string made of golden thread.",
+	"durability": "250",
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_physical": 40,
+		"dmg_light": 20
+	},
+	"stat_bonus": {
+		"dex": 2
+	},
+	"usage_requirements": {
+		"dex": 20,
+		"str": 26
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"critical_strike": "Allows for a higher chance of landing critical hits."
+	}
+}
+
+
+{
+	"name": "Mace",
+	"description": "A heavy blunt weapon with a spiked head.",
+	"looks": "The mace is made of iron and has a wooden handle. The head of the mace is spiked, designed to crush bones and armor upon impact.",
+	"durability": "250",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_blunt": 20
+	},
+	"stat_bonus": {
+		"str": 5,
+		"spd": -2
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 3.5
+}
+
+
+{
+	"name": "Iron Mace",
+	"description": "A sturdy iron mace with a spiked head, designed for dealing heavy blunt damage.",
+	"looks": "The iron mace has a long handle made of solid iron, with a spiked head at the end. It has a rough texture and weighs about 2 kg.",
+	"durability": "150",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_blunt": 25
+	},
+	"stat_bonus": {
+		"str": 3
+	},
+	"weight": 2,
+	"special_effects": {
+		"stun": "Has a chance to stun the enemy for 1 second upon successful hit."
+	}
+}
+
+
+{
+	"name": "Axe",
+	"description": "A sharp and heavy axe that can be used for chopping wood or enemies.",
+	"looks": "The axe has a long wooden handle with a sharp metal blade at the end. It has a leather strap at the end of the handle for better grip.",
+	"durability": "180",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5
+	},
+	"weight": 2.5
+}
+
+
+{
+	"name": "Steel Mace",
+	"description": "A sturdy mace made of steel.",
+	"looks": "The steel mace has a long handle with a round metal head. It is well-crafted and has a polished finish.",
+	"durability": "280",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_blunt": 15
+	},
+	"weight": 2.5
+}
+
+
+{
+	"name": "Warhammer",
+	"description": "A heavy two-handed hammer used by warriors in battle.",
+	"looks": "The warhammer is made of solid steel and has a long handle for powerful swings.",
+	"durability": "300",
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_blunt": 20
+	},
+	"stat_bonus": {
+		"str": 3,
+		"def": 5
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 5,
+	"special_weapon_skills": {
+		"hammer_mastery": "Increases critical hit chance with warhammers."
+	},
+	"special_effects": {
+		"stunning_hit": "Has a chance to stun the target on successful hit."
+	}
+}
+
+
+{
+	"name": "Mighty Warhammer",
+	"description": "A large and heavy warhammer with a steel head and a sturdy wooden handle. It is designed for crushing blows and can deal devastating damage.",
+	"looks": "The warhammer has a thick steel head with intricately carved patterns. The handle is made of polished dark oak and has a comfortable grip.",
+	"durability": "500",
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_blunt": 35
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": -2
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 8,
+	"special_effects": {
+		"crushing_blow": "Has a chance to stun the target on hit."
+	}
+}
+
+
+{
+	"name": "Iron Dagger",
+	"description": "A small, sharp dagger made of iron.",
+	"looks": "The dagger has a thin blade with a sharp point, perfect for stabbing.",
+	"durability": "200",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_piercing": 8
+	},
+	"stat_bonus": {
+		"dex": 2
+	},
+	"weight": 1.5
+}
+
+
+{
+	"name": "Fire Staff",
+	"description": "A powerful staff imbued with the element of fire.",
+	"looks": "The staff is made of solid oak and has intricate carvings of flames along its length. The top of the staff is adorned with a large ruby that glows with a fiery red light.",
+	"durability": "300",
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_fire": 20
+	},
+	"stat_bonus": {
+		"int": 5,
+		"max_mp": 50
+	},
+	"usage_requirements": {
+		"int": 10
+	},
+	"weight": 5.5,
+	"special_effects": {
+		"burning_touch": "Attacks have a chance to ignite the target, causing additional fire damage over time."
+	}
+}
+
+
+{
+	"name": "Battle Axe",
+	"description": "A large and heavy two-handed axe with a long handle and a sharp blade.",
+	"looks": "The battle axe has a wooden handle with leather wrappings for grip. The blade is made of steel and is quite sharp.",
+	"durability": "250",
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_physical": 25
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": -2
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 8,
+	"special_effects": {
+		"heavy_swing": "Allows for a powerful overhead swing that deals additional damage."
+	}
+}

@@ -1,0 +1,290 @@
+[
+{
+	"name": "Emerald Staff",
+	"description": "A staff made from rare emerald material, imbued with magical energy.",
+	"looks": "The Emerald Staff is a staff made from a single large emerald crystal, polished to perfection. It has intricate engravings along its length and emits a faint green glow.",
+	"durability": 150,
+	"item_usage": "two_hand",
+	"stat_bonus": {
+		"max_mp": 100,
+		"int": 10,
+		"wis": 8,
+		"def": 5,
+		"resistance_mental": 10,
+		"cast_speed": 2
+	},
+	"usage_requirements": {
+		"int": 25
+	},
+	"weight": 4,
+	"special_weapon_skils": {
+		"magic_damage": "Increases damage dealt by magical spells."
+	},
+	"special_effects": {
+		"magic_amplification": "Increases the power of all magical spells cast with this staff."
+	}
+},
+{
+	"name": "Iron Sword",
+	"description": "A sturdy iron sword that is commonly used by adventurers and warriors.",
+	"looks": "The iron sword has a straight blade that shines with a dull gray color. The hilt is wrapped in worn leather for a better grip.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 25
+	},
+	"stat_bonus": {
+		"dex": 2,
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 10,
+		"dex": 8
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill when wielded."
+	}
+},
+{
+	"name": "Wooden Staff",
+	"description": "A simple wooden staff used for casting spells and channeling magical energy.",
+	"looks": "The wooden staff is made from a solid piece of oak wood. It is about six feet long with a smooth and polished surface. The top of the staff is carved into intricate designs that resemble leaves and branches.",
+	"durability": 80,
+	"item_usage": "two_hand",
+	"stat_bonus": {
+		"max_mp": 30,
+		"int": 5,
+		"wis": 3,
+		"cast_speed": 1
+	},
+	"usage_requirements": {
+		"int": 10
+	},
+	"weight": 2.5,
+	"special_weapon_skills": {
+		"magic_missile": "Allows the wielder to cast the Magic Missile spell."
+	}
+},
+{
+	"name": "Silver Sword",
+	"description": "A finely crafted sword made from pure silver.",
+	"looks": "The silver sword has a slender blade with a polished silver finish. The handle is wrapped in black leather with intricate silver engravings. It emanates a faint glow.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20,
+		"dmg_light": 10
+	},
+	"stat_bonus": {
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 2.5,
+	"special_weapon_skils": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill when wielded."
+	},
+	"special_effects": {
+		"holy_damage": "Deals additional holy damage with each strike."
+	}
+},
+{
+	"name": "Vorpal Blade",
+	"description": "A legendary sword with a razor-sharp edge that can sever limbs in a single strike.",
+	"looks": "The Vorpal Blade is a longsword with a gleaming silver blade that seems to hum with power. The hilt is made of polished ebony, carved with intricate patterns of dragons and serpents.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_slashing": 20,
+		"spd": 5
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill when wielded."
+	},
+	"special_effects": {
+		"sever": "Has a chance to sever limbs on critical hits."
+	}
+},
+{
+	"name": "Iron Dagger",
+	"description": "A small iron dagger, perfect for quick and stealthy strikes.",
+	"looks": "The iron dagger has a short, curved blade with a sharp point. The handle is wrapped in leather for a secure grip.",
+	"durability": 80,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"def": 2,
+		"spd": 2
+	},
+	"weight": 1.5,
+	"special_weapon_skills": {
+		"backstab": "Increases backstab damage by 50%."
+	}
+},
+{
+	"name": "Leather Gloves",
+	"description": "A pair of light and flexible gloves made from high-quality leather.",
+	"looks": "The leather gloves are designed to fit snugly on the hands, providing protection and dexterity. They have reinforced stitching and adjustable straps for a secure fit.",
+	"durability": 75,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 2,
+		"dex": 1
+	},
+	"weight": 0.5
+},
+{
+	"name": "Steel Sword",
+	"description": "A well-crafted steel sword that is both sharp and durable.",
+	"looks": "The steel sword has a straight blade with a single-edged design. The handle is made of leather and has a simple crossguard. The overall design of the sword is sleek and functional.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_physical": 20
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 4,
+	"special_weapon_skils": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill while equipped."
+	}
+},
+{
+	"name": "Iron Sword",
+	"description": "A sturdy iron sword, capable of delivering powerful strikes.",
+	"looks": "The iron sword has a long, straight blade with a single edge. The hilt is wrapped in leather for a comfortable grip, and the pommel is made of iron.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20
+	},
+	"stat_bonus": {
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 4
+},
+{
+	"name": "Iron Sword",
+	"description": "A basic one-handed sword made of iron.",
+	"looks": "The iron sword has a straight blade with a single cutting edge. The hilt is simple, made of a wooden grip wrapped in leather, and a crossguard made of iron.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_physical": 10,
+		"str": 5,
+		"dex": 3
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 4,
+	"special_effects": {
+		"bleed": "Has a chance to inflict bleeding on the target."
+	}
+},
+{
+	"name": "Fire Sword",
+	"description": "A sword infused with the element of fire, capable of dealing fiery damage to enemies.",
+	"looks": "The Fire Sword has a gleaming blade made of enchanted steel that flickers with flames. The handle is wrapped in leather, with a fiery symbol etched into the pommel.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10,
+		"dmg_fire": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"def": 3,
+		"resistance_fire": 10
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"fire_mastery": "Increases damage dealt with fire-based weapons."
+	}
+},
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": 100,
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+	"name": "Iron Sword",
+	"description": "A sturdy iron sword suitable for close combat.",
+	"looks": "The iron sword has a straight blade with a single cutting edge and a sharp point. The hilt is made of leather-wrapped metal with a simple crossguard.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_physical": 25,
+		"max_hp": 5,
+		"def": 2
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"swordmanship": "Increases damage with swords."
+	}
+},
+{
+	"name": "Golden Gauntlets",
+	"description": "A pair of gauntlets made from solid gold, providing both protection and a touch of luxury.",
+	"looks": "The Golden Gauntlets are crafted from pure gold, with intricate engravings along the surface. They have a polished finish that gleams in the light.",
+	"durability": 150,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 8,
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 1.5
+},
+{
+	"name": "Silver Sword",
+	"description": "A finely crafted sword made from pure silver.",
+	"looks": "The silver sword has a shiny blade and a hilt wrapped in black leather. The pommel is adorned with a small blue gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 25
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 2,
+	"special_effects": {
+		"silver_enchantment": "Deals extra damage to certain creatures vulnerable to silver."
+	}
+}
+]

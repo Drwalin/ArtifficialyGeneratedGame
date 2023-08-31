@@ -1,0 +1,268 @@
+[
+{
+	"name": "Iron Sword",
+	"description": "A sturdy iron sword that can be wielded with precision and power.",
+	"looks": "The iron sword has a straight, double-edged blade with a silver tint. It has a hilt wrapped in leather for a comfortable grip.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 30
+	},
+	"stat_bonus": {
+		"str": 10,
+		"dex": 5
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 5,
+	"special_weapon_skills": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill when wielded."
+	}
+},
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": 100,
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+	"name": "Steel Sword",
+	"description": "A sharp and sturdy sword made of steel.",
+	"looks": "The steel sword has a long, straight blade with a single edge and a sharp point. The hilt is made of leather wrapped around the tang, and it has a simple crossguard.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_slashing": 10,
+		"def": -5
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 2.5,
+	"special_weapon_skils": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill when equipped."
+	}
+},
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": "100",
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+	"name": "Health Potion",
+	"description": "A potion that restores a portion of the user's health.",
+	"looks": "The health potion is a small glass bottle filled with a red liquid. It has a cork stopper and a label with a white cross on it.",
+	"durability": "1",
+	"item_usage": "consumable",
+	"item_recipee": [
+		"Herbs",
+		"Water",
+		"Glass Bottle"
+	],
+	"item_effect": {
+		"hp": 50
+	},
+	"weight": 0.1
+},
+{
+	"name": "Fire Wand",
+	"description": "A wand imbued with the power of fire, capable of unleashing devastating fire spells.",
+	"looks": "The Fire Wand is made of polished mahogany and has intricate carvings of flames along its length. It has a pointed end from which the fire spells are channeled.",
+	"durability": "50",
+	"item_usage": "one_hand",
+	"item_recipee": [
+		"Wooden Wand",
+		"Fire Essence"
+	],
+	"dmg": {
+		"dmg_fire": 40
+	},
+	"stat_bonus": {
+		"int": 10,
+		"max_mp": 30,
+		"cast_speed": 2
+	},
+	"weight": 0.5,
+	"special_effects": {
+		"ignite": "Chance to ignite enemies with fire spells."
+	}
+},
+{
+	"name": "Wooden Staff",
+	"description": "A simple staff made of wood, used by spellcasters for channeling their magic.",
+	"looks": "The wooden staff is about 5 feet long and made of a sturdy wood. It has intricate carvings along its length and a crystal orb at the top.",
+	"durability": 50,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"max_mp": 20,
+		"int": 5,
+		"wis": 3,
+		"def": 2,
+		"cast_speed": 1
+	},
+	"usage_requirements": {
+		"int": 10
+	},
+	"weight": 1.5,
+	"special_weapon_skils": {
+		"staff_mastery": "Increases damage dealt with staves."
+	}
+}
+
+{
+	"name": "Wand of Fire",
+	"description": "A wand imbued with the power of fire magic.",
+	"looks": "The wand is made of polished wood and has intricate carvings along its length. At the tip, there is a glowing red crystal, pulsating with heat.",
+	"durability": 30,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"max_mp": 10,
+		"int": 6,
+		"wis": 4,
+		"dmg_fire": 10,
+		"cast_speed": 2,
+		"resistance_fire": 5
+	},
+	"usage_requirements": {
+		"int": 15
+	},
+	"weight": 0.5,
+	"special_weapon_skils": {
+		"fire_mastery": "Increases damage dealt with fire spells."
+	},
+	"special_effects": {
+		"fire_damage_on_hit": "Has a chance to deal additional fire damage on successful hit."
+	}
+}
+
+{
+	"name": "Sword of the Crusader",
+	"description": "A divine sword blessed by the gods, said to vanquish evil and protect the innocent.",
+	"looks": "The Sword of the Crusader is made of shining steel, with a golden hilt adorned with angelic engravings. It emits a faint glow and seems to radiate with purity.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"str": 10,
+		"def": 5,
+		"spd": 3,
+		"dmg_light": 15,
+		"resistance_dark": 10
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 3,
+	"special_weapon_skils": {
+		"sword_mastery": "Increases damage dealt with swords."
+	},
+	"special_effects": {
+		"holy_damage": "Deals additional holy damage to undead and dark creatures."
+	}
+}
+
+{
+	"name": "Bow of the Forest",
+	"description": "A finely crafted bow with a unique design inspired by the beauty of nature.",
+	"looks": "The Bow of the Forest is made from polished wood and has intricate carvings of leaves, vines, and animals. It is lightweight yet sturdy, perfect for long-range precision.",
+	"durability": 80,
+	"item_usage": "two_hand",
+	"stat_bonus": {
+		"dex": 10,
+		"per": 5,
+		"def": 2,
+		"spd": 2,
+		"dmg_physical": 12
+	},
+	"usage_requirements": {
+		"dex": 15,
+		"per": 12
+	},
+	"weight": 2,
+	"special_weapon_skils": {
+		"bow_mastery": "Increases damage dealt with bows."
+	},
+	"special_effects": {
+		"critical_chance": "Increases critical hit chance with the bow."
+	}
+}
+
+{
+	"name": "Dagger of Shadows",
+	"description": "A sleek and deadly dagger that grants its wielder the ability to move unseen in the shadows.",
+	"looks": "The Dagger of Shadows has a curved blade made of an obsidian-like material, with a black hilt wrapped in dark leather. It seems to absorb light, making it perfect for stealthy assassinations.",
+	"durability": 40,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dex": 8,
+		"per": 5,
+		"def": 1,
+		"spd": 2,
+		"dmg_dark": 8
+	},
+	"usage_requirements": {
+		"dex": 12
+	},
+	"weight": 0.8,
+	"special_weapon_skils": {
+		"dagger_mastery": "Increases damage dealt with daggers.",
+		"backstab": "Grants a bonus to backstab damage."
+	},
+	"special_effects": {
+		"stealth": "Increases effectiveness of Stealth skill while wielding the dagger."
+	}
+},
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": "100",
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+	"name": "Steel Breastplate",
+	"description": "A heavy and durable breastplate made from steel.",
+	"looks": "The steel breastplate is a solid and sturdy piece of armor that covers the chest and upper torso. It features intricate engravings and has a polished silver finish.",
+	"durability": "250",
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"def": 15,
+		"max_hp": 75
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 15
+}
+]

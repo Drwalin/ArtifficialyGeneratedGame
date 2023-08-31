@@ -1,0 +1,282 @@
+[
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": 100,
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": 100,
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+	"name": "Shadowsteel Sword",
+	"description": "A deadly sword forged from a rare combination of shadow essence and steel.",
+	"looks": "The Shadowsteel Sword has a sleek and elegant design, with a silver steel blade and a black handle made from shadow-infused metal. It glimmers with a faint purple aura.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_physical": 20,
+		"spd": 5
+	},
+	"usage_requirements": {
+		"str": 20,
+		"dex": 15
+	},
+	"weight": 4,
+	"special_effects": {
+		"shadow_strike": "Has a chance to apply a debuff that reduces enemy's resistance to dark damage."
+	}
+},
+{
+	"name": "Steel Plate Armor",
+	"description": "Heavy steel armor that provides excellent protection for the wearer.",
+	"looks": "The steel plate armor is made up of interlocking steel plates, covering the entire body. It has reinforced sections on the chest and legs, as well as shoulder and elbow guards.",
+	"durability": 300,
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"def": 15,
+		"max_hp": 100
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 30
+},
+{
+	"name": "Amulet of Strength",
+	"description": "An amulet that grants enhanced physical strength to the wearer.",
+	"looks": "The amulet is made of a polished silver chain with a pendant in the shape of a clenched fist. The fist is made of solid gold and has intricate details.",
+	"durability": 80,
+	"item_usage": "trinket",
+	"stat_bonus": {
+		"str": 5
+	},
+	"usage_requirements": {
+		"cha": 10
+	},
+	"weight": 0.5
+},
+{
+	"name": "Fire Staff",
+	"description": "A staff imbued with the power of fire, capable of casting destructive fire spells.",
+	"looks": "The Fire Staff is a long wooden staff with a burning flame at the top. The staff itself is intricately carved with fire motifs, and the flames flicker and dance.",
+	"durability": 100,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_fire": 20
+	},
+	"stat_bonus": {
+		"int": 10,
+		"cast_speed": 2
+	},
+	"special_weapon_skills": {
+		"fire_magic": "Allows the use of fire spells with increased power and effectiveness."
+	},
+	"usage_requirements": {
+		"int": 15
+	},
+	"weight": 3
+},
+{
+	"name": "Fiery Sword",
+	"description": "A sword engulfed in flames. It is said to have been forged in the fiery depths of a volcano.",
+	"looks": "The Fiery Sword has a blade made of gleaming steel, with fiery patterns etched into the metal. The hilt is adorned with a fiery red gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 50,
+		"dmg_fire": 20
+	},
+	"stat_bonus": {
+		"str": 15,
+		"dex": 5
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 4,
+	"special_weapon_skils": {
+		"swordsmanship": "Increases damage dealt with swords."
+	},
+	"special_effects": {
+		"ignition": "Has a chance to ignite enemies on hit."
+	}
+},
+{
+	"name": "Broadsword",
+	"description": "A heavy and powerful sword with a wide blade, capable of inflicting devastating damage on enemies.",
+	"looks": "The broadsword has a long and wide blade, with a double-edged design. The hilt is made of sturdy wood wrapped in leather, providing a comfortable grip.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 50
+	},
+	"stat_bonus": {
+		"str": 10,
+		"dex": 5
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 4,
+	"special_weapon_skils": {
+		"swordsmanship": "Improves damage and accuracy when using swords."
+	}
+},
+{
+	"name": "Diamond Sword",
+	"description": "A sword made from a rare and precious diamond",
+	"looks": "The Diamond Sword is a sparkling blade with a translucent blue hue. It has an intricately designed hilt with diamond accents.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 50
+	},
+	"stat_bonus": {
+		"str": 15,
+		"dex": 10
+	},
+	"usage_requirements": {
+		"str": 30,
+		"dex": 20
+	},
+	"weight": 2,
+	"special_weapon_skills": {
+		"swordsmanship": "Increases damage and accuracy with swords."
+	}
+},
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": 100,
+	"item_usage": "wear_head", 
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+    "name": "Iron Helmet",
+    "description": "A sturdy iron helmet that provides good protection for the head.",
+    "looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+    "durability": 100,
+    "item_usage": "wear_head",
+    "stat_bonus": {
+        "def": 5,
+        "max_hp": 10
+    },
+    "usage_requirements": {
+        "str": 15,
+        "dex": 10
+    },
+    "weight": 3
+},
+{
+	"name": "Steel Shortsword",
+	"description": "A small and lightweight steel shortsword, perfect for quick strikes.",
+	"looks": "The steel shortsword has a short, straight blade with a single cutting edge. The hilt is made of polished wood, with a crossguard for added protection.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"usage_requirements": {
+		"str": 10,
+		"dex": 10
+	},
+	"weight": 1.5,
+	"special_weapon_skills": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill when equipped."
+	}
+},
+{
+	"name": "Inferno Sword",
+	"description": "A flaming sword forged in the fires of the underworld.",
+	"looks": "The Inferno Sword has a long, black blade with fiery patterns etched into it. The hilt is made of obsidian and adorned with crimson gemstones.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 50,
+		"dmg_fire": 25
+	},
+	"stat_bonus": {
+		"str": 10,
+		"dex": 5
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 6,
+	"special_weapon_skills": {
+		"flaming_strike": "Allows the wielder to unleash a powerful flaming strike."
+	},
+	"special_effects": {
+		"burning": "Chance to set target on fire."
+	}
+},
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": 100,
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+	"name": "Steel Plate Armor",
+	"description": "A heavy and robust armor made from steel plates.",
+	"looks": "The Steel Plate Armor is a full body armor made up of interlocking steel plates. It covers the entire body, including the torso, arms, and legs. The armor is polished to a mirror-like shine and has intricate engravings along the edges.",
+	"durability": 300,
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"def": 20,
+		"max_hp": 100
+	},
+	"usage_requirements": {
+		"str": 20,
+		"dex": 15
+	},
+	"weight": 25
+}
+]

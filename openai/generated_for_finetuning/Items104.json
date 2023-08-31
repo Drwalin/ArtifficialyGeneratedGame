@@ -1,0 +1,225 @@
+[
+{
+	"name": "Steel Gauntlets",
+	"description": "A pair of sturdy gauntlets made from steel",
+	"looks": "The gauntlets are made of solid steel with a polished silver finish. They have intricate engravings and provide excellent protection for the hands and wrists.",
+	"durability": "150",
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 8,
+		"max_hp": 20
+	},
+	"usage_requirements": {
+		"str": 12,
+		"dex": 8
+	},
+	"weight": 4
+},
+{
+	"name": "Steel Gauntlets",
+	"description": "Heavy gauntlets made from steel.",
+	"looks": "The steel gauntlets are made from thick steel plates with reinforced joints. They have a textured surface to provide a better grip.",
+	"durability": "150",
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 7,
+		"str": 2
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 4
+},
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": 100,
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+	"name": "Emerald Ring",
+	"description": "A beautiful ring adorned with a sparkling emerald.",
+	"looks": "The Emerald Ring has a silver band with intricate engravings. The centerpiece is a large emerald that catches the light and sparkles with a vibrant green color.",
+	"durability": "100",
+	"item_usage": "trinket",
+	"stat_bonus": {
+		"wis": 3,
+		"luck": 2
+	},
+	"usage_requirements": {
+		"cha": 10
+	},
+	"weight": 0.5
+},
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": "100",
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+	"name": "Iron Sword",
+	"description": "A sturdy iron sword, suitable for close combat.",
+	"looks": "The iron sword has a straight blade with a sharp point and a cross-guard to protect the user's hand. The hilt is wrapped in leather for a comfortable grip.",
+	"durability": "150",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"usage_requirements": {
+		"str": 12,
+		"dex": 10
+	},
+	"weight": 4,
+	"special_weapon_skils": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill when wielded."
+	}
+},
+{
+	"name": "Steel Gauntlets",
+	"description": "A pair of sturdy gauntlets made of steel.",
+	"looks": "The steel gauntlets are made of overlapping steel plates, providing excellent protection for the hands and fingers. They have a polished silver finish and engraved patterns along the edges.",
+	"durability": "150",
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 8,
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 4.5
+},
+{
+	"name": "Steel Gauntlets",
+	"description": "Heavy gauntlets made from sturdy steel, providing excellent hand protection.",
+	"looks": "The steel gauntlets are large, metal gloves that cover the hands and wrists. They have a textured surface for grip and feature reinforced plates on the knuckles.",
+	"durability": "150",
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 8
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 4
+},
+{
+	"name": "Enchanted Amulet",
+	"description": "An amulet imbued with magical energy, providing various mystical benefits to the wearer.",
+	"looks": "The enchanted amulet is made of a glowing crystal in a metal casing. The crystal emits a soft, pulsating light that changes colors.",
+	"durability": "N/A",
+	"item_usage": "trinket",
+	"stat_bonus": {
+		"int": 5,
+		"wis": 5,
+		"max_mp": 25,
+		"regen_mp": 2
+	},
+	"weight": 0.5,
+	"special_effects": {
+		"enhanced_spellpower": "Increases the power of spells cast by the wearer."
+	}
+},
+{
+	"name": "Steel Helmet",
+	"description": "A sturdy helmet made of steel",
+	"looks": "The helmet is made of smooth steel with a silver tint. It has a visor that can be opened and closed.",
+	"durability": "200",
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 10,
+		"max_hp": 50
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 5
+},
+{
+	"name": "Steel Greaves",
+	"description": "A pair of sturdy leg guards made from steel",
+	"looks": "The greaves are made of solid steel plates that cover the shins and knees. They are attached with leather straps and metal buckles for a secure fit.",
+	"durability": 150,
+	"item_usage": "wear_legs",
+	"stat_bonus": {
+		"def": 8,
+		"spd": -2
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 5
+},
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": "100",
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+	"name": "Steel Gauntlets",
+	"description": "Heavy steel gauntlets that provide excellent hand protection and gripping capability.",
+	"looks": "The steel gauntlets are made of solid steel, with intricately carved patterns along the edges. They have reinforced fingers and a padded interior for comfort.",
+	"durability": "150",
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 8,
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 4
+},
+{
+	"name": "Leather Boots",
+	"description": "A pair of sturdy leather boots, suitable for adventuring.",
+	"looks": "The leather boots are made of strong leather, with a thick sole and reinforced stitching. They reach just below the calf and have laces at the front for a secure fit.",
+	"durability": "80",
+	"item_usage": "wear_feet",
+	"stat_bonus": {
+		"def": 5,
+		"spd": 2,
+		"con": 1
+	},
+	"usage_requirements": {
+		"dex": 15
+	},
+	"weight": 1.5
+}
+]

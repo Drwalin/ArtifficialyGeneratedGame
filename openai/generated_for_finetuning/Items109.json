@@ -1,0 +1,300 @@
+[
+{
+	"name": "Swiftblade",
+	"description": "A swift and elegant sword that grants increased attack speed.",
+	"looks": "The Swiftblade is a sleek and lightweight sword with a curved blade. It has a black leather-wrapped hilt and a silver guard adorned with intricate patterns. The blade itself is made of polished steel and is incredibly sharp.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_slashing": 15,
+		"spd": 5
+	},
+	"usage_requirements": {
+		"dex": 20
+	},
+	"weight": 2.5,
+	"special_weapon_skills": {
+		"dual_wield": "Allows the wielder to dual wield the Swiftblade with another one-handed weapon."
+	},
+	"special_effects": {
+		"quick_strikes": "Grants a chance to perform additional fast attacks."
+	}
+},
+{
+	"name": "Flaming Sword",
+	"description": "A sword imbued with the power of fire. It is capable of dealing both physical and fire damage.",
+	"looks": "The Flaming Sword has a long, straight blade made of steel. The hilt is decorated with intricate engravings and has a pommel in the shape of a flame.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20,
+		"dmg_fire": 10
+	},
+	"stat_bonus": {
+		"str": 5,
+		"int": -3
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 4.5,
+	"special_weapon_skills": {
+		"fire_magic": "Grants a bonus to Fire Magic skill when wielded."
+	}
+},
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": "100",
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+	"name": "Legendary Sword of the Sun",
+	"description": "A magnificent sword that radiates pure sunlight, said to have been forged by the gods themselves.",
+	"looks": "The Legendary Sword of the Sun has a blade made of shimmering golden steel, with intricate engravings representing the sun. The hilt is wrapped in white leather, and the pommel is shaped like a blazing sun. The sword emits a warm and comforting glow when wielded.",
+	"durability": "1000",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 50,
+		"dmg_light": 100
+	},
+	"stat_bonus": {
+		"str": 20,
+		"dex": 10,
+		"spd": 5
+	},
+	"usage_requirements": {
+		"str": 25
+	},
+	"weight": 6,
+	"special_weapon_skills": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill."
+	},
+	"special_effects": {
+		"sunlight_strike": "Has a chance to blind enemies with a blinding burst of sunlight upon striking."
+	}
+},
+{
+	"name": "Steel Gauntlets",
+	"description": "A pair of sturdy gauntlets made from steel.",
+	"looks": "The gauntlets are made of polished steel, with reinforced plates to protect the hands and fingers. They have adjustable straps for a secure fit.",
+	"durability": "180",
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 8
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 4
+},
+{
+	"name": "Steel Gauntlets",
+	"description": "Sturdy gauntlets made of steel",
+	"looks": "The gauntlets are made of polished steel and have a plated design. They cover the hands and lower arms, providing excellent protection.",
+	"durability": "150",
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 8,
+		"str": 2
+	},
+	"usage_requirements": {
+		"str": 12,
+		"dex": 8
+	},
+	"weight": 4
+},
+{
+	"name": "Bone Dagger",
+	"description": "A small dagger made from bone, with a sharp and serrated blade.",
+	"looks": "The bone dagger has a short blade made from a thick, curved piece of bone. The handle is wrapped in leather for a secure grip.",
+	"durability": "80",
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_physical": 5,
+		"spd": 2
+	},
+	"usage_requirements": {
+		"dex": 12
+	},
+	"weight": 1.5,
+	"special_weapon_skills": {
+		"dagger_proficiency": "Grants a bonus to Dagger proficiency when equipped."
+	}
+},
+{
+	"name": "Staff of Power",
+	"description": "A legendary staff imbued with immense magical energy, capable of unleashing devastating spells.",
+	"looks": "The Staff of Power is a tall and slender staff made of polished ebony wood. It is adorned with intricate golden runes that seem to glow with a soft radiance. At the top of the staff is a large, faceted crystal that shimmers with a dazzling array of colors.",
+	"durability": "300",
+	"item_usage": "two_hand",
+	"stat_bonus": {
+		"max_mp": 100,
+		"int": 15,
+		"wis": 10,
+		"cast_speed": 3
+	},
+	"usage_requirements": {
+		"int": 50,
+		"wis": 30
+	},
+	"weight": 4.5,
+	"special_effects": {
+		"spell_power": "Increases the power of all spells cast while equipped."
+	},
+	"special_weapon_skills": {
+		"arcane_blast": "Unleashes a powerful blast of arcane energy, dealing heavy damage to a single target."
+	}
+},
+{
+	"name": "Steel Plate Armor",
+	"description": "Heavy armor made from steel plates, providing excellent protection in battle.",
+	"looks": "The Steel Plate Armor consists of interlocking steel plates, covering the entire body. It has extra reinforcements on the chest, shoulders, and knees. The armor is polished to a shine and has intricate engravings along the edges.",
+	"durability": "300",
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"def": 20,
+		"max_hp": 100
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 25
+},
+{
+	"name": "Silver Sword",
+	"description": "A finely crafted sword made from pure silver.",
+	"looks": "The Silver Sword has a gleaming silver blade that is sharp and polished. The hilt is wrapped in black leather and adorned with silver accents.",
+	"durability": "150",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20
+	},
+	"stat_bonus": {
+		"str": 10
+	},
+	"usage_requirements": {
+		"dex": 15
+	},
+	"weight": 2.5,
+	"special_weapon_skils": {
+		"sword_play": "Allows the wielder to execute powerful swordplay techniques."
+	},
+	"special_effects": {
+		"silver_bane": "Deals extra damage to creatures vulnerable to silver."
+	}
+},
+{
+	"name": "Iron Sword",
+	"description": "A basic sword made of iron",
+	"looks": "The iron sword has a straight blade with a single cutting edge. The hilt is made of wood and wrapped in leather for a secure grip.",
+	"durability": "150",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 2
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 4
+},
+{
+	"name": "Iron Sword",
+	"description": "A basic sword made of iron.",
+	"looks": "The iron sword has a simple design, with a straight blade and a hilt wrapped in leather.",
+	"durability": "200",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 2,
+		"spd": 1
+	},
+	"usage_requirements": {
+		"str": 10,
+		"dex": 10
+	},
+	"weight": 5
+},
+{
+    "name": "Iron Sword",
+    "description": "A sturdy iron sword with a sharp blade.",
+    "looks": "The iron sword has a long, silver blade with a slight curve. The hilt is made of black leather and has a crossguard that provides protection for the hand.",
+    "durability": "150",
+    "item_usage": "one_hand",
+    "dmg": {
+        "dmg_physical": 20
+    },
+    "stat_bonus": {
+        "str": 5,
+        "dex": 3
+    },
+    "usage_requirements": {
+        "str": 12
+    },
+    "weight": 2.5,
+    "special_weapon_skills": {
+        "swordsmanship": "Grants a bonus to Swordsmanship skill when used."
+    }
+},
+{
+	"name": "Samurai Sword",
+	"description": "A razor-sharp katana that is the weapon of choice for samurai warriors.",
+	"looks": "The samurai sword has a long, curved blade with a single edge. The blade is made of high-quality steel and has a polished finish. The hilt is wrapped in silk and the guard is decorated with intricate designs.",
+	"durability": "150",
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_slashing": 20,
+		"spd": 3
+	},
+	"usage_requirements": {
+		"dex": 15,
+		"str": 12
+	},
+	"weight": 2,
+	"special_weapon_skils": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill when wielded."
+	}
+},
+{
+	"name": "Assassin's Dagger",
+	"description": "A deadly dagger used by assassins for quick and silent kills.",
+	"looks": "The Assassin's Dagger has a sleek and narrow blade with a sharp point. It is made from darkened steel and has a black handle wrapped in leather for a secure grip.",
+	"durability": "100",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10,
+		"dmg_dark": 5
+	},
+	"stat_bonus": {
+		"dex": 5,
+		"spd": 3
+	},
+	"usage_requirements": {
+		"dex": 20
+	},
+	"weight": 0.5,
+	"special_weapon_skils": {
+		"assassination": "Increases critical strike chance and damage when using this weapon."
+	},
+	"special_effects": {
+		"silent_strike": "Allows the wielder to perform silent kills, avoiding detection."
+	}
+}
+]

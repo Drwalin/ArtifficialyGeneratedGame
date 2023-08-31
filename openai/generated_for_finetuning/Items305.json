@@ -1,0 +1,269 @@
+[
+{
+	"name": "Necklace of Strength",
+	"description": "A necklace that enhances the wearer's strength and melee damage.",
+	"looks": "The necklace is made of a metallic chain with a pendant in the shape of a clenched fist.",
+	"durability": 100,
+	"item_usage": "trinket",
+	"stat_bonus": {
+		"str": 3
+	},
+	"weight": 0.5,
+	"special_effects": {
+		"strength_boost": "Increases the wearer's strength by 3"
+	}
+},
+{
+	"name": "Steel Sword",
+	"description": "A sturdy and sharp sword made of steel.",
+	"looks": "The sword has a long, straight blade with a hilt wrapped in leather.",
+	"durability": 50,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_slashing": 65
+	},
+	"stat_bonus": {
+		"str": 5
+	},
+	"usage_requirements": {
+		"dex": 10
+	},
+	"weight": 3.0,
+	"special_weapon_skils": {
+		"sword_fighting": "Increases damage and accuracy with swords."
+	}
+},
+{
+	"name": "Slow Healing Potion",
+	"description": "A potion that restores health points.",
+	"looks": "A small, glass vial filled with a glowing, green liquid.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"dmg_over_time": {
+		"dmg_light": [-80, 10]
+	},
+	"weight": 0.1
+},
+{
+	"name": "Speed Boots",
+	"description": "Boots that enhance the wearer's movement speed.",
+	"looks": "Sleek black boots with silver accents.",
+	"durability": 50,
+	"item_usage": "wear_feet",
+	"stat_bonus": {
+		"spd": 10
+	},
+	"weight": 1.5
+},
+{
+	"name": "Mana Elixir",
+	"description": "An elixir that restores a significant amount of mana.",
+	"looks": "A small crystal vial filled with a sparkling blue liquid.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"stat_bonus": {
+		"mp": 100
+	},
+	"weight": 0.2
+},
+{
+	"name": "Speed Potion",
+	"description": "A potion that grants increased speed and movement to the user.",
+	"looks": "The potion is a small vial filled with a clear liquid that shimmers with a faint blue hue.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"stat_bonus": {
+		"spd": 10
+	},
+	"weight": 0.1
+},
+{ "name": "Fireball Staff", 
+"description": "A powerful staff that can unleash fiery projectiles.", 
+"looks": "The staff is made of dark wood and has a glowing red gem embedded at the top.", 
+"durability": 100, 
+"item_usage": "two_hand", 
+"dmg": { "dmg_fire": 100 }, 
+"stat_bonus": { "int": 10, "cast_speed": 0.5 }, 
+"usage_requirements": { "int": 20 }, 
+"weight": 1, 
+"special_weapon_skils": { "Pyromancy": "Allows the user to cast fire-based spells more effectively." }, 
+"special_effects": { "Fire Mastery": "Increases the damage of fire-based spells by 20%." } 
+},
+{
+	"name": "Strength Boosting Ring",
+	"description": "A ring that enhances the wearer's strength.",
+	"looks": "The ring is made of a polished silver metal and has a small enchanted ruby set in the center.",
+	"durability": 100,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"str": 3
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 0.5,
+	"special_effects": {
+		"Enhanced Strength": "Increases the wearer's strength, allowing for more powerful melee attacks."
+	}
+},
+{
+	"name": "Steel Sword",
+	"description": "A sturdy steel sword crafted for battle.",
+	"looks": "The sword has a silver hilt with intricate designs, and a sharp, gleaming steel blade.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_slashing": 10
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 2.5,
+	"special_weapon_skils": {
+		"swordmanship": "Increases damage and accuracy when using swords."
+	}
+},
+{
+	"name": "Fireball Staff",
+	"description": "A staff that allows the user to cast fireball spells.",
+	"looks": "A wooden staff with intricate carvings and a glowing red crystal at the top.",
+	"durability": 100,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_fire": 20
+	},
+	"stat_bonus": {
+		"int": 10,
+		"max_mp": 50
+	},
+	"usage_requirements": {
+		"int": 15
+	},
+	"weight": 2.5,
+	"special_weapon_skills": {
+		"fire_magic": "Allows the user to cast fire spells more efficiently."
+	},
+	"special_effects": {
+		"burning": "Chance to set enemies on fire, dealing additional damage over time."
+	}
+},
+{
+	"name": "Lightning Axe",
+	"description": "A powerful axe infused with lightning energy.",
+	"looks": "The axe has a long handle made of dark wood, with a curved blade that crackles with electricity.",
+	"durability": 100,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_physical": 10,
+		"dmg_lightning": 5
+	},
+	"stat_bonus": {
+		"str": 3
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 3,
+	"special_weapon_skills": {
+		"Axe Proficiency": "Increases damage when using axes."
+	},
+	"special_effects": {
+		"Electric Charge": "Has a chance to shock enemies with lightning damage."
+	}
+},
+{
+	"name": "Speed Potion",
+	"description": "A potion that enhances the user's speed for a short period of time.",
+	"looks": "The potion is a small glass vial filled with a shimmering silver liquid.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"dmg_over_time": {
+		"dmg_dark": [-50, 15]
+	},
+	"stat_bonus": {
+		"spd": 20
+	},
+	"usage_requirements": {
+		"dex": 10
+	},
+	"weight": 0.1,
+	"special_effects": {
+		"swift": "Increases movement speed by 20%"
+	}
+},
+{
+	"name": "Magic Sword",
+	"description": "A sword imbued with magical power.",
+	"looks": "The sword has a long, silver blade with intricate engravings and a shining blue gem in the hilt.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20,
+		"dmg_light": 10
+	},
+	"stat_bonus": {
+		"str": 5,
+		"spd": 10
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 2.5,
+	"special_weapon_skills": {
+		"Swordsmanship": "Increases damage done with swords."
+	},
+	"special_effects": {
+		"Magic Aura": "Has a chance to deal additional magic damage on hit."
+	}
+},
+{
+	"name": "Fireball Scroll",
+	"description": "A scroll that contains the spell Fireball. When activated, it allows the user to cast a fireball at an enemy.",
+	"looks": "The scroll is made of aged parchment with intricate runes and symbols inscribed on it.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"item_recipee": [
+		"Ink",
+		"Parchment",
+		"Fire Essence"
+	],
+	"stat_bonus": {
+		"max_mp": 10,
+		"dmg_fire": 100
+	},
+	"usage_requirements": {
+		"int": 20,
+		"cha": 15
+	},
+	"weight": 0.05,
+	"special_effects": {
+		"ignite": "The fireball has a chance to set the target on fire, causing additional damage over time."
+	}
+},
+{
+	"name": "Enchanted Sword",
+	"description": "A powerful sword imbued with magical energy.",
+	"looks": "The sword is made of gleaming silver with intricate engravings along the blade. It emits a faint glow.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 80,
+		"dmg_lightning": 10
+	},
+	"stat_bonus": {
+		"str": 10,
+		"dex": 5
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 2.5,
+	"special_weapon_skills": {
+		"Sword Mastery": "Increases damage and accuracy when using swords."
+	},
+	"special_effects": {
+		"Electric Surge": "Has a chance to shock enemies with lightning damage."
+	}
+}
+]

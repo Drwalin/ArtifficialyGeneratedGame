@@ -1,0 +1,301 @@
+[
+{
+	"name": "Obsidian Sword",
+	"description": "A blade forged from sharp obsidian rock, known for its cutting power and supernatural properties.",
+	"looks": "The obsidian sword has a sleek, black blade with a jagged edge. The handle is wrapped in leather for a comfortable grip, and the pommel is adorned with a small obsidian gem.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 50
+	},
+	"stat_bonus": {
+		"str": 10,
+		"dex": 5
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 4,
+	"special_weapon_skils": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill when equipped."
+	},
+	"special_effects": {
+		"bleed_effect": "Chance to cause a bleeding effect on the target."
+	}
+},
+{
+	"name": "Steel Battleaxe",
+	"description": "A heavy and powerful battleaxe made of steel",
+	"looks": "The steel battleaxe has a long handle made of oak and a large, double-bladed head made of sturdy steel. The blades are sharp and polished, with intricate engravings along the edges.",
+	"durability": 180,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_physical": 40
+	},
+	"usage_requirements": {
+		"str": 25,
+		"dex": 12
+	},
+	"weight": 8,
+	"special_weapon_skills": {
+		"axe": "Grants a bonus to Axe skill when wielded."
+	}
+},
+{
+	"name": "Rusty Sword",
+	"description": "A worn and rusty sword that has seen better days.",
+	"looks": "The sword has a worn wooden hilt and a rusty blade. Despite its poor condition, it still has a sharp edge.",
+	"durability": 50,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10
+	},
+	"stat_bonus": {
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 4
+},
+{
+	"name": "Iron Sword",
+	"description": "A basic iron sword.",
+	"looks": "The iron sword has a simple design with a straight blade and a hilt wrapped in leather.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10,
+		"dmg_fire": -5
+	},
+	"stat_bonus": {
+		"str": 4
+	},
+	"weight": 3
+},
+{
+	"name": "Steel Sword",
+	"description": "A sharp and sturdy sword made from steel.",
+	"looks": "The steel sword has a straight blade with a single cutting edge. The hilt is wrapped in leather, providing a comfortable grip. It is well-balanced and suitable for both slashing and thrusting attacks.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 2
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 2.5,
+	"special_weapon_skills": {
+		"sword_combat": "Increases damage and accuracy with swords.",
+		"parry": "Allows the user to parry incoming attacks with a sword."
+	}
+},
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": 100,
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+	"name": "Steel Gauntlets",
+	"description": "Heavy gauntlets made of steel, providing excellent hand protection.",
+	"looks": "The steel gauntlets are made of thick, polished steel plates, covering the entire hand and extending up to the forearm. They have adjustable leather straps for a secure fit and reinforced knuckles for added protection.",
+	"durability": 150,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 8,
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 4
+},
+{
+	"name": "Steel Greaves",
+	"description": "Heavy steel greaves that provide excellent leg protection.",
+	"looks": "The steel greaves are made of thick steel plates that cover the lower legs. They have adjustable leather straps for a secure fit.",
+	"durability": 150,
+	"item_usage": "wear_legs",
+	"stat_bonus": {
+		"def": 8,
+		"max_hp": 20,
+		"spd": -2
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 10
+},
+{
+	"name": "Flaming Sword",
+	"description": "A sword engulfed in flames, capable of dealing fire damage to enemies.",
+	"looks": "The flaming sword has a long and sharp blade made of steel, with flames constantly licking up along the edges. The hilt is adorned with intricate designs and the grip is wrapped in red leather.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 40,
+		"dmg_fire": 20
+	},
+	"stat_bonus": {
+		"str": 10,
+		"dex": 5
+	},
+	"usage_requirements": {
+		"str": 8,
+		"dex": 5
+	},
+	"weight": 3.5,
+	"special_weapon_skills": {
+		"fire_magic": "Grants a bonus to Fire Magic skill while wielding."
+	},
+	"special_effects": {
+		"burning_damage": "Chance to inflict burn damage on enemies",
+		"fire_resistance": "Increased resistance to fire damage"
+	}
+},
+{
+	"name": "Silver Sword",
+	"description": "A finely crafted sword made from pure silver, known for its ability to deal extra damage to supernatural creatures.",
+	"looks": "The silver sword is a gleaming blade with an ornate hilt adorned with intricate engravings of wolves and moon phases. The blade itself shines with a silvery glow, reflecting the light in a mesmerizing way.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15,
+		"dmg_silver": 20
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"usage_requirements": {
+		"str": 12,
+		"dex": 10
+	},
+	"weight": 2,
+	"special_weapon_skills": {
+		"silver_smite": "Grants a bonus to damage dealt against supernatural creatures."
+	}
+},
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": 100,
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+	"name": "Steel Gauntlets",
+	"description": "Heavy steel gauntlets that provide excellent hand protection.",
+	"looks": "The steel gauntlets are made of thick steel plates, covering the entire hand and extending up to the forearm. They have reinforced knuckles and finger guards.",
+	"durability": 150,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 8,
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 4
+},
+{
+	"name": "Iron Sword",
+	"description": "A basic sword made from iron.",
+	"looks": "The iron sword has a straight blade with a simple hilt and a wooden grip. It is well-balanced and sturdy.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10
+	},
+	"usage_requirements": {
+		"str": 12,
+		"dex": 10
+	},
+	"weight": 2,
+	"special_weapon_skills": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill when equipped."
+	}
+},
+{
+	"name": "@provide item name here",
+	"description": "@provide item description here",
+	"looks": "@provide description of how the item looks",
+	"durability": @provide item durability in numerical value,
+	"item_usage": "@provide item usage from available: consumable, trinket, one_hand, two_hand, wear_hand, wear_head, wear_feet, wear_legs, wear_torso, wear_back, util, junk",
+	"item_recipee": [
+		"@ingredient 1",
+		"@ingredient 2",
+		@...
+	],
+	"dmg": {
+		"@one of available damage types: dmg_physical, dmg_nature, dmg_ice, dmg_lightning, dmg_fire, dmg_water, dmg_mental, dmg_air, dmg_dark, dmg_light, dmg_earth, dmg_mana, dmg_stamina, or any other you deem relevant": @provide numerical value of damage: positive when damaging, negative while healing,
+		@...
+	},
+	"dmg_over_time": {
+		"@one of available damage types, same as in 'dmg'": [
+			@numerical value of total damage positive takes damage and negative heals,
+			@numerical value of time in secends over which above damage is dealt
+		],
+		@...
+	}
+	"stat_bonus": {
+		"@bonuses for stats: str, dex, con, int, wis, cha, per, luck, max_hp, max_mp, max_sta, def, spd, resistance_acid, resistance_poison, and any other resistance you deem relevant": @positive or negative bonuses to stats during item usage,
+		@...
+	},
+	"usage_requirements": {
+		"@one of the base stats: str, dex, con, int, wis, cha, per, luck", @minimal numerical required value of this stat,
+		@...
+	},
+	"weight": @numerical weight value in kg,
+	"special_weapon_skils": {
+		"@weapon skill name": "@skill short description",
+		@...
+	},
+	"special_effects": {
+		"@special effect name": "@special effect short description",
+		@...
+	}
+},
+{
+	"name": "Steel Gauntlets",
+	"description": "Heavy gauntlets made of steel that provide excellent hand protection.",
+	"looks": "The steel gauntlets are made of thick steel plates, covering the entire hand and extending up to the forearm. They have a textured surface and reinforced knuckles for added durability.",
+	"durability": 150,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 8,
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 12,
+		"dex": 8
+	},
+	"weight": 4
+}
+]

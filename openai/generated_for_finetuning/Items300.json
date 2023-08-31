@@ -1,0 +1,267 @@
+[
+{
+	"name": "Fireball Scroll",
+	"description": "A scroll that allows the user to cast a fireball spell.",
+	"looks": "The scroll is made of aged parchment with intricate arcane symbols inscribed on it.",
+	"durability": 1,
+	"item_usage": "util",
+	"dmg": {
+		"dmg_fire": -50
+	},
+	"stat_bonus": {
+		"cast_speed": 0.5
+	},
+	"usage_requirements": {
+		"int": 10
+	},
+	"weight": 0.2,
+	"special_effects": {
+		"burning": "Inflicts additional fire damage over time."
+	}
+},
+{
+	"name": "Adventurer's Sword",
+	"description": "A trusty sword often found in the hands of adventurers.",
+	"looks": "The sword has a gleaming silver blade with an ornate hilt. It is engraved with intricate patterns and symbols.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10
+	},
+	"stat_bonus": {
+		"str": 2,
+		"dex": 1
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 2,
+	"special_weapon_skils": {
+		"Sword Mastery": "Increases damage dealt with swords by 10%."
+	}
+},
+{
+	"name": "Defender's Shield",
+	"description": "A sturdy shield that provides excellent defense against attacks.",
+	"looks": "The shield is made of polished steel and adorned with intricate engravings.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": -5
+	},
+	"stat_bonus": {
+		"def": 15
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 3.5
+},
+{
+	"name": "Dagger of the Viper",
+	"description": "A deadly dagger adorned with serpent motifs, capable of inflicting lethal poison damage.",
+	"looks": "The dagger has a double-edged, slender blade made of dark steel, with an intricately carved viper coiled around the grip. The blade glistens with a green venomous glow.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20,
+		"dmg_poison": 10
+	},
+	"dmg_over_time": {
+		"dmg_poison": [-5, 5]
+	},
+	"stat_bonus": {
+		"dex": 3,
+		"luck": 2
+	},
+	"usage_requirements": {
+		"dex": 10
+	},
+	"weight": 0.5,
+	"special_weapon_skills": {
+		"Assassination": "Increases critical hit chance and damage with daggers"
+	},
+	"special_effects": {
+		"Venomous Strike": "Has a chance to poison the target on successful attack"
+	}
+},
+{
+	"name": "Flame Staff of Destruction",
+	"description": "A powerful staff that harnesses the power of fire to unleash devastating attacks.",
+	"looks": "The staff is made of polished oak and adorned with intricate carvings of flames. At the top of the staff is a large ruby that glows with an intense red light.",
+	"durability": 100,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_fire": 50
+	},
+	"stat_bonus": {
+		"int": 10,
+		"resistance_fire": 20
+	},
+	"usage_requirements": {
+		"int": 20
+	},
+	"weight": 2.5,
+	"special_weapon_skills": {
+		"Fire Magic": "Increases the effectiveness of fire spells and abilities."
+	},
+	"special_effects": {
+		"Burning Aura": "Emits a constant aura of flames, burning enemies within range."
+	}
+},
+{
+	"name": "Fireball Scroll",
+	"description": "A scroll containing the spell of Fireball. When read, it allows the user to cast a powerful fireball spell.",
+	"looks": "The scroll is made of aged parchment and has intricate runes inscribed on it.",
+	"durability": 1,
+	"item_usage": "util",
+	"item_recipee": [
+		"Ink",
+		"Parchment"
+	],
+	"dmg": {
+		"dmg_fire": -100
+	},
+	"stat_bonus": {
+		"cast_speed": 2
+	},
+	"usage_requirements": {
+		"int": 10
+	},
+	"weight": 0.1,
+	"special_effects": {
+		"burn": "Has a chance to ignite the target, causing additional burning damage over time."
+	}
+},
+{
+	"name": "Invisibility Cloak",
+	"description": "A cloak that grants the wearer the ability to turn invisible.",
+	"looks": "The cloak is made of a dark, shimmering fabric that seems to blend in with its surroundings.",
+	"durability": 100,
+	"item_usage": "wear_back",
+	"stat_bonus": {
+		"spd": 10,
+		"luck": 5
+	},
+	"usage_requirements": {
+		"per": 8
+	},
+	"weight": 1.5,
+	"special_effects": {
+		"Invisibility": "The wearer of this cloak gains the ability to turn invisible for a short duration."
+	}
+},
+{
+	"name": "Strength Potion",
+	"description": "A potion that temporarily boosts the drinker's strength and melee damage.",
+	"looks": "The potion is a vibrant red color, swirling with energy.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"item_recipe": [
+		"Brewer's Yeast",
+		"Enchanted Ruby"
+	],
+	"stat_bonus": {
+		"str": 5
+	},
+	"weight": 0.1
+},
+{
+	"name": "Mysterious Sword",
+	"description": "A legendary sword shrouded in mystery.",
+	"looks": "The sword has a silver hilt with intricate engravings and a glowing blue gem in the pommel. The blade is made of a polished blue metal that emits a faint glow.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 50,
+		"dmg_ice": 10
+	},
+	"stat_bonus": {
+		"str": 10,
+		"def": 5,
+		"luck": 4
+	},
+	"usage_requirements": {
+		"str": 10,
+		"dex": 8
+	},
+	"weight": 2,
+	"special_weapon_skils": {
+		"Sword Mastery": "Increases damage with sword attacks."
+	}
+},
+{
+	"name": "Brewer's Yeast",
+	"description": "A type of yeast used in brewing and baking.",
+	"looks": "Small, beige granules.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"weight": 0.05
+},
+{
+	"name": "Strength Potion",
+	"description": "A potion that temporarily boosts the user's strength and melee damage.",
+	"looks": "The potion is a vibrant red color, swirling with energy.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"item_recipee": [
+		"Brewer's Yeast",
+		"Enchanted Ruby"
+	],
+	"stat_bonus": {
+		"str": 5
+	},
+	"weight": 0.1
+},
+{
+	"name": "Stamina Restoration Potion",
+	"description": "A potion that restores a small amount of stamina.",
+	"looks": "A small glass vial filled with a sparkling orange liquid.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"stat_bonus": {
+		"sta": 50
+	},
+	"weight": 0.1
+},
+{
+	"name": "Fireproof Cloak",
+	"description": "A cloak that provides protection against fire damage.",
+	"looks": "The cloak is made of a special material that shimmers with a red and orange hue.",
+	"durability": 100,
+	"item_usage": "wear_back",
+	"stat_bonus": {
+		"resistance_fire": 50,
+		"def": 10
+	},
+	"weight": 1.5
+},
+{
+	"name": "Energy Shield",
+	"description": "A magical shield that absorbs incoming damage.",
+	"looks": "The shield is made of shimmering, translucent energy.",
+	"durability": 100,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 10
+	},
+	"usage_requirements": {
+		"int": 20
+	},
+	"weight": 1.5,
+	"special_effects": {
+		"damage_absorption": "Absorbs 20% of incoming damage"
+	}
+},
+{
+	"name": "Health Restoration Potion",
+	"description": "A potion that restores a small amount of health.",
+	"looks": "The potion is a small glass vial filled with a glowing blue liquid.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"stat_bonus": {
+		"hp": 50
+	},
+	"weight": 0.1
+}
+]

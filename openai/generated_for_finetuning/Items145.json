@@ -1,0 +1,307 @@
+[
+{
+	"name": "Iron Sword",
+	"description": "A sturdy iron sword that is perfect for close combat.",
+	"looks": "The iron sword has a straight blade made of dark iron, with a simple hilt wrapped in leather for a secure grip.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 25
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 2
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 2
+},
+{
+	"name": "Sword of the Sun",
+	"description": "A powerful sword that harnesses the energy of the sun to strike down enemies.",
+	"looks": "The Sword of the Sun has a golden hilt with intricate engravings depicting the sun. The blade is made of pure energy, glowing bright yellow and emitting a warm heat.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 50,
+		"dmg_light": 50
+	},
+	"stat_bonus": {
+		"str": 10,
+		"def": 5,
+		"spd": 3
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"sword": "Grants a bonus to Sword skill when wielded."
+	},
+	"special_effects": {
+		"solar_strike": "Has a chance to deal additional fire damage on hit."
+	}
+},
+{
+	"name": "Iron Sword",
+	"description": "A basic sword made from iron.",
+	"looks": "The iron sword has a simple and straightforward design. The blade is made from polished iron and the handle is wrapped in leather for a secure grip.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20
+	},
+	"stat_bonus": {
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 3,
+	"special_weapon_skills": {
+		"sword_mastery": "Grants a bonus to Sword Mastery skill when equipped."
+	},
+	"special_effects": {
+		"bleed": "Has a chance to cause bleeding damage on hit."
+	}
+},
+{
+	"name": "Crimson Sword",
+	"description": "A powerful sword with a blade forged from crimson steel.",
+	"looks": "The Crimson Sword has a long and slender blade with a sharp, curved point. The blade is made from crimson steel, giving it a unique red color. The hilt is wrapped in black leather and has a decorative pommel adorned with a gemstone.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 50
+	},
+	"stat_bonus": {
+		"str": 10,
+		"spd": 5
+	},
+	"usage_requirements": {
+		"str": 20,
+		"dex": 15
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"blade_mastery": "Grants a bonus to Blade Mastery skill when wielded."
+	},
+	"special_effects": {
+		"bleed": "Has a chance to cause the target to bleed, dealing additional damage over time."
+	}
+},
+{
+	"name": "Steel Plate Armor",
+	"description": "A heavy armor made from steel plates",
+	"looks": "The armor is made up of overlapping steel plates, covering the entire torso and extending down to the thighs. It also has shoulder and elbow guards.",
+	"durability": 250,
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"def": 15,
+		"max_hp": 100
+	},
+	"usage_requirements": {
+		"str": 12,
+		"dex": 8
+	},
+	"weight": 25
+},
+{
+	"name": "Silver Dagger",
+	"description": "A small dagger made from polished silver.",
+	"looks": "The silver dagger has a slim blade with a sharp tip. The handle is made of engraved silver and wrapped in black leather for a comfortable grip.",
+	"durability": 60,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 12
+	},
+	"stat_bonus": {
+		"dex": 3,
+		"spd": 2
+	},
+	"usage_requirements": {
+		"dex": 10
+	},
+	"weight": 0.5
+},
+{
+	"name": "Iron Dagger",
+	"description": "A small and sharp dagger made of iron.",
+	"looks": "The iron dagger has a short and thin blade with a sharp edge. The handle is made of wood and wrapped with a leather grip.",
+	"durability": 80,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"usage_requirements": {
+		"dex": 10
+	},
+	"weight": 1.5,
+	"special_weapon_skils": {
+		"blade": "Increases damage and accuracy when wielding blades."
+	}
+},
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": 100,
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+	"name": "Dagger",
+	"description": "A small and lightweight dagger, perfect for quick and stealthy attacks.",
+	"looks": "The dagger has a slender and sharp blade, with a decorative hilt made of polished wood. It fits comfortably in the hand and is easy to conceal.",
+	"durability": 50,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_physical": 10,
+		"spd": 2
+	},
+	"usage_requirements": {
+		"str": 10,
+		"dex": 15
+	},
+	"weight": 0.5,
+	"special_weapon_skills": {
+		"dagger_skill": "Grants a bonus to Dagger skill when wielded."
+	}
+},
+{
+	"name": "Dragon Sword",
+	"description": "A powerful sword made from dragon scales and enchanted with fire magic.",
+	"looks": "The Dragon Sword has a blade made from highly polished dragon scales, giving it a shimmering green color. The hilt is made from blackened steel and adorned with intricate dragon engravings.",
+	"durability": 500,
+	"item_usage": "one_hand",
+	"item_recipee": [
+		"Dragon scales",
+		"Steel hilt",
+		"Fire crystal"
+	],
+	"dmg": {
+		"dmg_physical": 80,
+		"dmg_fire": 50
+	},
+	"stat_bonus": {
+		"str": 10,
+		"def": 5
+	},
+	"usage_requirements": {
+		"str": 40,
+		"int": 30
+	},
+	"weight": 4,
+	"special_weapon_skils": {
+		"sword": "Grants a bonus to Sword skill when wielded."
+	},
+	"special_effects": {
+		"fire_damage": "Has a chance to deal additional fire damage on hit."
+	}
+},
+{
+	"name": "Sword of Fire",
+	"description": "A blazing sword that burns with the power of fire.",
+	"looks": "The Sword of Fire has a long, slender blade with a fiery glow. Its hilt is adorned with intricate patterns and a ruby gemstone.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15,
+		"dmg_fire": 10
+	},
+	"stat_bonus": {
+		"dex": 5
+	},
+	"usage_requirements": {
+		"dex": 20
+	},
+	"weight": 3,
+	"special_weapon_skills": {
+		"sword_skill": "Increases damage dealt with swords."
+	},
+	"special_effects": {
+		"fire_damage": "Deals additional fire damage to enemies."
+	}
+},
+{
+	"name": "Iron Sword",
+	"description": "A sturdy iron sword, perfect for slashing and piercing",
+	"looks": "The iron sword has a straight blade with a sharp edge. The hilt is made of leather and has a basic crossguard. The pommel is rounded and also made of iron.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_slashing": 15,
+		"dmg_piercing": 10
+	},
+	"usage_requirements": {
+		"str": 10,
+		"dex": 10
+	},
+	"weight": 4
+},
+{
+	"name": "Steel Sword",
+	"description": "A sturdy sword made from steel",
+	"looks": "The steel sword has a straight, double-edged blade with a silver tint. The hilt is wrapped in leather for a comfortable grip.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_slashing": 15
+	},
+	"usage_requirements": {
+		"str": 10,
+		"dex": 8
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"sword": "Increases damage dealt with swords."
+	}
+},
+{
+	"name": "Iron Sword",
+	"description": "A basic iron sword.",
+	"looks": "The sword has a straight blade with a single cutting edge. The handle is wrapped in leather for a comfortable grip.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 30
+	},
+	"stat_bonus": {
+		"str": 5
+	},
+	"weight": 4
+},
+{
+	"name": "Steel Sword",
+	"description": "A sturdy sword made of steel.",
+	"looks": "The steel sword has a straight blade with a single cutting edge. It has a hilt made of leather-wrapped steel and a crossguard for hand protection.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_slashing": 15,
+		"str": 5,
+		"dex": 2
+	},
+	"usage_requirements": {
+		"str": 12,
+		"dex": 10
+	},
+	"weight": 2.5,
+	"special_weapon_skils": {
+		"swordsmanship": "Improves sword handling and damage."
+	}
+}
+]

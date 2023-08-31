@@ -1,0 +1,83 @@
+{
+	"name": "Health Restoration Potion",
+	"description": "A potion that restores a small amount of health.",
+	"looks": "The potion is a small glass vial filled with a glowing blue liquid.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"stat_bonus": {
+		"hp": 50
+	},
+	"weight": 0.1
+}
+
+
+{
+	"name": "Slow Healing Potion",
+	"description": "A potion that restores health points.",
+	"looks": "A small, glass vial filled with a glowing, green liquid.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"dmg_over_time": {
+		"dmg_light": [-80, 10]
+	},
+	"weight": 0.1
+}
+
+
+{
+	"name": "Health Potion",
+	"description": "A potion that enhances health for some amount of time.",
+	"looks": "A small glass bottle filled with a red liquid.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"dmg": {
+		"dmg_poison": -1
+	},
+	"stat_bonus": {
+		"max_hp": 50
+	},
+	"weight": 0.2
+}
+
+
+{
+	"name": "Mana Potion",
+	"description": "A potion that grants more mana to user for certain amount of time.",
+	"looks": "The potion is a small vial filled with a shimmering blue liquid.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"stat_bonus": {
+		"max_mp": 25
+	},
+	"weight": 0.1
+}
+
+
+{
+	"name": "Mana Restoration Potion",
+	"description": "Restores a portion of the user's mana",
+	"looks": "A small vial filled with a shimmering blue liquid",
+	"durability": 1,
+	"item_usage": "consumable",
+	"stat_bonus": {
+		"mp": 50
+	},
+	"weight": 0.1
+}
+
+
+{
+	"name": "Strength Potion",
+	"description": "A potion that temporarily boosts the drinker's strength and melee damage.",
+	"looks": "The potion is a vibrant red color, swirling with energy.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"item_recipee": [
+		"Brewer's Yeast",
+		"Enchanted Ruby"
+	],
+	"stat_bonus": {
+		"str": 5
+	},
+	"weight": 0.1
+}

@@ -1,0 +1,256 @@
+[
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": "100",
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": "100",
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+	"name": "Steel Gauntlets",
+	"description": "Heavy gauntlets made of steel for maximum hand protection.",
+	"looks": "The steel gauntlets are made of solid steel plates, covering the entire hand and part of the forearm. They have reinforced knuckles and finger joints for added protection.",
+	"durability": "150",
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 8
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 4
+},
+{
+	"name": "Steel Longsword",
+	"description": "A well-crafted longsword made of steel.",
+	"looks": "The steel longsword has a straight blade with a single cutting edge. The hilt is wrapped in leather for a comfortable grip. It has a simple yet elegant design.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_slashing": 20,
+		"spd": 2
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3.5,
+	"special_weapon_skills": {
+		"sword": "Grants a bonus to the Sword skill when wielded."
+	}
+},
+{
+	"name": "Steel Longsword",
+	"description": "A sturdy longsword made of steel",
+	"looks": "The longsword has a sharp, double-edged blade that glints in the light. The hilt is wrapped in leather for a secure grip.",
+	"durability": "200",
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_slashing": 20,
+		"str": 5,
+		"def": 5
+	},
+	"usage_requirements": {
+		"str": 12,
+		"dex": 10
+	},
+	"weight": 3,
+	"special_weapon_skills": {
+		"swordsmanship": "Allows the wielder to use various sword techniques."
+	}
+},
+{
+	"name": "Mace of Power",
+	"description": "A mighty mace imbued with magical energy.",
+	"looks": "The mace is made of solid iron with intricate engravings along the handle. It has a large round head with sharp spikes protruding from it.",
+	"durability": "200",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 50,
+		"dmg_mental": 10
+	},
+	"stat_bonus": {
+		"str": 10,
+		"def": 5
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 8,
+	"special_weapon_skills": {
+		"Crushing Blow": "Chance to stun target on hit."
+	},
+	"special_effects": {
+		"Empowered Strikes": "Increases physical and mental damage by 10%."
+	}
+},
+{
+	"name": "Rusty Sword",
+	"description": "An old and worn sword with a rusty blade."
+	"looks": "The sword has a dull blade with patches of rust and a worn hilt. It has seen better days."
+	"durability": "50",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20
+	},
+	"stat_bonus": {
+		"str": 3
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 4.5
+},
+{
+	"name": "Leather Leggings",
+	"description": "Lightweight and flexible leggings made from high-quality leather.",
+	"looks": "The leather leggings are tight-fitting and cover the legs from the waist to the ankles. They are made from brown leather with reinforced stitching and adjustable straps for a secure fit.",
+	"durability": "120",
+	"item_usage": "wear_legs",
+	"stat_bonus": {
+		"def": 8,
+		"spd": 2
+	},
+	"weight": 2
+},
+{
+	"name": "Steel Gauntlets",
+	"description": "Heavy steel gauntlets that provide excellent hand protection.",
+	"looks": "The steel gauntlets are made of thick steel plates, covering the entire hand and reaching up to the forearm. They have reinforced knuckles and adjustable straps for a secure fit.",
+	"durability": "150",
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 8,
+		"str": 5,
+		"dex": 2
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 4.5
+},
+{
+	"name": "Steel Gauntlets",
+	"description": "A pair of gauntlets made from steel.",
+	"looks": "The gauntlets are made of sturdy steel plates, protecting the hands and forearms. They are covered in intricate engravings and have a polished silver finish.",
+	"durability": "180",
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 8,
+		"str": 2
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 4.5
+},
+{
+	"name": "Steel Gauntlets",
+	"description": "A pair of steel gauntlets that provide excellent hand protection.",
+	"looks": "The steel gauntlets are made of sturdy steel plates that cover the entire hand and extend up to the forearm. They have a smooth and polished surface with engravings of intricate patterns.",
+	"durability": "150",
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 8,
+		"str": 2,
+		"con": 2
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 4
+},
+{
+	"name": "Iron Sword",
+	"description": "A basic iron sword",
+	"looks": "The iron sword has a straight blade with a slight curve towards the tip. The hilt is made of wood and wrapped in leather for grip.",
+	"durability": "150",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 25
+	},
+	"stat_bonus": {
+		"str": 10,
+		"dex": 5
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 4
+},
+{
+	"name": "Steel Gauntlets",
+	"description": "A pair of gauntlets made from durable steel.",
+	"looks": "The steel gauntlets are made from polished steel plates that protect the hands and wrists. They have reinforced knuckles and adjustable straps for a secure fit.",
+	"durability": 150,
+	"item_usage": "wear_hands",
+	"stat_bonus": {
+		"def": 8
+	},
+	"usage_requirements": {
+		"str": 12,
+		"dex": 8
+	},
+	"weight": 2.5
+},
+{
+	"name": "Steel Sword",
+	"description": "A sturdy sword made of shining steel.",
+	"looks": "The steel sword has a straight blade with a single edge, tapering down to a sharp point. The hilt is wrapped in leather for a comfortable grip, with a steel pommel at the end.",
+	"durability": "200",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 2.5,
+	"special_weapon_skills": {
+		"swordsmanship": "Increases damage and accuracy with swords."
+	}
+},
+{
+	"name": "Elven Bow",
+	"description": "A hand-crafted bow made by skilled elven artisans.",
+	"looks": "The Elven Bow is made from a combination of wood and enchanted silver. It has intricate carvings of elven symbols along the limbs, and a string made from woven elven silk.",
+	"durability": "150",
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_physical": 50
+	},
+	"usage_requirements": {
+		"dex": 20
+	},
+	"weight": 2.5
+}
+]

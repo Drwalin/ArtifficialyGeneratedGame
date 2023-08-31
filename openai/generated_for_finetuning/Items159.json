@@ -1,0 +1,285 @@
+[
+{
+	"name": "Steel Sword",
+	"description": "A strong and durable sword made from steel.",
+	"looks": "The steel sword has a blade crafted from high-quality steel that glimmers in the light. The hilt is wrapped in leather for a comfortable grip.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_physical": 10,
+		"spd": 2,
+		"def": -5
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 2.5,
+	"special_weapon_skills": {
+		"swordsmanship": "Increases damage dealt with swords."
+	}
+},
+{
+	"name": "Steel Gauntlets",
+	"description": "Sturdy steel gauntlets that provide excellent hand protection.",
+	"looks": "The steel gauntlets are made of solid steel with reinforced joints. They cover the hands and lower arms, with individual steel plates protecting each finger.",
+	"durability": 150,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 8,
+		"str": 2
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 4.5
+},
+{
+	"name": "Iron Sword",
+	"description": "A sturdy iron sword with a sharp blade",
+	"looks": "The iron sword has a straight blade with a single cutting edge. It has a simple crossguard and a leather-wrapped handle.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_slashing": 15,
+		"str": 5,
+		"dex": 3
+	},
+	"usage_requirements": {
+		"str": 10,
+		"dex": 8
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"swordsmanship": "Increases damage dealt with swords"
+	}
+},
+{
+	"name": "Orcish Battle Axe",
+	"description": "A large and heavy axe commonly used by orcs in battle.",
+	"looks": "The Orcish Battle Axe has a thick, curved blade with jagged edges. The handle is made from a sturdy wood, wrapped in worn leather for a better grip. The axe head is adorned with orcish symbols and tribal markings.",
+	"durability": 150,
+	"item_usage": "two_hand",
+	"stat_bonus": {
+		"str": 8,
+		"max_hp": 5,
+		"dmg_physical": 15
+	},
+	"usage_requirements": {
+		"str": 12,
+		"dex": 8
+	},
+	"weight": 8.5,
+	"special_weapon_skills": {
+		"axe_mastery": "Grants a bonus to Axe Mastery skill when equipped."
+	}
+},
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": 100,
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+	"name": "Iron Sword",
+	"description": "A sturdy sword made from iron.",
+	"looks": "The iron sword is a straight-bladed weapon with a crossguard. The hilt is wrapped in leather for a secure grip.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_slashing": 10,
+		"str": 5,
+		"dex": 2
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"swordsmanship": "Increases damage and accuracy when using swords."
+	}
+},
+{
+	"name": "Steel Gauntlets",
+	"description": "Heavy gauntlets made of sturdy steel.",
+	"looks": "The gauntlets are made of thick steel plates with reinforced joints. They have a rough texture and are designed to protect the hands and wrists.",
+	"durability": 150,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 8,
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 4
+},
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": 100,
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+	"name": "Iron Sword",
+	"description": "A sturdy sword made of iron.",
+	"looks": "The Iron Sword is a medium-sized weapon with a straight blade. The hilt is made of wood and wrapped with leather for a secure grip.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20
+	},
+	"stat_bonus": {
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"swordsmanship": "Increases damage and accuracy with swords."
+	}
+},
+{
+	"name": "Mystic Staff",
+	"description": "A powerful staff imbued with magical energy.",
+	"looks": "The Mystic Staff is a long wooden staff with intricate carvings and a glowing crystal at the top. It emits a faint magical aura.",
+	"durability": 150,
+	"item_usage": "two_hand",
+	"stat_bonus": {
+		"max_mp": 100,
+		"int": 8,
+		"wis": 5,
+		"def": 10,
+		"regen_mp": 10
+	},
+	"usage_requirements": {
+		"int": 30
+	},
+	"weight": 4,
+	"special_weapon_skils": {
+		"mystic_blast": "Unleash a powerful blast of arcane energy."
+	}
+},
+{
+	"name": "Iron Sword",
+	"description": "A sturdy iron sword with a sharp blade.",
+	"looks": "The iron sword has a straight and double-edged blade with a hilt made of wood and iron. The blade is well-polished and shines in the light.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_slash": 20,
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"sword": "Increases damage dealt with sword attacks."
+	}
+},
+{
+	"name": "Crystal Dagger",
+	"description": "A sharp dagger made from crystallized mana. The blade glows with a faint blue light.",
+	"looks": "The Crystal Dagger has a thin and elegant blade, made entirely of transparent crystal. It is sharp and glimmers with a soft blue hue. The hilt is made of polished silver and is adorned with intricate engravings.",
+	"durability": 80,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10,
+		"dmg_mana": -5
+	},
+	"stat_bonus": {
+		"dex": 5,
+		"spd": 3
+	},
+	"usage_requirements": {
+		"dex": 15
+	},
+	"weight": 1,
+	"special_weapon_skils": {
+		"dagger_skill": "Increases damage and accuracy when using daggers."
+	},
+	"special_effects": {
+		"mana_steal": "Steals a small amount of mana from the target with each successful hit."
+	}
+},
+{
+	"name": "Iron Greatsword",
+	"description": "A large, heavy sword made of solid iron.",
+	"looks": "The Iron Greatsword has a long, wide blade with a sharp edge. The hilt is made of leather-wrapped iron and has a crossguard for added protection. The pommel is a simple iron disk.",
+	"durability": 150,
+	"item_usage": "two_hand",
+	"stat_bonus": {
+		"str": 10,
+		"dmg_slashing": 15
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 10,
+	"special_weapon_skills": {
+		"Greatsword Mastery": "Increases damage dealt with Greatswords by 10%."
+	}
+},
+{
+	"name": "Steel Sword",
+	"description": "A sharp and durable sword made of steel.",
+	"looks": "The steel sword has a long, straight blade with a pointed tip. The hilt is wrapped in leather for a comfortable grip, and the pommel is decorated with intricate engravings.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_physical": 20,
+		"spd": 5
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 3.5,
+	"special_weapon_skills": {
+		"swordsmanship": "Increases damage dealt with swords and improves sword handling."
+	}
+},
+{
+    "name": "Fireball Staff",
+    "description": "A powerful staff imbued with the energy of fire, capable of unleashing devastating fireballs.",
+    "looks": "The Fireball Staff is a tall staff made of polished wood, with intricate carvings of flames along its length. At the top, there is a crystal orb that glows with a fiery light.",
+    "durability": 150,
+    "item_usage": "two_hand",
+    "dmg": {
+        "dmg_fire": 50
+    },
+    "stat_bonus": {
+        "max_mp": 100,
+        "int": 10,
+        "wis": 5
+    },
+    "usage_requirements": {
+        "int": 30
+    },
+    "weight": 6,
+    "special_weapon_skills": {
+        "fire_magic": "Increases damage done by fire-based spells."
+    }
+}
+]

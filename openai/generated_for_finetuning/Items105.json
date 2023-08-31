@@ -1,0 +1,292 @@
+[
+{
+	"name": "Steel Gauntlets",
+	"description": "Sturdy gauntlets made of steel, providing excellent hand protection in combat.",
+	"looks": "The steel gauntlets are made of polished steel plates that cover the hands and lower arms. They have a comfortable lining on the inside and adjustable straps to ensure a secure fit.",
+	"durability": "150",
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 8,
+		"str": 2
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 4
+},
+{
+	"name": "Diamond Sword",
+	"description": "A powerful sword crafted from pure diamond, capable of cutting through anything.",
+	"looks": "The Diamond Sword has a gleaming blade made entirely of diamond, with a silver hilt and a carved handle. It is a beautiful and formidable weapon.",
+	"durability": "1000",
+	"item_usage": "two_hand",
+	"stat_bonus": {
+		"dmg_slashing": 20
+	},
+	"usage_requirements": {
+		"str": 50
+	},
+	"weight": 4.5,
+	"special_weapon_skils": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill when wielded."
+	},
+	"special_effects": {
+		"piercing_strike": "Has a chance to ignore a percentage of target's armor when attacking."
+	}
+},
+{
+	"name": "Mithril Sword",
+	"description": "A legendary sword forged from mithril, known for its exceptional strength and sharpness.",
+	"looks": "The Mithril Sword has a long, slender blade with a silver sheen. The hilt is made of finely crafted mithril and adorned with intricate engravings. The pommel is embedded with a rare gemstone.",
+	"durability": "500",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 30
+	},
+	"stat_bonus": {
+		"str": 10,
+		"dex": 5
+	},
+	"usage_requirements": {
+		"str": 20,
+		"dex": 15
+	},
+	"weight": 2.5,
+	"special_weapon_skills": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill."
+	},
+	"special_effects": {
+		"critical_strike": "Has a chance to critically strike and deal extra damage."
+	}
+},
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": 100,
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+	"name": "Silver Sword",
+	"description": "A finely crafted sword made of pure silver.",
+	"looks": "The Silver Sword has a long, slender blade with a silver sheen. The hilt is wrapped in white leather and adorned with intricate engravings.",
+	"durability": "150",
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_slashing": 20,
+		"spd": 5
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 12
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"swordsmanship": "Increases damage dealt with swords."
+	}
+},
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": 100,
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+	"name": "Iron Dagger",
+	"description": "A small dagger made of iron, suitable for close combat.",
+	"looks": "The iron dagger has a short, double-edged blade with a curved handle for improved grip. It is a simple and practical weapon.",
+	"durability": "120",
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_physical": 10,
+		"spd": 2
+	},
+	"usage_requirements": {
+		"dex": 10
+	},
+	"weight": 1.5
+},
+{
+	"name": "Crystal Staff",
+	"description": "A powerful staff made from a magical crystal. It enhances the wielder's spellcasting abilities.",
+	"looks": "The Crystal Staff is a long staff made from a clear crystal that glows with a faint blue light. It has intricate engravings of arcane symbols along its length and a large crystal at the top.",
+	"durability": "150",
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"max_mp": 100,
+		"int": 10,
+		"wis": 5,
+		"cast_speed": 2
+	},
+	"usage_requirements": {
+		"int": 50
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"arcane_blast": "Unleashes a powerful burst of arcane energy towards the target.",
+		"mana_surge": "Empowers the wielder with a temporary boost to mana regeneration."
+	},
+	"special_effects": {
+		"spellpower": "Increases the power of all spells cast while wielding the staff."
+	}
+},
+{
+	"name": "Dragon Scale Armor",
+	"description": "An armor made from the scales of a powerful dragon",
+	"looks": "The Dragon Scale Armor is made up of overlapping dragon scales, shimmering with a fiery glow. It covers the entire body and provides excellent protection. The scales are colored in various shades of red and orange, with intricate patterns and ridges.",
+	"durability": "500",
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"def": 20,
+		"max_hp": 100,
+		"resistance_fire": 50,
+		"resistance_acid": 30
+	},
+	"usage_requirements": {
+		"str": 50,
+		"con": 40
+	},
+	"weight": 30,
+	"special_effects": {
+		"flame_aura": "Creates a protective flame aura around the wearer, dealing fire damage to enemies in close proximity."
+	}
+},
+{
+	"name": "Enchanted Staff",
+	"description": "A powerful staff infused with magical energy.",
+	"looks": "The staff is made of polished wood and is adorned with intricate carvings. It glows with a faint ethereal light, and sparks of magic can be seen emanating from its tip.",
+	"durability": "150",
+	"item_usage": "two_hand",
+	"stat_bonus": {
+		"max_mp": 100,
+		"int": 10,
+		"wis": 5,
+		"cast_speed": 2,
+		"regen_mp": 3
+	},
+	"usage_requirements": {
+		"int": 30,
+		"wis": 20
+	},
+	"weight": 3,
+	"special_weapon_skills": {
+		"arcane_blast": "Allows the user to cast Arcane Blast, a powerful spell that damages all enemies in a cone in front of the caster.",
+		"mana_leech": "Drains a small amount of mana from the target with each attack."
+	},
+	"special_effects": {
+		"mana_regeneration": "Increases mana regeneration by 10% while equipped."
+	}
+},
+{
+	"name": "Iron Sword",
+	"description": "A basic one-handed sword made of iron.",
+	"looks": "The iron sword has a straight blade with a dull gray color. The hilt is made of leather and has a simple crossguard.",
+	"durability": "150",
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"str": 3,
+		"spd": 2,
+		"dmg_physical": 15
+	},
+	"usage_requirements": {
+		"str": 10,
+		"dex": 8
+	},
+	"weight": 4.5
+},
+{
+	"name": "Wooden Staff",
+	"description": "A basic staff made from a sturdy wooden shaft.",
+	"looks": "The wooden staff is made from a solid piece of wood that has been shaped and polished. It has a straight shaft with a rounded top and a pointed bottom.",
+	"durability": "80",
+	"item_usage": "two_hand",
+	"stat_bonus": {
+		"int": 5,
+		"wis": 3,
+		"dmg_nature": -5
+	},
+	"usage_requirements": {
+		"int": 10
+	},
+	"weight": 2,
+	"special_weapon_skils": {
+		"staff": "Allows the use of staff-based abilities and spells."
+	}
+},
+{
+	"name": "Iron Dagger",
+	"description": "A small dagger made of iron.",
+	"looks": "The iron dagger has a simple design, with a straight blade and a hilt wrapped in leather for a secure grip.",
+	"durability": "100",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10
+	},
+	"stat_bonus": {
+		"dex": 5
+	},
+	"usage_requirements": {
+		"dex": 10
+	},
+	"weight": 1
+},
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": "100",
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+	"name": "Ancient Sword",
+	"description": "A powerful sword with a rich history and mysterious origins.",
+	"looks": "The Ancient Sword has a long, single-edged blade with a slight curve. The handle is wrapped in worn leather and has an ornate pommel and crossguard. The blade is etched with ancient symbols and runes.",
+	"durability": "250",
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 50
+	},
+	"stat_bonus": {
+		"str": 10,
+		"spd": 5
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"sword_mastery": "Grants a bonus to Sword Mastery skill when equipped."
+	},
+	"special_effects": {
+		"mana_steal": "Has a chance to steal mana from enemies on hit."
+	}
+}
+]

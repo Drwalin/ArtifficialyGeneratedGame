@@ -1,0 +1,290 @@
+[
+{
+	"name": "Steel Sword",
+	"description": "A sturdy sword made of steel",
+	"looks": "The sword has a long, straight blade with a sharp edge. The hilt is made of polished steel and wrapped in leather for a comfortable grip.",
+	"durability": 300,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 50
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"usage_requirements": {
+		"str": 30
+	},
+	"weight": 4,
+	"special_weapon_skils": {
+		"swordsmanship": "Increases damage with swords."
+	}
+},
+{
+	"name": "Steel Sword",
+	"description": "A sharp steel sword, perfect for slicing through enemies.",
+	"looks": "The steel sword has a long, straight blade with a sharp edge. The hilt is made of leather and wrapped in a criss-cross pattern for a secure grip.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_slashing": 15,
+		"str": 5,
+		"spd": 3,
+		"def": 5
+	},
+	"usage_requirements": {
+		"str": 10,
+		"dex": 8
+	},
+	"weight": 4
+},
+{
+	"name": "Silver Ring",
+	"description": "A simple silver ring, often worn for its aesthetic value.",
+	"looks": "The silver ring is a plain band made of sterling silver. It has a smooth and polished surface, reflecting light with a subtle shine.",
+	"durability": 50,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"cha": 2,
+		"luck": 3
+	},
+	"weight": 0.5
+},
+{
+	"name": "Silver Longsword",
+	"description": "A finely crafted longsword made of silver, designed to deal extra damage to supernatural creatures.",
+	"looks": "The Silver Longsword has a gleaming blade made of pure silver, with intricate engravings depicting various mythical creatures. The hilt is wrapped in black leather and adorned with a silver pommel in the shape of a wolf's head.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20,
+		"dmg_dark": 10
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3,
+		"def": 5
+	},
+	"usage_requirements": {
+		"str": 20,
+		"dex": 15
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"silver_smite": "Grants a chance to deal bonus damage to supernatural creatures."
+	}
+},
+{
+	"name": "Golden Ring",
+	"description": "A luxurious ring made of solid gold.",
+	"looks": "The golden ring is crafted from pure gold and has a smooth, polished surface. It is designed with an intricate pattern of filigree and has a sparkling diamond in the center.",
+	"durability": 50,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 2,
+		"resistance_mental": 5,
+		"luck": 5
+	},
+	"usage_requirements": {
+		"cha": 12
+	},
+	"weight": 0.5
+},
+{
+	"name": "Adamantine Sword",
+	"description": "A sword forged from the rare and indestructible metal known as Adamantine.",
+	"looks": "The Adamantine Sword has a sleek and elegant design, with a polished silver blade and a hilt adorned with intricate carvings. The blade is sharp and gleaming, reflecting light with every movement.",
+	"durability": 500,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 40
+	},
+	"stat_bonus": {
+		"str": 10,
+		"dex": 5
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 6,
+	"special_weapon_skills": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill when wielded."
+	},
+	"special_effects": {
+		"adamantine_strike": "Has a chance to ignore a portion of enemy's armor."
+	}
+},
+{
+	"name": "Arcane Staff",
+	"description": "A powerful staff imbued with arcane energy.",
+	"looks": "The Arcane Staff is a tall, wooden staff with intricate carvings and glowing magical runes. At the top, a crystal orb emanates a soft, pulsating light.",
+	"durability": 150,
+	"item_usage": "two_hand",
+	"stat_bonus": {
+		"max_mp": 100,
+		"int": 10,
+		"wis": 5,
+		"def": 5,
+		"regen_mp": 10
+	},
+	"usage_requirements": {
+		"int": 25
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"spellcasting": "Increases the power and effectiveness of spells cast with the staff."
+	}
+},
+{
+	"name": "Steel Helmet",
+	"description": "A sturdy helmet made of steel",
+	"looks": "The helmet is made of smooth steel with a silver tint. It has a visor that can be opened and closed.",
+	"durability": 200,
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 10,
+		"max_hp": 50
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 5
+},
+{
+	"name": "Steel Sword",
+	"description": "A sturdy and sharp sword made from steel.",
+	"looks": "The steel sword has a straight blade with a single cutting edge. The hilt is wrapped in leather for a secure grip, and the pommel is adorned with a decorative design.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 2
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 3,
+	"special_weapon_skills": {
+		"sword_mastery": "Grants bonus damage and accuracy when using swords."
+	}
+},
+{
+	"name": "Iron Sword",
+	"description": "A basic iron sword, suitable for beginners",
+	"looks": "The iron sword has a straight blade with a simple crossguard and a leather grip. The blade is slightly tarnished and shows signs of use.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10
+	},
+	"stat_bonus": {
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 4
+},
+{
+	"name": "Steel Gauntlets",
+	"description": "A pair of gauntlets made of steel",
+	"looks": "The gauntlets are made of polished steel and have a sturdy construction. They cover the hands and extend up to the wrists, providing excellent protection.",
+	"durability": 150,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 8,
+		"str": 3
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 4
+},
+{
+	"name": "Iron Sword",
+	"description": "A sturdy iron sword with a sharp blade",
+	"looks": "The iron sword has a simple design, with a straight steel blade and a basic hilt. It is well-balanced and has a sharp edge.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_physical": 10,
+		"str": 5,
+		"dex": 2
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 4.5,
+	"special_weapon_skills": {
+		"sword_skill": "Increases damage and accuracy when wielding a sword."
+	}
+},
+{
+	"name": "Steel Sword",
+	"description": "A sturdy sword made of steel",
+	"looks": "The sword has a long, straight blade and a hilt wrapped in leather for a secure grip. The blade has a silver finish and is engraved with intricate patterns.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_slashing": 20,
+		"str": 5,
+		"dex": 2
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 2.5,
+	"special_weapon_skills": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill when wielded."
+	}
+},
+{
+	"name": "Steel Gauntlets",
+	"description": "Heavy gauntlets made from solid steel",
+	"looks": "The steel gauntlets are thick and have a plated design with reinforced knuckles. They have a black leather lining for comfort.",
+	"durability": 150,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 8,
+		"str": 3
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 4
+},
+{
+	"name": "Fireball Staff",
+	"description": "A staff infused with the power of fire, allowing the wielder to unleash devastating fireball attacks.",
+	"looks": "The Fireball Staff is a long wooden staff with intricate carvings along its length. At the top of the staff, there is a crystal orb that glows with a fiery red light.",
+	"durability": 150,
+	"item_usage": "two_hand",
+	"item_recipee": [
+		"Wooden Staff",
+		"Fire Essence",
+		"Enchanting Dust"
+	],
+	"dmg": {
+		"dmg_fire": 50
+	},
+	"stat_bonus": {
+		"max_mp": 100,
+		"int": 10,
+		"wis": 5,
+		"cast_speed": 2
+	},
+	"usage_requirements": {
+		"int": 30
+	},
+	"weight": 5,
+	"special_weapon_skills": {
+		"Fire Magic": "Increases damage and effectiveness of fire-based spells."
+	},
+	"special_effects": {
+		"Fireball": "Allows the wielder to cast powerful fireball spells."
+	}
+}
+]

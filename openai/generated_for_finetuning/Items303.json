@@ -1,0 +1,243 @@
+[
+{
+	"name": "Speed Boots",
+	"description": "A pair of boots that enhance the wearer's speed.",
+	"looks": "These boots are made of sleek black leather and have silver accents. They have a futuristic design.",
+	"durability": 250,
+	"item_usage": "wear_feet",
+	"stat_bonus": {
+		"spd": 15
+	},
+	"weight": 1.5
+},
+{
+	"name": "Swift Boots",
+	"description": "A pair of boots that enhance the wearer's speed and agility.",
+	"looks": "The boots are made of supple leather, with intricate stitching and silver accents.",
+	"durability": 100,
+	"item_usage": "wear_feet",
+	"stat_bonus": {
+		"spd": 10,
+		"dex": 2
+	},
+	"usage_requirements": {
+		"dex": 10
+	},
+	"weight": 1.5,
+	"special_effects": {
+		"Increased Dodge Chance": "Grants the wearer a higher chance to dodge incoming attacks."
+	}
+},
+{
+	"name": "Elixir of Endurance",
+	"description": "An elixir that enhances stamina and physical endurance for a short period of time.",
+	"looks": "A small, golden vial containing a glowing orange liquid.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"item_recipee": [
+		"Energy Herb",
+		"Moonlight Fern",
+		"Phoenix Feather"
+	],
+	"stat_bonus": {
+		"max_sta": 50,
+		"regen_sta": 5
+	},
+	"weight": 0.2
+},
+{
+	"name": "Silver Sword",
+	"description": "A finely crafted sword made of pure silver.",
+	"looks": "The sword has a gleaming silver blade with an intricate hilt adorned with engravings.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 25,
+		"dmg_silver": 10
+	},
+	"stat_bonus": {
+		"dex": 3,
+		"def": 5
+	},
+	"usage_requirements": {
+		"dex": 12,
+		"str": 10
+	},
+	"weight": 2.5,
+	"special_weapon_skills": {
+		"swordsmanship": "Increases sword damage by 10%"
+	}
+},
+{
+	"name": "Quick Healing Potion",
+	"description": "A potion that quickly restores a large amount of health.",
+	"looks": "A small glass vial filled with a sparkling golden liquid.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"stat_bonus": {
+		"hp": 100
+	},
+	"weight": 0.2
+},
+{
+	"name": "Cloak of Invisibility",
+	"description": "A magical cloak that grants the wearer the ability to become invisible.",
+	"looks": "The cloak is made of a shimmering fabric that seems to blend seamlessly with the surroundings.",
+	"durability": 100,
+	"item_usage": "wear_back",
+	"stat_bonus": {
+		"spd": 2,
+		"def": 10,
+		"resistance_dark": 10
+	},
+	"usage_requirements": {
+		"luck": 5
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"Invisibility": "Grants the wearer the ability to become invisible for a short duration."
+	}
+},
+{
+	"name": "Luck Elixir",
+	"description": "An elixir that imbues the drinker with good luck for a period of time.",
+	"looks": "The elixir is a small vial filled with a sparkling golden liquid.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"dmg_over_time": {
+		"dmg_luck": [10, 30]
+	},
+	"weight": 0.2
+},
+{
+	"name": "Health Restoration Potion",
+	"description": "A potion that restores a small amount of health.",
+	"looks": "The potion is a small glass vial filled with a glowing blue liquid.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"stat_bonus": {
+		"hp": 50
+	},
+	"weight": 0.1
+},
+{
+	"name": "Explosive Bomb",
+	"description": "A bomb that explodes upon impact, dealing damage to enemies in the area.",
+	"looks": "The bomb is round and metallic, with a fuse at the top.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"dmg": {
+		"dmg_fire": -100
+	},
+	"stat_bonus": {
+		"luck": -5
+	},
+	"weight": 0.3,
+	"special_effects": {
+		"Explosive": "Explodes upon impact, dealing damage to enemies in the area."
+	}
+},
+{
+	"name": "Antidote",
+	"description": "A potion that can cure poison.",
+	"looks": "The antidote is a small glass vial filled with a clear liquid.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"special_effects": {
+		"poison_cure": "Cures the drinker of poison."
+	},
+	"weight": 0.1
+},
+{
+	"name": "Scroll of Fireball",
+	"description": "A scroll that contains the spell Fireball.",
+	"looks": "The scroll is made of old parchment with arcane symbols inscribed on it.",
+	"durability": 1,
+	"item_usage": "util",
+	"item_recipee": [
+		"Ink",
+		"Parchment"
+	],
+	"dmg": {
+		"dmg_fire": -75
+	},
+	"stat_bonus": {
+		"max_mp": 10
+	},
+	"usage_requirements": {
+		"int": 10
+	},
+	"weight": 0.1,
+	"special_effects": {
+		"explosion": "Creates a fiery explosion on impact, damaging all nearby enemies."
+	}
+},
+{
+	"name": "Firebolt Scroll",
+	"description": "A scroll that contains the Firebolt spell.",
+	"looks": "The scroll is made of aged parchment, with ancient runes inscribed upon it.",
+	"durability": 1,
+	"item_usage": "util",
+	"dmg": {
+		"dmg_fire": 100
+	},
+	"usage_requirements": {
+		"int": 15
+	},
+	"weight": 0.05,
+	"special_effects": {
+		"ignite": "Sets targets on fire, dealing additional fire damage over time."
+	}
+},
+{
+	"name": "Fireball Scroll",
+	"description": "A scroll that allows the user to cast a fireball spell.",
+	"looks": "The scroll is made of ancient parchment and has intricate fire runes inscribed on it.",
+	"durability": 5,
+	"item_usage": "util",
+	"dmg": {
+		"dmg_fire": -100
+	},
+	"usage_requirements": {
+		"int": 14
+	},
+	"weight": 0.2,
+	"special_effects": {
+		"ignite": "The fireball has a chance to ignite the target, causing additional damage over time."
+	}
+},
+{
+	"name": "Lightning Bolt Scroll",
+	"description": "A scroll imbued with the power of lightning, casting this scroll unleashes a powerful bolt of lightning.",
+	"looks": "The scroll is made of ancient parchment with intricate lightning patterns drawn on it.",
+	"durability": 1,
+	"item_usage": "util",
+	"item_recipee": [
+		"Ancient Parchment",
+		"Thunder Essence"
+	],
+	"dmg": {
+		"dmg_lightning": -100
+	},
+	"weight": 0.05,
+	"special_weapon_skils": {
+		"scroll_magic": "Unleashes the power of magic spells."
+	},
+	"special_effects": {
+		"shock": "Chance to stun enemies upon casting."
+	}
+},
+Here is an example of a generated item:
+
+{
+	"name": "Medicinal Herb",
+	"description": "A herb with healing properties that can be used to restore health.",
+	"looks": "The herb is a small plant with green leaves and a strong aroma.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"stat_bonus": {
+		"hp": 30
+	},
+	"weight": 0.05
+}
+]
