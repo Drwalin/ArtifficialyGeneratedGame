@@ -1,0 +1,201 @@
+[
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
+	}
+},
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks."
+	}
+},
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
+	}
+},
+{
+	"name": "Thunderstorm Bow",
+	"description": "A legendary bow that harnesses the power of thunderstorms.",
+	"looks": "The Thunderstorm Bow has a sleek design with a bowstring crackling with electricity. The limbs of the bow are made of polished silver, engraved with ancient symbols of power.",
+	"durability": 200,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_physical": 50,
+		"dmg_lightning": 100
+	},
+	"stat_bonus": {
+		"dex": 10,
+		"spd": 5
+	},
+	"usage_requirements": {
+		"dex": 25
+	},
+	"weight": 2.5,
+	"special_weapon_skills": {
+		"Archery": "Increases accuracy and damage with bows."
+	},
+	"special_effects": {
+		"Thunderstorm": "30% chance to unleash a powerful lightning bolt upon hitting a target."
+	}
+},
+{
+	"name": "Ring of Strength",
+	"description": "A powerful ring that enhances the wearer's strength.",
+	"looks": "The ring is made of solid gold and has a large gemstone embedded in the center. The gemstone has a fiery red color.",
+	"durability": 100,
+	"item_usage": "trinket",
+	"stat_bonus": {
+		"str": 10,
+		"max_hp": 50
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 0.2,
+	"special_effects": {
+		"strength_enhancement": "Increases the damage of physical attacks."
+	}
+},
+{
+	"name": "Staff of Healing",
+	"description": "A magical staff that can be used to heal wounds and cure ailments.",
+	"looks": "The staff is made of polished white oak and is adorned with small crystals that emit a warm light. It has intricate carvings of healing symbols along its length.",
+	"durability": 150,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_light": -10
+	},
+	"stat_bonus": {
+		"wis": 5,
+		"max_mp": 50
+	},
+	"usage_requirements": {
+		"wis": 15,
+		"int": 10
+	},
+	"weight": 3,
+	"special_effects": {
+		"healing_touch": "Increases healing effectiveness by 20%."
+	}
+},
+{
+	"name": "Ancient Bow",
+	"description": "A powerful bow crafted by ancient elven craftsmen.",
+	"looks": "The bow is made of shimmering silver wood, adorned with intricate engravings of elven symbols. It is adorned with a string made of golden thread.",
+	"durability": 250,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_physical": 40,
+		"dmg_light": 20
+	},
+	"stat_bonus": {
+		"dex": 2
+	},
+	"usage_requirements": {
+		"dex": 20,
+		"str": 26
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"critical_strike": "Allows for a higher chance of landing critical hits."
+	}
+},
+{
+	"name": "Staff of Healing",
+	"description": "A magical staff that possesses the power to heal and restore.",
+	"looks": "The staff is made of polished maple wood, adorned with golden engravings. It has a crystal at the top that glows with a soothing light.",
+	"durability": 200,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_mental": -5
+	},
+	"stat_bonus": {
+		"wis": 7,
+		"max_mp": 50
+	},
+	"usage_requirements": {
+		"wis": 15
+	},
+	"weight": 3.5,
+	"special_effects": {
+		"healing_touch": "Allows the user to cast healing spells more effectively."
+	}
+},
+{
+	"name": "Dagger of Shadows",
+	"description": "A sinister dagger that exudes an aura of darkness.",
+	"looks": "The Dagger of Shadows has a slender, black blade that seems to absorb light. The hilt is wrapped in dark leather with an intricate design of swirling shadows.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10,
+		"dmg_dark": 20
+	},
+	"stat_bonus": {
+		"dex": 5,
+		"per": 3
+	},
+	"weight": 1,
+	"special_effects": {
+		"shadow_strike": "Allows the wielder to disappear into the shadows and strike from stealth."
+	}
+},
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
+	}
+}
+]

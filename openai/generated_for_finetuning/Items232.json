@@ -1,0 +1,206 @@
+[
+{
+	"name": "Staff of Healing",
+	"description": "A staff infused with healing powers, capable of restoring health to the wounded.",
+	"looks": "The staff is made of polished maple wood, with intricate carvings of leaves and vines. It has a crystal orb at the top, emitting a gentle, calming light.",
+	"durability": 150,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_healing": -20
+	},
+	"stat_bonus": {
+		"int": 5,
+		"max_mp": 50
+	},
+	"usage_requirements": {
+		"int": 15
+	},
+	"weight": 3,
+	"special_effects": {
+		"healing_aura": "Provides a constant aura of healing that regenerates nearby allies' health."
+	}
+},
+{
+	"name": "Staff of Healing",
+	"description": "A magical staff that radiates healing energy.",
+	"looks": "The staff is made of polished maple wood and has a crystal orb at the top. The orb glows with a soothing white light.",
+	"durability": 200,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_healing": -10
+	},
+	"stat_bonus": {
+		"int": 5,
+		"max_mp": 50
+	},
+	"usage_requirements": {
+		"int": 15
+	},
+	"weight": 3,
+	"special_effects": {
+		"healing_aura": "Emits a healing aura that restores the health of nearby allies."
+	}
+},
+{
+	"name": "Steel Shield",
+	"description": "A sturdy shield made of steel.",
+	"looks": "The shield is round in shape and made of solid steel. It has a simple design with a smooth surface and a handle on the back.",
+	"durability": 200,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 10,
+		"resistance_physical": 5
+	},
+	"weight": 4
+},
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
+	}
+},
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
+	}
+},
+{
+	"name": "Staff of the Elements",
+	"description": "A powerful staff that harnesses the power of the elements.",
+	"looks": "The staff is made of a polished ebony wood and features intricate carvings of the elements - fire, water, air, earth, and lightning.",
+	"durability": 200,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_fire": 20,
+		"dmg_water": 15,
+		"dmg_air": 10,
+		"dmg_earth": 15,
+		"dmg_lightning": 20
+	},
+	"stat_bonus": {
+		"int": 10,
+		"max_mp": 100
+	},
+	"usage_requirements": {
+		"int": 25
+	},
+	"weight": 4,
+	"special_effects": {
+		"elemental_blast": "Has a chance to unleash a powerful blast of elemental energy upon successful hit."
+	}
+},
+{
+	"name": "Enchanted Shield",
+	"description": "A magical shield infused with protective enchantments.",
+	"looks": "The shield is made of shining silver with intricate designs etched into its surface. It is adorned with glowing runes and has a gemstone in the center.",
+	"durability": 200,
+	"item_usage": "wear_hand",
+	"dmg": {
+		"dmg_blunt": -5,
+		"dmg_physical": -10
+	},
+	"stat_bonus": {
+		"str": 2,
+		"def": 10
+	},
+	"usage_requirements": {
+		"str": 8
+	},
+	"weight": 4,
+	"special_effects": {
+		"elemental_resistance": "Provides resistance against all elemental damage."
+	}
+},
+{
+	"name": "Staff of Healing",
+	"description": "A magical staff that channels healing energy.",
+	"looks": "The staff is made of polished oak and adorned with intricate carvings of healing symbols. It glows with a soft golden light.",
+	"durability": 200,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_light": -10
+	},
+	"stat_bonus": {
+		"int": 5,
+		"max_mp": 50,
+		"max_hp": 100
+	},
+	"usage_requirements": {
+		"int": 15
+	},
+	"weight": 4.5,
+	"special_effects": {
+		"healing_touch": "Increases the effectiveness of healing spells."
+	}
+},
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
+	}
+},
+{
+	"name": "Staff of the Elements",
+	"description": "A powerful staff that harnesses the power of the elements.",
+	"looks": "The staff is made of a dark wood and adorned with gems representing the different elements. It crackles with energy.",
+	"durability": 200,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_fire": 10,
+		"dmg_ice": 10,
+		"dmg_lightning": 10,
+		"dmg_water": 10,
+		"dmg_air": 10,
+		"dmg_earth": 10
+	},
+	"stat_bonus": {
+		"int": 10,
+		"max_mp": 100
+	},
+	"usage_requirements": {
+		"int": 30
+	},
+	"weight": 4,
+	"special_effects": {
+		"elemental_mastery": "Increase the damage of elemental spells by 25%.",
+		"elemental_immunity": "Provides immunity to elemental damage."
+	}
+}
+]

@@ -1,0 +1,192 @@
+[
+{
+	"name": "Mana Restoration Potion",
+	"description": "A potion that restores a portion of the user's mana.",
+	"looks": "The potion is a small vial filled with a shimmering blue liquid.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"stat_bonus": {
+		"mp": 50
+	},
+	"weight": 0.1
+},
+{
+	"name": "Speed Boots",
+	"description": "A pair of boots that increase the wearer's movement speed.",
+	"looks": "These boots are made of fine leather and have sleek silver buckles.",
+	"durability": 100,
+	"item_usage": "wear_feet",
+	"stat_bonus": {
+		"spd": 10
+	},
+	"weight": 1.5
+},
+{
+	"name": "Fireball Scroll",
+	"description": "A scroll that contains the incantation for casting a fireball spell.",
+	"looks": "The scroll is made of aged parchment and sealed with a red wax seal.",
+	"durability": 1,
+	"item_usage": "util",
+	"item_recipee": [
+		"Parchment",
+		"Dragonfire Ink",
+		"Phoenix Feather"
+	],
+	"dmg": {
+		"dmg_fire": -75
+	},
+	"weight": 0.2,
+	"special_effects": {
+		"burning": "Targets hit by the fireball will continue to burn and take additional fire damage over time."
+	}
+},
+{
+	"name": "Enchanted Sword",
+	"description": "A mystical sword that glows with arcane energy.",
+	"looks": "The sword has a silver blade with glowing blue runes engraved on it. The hilt is made of polished obsidian.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 25,
+		"dmg_lightning": 10
+	},
+	"stat_bonus": {
+		"str": 10,
+		"dex": 5
+	},
+	"usage_requirements": {
+		"str": 20,
+		"dex": 15
+	},
+	"weight": 2.5,
+	"special_weapon_skills": {
+		"Two-Handed Sword Mastery": "Increases damage with two-handed swords by 10%."
+	},
+	"special_effects": {
+		"Electric Surge": "Has a 10% chance to shock the target and deal additional lightning damage."
+	}
+},
+{
+	"name": "Water Walking Boots",
+	"description": "Boots that allow the wearer to walk on water.",
+	"looks": "The boots are made of a lightweight, transparent material that gives the illusion of walking on water.",
+	"durability": 100,
+	"item_usage": "wear_feet",
+	"stat_bonus": {
+		"spd": 10,
+		"dex": 3
+	},
+	"usage_requirements": {
+		"dex": 5
+	},
+	"weight": 1.5,
+	"special_effects": {
+		"water_walking": "Allows the wearer to walk on water surfaces."
+	}
+},
+{
+	"name": "Staff of Fire",
+	"description": "A powerful staff imbued with the element of fire.",
+	"looks": "The staff is made of polished oak wood, with intricate carvings of flames along the length.",
+	"durability": 100,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_fire": 50,
+		"dmg_nature": 15
+	},
+	"stat_bonus": {
+		"int": 10,
+		"wis": 5,
+		"max_mp": 100
+	},
+	"usage_requirements": {
+		"int": 20
+	},
+	"weight": 2,
+	"special_weapon_skils": {
+		"Fireball": "Allows the user to cast powerful fireballs at their enemies."
+	},
+	"special_effects": {
+		"Burning": "Attacks with the staff have a chance to set enemies on fire, dealing additional damage over time."
+	}
+},
+{
+	"name": "Fireball Scroll",
+	"description": "A scroll that contains the knowledge to cast a fireball spell.",
+	"looks": "The scroll is made of parchment and sealed with a wax seal.",
+	"durability": 1,
+	"item_usage": "util",
+	"item_recipee": [
+		"Blank Scroll",
+		"Fire Essence"
+	],
+	"dmg": {
+		"dmg_fire": 50
+	},
+	"usage_requirements": {
+		"int": 10
+	},
+	"weight": 0.05,
+	"special_effects": {
+		"burning": "Engulfs the target in flames, causing additional damage over time."
+	}
+},
+{
+	"name": "Adventurer's Sword",
+	"description": "A sturdy sword commonly used by adventurers.",
+	"looks": "The sword has a silver blade with a leather-wrapped hilt.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"usage_requirements": {
+		"dex": 10
+	},
+	"weight": 2.5,
+	"special_weapon_skills": {
+		"Swordsmanship": "Increases damage dealt with swords."
+	}
+},
+{
+	"name": "Fireball Scroll",
+	"description": "A scroll containing a powerful fireball spell.",
+	"looks": "The scroll is made of ancient parchment and sealed with a wax seal.",
+	"durability": 1,
+	"item_usage": "util",
+	"dmg": {
+		"dmg_fire": 100
+	},
+	"usage_requirements": {
+		"int": 10
+	},
+	"weight": 0.2,
+	"special_effects": {
+		"burning": "The fireball has a chance to set targets on fire, causing additional damage over time."
+	}
+},
+{
+	"name": "Fireball Scroll",
+	"description": "A scroll that contains the spell for casting fireball.",
+	"looks": "The scroll is made of ancient parchment with intricate, fiery runes.",
+	"durability": 1,
+	"item_usage": "util",
+	"dmg": {
+		"dmg_fire": 100
+	},
+	"stat_bonus": {
+		"max_mp": 10
+	},
+	"usage_requirements": {
+		"int": 20
+	},
+	"weight": 0.05,
+	"special_effects": {
+		"burning_debuff": "Inflicts burning effect on enemies hit by fireball."
+	}
+}
+]

@@ -1,0 +1,192 @@
+[
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
+	}
+},
+{
+	"name": "Healing Potion",
+	"description": "A magical potion that restores health.",
+	"looks": "The healing potion is contained in a small glass bottle with a stopper. The liquid inside is a vibrant green color.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"stat_bonus": {
+		"max_hp": 50
+	},
+	"weight": 0.2,
+	"special_effects": {
+		"healing": "Restores 50 HP when consumed."
+	}
+},
+{
+	"name": "Staff of Healing",
+	"description": "A staff imbued with powerful healing magic.",
+	"looks": "The staff is made of smooth white wood and has a glowing blue gemstone at the top.",
+	"durability": 200,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_healing": -50
+	},
+	"stat_bonus": {
+		"int": 10,
+		"max_mp": 100
+	},
+	"usage_requirements": {
+		"int": 20
+	},
+	"weight": 3,
+	"special_effects": {
+		"healing_aura": "Emits a constant healing aura that restores nearby allies' health."
+	}
+},
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
+	}
+},
+{
+	"name": "Demonic Staff",
+	"description": "A sinister staff infused with dark magic.",
+	"looks": "The staff is carved from blackened oak and adorned with ancient runes. It emanates a dark and ominous aura.",
+	"durability": 200,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_dark": 30,
+		"dmg_mental": 15
+	},
+	"stat_bonus": {
+		"int": 10,
+		"max_mp": 100
+	},
+	"usage_requirements": {
+		"int": 15
+	},
+	"weight": 4,
+	"special_effects": {
+		"shadow_blast": "Unleashes a powerful blast of dark energy that damages enemies in an area."
+	}
+},
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
+	}
+},
+{
+	"name": "Crystal Staff",
+	"description": "A powerful staff made from a rare crystal found deep within the earth.",
+	"looks": "The staff is crafted from a transparent crystal with a smooth surface that reflects light. It is adorned with intricate carvings of magical symbols.",
+	"durability": 200,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_mental": 30
+	},
+	"stat_bonus": {
+		"int": 10,
+		"max_mp": 100
+	},
+	"usage_requirements": {
+		"int": 15
+	},
+	"weight": 3.5,
+	"special_effects": {
+		"mana_leech": "Drains 5 mana from the target with each successful hit",
+		"spell_power": "Increases the power of spells cast with this staff by 50%"
+	}
+},
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
+	}
+},
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
+	}
+},
+{
+    "name": "Ring of Power",
+    "description": "A mystical ring that grants great power to its wearer.",
+    "looks": "The ring is made of pure gold and features an intricate design of ancient symbols. It emits a soft, radiant glow.",
+    "durability": 100,
+    "item_usage": "trinket",
+    "stat_bonus": {
+        "str": 10,
+        "int": 10,
+        "cha": 5,
+        "luck": 10
+    },
+    "usage_requirements": {
+        "str": 15,
+        "int": 15
+    },
+    "weight": 0.5,
+    "special_effects": {
+        "power_boost": "Increases all damage dealt by 20%."
+    }
+}
+]

@@ -1,0 +1,194 @@
+[
+{
+	"name": "Wand of Healing",
+	"description": "A magical wand that can heal wounds and restore vitality.",
+	"looks": "The wand is made of smooth crystal, glowing with a soft white light. It has a delicate filigree design and a clear gemstone at the tip.",
+	"durability": 75,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_light": -10
+	},
+	"stat_bonus": {
+		"wis": 5,
+		"max_mp": 50
+	},
+	"usage_requirements": {
+		"wis": 15
+	},
+	"weight": 0.5,
+	"special_effects": {
+		"healing_touch": "Restores HP to the target"
+	}
+},
+{
+	"name": "Staff of Healing",
+	"description": "A staff infused with the power of healing magic.",
+	"looks": "The staff is made of smooth oak wood and has a carved crystal at the top. It emits a soft glow of healing energy.",
+	"durability": 200,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_mental": -10
+	},
+	"stat_bonus": {
+		"int": 5,
+		"wis": 5,
+		"max_mp": 100,
+		"max_hp": 50
+	},
+	"usage_requirements": {
+		"int": 15,
+		"wis": 15
+	},
+	"weight": 4,
+	"special_effects": {
+		"healing_aura": "Creates a healing aura around the user, increasing health regeneration for nearby allies."
+	}
+},
+{
+	"name": "Vampiric Dagger",
+	"description": "A sinister dagger that drains the life force of its victims.",
+	"looks": "The dagger has a black blade with a serrated edge and a curved, ornate hilt. It is adorned with red gemstones that glow with an eerie light.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10,
+		"dmg_dark": 5
+	},
+	"stat_bonus": {
+		"dex": 3,
+		"luck": 2
+	},
+	"usage_requirements": {
+		"dex": 15
+	},
+	"weight": 1.5,
+	"special_effects": {
+		"life_drain": "Drains 10% of the damage dealt as health."
+	}
+},
+{
+	"name": "Staff of Healing",
+	"description": "A powerful staff that radiates healing energy.",
+	"looks": "The staff is made of polished ivory and adorned with intricate symbols of healing. It glows with a soft golden light.",
+	"durability": 200,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_healing": -50
+	},
+	"stat_bonus": {
+		"int": 5,
+		"wis": 3,
+		"max_mp": 100
+	},
+	"usage_requirements": {
+		"int": 20
+	},
+	"weight": 3.5,
+	"special_effects": {
+		"healing_aura": "Creates a healing aura around the user, restoring HP to nearby allies."
+	}
+},
+{
+	"name": "Healing Potion",
+	"description": "A potion that restores health.",
+	"looks": "The potion is a small glass vial filled with a glowing green liquid.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"dmg": {
+		"dmg_poison": -10
+	},
+	"usage_requirements": {
+		"wis": 10
+	},
+	"weight": 0.2,
+	"special_effects": {
+		"healing": "Restores 50 hit points upon consumption."
+	}
+},
+{
+	"name": "Ring of Strength",
+	"description": "A magical ring that enhances the wearer's strength.",
+	"looks": "The ring is made of shining gold with a large ruby set in the center. The band is adorned with intricate engravings of muscles and symbols of strength.",
+	"durability": null,
+	"item_usage": "trinket",
+	"stat_bonus": {
+		"str": 10
+	},
+	"weight": 0.1,
+	"special_effects": {
+		"enhanced_strength": "Increases the wearer's physical strength."
+	}
+},
+{
+	"name": "Staff of Healing",
+	"description": "A mystical staff that possesses powerful healing energies.",
+	"looks": "The staff is made of polished maple wood and is adorned with symbols of life and nature. It emanates a soft green glow.",
+	"durability": 150,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_healing": -50
+	},
+	"stat_bonus": {
+		"wis": 10,
+		"max_mp": 100
+	},
+	"usage_requirements": {
+		"wis": 15
+	},
+	"weight": 4,
+	"special_effects": {
+		"healing_boost": "Increases the power of healing spells and abilities by 20%."
+	}
+},
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
+	}
+},
+{
+	"name": "Ruby Ring",
+	"description": "A beautiful ring adorned with a large ruby gem.",
+	"looks": "The ring is made of pure gold with intricate engravings along the band. The centerpiece is a large ruby gemstone that shines bright red.",
+	"durability": 100,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"cha": 3,
+		"luck": 2
+	},
+	"weight": 0.3,
+	"special_effects": {
+		"luck_boost": "Increases the chance of finding rare items."
+	}
+},
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
+	}
+}
+]

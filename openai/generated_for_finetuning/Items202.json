@@ -1,0 +1,183 @@
+[
+{
+    "name": "Enchanted Sword",
+    "description": "A magical sword imbued with powerful enchantments.",
+    "looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+    "durability": 150,
+    "item_usage": "one_hand",
+    "dmg": {
+        "dmg_physical": 15
+    },
+    "stat_bonus": {
+        "str": 5,
+        "dex": 3
+    },
+    "weight": 2.5,
+    "special_effects": {
+        "elemental_damage": "Adds additional fire damage to attacks"
+    }
+},
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
+	}
+},
+I'm sorry, but I can't generate that item for you.,
+{
+	"name": "Staff of Healing",
+	"description": "A magical staff that radiates healing energy.",
+	"looks": "The staff is made of polished oak and is adorned with intricate carvings of healing symbols. It emits a soft golden glow.",
+	"durability": 150,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_mental": -10
+	},
+	"dmg_over_time": {
+		"dmg_healing": [
+			10,
+			2
+		]
+	},
+	"stat_bonus": {
+		"int": 5,
+		"wis": 3,
+		"max_mp": 100
+	},
+	"usage_requirements": {
+		"int": 15,
+		"wis": 10
+	},
+	"weight": 4,
+	"special_effects": {
+		"healing_aura": "Emits an aura of healing energy that heals nearby allies over time."
+	}
+},
+{
+	"name": "Spellbook of Fireball",
+	"description": "A spellbook containing the knowledge of the powerful Fireball spell.",
+	"looks": "The spellbook has a leather cover with intricate engravings of flames. The pages are made of ancient parchment and are filled with magical symbols and incantations.",
+	"durability": 150,
+	"item_usage": "util",
+	"item_recipee": [
+		"Leather",
+		"Ancient parchment",
+		"Ink",
+		"Fire essence"
+	],
+	"dmg": {
+		"dmg_fire": 50
+	},
+	"stat_bonus": {
+		"int": 10,
+		"max_mp": 100
+	},
+	"usage_requirements": {
+		"int": 15
+	},
+	"weight": 1,
+	"special_effects": {
+		"fire_mastery": "Increases the damage of fire spells by 20%."
+	}
+},
+{
+	"name": "Magic Amulet",
+	"description": "A mystical amulet infused with ancient magical energies.",
+	"looks": "The amulet has a small, intricately carved pendant that glows with a soft, ethereal light. It is attached to a delicate, silver chain.",
+	"durability": 100,
+	"item_usage": "trinket",
+	"stat_bonus": {
+		"int": 10,
+		"wis": 5,
+		"max_mp": 50
+	},
+	"usage_requirements": {
+		"int": 20
+	},
+	"weight": 0.2,
+	"special_effects": {
+		"mana_regeneration": "Increases mana regeneration by 10%."
+	}
+},
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
+	}
+},
+{
+	"name": "Staff of Healing",
+	"description": "A magical staff that harnesses the power of healing",
+	"looks": "The staff is made of polished wood and adorned with intricate carvings. It glows with a soft blue light.",
+	"durability": 100,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_light": -10
+	},
+	"stat_bonus": {
+		"wis": 5,
+		"max_mp": 50
+	},
+	"usage_requirements": {
+		"wis": 20
+	},
+	"weight": 0.8,
+	"special_effects": {
+		"healing_touch": "Increases effectiveness of healing spells by 20%"
+	}
+},
+{
+	"name": "Amulet of Wisdom",
+	"description": "A mystical amulet that enhances the wearer's wisdom and perception.",
+	"looks": "The amulet is made of pure silver and is adorned with a small, glowing crystal at its center. The crystal changes color depending on the wearer's mood.",
+	"durability": 100,
+	"item_usage": "trinket",
+	"stat_bonus": {
+		"wis": 10,
+		"per": 5
+	},
+	"weight": 0.8,
+	"special_effects": {
+		"enhanced_perception": "Increases perception and the ability to notice hidden objects or clues.",
+		"wise_mind": "Enhances wisdom and the ability to make wise decisions."
+	}
+},
+{
+	"name": "Ring of Strength",
+	"description": "A magical ring that enhances the wearer's strength.",
+	"looks": "The ring is made of shining silver and has a small diamond embedded in the center. It glows faintly with a blue aura.",
+	"durability": 100,
+	"item_usage": "trinket",
+	"stat_bonus": {
+		"str": 3
+	},
+	"weight": 0.2,
+	"special_effects": {
+		"enhanced_strength": "Increases the wearer's strength by 3 points."
+	}
+}
+]

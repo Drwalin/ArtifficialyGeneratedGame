@@ -1,0 +1,169 @@
+[
+{
+	"name": "Invisibility Cloak",
+	"description": "A cloak that grants the wearer invisibility for a limited time.",
+	"looks": "The cloak is made of shimmering fabric that seems to blend into the surroundings.",
+	"durability": 100,
+	"item_usage": "wear_back",
+	"stat_bonus": {
+		"spd": 20
+	},
+	"usage_requirements": {
+		"dex": 30
+	},
+	"weight": 1.5,
+	"special_effects": {
+		"Invisibility": "Grants the wearer invisibility for 10 minutes."
+	}
+},
+{
+	"name": "Speed Elixir",
+	"description": "An elixir that enhances the drinker's speed and movement abilities.",
+	"looks": "The elixir is a small, silver flask filled with a sparkling blue liquid.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"stat_bonus": {
+		"spd": 10
+	},
+	"weight": 0.2
+},
+{
+	"name": "Slow Healing Potion",
+	"description": "A potion that restores health points.",
+	"looks": "A small, glass vial filled with a glowing, green liquid.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"dmg_over_time": {
+		"dmg_light": [-80, 10]
+	},
+	"weight": 0.1
+},
+{
+	"name": "Lightning Bolt Scroll",
+	"description": "A scroll that allows the user to cast a powerful lightning bolt spell.",
+	"looks": "The scroll is made of aged parchment with intricate symbols and runes.",
+	"durability": 1,
+	"item_usage": "util",
+	"dmg": {
+		"dmg_lightning": -120
+	},
+	"usage_requirements": {
+		"int": 10
+	},
+	"weight": 0.2
+},
+{
+	"name": "Magic Ring",
+	"description": "A ring infused with magical energy.",
+	"looks": "The ring is made of silver and has intricate designs engraved on its surface.",
+	"durability": 1,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"max_mp": 50,
+		"int": 3
+	},
+	"weight": 0.05,
+	"special_effects": {
+		"mana_regeneration": "Increases mana regeneration rate"
+	}
+},
+{
+	"name": "Lightning Bolt",
+	"description": "A spell that hurls a bolt of lightning, dealing damage to the target.",
+	"looks": "The spell appears as a crackling bolt of lightning that shoots from the caster's fingertips.",
+	"durability": 0,
+	"item_usage": "util",
+	"dmg": {
+		"dmg_lightning": -50
+	},
+	"stat_bonus": {
+		"int": 10
+	},
+	"usage_requirements": {
+		"int": 30
+	},
+	"weight": 0.5,
+	"special_effects": {
+		"stun": "Has a chance to stun the target for 3 seconds."
+	}
+},
+{
+	"name": "Blade of the Wind",
+	"description": "A magical sword that harnesses the power of the wind to strike down enemies.",
+	"looks": "The blade is made of a shimmering silver metal, with intricate carvings of swirling winds along its surface.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 25,
+		"dmg_air": 10
+	},
+	"stat_bonus": {
+		"dex": 5,
+		"spd": 10
+	},
+	"usage_requirements": {
+		"dex": 15
+	},
+	"weight": 2.5,
+	"special_weapon_skills": {
+		"Wind Strike": "Unleashes a powerful gust of wind with each attack, knocking enemies back."
+	},
+	"special_effects": {
+		"Wind Fury": "Increases attack speed by 20% when health is below 50%."
+	}
+},
+{
+	"name": "Iron Sword",
+	"description": "A basic iron sword",
+	"looks": "The sword has a straight, double-edged blade with a simple hilt and a leather-wrapped handle.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10
+	},
+	"stat_bonus": {
+		"str": 2,
+		"dex": 1
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 2.5
+},
+{
+	"name": "Invisibility Potion",
+	"description": "A potion that makes the user invisible for a short period of time.",
+	"looks": "A small, clear glass vial filled with a transparent liquid.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"item_recipee": [
+		"Nightshade Herb",
+		"Essence of Shadow"
+	],
+	"stat_bonus": {
+		"spd": 5
+	},
+	"special_effects": {
+		"Invisibility": "User becomes invisible for 30 seconds"
+	},
+	"weight": 0.1
+},
+{
+	"name": "Poisoned Dagger",
+	"description": "A small dagger coated with a deadly poison.",
+	"looks": "The dagger has a silver blade and a black hilt. The blade is coated with a green, toxic substance.",
+	"durability": 50,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_piercing": 20,
+		"dmg_poison": 5
+	},
+	"usage_requirements": {
+		"dex": 10
+	},
+	"weight": 0.3,
+	"special_weapon_skills": {
+		"assassination": "Increases critical strike chance and damage."
+	}
+}
+]

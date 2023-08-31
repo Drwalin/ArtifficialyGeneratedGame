@@ -1,0 +1,207 @@
+[
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
+	}
+},
+{
+	"name": "Dragon Scale Armor",
+	"description": "A suit of armor crafted from the scales of a dragon.",
+	"looks": "The armor is made from tough dragon scales that have been expertly crafted together to provide maximum protection. It has a sleek and intimidating appearance, with intricate patterns and a deep shade of black and red.",
+	"durability": 500,
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"str": 10,
+		"def": 15,
+		"max_hp": 100
+	},
+	"usage_requirements": {
+		"str": 25
+	},
+	"weight": 15,
+	"special_effects": {
+		"dragon_resistance": "Provides high resistance to fire and acid damage"
+	}
+},
+{
+	"name": "Staff of the Arcane",
+	"description": "A mystical staff that harnesses the power of magic.",
+	"looks": "The staff is made of a smooth and polished wood with a crystal orb at the top. The orb glows with a soft blue light, constantly emitting small sparks of energy.",
+	"durability": 200,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_mental": 15
+	},
+	"stat_bonus": {
+		"int": 10,
+		"max_mp": 100
+	},
+	"usage_requirements": {
+		"int": 20
+	},
+	"weight": 4,
+	"special_effects": {
+		"spell_power": "Increases the potency of spells by 20%."
+	}
+},
+{
+	"name": "Dagger of Poison",
+	"description": "A deadly dagger coated with a potent poison.",
+	"looks": "The dagger has a short, curved blade with a serrated edge. The handle is wrapped in black leather and adorned with a small green gemstone.",
+	"durability": 120,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_piercing": 12,
+		"dmg_poison": 15
+	},
+	"stat_bonus": {
+		"dex": 3,
+		"luck": 2
+	},
+	"usage_requirements": {
+		"dex": 8
+	},
+	"weight": 1,
+	"special_effects": {
+		"poisonous_strike": "25% chance to apply poison to the target, dealing additional damage over time."
+	}
+},
+{
+	"name": "Enchanted Dagger",
+	"description": "A small but powerful dagger infused with magical enchantments.",
+	"looks": "The dagger has a slender blade made of shimmering silver. The hilt is adorned with intricate runes that glow with a soft blue light.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10,
+		"dmg_mental": 15
+	},
+	"stat_bonus": {
+		"dex": 5,
+		"int": 3
+	},
+	"weight": 1.5,
+	"special_weapon_skills": {
+		"Dagger Mastery": "Increases the damage and critical hit chance with daggers."
+	},
+	"special_effects": {
+		"mind_steal": "Absorbs 5 mana from the target with each successful hit."
+	}
+},
+{
+	"name": "Enchanted Bow",
+	"description": "A bow infused with powerful enchantments.",
+	"looks": "The bow is made of polished wood and adorned with intricate runes. It has a vibrant glow and emits a soft humming sound.",
+	"durability": 200,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_physical": 30
+	},
+	"stat_bonus": {
+		"dex": 10,
+		"cha": -5
+	},
+	"usage_requirements": {
+		"dex": 20
+	},
+	"weight": 2,
+	"special_weapon_skills": {
+		"Archery": "Increases bow damage and accuracy."
+	},
+	"special_effects": {
+		"enchanted_arrows": "Arrows shot from this bow are infused with elemental magic, dealing additional damage based on the target's weakness."
+	}
+},
+{
+	"name": "Staff of Healing",
+	"description": "A staff infused with restorative magic that can heal wounds and mend injuries.",
+	"looks": "The staff has a wooden shaft with intricate engravings of healing symbols. The top of the staff is adorned with a crystal that glows with a gentle, soothing light.",
+	"durability": 150,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_healing": -15
+	},
+	"stat_bonus": {
+		"wis": 5,
+		"max_mp": 50
+	},
+	"usage_requirements": {
+		"wis": 15
+	},
+	"weight": 4,
+	"special_effects": {
+		"healing_touch": "Increases the effectiveness of healing spells and abilities."
+	}
+},
+{
+	"name": "Enchanted Amulet",
+	"description": "A mystical amulet that provides powerful enchantments to the wearer.",
+	"looks": "The amulet is made of silver and adorned with intricate symbols and gemstones that shimmer with magical energy.",
+	"durability": 100,
+	"item_usage": "trinket",
+	"stat_bonus": {
+		"int": 10,
+		"wis": 5,
+		"max_mp": 100
+	},
+	"usage_requirements": {
+		"int": 15
+	},
+	"weight": 0.5,
+	"special_effects": {
+		"spell_power": "Increases the power of spells cast by the wearer."
+	}
+},
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
+	}
+},
+{
+	"name": "Staff of Healing",
+	"description": "A magical staff that radiates healing energy.",
+	"looks": "The staff has a polished wooden handle with engraved symbols of healing. At the top of the staff, there is a crystal orb that emits a soothing light.",
+	"durability": 150,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_healing": -20
+	},
+	"stat_bonus": {
+		"wis": 5,
+		"max_mp": 50
+	},
+	"usage_requirements": {
+		"wis": 15
+	},
+	"weight": 3,
+	"special_effects": {
+		"aura_of_healing": "Emits a healing aura that restores HP to nearby allies."
+	}
+}
+]

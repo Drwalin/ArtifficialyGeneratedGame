@@ -151,21 +151,22 @@
 		"Invisibility": "Grants the wearer the ability to turn invisible for a limited time."
 	}
 },
-{"name": "Speedy Shoes",
-"description": "A pair of shoes that increases the wearer's movement speed.",
-"looks": "The shoes are made of fine leather and have a sleek, streamlined design.",
-"durability": 10,
-"item_usage": "wear_feet",
-"stat_bonus": {
-	"spd": 10
-},
-"usage_requirements": {
-	"dex": 20
-},
-"weight": 0.5,
-"special_effects": {
-	"Increased Movement Speed": "Increases character's movement speed by 10%"
-}
+{
+	"name": "Speedy Shoes",
+	"description": "A pair of shoes that increases the wearer's movement speed.",
+	"looks": "The shoes are made of fine leather and have a sleek, streamlined design.",
+	"durability": 10,
+	"item_usage": "wear_feet",
+	"stat_bonus": {
+		"spd": 10
+	},
+	"usage_requirements": {
+		"dex": 20
+	},
+	"weight": 0.5,
+	"special_effects": {
+		"Increased Movement Speed": "Increases character's movement speed by 10%"
+	}
 },
 {
 	"name": "Swift Boots",

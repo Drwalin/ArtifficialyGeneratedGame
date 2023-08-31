@@ -1,0 +1,162 @@
+[
+{
+	"name": "Dagger of Shadows",
+	"description": "A deadly dagger with shadowy powers.",
+	"looks": "The dagger has a dark blade that seems to absorb light. It has a slim, curved design and a hilt wrapped in black leather.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10,
+		"dmg_dark": 15
+	},
+	"stat_bonus": {
+		"dex": 5,
+		"luck": 3
+	},
+	"usage_requirements": {
+		"dex": 15
+	},
+	"weight": 1,
+	"special_effects": {
+		"shadow_strike": "Allows the wielder to vanish into shadows and strike the enemy from behind for extra damage."
+	}
+},
+Sorry but I was balid. Let me generate a new item for you.,
+{
+	"name": "Shield of Protection",
+	"description": "A sturdy shield that provides increased defense against physical attacks.",
+	"looks": "The shield is made of reinforced steel and has a polished surface. It is adorned with engravings of a shield emblem.",
+	"durability": 200,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 10,
+		"resistance_slashing": 5,
+		"resistance_piercing": 5
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 5
+},
+{
+	"name": "Staff of Healing",
+	"description": "A magical staff that is used for healing and restoration.",
+	"looks": "The staff is made of polished wood and is adorned with intricate carvings of leaves and vines. It emanates a soft green glow.",
+	"durability": 150,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_light": -10,
+		"dmg_healing": 20
+	},
+	"stat_bonus": {
+		"wis": 5,
+		"max_mp": 50
+	},
+	"usage_requirements": {
+		"wis": 15
+	},
+	"weight": 3,
+	"special_effects": {
+		"healing_touch": "Increases the effectiveness of healing spells and potions."
+	}
+},
+{
+	"name": "Greatsword",
+	"description": "A massive two-handed sword with a wide blade and immense power.",
+	"looks": "The greatsword has a long handle made of solid oak, adorned with intricate carvings. The blade is made of polished steel and is double-edged, capable of delivering devastating blows.",
+	"durability": 300,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_physical": 40
+	},
+	"stat_bonus": {
+		"str": 10,
+		"def": 5
+	},
+	"usage_requirements": {
+		"str": 18
+	},
+	"weight": 10,
+	"special_weapon_skills": {
+		"greatsword_mastery": "Increases damage and critical strike chance with greatswords."
+	}
+},
+{
+	"name": "Staff of Healing",
+	"description": "A magical staff that is used for healing and restoring health.",
+	"looks": "The staff is made of crystal-clear glass with a silver handle. It is adorned with shimmering gems and has a soft, soothing glow.",
+	"durability": 200,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_light": -10
+	},
+	"stat_bonus": {
+		"wis": 5,
+		"max_mp": 50
+	},
+	"usage_requirements": {
+		"wis": 15
+	},
+	"weight": 2.5,
+	"special_weapon_skills": {
+		"Healing Mastery": "Increases the effectiveness of healing spells."
+	},
+	"special_effects": {
+		"healing_touch": "Each successful hit restores a small amount of health to the wielder."
+	}
+},
+{
+	"name": "Ring of Strength",
+	"description": "A magical ring that enhances the wearer's strength.",
+	"looks": "The ring is made of silver and has a symbol of strength engraved on its surface. It emits a faint golden glow.",
+	"durability": 100,
+	"item_usage": "trinket",
+	"stat_bonus": {
+		"str": 10
+	},
+	"weight": 0.5,
+	"special_effects": {
+		"empowerment": "Increases the wearer's strength by 10%."
+	}
+},
+{
+	"name": "Amulet of Wisdom",
+	"description": "A magical amulet that enhances the wisdom of the wearer.",
+	"looks": "The amulet is made of shimmering silver and has a large sapphire embedded in the center. It emits a soft glow.",
+	"durability": null,
+	"item_usage": "trinket",
+	"stat_bonus": {
+		"wis": 10
+	},
+	"weight": 0.2,
+	"special_effects": {
+		"wisdom_boost": "Increases wisdom by 10%"
+	}
+},
+{
+	"name": "Blessed Shield",
+	"description": "A holy shield with a divine aura.",
+	"looks": "The shield is made of shining silver and is adorned with holy symbols. It emanates a bright golden glow.",
+	"durability": 200,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 10,
+		"resistance_dark": 20
+	},
+	"weight": 3,
+	"special_effects": {
+		"divine_protection": "Increases resistance to dark damage by 20%."
+	}
+},
+{
+	"name": "Silver Ring",
+	"description": "A simple silver ring with an engraved pattern.",
+	"looks": "The ring is made of pure silver and has a polished finish. It has a pattern of delicate swirls engraved on its surface.",
+	"durability": 80,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"luck": 2
+	},
+	"weight": 0.1
+}
+]

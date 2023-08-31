@@ -1,0 +1,214 @@
+[
+{
+	"name": "Enchanted Amulet",
+	"description": "A magical amulet that boosts the wearer's abilities.",
+	"looks": "The amulet is made of silver and is adorned with a glowing blue gemstone in the center.",
+	"durability": 100,
+	"item_usage": "trinket",
+	"stat_bonus": {
+		"cha": 3,
+		"luck": 2,
+		"def": 1
+	},
+	"weight": 0.5,
+	"special_effects": {
+		"magic_barrier": "Creates a protective barrier that absorbs incoming magical damage."
+	}
+},
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
+	}
+},
+{
+	"name": "Spear of the Depths",
+	"description": "A mystical spear that harnesses the power of the ocean depths.",
+	"looks": "The spear has a long, silver shaft with intricate engravings of sea creatures. The head of the spear is shaped like a trident and glows with a faint blue light.",
+	"durability": 200,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_physical": 30,
+		"dmg_water": 20
+	},
+	"stat_bonus": {
+		"str": 5,
+		"spd": 3
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"Polearm Mastery": "Increases polearm handling and damage"
+	},
+	"special_effects": {
+		"Aqua Strike": "Attacks have a chance to unleash a powerful water-based shockwave"
+	}
+},
+{
+	"name": "Emerald Ring",
+	"description": "A beautiful ring adorned with an emerald gemstone.",
+	"looks": "The ring is made of polished silver and features a large emerald gemstone in the center. The silver band is intricately carved with floral patterns.",
+	"durability": 100,
+	"item_usage": "trinket",
+	"stat_bonus": {
+		"cha": 3,
+		"luck": 2
+	},
+	"weight": 0.2,
+	"special_effects": {
+		"luck_boost": "Increases the chances of finding rare items."
+	}
+},
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
+	}
+},
+{
+	"name": "Great Sword of the Titans",
+	"description": "A massive sword said to be forged by the ancient Titans.",
+	"looks": "The Great Sword of the Titans is a colossal weapon, towering over anyone who wields it. The blade is made of a gleaming metal that seems to emit a faint glow, and it is adorned with intricate engravings that depict ancient Titans. The hilt is wrapped in thick, durable leather, providing a comfortable grip despite its size.",
+	"durability": 500,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_physical": 100,
+		"dmg_earth": 50
+	},
+	"stat_bonus": {
+		"str": 15,
+		"def": 10
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 15,
+	"special_weapon_skills": {
+		"sword_mastery": "Greatly increases damage and critical hit chance with swords.",
+		"titanic_power": "Unleash the power of the Titans with devastating blows."
+	},
+	"special_effects": {
+		"earthquake_strike": "25% chance to cause a localized earthquake upon successful hit, damaging and stunning nearby enemies."
+	}
+},
+{
+	"name": "Ancient Staff",
+	"description": "A staff infused with ancient magic.",
+	"looks": "The staff is made of intricately carved mahogany and adorned with various gemstones. It emits a faint glow and crackles with magical energy.",
+	"durability": 200,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_mental": 15
+	},
+	"stat_bonus": {
+		"int": 10,
+		"wis": 5,
+		"max_mp": 100
+	},
+	"usage_requirements": {
+		"int": 15,
+		"wis": 10
+	},
+	"weight": 3,
+	"special_weapon_skills": {
+		"Arcane Mastery": "Increases the damage of arcane spells by 25%."
+	},
+	"special_effects": {
+		"Mana Absorption": "Absorbs mana from enemies, restoring the user's mana with each successful hit."
+	}
+},
+{
+	"name": "Mystic Blade",
+	"description": "A mystical sword imbued with ancient enchantments.",
+	"looks": "The blade of the sword has a shimmering blue glow and is adorned with intricate arcane symbols. The hilt is made of polished silver and wrapped in a velvet grip.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20,
+		"dmg_lightning": 10,
+		"dmg_dark": 5
+	},
+	"stat_bonus": {
+		"str": 5,
+		"int": 5
+	},
+	"usage_requirements": {
+		"str": 15,
+		"int": 15
+	},
+	"weight": 2.7,
+	"special_weapon_skills": {
+		"Swordsmanship": "Increases damage and accuracy with swords.",
+		"Arcane Mastery": "Increases dark and lightning damage."
+	},
+	"special_effects": {
+		"arcane_strike": "25% chance to deal additional dark or lightning damage upon successful hit."
+	}
+},
+{
+	"name": "Flaming Sword",
+	"description": "A sword with a blade that is constantly engulfed in flames.",
+	"looks": "The sword has a long, curved blade made of pure white metal. The blade is constantly surrounded by vibrant red and orange flames. The hilt is made of black leather and decorated with intricate gold patterns.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10,
+		"dmg_fire": 20
+	},
+	"stat_bonus": {
+		"str": 5,
+		"max_hp": 50
+	},
+	"usage_requirements": {
+		"str": 15,
+		"int": 10
+	},
+	"weight": 3,
+	"special_weapon_skills": {
+		"Swordsmanship": "Increases sword handling and damage",
+		"Fire Mastery": "Increases fire damage"
+	},
+	"special_effects": {
+		"burning_strike": "20% chance to set the target on fire, dealing additional fire damage over time"
+	}
+},
+{
+	"name": "Plate Armor",
+	"description": "A set of heavy armor made of interlocking metal plates, offering excellent protection.",
+	"looks": "The plate armor consists of a helmet, chest plate, pauldrons, gauntlets, and greaves, all made of sturdy metal plates with rivets and leather straps. The armor has a polished silver finish.",
+	"durability": 300,
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"def": 15,
+		"con": 10,
+		"max_hp": 100
+	},
+	"weight": 25
+}
+]

@@ -1,0 +1,205 @@
+[
+{
+	"name": "Dagger of Venom",
+	"description": "A deadly dagger enchanted with a potent venom.",
+	"looks": "The dagger has a sleek and sharp blade with a glowing green edge. The hilt is made of black leather adorned with small emerald gemstones.",
+	"durability": 120,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_piercing": 12,
+		"dmg_poison": 20
+	},
+	"stat_bonus": {
+		"dex": 5,
+		"luck": 3
+	},
+	"usage_requirements": {
+		"dex": 10
+	},
+	"weight": 1,
+	"special_effects": {
+		"venomous_strike": "Each successful hit has a chance to poison the target, dealing additional damage over time."
+	}
+},
+{
+	"name": "Emerald Ring",
+	"description": "A beautiful ring adorned with a large emerald gemstone.",
+	"looks": "The ring is made of solid gold and features intricate engravings along the band. The centerpiece is a large emerald gemstone that glimmers in the light.",
+	"durability": 100,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"wis": 3,
+		"luck": 2
+	},
+	"weight": 0.5,
+	"special_effects": {
+		"luck_boost": "Increases the wearer's luck by 10%."
+	}
+},
+{
+	"name": "Wand of Healing",
+	"description": "A magical wand that can be used to heal wounds and restore health.",
+	"looks": "The wand has a shimmering white shaft with a crystal at the tip. It radiates a soft healing glow.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_mental": -10
+	},
+	"stat_bonus": {
+		"int": 3,
+		"wis": 5,
+		"max_mp": 30
+	},
+	"usage_requirements": {
+		"int": 15,
+		"wis": 20
+	},
+	"weight": 1,
+	"special_effects": {
+		"healing_touch": "Increases the effectiveness of healing spells and abilities."
+	}
+},
+{
+	"name": "Ancient Scroll",
+	"description": "A weathered scroll containing ancient spells and incantations.",
+	"looks": "The scroll is made of aged parchment and is bound with a ribbon. It is covered in cryptic symbols and runes.",
+	"durability": 10,
+	"item_usage": "util",
+	"stat_bonus": {
+		"int": 10
+	},
+	"weight": 0.2,
+	"special_effects": {
+		"spellbook": "Allows the user to learn new spells and increase spell power."
+	}
+},
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
+	}
+},
+{
+	"name": "Longsword of the Forest",
+	"description": "A magical longsword that draws power from the energies of the forest.",
+	"looks": "The longsword has a blade made of polished steel with intricate nature-themed engravings. The hilt is crafted from solid oak and decorated with leaf motifs.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 30,
+		"dmg_nature": 20
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 3,
+	"special_weapon_skills": {
+		"Swordsmanship": "Increases damage with swords by 20%.",
+		"Nature's Blessing": "Increases nature damage by 50%."
+	},
+	"special_effects": {
+		"forest_spirit_blessing": "10% chance to heal the wielder for a portion of damage dealt."
+	}
+},
+{
+	"name": "Spear of the Sea",
+	"description": "A mystical spear with the power of the sea.",
+	"looks": "The spear is made of a shining sea-blue metal, with intricate wave patterns etched into the blade. The shaft is wrapped in seaweed, giving it a unique and mysterious appearance.",
+	"durability": 200,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_piercing": 25,
+		"dmg_water": 15
+	},
+	"stat_bonus": {
+		"str": 8,
+		"spd": 5
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"Spearsmanship": "Increases damage and accuracy with spears."
+	},
+	"special_effects": {
+		"Aqua Strike": "Has a chance to deal additional water damage upon successful hit."
+	}
+},
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
+	}
+},
+{
+	"name": "Staff of Healing",
+	"description": "A magical staff that restores health and vitality.",
+	"looks": "The staff is made of polished ivory and adorned with intricate carvings of healing symbols. It emits a soft, healing glow.",
+	"durability": 150,
+	"item_usage": "two_hand",
+	"dmg": {},
+	"dmg_over_time": {},
+	"stat_bonus": {
+		"int": 10,
+		"wis": 5,
+		"max_mp": 100,
+		"regen_mp": 2
+	},
+	"usage_requirements": {
+		"int": 15
+	},
+	"weight": 3.5,
+	"special_effects": {
+		"healing_touch": "Increases healing effectiveness on allies."
+	}
+},
+{
+	"name": "Longbow",
+	"description": "A powerful bow that can shoot arrows with great accuracy and range.",
+	"looks": "The Longbow is made of polished wood with intricate carvings. It is taller than most bows and has a strong, sturdy construction.",
+	"durability": 200,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_piercing": 12
+	},
+	"stat_bonus": {
+		"dex": 5
+	},
+	"usage_requirements": {
+		"dex": 20
+	},
+	"weight": 3,
+	"special_effects": {
+		"long_range_shot": "Arrows shot from this bow have increased range and accuracy."
+	}
+}
+]

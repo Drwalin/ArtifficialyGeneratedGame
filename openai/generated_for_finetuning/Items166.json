@@ -1,0 +1,191 @@
+[
+{
+	"name": "Silver Dagger",
+	"description": "A small dagger made from polished silver.",
+	"looks": "The silver dagger has a sharp, narrow blade and a hilt wrapped in black leather. The pommel is engraved with intricate designs.",
+	"durability": 80,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 8
+	},
+	"stat_bonus": {
+		"dex": 2,
+		"spd": 3
+	},
+	"usage_requirements": {
+		"dex": 12
+	},
+	"weight": 0.5,
+	"special_weapon_skils": {
+		"dagger": "Grants a bonus to Dagger skill."
+	}
+},
+{
+	"name": "Flaming Sword",
+	"description": "A sword imbued with the power of fire, it can deal fiery damage to enemies.",
+	"looks": "The Flaming Sword has a long, curved blade with a fiery red hue. The hilt is adorned with intricate designs and is wrapped in leather for a comfortable grip.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 25,
+		"dmg_fire": 10
+	},
+	"stat_bonus": {
+		"str": 10,
+		"dex": 5,
+		"def": 5
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 3,
+	"special_weapon_skils": {
+		"sword": "Grants a bonus to Sword skill when wielded."
+	},
+	"special_effects": {
+		"fire_damage": "Deals additional fire damage to enemies."
+	}
+},
+{
+	"name": "Diamond Sword",
+	"description": "A powerful sword embedded with diamonds, capable of inflicting devastating damage on enemies.",
+	"looks": "The Diamond Sword has a gleaming blade made of pure diamond, with a hilt wrapped in gold and encrusted with smaller diamonds.",
+	"durability": 500,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_physical": 50,
+		"str": 20
+	},
+	"usage_requirements": {
+		"str": 30
+	},
+	"weight": 4,
+	"special_weapon_skils": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill when equipped."
+	}
+},
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": 100,
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+	"name": "Leather Gloves",
+	"description": "A pair of gloves made from soft leather",
+	"looks": "The leather gloves are made from supple brown leather. They have a snug fit and allow for dexterity and flexibility.",
+	"durability": 80,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 2,
+		"dex": 1,
+		"spd": 1
+	},
+	"usage_requirements": {
+		"dex": 12
+	},
+	"weight": 0.5
+},
+{
+	"name": "Iron Sword",
+	"description": "A basic sword made of iron",
+	"looks": "The iron sword has a simple design, with a straight blade and a hilt wrapped in leather.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 50
+	},
+	"stat_bonus": {
+		"str": 10,
+		"dex": 5
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 5
+},
+{
+	"name": "Dragon Scale Armor",
+	"description": "A legendary armor made from the scales of a dragon. It provides exceptional protection and is highly resistant to fire.",
+	"looks": "The Dragon Scale Armor is crafted from the scales of a dragon, each scale carefully sewn together with reinforced leather. The armor has a sleek and metallic appearance, shimmering with hues of red and gold. It is adorned with intricate dragon motifs, showcasing the power and ferocity of the creature it was derived from.",
+	"durability": 500,
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"def": 50,
+		"max_hp": 200,
+		"resistance_fire": 50
+	},
+	"usage_requirements": {
+		"str": 80,
+		"dex": 50,
+		"con": 70
+	},
+	"weight": 30,
+	"special_effects": {
+		"dragonborne": "Grants the Dragonborne ability, allowing the wearer to breathe fire once per day."
+	}
+},
+{
+	"name": "Steel Sword",
+	"description": "A sturdy sword made of steel",
+	"looks": "The steel sword has a straight blade with a single cutting edge. The hilt is made of leather wrapped around the tang, and it has a metal crossguard and pommel.",
+	"durability": 300,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 40
+	},
+	"stat_bonus": {
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3,
+	"special_weapon_skills": {
+		"swordsmanship": "Increases damage dealt with swords."
+	}
+},
+{
+	"name": "Steel Helmet",
+	"description": "A sturdy helmet made of steel",
+	"looks": "The helmet is made of smooth steel with a silver tint. It has a visor that can be opened and closed.",
+	"durability": 200,
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 10,
+		"max_hp": 50
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 5
+},
+{
+	"name": "Iron Sword",
+	"description": "A basic sword made of iron",
+	"looks": "The iron sword has a straight blade with a single-edged design. The hilt is wrapped in leather for a comfortable grip.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20
+	},
+	"stat_bonus": {
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 5
+}
+]

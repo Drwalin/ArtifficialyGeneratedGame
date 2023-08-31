@@ -1,0 +1,194 @@
+[
+{
+	"name": "Mage Robe",
+	"description": "A lightweight robe worn by mages for protection and style.",
+	"looks": "The mage robe is made of flowing silk with intricate designs and patterns. It is adorned with shimmering gemstones and has a hood for added mystery.",
+	"durability": 100,
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"int": 10,
+		"max_mp": 50,
+		"def": 5
+	},
+	"usage_requirements": {
+		"int": 20
+	},
+	"weight": 2,
+	"special_effects": {
+		"spell_cost_reduction": "Reduces mana cost of spells by 10%."
+	}
+},
+{
+	"name": "Spellbook of Fireball",
+	"description": "A spellbook containing the powerful fireball spell.",
+	"looks": "The spellbook has a leather cover with intricate engravings of flames. It emits a faint red glow.",
+	"durability": 100,
+	"item_usage": "util",
+	"dmg": {
+		"dmg_fire": 50
+	},
+	"stat_bonus": {
+		"int": 10,
+		"max_mp": 100
+	},
+	"usage_requirements": {
+		"int": 15
+	},
+	"weight": 1,
+	"special_weapon_skills": {
+		"Fire Magic": "Increases fire damage and effectiveness of fire spells."
+	},
+	"special_effects": {
+		"area_of_effect": "Fireball explodes upon impact, damaging all enemies in a small radius."
+	}
+},
+{
+	"name": "Staff of Healing",
+	"description": "A mystical staff infused with healing powers.",
+	"looks": "The staff is made of a smooth, white wood with intricate designs of blooming flowers and swirling vines. It has a crystal at the top that emits a soft, healing glow.",
+	"durability": 200,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_light": -10
+	},
+	"dmg_over_time": {
+		"dmg_healing": [
+			30,
+			5
+		]
+	},
+	"stat_bonus": {
+		"int": 5,
+		"wis": 5,
+		"max_mp": 100
+	},
+	"usage_requirements": {
+		"int": 15,
+		"wis": 15
+	},
+	"weight": 4,
+	"special_effects": {
+		"healing_aura": "Creates a healing aura around the caster, restoring additional health to allies within range."
+	}
+},
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
+	}
+},
+{
+	"name": "Lucky Ring",
+	"description": "A ring that brings good luck to its wearer.",
+	"looks": "The ring is made of gold and has a small diamond embedded in the center. It has intricate engravings of four-leaf clovers on the band.",
+	"durability": 100,
+	"item_usage": "trinket",
+	"stat_bonus": {
+		"luck": 5
+	},
+	"weight": 0.5,
+	"special_effects": {
+		"fortune": "Increases the chance of finding valuable items and improves luck-based outcomes."
+	}
+},
+{
+	"name": "Chainmail Armor",
+	"description": "A set of armor made from interlocking metal rings.",
+	"looks": "The chainmail armor consists of a series of metal rings that are interlocked to form a mesh-like fabric. It covers the wearer from head to toe, providing excellent protection.",
+	"durability": 200,
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"def": 10,
+		"max_hp": 50,
+		"max_sta": 50
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 10
+},
+{
+	"name": "Staff of Healing",
+	"description": "A staff infused with healing magic.",
+	"looks": "The staff is made of polished wood and has a crystal at the top that emits a soft glow.",
+	"durability": 100,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_nature": 5
+	},
+	"stat_bonus": {
+		"int": 5,
+		"wis": 3,
+		"max_mp": 50
+	},
+	"usage_requirements": {
+		"int": 10,
+		"wis": 10
+	},
+	"weight": 1.5,
+	"special_effects": {
+		"healing_touch": "Increases the effectiveness of healing spells."
+	}
+},
+{
+	"name": "Ring of Wisdom",
+	"description": "A magical ring that enhances the wisdom of its wearer.",
+	"looks": "The ring is made of silver with a small, sparkling gemstone embedded in the center.",
+	"durability": 50,
+	"item_usage": "trinket",
+	"stat_bonus": {
+		"wis": 5
+	},
+	"weight": 0.5
+},
+{
+	"name": "Staff of Healing",
+	"description": "A magical staff that can be used to heal wounds and restore vitality.",
+	"looks": "The staff is made of white oak and is adorned with intricate symbols representing healing and rejuvenation. It emanates a soft, soothing light.",
+	"durability": 200,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_healing": -30
+	},
+	"stat_bonus": {
+		"int": 5,
+		"wis": 3,
+		"max_mp": 50
+	},
+	"usage_requirements": {
+		"int": 15,
+		"wis": 10
+	},
+	"weight": 4,
+	"special_effects": {
+		"healing_aura": "Creates a healing aura around the staff, restoring health to nearby allies."
+	}
+},
+{
+	"name": "Ruby Ring",
+	"description": "A beautiful ring adorned with a large, sparkling ruby.",
+	"looks": "The ring is made of polished gold with intricate engravings. The centerpiece of the ring is a large ruby that catches the light and sparkles brilliantly.",
+	"durability": 100,
+	"item_usage": "trinket",
+	"stat_bonus": {
+		"cha": 3
+	},
+	"weight": 0.2,
+	"special_effects": {
+		"fire_protection": "Provides resistance to fire damage."
+	}
+}
+]

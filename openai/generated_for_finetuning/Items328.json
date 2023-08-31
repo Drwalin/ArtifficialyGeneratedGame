@@ -1,0 +1,166 @@
+[
+{
+	"name": "Enchanted Dagger",
+	"description": "A small, enchanted dagger that glows with a faint blue light. It is said to carry a curse.",
+	"looks": "The dagger has a slim, silver blade and a hilt wrapped in black leather. The blade emits a faint blue glow.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 30,
+		"dmg_dark": 20
+	},
+	"weight": 1.5,
+	"special_weapon_skills": {
+		"Dagger Mastery": "Increases damage done with daggers by 20%"
+	},
+	"special_effects": {
+		"Curse of the Shadows": "When attacking, there is a chance to inflict darkness and reduce the target's accuracy by 10% for 5 seconds."
+	}
+},
+{
+	"name": "Mighty Sword",
+	"description": "A powerful sword that radiates strength and cuts through enemies with ease.",
+	"looks": "The sword has a long, silver blade with intricate engravings. The hilt is made of polished wood and adorned with a gemstone.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 50
+	},
+	"stat_bonus": {
+		"str": 10,
+		"def": 5
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 3.5,
+	"special_weapon_skills": {
+		"Swordsmanship": "Increases damage inflicted with swords."
+	},
+	"special_effects": {
+		"Critical Strike": "Has a chance to deal extra damage on a critical hit."
+	}
+},
+{
+	"name": "Fireball Scroll",
+	"description": "A scroll containing the spell Fireball, which conjures a ball of fire that explodes upon impact.",
+	"looks": "The scroll is made of aged parchment and is sealed with a wax stamp depicting a fiery symbol.",
+	"durability": 1,
+	"item_usage": "util",
+	"usage_requirements": {
+		"int": 15
+	},
+	"dmg": {
+		"dmg_fire": 100
+	},
+	"stat_bonus": {
+		"cast_speed": 10
+	},
+	"weight": 0.2,
+	"special_effects": {
+		"exploding": "On impact, the Fireball explodes, damaging all nearby enemies."
+	}
+},
+{
+	"name": "Iron Sword",
+	"description": "A basic sword made of iron.",
+	"looks": "The sword has a straight blade and an ornate hilt.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10
+	},
+	"stat_bonus": {
+		"str": 2
+	},
+	"weight": 3
+},
+{
+	"name": "Invisibility Potion",
+	"description": "A potion that grants the user temporary invisibility.",
+	"looks": "The potion is a small, clear glass vial filled with a transparent liquid.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"item_recipee": [
+		"Essence of Shadows",
+		"Ghostly Essence",
+		"Clear Glass Flask"
+	],
+	"stat_bonus": {
+		"spd": 10
+	},
+	"special_effects": {
+		"Invisibility": "Temporarily makes the user invisible to others."
+	},
+	"weight": 0.2
+},
+{
+	"name": "Healing Salve",
+	"description": "A salve that heals minor wounds and restores health.",
+	"looks": "The salve is a small jar filled with a pale green ointment.",
+	"durability": 10,
+	"item_usage": "consumable",
+	"stat_bonus": {
+		"hp": 30
+	},
+	"weight": 0.2
+},
+{
+	"name": "Studded Leather Armor",
+	"description": "A set of studded leather armor that offers moderate protection.",
+	"looks": "The armor is made from leather with metal studs scattered across the surface.",
+	"durability": 100,
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"def": 10
+	},
+	"usage_requirements": {
+		"dex": 10
+	},
+	"weight": 5
+},
+{
+	"name": "Poisoned Dagger",
+	"description": "A small dagger coated with a deadly poison.",
+	"looks": "The dagger has a short blade made of black metal. The hilt is wrapped in a dark green leather for better grip.",
+	"durability": 50,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10,
+		"dmg_poison": 5
+	},
+	"stat_bonus": {
+		"dex": 3
+	},
+	"usage_requirements": {
+		"dex": 10
+	},
+	"weight": 0.5,
+	"special_weapon_skils": {
+		"backstab": "Allows the wielder to perform a powerful backstab attack",
+		"poison_smoke": "Creates a cloud of poisonous smoke upon attack"
+	},
+	"special_effects": {
+		"poison_damage": "Causes the target to take additional poison damage over time",
+		"ignore_armor": "Ignores a portion of the target's armor for damage calculation"
+	}
+},
+Sorry, but I am really blank. We can continue the conversation,text me again whenever you want.,
+{
+	"name": "Titanium Sword",
+	"description": "A powerful sword made from titanium alloy.",
+	"looks": "The sword has a silver blade with a hilt made from black leather.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 50
+	},
+	"weight": 5,
+	"special_weapon_skills": {
+		"swordsmanship": "Increases damage with swords."
+	},
+	"special_effects": {
+		"critical_strike": "Has a chance to deal double damage."
+	}
+}
+]

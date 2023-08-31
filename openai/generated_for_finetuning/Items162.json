@@ -1,0 +1,201 @@
+[
+{
+	"name": "Steel Sword",
+	"description": "A sturdy sword made of steel",
+	"looks": "The sword has a straight, double-edged blade made of polished steel. The hilt is wrapped in leather for a secure grip, and the pommel is decorated with an intricate design.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_slashing": 20,
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 10,
+		"dex": 10
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"sword_mastery": "Grants a bonus to Sword Mastery skill when wielded."
+	}
+},
+{
+	"name": "Iron Sword",
+	"description": "A basic sword made from iron.",
+	"looks": "The iron sword has a straight blade with a single cutting edge. The hilt is wrapped in leather for a better grip.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 25
+	},
+	"stat_bonus": {
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"one_handed_swords": "Allows the player to use one-handed swords with increased proficiency."
+	}
+},
+{
+	"name": "Stormbringer",
+	"description": "A legendary sword said to harness the power of storms.",
+	"looks": "Stormbringer is a longsword with an ornately designed hilt and a blade that seems to crackle with lightning. The hilt is wrapped in leather and adorned with runes that glow with a blue light.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_lightning": 50,
+		"spd": 7
+	},
+	"usage_requirements": {
+		"str": 20,
+		"dex": 15
+	},
+	"weight": 4,
+	"special_weapon_skils": {
+		"lightning_strike": "Unleash a powerful lightning strike against enemies.",
+		"thunderbolt_slash": "Slash enemies with a charged attack, causing additional lightning damage."
+	}
+},
+{
+	"name": "Steel Chestplate",
+	"description": "A heavy chestplate made of strong steel plates",
+	"looks": "The chestplate is made up of overlapping steel plates, covering the entire torso and extending down to the hips. It also has shoulder and elbow guards, and a chainmail skirt for additional protection.",
+	"durability": 300,
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"def": 15,
+		"max_hp": 100
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 25
+},
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": 100,
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+	"name": "Steel Longsword",
+	"description": "A longsword made from durable steel",
+	"looks": "The longsword is made from gleaming steel with a sharp double-edged blade. The hilt is wrapped in leather for a secure grip.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20
+	},
+	"stat_bonus": {
+		"str": 10
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"sword_1h": "Allows the wielder to perform advanced sword techniques."
+	}
+},
+{
+	"name": "Silver Sword",
+	"description": "A finely crafted sword made of pure silver",
+	"looks": "The Silver Sword is a longsword with a silver blade that gleams in the light. The hilt is wrapped in black leather and adorned with a silver crossguard and pommel.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 50
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 4.5,
+	"special_weapon_skils": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill when wielded."
+	}
+},
+{
+	"name": "Adamantium Sword",
+	"description": "A legendary sword made from a rare and indestructible metal called adamantium.",
+	"looks": "The Adamantium Sword has a shining silver blade with a razor-sharp edge. The hilt is adorned with intricate engravings and a gemstone embedded in the pommel.",
+	"durability": 1000,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 50,
+		"dmg_dark": 10
+	},
+	"stat_bonus": {
+		"str": 20,
+		"dex": 15
+	},
+	"usage_requirements": {
+		"str": 30,
+		"dex": 25
+	},
+	"weight": 10,
+	"special_weapon_skils": {
+		"master_swordsmanship": "Allows the wielder to use advanced swordsmanship techniques."
+	},
+	"special_effects": {
+		"unbreakable": "This sword cannot be damaged or broken."
+	}
+},
+{
+	"name": "Dagger of Shadows",
+	"description": "A sleek and deadly dagger imbued with the power of shadows.",
+	"looks": "The Dagger of Shadows has a narrow blade made of darkened steel, almost appearing as if it is made of pure shadow. The handle is wrapped in black leather and adorned with small, sparkling gems.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15,
+		"dmg_dark": 10,
+		"dmg_poison": 2
+	},
+	"stat_bonus": {
+		"dex": 5,
+		"luck": 3
+	},
+	"usage_requirements": {
+		"dex": 20
+	},
+	"weight": 1,
+	"special_weapon_skils": {
+		"assassination": "Grants a bonus to Assassination skill when wielded."
+	},
+	"special_effects": {
+		"shadow_strike": "Chance to deal additional shadow damage with each attack."
+	}
+},
+{
+	"name": "Silver Bow",
+	"description": "A sleek and elegant bow made of pure silver.",
+	"looks": "The Silver Bow is a longbow made entirely of silver. It has a smooth and polished surface, with intricate engravings of nature motifs along the limbs. The grip is wrapped in black leather for a comfortable hold.",
+	"durability": 150,
+	"item_usage": "two_hand",
+	"stat_bonus": {
+		"dex": 5,
+		"dmg_piercing": 10,
+		"spd": 3
+	},
+	"usage_requirements": {
+		"dex": 18
+	},
+	"weight": 2.5,
+	"special_weapon_skills": {
+		"archery": "Grants a bonus to Archery skill when used."
+	}
+}
+]

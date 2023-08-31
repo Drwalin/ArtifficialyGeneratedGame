@@ -1,0 +1,171 @@
+[
+{
+	"name": "Swift Boots",
+	"description": "A pair of lightweight boots that enhance the wearer's movement speed.",
+	"looks": "The boots are made of fine leather and have intricate stitching. They have a sleek and streamlined design.",
+	"durability": 100,
+	"item_usage": "wear_feet",
+	"stat_bonus": {
+		"spd": 10
+	},
+	"usage_requirements": {
+		"dex": 15
+	},
+	"weight": 0.5
+},
+{
+	"name": "Elven Bow",
+	"description": "A beautifully crafted bow made by skilled elven artisans.",
+	"looks": "The bow is made from white wood with intricate engravings of elven symbols. It is light and flexible, perfect for long-range attacks.",
+	"durability": 500,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_physical": 20,
+		"dmg_nature": 15
+	},
+	"stat_bonus": {
+		"dex": 5,
+		"per": 3,
+		"spd": 10
+	},
+	"usage_requirements": {
+		"dex": 20
+	},
+	"weight": 2.5,
+	"special_weapon_skills": {
+		"archery": "Increases accuracy and damage with bows."
+	},
+	"special_effects": {
+		"earthen_shot": "Has a chance to immobilize the target for a short duration."
+	}
+},
+{
+	"name": "Radiant Dagger",
+	"description": "A shining dagger that glows with an ethereal light.",
+	"looks": "The dagger has a silver blade with intricate engravings. The hilt is adorned with a brilliant gemstone.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10,
+		"dmg_light": 5
+	},
+	"stat_bonus": {
+		"luck": 5,
+		"spd": 10
+	},
+	"usage_requirements": {
+		"dex": 15
+	},
+	"weight": 1.5,
+	"special_weapon_skills": {
+		"dagger_mastery": "Increases dagger damage by 10%"
+	},
+	"special_effects": {
+		"radiant_strike": "Has a 15% chance to deal additional radiant damage"
+	}
+},
+{
+	"name": "Fire Mage Robe",
+	"description": "A robe designed for fire mages, providing bonus to fire damage.",
+	"looks": "The robe is made of red silk with golden embroideries depicting flames.",
+	"durability": 100,
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"int": 10,
+		"resistance_fire": 20
+	},
+	"usage_requirements": {
+		"int": 15
+	},
+	"weight": 1.5,
+	"special_effects": {
+		"fire_affinity": "Increases damage of fire spells by 10%"
+	}
+},
+{
+	"name": "Invisibility Cloak",
+	"description": "A magical cloak that grants the user invisibility.",
+	"looks": "The cloak is made of a shimmering fabric that seems to blend with the surroundings.",
+	"durability": 100,
+	"item_usage": "wear_back",
+	"stat_bonus": {
+		"spd": 10
+	},
+	"usage_requirements": {
+		"dex": 15
+	},
+	"weight": 2,
+	"special_effects": {
+		"Invisibility": "Grants the user invisibility for a limited duration."
+	}
+},
+{
+	"name": "Invisibility Potion",
+	"description": "A potion that grants temporary invisibility to the user.",
+	"looks": "The potion is a translucent liquid in a clear glass bottle.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"stat_bonus": {
+		"def": -10
+	},
+	"weight": 0.2
+},
+{
+	"name": "Superior Healing Potion",
+	"description": "A potion that restores a significant amount of health.",
+	"looks": "A large glass vial filled with a bright blue liquid.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"stat_bonus": {
+		"hp": 100
+	},
+	"weight": 0.2
+},
+{
+	"name": "Strength Potion",
+	"description": "A potion that temporarily boosts the drinker's strength and melee damage.",
+	"looks": "The potion is a vibrant red color, swirling with energy.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"item_recipee": [
+		"Brewer's Yeast",
+		"Enchanted Ruby"
+	],
+	"stat_bonus": {
+		"str": 5
+	},
+	"weight": 0.1
+},
+{
+	"name": "Mana Elixir",
+	"description": "A powerful elixir that instantly restores a large amount of mana.",
+	"looks": "A crystal-clear vial containing a sparkling blue liquid.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"stat_bonus": {
+		"mp": 100
+	},
+	"weight": 0.2
+},
+{
+	"name": "Fireball Scroll",
+	"description": "A scroll that allows the user to cast a powerful fireball spell.",
+	"looks": "The scroll is made of ancient parchment and is sealed with a wax seal depicting a flame.",
+	"durability": 1,
+	"item_usage": "util",
+	"dmg": {
+		"dmg_fire": 60
+	},
+	"stat_bonus": {
+		"int": 5,
+		"wis": 3
+	},
+	"usage_requirements": {
+		"int": 10
+	},
+	"weight": 0.2,
+	"special_effects": {
+		"Explosive": "Causes a small explosion upon impact, damaging all nearby enemies."
+	}
+}
+]

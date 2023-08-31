@@ -1,0 +1,174 @@
+[
+{ "name": "Enchanted Sword", "description": "A magical sword imbued with powerful enchantments.", "looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.", "durability": 150, "item_usage": "one_hand", "dmg": { "dmg_physical": 15 }, "stat_bonus": { "str": 5, "dex": 3 }, "weight": 2.5, "special_effects": { "elemental_damage": "Adds additional fire damage to attacks" } },
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
+	}
+},
+{
+	"name": "Steel Plate Armor",
+	"description": "A heavy suit of armor made from steel plates.",
+	"looks": "The armor is made of interlocking steel plates, providing excellent protection. It has a polished finish and is adorned with intricate engravings.",
+	"durability": 300,
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"def": 15,
+		"str": 10,
+		"con": 10
+	},
+	"weight": 20
+},
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
+	}
+},
+{
+	"name": "Shield of Protection",
+	"description": "A sturdy shield that offers excellent defensive capabilities.",
+	"looks": "The shield is made of reinforced steel with a polished surface. It is adorned with intricate engravings of shields and swords.",
+	"durability": 250,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 10,
+		"str": 3,
+		"con": 3
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 4.5,
+	"special_effects": {
+		"block": "Increases the chance to block incoming attacks by 20%."
+	}
+},
+{
+	"name": "Axe of the Berserker",
+	"description": "A fearsome battle axe that grants its wielder incredible strength and rage.",
+	"looks": "The Axe of the Berserker is a massive weapon with a thick, double-bladed head. The handle is wrapped in animal fur, giving it a primal look.",
+	"durability": 300,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_physical": 40
+	},
+	"stat_bonus": {
+		"str": 10,
+		"con": 5,
+		"spd": 3
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 8,
+	"special_weapon_skills": {
+		"berserker_fury": "Increases damage and attack speed while in a berserk state."
+	},
+	"special_effects": {
+		"berserk_rage": "Has a chance to trigger a berserk state, increasing damage output but reducing defense."
+	}
+},
+{
+	"name": "Staff of Healing",
+	"description": "A magical staff that radiates healing energy.",
+	"looks": "The staff has a long wooden shaft adorned with intricate carvings of leaves and flowers. The top of the staff holds a glowing crystal that emits a soft white light.",
+	"durability": 150,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_healing": -50
+	},
+	"stat_bonus": {
+		"wis": 5,
+		"max_mp": 50
+	},
+	"usage_requirements": {
+		"wis": 15
+	},
+	"weight": 3,
+	"special_effects": {
+		"healing_touch": "Increases the effectiveness of healing spells and abilities."
+	}
+},
+{
+	"name": "Enchanted Mace",
+	"description": "A mace infused with magical enchantments, making it more powerful.",
+	"looks": "The mace has a sturdy iron handle with engraved runes. The head of the mace is adorned with a glowing crystal that emits a faint blue light.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_blunt": 30
+	},
+	"stat_bonus": {
+		"str": 5,
+		"def": 2
+	},
+	"weight": 3,
+	"special_effects": {
+		"enchanted_damage": "Deals additional magical damage to enemies."
+	}
+},
+{
+	"name": "Staff of the Arcane",
+	"description": "A mystical staff that harnesses the power of arcane magic.",
+	"looks": "The staff is made of a rare, shimmering crystal material that refracts light in various colors. It has a spiral design that symbolizes the flow of magic.",
+	"durability": 200,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_mental": 20
+	},
+	"stat_bonus": {
+		"int": 10,
+		"max_mp": 100
+	},
+	"usage_requirements": {
+		"int": 20
+	},
+	"weight": 3.5,
+	"special_effects": {
+		"arcane_blast": "Allows the wielder to unleash powerful arcane blasts at enemies."
+	}
+},
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
+	}
+}
+]

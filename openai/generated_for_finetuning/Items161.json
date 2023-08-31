@@ -1,0 +1,206 @@
+[
+{
+	"name": "Mage Staff",
+	"description": "A magical staff imbued with the power of the arcane.",
+	"looks": "The Mage Staff is a tall wooden staff with intricate carvings and an orb of glowing energy at the top. It emits a faint magical aura.",
+	"durability": 80,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_mental": 10
+	},
+	"stat_bonus": {
+		"int": 10,
+		"wis": 5,
+		"max_mp": 30,
+		"cast_speed": 2
+	},
+	"usage_requirements": {
+		"int": 20
+	},
+	"weight": 3,
+	"special_weapon_skills": {
+		"elemental_attunement": "Allows the wielder to channel and control various elemental energies."
+	},
+	"special_effects": {
+		"spell_power": "Increases the power of all spells cast by the wielder."
+	}
+},
+{
+	"name": "Iron Sword",
+	"description": "A sturdy iron sword with a sharp blade.",
+	"looks": "The iron sword has a straight, double-edged blade with a silver tint. The handle is made of leather wrapped around a metal core.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"item_recipee": [
+		"Iron Ingot",
+		"Leather Strap"
+	],
+	"dmg": {
+		"dmg_physical": 10
+	},
+	"stat_bonus": {
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 3,
+	"special_weapon_skills": {
+		"sword": "Increases damage with swords"
+	}
+},
+{
+	"name": "Steel Sword",
+	"description": "A sturdy sword made from steel, suitable for slashing and thrusting attacks.",
+	"looks": "The steel sword has a straight blade with a single edge and a pointed tip. The hilt is wrapped in leather for a comfortable grip and has a simple crossguard.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_slashing": 20,
+		"dmg_piercing": 10,
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 2.5
+},
+{
+	"name": "Silver Sword",
+	"description": "A finely crafted sword made from pure silver.",
+	"looks": "The silver sword has a gleaming blade with intricate engravings along its length. The hilt is adorned with a silver grip and a decorative pommel.",
+	"durability": 120,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 50
+	},
+	"stat_bonus": {
+		"str": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 2,
+	"special_weapon_skills": {
+		"sword_mastery": "Grants a bonus to sword damage."
+	}
+},
+{
+	"name": "Steel Sword",
+	"description": "A sharp and sturdy steel sword.",
+	"looks": "The steel sword has a straight blade with a single cutting edge. The hilt is wrapped in leather for a comfortable grip, and the pommel is decorated with an intricate design.",
+	"durability": 250,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 12
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3,
+		"def": 2
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 4.5,
+	"special_weapon_skills": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill when used."
+	}
+},
+{
+	"name": "Steel Greaves",
+	"description": "Sturdy leg armor made of steel plates",
+	"looks": "The greaves are made up of overlapping steel plates that cover the front and sides of the legs. They are secured with leather straps and buckles.",
+	"durability": 150,
+	"item_usage": "wear_legs",
+	"stat_bonus": {
+		"def": 8,
+		"spd": -1
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 10
+},
+{
+	"name": "Steel Sword",
+	"description": "A sturdy sword made of steel",
+	"looks": "The steel sword has a long, straight blade with a sharp edge. The hilt is made of leather and metal, providing a comfortable grip.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 50
+	},
+	"stat_bonus": {
+		"str": 10,
+		"dex": 5
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3,
+	"special_weapon_skills": {
+		"sword": "Increases damage with swords and grants access to sword-related skills"
+	}
+},
+{
+	"name": "Iron Helmet",
+	"description": "A sturdy iron helmet that provides good protection for the head.",
+	"looks": "The iron helmet is made of solid iron with a smooth surface. It has a rounded shape with a face guard that covers the lower part of the face. There are small openings for the eyes and a ventilation hole at the top.",
+	"durability": 100,
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 5,
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 3
+},
+{
+	"name": "Steel Sword",
+	"description": "A razor-sharp sword made of steel",
+	"looks": "The steel sword has a straight blade with a single cutting edge. The hilt is wrapped in leather for a comfortable grip, and the pommel is adorned with a decorative design.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 25
+	},
+	"stat_bonus": {
+		"str": 5,
+		"def": 2
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 4.5,
+	"special_weapon_skils": {
+		"swordsmanship": "Increases damage and accuracy when using this sword."
+	}
+},
+{
+	"name": "Mystic Staff",
+	"description": "A magical staff imbued with ancient arcane energy.",
+	"looks": "The Mystic Staff is a tall wooden staff, carved with intricate designs and topped with a shimmering crystal orb. The wood is dark and polished, and it emanates a faint glow.",
+	"durability": 150,
+	"item_usage": "two_hand",
+	"stat_bonus": {
+		"max_mp": 100,
+		"int": 10,
+		"wis": 8,
+		"cast_speed": 3,
+		"resistance_mental": 15
+	},
+	"usage_requirements": {
+		"int": 20,
+		"wis": 15
+	},
+	"weight": 4.5
+}
+]

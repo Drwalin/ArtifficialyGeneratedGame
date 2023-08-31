@@ -1,0 +1,205 @@
+[
+{
+	"name": "Enchanted Dagger",
+	"description": "A small dagger enchanted with magical powers.",
+	"looks": "The dagger has a sleek and silver blade with glowing blue runes engraved on it.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"item_recipee": [
+		"Silver Dagger",
+		"Enchanted Crystal"
+	],
+	"dmg": {
+		"dmg_physical": 15,
+		"dmg_lightning": 5
+	},
+	"stat_bonus": {
+		"dex": 3,
+		"spd": 2
+	},
+	"usage_requirements": {
+		"dex": 10
+	},
+	"weight": 0.5,
+	"special_weapon_skills": {
+		"dagger_mastery": "Increases damage dealt with daggers."
+	},
+	"special_effects": {
+		"energy_steal": "Steals a small amount of mana from the target with each hit."
+	}
+},
+{
+	"name": "Enchanted Sword",
+	"description": "A powerful sword imbued with magical energy.",
+	"looks": "The sword has a long, silver blade with glowing blue runes etched onto it. The hilt is adorned with gemstones that radiate a soft light.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 50,
+		"dmg_lightning": 20
+	},
+	"stat_bonus": {
+		"str": 10,
+		"dex": 5
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 2.5,
+	"special_weapon_skills": {
+		"Sword Mastery": "Increases damage and accuracy with swords."
+	},
+	"special_effects": {
+		"Electric Charge": "Has a chance to deal additional lightning damage on hit."
+	}
+},
+{
+	"name": "Enchanted Bow",
+	"description": "A powerful bow imbued with magical energy.",
+	"looks": "The bow is made of polished wood and glows with a faint blue light.",
+	"durability": 50,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_physical": 30,
+		"dmg_lightning": 10
+	},
+	"stat_bonus": {
+		"dex": 5,
+		"spd": -0.2
+	},
+	"usage_requirements": {
+		"dex": 20
+	},
+	"weight": 2.5,
+	"special_weapon_skils": {
+		"archery": "Increases accuracy and damage with bows."
+	},
+	"special_effects": {
+		"lightning_bolt": "Has a chance to shoot a lightning bolt at the target on a critical hit."
+	}
+},
+{
+	"name": "Cloak of Invisibility",
+	"description": "A magical cloak that grants the wearer invisibility.",
+	"looks": "The cloak is made of a shimmering, translucent fabric that seems to blend seamlessly into the background.",
+	"durability": 100,
+	"item_usage": "wear_back",
+	"stat_bonus": {
+		"spd": 10
+	},
+	"usage_requirements": {
+		"per": 50,
+		"luck": 75
+	},
+	"weight": 1.5,
+	"special_effects": {
+		"Invisibility": "The wearer becomes invisible to others, allowing them to move undetected."
+	}
+},
+{
+	"name": "Strength Potion",
+	"description": "A potion that temporarily boosts the drinker's strength and melee damage.",
+	"looks": "The potion is a vibrant red color, swirling with energy.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"item_recipee": [
+		"Brewer's Yeast",
+		"Enchanted Ruby"
+	],
+	"stat_bonus": {
+		"str": 5
+	},
+	"weight": 0.1
+},
+{
+	"name": "Fireball Scroll",
+	"description": "A scroll that contains the Fireball spell.",
+	"looks": "The scroll is made of ancient parchment and has a fiery red symbol on it.",
+	"durability": 1,
+	"item_usage": "util",
+	"item_recipee": [
+		"Ink",
+		"Papyrus"
+	],
+	"dmg": {
+		"dmg_fire": -60
+	},
+	"stat_bonus": {
+		"cast_speed": 0.1
+	},
+	"weight": 0.2,
+	"special_effects": {
+		"ignite_target": "Fireball has a chance to ignite the target, dealing additional fire damage over time."
+	}
+},
+Sorry, I can't generate that story.,
+{
+	"name": "Fireball Staff",
+	"description": "A staff that allows the user to cast powerful fireball spells.",
+	"looks": "The staff is made of polished wood with intricate carvings and a glowing ruby at the top.",
+	"durability": 50,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_fire": 100
+	},
+	"stat_bonus": {
+		"int": 10,
+		"max_mp": 50
+	},
+	"usage_requirements": {
+		"int": 20
+	},
+	"weight": 2,
+	"special_weapon_skills": {
+		"spellcasting": "Allows the user to cast fireball spells"
+	}
+},
+{
+	"name": "Poisonous Dagger",
+	"description": "A sharp dagger coated with a potent poison.",
+	"looks": "The dagger has a dark, serrated blade with a green sheen. The handle is wrapped in worn black leather.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20,
+		"dmg_poison": 10
+	},
+	"special_weapon_skills": {
+		"assassination": "Increases critical strike chance when using this dagger."
+	},
+	"special_effects": {
+		"poison_on_hit": "Has a chance to poison the target on successful hit."
+	},
+	"stat_bonus": {
+		"dex": 10
+	},
+	"usage_requirements": {
+		"dex": 15
+	},
+	"weight": 0.5
+},
+{
+	"name": "Stealthy Dagger",
+	"description": "A sharp and lightweight dagger that allows for swift and silent attacks.",
+	"looks": "The dagger has a slender blade with a dark black hue. The handle is wrapped in leather for a secure grip.",
+	"durability": 50,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10
+	},
+	"stat_bonus": {
+		"dex": 3
+	},
+	"usage_requirements": {
+		"dex": 10
+	},
+	"weight": 0.5,
+	"special_weapon_skils": {
+		"Assassination": "Increases critical strike chance by 10%."
+	},
+	"special_effects": {
+		"Stealthy Strikes": "Increases damage by 20% when attacking from behind."
+	}
+}
+]

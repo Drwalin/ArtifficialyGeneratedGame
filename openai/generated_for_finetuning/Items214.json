@@ -1,0 +1,209 @@
+[
+{
+	"name": "Robe of the Archmage",
+	"description": "A legendary robe worn only by the most powerful mages.",
+	"looks": "The robe is made of shimmering blue silk with intricate golden embroidery. It has a hood that can be pulled up to conceal the wearer's face.",
+	"durability": 200,
+	"item_usage": "wear_torso",
+	"dmg_over_time": {
+		"dmg_fire": [
+			10,
+			5
+		],
+		"dmg_ice": [
+			10,
+			5
+		],
+		"dmg_lightning": [
+			10,
+			5
+		]
+	},
+	"stat_bonus": {
+		"int": 10,
+		"wis": 5,
+		"max_mp": 100,
+		"def": 10,
+		"resistance_fire": 20,
+		"resistance_ice": 20,
+		"resistance_lightning": 20
+	},
+	"usage_requirements": {
+		"int": 25
+	},
+	"weight": 1.5,
+	"special_effects": {
+		"spell_power": "Increases the power of spells by 20%.",
+		"elemental_absorption": "Absorbs a portion of elemental damage and converts it into mana."
+	}
+},
+{
+	"name": "Cursed Ring",
+	"description": "A mysterious ring with a dark aura of power.",
+	"looks": "The ring is made of blackened silver and has a large black gemstone in the center. It emanates a faint sinister glow.",
+	"durability": 200,
+	"item_usage": "trinket",
+	"stat_bonus": {
+		"str": -5,
+		"con": -5,
+		"int": -5,
+		"wis": -5,
+		"cha": -5,
+		"per": -5,
+		"luck": -5,
+		"max_hp": -50,
+		"max_mp": -50,
+		"max_sta": -50,
+		"def": -5,
+		"spd": -5,
+		"resistance_dark": 50
+	},
+	"weight": 1.5,
+	"special_effects": {
+		"curse": "Wearer loses health over time and is less effective in combat."
+	}
+},
+{
+	"name": "Staff of Healing",
+	"description": "A magical staff that has the power to heal and restore vitality.",
+	"looks": "The staff is made of polished maple wood with intricate carvings of healing symbols. It glows with a soft golden light.",
+	"durability": 150,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_healing": -10
+	},
+	"stat_bonus": {
+		"wis": 3,
+		"max_mp": 30
+	},
+	"usage_requirements": {
+		"wis": 15
+	},
+	"weight": 3,
+	"special_effects": {
+		"healing_aura": "Creates a healing aura around the user, restoring HP to nearby allies."
+	}
+},
+{
+	"name": "Leather Armor",
+	"description": "Basic armor made of leather for basic protection.",
+	"looks": "The leather armor consists of leather pieces stitched together. It is lightweight and flexible.",
+	"durability": 100,
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"def": 5,
+		"spd": 1
+	},
+	"weight": 4.5
+},
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
+	}
+},
+{
+	"name": "Adamantium Sword",
+	"description": "A legendary sword made from the rare and powerful metal called adamantium.",
+	"looks": "The sword has a gleaming silver blade that seems to radiate its own light. The hilt is adorned with intricate designs and a gemstone that glows with a faint blue hue.",
+	"durability": 500,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 50,
+		"dmg_dark": 25
+	},
+	"stat_bonus": {
+		"str": 10,
+		"def": 15
+	},
+	"usage_requirements": {
+		"str": 18
+	},
+	"weight": 4.5,
+	"special_weapon_skills": {
+		"Swordsmanship": "Increases sword handling and damage",
+		"Dark Mastery": "Increases dark damage by 50%"
+	},
+	"special_effects": {
+		"life_steal": "Steals a portion of the damage dealt as health"
+	}
+},
+{
+	"name": "Ring of Strength",
+	"description": "A magical ring that enhances the wearer's strength.",
+	"looks": "The ring is made of shining gold with a large emerald embedded in the center. It has intricate engravings of muscles and symbols of power.",
+	"durability": 100,
+	"item_usage": "trinket",
+	"stat_bonus": {
+		"str": 10,
+		"max_hp": 50
+	},
+	"weight": 0.2,
+	"special_effects": {
+		"strength_boost": "Temporarily increases the wearer's strength for a short duration."
+	}
+},
+{
+	"name": "Shadow Cloak",
+	"description": "A cloak that grants the wearer enhanced stealth and the ability to blend into the shadows.",
+	"looks": "The cloak is made of a dark, velvety material that seems to absorb light. It has a hood that can be pulled up to cover the wearer's face.",
+	"durability": 100,
+	"item_usage": "wear_back",
+	"stat_bonus": {
+		"dex": 5,
+		"per": 3
+	},
+	"weight": 1.5,
+	"special_effects": {
+		"invisibility": "Allows the wearer to become invisible for a short period of time.",
+		"shadow_step": "Allows the wearer to teleport short distances through shadows."
+	}
+},
+{
+	"name": "Ruby Ring",
+	"description": "A beautiful ring adorned with a large ruby gemstone.",
+	"looks": "The ring is made of polished gold and features an intricately designed band. The centerpiece of the ring is a large ruby gemstone that shines with a deep red color.",
+	"durability": 100,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"cha": 2,
+		"luck": 5
+	},
+	"usage_requirements": {
+		"cha": 10
+	},
+	"weight": 0.1,
+	"special_effects": {
+		"luck_boost": "Increases luck by 10%"
+	}
+},
+{
+	"name": "Silver Bow",
+	"description": "A sleek and powerful bow made of silver.",
+	"looks": "The bow is crafted with great precision and has a shining silver finish. The limbs are slim and elegant, while the grip is wrapped in soft, black leather.",
+	"durability": 200,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_piercing": 15
+	},
+	"stat_bonus": {
+		"dex": 5
+	},
+	"usage_requirements": {
+		"dex": 15
+	},
+	"weight": 2.2
+}
+]

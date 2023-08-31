@@ -92,8 +92,17 @@
 	},
 	"weight": 0.1
 },
-{"name": "Health Restoration Potion", "description": "A potion that restores a small amount of health.", "looks": "The potion is a small glass vial filled with a glowing blue liquid.", "durability": 1, "item_usage": "consumable", "stat_bonus": {"hp": 50}, "weight": 0.1}
-,
+{
+	"name": "Health Restoration Potion",
+	"description": "A potion that restores a small amount of health.",
+	"looks": "The potion is a small glass vial filled with a glowing blue liquid.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"stat_bonus": {
+		"hp": 50
+	},
+	"weight": 0.1
+},
 {
 	"name": "Ice Bow",
 	"description": "A bow made from enchanted ice, capable of launching icy arrows at enemies.",

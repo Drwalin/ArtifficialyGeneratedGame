@@ -1,0 +1,204 @@
+[
+{
+	"name": "Iron Sword",
+	"description": "A basic sword made of iron.",
+	"looks": "The iron sword has a straight, double-edged blade with a hilt made of leather wrapped around a metal core. The pommel features a simple design.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 25
+	},
+	"stat_bonus": {
+		"dex": 5
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill when equipped."
+	}
+},
+{
+	"name": "Steel Sword",
+	"description": "A sturdy sword made of steel",
+	"looks": "The steel sword has a long blade with a single sharp edge. The hilt is wrapped in leather for a secure grip.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 25
+	},
+	"stat_bonus": {
+		"str": 10,
+		"dex": 5
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 4
+},
+{
+	"name": "Sword of the Flame",
+	"description": "A mighty sword imbued with the power of fire.",
+	"looks": "The Sword of the Flame has a long and slender blade, with fiery red runes etched along its length. The hilt is made of blackened steel, adorned with intricate designs of flames.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20,
+		"dmg_fire": 10
+	},
+	"stat_bonus": {
+		"str": 5,
+		"def": 2
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 3.5,
+	"special_weapon_skils": {
+		"sword": "Increases proficiency with swords."
+	},
+	"special_effects": {
+		"ignite": "Has a chance to set targets on fire."
+	}
+},
+{
+	"name": "Golden Sword",
+	"description": "A magnificent sword made of pure gold, shimmering with an otherworldly aura.",
+	"looks": "The Golden Sword is a stunning weapon with a long, slender blade. The hilt is adorned with intricate designs and embedded with precious gems.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_physical": 20,
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 25
+	},
+	"weight": 4,
+	"special_weapon_skils": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill when wielded."
+	},
+	"special_effects": {
+		"aura_damage": "Deals additional damage based on the character's Luck stat."
+	}
+},
+{
+	"name": "Dragon Slayer Sword",
+	"description": "A legendary sword forged to slay dragons.",
+	"looks": "The Dragon Slayer Sword has a long, curved blade with a sharp point. The hilt is made of dragon scale and has intricate carvings of dragons along its length. The pommel is shaped like a dragon's head with ruby eyes.",
+	"durability": 2000,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_physical": 100,
+		"dmg_fire": 50
+	},
+	"stat_bonus": {
+		"strength": 20
+	},
+	"weight": 10,
+	"special_weapon_skills": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill while wielded.",
+		"dragon_slayer": "Deals bonus damage against dragons."
+	}
+},
+{
+	"name": "Steel Gauntlets",
+	"description": "A pair of sturdy gauntlets made of steel",
+	"looks": "The gauntlets are made of smooth steel with a silver tint. They have a articulated design to allow for flexibility and movement.",
+	"durability": 150,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 8,
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 4
+},
+{
+	"name": "Iron Sword",
+	"description": "A basic iron sword.",
+	"looks": "The iron sword has a straight blade with a single cutting edge. The hilt is made of leather and wrapped in a spiral pattern.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 50
+	},
+	"stat_bonus": {
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 4
+},
+{
+	"name": "Blessed Sword",
+	"description": "A holy sword imbued with divine power.",
+	"looks": "The Blessed Sword has a shining silver blade with intricate engravings and a golden hilt. It emits a soft glow, radiating with holy energy.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 25,
+		"dmg_light": 10
+	},
+	"stat_bonus": {
+		"def": 5,
+		"wis": 5
+	},
+	"usage_requirements": {
+		"str": 15,
+		"wis": 10
+	},
+	"weight": 3,
+	"special_weapon_skills": {
+		"sword_mastery": "Improved sword handling and increased damage with swords."
+	},
+	"special_effects": {
+		"holy_smite": "Has a chance to deal additional holy damage on hit."
+	}
+},
+{
+	"name": "Silver Dagger",
+	"description": "A sleek dagger made from polished silver.",
+	"looks": "The Silver Dagger has a slim and sharp blade, with a hilt made from polished silver. It is lightweight and easy to handle.",
+	"durability": 80,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 25
+	},
+	"stat_bonus": {
+		"dex": 5
+	},
+	"usage_requirements": {
+		"dex": 10
+	},
+	"weight": 1,
+	"special_weapon_skills": {
+		"dagger": "Grants a bonus to Dagger skill when equipped."
+	}
+},
+{
+	"name": "Elven Bow",
+	"description": "A beautifully crafted bow made by skilled elven craftsmen.",
+	"looks": "The Elven Bow is made from rare darkwood, with intricate carvings along the limbs. It has a graceful curve and a polished finish, reflecting the light as if it were alive.",
+	"durability": 150,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_physical": 20
+	},
+	"stat_bonus": {
+		"dex": 5,
+		"spd": 3
+	},
+	"usage_requirements": {
+		"dex": 15
+	},
+	"weight": 2,
+	"special_weapon_skills": {
+		"archery": "Increases damage and accuracy with bows."
+	}
+}
+]

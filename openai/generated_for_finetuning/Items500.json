@@ -1,0 +1,177 @@
+[
+{
+	"name": "Enchanted Armor",
+	"description": "A set of armor imbued with powerful enchantments.",
+	"looks": "The armor is made of shining silver plates adorned with intricate runes. It radiates a soft glow and provides a regal appearance to the wearer.",
+	"durability": 200,
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"def": 25,
+		"max_hp": 100
+	},
+	"weight": 10,
+	"special_effects": {
+		"enchantment": "Provides additional resistance to magical attacks."
+	}
+},
+{
+	"name": "Enchanted Amulet",
+	"description": "A magical amulet infused with powerful enchantments.",
+	"looks": "The amulet is made of a rare crystal with a glowing core. It emits a soft, ethereal light.",
+	"durability": "",
+	"item_usage": "trinket",
+	"dmg": {},
+	"stat_bonus": {},
+	"weight": 0.1,
+	"special_effects": {
+		"mana_regeneration": "Increases mana regeneration by 10%"
+	}
+},
+{
+	"name": "Ring of Strength",
+	"description": "A magical ring that enhances the wearer's strength.",
+	"looks": "The ring is made of silver and engraved with ancient runes. It is studded with a large red gemstone that seems to radiate power.",
+	"durability": 100,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"str": 10
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 0.5,
+	"special_effects": {
+		"enhanced_power": "Increases the user's physical strength and damage."
+	}
+},
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
+	}
+},
+{
+	"name": "Amulet of Wisdom",
+	"description": "An enchanted amulet that enhances the wisdom of its wearer.",
+	"looks": "The amulet is made of silver and has a blue gemstone in the center. It has intricate engravings of symbols related to wisdom and knowledge.",
+	"durability": 100,
+	"item_usage": "trinket",
+	"stat_bonus": {
+		"wis": 5
+	},
+	"weight": 0.2,
+	"special_effects": {
+		"knowledge_enhancement": "Increases the rate of gaining experience and knowledge"
+	}
+},
+{
+	"name": "Staff of Healing",
+	"description": "A staff imbued with powerful healing energy.",
+	"looks": "The staff is made of polished wood with intricate carvings of healing symbols. It glows with a soft golden light.",
+	"durability": 150,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_healing": -50
+	},
+	"stat_bonus": {
+		"int": 5,
+		"wis": 3,
+		"max_mp": 50
+	},
+	"usage_requirements": {
+		"int": 15
+	},
+	"weight": 2,
+	"special_effects": {
+		"healing_aura": "Emits a healing aura that regenerates the health of nearby allies."
+	}
+},
+{
+	"name": "Blade of Shadows",
+	"description": "A deadly dagger infused with the essence of darkness.",
+	"looks": "The Blade of Shadows is a sleek and slim dagger with a dark, ebony blade. It has a handle wrapped in black leather and a pommel adorned with a small black gem.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10,
+		"dmg_dark": 15
+	},
+	"stat_bonus": {
+		"dex": 5,
+		"luck": 3
+	},
+	"usage_requirements": {
+		"dex": 15
+	},
+	"weight": 1,
+	"special_effects": {
+		"shadow_strike": "Allows the wielder to become invisible for a short duration after a successful hit."
+	}
+},
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
+	}
+},
+{
+	"name": "Leather Armor",
+	"description": "A set of light and flexible armor made from animal hide.",
+	"looks": "The armor consists of a chest piece, shoulder pads, gauntlets, and greaves. It is made from high-quality leather and is adorned with intricate stitching and metal rivets.",
+	"durability": 200,
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"def": 10,
+		"spd": 5
+	},
+	"weight": 5.5
+},
+{
+	"name": "Staff of Healing",
+	"description": "A magical staff that is capable of healing wounds and restoring health.",
+	"looks": "The staff has a long, wooden shaft with delicate engravings. At the top of the staff, there is a glowing crystal that emits a soft, healing light.",
+	"durability": 200,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_healing": -10
+	},
+	"stat_bonus": {
+		"wis": 5,
+		"max_mp": 100
+	},
+	"usage_requirements": {
+		"wis": 15
+	},
+	"weight": 3,
+	"special_weapon_skills": {
+		"Healing Mastery": "Increases the effectiveness of healing spells and abilities."
+	},
+	"special_effects": {
+		"healing_touch": "Has a chance to restore additional health upon successful healing."
+	}
+}
+]

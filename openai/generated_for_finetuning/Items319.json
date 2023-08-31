@@ -1,0 +1,159 @@
+[
+{
+	"name": "Invisibility Potion",
+	"description": "A potion that grants the user temporary invisibility.",
+	"looks": "The potion is a clear liquid that seems to shimmer and distort light.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"item_recipee": [
+		"Dragon Fern",
+		"Ghost Essence"
+	],
+	"stat_bonus": {},
+	"weight": 0.2,
+	"special_effects": {
+		"Invisibility": "Grants temporary invisibility to the user."
+	}
+},
+{
+	"name": "Sword of Flames",
+	"description": "A legendary sword that burns enemies with its fiery blade.",
+	"looks": "The sword has an intricate hilt with flames engraved on the blade. It radiates heat.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 30,
+		"dmg_fire": 20
+	},
+	"stat_bonus": {
+		"str": 10
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 2.5,
+	"special_weapon_skills": {
+		"fire_magic": "Increases fire magic damage by 10%",
+		"sword_mastery": "Increases sword damage by 20%"
+	},
+	"special_effects": {
+		"burning_strike": "Has a chance to ignite enemies on hit"
+	}
+},
+{
+	"name": "Fireball Scroll",
+	"description": "A scroll that contains the Fireball spell.",
+	"looks": "The scroll is made of parchment and adorned with ancient symbols.",
+	"durability": 1,
+	"item_usage": "util",
+	"dmg": {
+		"dmg_fire": -30
+	},
+	"stat_bonus": {
+		"cast_speed": 2
+	},
+	"usage_requirements": {
+		"int": 10
+	},
+	"weight": 0.05,
+	"special_effects": {
+		"ignite": "Ignites the target, causing additional damage over time."
+	}
+},
+{
+	"name": "Elixir of Agility",
+	"description": "A potion that enhances the drinker's agility and dexterity for a short duration.",
+	"looks": "The elixir is contained in a small, crystal vial, shimmering with a bright green color.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"item_recipee": [
+		"Weeping Willow Leaves",
+		"Essence of Robin"
+	],
+	"stat_bonus": {
+		"dex": 10
+	},
+	"weight": 0.1
+},
+{
+	"name": "Speedy Boots",
+	"description": "A pair of boots that increase the wearer's movement speed.",
+	"looks": "The boots are made of fine black leather with silver accents.",
+	"durability": 100,
+	"item_usage": "wear_feet",
+	"stat_bonus": {
+		"spd": 10
+	},
+	"usage_requirements": {
+		"dex": 20
+	},
+	"weight": 1.5
+},
+{
+	"name": "Speed Boots",
+	"description": "These boots give the wearer increased movement speed.",
+	"looks": "The boots are made of fine leather and have sleek design.",
+	"durability": 100,
+	"item_usage": "wear_feet",
+	"stat_bonus": {
+		"spd": 10
+	},
+	"weight": 1.5
+},
+{
+	"name": "Enchanted Ruby",
+	"description": "A precious gem infused with magical energy.",
+	"looks": "The ruby is a deep red color and glows with a faint inner light.",
+	"durability": 1,
+	"item_usage": "jewelry",
+	"weight": 0.05,
+	"special_effects": {
+		"enhanced_spell_power": "Increases the power of spells cast by the wearer."
+	}
+},
+{
+	"name": "Mysterious Amulet",
+	"description": "A mysterious amulet with unknown powers.",
+	"looks": "The amulet is made of a black, shiny material with intricate carvings.",
+	"durability": 1,
+	"item_usage": "trinket",
+	"stat_bonus": {
+		"luck": 3
+	},
+	"weight": 0.05,
+	"special_effects": {
+		"mystery_power": "Unlocks hidden powers when equipped."
+	}
+},
+{
+	"name": "Agility Elixir",
+	"description": "An elixir that enhances agility for a short period of time.",
+	"looks": "A small, corked glass bottle filled with a clear, shimmering liquid.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"dmg_over_time": {
+		"dmg_light": [-75, 15]
+	},
+	"stat_bonus": {
+		"dex": 10
+	},
+	"usage_requirements": {
+		"dex": 20
+	},
+	"weight": 0.2
+},
+{
+	"name": "Iron Sword",
+	"description": "A simple iron sword.",
+	"looks": "The sword has a plain iron blade with a leather-wrapped handle.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10
+	},
+	"weight": 2,
+	"special_weapon_skills": {
+		"Swordsmanship": "Increases damage and accuracy with swords."
+	}
+}
+]

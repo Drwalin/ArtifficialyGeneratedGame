@@ -1,0 +1,197 @@
+[
+{
+	"name": "Firebolt Scroll",
+	"description": "A scroll that contains a spell to cast a firebolt.",
+	"looks": "The scroll is made of aged parchment and is bound with a red ribbon.",
+	"durability": 1,
+	"item_usage": "util",
+	"dmg": {
+		"dmg_fire": 50
+	},
+	"weight": 0.05,
+	"special_effects": {
+		"burning": "The firebolt sets the target ablaze, dealing additional damage over time."
+	}
+},
+{
+	"name": "Fireball Scroll",
+	"description": "A scroll that contains the fireball spell. When used, it releases a powerful burst of fire.",
+	"looks": "The scroll is made of aged parchment and tied with a red ribbon.",
+	"durability": 1,
+	"item_usage": "util",
+	"dmg": {
+		"dmg_fire": -100
+	},
+	"special_effects": {
+		"burning": "Targets hit by the fireball may catch on fire, taking additional burn damage over time."
+	},
+	"usage_requirements": {
+		"int": 10
+	},
+	"weight": 0.2
+},
+{
+	"name": "Fire Sword",
+	"description": "A sword imbued with the power of fire",
+	"looks": "The sword has a fiery blade with a hilt made of enchanted steel",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"item_recipee": [
+		"Steel Sword",
+		"Fire Essence"
+	],
+	"dmg": {
+		"dmg_slashing": 20,
+		"dmg_fire": 10
+	},
+	"stat_bonus": {
+		"str": 5,
+		"def": 10,
+		"spd": 5,
+		"resistance_fire": 10
+    },
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 2.5,
+	"special_weapon_skills": {
+		"fire_magic": "Allows the user to cast fire-related spells more efficiently"
+	}
+},
+{
+	"name": "Fireball Scroll",
+	"description": "A scroll that contains the knowledge to cast a fireball spell",
+	"looks": "The scroll is made of finely crafted parchment and is sealed with a wax seal.",
+	"durability": 1,
+	"item_usage": "util",
+	"usage_requirements": {
+		"int": 10
+	},
+	"special_effects": {
+		"Cast Fireball": "Allows the user to cast a powerful fireball spell"
+	},
+	"weight": 0.05
+},
+{
+	"name": "Fireball Scroll",
+	"description": "A scroll that contains the fireball spell.",
+	"looks": "The scroll is made of aged parchment and sealed with a red wax seal.",
+	"durability": 1,
+	"item_usage": "util",
+	"item_recipee": [
+		"Blank Scroll",
+		"Incendium Essence"
+	],
+	"dmg": {
+		"dmg_fire": 100
+	},
+	"usage_requirements": {
+		"int": 15
+	},
+	"weight": 0.2,
+	"special_effects": {
+		"Burning": "The fireball has a chance to set the target on fire, dealing additional damage over time."
+	}
+},
+{
+	"name": "Mithril Sword",
+	"description": "A legendary sword made from mithril, the sword glows with a faint blue light.",
+	"looks": "The sword has a silver blade with intricate engravings, and a hilt wrapped in blue leather.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 50
+	},
+	"stat_bonus": {
+		"str": 10,
+		"dex": 5
+	},
+	"usage_requirements": {
+		"str": 30,
+		"dex": 20
+	},
+	"weight": 2.5,
+	"special_weapon_skills": {
+		"Sword Mastery": "Increases sword damage by 10%"
+	},
+	"special_effects": {
+		"Blinding Strike": "Has a chance to blind the enemy on critical hits"
+	}
+},
+{
+	"name": "Fireball Scroll",
+	"description": "A scroll that allows the user to cast fireball spell.",
+	"looks": "The scroll is made of ancient parchment, with intricate symbols and runes inscribed on it.",
+	"durability": 1,
+	"item_usage": "util",
+	"dmg": {
+		"dmg_fire": 80
+	},
+	"stat_bonus": {
+		"cast_speed": -0.1,
+		"max_mp": -20
+	},
+	"usage_requirements": {
+		"int": 30,
+		"per": 25
+	},
+	"weight": 0.3,
+	"special_effects": {
+		"ignite": "The fireball has a chance to ignite the target, dealing additional damage over time."
+	}
+},
+{
+	"name": "Agility Ring",
+	"description": "A ring that enhances the wearer's agility and movement speed.",
+	"looks": "The ring is made of polished silver and has a small gemstone embedded in it.",
+	"durability": 1,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"dex": 4,
+		"spd": 10
+	},
+	"usage_requirements": {
+		"dex": 10
+	},
+	"weight": 0.2
+},
+{
+	"name": "Ring of Agility",
+	"description": "A ring that enhances the wearer's agility and dexterity.",
+	"looks": "The ring is made of silver with intricate engravings of swirling patterns.",
+	"durability": 1,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"dex": 4
+	},
+	"usage_requirements": {
+		"level": 10
+	},
+	"weight": 0.3,
+	"special_effects": {
+		"agile_stealth": "Increases the wearer's stealth ability."
+	}
+},
+{
+	"name": "Reinforced Iron Sword",
+	"description": "A sturdy and reliable sword made from reinforced iron.",
+	"looks": "The sword has a solid steel blade with intricate engravings and a leather-wrapped hilt.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 2,
+		"dex": 1
+	},
+	"usage_requirements": {
+		"str": 10,
+		"dex": 8
+	},
+	"weight": 2.5,
+	"special_weapon_skills": {
+		"Sword Mastery": "Increases damage and accuracy with swords."
+	}
+}
+]

@@ -1,0 +1,183 @@
+[
+{
+	"name": "Diamond Sword",
+	"description": "A powerful sword made from pure diamond, capable of slicing through even the toughest armor.",
+	"looks": "The Diamond Sword has a long, silver blade with a sharp edge. The hilt is made from a combination of diamond and gold, giving it a luxurious appearance.",
+	"durability": 500,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 50
+	},
+	"stat_bonus": {
+		"str": 10,
+		"dex": 5
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 4.5
+},
+{
+	"name": "Steel Gauntlets",
+	"description": "A pair of steel gauntlets that provide excellent hand protection.",
+	"looks": "The gauntlets are made of sturdy steel plates, covering the entire hand and extending up to the forearms. They have a polished silver finish and intricate engravings.",
+	"durability": 150,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 8,
+		"str": 2
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 4
+},
+{
+	"name": "Steel Boots",
+	"description": "A pair of sturdy boots made from steel",
+	"looks": "The boots are made of polished steel and have a sleek design. They come up to the mid-calf and have thick soles for added durability.",
+	"durability": 150,
+	"item_usage": "wear_feet",
+	"stat_bonus": {
+		"def": 8,
+		"spd": -1
+	},
+	"usage_requirements": {
+		"dex": 12
+	},
+	"weight": 4
+},
+{
+	"name": "Steel Greaves",
+	"description": "Protective leg armor made from sturdy steel.",
+	"looks": "The steel greaves are a pair of shin guards made from thick steel plates. They have leather straps and buckles for a secure fit.",
+	"durability": 150,
+	"item_usage": "wear_legs",
+	"stat_bonus": {
+		"def": 8
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 5
+},
+{
+	"name": "Ruby Wand",
+	"description": "A wand made from pure ruby, imbued with powerful magical energy.",
+	"looks": "The Ruby Wand is a slender rod made entirely of gleaming red ruby. It is smooth to the touch and emits a faint glow.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_fire": 20,
+		"dmg_dark": -5
+	},
+	"stat_bonus": {
+		"max_mp": 40,
+		"int": 10,
+		"wis": 5,
+		"regen_mp": 2
+	},
+	"usage_requirements": {
+		"int": 30
+	},
+	"weight": 0.5,
+	"special_effects": {
+		"spellpower_boost": "Boosts the power of fire spells"
+	}
+},
+{
+	"name": "Iron Sword",
+	"description": "A standard iron sword, suitable for everyday combat.",
+	"looks": "The iron sword has a straight, double-edged blade with a simple hilt made of leather-wrapped metal. It has a moderate length, making it versatile for different fighting styles.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_slashing": 10,
+		"def": 2
+	},
+	"usage_requirements": {
+		"str": 15,
+		"dex": 10
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"sword_fighting": "Grants a bonus to Sword Fighting skill when wielded."
+	}
+},
+{
+	"name": "Sword of the Warrior",
+	"description": "A powerful sword crafted for skilled warriors.",
+	"looks": "The Sword of the Warrior has a large, single-edged blade with a sharp tip. The hilt is wrapped in black leather and engraved with intricate runes.",
+	"durability": 150,
+	"item_usage": "two_hand",
+	"stat_bonus": {
+		"dmg_slashing": 30,
+		"str": 10,
+		"dex": 5
+	},
+	"usage_requirements": {
+		"str": 20
+	},
+	"weight": 4.5,
+	"special_weapon_skils": {
+		"swordsmanship": "Grants a bonus to Swordsmanship skill when wielded."
+	}
+},
+{
+	"name": "Flaming Sword",
+	"description": "A sword engulfed in flames, radiating intense heat.",
+	"looks": "The Flaming Sword has a long, curved blade that glows with fiery red and orange hues. Flames dance along the length of the blade, giving off a pulsating heat. The hilt is wrapped in flame-embossed leather, providing a secure grip.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_fire": 10,
+		"def": 5
+	},
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"usage_requirements": {
+		"str": 20,
+		"dex": 10
+	},
+	"weight": 4,
+	"special_effects": {
+		"fire_damage": "Deals additional fire damage with each strike."
+	},
+	"special_weapon_skills": {
+		"sword": "Grants a bonus to Sword skill when wielded."
+	}
+},
+{
+	"name": "Steel Gauntlets",
+	"description": "Heavy gauntlets made of steel for added hand protection in combat.",
+	"looks": "The steel gauntlets are large and sturdy, covering the hands and extending up the forearms. They are made of polished steel with engraved patterns and have reinforced knuckles.",
+	"durability": 150,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 8,
+		"str": 3
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 4
+},
+{
+	"name": "Bronze Sword",
+	"description": "A basic sword made of bronze.",
+	"looks": "The bronze sword has a simple and practical design. The blade is straight and slightly curved near the tip, with a bronze hilt and handle wrapped in leather for a comfortable grip.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 2.5
+}
+]

@@ -1,0 +1,159 @@
+[
+{
+	"name": "Brewer's Yeast",
+	"description": "A type of yeast used in brewing beer and making potions.",
+	"looks": "It is a fine, powdery substance that is light brown in color.",
+	"durability": 10,
+	"item_usage": "consumable",
+	"weight": 0.05
+},
+{
+	"name": "Shield of Protection",
+	"description": "A sturdy shield that provides excellent protection against physical attacks.",
+	"looks": "The shield is made of reinforced steel and has a golden emblem of a lion in the center.",
+	"durability": 100,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 10
+	},
+	"weight": 2.5
+},
+{
+	"name": "Fireball Staff",
+	"description": "A staff that allows the user to conjure and launch fireballs.",
+	"looks": "The staff is made of polished wood with a ruby gem embedded at the top. It emits a faint glow.",
+	"durability": 100,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_fire": 50
+	},
+	"stat_bonus": {
+		"int": 10
+	},
+	"usage_requirements": {
+		"int": 20
+	},
+	"weight": 2.5,
+	"special_weapon_skills": {
+		"Fire Magic": "Allows the user to cast fire spells with increased effectiveness."
+	},
+	"special_effects": {
+		"Burning": "Fireball has a chance to cause burn damage over time."
+	}
+},
+{
+	"name": "Lightning Staff",
+	"description": "A wooden staff crackling with electricity.",
+	"looks": "The staff is made of polished oak with intricate carvings and a crystal on top that crackles with electricity.",
+	"durability": 100,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_lightning": 10
+	},
+	"stat_bonus": {
+		"int": 5,
+		"wis": 3,
+		"max_mp": 50
+	},
+	"usage_requirements": {
+		"int": 10
+	},
+	"weight": 1.5,
+	"special_weapon_skills": {
+		"Staff Mastery": "Increases damage and accuracy with staffs."
+	}
+},
+{
+	"name": "Brewer's Yeast",
+	"description": "A key ingredient used in brewing potions.",
+	"looks": "A small packet of dried, powdery substance.",
+	"durability": 1,
+	"item_usage": "junk",
+	"weight": 0.05
+},
+{
+	"name": "Protection Potion",
+	"description": "A potion that grants temporary damage resistance and increases defense.",
+	"looks": "The potion is a thick, golden liquid swirling with shimmering particles.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"item_recipee": [
+		"Purified Water",
+		"Diamond Dust",
+		"Goblin Eyeball"
+	],
+	"stat_bonus": {
+		"def": 10,
+		"resistance_physical": -25
+	},
+	"weight": 0.2
+},
+{
+	"name": "Elemental Staff",
+	"description": "A staff that harnesses elemental powers.",
+	"looks": "The staff is made of wood, adorned with intricate carvings and embedded with gemstones that glow with elemental energy.",
+	"durability": 200,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_fire": 20,
+		"dmg_water": 20,
+		"dmg_air": 20,
+		"dmg_earth": 20
+	},
+	"stat_bonus": {
+		"wis": 5,
+		"int": 5,
+		"cast_speed": 10
+	},
+	"weight": 1.5,
+	"special_weapon_skills": {
+		"elemental_magic": "Increases the effectiveness of elemental magic spells."
+	},
+	"special_effects": {
+		"elemental_fury": "Chance to unleash a powerful elemental attack with each swing."
+	}
+},
+{
+	"name": "Flaming Sword",
+	"description": "A sword imbued with the power of fire, dealing additional fire damage to enemies.",
+	"looks": "The sword has a sleek, silver blade with intricate engravings. The hilt is wrapped in red leather, and it emits a faint orange glow.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 30,
+		"dmg_fire": 20
+	},
+	"stat_bonus": {
+		"str": 5
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 2.5,
+	"special_weapon_skills": {
+		"Fire Mastery": "Increases fire damage by 50%"
+	}
+},
+{
+	"name": "Speed Boots",
+	"description": "A pair of boots that greatly increase movement speed.",
+	"looks": "The boots are made of sleek black leather with silver accents.",
+	"durability": 100,
+	"item_usage": "wear_feet",
+	"stat_bonus": {
+		"spd": 20
+	},
+	"weight": 1.5
+},
+{
+	"name": "Instant Health Potion",
+	"description": "A potion that instantly restores a large amount of health.",
+	"looks": "A small glass vial filled with a bright red liquid.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"stat_bonus": {
+		"hp": 100
+	},
+	"weight": 0.2
+}
+]

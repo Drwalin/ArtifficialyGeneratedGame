@@ -1,0 +1,148 @@
+[
+{
+	"name": "Slow Healing Potion",
+	"description": "A potion that restores health points.",
+	"looks": "A small, glass vial filled with a glowing, green liquid.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"dmg_over_time": {
+		"dmg_light": [-80, 10]
+	},
+	"weight": 0.1
+},
+{
+	"name": "Confusion Bomb",
+	"description": "A throwable bomb that creates a cloud of confusion, causing enemies to become disoriented.",
+	"looks": "The bomb is a small, round object with a fuse. When thrown, it explodes and releases a colorful cloud of smoke.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"item_recipee": [
+		"Gunpowder",
+		"Confusion Powder",
+		"Glass Bottle"
+	],
+	"special_effects": {
+		"Confusion": "Causes enemies within the cloud of smoke to become confused, affecting their movement and actions.",
+		"Disorientation": "Enemies have a chance to attack each other instead of the player."
+	},
+	"weight": 0.3
+},
+{
+	"name": "Health Restoration Potion",
+	"description": "A potion that restores a small amount of health.",
+	"looks": "The potion is a small glass vial filled with a glowing blue liquid.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"stat_bonus": {
+		"hp": 50
+	},
+	"weight": 0.1
+},
+{
+	"name": "Poison Resistance Potion",
+	"description": "A potion that increases the user's resistance to poison for a certain amount of time.",
+	"looks": "The potion is a small glass vial filled with a murky green liquid.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"item_recipee": [
+		"Toadstool Extract",
+		"Venomous Spider Fang"
+	],
+	"stat_bonus": {
+		"resistance_poison": 20
+	},
+	"weight": 0.2
+},
+{
+	"name": "Iron Sword",
+	"description": "A standard iron sword used by warriors.",
+	"looks": "The sword has a simple, straight blade made of iron with a leather-wrapped hilt.",
+	"durability": 50,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10
+	},
+	"weight": 2
+},
+{
+	"name": "Lightning Staff",
+	"description": "A staff imbued with the power of lightning.",
+	"looks": "The staff is made of polished oak and crackles with electricity.",
+	"durability": 100,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_lightning": 20
+	},
+	"stat_bonus": {
+		"int": 8,
+		"wis": 4
+	},
+	"usage_requirements": {
+		"int": 10
+	},
+	"weight": 1.5,
+	"special_weapon_skils": {
+		"Staff Mastery": "Increases staff damage by 10%"
+	},
+	"special_effects": {
+		"Chain Lightning": "Has a chance to chain lightning to nearby enemies"
+	}
+},
+{
+	"name": "Speedy Boots",
+	"description": "A pair of boots that enhances the user's speed and agility.",
+	"looks": "The boots are made of a lightweight and durable material, with a sleek design. They are adorned with intricate patterns and have a slight shimmer in the sunlight.",
+	"durability": 100,
+	"item_usage": "wear_feet",
+	"stat_bonus": {
+		"spd": 10,
+		"dex": 5
+	},
+	"usage_requirements": {
+		"dex": 30
+	},
+	"weight": 1.5
+},
+{
+	"name": "Fireball Scroll",
+	"description": "A scroll that contains the Fireball spell.",
+	"looks": "The scroll is made of aged parchment and sealed with a wax emblem. It radiates a faint warmth.",
+	"durability": 1,
+	"item_usage": "util",
+	"stat_bonus": {
+		"max_mp": 10
+	},
+	"usage_requirements": {
+		"int": 15
+	},
+	"weight": 0.3,
+	"special_effects": {
+		"spell_book": "Allows the user to learn the Fireball spell."
+	}
+},
+{
+	"name": "Speed Elixir",
+	"description": "A potion that grants increased speed to the user for a short duration.",
+	"looks": "The elixir is a small glass vial filled with a sparkling, golden liquid.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"stat_bonus": {
+		"spd": 10
+	},
+	"weight": 0.2
+},
+{
+	"name": "Invisibility Potion",
+	"description": "A potion that grants temporary invisibility to the user.",
+	"looks": "A small glass bottle filled with a transparent liquid.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"stat_bonus": {
+		"spd": 20
+	},
+	"special_effects": {
+		"Invisibility": "Grants temporary invisibility to the user"
+	},
+	"weight": 0.2
+}
+]

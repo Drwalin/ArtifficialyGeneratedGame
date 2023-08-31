@@ -1,0 +1,154 @@
+[
+{
+	"name": "Health Restoration Potion",
+	"description": "A potion that restores a small amount of health.",
+	"looks": "The potion is a small glass vial filled with a glowing blue liquid.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"stat_bonus": {
+		"hp": 50
+	},
+	"weight": 0.1
+},
+{
+	"name": "Speed Boots",
+	"description": "Boots that enhance the wearer's speed and movement.",
+	"looks": "A pair of sleek, black leather boots with silver trim.",
+	"durability": 50,
+	"item_usage": "wear_feet",
+	"stat_bonus": {
+		"spd": 3
+	},
+	"usage_requirements": {
+		"dex": 10
+	},
+	"weight": 2.5
+},
+{
+	"name": "Dagger",
+	"description": "A small, sharp dagger used for close-quarters combat.",
+	"looks": "The dagger has a bronze hilt and a steel blade, with intricate designs and engravings.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20
+	},
+	"stat_bonus": {
+		"dex": 2
+	},
+	"weight": 1.5,
+	"special_weapon_skills": {
+		"dagger_proficiency": "Increases proficiency and damage dealt with daggers."
+	}
+},
+{
+	"name": "Speed Elixir",
+	"description": "An elixir that enhances the user's speed for a short period of time.",
+	"looks": "The elixir is a small glass flask filled with a sparkling purple liquid.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"dmg_over_time": {
+		"dmg_air": [0, 5]
+	},
+	"stat_bonus": {
+		"spd": 10
+	},
+	"usage_requirements": {
+		"dex": 10
+	},
+	"weight": 0.2
+},
+{
+	"name": "Magic Wand",
+	"description": "A wand that is used to cast magical spells.",
+	"looks": "The wand is made of polished oak wood, with intricate carvings and a crystal on top.",
+	"durability": 50,
+	"item_usage": "one_hand",
+	"usage_requirements": {
+		"int": 20
+	},
+	"stat_bonus": {
+		"cast_speed": 20,
+		"int": 10
+	},
+	"weight": 0.5,
+	"special_effects": {
+		"Increased Spell Power": "Increases the power of spells cast with this wand",
+		"Spell Focus": "Improves accuracy and effectiveness of spells cast with this wand",
+		"Mana Regeneration": "Regenerates mana over time while equipped"
+	}
+},
+{
+	"name": "Fireball Scroll",
+	"description": "A scroll that contains the fireball spell.",
+	"looks": "The scroll is made of aged parchment and sealed with a red wax seal.",
+	"durability": 1,
+	"item_usage": "util",
+	"dmg": {
+		"dmg_fire": -10
+	},
+	"weight": 0.2
+},
+{
+	"name": "Fireball Scroll",
+	"description": "A scroll that contains the knowledge to cast the Fireball spell.",
+	"looks": "The scroll is made of aged parchment and is bound with a red ribbon.",
+	"durability": 1,
+	"item_usage": "util",
+	"item_recipee": [
+		"Papyrus",
+		"Dragon's Blood Ink",
+		"Fire Essence"
+	],
+	"stat_bonus": {
+		"int": 1
+	},
+	"special_effects": {
+		"fireball": "Allows the user to cast the Fireball spell"
+	},
+	"weight": 0.05
+},
+{
+	"name": "Lucky Necklace",
+	"description": "A necklace that brings good luck to the wearer.",
+	"looks": "The necklace is made of a delicate chain with a small pendant in the shape of a four-leaf clover.",
+	"durability": 1,
+	"item_usage": "trinket",
+	"stat_bonus": {
+		"luck": 10
+	},
+	"weight": 0.2
+},
+{
+	"name": "Journeyman's Bow",
+	"description": "A well-crafted bow suitable for a skilled archer.",
+	"looks": "The bow is made of polished wood and has intricate carvings along its length. It is adorned with a string made of strong, woven fibers.",
+	"durability": 100,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_physical": 25
+	},
+	"stat_bonus": {
+		"dex": 3
+	},
+	"usage_requirements": {
+		"dex": 10
+	},
+	"weight": 1.5,
+	"special_weapon_skils": {
+		"archery": "Increases accuracy and damage with bows."
+	}
+},
+{
+	"name": "Invisibility Potion",
+	"description": "A potion that grants temporary invisibility to the user.",
+	"looks": "The potion is a small glass vial filled with a transparent liquid.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"stat_bonus": {},
+	"weight": 0.1,
+	"special_effects": {
+		"Invisibility": "Grants temporary invisibility to the user"
+	}
+}
+]

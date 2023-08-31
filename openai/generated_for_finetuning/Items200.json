@@ -1,0 +1,187 @@
+[
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
+	}
+},
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
+	}
+},
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
+	}
+},
+{
+	"name": "Elven Bow",
+	"description": "A beautifully crafted bow made by skilled elven archers.",
+	"looks": "The bow is made of a combination of wood and flexible elven materials. It is slim and delicate, yet sturdy and powerful.",
+	"durability": 200,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_piercing": 15
+	},
+	"stat_bonus": {
+		"dex": 10,
+		"per": 5
+	},
+	"usage_requirements": {
+		"dex": 15
+	},
+	"weight": 2,
+	"special_weapon_skills": {
+		"Archery": "Increases accuracy and damage with bows."
+	}
+},
+{
+	"name": "Staff of Healing",
+	"description": "A magical staff that has the power to heal wounds and restore vitality.",
+	"looks": "The staff is made of shimmering white wood and has a crystal orb at the top. The orb emits a soft glowing light.",
+	"durability": 150,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_healing": -20
+	},
+	"stat_bonus": {
+		"wis": 5,
+		"max_mp": 50
+	},
+	"usage_requirements": {
+		"wis": 15
+	},
+	"weight": 3,
+	"special_effects": {
+		"healing_energy": "Restores health to allies within range."
+	}
+},
+{
+	"name": "Whispering Wind",
+	"description": "A mystical dagger imbued with the power of the wind.",
+	"looks": "The dagger has a slender blade with a curved design reminiscent of a swirling wind. The hilt is adorned with delicate silver filigree and a small gemstone that seems to shimmer with a soft breeze.",
+	"durability": 180,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10,
+		"dmg_air": 15
+	},
+	"stat_bonus": {
+		"dex": 5,
+		"spd": 2
+	},
+	"usage_requirements": {
+		"dex": 15
+	},
+	"weight": 1,
+	"special_weapon_skills": {
+		"Dagger Mastery": "Increases dagger handling and damage."
+	},
+	"special_effects": {
+		"Whirlwind Slash": "Allows the wielder to perform a spinning attack that hits multiple enemies in close proximity."
+	}
+},
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
+	}
+},
+{
+	"name": "Warrior's Helm",
+	"description": "A sturdy helmet that provides excellent protection in battle.",
+	"looks": "The helmet is made of strong metal and has a full-face visor. It has a crest on top and is adorned with engravings of mythical creatures.",
+	"durability": 200,
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 10,
+		"str": 5
+	},
+	"resistance_slashing": 20,
+	"weight": 5.5
+},
+{
+	"name": "Amulet of Wisdom",
+	"description": "A mystical amulet that enhances the wearer's wisdom and intellect.",
+	"looks": "The amulet is made of shimmering silver and is adorned with a large sapphire in the center. It emits a soft blue glow.",
+	"durability": 100,
+	"item_usage": "trinket",
+	"stat_bonus": {
+		"wis": 10,
+		"int": 5,
+		"max_mp": 50
+	},
+	"usage_requirements": {
+		"wis": 15
+	},
+	"weight": 0.5,
+	"special_effects": {
+		"knowledge_gain": "Increases the rate at which the wearer gains knowledge and experience."
+	}
+},
+{
+	"name": "Spear",
+	"description": "A long, shafted weapon with a pointed blade at one end, used for thrusting or throwing.",
+	"looks": "The spear has a long wooden shaft with a metal point at one end. It is sleek and lightweight, perfect for quick strikes.",
+	"durability": 200,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_piercing": 12
+	},
+	"stat_bonus": {
+		"dex": 2
+	},
+	"weight": 3.5
+}
+]

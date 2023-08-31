@@ -1,0 +1,197 @@
+[
+{
+	"name": "Staff of the Winds",
+	"description": "A mystical staff that controls the power of the wind.",
+	"looks": "The staff has a long wooden shaft with intricate carvings of swirling winds. At the top of the staff, there is a crystal orb that glows with a pale blue light.",
+	"durability": 200,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_air": 15
+	},
+	"stat_bonus": {
+		"int": 10,
+		"max_mp": 50,
+		"spd": 5
+	},
+	"usage_requirements": {
+		"int": 20
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"wind_blast": "Allows the user to summon a powerful gust of wind to knock enemies back."
+	}
+},
+{
+	"name": "Steel Sword",
+	"description": "A sturdy sword made of steel.",
+	"looks": "The steel sword has a straight blade with a sharp edge. The hilt is made of leather and has a simple design.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 2
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 2.5
+},
+{
+	"name": "Healing Potion",
+	"description": "A potion that restores health when consumed.",
+	"looks": "The healing potion is a small glass bottle filled with a glowing liquid. It emits a soft light and has a sweet aroma.",
+	"durability": null,
+	"item_usage": "consumable",
+	"dmg": null,
+	"stat_bonus": null,
+	"weight": 0.2,
+	"special_effects": {
+		"healing": "Restores 50 HP when consumed."
+	}
+},
+{
+	"name": "Staff of the Elements",
+	"description": "A powerful staff that harnesses the power of the elemental forces.",
+	"looks": "The staff is made of ancient oak and is adorned with glowing gemstones representing each element. As you grip the staff, you can feel the energy coursing through it.",
+	"durability": 200,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_fire": 10,
+		"dmg_water": 10,
+		"dmg_air": 10,
+		"dmg_earth": 10,
+		"dmg_lightning": 10
+	},
+	"stat_bonus": {
+		"int": 10,
+		"max_mp": 100
+	},
+	"usage_requirements": {
+		"int": 30
+	},
+	"weight": 3.5,
+	"special_effects": {
+		"elemental_mastery": "Increases the damage of elemental spells by 25%.",
+		"elemental_convergence": "Unleashes a powerful burst of elemental energy that damages all enemies in a radius."
+	}
+},
+{
+	"name": "Enchanted Wand",
+	"description": "A magical wand infused with powerful enchantments.",
+	"looks": "The wand has a sleek design with a crystal at its tip that glows with a soft, bright light. The handle is wrapped in velvet and adorned with silver accents.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_magic": 12
+	},
+	"stat_bonus": {
+		"int": 7,
+		"max_mp": 75
+	},
+	"usage_requirements": {
+		"int": 15
+	},
+	"weight": 0.5,
+	"special_effects": {
+		"spell_potency": "Increases the power of spells cast using this wand."
+	}
+},
+{
+	"name": "Iron Sword",
+	"description": "A basic iron sword",
+	"looks": "The sword has a simple design, with a straight iron blade and a leather-wrapped hilt.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10
+	},
+	"stat_bonus": {
+		"str": 2
+	},
+	"weight": 2.5
+},
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
+	}
+},
+{
+	"name": "Emerald Wand",
+	"description": "A magical wand adorned with a shimmering emerald.",
+	"looks": "The wand is made of polished mahogany wood with intricate carvings. It has a vibrant green emerald at the tip that glows with a soft light.",
+	"durability": 120,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_mental": 12
+	},
+	"stat_bonus": {
+		"int": 8,
+		"max_mp": 40
+	},
+	"usage_requirements": {
+		"int": 15
+	},
+	"weight": 0.8,
+	"special_effects": {
+		"spell_power": "Increases the power of spells cast with this wand."
+	}
+},
+{
+	"name": "Scepter of Healing",
+	"description": "A mystical scepter that enhances healing abilities.",
+	"looks": "The scepter is made of pure crystal and emits a soft, soothing glow. It is adorned with intricate engravings of leaves and flowers.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_light": -10
+	},
+	"stat_bonus": {
+		"wis": 5,
+		"max_mp": 50
+	},
+	"usage_requirements": {
+		"wis": 15
+	},
+	"weight": 1,
+	"special_effects": {
+		"healing_aura": "Increases the effectiveness of healing spells and abilities."
+	}
+},
+{
+	"name": "Mystic Staff",
+	"description": "A staff with magical properties that enhances spellcasting abilities.",
+	"looks": "The staff is made of carved oak wood and is adorned with glowing crystals embedded into the handle. It emits a soft, ethereal glow.",
+	"durability": 200,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_mental": 10
+	},
+	"stat_bonus": {
+		"int": 5,
+		"max_mp": 50
+	},
+	"usage_requirements": {
+		"int": 15
+	},
+	"weight": 4,
+	"special_effects": {
+		"spell_power": "Increases the damage of spells by 15%"
+	}
+}
+]

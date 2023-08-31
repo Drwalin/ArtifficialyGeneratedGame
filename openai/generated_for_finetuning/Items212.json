@@ -1,0 +1,199 @@
+[
+{
+	"name": "Staff of the Arcane",
+	"description": "A mystical staff imbued with powerful arcane energies.",
+	"looks": "The staff is made of polished ebony and adorned with intricate silver engravings. It crackles with magical energy and emits a faint glow.",
+	"durability": 200,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_mental": 30
+	},
+	"stat_bonus": {
+		"int": 8,
+		"max_mp": 100
+	},
+	"usage_requirements": {
+		"int": 20
+	},
+	"weight": 4,
+	"special_effects": {
+		"arcane_blast": "Unleashes a powerful blast of arcane energy that damages all enemies in an area."
+	}
+},
+{
+	"name": "Spellbook of Fireball",
+	"description": "A spellbook that contains the knowledge of casting fireball spells.",
+	"looks": "The spellbook has a leather cover with intricate gold designs. The pages inside are made of enchanted parchment that illuminates when spells are cast.",
+	"durability": 100,
+	"item_usage": "util",
+	"dmg": {
+		"dmg_fire": 75
+	},
+	"stat_bonus": {
+		"int": 10,
+		"max_mp": 100
+	},
+	"usage_requirements": {
+		"int": 15
+	},
+	"weight": 1,
+	"special_effects": {
+		"area_damage": "Fireball explodes on impact, damaging all enemies in the area."
+	}
+},
+{
+	"name": "Staff of Healing",
+	"description": "A staff imbued with healing energies, capable of restoring health to allies.",
+	"looks": "The staff is made of smooth, polished wood with intricate carvings of leaves and vines. The top of the staff is adorned with a glowing crystal that emits a soft green light.",
+	"durability": 200,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_light": -10
+	},
+	"stat_bonus": {
+		"wis": 5,
+		"max_mp": 50
+	},
+	"usage_requirements": {
+		"wis": 10
+	},
+	"weight": 3.5,
+	"special_effects": {
+		"healing_touch": "Restores 20 health to the target with each successful hit."
+	}
+},
+{
+	"name": "Life Staff",
+	"description": "A mystical staff that emanates healing energy.",
+	"looks": "The staff is made of a smooth white wood with golden accents. It emits a soft, warm glow.",
+	"durability": 150,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_nature": -10
+	},
+	"stat_bonus": {
+		"wis": 5,
+		"max_mp": 50
+	},
+	"usage_requirements": {
+		"wis": 15
+	},
+	"weight": 3,
+	"special_effects": {
+		"healing_over_time": "Heals the target for 10 HP over 5 seconds."
+	}
+},
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
+	}
+},
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
+	}
+},
+{
+	"name": "Staff of Healing",
+	"description": "A mystical staff that channels healing energy.",
+	"looks": "The staff has a wooden shaft with intricate carvings of vines and flowers. The top of the staff is adorned with a crystal orb that glows with a soft, healing light.",
+	"durability": 200,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_light": -10
+	},
+	"stat_bonus": {
+		"wis": 5,
+		"max_mp": 50
+	},
+	"usage_requirements": {
+		"wis": 15
+	},
+	"weight": 3,
+	"special_effects": {
+		"healing_touch": "Increases the effectiveness of healing spells and abilities."
+	}
+},
+{
+	"name": "Ring of Protection",
+	"description": "A magical ring that provides enhanced protection to the wearer.",
+	"looks": "The ring has a simple design with a smooth metallic band.",
+	"durability": 200,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 10,
+		"max_hp": 50
+	},
+	"weight": 0.5,
+	"special_effects": {
+		"shielding": "Creates a protective shield around the wearer, reducing incoming damage."
+	}
+},
+{
+    "name": "Enchanted Sword",
+    "description": "A magical sword imbued with powerful enchantments.",
+    "looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+    "durability": 150,
+    "item_usage": "one_hand",
+    "dmg": {
+        "dmg_physical": 15
+    },
+    "stat_bonus": {
+        "str": 5,
+        "dex": 3
+    },
+    "weight": 2.5,
+    "special_effects": {
+        "elemental_damage": "Adds additional fire damage to attacks"
+    }
+},
+{
+	"name": "Staff of Healing",
+	"description": "A staff infused with powerful healing magic.",
+	"looks": "The staff has a slender wooden handle with a crystal orb at the top. The orb emits a soft glow and is surrounded by swirling light.",
+	"durability": 200,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_mental": -10
+	},
+	"stat_bonus": {
+		"int": 5,
+		"wis": 3,
+		"max_mp": 50
+	},
+	"usage_requirements": {
+		"int": 15
+	},
+	"weight": 3,
+	"special_effects": {
+		"healing_touch": "Increases the effectiveness of healing spells and abilities.",
+		"regeneration": "Provides passive MP regeneration over time."
+	}
+}
+]

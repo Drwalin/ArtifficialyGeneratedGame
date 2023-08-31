@@ -1,0 +1,207 @@
+[
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
+	}
+},
+{
+	"name": "Bow of Ice",
+	"description": "A bow that shoots arrows infused with ice magic.",
+	"looks": "The bow has a sleek design with a blue and silver color scheme. The limbs of the bow are made of a translucent ice-like material, and the grip is wrapped in soft white leather.",
+	"durability": 150,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_ice": 10,
+		"dmg_piercing": 5
+	},
+	"stat_bonus": {
+		"dex": 3
+	},
+	"usage_requirements": {
+		"dex": 15
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"freeze": "Arrows have a chance to freeze the target, slowing them down."
+	}
+},
+{
+	"name": "Elven Bow",
+	"description": "A beautifully crafted bow made by elven artisans.",
+	"looks": "The Elven Bow is made from the finest materials, with a sleek and elegant design. It has intricate engravings of nature and elven symbols, and is adorned with delicate vines and leaves.",
+	"durability": 200,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_piercing": 30
+	},
+	"stat_bonus": {
+		"dex": 10,
+		"spd": 3
+	},
+	"usage_requirements": {
+		"dex": 25
+	},
+	"weight": 2,
+	"special_weapon_skills": {
+		"Archery": "Increases accuracy and damage with bows."
+	},
+	"special_effects": {
+		"Precision Shot": "Allows for a precise shot that deals extra damage to a target's weak point."
+	}
+},
+{
+	"name": "Enchanted Bow",
+	"description": "A mystical bow infused with ancient magic.",
+	"looks": "The bow is crafted from ethereal wood and glows with a soft blue light. The string is made of pure moonlight, adding to the enchanting appearance.",
+	"durability": 200,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_physical": 25,
+		"dmg_light": 20
+	},
+	"stat_bonus": {
+		"dex": 8,
+		"spd": 3
+	},
+	"usage_requirements": {
+		"dex": 15
+	},
+	"weight": 2.5,
+	"special_weapon_skills": {
+		"Bow Mastery": "Increases accuracy and damage with bows."
+	}
+},
+{
+	"name": "Steel Longsword",
+	"description": "A sturdy longsword made of steel.",
+	"looks": "The longsword has a polished steel blade with a double-edged design. The hilt is wrapped in leather for a comfortable grip.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 25
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 2
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 2.8
+},
+{
+	"name": "Sword of Flames",
+	"description": "A legendary sword that burns with the power of fire.",
+	"looks": "The Sword of Flames has a fiery blade that flickers and dances with flames. The hilt is made of obsidian and adorned with ruby gemstones.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 30,
+		"dmg_fire": 50
+	},
+	"stat_bonus": {
+		"str": 10,
+		"dex": 5
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 3,
+	"special_weapon_skills": {
+		"Swordsmanship": "Increases damage with swords by 20%.",
+		"Fire Mastery": "Increases fire damage by 50%."
+	},
+	"special_effects": {
+		"burning_strike": "Has a chance to set the target on fire, dealing additional fire damage over time."
+	}
+},
+{
+	"name": "Staff of Healing",
+	"description": "A staff infused with powerful healing magic.",
+	"looks": "The staff is made of polished oak and has a glowing crystal at the top. It emits a soft white light.",
+	"durability": 150,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_physical": -5,
+		"dmg_healing": 25
+	},
+	"stat_bonus": {
+		"int": 10,
+		"max_mp": 100
+	},
+	"usage_requirements": {
+		"int": 15
+	},
+	"weight": 4.5,
+	"special_effects": {
+		"healing_aura": "Emits a healing aura that gradually restores health to nearby allies."
+	}
+},
+{
+	"name": "Silver Dagger",
+	"description": "A small, lightweight dagger made of silver.",
+	"looks": "The dagger has a sleek silver blade with a pointed tip and a hilt wrapped in black leather.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_piercing": 10
+	},
+	"stat_bonus": {
+		"dex": 3,
+		"speed": 2
+	},
+	"usage_requirements": {
+		"dex": 15
+	},
+	"weight": 1,
+	"special_effects": {
+		"silver_enchantment": "Deals additional damage to undead and supernatural creatures."
+	}
+},
+{
+	"name": "Scepter of Healing",
+	"description": "A magical scepter that radiates healing energy.",
+	"looks": "The scepter is made of pure ivory and has a golden band near the top. It glows with a soft, golden light.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_mental": -10
+	},
+	"stat_bonus": {
+		"wis": 5,
+		"max_mp": 50
+	},
+	"usage_requirements": {
+		"wis": 20
+	},
+	"weight": 1.5,
+	"special_effects": {
+		"healing_aura": "Emits an aura that heals nearby allies over time."
+	}
+},
+{
+	"name": "Emerald Ring",
+	"description": "A beautiful ring adorned with a sparkling emerald.",
+	"looks": "The ring features a large emerald gemstone set in a silver band. The gemstone glows with a vibrant green hue.",
+	"durability": 100,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"luck": 2,
+		"per": 1
+	},
+	"weight": 0.1
+}
+]

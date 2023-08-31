@@ -1,0 +1,190 @@
+[
+{
+	"name": "Staff of Healing",
+	"description": "A magical staff that is capable of healing wounds and curing ailments.",
+	"looks": "The staff has a long wooden handle with intricate engravings of healing symbols. The top of the staff is adorned with a glowing crystal that emits a soft, healing light.",
+	"durability": 200,
+	"item_usage": "two_hand",
+	"dmg": {},
+	"stat_bonus": {
+		"int": 10,
+		"max_mp": 100
+	},
+	"usage_requirements": {
+		"int": 15
+	},
+	"weight": 3.5,
+	"special_effects": {
+		"healing_touch": "Allows the wielder to cast healing spells with increased effectiveness."
+	}
+},
+{
+	"name": "Staff of Healing",
+	"description": "A magical staff that grants healing powers to its wielder.",
+	"looks": "The staff is made of polished wood and adorned with intricate carvings of leaves and flowers. It emanates a soft green glow.",
+	"durability": 150,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_physical": -5,
+		"dmg_light": -5,
+		"dmg_earth": -5
+	},
+	"stat_bonus": {
+		"wis": 7,
+		"max_mp": 100
+	},
+	"usage_requirements": {
+		"wis": 15,
+		"int": 10
+	},
+	"weight": 3,
+	"special_effects": {
+		"healing_touch": "Increases the effectiveness of healing spells and abilities.",
+		"regeneration": "Grants passive mana regeneration."
+	}
+},
+{
+	"name": "Rusty Dagger",
+	"description": "An old and worn-out dagger that has seen better days.",
+	"looks": "The dagger has a tarnished and rusty blade, with a cracked and worn handle.",
+	"durability": 50,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_piercing": 5
+	},
+	"weight": 1,
+	"special_effects": {
+		"none": "No special effects"
+	}
+},
+{
+	"name": "Titanium Helm",
+	"description": "A sturdy and protective helmet made from titanium.",
+	"looks": "The titanium helm is a large and imposing helmet with a full-face visor. It has a polished silver finish that gleams in the light.",
+	"durability": 200,
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 10,
+		"resistance_physical": 5
+	},
+	"usage_requirements": {
+		"str": 15,
+		"con": 15
+	},
+	"weight": 5,
+	"special_effects": {
+		"titanium_shield": "Increases physical resistance by 10%."
+	}
+},
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
+	}
+},
+{
+	"name": "Arcane Robes",
+	"description": "Robes infused with arcane magic, providing increased spell power and mana regeneration.",
+	"looks": "The robes are made of shimmering blue silk, adorned with intricate runes representing different elements of magic.",
+	"durability": 200,
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"int": 10,
+		"max_mp": 100,
+		"regen_mp": 10
+	},
+	"usage_requirements": {
+		"int": 15
+	},
+	"weight": 2,
+	"special_effects": {
+		"spell_power": "Increases the power and effectiveness of spells.",
+		"mana_regeneration": "Allows for faster mana regeneration."
+	}
+},
+{
+	"name": "Wand of Healing",
+	"description": "A magical wand that can heal wounds and restore vitality.",
+	"looks": "The wand is made of polished silver and topped with a crystal orb that glows with a soothing blue light.",
+	"durability": 120,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_healing": -20
+	},
+	"stat_bonus": {
+		"int": 5,
+		"max_mp": 30
+	},
+	"usage_requirements": {
+		"int": 15
+	},
+	"weight": 0.5,
+	"special_effects": {
+		"healing_pulse": "Emits a healing pulse that restores nearby allies' hit points."
+	}
+},
+{
+	"name": "Short Sword",
+	"description": "A small and lightweight sword, perfect for quick strikes and close combat.",
+	"looks": "The short sword has a short and narrow blade with a simple hilt made of leather. It is designed for agility and precision in battle.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10
+	},
+	"stat_bonus": {
+		"str": 2,
+		"dex": 5
+	},
+	"usage_requirements": {
+		"dex": 10
+	},
+	"weight": 1.5
+},
+{
+	"name": "Cloak of Shadows",
+	"description": "A mystical cloak that grants the wearer the ability to blend into the shadows.",
+	"looks": "The cloak is made of fine black fabric that seems to absorb light. It has a hood that can be pulled up to cover the wearer's face.",
+	"durability": 100,
+	"item_usage": "wear_back",
+	"stat_bonus": {
+		"per": 5,
+		"luck": 2
+	},
+	"weight": 1.8,
+	"special_effects": {
+		"invisibility": "Allows the wearer to become partially invisible in dark areas, making it harder for enemies to detect them."
+	}
+},
+{
+	"name": "Mage's Robes",
+	"description": "A set of enchanted robes adorned with mystical symbols.",
+	"looks": "The robes are made of fine silk and are adorned with intricate embroideries depicting arcane symbols. They shimmer with a soft glow.",
+	"durability": 100,
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"int": 5,
+		"wis": 3,
+		"max_mp": 50,
+		"resistance_fire": 10,
+		"resistance_ice": 5,
+		"resistance_lightning": 5
+	},
+	"weight": 1.5,
+	"special_effects": {
+		"mana_regeneration": "Increases MP regeneration by 10%"
+	}
+}
+]

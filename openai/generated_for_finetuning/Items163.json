@@ -1,0 +1,160 @@
+[
+{
+	"name": "Rusty Dagger",
+	"description": "A worn and rusty dagger with a slightly chipped blade.",
+	"looks": "The rusty dagger is small and compact, with a tarnished metal handle and a blade that shows signs of wear and rust. The blade is slightly chipped in some places.",
+	"durability": 50,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 5
+	},
+	"stat_bonus": {
+		"dex": 2
+	},
+	"usage_requirements": {
+		"dex": 10
+	},
+	"weight": 1.5
+},
+{
+	"name": "Steel Gauntlets",
+	"description": "Heavy gauntlets made from steel to provide excellent protection for the hands.",
+	"looks": "The gauntlets are made of solid steel and have a metal plate covering the back of the hand. They extend up to the forearm and have straps for a secure fit.",
+	"durability": 150,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 8
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 4
+},
+{
+	"name": "Iron Sword",
+	"description": "A basic sword made of iron.",
+	"looks": "The iron sword has a straight blade with a single cutting edge. The handle is wrapped in leather for better grip.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 25
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 2
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 4
+},
+{
+	"name": "Iron Sword",
+	"description": "A basic sword made of iron.",
+	"looks": "The iron sword has a straight blade with a single cutting edge. The hilt is made of leather wrapped around the tang, providing a firm grip.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"stat_bonus": {
+		"dmg_slashing": 10
+	},
+	"usage_requirements": {
+		"str": 12,
+		"dex": 8
+	},
+	"weight": 2.5,
+	"special_weapon_skils": {
+		"swordfighting": "Grants a bonus to Swordfighting skill when used."
+	}
+},
+{
+	"name": "Steel Shield",
+	"description": "A sturdy shield made of steel, providing excellent protection.",
+	"looks": "The steel shield is a rounded shape, with a smooth surface and a silver finish. It has a grip on the back and a central boss for added strength.",
+	"durability": 150,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 8,
+		"max_hp": 20
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 4
+},
+{
+	"name": "Steel Gauntlets",
+	"description": "Heavy-duty gauntlets made from sturdy steel, providing excellent hand protection.",
+	"looks": "The steel gauntlets are made of thick steel plates with intricate engravings. They have reinforced knuckles and protective guards for the fingers.",
+	"durability": 150,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 8,
+		"str": 2,
+		"dex": 1
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 4
+},
+{
+	"name": "Leather Boots",
+	"description": "A pair of sturdy leather boots for adventuring.",
+	"looks": "The leather boots are made from thick and durable leather. They have a low heel and laces along the front for a secure fit.",
+	"durability": 120,
+	"item_usage": "wear_feet",
+	"stat_bonus": {
+		"def": 3,
+		"spd": 1
+	},
+	"weight": 1.5
+},
+{
+    "name": "Steel Longsword",
+    "description": "A longsword forged from high-quality steel.",
+    "looks": "The steel longsword has a sharp, polished blade with a straight, single-edged design. The hilt is wrapped in black leather, providing a comfortable grip. The pommel is adorned with a decorative emblem.",
+    "durability": 200,
+    "item_usage": "one_hand",
+    "dmg": {
+        "dmg_physical": 15
+    },
+    "weight": 4
+},
+{
+	"name": "Elven Bow",
+	"description": "A finely-crafted bow made from the wood of the sacred elven trees.",
+	"looks": "The Elven Bow has a graceful and elegant design, with intricate carvings of leaves and vines along its length. The wood has a natural light brown color, and the bowstring is made from enchanted silk.",
+	"durability": 150,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_physical": 10
+	},
+	"stat_bonus": {
+		"dex": 5,
+		"spd": 5
+	},
+	"usage_requirements": {
+		"dex": 20
+	},
+	"weight": 2.5,
+	"special_weapon_skils": {
+		"archery": "Increases damage and accuracy with bows."
+	}
+},
+{
+	"name": "Steel Gauntlets",
+	"description": "Heavy gauntlets made of durable steel.",
+	"looks": "The steel gauntlets are made of thick steel plates, covering the hands and extending up to the forearms. They have reinforced knuckles and adjustable leather straps for a secure fit.",
+	"durability": 150,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 8,
+		"str": 2,
+		"dex": 1
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 4
+}
+]

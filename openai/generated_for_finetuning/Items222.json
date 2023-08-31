@@ -1,0 +1,197 @@
+[
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
+	}
+},
+{
+	"name": "Staff of Healing",
+	"description": "A staff imbued with powerful healing magic.",
+	"looks": "The staff is made of shimmering silver with a crystal orb at the top. It emits a soft glow of healing energy.",
+	"durability": 200,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_light": -10
+	},
+	"dmg_over_time": {
+		"dmg_light": [
+			-40,
+			10
+		]
+	},
+	"stat_bonus": {
+		"wis": 5,
+		"max_mp": 100,
+		"regen_mp": 2
+	},
+	"usage_requirements": {
+		"wis": 15
+	},
+	"weight": 2,
+	"special_effects": {
+		"healing_aura": "Emits a healing aura that restores nearby allies' health over time."
+	}
+},
+{
+	"name": "Iron Sword",
+	"description": "A basic sword made of iron.",
+	"looks": "The sword has a simple design with a straight blade and a basic hilt.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10
+	},
+	"stat_bonus": {
+		"str": 2
+	},
+	"weight": 2.5
+},
+{
+	"name": "Staff of Healing",
+	"description": "A magical staff that has the power to heal wounds and cure ailments.",
+	"looks": "The staff has a long wooden handle with golden accents. At the top, there is a crystal orb that emits a soft glow.",
+	"durability": 200,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_light": -10
+	},
+	"stat_bonus": {
+		"wis": 5,
+		"max_mp": 100
+	},
+	"usage_requirements": {
+		"wis": 15
+	},
+	"weight": 3.5,
+	"special_effects": {
+		"healing_mastery": "Increases the effectiveness of healing spells and abilities."
+	}
+},
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
+	}
+},
+{
+    "name": "Staff of Healing",
+    "description": "A magical staff that can heal injuries and restore health.",
+    "looks": "The staff is made of smooth white wood and has intricate designs of leaves and vines. It emits a gentle glowing light.",
+    "durability": 150,
+    "item_usage": "one_hand",
+    "dmg_over_time": {
+        "dmg_healing": [
+            50,
+            10
+        ]
+    },
+    "stat_bonus": {
+        "wis": 5,
+        "max_mp": 100
+    },
+    "usage_requirements": {
+        "wis": 15
+    },
+    "weight": 2,
+    "special_effects": {
+        "healing_aura": "Radiates a healing aura that restores health to nearby allies."
+    }
+},
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
+	}
+},
+{
+	"name": "Staff of Frost",
+	"description": "A powerful staff that harnesses the power of ice and frost.",
+	"looks": "The staff is made of polished crystal with swirling patterns of ice and frost within. It has a silver grip and a large blue gemstone at the top.",
+	"durability": 200,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_ice": 20
+	},
+	"stat_bonus": {
+		"int": 7,
+		"max_mp": 75
+	},
+	"usage_requirements": {
+		"int": 15
+	},
+	"weight": 4,
+	"special_effects": {
+		"freeze": "Attacks have a chance to freeze the target, immobilizing them for a short duration."
+	}
+},
+{
+	"name": "Ring of Protection",
+	"description": "A magical ring that enhances the wearer's defense",
+	"looks": "The ring is made of silver with intricate engravings of shields and armor. It has a small gemstone in the center that emits a faint protective glow.",
+	"durability": 100,
+	"item_usage": "trinket",
+	"stat_bonus": {
+		"def": 10
+	},
+	"weight": 0.1,
+	"special_effects": {
+		"protection": "Increases the wearer's defense by 10%"
+	}
+},
+{
+	"name": "Warrior's Armor",
+	"description": "Heavy armor designed to provide maximum protection to a warrior.",
+	"looks": "The armor is made of thick steel plates and is adorned with intricate engravings. It covers the entire body and has a large metal helmet with a visor.",
+	"durability": 500,
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"str": 10,
+		"con": 8,
+		"def": 15
+	},
+	"weight": 20,
+	"special_effects": {
+		"damage_reduction": "Reduces incoming damage by 20%"
+	},
+	"usage_requirements": {
+		"str": 20
+	}
+}
+]

@@ -1,0 +1,198 @@
+[
+{
+	"name": "Spellbook of Fireball",
+	"description": "A leather-bound spellbook containing the knowledge to cast the powerful Fireball spell.",
+	"looks": "The spellbook is made of aged leather with intricate runes etched into the cover. The pages are yellowed with age, but the text is still clear and legible.",
+	"durability": 50,
+	"item_usage": "util",
+	"stat_bonus": {
+		"int": 8,
+		"max_mp": 100,
+		"cast_speed": 15
+	},
+	"usage_requirements": {
+		"int": 15
+	},
+	"weight": 1.5,
+	"special_effects": {
+		"fireball_spell": "Allows the user to cast the powerful Fireball spell, dealing fire damage to enemies."
+	}
+},
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
+	}
+},
+{
+	"name": "Staff of Healing",
+	"description": "A magical staff that has potent healing abilities.",
+	"looks": "The staff is made of polished wood and adorned with intricate carvings of swirling vines. At the top of the staff, there is a glowing crystal that emits a soft, healing light.",
+	"durability": 150,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_light": -10
+	},
+	"stat_bonus": {
+		"wis": 5,
+		"max_mp": 50
+	},
+	"usage_requirements": {
+		"wis": 15
+	},
+	"weight": 3,
+	"special_effects": {
+		"healing_touch": "Enhances healing abilities, providing a chance to heal an additional amount of HP."
+	}
+},
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
+	}
+},
+{
+	"name": "Staff of the Elements",
+	"description": "A mystical staff that harnesses the power of the elements.",
+	"looks": "The staff is made of dark wood with intricate carvings of elemental symbols. It glows with a faint ethereal light.",
+	"durability": 200,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_fire": 10,
+		"dmg_water": 10,
+		"dmg_air": 10,
+		"dmg_earth": 10,
+		"dmg_lightning": 10
+	},
+	"stat_bonus": {
+		"int": 10,
+		"max_mp": 100
+	},
+	"usage_requirements": {
+		"int": 25
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"elemental_mastery": "Increases the damage of elemental spells by 25%."
+	},
+	"special_effects": {
+		"elemental_fury": "20% chance to deal double damage with elemental attacks."
+	}
+},
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
+	}
+},
+{
+	"name": "Poisoned Dagger",
+	"description": "A small dagger coated with a deadly poison.",
+	"looks": "The dagger has a slim blade with a wicked curve. The handle is wrapped in worn leather, creating a comfortable grip.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_piercing": 10,
+		"dmg_poison": 5
+	},
+	"stat_bonus": {
+		"dex": 3
+	},
+	"weight": 1.5,
+	"special_effects": {
+		"poisoned_blade": "Has a chance to poison the target, dealing additional damage over time."
+	}
+},
+{
+	"name": "Healing Potion",
+	"description": "A small vial filled with a miraculous healing liquid.",
+	"looks": "The vial is made of glass and contains a shimmering blue liquid. It has a small cork stopper to keep the liquid secure.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"stat_bonus": {
+		"max_hp": 50
+	},
+	"weight": 0.1
+},
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
+	}
+},
+{
+	"name": "Staff of the Elements",
+	"description": "A powerful staff that harnesses the elemental forces of fire, water, air, and earth.",
+	"looks": "The staff is made of a sturdy material with four colored orbs embedded at the top. Each orb represents a different element and glows with a faint light.",
+	"durability": 200,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_fire": 15,
+		"dmg_water": 10,
+		"dmg_air": 10,
+		"dmg_earth": 10
+	},
+	"stat_bonus": {
+		"int": 10,
+		"max_mp": 100
+	},
+	"usage_requirements": {
+		"int": 25
+	},
+	"weight": 3,
+	"special_weapon_skills": {
+		"elemental_mastery": "Increases the damage of elemental spells by 25%."
+	},
+	"special_effects": {
+		"elemental_fury": "20% chance to deal double damage with elemental attacks."
+	}
+}
+]

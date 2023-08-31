@@ -1,0 +1,181 @@
+[
+{
+	"name": "Dagger of Shadows",
+	"description": "A dagger with a dark aura, known to grant its wielder stealth and agility.",
+	"looks": "The dagger is made of black steel, with intricate carvings along the blade. It gives off a faint purple glow.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 25,
+		"dmg_dark": 10
+	},
+	"stat_bonus": {
+		"dex": 5,
+		"spd": 10
+	},
+	"usage_requirements": {
+		"dex": 10
+	},
+	"weight": 0.5,
+	"special_weapon_skills": {
+		"stealth": "Increases stealth and allows the wielder to move silently."
+	},
+	"special_effects": {
+		"shadow_strike": "Has a chance to deal bonus dark damage and stun the target."
+	}
+},
+{
+	"name": "Lightning Bolt Staff",
+	"description": "A staff that channels the power of lightning to unleash devastating attacks.",
+	"looks": "The staff is made of polished oak wood and is adorned with intricate carvings of lightning bolts. It crackles with electricity when wielded.",
+	"durability": 50,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_lightning": 120
+	},
+	"stat_bonus": {
+		"int": 10
+	},
+	"usage_requirements": {
+		"int": 20
+	},
+	"weight": 1.5,
+	"special_weapon_skills": {
+		"lightning_magic": "Allows the player to cast lightning-based spells with increased power and accuracy."
+	},
+	"special_effects": {
+		"shock": "Has a chance to shock enemies, temporarily stunning them."
+	}
+},
+{
+	"name": "Enchanted Sword",
+	"description": "A sword imbued with magical energy.",
+	"looks": "The sword has a blade made of shimmering silver and a hilt adorned with enchanted gems.",
+	"durability": 100,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_physical": 50,
+		"dmg_fire": 20
+	},
+	"stat_bonus": {
+		"max_hp": 10
+	},
+	"usage_requirements": {
+		"str": 20,
+		"dex": 15
+	},
+	"weight": 2.5,
+	"special_weapon_skills": {
+		"Sword Mastery": "Increases damage and critical strike chance with swords."
+	},
+	"special_effects": {
+		"Flameburst": "Chance on hit to unleash a burst of fiery energy, dealing additional fire damage."
+	}
+},
+{
+	"name": "Strength Potion",
+	"description": "A potion that temporarily boosts the drinker's strength and melee damage.",
+	"looks": "The potion is a vibrant red color, swirling with energy.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"item_recipee": [
+		"Brewer's Yeast",
+		"Enchanted Ruby"
+	],
+	"stat_bonus": {
+		"str": 5
+	},
+	"weight": 0.1
+},
+{
+	"name": "Slow Healing Potion",
+	"description": "A potion that restores health points.",
+	"looks": "A small, glass vial filled with a glowing, green liquid.",
+	"durability": 1,
+	"item_usage": "consumable",
+    "dmg_over_time": {
+		"dmg_light": [-80, 10]
+	},
+	"weight": 0.1
+},
+{
+	"name": "Ice Axe",
+	"description": "A sturdy ice axe designed for climbing icy terrain.",
+	"looks": "The ice axe has a long metal shaft with a curved pick on one end and a spike on the other.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20
+	},
+	"stat_bonus": {
+		"str": 2
+	},
+	"usage_requirements": {
+		"str": 10
+	},
+	"weight": 2
+},
+{
+	"name": "Giant's Ring",
+	"description": "A ring that grants the wearer incredible strength.",
+	"looks": "The ring is made of solid gold and has a large gemstone embedded in the center.",
+	"durability": 100,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"str": 10,
+		"max_hp": 100,
+		"max_sta": 50,
+		"def": 5
+	},
+	"weight": 0.5,
+	"usage_requirements": {
+		"str": 20
+	},
+	"special_effects": {
+		"Enhanced Strength": "Increases melee damage by 20%"
+	}
+},
+{
+	"name": "Energy Shard",
+	"description": "A shard of pure energy that can be used to restore mana.",
+	"looks": "The shard is a small, transparent crystal that emits a soft glow.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"stat_bonus": {
+		"mp": 25
+	},
+	"weight": 0.05
+},
+{
+	"name": "Swift Boots",
+	"description": "A pair of boots that enhance the wearer's speed and agility.",
+	"looks": "These boots are made of fine leather and feature intricate stitching. They have a sleek design and are jet black in color.",
+	"durability": 50,
+	"item_usage": "wear_feet",
+	"stat_bonus": {
+		"spd": 10,
+		"dex": 5
+	},
+	"usage_requirements": {
+		"dex": 10
+	},
+	"weight": 1.5
+},
+{
+	"name": "Scroll of Fireball",
+	"description": "A powerful scroll that allows the caster to unleash a fiery explosion.",
+	"looks": "The scroll is made of aged parchment with intricate runes inscribed on it.",
+	"durability": 1,
+	"item_usage": "util",
+	"dmg": {
+		"dmg_fire": 100
+	},
+	"usage_requirements": {
+		"int": 15
+	},
+	"weight": 0.2,
+	"special_effects": {
+		"Explosion": "Causes a large explosion, damaging enemies in the area."
+	}
+}
+]

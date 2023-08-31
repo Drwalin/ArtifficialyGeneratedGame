@@ -1,0 +1,217 @@
+[
+{
+	"name": "Dragon Scale Armor",
+	"description": "A set of armor made from the scales of a powerful dragon. It offers superior protection and boosts the wearer's strength.",
+	"looks": "The dragon scale armor is made of gleaming silver scales that are as strong as steel. The armor covers the wearer from head to toe, providing full-body protection.",
+	"durability": 500,
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"str": 10,
+		"con": 5,
+		"def": 15,
+		"resistance_fire": 50,
+		"resistance_physical": 20
+	},
+	"usage_requirements": {
+		"str": 20,
+		"con": 15
+	},
+	"weight": 15,
+	"special_effects": {
+		"dragon_scales": "Grants the wearer increased resistance to fire damage."
+	}
+},
+{
+	"name": "Staff of the Ancient Magi",
+	"description": "A legendary staff wielded by the ancient magi, said to hold immense power.",
+	"looks": "The staff is made of dark oak wood and is adorned with ancient runes that glow with a mysterious energy. It has a crystal orb at the top that emits a soft, pulsing light.",
+	"durability": 500,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_mental": 50,
+		"dmg_dark": 50,
+		"dmg_lightning": 50
+	},
+	"stat_bonus": {
+		"int": 10,
+		"max_mp": 100
+	},
+	"usage_requirements": {
+		"int": 25
+	},
+	"weight": 4,
+	"special_effects": {
+		"ancient_power": "Increases all spell damage by 50%",
+		"mana_regeneration": "Regenerates 5 mana per second"
+	}
+},
+{
+	"name": "Staff of Healing",
+	"description": "A magical staff that harnesses the power of healing.",
+	"looks": "The staff is made of polished wood and is adorned with intricate carvings of leaves and flowers. It emits a soft glow of healing energy.",
+	"durability": 150,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_light": -10
+	},
+	"dmg_over_time": {
+		"dmg_healing": [
+			20,
+			2
+		]
+	},
+	"stat_bonus": {
+		"wis": 5,
+		"max_mp": 50
+	},
+	"usage_requirements": {
+		"wis": 10
+	},
+	"weight": 3,
+	"special_weapon_skills": {
+		"Healing Mastery": "Increases the effectiveness of healing spells and abilities."
+	},
+	"special_effects": {
+		"healing_aura": "Emits a healing aura that restores a small amount of HP to nearby allies."
+	}
+},
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
+	}
+},
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
+	}
+},
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
+	}
+},
+{
+	"name": "Flaming Sword",
+	"description": "A sword enveloped in flames, dealing both physical and fire damage.",
+	"looks": "The sword has a long, silver blade that is constantly engulfed in swirling flames. The hilt is made of blackened steel and adorned with intricate carvings.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20,
+		"dmg_fire": 30
+	},
+	"stat_bonus": {
+		"str": 8,
+		"int": -2
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 3.5,
+	"special_weapon_skills": {
+		"Swordsmanship": "Increases sword handling and damage.",
+		"Pyromancy": "Increases fire damage by 25%."
+	}
+},
+{
+	"name": "Staff of Healing",
+	"description": "A mystical staff that can harness the power of healing.",
+	"looks": "The staff is made of a smooth, white wood and has intricate carvings of leaves and flowers. It glows softly with a gentle green light.",
+	"durability": 200,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_light": -10
+	},
+	"stat_bonus": {
+		"wis": 5,
+		"max_mp": 50
+	},
+	"usage_requirements": {
+		"wis": 20
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"healing_touch": "Increases the healing power of spells and abilities by 20%."
+	}
+},
+{
+	"name": "Assassin's Dagger",
+	"description": "A deadly dagger favored by assassins for its precision and lethality.",
+	"looks": "The dagger has a sleek and slender design, with a razor-sharp blade and a black handle wrapped in dark leather.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_piercing": 10,
+		"dmg_dark": 5
+	},
+	"stat_bonus": {
+		"dex": 8,
+		"per": 3
+	},
+	"usage_requirements": {
+		"dex": 15,
+		"per": 10
+	},
+	"weight": 0.5,
+	"special_effects": {
+		"silent_strike": "Has a chance to deal critical damage and remain undetected."
+	}
+},
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
+	}
+}
+]

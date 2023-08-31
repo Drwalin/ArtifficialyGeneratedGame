@@ -1,0 +1,207 @@
+[
+{
+	"name": "Fireball Scroll",
+	"description": "A scroll imbued with the power of fireball spell.",
+	"looks": "The scroll is made of aged parchment and sealed with a wax seal. It radiates a warm glow.",
+	"durability": 1,
+	"item_usage": "util",
+	"dmg": {
+		"dmg_fire": 50
+	},
+	"stat_bonus": {
+		"int": 5
+	},
+	"usage_requirements": {
+		"int": 15
+	},
+	"weight": 0.2,
+	"special_effects": {
+		"area_of_effect": "Deals fire damage to all enemies within the blast radius."
+	}
+},
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
+	}
+},
+{
+	"name": "Legendary Bow",
+	"description": "A bow of unparalleled power and accuracy, said to have been crafted by the gods themselves.",
+	"looks": "The Legendary Bow is made of a rare, shimmering metal that glows with an otherworldly light. The limbs of the bow are adorned with intricate engravings depicting mythical creatures. The string is made of a material that seems to shimmer and change colors.",
+	"durability": 500,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_physical": 100
+	},
+	"stat_bonus": {
+		"dex": 20,
+		"spd": 10,
+		"luck": 5
+	},
+	"usage_requirements": {
+		"dex": 30
+	},
+	"weight": 3,
+	"special_weapon_skills": {
+		"Archery Mastery": "Greatly increases damage and accuracy with bows."
+	},
+	"special_effects": {
+		"Divine Precision": "Attacks from this bow have a high chance to hit critical weak spots, dealing massive damage."
+	}
+},
+{
+	"name": "Staff of the Arcane",
+	"description": "A powerful staff infused with mystical energies.",
+	"looks": "The staff is made of polished mahogany and has gold accents. It is adorned with intricate runes that glow with a soft blue light.",
+	"durability": 200,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_mental": 25
+	},
+	"stat_bonus": {
+		"int": 10,
+		"max_mp": 100
+	},
+	"usage_requirements": {
+		"int": 15
+	},
+	"weight": 3,
+	"special_effects": {
+		"spell_power": "Increases the power of spells by 20%."
+	}
+},
+{
+	"name": "Staff of the Elements",
+	"description": "A powerful staff that harnesses the power of the elements.",
+	"looks": "The staff has a long wooden shaft with intricate engravings representing each element - fire, water, air, earth, light, and darkness. At the top of the staff, small crystals of different colors emit a faint glow.",
+	"durability": 200,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_physical": 5,
+		"dmg_fire": 15,
+		"dmg_water": 10,
+		"dmg_air": 7,
+		"dmg_earth": 12,
+		"dmg_light": 8,
+		"dmg_dark": 5
+	},
+	"stat_bonus": {
+		"int": 10,
+		"max_mp": 100,
+		"regen_mp": 2
+	},
+	"usage_requirements": {
+		"int": 20
+	},
+	"weight": 4.5,
+	"special_weapon_skills": {
+		"Elemental Mastery": "Increases the damage of elemental spells by 25%."
+	},
+	"special_effects": {
+		"Elemental Burst": "25% chance to unleash a powerful burst of elemental energy upon successful hit."
+	}
+},
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
+	}
+},
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
+	}
+},
+{
+	"name": "Ring of Protection",
+	"description": "A magical ring that provides enhanced defense and protection.",
+	"looks": "The ring has a simple design with a silver band and an engraved shield motif.",
+	"durability": 100,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 10,
+		"resistance_physical": 5
+	},
+	"weight": 0.5,
+	"special_effects": {
+		"shielding_spell": "Activate to create a temporary protective energy shield."
+	}
+},
+{
+	"name": "Staff of Healing",
+	"description": "A magical staff that radiates healing energy.",
+	"looks": "The staff is made of polished wood and adorned with shimmering crystals. It emits a soft and calming light.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_light": -10
+	},
+	"stat_bonus": {
+		"wis": 5,
+		"max_mp": 50
+	},
+	"usage_requirements": {
+		"wis": 20
+	},
+	"weight": 1.5,
+	"special_effects": {
+		"healing_aura": "Emits a healing aura that regenerates nearby allies' health over time."
+	}
+},
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
+	}
+}
+]

@@ -1,0 +1,217 @@
+[
+{
+	"name": "Dragon Scale Armor",
+	"description": "Armor made from the scales of a dragon",
+	"looks": "The armor is made from the scales of a mighty dragon, giving it a shiny and intimidating appearance",
+	"durability": 200,
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"def": 10,
+		"resistance_fire": 50,
+		"resistance_acid": 25
+	},
+	"weight": 10,
+	"special_effects": {
+		"dragon_scales": "Provides additional protection against fire and acid attacks."
+	}
+},
+{
+	"name": "Staff of the Elements",
+	"description": "A powerful staff that harnesses the power of the elements.",
+	"looks": "The staff is made of shimmering crystal with swirling colors representing different elements. It has a golden handle decorated with intricate symbols.",
+	"durability": 200,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_fire": 10,
+		"dmg_water": 10,
+		"dmg_air": 10,
+		"dmg_earth": 10,
+		"dmg_lightning": 10
+	},
+	"stat_bonus": {
+		"int": 15,
+		"max_mp": 100
+	},
+	"usage_requirements": {
+		"int": 30
+	},
+	"weight": 3,
+	"special_weapon_skills": {
+		"elemental_mastery": "Increases the damage of elemental spells by 50%."
+	},
+	"special_effects": {
+		"elemental_fury": "25% chance to deal double damage with elemental attacks."
+	}
+},
+{
+	"name": "Dragon Scale Armor",
+	"description": "Legendary armor made from the scales of a dragon",
+	"looks": "The armor is made from intricately woven dragon scales that shimmer with a multitude of colors",
+	"durability": 500,
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"def": 75,
+		"resistance_fire": 50,
+		"resistance_physical": 25
+	},
+	"weight": 15,
+	"special_effects": {
+		"dragon_scale_protection": "Increases resistance against fire damage"
+	}
+},
+{
+	"name": "Healing Potion",
+	"description": "A potion that restores health when consumed.",
+	"looks": "The potion is contained in a small glass flask with a cork stopper. It has a vibrant green color and emits a faint glow.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"item_recipee": [
+		"Red Herb",
+		"Blue Herb",
+		"Water"
+	],
+	"stat_bonus": {
+		"hp": 50
+	},
+	"weight": 0.2
+},
+{
+	"name": "Magic Robe",
+	"description": "A flowing robe imbued with mystical energies.",
+	"looks": "The robe is made of a shimmering fabric that changes color depending on the light. It has intricate patterns of arcane symbols embroidered across the fabric.",
+	"durability": 200,
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"int": 10,
+		"wis": 5,
+		"max_mp": 100,
+		"resistance_fire": 20,
+		"resistance_water": 20,
+		"resistance_air": 20,
+		"resistance_earth": 20
+	},
+	"usage_requirements": {
+		"int": 25
+	},
+	"weight": 2,
+	"special_effects": {
+		"magic_absorption": "Absorbs a portion of incoming magical damage and converts it into mana."
+	}
+},
+{
+	"name": "Staff of Life",
+	"description": "A magical staff that harnesses the power of life and healing.",
+	"looks": "The staff is made of pure white wood, with delicate engravings of blooming flowers and swirling vines. At the top of the staff, a luminous crystal shines with a soothing green light.",
+	"durability": 200,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_healing": 50
+	},
+	"stat_bonus": {
+		"wis": 10,
+		"max_mp": 100
+	},
+	"usage_requirements": {
+		"wis": 20
+	},
+	"weight": 4.5,
+	"special_effects": {
+		"healing_wave": "Allows the user to unleash a powerful wave of healing energy, healing all allies in its path."
+	}
+},
+{
+	"name": "Staff of the Elements",
+	"description": "A powerful staff that harnesses the power of the elements.",
+	"looks": "The staff has a long wooden handle with various elemental crystals embedded in it. Each crystal represents a different element and emits a faint glow.",
+	"durability": 200,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_physical": 5,
+		"dmg_fire": 10,
+		"dmg_water": 10,
+		"dmg_air": 10,
+		"dmg_earth": 10,
+		"dmg_lightning": 10
+	},
+	"stat_bonus": {
+		"int": 10,
+		"max_mp": 100
+	},
+	"usage_requirements": {
+		"int": 20
+	},
+	"weight": 4,
+	"special_effects": {
+		"elemental_mastery": "Increases the damage of elemental spells by 25%.",
+		"elemental_absorption": "Absorbs a portion of elemental damage and converts it into mana."
+	}
+},
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
+	}
+},
+	"name": "Staff of the Mystic",
+	"description": "A mystical staff that channels energy and unleashes powerful spells.",
+	"looks": "The staff is made of polished mahogany and features intricate carvings of mystical symbols. It glows with a soft, pulsating light.",
+	"durability": 200,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_light": 10,
+		"dmg_nature": 5,
+		"dmg_fire": 5,
+		"dmg_ice": 5,
+		"dmg_lightning": 5,
+		"dmg_dark": 5
+	},
+	"stat_bonus": {
+		"int": 10,
+		"wis": 5,
+		"max_mp": 100
+	},
+	"usage_requirements": {
+		"int": 20
+	},
+	"weight": 2,
+	"special_weapon_skills": {
+		"Mystic Arts": "Increases the power of magic spells and abilities."
+	},
+	"special_effects": {
+		"Mystic Energy": "Charges the staff with mystical energy that enhances spellcasting."
+	}
+},
+{
+	"name": "Flaming Dagger",
+	"description": "A small, sharp dagger with a blade infused with fire.",
+	"looks": "The dagger has a sleek, silver blade with a fiery red tint. The hilt is made of obsidian and adorned with small flames that flicker and dance.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10,
+		"dmg_fire": 15
+	},
+	"stat_bonus": {
+		"dex": 3
+	},
+	"usage_requirements": {
+		"dex": 10
+	},
+	"weight": 1.8,
+	"special_effects": {
+		"burning_strikes": "Has a chance to set the target on fire, causing additional fire damage over time."
+	}
+}
+]

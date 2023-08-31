@@ -1,0 +1,196 @@
+[
+{
+	"name": "Warrior's Helm",
+	"description": "A sturdy helm worn by warriors for protection in battle.",
+	"looks": "The helm is made of thick steel with a faceplate that covers the entire front of the head. It has a crest at the top and a sturdy strap to keep it in place.",
+	"durability": 150,
+	"item_usage": "wear_head",
+	"stat_bonus": {
+		"def": 10,
+		"str": 3,
+		"con": 2
+	},
+	"usage_requirements": {
+		"str": 10,
+		"con": 8
+	},
+	"weight": 4.5
+},
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
+	}
+},
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
+	}
+},
+{
+	"name": "Dagger of Shadows",
+	"description": "A deadly weapon that can strike unnoticed in the shadows.",
+	"looks": "The dagger has a black blade that seems to absorb light. Its hilt is wrapped in dark leather and adorned with a small ruby.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10,
+		"dmg_dark": 5
+	},
+	"stat_bonus": {
+		"dex": 3,
+		"luck": 2
+	},
+	"usage_requirements": {
+		"dex": 15
+	},
+	"weight": 1,
+	"special_effects": {
+		"shadow_strike": "Allows the wielder to become temporarily invisible upon a successful hit."
+	}
+},
+{
+	"name": "Battle Axe",
+	"description": "A large and heavy two-handed axe with a long handle and a sharp blade.",
+	"looks": "The battle axe has a wooden handle with leather wrappings for grip. The blade is made of steel and is quite sharp.",
+	"durability": 250,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_physical": 25
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": -2
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 8,
+	"special_effects": {
+		"heavy_swing": "Allows for a powerful overhead swing that deals additional damage."
+	}
+},
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
+	}
+},
+{
+	"name": "Rusty Sword",
+	"description": "An old and worn-out sword with a rusty blade.",
+	"looks": "The sword has a dull blade with patches of rust covering its surface. The hilt is cracked and the leather grip is worn out.",
+	"durability": 50,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": -5
+	},
+	"stat_bonus": {
+		"str": -3
+	},
+	"weight": 3.5
+},
+{
+	"name": "Staff of Thunder",
+	"description": "A mystical staff that channels the power of thunder and lightning.",
+	"looks": "The staff is crafted from a lightning-struck oak tree and crackles with electricity. It has intricate engravings depicting storms and thunderclouds.",
+	"durability": 200,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_lightning": 30
+	},
+	"stat_bonus": {
+		"int": 10,
+		"max_mp": 100
+	},
+	"usage_requirements": {
+		"int": 20
+	},
+	"weight": 4,
+	"special_effects": {
+		"electrify": "Attacks have a chance to electrify the target, dealing additional lightning damage over time."
+	}
+},
+{
+	"name": "Dragonblade",
+	"description": "A legendary sword crafted from the scales of a dragon.",
+	"looks": "The Dragonblade has a long, silver blade with a serrated edge that glimmers with an iridescent sheen. The hilt is made of dragon scales, giving it a unique and intimidating appearance.",
+	"durability": 500,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 50,
+		"dmg_fire": 20,
+		"dmg_dark": 10
+	},
+	"stat_bonus": {
+		"str": 10,
+		"def": 5
+	},
+	"usage_requirements": {
+		"str": 25
+	},
+	"weight": 4,
+	"special_weapon_skills": {
+		"Swordsmanship": "Increases damage with swords by 25%.",
+		"Dragon Slayer": "Increases damage against dragons by 50%."
+	},
+	"special_effects": {
+		"Dragon's Wrath": "30% chance to unleash a powerful fire and dark attack upon successful hit."
+	}
+},
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
+	}
+}
+]

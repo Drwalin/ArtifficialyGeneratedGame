@@ -1,0 +1,210 @@
+[
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
+	}
+},
+{
+	"name": "Life Staff",
+	"description": "A staff infused with healing energy, capable of restoring health.",
+	"looks": "The staff has a long wooden shaft with intricate engravings of nature and life. At the top of the staff, there is a glowing crystal that emits a soft green light.",
+	"durability": 150,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_healing": -10
+	},
+	"stat_bonus": {
+		"wis": 5,
+		"max_mp": 50
+	},
+	"usage_requirements": {
+		"wis": 15
+	},
+	"weight": 4.5,
+	"special_effects": {
+		"healing_aura": "Emits a healing aura around the wielder, restoring HP to nearby allies."
+	}
+},
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
+	}
+},
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
+	}
+},
+{
+	"name": "Dagger of Shadows",
+	"description": "A wickedly sharp dagger that renders its wielder invisible in the darkness.",
+	"looks": "The dagger has a sleek black blade and a hilt made of obsidian. The edges of the blade seem to blend into the shadows, making it difficult to see.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_piercing": 10
+	},
+	"stat_bonus": {
+		"dex": 5,
+		"spd": 10
+	},
+	"usage_requirements": {
+		"dex": 15
+	},
+	"weight": 1,
+	"special_effects": {
+		"invisibility": "Grants invisibility in dark areas."
+	}
+},
+{
+	"name": "Staff of the Elements",
+	"description": "A powerful staff that harnesses the power of the elements.",
+	"looks": "The staff is made of polished oak wood and adorned with intricate carvings that represent the different elements. Each element has a different gemstone embedded into the staff, adding to its mystical appearance.",
+	"durability": 200,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_fire": 10,
+		"dmg_water": 10,
+		"dmg_air": 10,
+		"dmg_earth": 10,
+		"dmg_light": 10,
+		"dmg_dark": 10
+	},
+	"stat_bonus": {
+		"int": 10
+	},
+	"usage_requirements": {
+		"int": 20
+	},
+	"weight": 3.5,
+	"special_weapon_skills": {
+		"elemental_mastery": "Increases the damage of elemental spells and abilities."
+	},
+	"special_effects": {
+		"unleash_elemental_power": "Grants the ability to unleash a devastating elemental attack."
+	}
+},
+{
+	"name": "Flame Sword",
+	"description": "A sword infused with the power of fire.",
+	"looks": "The sword has a fiery blade with a hilt wrapped in black dragon leather.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 20,
+		"dmg_fire": 50
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 2
+	},
+	"usage_requirements": {
+		"str": 15
+	},
+	"weight": 3,
+	"special_weapon_skills": {
+		"Swordsmanship": "Increases damage with swords by 20%.",
+		"Fire Mastery": "Increases fire damage by 50%."
+	}
+},
+{
+	"name": "Staff of Healing",
+	"description": "A staff infused with healing magic, capable of restoring health and vitality.",
+	"looks": "The staff is made of smooth, polished wood with a silver cap on top. It emits a soft, gentle glow.",
+	"durability": 200,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_light": -5,
+		"dmg_healing": 20
+	},
+	"stat_bonus": {
+		"wis": 10,
+		"max_mp": 75
+	},
+	"usage_requirements": {
+		"wis": 15
+	},
+	"weight": 3,
+	"special_effects": {
+		"healing_aura": "Emits a healing aura that restores health to nearby allies."
+	}
+},
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
+	}
+},
+{
+	"name": "Wand of Frost",
+	"description": "A magical wand that harnesses the power of ice.",
+	"looks": "The wand is made of shimmering ice and emits a cold mist. It is adorned with intricate frost patterns.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_ice": 10
+	},
+	"stat_bonus": {
+		"int": 3,
+		"max_mp": 30
+	},
+	"usage_requirements": {
+		"int": 10
+	},
+	"weight": 0.5,
+	"special_effects": {
+		"freeze": "Has a chance to freeze the target, immobilizing them for a short time."
+	}
+}
+]

@@ -1,0 +1,185 @@
+[
+{
+	"name": "Invisibility Potion",
+	"description": "A potion that grants the user temporary invisibility.",
+	"looks": "A small vial filled with a shimmering, translucent liquid.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"item_recipee": [
+		"Ghost Lotus",
+		"Essence of Shadows",
+		"Crystal Water"
+	],
+	"stat_bonus": {},
+	"weight": 0.3,
+	"special_effects": {
+		"Invisibility": "Grants temporary invisibility"
+	}
+},
+item json:
+{
+	"name": "Health Restoration Potion",
+	"description": "A potion that restores a small amount of health.",
+	"looks": "The potion is a small glass vial filled with a glowing blue liquid.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"stat_bonus": {
+		"hp": 50
+	},
+	"weight": 0.1
+},
+{
+	"name": "Strength Potion",
+	"description": "A potion that temporarily boosts the drinker's strength and melee damage.",
+	"looks": "The potion is a vibrant red color, swirling with energy.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"item_recipee": [
+		"Brewer's Yeast",
+		"Enchanted Ruby"
+	],
+	"stat_bonus": {
+		"str": 5
+	},
+	"weight": 0.1
+},
+{
+	"name": "Fireball Staff",
+	"description": "A staff that allows the user to cast powerful fireballs.",
+	"looks": "The staff is made of polished oak and adorned with intricate carvings. At the top of the staff is a large red gem that glows with an intense flame.",
+	"durability": 50,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_fire": 20
+	},
+	"stat_bonus": {
+		"int": 10,
+		"wis": 5
+	},
+	"usage_requirements": {
+		"int": 15
+	},
+	"weight": 2.5,
+	"special_weapon_skills": {
+		"Fire Magic": "Allows the user to cast fire-based spells with increased effectiveness."
+	}
+},
+{
+	"name": "Enchanted Sword",
+	"description": "A powerful sword infused with magic.",
+	"looks": "The sword has a shimmering blade with a hilt made of glowing crystals.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 50,
+		"dmg_light": 20
+	},
+	"stat_bonus": {
+		"str": 10,
+		"speed": 5
+	},
+	"usage_requirements": {
+		"dex": 15
+	},
+	"weight": 2,
+	"special_weapon_skills": {
+		"enchantment": "Allows the user to enchant their weapon with elemental magic."
+	},
+	"special_effects": {
+		"lifesteal": "Attacks with this sword steal a portion of the target's health."
+	}
+},
+{
+	"name": "Invisibility Potion",
+	"description": "A potion that grants the ability to become invisible for a short period of time.",
+	"looks": "A small, glass vial filled with a clear liquid.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"stat_bonus": {
+		"spd": 5
+	},
+	"weight": 0.1,
+	"special_effects": {
+		"Invisibility": "Allows the user to become invisible for 30 seconds"
+	}
+},
+{
+	"name": "Steel Sword",
+	"description": "A sturdy sword made of steel.",
+	"looks": "The sword has a straight steel blade with a hilt wrapped in leather.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_slashing": 20
+	},
+	"stat_bonus": {
+		"str": 2
+	},
+	"weight": 2.5,
+	"special_weapon_skills": {
+		"Swordsmanship": "Increases damage dealt with swords."
+	}
+},
+{
+	"name": "Scroll of Fireball",
+	"description": "A magical scroll that allows the user to cast a Fireball spell.",
+	"looks": "The scroll is made of parchment and has intricate runes drawn on it.",
+	"durability": 1,
+	"item_usage": "util",
+	"item_recipee": [
+		"Parchment",
+		"Ink",
+		"Fire Essence"
+	],
+	"dmg": {
+		"dmg_fire": -50
+	},
+	"stat_bonus": {
+		"cast_speed": -0.5,
+		"max_mp": -25
+	},
+	"usage_requirements": {
+		"int": 10
+	},
+	"weight": 0.2,
+	"special_effects": {
+		"burning": "The Fireball sets targets on fire, dealing additional damage over time."
+	},
+	"special_weapon_skills": {
+		"magic": "Allows the user to cast spells more effectively."
+	}
+},
+{
+	"name": "Strength Potion",
+	"description": "A potion that temporarily boosts the drinker's strength and melee damage.",
+	"looks": "The potion is a vibrant red color, swirling with energy.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"item_recipee": [
+		"Brewer's Yeast",
+		"Enchanted Ruby"
+	],
+	"dmg": {
+		"dmg_physical": 10
+	},
+	"stat_bonus": {
+		"str": 5
+	},
+	"weight": 0.1
+},
+{
+	"name": "Strength Potion",
+	"description": "A potion that temporarily boosts the drinker's strength and melee damage.",
+	"looks": "The potion is a vibrant red color, swirling with energy.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"item_recipee": [
+		"Brewer's Yeast",
+		"Enchanted Ruby"
+	],
+	"stat_bonus": {
+		"str": 5
+	},
+	"weight": 0.1
+}
+]

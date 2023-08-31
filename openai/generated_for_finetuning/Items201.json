@@ -1,0 +1,210 @@
+[
+{
+	"name": "Orb of Healing",
+	"description": "A magical orb that radiates healing energy.",
+	"looks": "The orb is small and translucent, emitting a soft glow. It is encased in a delicate silver frame and is filled with swirling white mist.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_ice": -10
+	},
+	"stat_bonus": {
+		"wis": 5,
+		"max_mp": 50
+	},
+	"usage_requirements": {
+		"wis": 10
+	},
+	"weight": 0.5,
+	"special_effects": {
+		"healing_aura": "Emits a healing aura that restores health to nearby allies over time."
+	}
+},
+{
+	"name": "Robe of the Archmage",
+	"description": "A legendary robe worn by the most powerful mages in the realm.",
+	"looks": "The robe is made of shimmering silk, adorned with intricate embroidery and magical symbols. It has a hood that can be pulled over the head for added secrecy.",
+	"durability": 300,
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"int": 10,
+		"wis": 5,
+		"max_mp": 100,
+		"max_hp": -50,
+		"def": 2
+	},
+	"usage_requirements": {
+		"int": 20
+	},
+	"weight": 1.5,
+	"special_effects": {
+		"spell_power": "Increases the power of spells cast by the wearer."
+	}
+},
+{
+	"name": "Staff of Destruction",
+	"description": "A staff infused with dark energy, capable of unleashing devastating attacks.",
+	"looks": "The staff has a menacing black color and is adorned with sharp obsidian spikes. It crackles with dark energy and emits a faint red glow.",
+	"durability": 300,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_dark": 50,
+		"dmg_mental": 30
+	},
+	"stat_bonus": {
+		"int": 10,
+		"max_mp": 100
+	},
+	"usage_requirements": {
+		"int": 20
+	},
+	"weight": 4.5,
+	"special_effects": {
+		"shadow_blast": "Unleashes a powerful blast of dark energy that deals massive damage to the target.",
+		"mind_control": "Has a chance to control the mind of the target, making them fight for the wielder for a short duration."
+	}
+},
+{
+	"name": "Enchanted Staff of Healing",
+	"description": "A powerful staff imbued with healing energy.",
+	"looks": "The staff is made of shimmering silver wood and adorned with intricate carvings of flowers and vines. It glows with a soft, healing light.",
+	"durability": 200,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_light": -10
+	},
+	"dmg_over_time": {
+		"dmg_healing": [
+			50,
+			5
+		]
+	},
+	"stat_bonus": {
+		"int": 10,
+		"max_mp": 100
+	},
+	"usage_requirements": {
+		"int": 15
+	},
+	"weight": 3.5,
+	"special_weapon_skills": {
+		"Healing Magic": "Increases the effectiveness of healing spells."
+	},
+	"special_effects": {
+		"regeneration": "Grants passive regeneration of 10 health per second."
+	}
+},
+{
+	"name": "Steel Longsword",
+	"description": "A versatile longsword made of hardened steel.",
+	"looks": "The longsword has a double-edged, straight blade with a silver metal finish. The hilt is wrapped in black leather and has a crossguard in the shape of a wing.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 40
+	},
+	"stat_bonus": {
+		"str": 8,
+		"dex": 4
+	},
+	"weight": 3,
+	"special_weapon_skills": {
+		"Swordsmanship": "Increases sword handling and damage by 20%."
+	}
+},
+{
+	"name": "Silk Robe",
+	"description": "A comfortable robe made of high-quality silk.",
+	"looks": "The robe is flowing and lightweight, made of soft silk fabric. It has a loose fit and is adorned with intricate embroidery.",
+	"durability": 100,
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"int": 3,
+		"wis": 2
+	},
+	"usage_requirements": {
+		"int": 10
+	},
+	"weight": 1,
+	"special_effects": {
+		"mana_regeneration": "Increases mana regeneration rate by 10%."
+	}
+},
+
+{
+	"name": "Dragon Armor",
+	"description": "A legendary armor made from the scales of a dragon.",
+	"looks": "The Dragon Armor is shimmering and radiant, reflecting light in various shades of green and gold. It is covered in intricately designed dragon scale plates that provide both protection and intimidation.",
+	"durability": 500,
+	"item_usage": "wear_torso",
+	"stat_bonus": {
+		"def": 50,
+		"max_hp": 100,
+		"resistance_fire": 20,
+		"resistance_physical": 10
+	},
+	"usage_requirements": {
+		"str": 25,
+		"con": 25
+	},
+	"weight": 15,
+	"special_effects": {
+		"dragon_buff": "Increases all damage dealt by 10%."
+	}
+},
+{
+	"name": "Healing Potion",
+	"description": "A magical potion that restores health to the user.",
+	"looks": "The healing potion is a small glass vial filled with a glowing blue liquid.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"dmg_over_time": {
+		"dmg_healing": [
+			50,
+			0
+		]
+	},
+	"weight": 0.2
+},
+{
+	"name": "Spellbook of Fireball",
+	"description": "A spellbook containing the knowledge and instructions to cast the fireball spell.",
+	"looks": "The spellbook is a leather-bound tome with intricate runes and symbols embossed on the cover. It emanates a faint warmth when touched.",
+	"durability": 100,
+	"item_usage": "util",
+	"dmg": {
+		"dmg_fire": 50
+	},
+	"stat_bonus": {
+		"int": 10,
+		"max_mp": 100
+	},
+	"usage_requirements": {
+		"int": 20
+	},
+	"weight": 1,
+	"special_weapon_skills": {
+		"spellcasting": "Increases effectiveness and cast speed of fireball spells."
+	},
+	"special_effects": {
+		"fireball_explosion": "Causes a fiery explosion upon impact, dealing area of effect damage."
+	}
+},
+{
+	"name": "Shield of Protection",
+	"description": "A sturdy shield that offers excellent protection against physical attacks.",
+	"looks": "The shield is made of reinforced steel and is adorned with intricate engravings of a protective sigil. It has a leather grip on the back for a secure hold.",
+	"durability": 200,
+	"item_usage": "wear_hand",
+	"stat_bonus": {
+		"def": 10
+	},
+	"usage_requirements": {
+		"str": 12
+	},
+	"weight": 4,
+	"special_effects": {
+		"blocking": "Increases the chance to block incoming attacks."
+	}
+}
+]

@@ -1,0 +1,181 @@
+[
+{
+	"name": "Tome of Knowledge",
+	"description": "A magical book filled with ancient knowledge and wisdom.",
+	"looks": "The tome is bound in aged leather with intricate embossed patterns. It emits a soft glow and feels weighty with the weight of knowledge.",
+	"durability": 200,
+	"item_usage": "util",
+	"stat_bonus": {
+		"int": 10,
+		"wis": 5
+	},
+	"usage_requirements": {
+		"int": 15
+	},
+	"weight": 2.2,
+	"special_effects": {
+		"knowledge_gain": "Increases experience gained from quests and battles by 20%."
+	}
+},
+{
+	"name": "Chaos Pendant",
+	"description": "A mysterious pendant that harnesses chaotic energy.",
+	"looks": "The pendant is made of a rare, black gemstone that seems to swirl with a chaotic energy. It is encased in a silver setting with intricate designs.",
+	"durability": 100,
+	"item_usage": "trinket",
+	"stat_bonus": {
+		"cha": 5,
+		"luck": 3
+	},
+	"weight": 0.5,
+	"special_effects": {
+		"chaos_aura": "Emits a chaotic aura that confuses enemies in close proximity."
+	}
+},
+{
+	"name": "Mystic Wand",
+	"description": "A magical wand that emanates a mysterious energy.",
+	"looks": "The wand is made of polished wood and adorned with intricate carvings. It glows faintly with a soft blue light.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_lightning": 10
+	},
+	"stat_bonus": {
+		"int": 5,
+		"max_mp": 50
+	},
+	"usage_requirements": {
+		"int": 20
+	},
+	"weight": 0.5,
+	"special_effects": {
+		"mana_leech": "Drains 2 mana from the target with each successful hit"
+	}
+},
+{
+	"name": "Poisoned Dagger",
+	"description": "A small dagger with a poisoned blade.",
+	"looks": "The dagger has a short, thin blade made of dark steel. The handle is wrapped in black leather.",
+	"durability": 200,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_piercing": 10,
+		"dmg_poison": 5
+	},
+	"stat_bonus": {
+		"dex": 3
+	},
+	"weight": 1,
+	"special_effects": {
+		"poison": "Has a chance to poison the target, dealing additional damage over time."
+	}
+},
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
+	}
+},
+{
+	"name": "Amulet of Protection",
+	"description": "A powerful amulet that provides enhanced protection to the wearer.",
+	"looks": "The amulet is made of a shining golden metal, with intricate engravings of protective symbols. It has a large gemstone in the center that radiates a soft protective glow.",
+	"durability": 100,
+	"item_usage": "trinket",
+	"stat_bonus": {
+		"con": 3,
+		"def": 10
+	},
+	"usage_requirements": {
+		"con": 20
+	},
+	"weight": 0.5,
+	"special_effects": {
+		"damage_reduction": "Reduces incoming damage by 10%"
+	}
+},
+{
+	"name": "Ring of Strength",
+	"description": "A ring that enhances the strength of the wearer.",
+	"looks": "The ring is made of silver and has a large, intricately carved gemstone in the center.",
+	"durability": 0,
+	"item_usage": "trinket",
+	"stat_bonus": {
+		"str": 10
+	},
+	"weight": 0.5,
+	"special_effects": {
+		"strength_boost": "Increases character's strength by 10 points."
+	}
+},
+{
+	"name": "Wand of Healing",
+	"description": "A magical wand that heals wounds and restores vitality.",
+	"looks": "The wand is made of polished silver with intricate engravings of healing symbols. It emits a soft, soothing light.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_healing": 30
+	},
+	"stat_bonus": {
+		"wis": 5,
+		"max_mp": 50
+	},
+	"usage_requirements": {
+		"wis": 20
+	},
+	"weight": 0.5,
+	"special_effects": {
+		"healing_aura": "Creates a small healing aura around the user, restoring additional health to nearby allies."
+	}
+},
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
+	}
+},
+{
+	"name": "Enchanted Sword",
+	"description": "A magical sword imbued with powerful enchantments.",
+	"looks": "The sword has a shining silver blade with intricate runes etched into its surface. The hilt is made of polished ebony and adorned with a sparkling gemstone.",
+	"durability": 150,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 15
+	},
+	"stat_bonus": {
+		"str": 5,
+		"dex": 3
+	},
+	"weight": 2.5,
+	"special_effects": {
+		"elemental_damage": "Adds additional fire damage to attacks"
+	}
+}
+]

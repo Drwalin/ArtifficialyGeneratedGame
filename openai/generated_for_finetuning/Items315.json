@@ -1,0 +1,163 @@
+[
+{
+	"name": "Acidic Flask",
+	"description": "A flask filled with a highly corrosive acid.",
+	"looks": "The flask is made of thick glass and the acid inside is bubbling and emitting a toxic fume.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"dmg": {
+		"dmg_acid": -50
+	},
+	"weight": 0.5
+},
+{
+	"name": "Ice Sword",
+	"description": "A sword made of ice that freezes enemies upon impact.",
+	"looks": "The sword has a transparent, icy blade with a hilt made of frost-covered metal.",
+	"durability": 100,
+	"item_usage": "one_hand",
+	"dmg": {
+		"dmg_physical": 10,
+		"dmg_ice": 20
+	},
+	"stat_bonus": {
+		"def": 5
+	},
+	"special_effects": {
+		"Freezing": "Has a chance to freeze enemies for 3 seconds upon successful hit."
+	},
+	"usage_requirements": {
+		"dex": 10
+	},
+	"weight": 2.5,
+	"special_weapon_skills": {
+		"Swordsmanship": "Increases damage and accuracy with swords."
+	}
+},
+{
+	"name": "Quick Healing Potion",
+	"description": "A potion that rapidly restores a large amount of health.",
+	"looks": "A small glass vial filled with a sparkling blue liquid.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"stat_bonus": {
+		"hp": 100
+	},
+	"weight": 0.2
+},
+{
+	"name": "Health Restoration Potion",
+	"description": "A potion that restores a small amount of health.",
+	"looks": "The potion is a small glass vial filled with a glowing blue liquid.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"stat_bonus": {
+		"hp": 50
+	},
+	"weight": 0.1
+},
+{
+	"name": "Slow Healing Potion",
+	"description": "A potion that restores health points.",
+	"looks": "A small, glass vial filled with a glowing, green liquid.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"dmg_over_time": {
+		"dmg_light": [-80, 10]
+	},
+	"weight": 0.1
+},
+{
+	"name": "Fireball Scroll",
+	"description": "A scroll that contains the fireball spell, allowing the user to cast a powerful fireball.",
+	"looks": "The scroll is made of aged parchment and has intricate arcane symbols inscribed upon it.",
+	"durability": 1,
+	"item_usage": "util",
+	"item_recipee": [
+		"Fire Essence",
+		"Incantation Ink",
+		"Parchment"
+	],
+	"dmg": {
+		"dmg_fire": 100
+	},
+	"stat_bonus": {
+		"max_mp": -20
+	},
+	"usage_requirements": {
+		"int": 15
+	},
+	"weight": 0.05,
+	"special_effects": {
+		"burn": "Targets hit by the fireball have a chance to be set on fire, taking additional damage over time."
+	}
+},
+{
+	"name": "Speed Elixir",
+	"description": "An elixir that enhances the user's speed for a short duration.",
+	"looks": "The elixir is a small glass bottle filled with a sparkling orange liquid.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"dmg_over_time": {
+		"dmg_air": [30, 5],
+		"dmg_earth": [30, 5]
+	},
+	"stat_bonus": {
+		"spd": 20
+	},
+	"weight": 0.1
+},
+{
+	"name": "Vorpal Sword",
+	"description": "A legendary sword known for its ability to sever heads with a single strike.",
+	"looks": "The Vorpal Sword is a long, silver blade with an intricate hilt and a glowing blue edge.",
+	"durability": 100,
+	"item_usage": "two_hand",
+	"dmg": {
+		"dmg_physical": 50,
+		"dmg_light": 10
+	},
+	"stat_bonus": {
+		"luck": 5,
+		"def": 10
+	},
+	"usage_requirements": {
+		"str": 50,
+		"dex": 30
+	},
+	"weight": 2,
+	"special_weapon_skills": {
+		"Sword Mastery": "Increases damage dealt with swords by 10%."
+	},
+	"special_effects": {
+		"Severing Strike": "25% chance to instantly kill the target."
+	}
+},
+{
+	"name": "Mana Restoration Potion",
+	"description": "Restores a portion of the user's mana",
+	"looks": "A small vial filled with a shimmering blue liquid",
+	"durability": 1,
+	"item_usage": "consumable",
+	"stat_bonus": {
+		"mp": 50
+	},
+	"weight": 0.1
+},
+{
+	"name": "Wisdom Elixir",
+	"description": "An elixir that enhances wisdom and spell power for a short period of time.",
+	"looks": "A small glass bottle containing a glowing purple liquid.",
+	"durability": 1,
+	"item_usage": "consumable",
+	"item_recipee": [
+		"Starflower Petals",
+		"Shimmering Crystal"
+	],
+	"stat_bonus": {
+		"wis": 4,
+		"max_mp": 20
+	},
+	"weight": 0.2
+}
+]
