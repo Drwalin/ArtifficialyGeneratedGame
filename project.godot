@@ -15,6 +15,11 @@ run/main_scene="res://scenes/MainScene.tscn"
 config/features=PackedStringArray("4.1", "Mobile")
 config/icon="res://icon.svg"
 
+[debug]
+
+settings/stdout/print_gpu_profile=true
+settings/gdscript/max_call_stack=2047
+
 [input]
 
 movement_left={
@@ -53,6 +58,33 @@ movement_run={
 ]
 }
 
+[physics]
+
+3d/run_on_separate_thread=true
+3d/default_gravity=9.81
+
 [rendering]
 
+occlusion_culling/bvh_build_quality=0
+rendering_device/staging_buffer/block_size_kb=2048
+rendering_device/staging_buffer/max_size_mb=256
+rendering_device/staging_buffer/texture_upload_region_size_px=256
+rendering_device/pipeline_cache/save_chunk_size_mb=64.0
+rendering_device/vulkan/max_descriptors_per_pool=256
 renderer/rendering_method="mobile"
+lights_and_shadows/directional_shadow/size=512
+lights_and_shadows/directional_shadow/size.mobile=1024
+lights_and_shadows/directional_shadow/soft_shadow_filter_quality=0
+lights_and_shadows/positional_shadow/soft_shadow_filter_quality=0
+reflections/reflection_atlas/reflection_count=16
+global_illumination/gi/use_half_resolution=true
+shading/overrides/force_lambert_over_burley=true
+camera/depth_of_field/depth_of_field_bokeh_shape=0
+camera/depth_of_field/depth_of_field_bokeh_quality=0
+environment/ssao/quality=0
+environment/ssil/quality=0
+environment/glow/upscale_mode=0
+global_illumination/sdfgi/probe_ray_count=0
+global_illumination/sdfgi/frames_to_update_lights=4
+mesh_lod/lod_change/threshold_pixels=4.0
+lights_and_shadows/positional_shadow/atlas_size=512

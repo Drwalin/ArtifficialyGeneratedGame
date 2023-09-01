@@ -1,0 +1,40 @@
+[gd_scene load_steps=5 format=3 uid="uid://0dhcf3rif6nx"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_tundb"]
+radius = 0.4
+height = 1.75
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_iemjn"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w41vs"]
+albedo_color = Color(0.74902, 0.368627, 0.431373, 1)
+
+[sub_resource type="SphereMesh" id="SphereMesh_v7o1a"]
+material = SubResource("StandardMaterial3D_w41vs")
+
+[node name="CharacterBody3D" type="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.13075, 3.06077)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_tundb")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CollisionShape3D"]
+transform = Transform3D(0.7, 0, 0, 0, 0.875, 0, 0, 0, 0.7, 0, 0, 0)
+mesh = SubResource("CapsuleMesh_iemjn")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CollisionShape3D/MeshInstance3D"]
+transform = Transform3D(0.2, 0, 0, 0, -0.143, 3.01992e-08, 0, -2.15924e-08, -0.2, 0.0333322, 0.707745, -0.433851)
+mesh = SubResource("SphereMesh_v7o1a")
+
+[node name="Label3D" type="Label3D" parent="CollisionShape3D/MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.24242, 0)
+billboard = 1
+no_depth_test = true
+fixed_size = true
+text = "NPC"
+font_size = 12
+outline_size = 7
+
+[node name="Head" type="Node3D" parent="CollisionShape3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.624758, 0)
