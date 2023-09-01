@@ -13,6 +13,8 @@ config_version=5
 config/name="ArtifficialyGeneratedGame"
 run/main_scene="res://scenes/MainScene.tscn"
 config/features=PackedStringArray("4.1", "Mobile")
+run/flush_stdout_on_print=true
+run/max_fps=30
 config/icon="res://icon.svg"
 
 [debug]

@@ -8,12 +8,12 @@ var bob_time = 0.0;
 
 var camera : Camera3D;
 
-func _ready():
+func _ready()->void:
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED);
 	camera = Camera3D.new();
 	head.add_child(camera);
 
-func _unhandled_input(event):
+func _unhandled_input(event)->void:
 	if event is InputEventMouseMotion:
 		Rotate(-event.relative.y * SENSITIVITY, -event.relative.x * SENSITIVITY);
 	elif event is InputEventKey:
@@ -24,9 +24,10 @@ func _unhandled_input(event):
 	elif event is InputEventMouseButton:
 		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED);
 
-func _process(delta):
+func _process(delta: float)->void:
 	SetRunning(Input.is_action_pressed("movement_run"));
 	SetCrouching(Input.is_action_pressed("movement_crouch"));
+	delta = delta;
 
 func _physics_process(delta:float)->void:
 	SetRunning(Input.is_action_pressed("movement_run"));
@@ -45,7 +46,4 @@ func _headbob(time) -> Vector3:
 	pos.y = sin(time * BOB_FREQ) * BOB_AMP;
 	pos.x = cos(time * BOB_FREQ / 2 + PI/2) * BOB_AMP / 2;
 	return pos;
-
-
-
 

@@ -69,14 +69,14 @@ transform = Transform3D(-4.15486e-08, 1.35794e-08, 1, 0.31066, 0.950521, 0, -0.9
 
 [node name="GUI" type="Node" parent="."]
 
-[node name="Label" type="Label" parent="GUI"]
+[node name="LabelFPS" type="Label" parent="GUI"]
 offset_left = 6.0
 offset_top = 9.0
 offset_right = 46.0
 offset_bottom = 35.0
 text = "FPS:"
 
-[node name="Label" type="Label" parent="GUI/Label"]
+[node name="LabelFPSvalue" type="Label" parent="GUI/LabelFPS"]
 layout_mode = 0
 offset_left = 46.0
 offset_right = 86.0
