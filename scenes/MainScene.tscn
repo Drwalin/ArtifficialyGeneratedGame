@@ -1,10 +1,11 @@
-[gd_scene load_steps=10 format=3 uid="uid://dr22pxft72vjr"]
+[gd_scene load_steps=11 format=3 uid="uid://dr22pxft72vjr"]
 
 [ext_resource type="PackedScene" uid="uid://cs4qisi3jwxfx" path="res://resources/SomeMap.glb" id="1_ddkoo"]
 [ext_resource type="MeshLibrary" uid="uid://b2ico06a1v2kp" path="res://resources/MeshLib.tres" id="3_ppkw4"]
 [ext_resource type="Script" path="res://scenes/Label.gd" id="4_cpldt"]
 [ext_resource type="Script" path="res://scripts/characters/Player.gd" id="4_egoae"]
 [ext_resource type="PackedScene" uid="uid://0dhcf3rif6nx" path="res://resources/object_templates/CharacterBase.tscn" id="5_km7ru"]
+[ext_resource type="PackedScene" uid="uid://jcwyfc4kaxr" path="res://scripts/behaviourtree/example_behaviour_tree.tscn" id="6_q8qyp"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_tundb"]
 radius = 0.4
@@ -105,3 +106,8 @@ mesh = SubResource("SphereMesh_v7o1a")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.624758, 0)
 
 [node name="CharacterBody3D" parent="Characters" instance=ExtResource("5_km7ru")]
+
+[node name="BehaviourTrees" type="Node" parent="."]
+
+[node name="Node2D" parent="BehaviourTrees" instance=ExtResource("6_q8qyp")]
+position = Vector2(53, 0)
