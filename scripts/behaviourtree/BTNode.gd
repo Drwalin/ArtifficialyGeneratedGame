@@ -29,12 +29,12 @@ func SetExecutionDelay(value:int)->BTNode:
 func Fail()->void:
 	OnExit();
 	bb().previousNodeFinishState = BTBlackboard.BTNodeFinishState.FAILURE;
-	bb().ExitCurrentNode();
+	bb()._ExitCurrentNode();
 
 func Success()->void:
 	OnExit();
 	bb().previousNodeFinishState = BTBlackboard.BTNodeFinishState.SUCCESS;
-	bb().ExitCurrentNode();
+	bb()._ExitCurrentNode();
 
 func RestartBT()->void:
 	bt.RestartBT();
@@ -60,16 +60,17 @@ func FindBT()->BehaviourTree:
 	return p as BehaviourTree;
 
 func _ready()->void:
-	if !bt:
-		bt = FindBT();
-	set_position(Vector2(0,0));
 	if !Engine.is_editor_hint():
-		hide();
-	for c in get_children():
-		if !(c is BTNode):
-			remove_child(c);
-	self.set_process(false);
-	self.set_physics_process(false);
+		if !bt:
+			bt = FindBT();
+		set_position(Vector2(0,0));
+		if !Engine.is_editor_hint():
+			hide();
+		for c in get_children():
+			if !(c is BTNode):
+				remove_child(c);
+		self.set_process(false);
+		self.set_physics_process(false);
 
 func OrientObjects()->void:
 	pass;
@@ -78,10 +79,11 @@ func GetAABBSize()->Vector2:
 	return get_minimum_size();
 
 var orientinObjectsCounter:int = 0;
+
 func _process(delta: float)->void:
 	if OS.is_debug_build() && Engine.is_editor_hint():
 		orientinObjectsCounter += 1;
-		if orientinObjectsCounter%60 == 1:
+		if orientinObjectsCounter%12 == 1:
 			delta = delta;
 			OrientObjects();
 			CreateLineToParent();

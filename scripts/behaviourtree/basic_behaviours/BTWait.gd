@@ -5,15 +5,21 @@ class_name BTWait;
 @export var secondsToWait:float = 1;
 
 func _init():
-	super();
 	nodeName = "Wait";
+	super._init();
 
 func OnEnter()->void:
-	bb().stack.back().endTime = bt.GetTime() + secondsToWait;
+	bb().nodesStack.back()[1]["endTime"] = bt.GetTime() + secondsToWait;
 
 func OnExit()->void:
 	pass;
 
 func Execute()->void:
-	if bb().stack.back().endTime <= bt.GetTime():
+	if bb().nodesStack.back()[1]["endTime"] <= bt.GetTime():
 		Success();
+
+func _ready()->void:
+	super._ready();
+
+func OrientObjects()->void:
+	pass;

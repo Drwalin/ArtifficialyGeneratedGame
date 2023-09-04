@@ -2,19 +2,17 @@ extends CharacterBaseController;
 class_name CharacterBaseAI;
 
 @export var behaviourTree:BehaviourTree;
-var blackboard:BTBlackboard;
-var navigationAgent:NavigationAgent3D;
-
-func _init()->void:
-	super._init();
-	blackboard = $BTBlackboard;
-	navigationAgent = $NavigationAgent3D;
+@onready var blackboard:BTBlackboard = $BTBlackboard;
+@onready var navigationAgent:NavigationAgent3D = $NavigationAgent3D;
 
 func _ready()->void:
-	blackboard = $BTBlackboard;
-	navigationAgent = $NavigationAgent3D;
+	navigationAgent.set_navigation_map(get_tree().root.child("NavigationRegion3D").get_region_rid());
 	blackboard.npc = self;
 	blackboard.SetBehaviourTree(behaviourTree);
+	rotateTowardMovementDirection = true;
 
 func _physics_process(delta: float) -> void:
-	pass;
+	var nextPathPosition: Vector3 = navigationAgent.get_next_path_position();
+	var direction: Vector3 = (nextPathPosition - global_position).normalized();
+	SetGlobalMoveDirection(direction);
+	super._physics_process(delta);

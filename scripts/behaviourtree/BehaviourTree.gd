@@ -5,7 +5,6 @@ var rootNode : BTNode;
 var bb : BTBlackboard;
 var dt : float = 0.0166666;
 var internalAbsoluteTime:float = 0;
-
 var blackboards : Dictionary = {};
 
 func _ExitCurrentNode(enableImmediateExecutionIfNeeded:bool=false)->void:

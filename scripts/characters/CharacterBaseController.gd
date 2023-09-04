@@ -25,8 +25,8 @@ func SetRelativeMoveDirection(dir: Vector2)->void:
 func SetGlobalMoveDirection(dir: Vector3)->void:
 	moveDirection = dir;
 	
-func SetRotateTowardMovementDirection(rotate: bool)->void:
-	rotateTowardMovementDirection = rotate;
+func SetRotateTowardMovementDirection(_rotate: bool)->void:
+	rotateTowardMovementDirection = _rotate;
 	
 func Rotate(x:float, y:float)->void:
 		collisionShape.rotate_y(y);
@@ -75,7 +75,7 @@ func _physics_process(delta:float)->void:
 		if velocity.length_squared() > 0.01:
 			var fwdV = (transform.basis*collisionShape.transform.basis * Vector3.FORWARD).normalized();
 			var mvV = velocity.normalized();
-			var sinV = mvV.cross(fwdV);
+			var sinV = mvV.cross(fwdV).length();
 			var angle = asin(sinV);
 			Rotate(0, angle);
 	move_and_slide();

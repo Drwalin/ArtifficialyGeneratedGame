@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" path="res://scripts/behaviourtree/BTSequence.gd" id="1_0t8a1"]
 [ext_resource type="Script" path="res://scripts/behaviourtree/BehaviourTree.gd" id="1_rqckf"]
-[ext_resource type="Script" path="res://scripts/behaviourtree/BTCondition.gd" id="2_qe614"]
-[ext_resource type="Script" path="res://scripts/behaviourtree/BTNode.gd" id="3_ih3i1"]
+[ext_resource type="Script" path="res://scripts/behaviourtree/basic_behaviours/BTGoToObject.gd" id="3_s0atq"]
+[ext_resource type="Script" path="res://scripts/behaviourtree/basic_behaviours/BTWait.gd" id="4_x8w7c"]
 
 [node name="ExampleBehaviourTree" type="Node"]
 script = ExtResource("1_rqckf")
@@ -15,122 +15,45 @@ theme_override_colors/font_color = Color(0.9, 0.1, 0.8, 1)
 text = "Sequence Node"
 script = ExtResource("1_0t8a1")
 
-[node name="BTCondition" type="Label" parent="BTSequence"]
+[node name="BTGoToObject2" type="Label" parent="BTSequence"]
 layout_mode = 0
-offset_left = -175.5
+offset_left = -99.5
 offset_top = 86.0
-offset_right = -142.5
-offset_bottom = 112.0
-theme_override_colors/font_color = Color(0.9, 0.1, 0.05, 1)
-text = "true"
-script = ExtResource("2_qe614")
-condition = "true"
-
-[node name="BTSequence" type="Label" parent="BTSequence/BTCondition"]
-layout_mode = 0
-offset_left = -44.0
-offset_top = 86.0
-offset_right = 77.0
-offset_bottom = 112.0
-theme_override_colors/font_color = Color(0.9, 0.1, 0.8, 1)
-text = "Sequence Node"
-script = ExtResource("1_0t8a1")
-
-[node name="BTNode" type="Label" parent="BTSequence/BTCondition/BTSequence"]
-layout_mode = 0
-offset_top = 86.0
-offset_right = 42.0
+offset_right = -5.5
 offset_bottom = 112.0
 theme_override_colors/font_color = Color(0.05, 0.9, 0.1, 1)
-text = "Node"
-script = ExtResource("3_ih3i1")
+text = "Go to object"
+script = ExtResource("3_s0atq")
+blackboardFieldNameWithTargetPointer = "player"
 
-[node name="BTNode2" type="Label" parent="BTSequence/BTCondition/BTSequence"]
+[node name="BTWait" type="Label" parent="BTSequence"]
 layout_mode = 0
-offset_left = 72.0
+offset_left = 22.5
 offset_top = 86.0
-offset_right = 114.0
+offset_right = 62.5
 offset_bottom = 112.0
 theme_override_colors/font_color = Color(0.05, 0.9, 0.1, 1)
-text = "Node"
-script = ExtResource("3_ih3i1")
+text = "Wait"
+script = ExtResource("4_x8w7c")
+secondsToWait = 2.0
 
-[node name="BTSequence" type="Label" parent="BTSequence"]
+[node name="BTGoToObject" type="Label" parent="BTSequence"]
 layout_mode = 0
-offset_left = 75.5
+offset_left = 90.5
 offset_top = 86.0
-offset_right = 196.5
-offset_bottom = 112.0
-theme_override_colors/font_color = Color(0.9, 0.1, 0.8, 1)
-text = "Sequence Node"
-script = ExtResource("1_0t8a1")
-
-[node name="BTNode" type="Label" parent="BTSequence/BTSequence"]
-layout_mode = 0
-offset_left = -144.0
-offset_top = 86.0
-offset_right = -102.0
+offset_right = 184.5
 offset_bottom = 112.0
 theme_override_colors/font_color = Color(0.05, 0.9, 0.1, 1)
-text = "Node"
-script = ExtResource("3_ih3i1")
+text = "Go to object"
+script = ExtResource("3_s0atq")
 
-[node name="BTNode2" type="Label" parent="BTSequence/BTSequence"]
+[node name="BTWait2" type="Label" parent="BTSequence"]
 layout_mode = 0
-offset_left = -72.0
+offset_left = 212.5
 offset_top = 86.0
-offset_right = -30.0
+offset_right = 252.5
 offset_bottom = 112.0
 theme_override_colors/font_color = Color(0.05, 0.9, 0.1, 1)
-text = "Node"
-script = ExtResource("3_ih3i1")
-
-[node name="BTNode3" type="Label" parent="BTSequence/BTSequence"]
-layout_mode = 0
-offset_top = 86.0
-offset_right = 42.0
-offset_bottom = 112.0
-theme_override_colors/font_color = Color(0.05, 0.9, 0.1, 1)
-text = "Node"
-script = ExtResource("3_ih3i1")
-
-[node name="BTSequence" type="Label" parent="BTSequence/BTSequence"]
-layout_mode = 0
-offset_left = 108.0
-offset_top = 86.0
-offset_right = 229.0
-offset_bottom = 112.0
-theme_override_colors/font_color = Color(0.9, 0.1, 0.8, 1)
-text = "Sequence Node"
-script = ExtResource("1_0t8a1")
-
-[node name="BTNode" type="Label" parent="BTSequence/BTSequence/BTSequence"]
-layout_mode = 0
-offset_left = -36.0
-offset_top = 86.0
-offset_right = 6.0
-offset_bottom = 112.0
-theme_override_colors/font_color = Color(0.05, 0.9, 0.1, 1)
-text = "Node"
-script = ExtResource("3_ih3i1")
-
-[node name="BTCondition" type="Label" parent="BTSequence/BTSequence/BTSequence"]
-layout_mode = 0
-offset_left = 80.0
-offset_top = 86.0
-offset_right = 113.0
-offset_bottom = 112.0
-theme_override_colors/font_color = Color(0.9, 0.1, 0.05, 1)
-text = "true"
-script = ExtResource("2_qe614")
-condition = "true"
-
-[node name="BTSequence" type="Label" parent="BTSequence/BTSequence/BTSequence/BTCondition"]
-layout_mode = 0
-offset_left = -44.0
-offset_top = 86.0
-offset_right = 77.0
-offset_bottom = 112.0
-theme_override_colors/font_color = Color(0.9, 0.1, 0.8, 1)
-text = "Sequence Node"
-script = ExtResource("1_0t8a1")
+text = "Wait"
+script = ExtResource("4_x8w7c")
+secondsToWait = 5.0

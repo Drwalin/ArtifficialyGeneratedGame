@@ -18,11 +18,11 @@ func SetBT(_bt: BehaviourTree)->void:
 
 func OnEnter()->void:
 	if CanExecute():
-		bb().nodesStack[bb().nodesStack.size()-1] = node;
+		bb().nodesStack[bb().nodesStack.size()-1][0] = node;
 		node.OnEnter();
 		return;
 	bb().previousNodeFinishState = BTBlackboard.BTNodeFinishState.SUCCESS;
-	bb()._ExitCurrentNode();
+	bb()._ExitCurrentNode(false);
 	
 func CanExecute()->bool:
 	return conditionExpression.execute([bb()], bb().npc);
@@ -36,11 +36,12 @@ func Execute()->void:
 func _ready()->void:
 	super._ready();
 	set_position(Vector2(0,0));
-	var err = conditionExpression.parse(condition, ["bb"]);
-	assert(err == OK, conditionExpression.get_error_text());
-	for c in get_children():
-		if c is BTNode:
-			node = c as BTNode;
+	if !(OS.is_debug_build() && Engine.is_editor_hint()):
+		var err = conditionExpression.parse(condition, ["bb"]);
+		assert(err == OK, conditionExpression.get_error_text());
+		for c in get_children():
+			if c is BTNode:
+				node = c as BTNode;
 
 func GetAABBSize()->Vector2:
 	for c in get_children():
