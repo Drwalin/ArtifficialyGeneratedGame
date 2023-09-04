@@ -1,11 +1,12 @@
 extends Node;
 class_name BTBlackboard;
 
-var bt : BehaviourTree;
-var character : CharacterBaseController;
+@export var bt : BehaviourTree
+var npc : CharacterBaseAI;
 var nodesStack : Array = [];
 var dt : float;
-var data;
+var data = {};
+var stack : Array = [];
 
 enum BTNodeFinishState {
 	FAILURE,
@@ -15,7 +16,7 @@ enum BTNodeFinishState {
 var previousNodeFinishState : int = BTNodeFinishState.SUCCESS;
 
 func _ready()->void:
-	pass;
+	SetBehaviourTree(bt);
 
 func SetBehaviourTree(_bt: BehaviourTree)->void:
 	if bt:
@@ -25,7 +26,7 @@ func SetBehaviourTree(_bt: BehaviourTree)->void:
 	if bt:
 		bt.blackboards[self] = 1;
 
-func _ExitCurrentNode(enableImmediateExecutionIfNeeded:bool)->void:
+func _ExitCurrentNode(enableImmediateExecutionIfNeeded:bool=false)->void:
 	if nodesStack.size() > 0:
 		var node:BTNode = nodesStack.back();
 		node.OnExit();
@@ -47,7 +48,7 @@ func RestartBT()->void:
 		nodesStack[i].OnExit();
 		i-=1;
 	nodesStack.clear();
-	previousNodeFinishState = self.SUCCESS;
+	previousNodeFinishState = BTNodeFinishState.SUCCESS;
 
 func _exit_tree()->void:
 	RestartBT();

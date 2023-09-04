@@ -1,11 +1,13 @@
-[gd_scene load_steps=11 format=3 uid="uid://dr22pxft72vjr"]
+[gd_scene load_steps=14 format=3 uid="uid://dr22pxft72vjr"]
 
 [ext_resource type="PackedScene" uid="uid://cs4qisi3jwxfx" path="res://resources/SomeMap.glb" id="1_ddkoo"]
 [ext_resource type="MeshLibrary" uid="uid://b2ico06a1v2kp" path="res://resources/MeshLib.tres" id="3_ppkw4"]
 [ext_resource type="Script" path="res://scenes/Label.gd" id="4_cpldt"]
 [ext_resource type="Script" path="res://scripts/characters/Player.gd" id="4_egoae"]
 [ext_resource type="PackedScene" uid="uid://0dhcf3rif6nx" path="res://resources/object_templates/CharacterBase.tscn" id="5_km7ru"]
+[ext_resource type="PackedScene" uid="uid://dyaenkyhh1r4n" path="res://resources/object_templates/CharacterAiBase.tscn" id="6_2cu1j"]
 [ext_resource type="PackedScene" uid="uid://jcwyfc4kaxr" path="res://scripts/behaviourtree/example_behaviour_tree.tscn" id="6_q8qyp"]
+[ext_resource type="Script" path="res://scripts/NavigationRegion3DRealTimeRebuilder.gd" id="8_gkjm0"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_tundb"]
 radius = 0.4
@@ -18,6 +20,8 @@ albedo_color = Color(0.74902, 0.368627, 0.431373, 1)
 
 [sub_resource type="SphereMesh" id="SphereMesh_v7o1a"]
 material = SubResource("StandardMaterial3D_w41vs")
+
+[sub_resource type="NavigationMesh" id="NavigationMesh_s4ao4"]
 
 [node name="SceneRootNode" type="Node3D"]
 
@@ -107,6 +111,14 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.624758, 0)
 
 [node name="CharacterBody3D" parent="Characters" instance=ExtResource("5_km7ru")]
 
+[node name="CharacterBody3D2" parent="Characters" node_paths=PackedStringArray("behaviourTree") instance=ExtResource("6_2cu1j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.00299, 2.13075, 3.06077)
+behaviourTree = NodePath("../../BehaviourTrees/ExampleBehaiourTree")
+
 [node name="BehaviourTrees" type="Node" parent="."]
 
 [node name="ExampleBehaiourTree" parent="BehaviourTrees" instance=ExtResource("6_q8qyp")]
+
+[node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]
+navigation_mesh = SubResource("NavigationMesh_s4ao4")
+script = ExtResource("8_gkjm0")

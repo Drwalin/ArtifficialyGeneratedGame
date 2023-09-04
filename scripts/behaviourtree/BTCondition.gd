@@ -9,7 +9,7 @@ var conditionExpression:Expression = Expression.new();
 func _init()->void:
 	super();
 	lineColor = Color(0,0,0.9);
-	text = "Condition Node";
+	nodeName = "Condition Node";
 	add_theme_color_override("font_color", Color(0.9, 0.1, 0.05));
 
 func SetBT(_bt: BehaviourTree)->void:
@@ -20,12 +20,12 @@ func OnEnter()->void:
 	if CanExecute():
 		bb().nodesStack[bb().nodesStack.size()-1] = node;
 		node.OnEnter();
-	bt.previousNodeFinishState = bt.SUCCESS;
-	bt.ExitCurrentNode();
+		return;
+	bb().previousNodeFinishState = BTBlackboard.BTNodeFinishState.SUCCESS;
+	bb()._ExitCurrentNode();
 	
 func CanExecute()->bool:
-	assert(false, "Not implemented BTCondition::CanExecute().");
-	return false;
+	return conditionExpression.execute([bb()], bb().npc);
 
 func OnExit()->void:
 	assert(false);
@@ -34,10 +34,13 @@ func Execute()->void:
 	assert(false);
 	
 func _ready()->void:
-	set_position(Vector2(0,0));
-	var err = conditionExpression.parse(condition);
-	assert(err != OK, conditionExpression.get_error_text());
 	super._ready();
+	set_position(Vector2(0,0));
+	var err = conditionExpression.parse(condition, ["bb"]);
+	assert(err == OK, conditionExpression.get_error_text());
+	for c in get_children():
+		if c is BTNode:
+			node = c as BTNode;
 
 func GetAABBSize()->Vector2:
 	for c in get_children():
@@ -50,13 +53,13 @@ func GetAABBSize()->Vector2:
 	return size;
 
 func OrientObjects()->void:
-	text = "Invalid Condition Node";
+	nodeName = "Invalid Condition Node";
 	if condition != "":
 		var err = conditionExpression.parse(condition);
 		if err == OK:
-			text = condition;
+			nodeName = condition;
 		else:
-			text = "Condition error:\n" + conditionExpression.get_error_text();
+			nodeName = "Condition error:\n" + conditionExpression.get_error_text();
 	size = Vector2(10,10);
 	for c in get_children():
 		if c is BTNode:

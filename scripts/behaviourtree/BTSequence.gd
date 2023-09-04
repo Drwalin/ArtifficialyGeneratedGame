@@ -7,7 +7,7 @@ var lastEntered:int = -1;
 
 func _init()->void:
 	super();
-	text = "Sequence Node";
+	nodeName = "Sequence Node";
 	add_theme_color_override("font_color", Color(0.9, 0.1, 0.8));
 
 func SetBT(_bt: BehaviourTree)->void:
@@ -18,19 +18,19 @@ func SetBT(_bt: BehaviourTree)->void:
 func OnEnter()->void:
 	super.OnEnter();
 	lastEntered = -1;
-	bt.previousNodeFinishState = bt.SUCCESS;
+	bb().previousNodeFinishState = BTBlackboard.BTNodeFinishState.SUCCESS;
 
 func OnExit()->void:
 	super.OnExit();
 	lastEntered = -1;
 
 func Execute()->void:
-	if bt.previousNodeFinishState == bt.FAILURE:
+	if bb().previousNodeFinishState == BTBlackboard.BTNodeFinishState.FAILURE:
 		return Fail();
-	bt.previousNodeFinishState = bt.SUCCESS;
+	bb().previousNodeFinishState = BTBlackboard.BTNodeFinishState.SUCCESS;
 	while lastEntered+1 < nodes.size():
 		lastEntered += 1;
-		bt._EnterNode(nodes[lastEntered]);
+		bb()._EnterNode(nodes[lastEntered]);
 		return;
 	return Success();
 
@@ -65,5 +65,3 @@ func OrientObjects()->void:
 			w += a.x/2;
 			n.set_position(Vector2(w-n.size.x/2, size.y+60));
 			w += 30 + a.x/2;
-		
-	

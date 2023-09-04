@@ -1,10 +1,12 @@
-[gd_scene load_steps=4 format=3 uid="uid://jcwyfc4kaxr"]
+[gd_scene load_steps=5 format=3 uid="uid://jcwyfc4kaxr"]
 
 [ext_resource type="Script" path="res://scripts/behaviourtree/BTSequence.gd" id="1_0t8a1"]
+[ext_resource type="Script" path="res://scripts/behaviourtree/BehaviourTree.gd" id="1_rqckf"]
 [ext_resource type="Script" path="res://scripts/behaviourtree/BTCondition.gd" id="2_qe614"]
 [ext_resource type="Script" path="res://scripts/behaviourtree/BTNode.gd" id="3_ih3i1"]
 
-[node name="ExampleBehaiourTree" type="Node"]
+[node name="ExampleBehaviourTree" type="Node"]
+script = ExtResource("1_rqckf")
 
 [node name="BTSequence" type="Label" parent="."]
 offset_right = 121.0
@@ -15,19 +17,20 @@ script = ExtResource("1_0t8a1")
 
 [node name="BTCondition" type="Label" parent="BTSequence"]
 layout_mode = 0
-offset_left = -275.5
+offset_left = -175.5
 offset_top = 86.0
-offset_right = -98.5
+offset_right = -142.5
 offset_bottom = 112.0
 theme_override_colors/font_color = Color(0.9, 0.1, 0.05, 1)
-text = "Invalid Condition Node"
+text = "true"
 script = ExtResource("2_qe614")
+condition = "true"
 
 [node name="BTSequence" type="Label" parent="BTSequence/BTCondition"]
 layout_mode = 0
-offset_left = 28.0
+offset_left = -44.0
 offset_top = 86.0
-offset_right = 149.0
+offset_right = 77.0
 offset_bottom = 112.0
 theme_override_colors/font_color = Color(0.9, 0.1, 0.8, 1)
 text = "Sequence Node"
@@ -54,9 +57,9 @@ script = ExtResource("3_ih3i1")
 
 [node name="BTSequence" type="Label" parent="BTSequence"]
 layout_mode = 0
-offset_left = 103.5
+offset_left = 75.5
 offset_top = 86.0
-offset_right = 224.5
+offset_right = 196.5
 offset_bottom = 112.0
 theme_override_colors/font_color = Color(0.9, 0.1, 0.8, 1)
 text = "Sequence Node"
@@ -64,9 +67,9 @@ script = ExtResource("1_0t8a1")
 
 [node name="BTNode" type="Label" parent="BTSequence/BTSequence"]
 layout_mode = 0
-offset_left = -172.0
+offset_left = -144.0
 offset_top = 86.0
-offset_right = -130.0
+offset_right = -102.0
 offset_bottom = 112.0
 theme_override_colors/font_color = Color(0.05, 0.9, 0.1, 1)
 text = "Node"
@@ -74,9 +77,9 @@ script = ExtResource("3_ih3i1")
 
 [node name="BTNode2" type="Label" parent="BTSequence/BTSequence"]
 layout_mode = 0
-offset_left = -100.0
+offset_left = -72.0
 offset_top = 86.0
-offset_right = -58.0
+offset_right = -30.0
 offset_bottom = 112.0
 theme_override_colors/font_color = Color(0.05, 0.9, 0.1, 1)
 text = "Node"
@@ -84,9 +87,8 @@ script = ExtResource("3_ih3i1")
 
 [node name="BTNode3" type="Label" parent="BTSequence/BTSequence"]
 layout_mode = 0
-offset_left = -28.0
 offset_top = 86.0
-offset_right = 14.0
+offset_right = 42.0
 offset_bottom = 112.0
 theme_override_colors/font_color = Color(0.05, 0.9, 0.1, 1)
 text = "Node"
@@ -104,9 +106,9 @@ script = ExtResource("1_0t8a1")
 
 [node name="BTNode" type="Label" parent="BTSequence/BTSequence/BTSequence"]
 layout_mode = 0
-offset_left = -64.0
+offset_left = -36.0
 offset_top = 86.0
-offset_right = -22.0
+offset_right = 6.0
 offset_bottom = 112.0
 theme_override_colors/font_color = Color(0.05, 0.9, 0.1, 1)
 text = "Node"
@@ -114,29 +116,21 @@ script = ExtResource("3_ih3i1")
 
 [node name="BTCondition" type="Label" parent="BTSequence/BTSequence/BTSequence"]
 layout_mode = 0
-offset_left = 8.0
+offset_left = 80.0
 offset_top = 86.0
-offset_right = 185.0
+offset_right = 113.0
 offset_bottom = 112.0
 theme_override_colors/font_color = Color(0.9, 0.1, 0.05, 1)
-text = "Invalid Condition Node"
+text = "true"
 script = ExtResource("2_qe614")
+condition = "true"
 
 [node name="BTSequence" type="Label" parent="BTSequence/BTSequence/BTSequence/BTCondition"]
 layout_mode = 0
+offset_left = -44.0
 offset_top = 86.0
-offset_right = 121.0
+offset_right = 77.0
 offset_bottom = 112.0
 theme_override_colors/font_color = Color(0.9, 0.1, 0.8, 1)
 text = "Sequence Node"
 script = ExtResource("1_0t8a1")
-
-[node name="BTCondition" type="Label" parent="BTSequence/BTSequence/BTSequence/BTCondition/BTSequence"]
-layout_mode = 0
-offset_left = -28.0
-offset_top = 86.0
-offset_right = 149.0
-offset_bottom = 112.0
-theme_override_colors/font_color = Color(0.9, 0.1, 0.05, 1)
-text = "Invalid Condition Node"
-script = ExtResource("2_qe614")

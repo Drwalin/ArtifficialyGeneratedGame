@@ -4,10 +4,11 @@ class_name BehaviourTree;
 var rootNode : BTNode;
 var bb : BTBlackboard;
 var dt : float = 0.0166666;
+var internalAbsoluteTime:float = 0;
 
 var blackboards : Dictionary = {};
 
-func _ExitCurrentNode(enableImmediateExecutionIfNeeded:bool)->void:
+func _ExitCurrentNode(enableImmediateExecutionIfNeeded:bool=false)->void:
 	bb._ExitCurrentNode(enableImmediateExecutionIfNeeded);
 
 func _EnterNode(node:BTNode)->void:
@@ -15,8 +16,8 @@ func _EnterNode(node:BTNode)->void:
 
 func RestartBT()->void:
 	bb.RestartBT();
-
-func _enter_tree()->void:
+	
+func _ready()->void:
 	for c in get_children():
 		if c is BTNode:
 			rootNode = c;
@@ -28,8 +29,11 @@ func _exit_tree()->void:
 
 func _process(delta: float)->void:
 	dt = delta;
+	internalAbsoluteTime += delta;
 	for b in blackboards.keys():
 		bb = b;
 		bb.Process(delta);
 	bb = null;
 
+func GetTime()->float:
+	return internalAbsoluteTime;

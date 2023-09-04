@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://dyaenkyhh1r4n"]
+
+[ext_resource type="PackedScene" uid="uid://0dhcf3rif6nx" path="res://resources/object_templates/CharacterBase.tscn" id="1_tpiop"]
+[ext_resource type="Script" path="res://scripts/behaviourtree/BTBlackboard.gd" id="2_1cj6b"]
+[ext_resource type="Script" path="res://scripts/characters/CharacterBaseAI.gd" id="2_4jrl1"]
+
+[node name="CharacterBody3D" instance=ExtResource("1_tpiop")]
+script = ExtResource("2_4jrl1")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="." index="1"]
+
+[node name="BTBlackboard" type="Node" parent="." index="2"]
+script = ExtResource("2_1cj6b")

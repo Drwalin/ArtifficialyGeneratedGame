@@ -5,6 +5,7 @@ class_name BTNode;
 var bt : BehaviourTree;
 var lineToParent : Line2D;
 var lineColor: Color = Color(1,1,1);
+var nodeName: String = "Node";
 
 # 0 -> execution immediate from condition and selector and every frame
 # 1 -> execution every frame, after condition or selector delayes one frame
@@ -12,11 +13,11 @@ var lineColor: Color = Color(1,1,1);
 var executionDelay:int = 1;
 
 func _init()->void:
-	text = "Node";
 	add_theme_color_override("font_color", Color(0.05, 0.9, 0.1));
 				
 
 func SetBT(_bt: BehaviourTree)->void:
+	#print("Setting BT of: ", name);
 	bt = _bt;
 
 func SetExecutionDelay(value:int)->BTNode:
@@ -27,13 +28,13 @@ func SetExecutionDelay(value:int)->BTNode:
 
 func Fail()->void:
 	OnExit();
-	bt.previousNodeFinishState = bt.FAILURE;
-	bt.ExitCurrentNode();
+	bb().previousNodeFinishState = BTBlackboard.BTNodeFinishState.FAILURE;
+	bb().ExitCurrentNode();
 
 func Success()->void:
 	OnExit();
-	bt.previousNodeFinishState = bt.SUCCESS;
-	bt.ExitCurrentNode();
+	bb().previousNodeFinishState = BTBlackboard.BTNodeFinishState.SUCCESS;
+	bb().ExitCurrentNode();
 
 func RestartBT()->void:
 	bt.RestartBT();
@@ -45,18 +46,30 @@ func OnExit()->void:
 	pass;
 
 func Execute()->void:
+	#print("BTNode::Execute()");
+	#assert("Cannot execute pure virtual BTNode::Execute() code.");
 	pass;
 
 func bb()->BTBlackboard:
 	return bt.bb;
 
+func FindBT()->BehaviourTree:
+	var p:Node = get_parent();
+	while !p is BehaviourTree && p:
+		p = p.get_parent();
+	return p as BehaviourTree;
+
 func _ready()->void:
+	if !bt:
+		bt = FindBT();
 	set_position(Vector2(0,0));
 	if !Engine.is_editor_hint():
 		hide();
 	for c in get_children():
 		if !(c is BTNode):
 			remove_child(c);
+	self.set_process(false);
+	self.set_physics_process(false);
 
 func OrientObjects()->void:
 	pass;
@@ -72,6 +85,7 @@ func _process(delta: float)->void:
 			delta = delta;
 			OrientObjects();
 			CreateLineToParent();
+			text = nodeName;
 
 func CreateLineToParent():
 	if OS.is_debug_build() && Engine.is_editor_hint():
