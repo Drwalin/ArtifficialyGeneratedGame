@@ -1,37 +1,25 @@
+@tool
 extends BTNode;
 class_name BTCondition;
 
-var executionNode:BTNode;
-var line:Line2D;
+var node:BTNode;
+var conditionExpression:Expression = Expression.new();
+@export var condition: String = "";
 
-func _init(node:BTNode)->void:
+func _init()->void:
 	super();
-	executionNode = node;
-	node.bt = bt;
-	add_child(node);
+	lineColor = Color(0,0,0.9);
 	text = "Condition Node";
 	add_theme_color_override("font_color", Color(0.9, 0.1, 0.05));
-	line = Line2D.new();
-	add_child(line);
-	line.width = 5;
-	line.add_point(Vector2(0,0));
-	line.add_point(Vector2(0,0));
-	line.default_color = Color(0,0,0.9);
 
 func SetBT(_bt: BehaviourTree)->void:
 	super.SetBT(_bt);
-	executionNode.SetBT(_bt);
-
-func Destroy()->void:
-	super.Destroy();
-	executionNode.Destroy();
-	executionNode.free();
-	executionNode = null;
+	node.SetBT(_bt);
 
 func OnEnter()->void:
 	if CanExecute():
-		bb().nodesStack[bb().nodesStack.size()-1] = executionNode;
-		executionNode.OnEnter();
+		bb().nodesStack[bb().nodesStack.size()-1] = node;
+		node.OnEnter();
 	bt.previousNodeFinishState = bt.SUCCESS;
 	bt.ExitCurrentNode();
 	
@@ -47,21 +35,37 @@ func Execute()->void:
 	
 func _ready()->void:
 	set_position(Vector2(0,0));
+	var err = conditionExpression.parse(condition);
+	assert(err != OK, conditionExpression.get_error_text());
 	super._ready();
 
 func GetAABBSize()->Vector2:
-	var s = executionNode.GetAABBSize();
-	var h = s.y + 30 + get_minimum_size().y;
-	var w = max(get_minimum_size().x, s.x);
-	return Vector2(w, h);
+	for c in get_children():
+		if c is BTNode:
+			node = c;
+			var s = node.GetAABBSize();
+			var h = s.y + 30 + size.y;
+			var w = max(size.x, s.x);
+			return Vector2(w, h);
+	return size;
 
 func OrientObjects()->void:
-	text = "Condition Node";
-	var a = executionNode.GetAABBSize();
-	var v = Vector2(
-		get_minimum_size().x/2-a.x/2,
-		get_minimum_size().y+60)
-	executionNode.set_position(v);
-	line.set_point_position(0, size*Vector2(0.5,1));
-	line.set_point_position(1, executionNode.position+executionNode.size*Vector2(0.5,0));
+	text = "Invalid Condition Node";
+	if condition != "":
+		var err = conditionExpression.parse(condition);
+		if err == OK:
+			text = condition;
+		else:
+			text = "Condition error:\n" + conditionExpression.get_error_text();
+	size = Vector2(10,10);
+	for c in get_children():
+		if c is BTNode:
+			node = c;
+			break;
+	if node:
+		var a:Vector2 = node.GetAABBSize();
+		var v = Vector2(
+			size.x/2-a.x/2,
+			size.y+60);
+		node.set_position(v);
 

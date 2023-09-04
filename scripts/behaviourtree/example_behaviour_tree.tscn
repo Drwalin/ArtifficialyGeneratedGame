@@ -1,8 +1,142 @@
-[gd_scene load_steps=2 format=3 uid="uid://jcwyfc4kaxr"]
+[gd_scene load_steps=4 format=3 uid="uid://jcwyfc4kaxr"]
 
-[ext_resource type="Script" path="res://scripts/behaviourtree/ExampleBehaviourTree.gd" id="1_a4eiq"]
+[ext_resource type="Script" path="res://scripts/behaviourtree/BTSequence.gd" id="1_0t8a1"]
+[ext_resource type="Script" path="res://scripts/behaviourtree/BTCondition.gd" id="2_qe614"]
+[ext_resource type="Script" path="res://scripts/behaviourtree/BTNode.gd" id="3_ih3i1"]
 
-[node name="Node2D" type="Node2D"]
+[node name="ExampleBehaiourTree" type="Node"]
 
-[node name="ExampleBehaiourTree" type="Node" parent="."]
-script = ExtResource("1_a4eiq")
+[node name="BTSequence" type="Label" parent="."]
+offset_right = 121.0
+offset_bottom = 26.0
+theme_override_colors/font_color = Color(0.9, 0.1, 0.8, 1)
+text = "Sequence Node"
+script = ExtResource("1_0t8a1")
+
+[node name="BTCondition" type="Label" parent="BTSequence"]
+layout_mode = 0
+offset_left = -275.5
+offset_top = 86.0
+offset_right = -98.5
+offset_bottom = 112.0
+theme_override_colors/font_color = Color(0.9, 0.1, 0.05, 1)
+text = "Invalid Condition Node"
+script = ExtResource("2_qe614")
+
+[node name="BTSequence" type="Label" parent="BTSequence/BTCondition"]
+layout_mode = 0
+offset_left = 28.0
+offset_top = 86.0
+offset_right = 149.0
+offset_bottom = 112.0
+theme_override_colors/font_color = Color(0.9, 0.1, 0.8, 1)
+text = "Sequence Node"
+script = ExtResource("1_0t8a1")
+
+[node name="BTNode" type="Label" parent="BTSequence/BTCondition/BTSequence"]
+layout_mode = 0
+offset_top = 86.0
+offset_right = 42.0
+offset_bottom = 112.0
+theme_override_colors/font_color = Color(0.05, 0.9, 0.1, 1)
+text = "Node"
+script = ExtResource("3_ih3i1")
+
+[node name="BTNode2" type="Label" parent="BTSequence/BTCondition/BTSequence"]
+layout_mode = 0
+offset_left = 72.0
+offset_top = 86.0
+offset_right = 114.0
+offset_bottom = 112.0
+theme_override_colors/font_color = Color(0.05, 0.9, 0.1, 1)
+text = "Node"
+script = ExtResource("3_ih3i1")
+
+[node name="BTSequence" type="Label" parent="BTSequence"]
+layout_mode = 0
+offset_left = 103.5
+offset_top = 86.0
+offset_right = 224.5
+offset_bottom = 112.0
+theme_override_colors/font_color = Color(0.9, 0.1, 0.8, 1)
+text = "Sequence Node"
+script = ExtResource("1_0t8a1")
+
+[node name="BTNode" type="Label" parent="BTSequence/BTSequence"]
+layout_mode = 0
+offset_left = -172.0
+offset_top = 86.0
+offset_right = -130.0
+offset_bottom = 112.0
+theme_override_colors/font_color = Color(0.05, 0.9, 0.1, 1)
+text = "Node"
+script = ExtResource("3_ih3i1")
+
+[node name="BTNode2" type="Label" parent="BTSequence/BTSequence"]
+layout_mode = 0
+offset_left = -100.0
+offset_top = 86.0
+offset_right = -58.0
+offset_bottom = 112.0
+theme_override_colors/font_color = Color(0.05, 0.9, 0.1, 1)
+text = "Node"
+script = ExtResource("3_ih3i1")
+
+[node name="BTNode3" type="Label" parent="BTSequence/BTSequence"]
+layout_mode = 0
+offset_left = -28.0
+offset_top = 86.0
+offset_right = 14.0
+offset_bottom = 112.0
+theme_override_colors/font_color = Color(0.05, 0.9, 0.1, 1)
+text = "Node"
+script = ExtResource("3_ih3i1")
+
+[node name="BTSequence" type="Label" parent="BTSequence/BTSequence"]
+layout_mode = 0
+offset_left = 108.0
+offset_top = 86.0
+offset_right = 229.0
+offset_bottom = 112.0
+theme_override_colors/font_color = Color(0.9, 0.1, 0.8, 1)
+text = "Sequence Node"
+script = ExtResource("1_0t8a1")
+
+[node name="BTNode" type="Label" parent="BTSequence/BTSequence/BTSequence"]
+layout_mode = 0
+offset_left = -64.0
+offset_top = 86.0
+offset_right = -22.0
+offset_bottom = 112.0
+theme_override_colors/font_color = Color(0.05, 0.9, 0.1, 1)
+text = "Node"
+script = ExtResource("3_ih3i1")
+
+[node name="BTCondition" type="Label" parent="BTSequence/BTSequence/BTSequence"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 86.0
+offset_right = 185.0
+offset_bottom = 112.0
+theme_override_colors/font_color = Color(0.9, 0.1, 0.05, 1)
+text = "Invalid Condition Node"
+script = ExtResource("2_qe614")
+
+[node name="BTSequence" type="Label" parent="BTSequence/BTSequence/BTSequence/BTCondition"]
+layout_mode = 0
+offset_top = 86.0
+offset_right = 121.0
+offset_bottom = 112.0
+theme_override_colors/font_color = Color(0.9, 0.1, 0.8, 1)
+text = "Sequence Node"
+script = ExtResource("1_0t8a1")
+
+[node name="BTCondition" type="Label" parent="BTSequence/BTSequence/BTSequence/BTCondition/BTSequence"]
+layout_mode = 0
+offset_left = -28.0
+offset_top = 86.0
+offset_right = 149.0
+offset_bottom = 112.0
+theme_override_colors/font_color = Color(0.9, 0.1, 0.05, 1)
+text = "Invalid Condition Node"
+script = ExtResource("2_qe614")

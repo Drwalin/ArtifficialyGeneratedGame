@@ -109,5 +109,4 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.624758, 0)
 
 [node name="BehaviourTrees" type="Node" parent="."]
 
-[node name="Node2D" parent="BehaviourTrees" instance=ExtResource("6_q8qyp")]
-position = Vector2(53, 0)
+[node name="ExampleBehaiourTree" parent="BehaviourTrees" instance=ExtResource("6_q8qyp")]
