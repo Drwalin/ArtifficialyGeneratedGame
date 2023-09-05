@@ -16,28 +16,24 @@ func SetBT(_bt: BehaviourTree)->void:
 	super.SetBT(_bt);
 	node.SetBT(_bt);
 
-func OnEnter()->void:
-	if CanExecute():
+func OnEnter(npc:CharacterBaseAI, data:Dictionary)->void:
+	if conditionExpression.execute([bb(), npc, data], npc):
 		bb().nodesStack[bb().nodesStack.size()-1][0] = node;
-		node.OnEnter();
+		node.OnEnter(npc, data);
 		return;
-	bb().previousNodeFinishState = BTBlackboard.BTNodeFinishState.SUCCESS;
-	bb()._ExitCurrentNode(false);
-	
-func CanExecute()->bool:
-	return conditionExpression.execute([bb()], bb().npc);
+	Success();
 
-func OnExit()->void:
-	assert(false);
+func OnExit(npc:CharacterBaseAI, data:Dictionary)->void:
+	pass;
 
-func Execute()->void:
+func Execute(npc:CharacterBaseAI, data:Dictionary)->void:
 	assert(false);
 	
 func _ready()->void:
 	super._ready();
 	set_position(Vector2(0,0));
 	if !(OS.is_debug_build() && Engine.is_editor_hint()):
-		var err = conditionExpression.parse(condition, ["bb"]);
+		var err = conditionExpression.parse(condition, ["bb", "npc", "data"]);
 		assert(err == OK, conditionExpression.get_error_text());
 		for c in get_children():
 			if c is BTNode:
@@ -56,7 +52,7 @@ func GetAABBSize()->Vector2:
 func OrientObjects()->void:
 	nodeName = "Invalid Condition Node";
 	if condition != "":
-		var err = conditionExpression.parse(condition);
+		var err = conditionExpression.parse(condition, ["bb", "npc", "data"]);
 		if err == OK:
 			nodeName = condition;
 		else:

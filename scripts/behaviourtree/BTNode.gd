@@ -27,25 +27,25 @@ func SetExecutionDelay(value:int)->BTNode:
 	return self;
 
 func Fail()->void:
-	OnExit();
+	OnExit(bb().npc, bb().nodesStack.back()[1]);
 	bb().previousNodeFinishState = BTBlackboard.BTNodeFinishState.FAILURE;
 	bb()._ExitCurrentNode();
 
 func Success()->void:
-	OnExit();
+	OnExit(bb().npc, bb().nodesStack.back()[1]);
 	bb().previousNodeFinishState = BTBlackboard.BTNodeFinishState.SUCCESS;
 	bb()._ExitCurrentNode();
 
 func RestartBT()->void:
 	bt.RestartBT();
 
-func OnEnter()->void:
+func OnEnter(npc:CharacterBaseAI, data:Dictionary)->void:
 	pass;
 
-func OnExit()->void:
+func OnExit(npc:CharacterBaseAI, data:Dictionary)->void:
 	pass;
 
-func Execute()->void:
+func Execute(npc:CharacterBaseAI, data:Dictionary)->void:
 	#print("BTNode::Execute()");
 	#assert("Cannot execute pure virtual BTNode::Execute() code.");
 	pass;
@@ -69,14 +69,14 @@ func _ready()->void:
 		for c in get_children():
 			if !(c is BTNode):
 				remove_child(c);
-		self.set_process(false);
-		self.set_physics_process(false);
+#		self.set_process(false);
+#		self.set_physics_process(false);
 
 func OrientObjects()->void:
 	pass;
 
 func GetAABBSize()->Vector2:
-	return get_minimum_size();
+	return size;
 
 var orientinObjectsCounter:int = 0;
 
@@ -87,6 +87,7 @@ func _process(delta: float)->void:
 			delta = delta;
 			OrientObjects();
 			CreateLineToParent();
+			set_size(Vector2(10, 10));
 			text = nodeName;
 
 func CreateLineToParent():

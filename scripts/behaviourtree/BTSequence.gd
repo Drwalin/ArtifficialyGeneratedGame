@@ -3,7 +3,6 @@ extends BTNode;
 class_name BTSequence;
 
 var nodes : Array = [];
-var lastEntered:int = -1;
 
 func _init()->void:
 	super();
@@ -15,24 +14,26 @@ func SetBT(_bt: BehaviourTree)->void:
 	for n in nodes:
 		n.SetBT(_bt);
 
-func OnEnter()->void:
-	super.OnEnter();
-	lastEntered = -1;
+func OnEnter(npc:CharacterBaseAI, data:Dictionary)->void:
+	data["lastEntered"] = -1;
 	bb().previousNodeFinishState = BTBlackboard.BTNodeFinishState.SUCCESS;
 
-func OnExit()->void:
-	super.OnExit();
-	lastEntered = -1;
+func OnExit(npc:CharacterBaseAI, data:Dictionary)->void:
+	data["lastEntered"] = -1;
 
-func Execute()->void:
+func Execute(npc:CharacterBaseAI, data:Dictionary)->void:
 	if bb().previousNodeFinishState == BTBlackboard.BTNodeFinishState.FAILURE:
 		return Fail();
 	bb().previousNodeFinishState = BTBlackboard.BTNodeFinishState.SUCCESS;
-	while lastEntered+1 < nodes.size():
-		lastEntered += 1;
-		bb()._EnterNode(nodes[lastEntered]);
+	while data["lastEntered"]+1 < nodes.size():
+		data["lastEntered"] += 1;
+		if npc.name == "CharacterBody3D2":
+			print("Entering at index: ", data["lastEntered"]);
+		bb()._EnterNode(nodes[data["lastEntered"]]);
 		return;
-	return Success();
+	if npc.name == "CharacterBody3D2":
+		print("Leaving sequence execute after loop at index: ", data["lastEntered"]);
+	Success();
 
 func _ready()->void:
 	super._ready();

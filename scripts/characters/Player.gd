@@ -12,6 +12,7 @@ func _ready()->void:
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED);
 	camera = Camera3D.new();
 	head.add_child(camera);
+	collisionShape.get_child(0).remove_child(collisionShape.get_child(0).get_child(0));
 
 func _unhandled_input(event)->void:
 	if event is InputEventMouseMotion:
@@ -25,8 +26,6 @@ func _unhandled_input(event)->void:
 		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED);
 
 func _process(delta: float)->void:
-	SetRunning(Input.is_action_pressed("movement_run"));
-	SetCrouching(Input.is_action_pressed("movement_crouch"));
 	delta = delta;
 
 func _physics_process(delta:float)->void:

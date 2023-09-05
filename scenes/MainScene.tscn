@@ -1,10 +1,10 @@
-[gd_scene load_steps=15 format=3 uid="uid://dr22pxft72vjr"]
+[gd_scene load_steps=11 format=3 uid="uid://dr22pxft72vjr"]
 
 [ext_resource type="PackedScene" uid="uid://cs4qisi3jwxfx" path="res://resources/SomeMap.glb" id="1_ddkoo"]
 [ext_resource type="MeshLibrary" uid="uid://b2ico06a1v2kp" path="res://resources/MeshLib.tres" id="3_ppkw4"]
 [ext_resource type="Script" path="res://scenes/Label.gd" id="4_cpldt"]
 [ext_resource type="Script" path="res://scripts/characters/Player.gd" id="4_egoae"]
-[ext_resource type="PackedScene" uid="uid://0dhcf3rif6nx" path="res://resources/object_templates/CharacterBase.tscn" id="5_km7ru"]
+[ext_resource type="PackedScene" uid="uid://0dhcf3rif6nx" path="res://resources/object_templates/CharacterBase.tscn" id="6_0epqo"]
 [ext_resource type="PackedScene" uid="uid://dyaenkyhh1r4n" path="res://resources/object_templates/CharacterAiBase.tscn" id="6_2cu1j"]
 [ext_resource type="PackedScene" uid="uid://jcwyfc4kaxr" path="res://scripts/behaviourtree/example_behaviour_tree.tscn" id="6_q8qyp"]
 [ext_resource type="Script" path="res://resources/object_templates/ExampleBlackboardSetup.gd" id="7_hfuym"]
@@ -16,18 +16,6 @@ geometry_parsed_geometry_type = 1
 agent_height = 1.8
 
 [sub_resource type="BoxMesh" id="BoxMesh_huc3n"]
-
-[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_tundb"]
-radius = 0.4
-height = 1.75
-
-[sub_resource type="CapsuleMesh" id="CapsuleMesh_iemjn"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w41vs"]
-albedo_color = Color(0.74902, 0.368627, 0.431373, 1)
-
-[sub_resource type="SphereMesh" id="SphereMesh_v7o1a"]
-material = SubResource("StandardMaterial3D_w41vs")
 
 [node name="SceneRootNode" type="Node3D"]
 
@@ -103,33 +91,22 @@ script = ExtResource("4_cpldt")
 
 [node name="Characters" type="Node3D" parent="."]
 
-[node name="Player" type="CharacterBody3D" parent="Characters"]
-transform = Transform3D(0.316179, 0, -0.9487, 0, 1, 0, 0.9487, 0, 0.316179, -5, 1.31549, 5)
-script = ExtResource("4_egoae")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Characters/Player"]
-shape = SubResource("CapsuleShape3D_tundb")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Characters/Player/CollisionShape3D"]
-transform = Transform3D(0.7, 0, 0, 0, 0.875, 0, 0, 0, 0.7, 0, 0, 0)
-mesh = SubResource("CapsuleMesh_iemjn")
-skeleton = NodePath("../..")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Characters/Player/CollisionShape3D/MeshInstance3D"]
-transform = Transform3D(-1.36745, 0, 0, 0, 0.981464, 0, 0, 0, 1.70339, 0.0609965, 0.5662, -0.514074)
-mesh = SubResource("SphereMesh_v7o1a")
-
-[node name="Head" type="Node3D" parent="Characters/Player/CollisionShape3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.624758, 0)
-
-[node name="CharacterBody3D" parent="Characters" instance=ExtResource("5_km7ru")]
-
 [node name="CharacterBody3D2" parent="Characters" node_paths=PackedStringArray("player", "target", "behaviourTree") instance=ExtResource("6_2cu1j")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.00299, 2.13075, 3.06077)
 script = ExtResource("7_hfuym")
 player = NodePath("../Player")
 target = NodePath("../../NavigationRegion3D/Map/MeshInstance3D")
 behaviourTree = NodePath("../../BehaviourTrees/ExampleBehaiourTree")
+
+[node name="CharacterBody3D3" parent="Characters" node_paths=PackedStringArray("player", "target", "behaviourTree") instance=ExtResource("6_2cu1j")]
+script = ExtResource("7_hfuym")
+player = NodePath("../Player")
+target = NodePath("../CharacterBody3D2")
+behaviourTree = NodePath("../../BehaviourTrees/ExampleBehaiourTree")
+
+[node name="Player" parent="Characters" instance=ExtResource("6_0epqo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.67393, 2.13075, 3.06077)
+script = ExtResource("4_egoae")
 
 [node name="BehaviourTrees" type="Node" parent="."]
 

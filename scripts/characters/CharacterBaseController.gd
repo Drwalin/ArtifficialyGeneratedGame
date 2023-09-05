@@ -1,18 +1,23 @@
 extends CharacterBody3D;
 class_name CharacterBaseController;
 
-const WALK_SPEED = 5.0;
-const RUN_SPEED = 9.0;
-const CROUCH_SPEED = 3.0;
-const JUMP_VELOCITY = 4.5;
+@export var WALK_SPEED:float = 5.0;
+@export var RUN_SPEED:float = 9.0;
+@export var CROUCH_SPEED:float = 3.0;
+@export var JUMP_VELOCITY:float = 4.5;
+@export var STANDING_HEIGHT:float = 1.75;
+@export var CROUCHING_HEIGHT:float = 1.75/2;
+
+@export var characterNickName:String = "";
 
 var running: bool = false;
 var crouching: bool = false;
 
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 
-@onready var head = $CollisionShape3D/Head;
-@onready var collisionShape = $CollisionShape3D;
+@onready var head:Node3D = $CollisionShape3D/Head;
+@onready var collisionShape:CollisionShape3D = $CollisionShape3D;
+@onready var capsuleShape:CapsuleShape3D = collisionShape.shape;
 
 var moveDirection : Vector3 = Vector3(0,0,0).normalized();
 var rotateTowardMovementDirection : bool = false;
@@ -48,11 +53,13 @@ func SetRunning(value: bool)->void:
 	
 func SetCrouching(value: bool)->void:
 	if crouching && !value:
-		collisionShape.scale = Vector3(1,1,1);
-		transform.origin += Vector3(0, 0.875/2, 0);
+		capsuleShape.height = STANDING_HEIGHT;
+		transform.origin += Vector3(0, (STANDING_HEIGHT-CROUCHING_HEIGHT)/2, 0);
+		crouching = value;
 	elif !crouching && value:
-		collisionShape.scale = Vector3(1,0.5,1);
-		transform.origin -= Vector3(0, 0.875/2, 0);
+		capsuleShape.height = CROUCHING_HEIGHT;
+		transform.origin -= Vector3(0, (STANDING_HEIGHT-CROUCHING_HEIGHT)/2, 0);
+		crouching = value;
 	
 func _physics_process(delta:float)->void:
 	# Add the gravity.
