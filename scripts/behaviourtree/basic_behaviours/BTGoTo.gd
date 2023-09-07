@@ -8,10 +8,12 @@ class_name BTGoTo;
 @export var retryTimes:int = 0;
 
 func _init()->void:
+	print("GoTo::_init");
 	nodeName = "Go to";
 	super._init();
 
 func OnEnter(npc:CharacterBaseAI, data:Dictionary)->void:
+	print("GoTo::OnEnter");
 	bb().npc.navigationAgent.set_path_max_distance(distanceTolerance);
 	var target:Node3D = bb().data[blackboardFieldNameWithTargetPointer];
 	if target:
@@ -22,15 +24,17 @@ func OnEnter(npc:CharacterBaseAI, data:Dictionary)->void:
 		data["lastTargetPosition"] = npc.global_position;
 
 func OnExit(npc:CharacterBaseAI, data:Dictionary)->void:
+	print("GoTo::OnExit");
 	pass;
 
 func Execute(npc:CharacterBaseAI, data:Dictionary)->void:
+	print("GoTo::Execute");
 	var target:Node3D = bb().data[blackboardFieldNameWithTargetPointer];
 	if npc.navigationAgent.is_navigation_finished() || npc.navigationAgent.is_target_reached():
 		if target:
 			data["lastTargetPosition"] = npc.global_position;
-		if npc.name == "CharacterBody3D2":
-			print("Goto success");
+#		if npc.name == "CharacterBody3D2":
+#			print("Goto success");
 		Success();
 		return;
 	if target:

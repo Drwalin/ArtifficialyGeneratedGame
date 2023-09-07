@@ -17,9 +17,9 @@ script = ExtResource("1_0t8a1")
 
 [node name="BTGoToObject1" type="Label" parent="BTSequence"]
 layout_mode = 0
-offset_left = -83.5
+offset_left = -165.0
 offset_top = 86.0
-offset_right = -41.5
+offset_right = -123.0
 offset_bottom = 112.0
 theme_override_colors/font_color = Color(0.05, 0.9, 0.1, 1)
 text = "Go to"
@@ -28,20 +28,19 @@ distanceTolerance = 3.0
 
 [node name="BTWait1" type="Label" parent="BTSequence"]
 layout_mode = 0
-offset_left = -11.5
+offset_left = -93.0
 offset_top = 86.0
-offset_right = 45.5
+offset_right = -36.0
 offset_bottom = 112.0
 theme_override_colors/font_color = Color(0.05, 0.9, 0.1, 1)
-text = "Wait 3s"
+text = "Wait 1s"
 script = ExtResource("4_x8w7c")
-secondsToWait = 3.0
 
 [node name="BTGoToObject2" type="Label" parent="BTSequence"]
 layout_mode = 0
-offset_left = 75.5
+offset_left = -6.0
 offset_top = 86.0
-offset_right = 117.5
+offset_right = 36.0
 offset_bottom = 112.0
 theme_override_colors/font_color = Color(0.05, 0.9, 0.1, 1)
 text = "Go to"
@@ -51,11 +50,45 @@ blackboardFieldNameWithTargetPointer = "player"
 
 [node name="BTWait2" type="Label" parent="BTSequence"]
 layout_mode = 0
-offset_left = 147.5
+offset_left = 66.0
 offset_top = 86.0
-offset_right = 204.5
+offset_right = 145.0
 offset_bottom = 112.0
 theme_override_colors/font_color = Color(0.05, 0.9, 0.1, 1)
-text = "Wait 3s"
+text = "Wait 1.50s"
 script = ExtResource("4_x8w7c")
-secondsToWait = 3.0
+secondsToWait = 1.5
+
+[node name="BTGoTo" type="Label" parent="BTSequence"]
+layout_mode = 0
+offset_left = 175.0
+offset_top = 86.0
+offset_right = 217.0
+offset_bottom = 112.0
+theme_override_colors/font_color = Color(0.05, 0.9, 0.1, 1)
+text = "Go to"
+script = ExtResource("3_qpsk8")
+distanceTolerance = 3.0
+blackboardFieldNameWithTargetPointer = "target3"
+
+[node name="BTGoTo2" type="Label" parent="BTSequence"]
+layout_mode = 0
+offset_left = 247.0
+offset_top = 86.0
+offset_right = 289.0
+offset_bottom = 112.0
+theme_override_colors/font_color = Color(0.05, 0.9, 0.1, 1)
+text = "Go to"
+script = ExtResource("3_qpsk8")
+distanceTolerance = 3.0
+blackboardFieldNameWithTargetPointer = "target4"
+
+[node name="BTWait" type="Label" parent="BTSequence"]
+layout_mode = 0
+offset_left = 319.0
+offset_top = 86.0
+offset_right = 376.0
+offset_bottom = 112.0
+theme_override_colors/font_color = Color(0.05, 0.9, 0.1, 1)
+text = "Wait 1s"
+script = ExtResource("4_x8w7c")

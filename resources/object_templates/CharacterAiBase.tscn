@@ -9,6 +9,7 @@ script = ExtResource("2_4jrl1")
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="." index="1"]
 path_desired_distance = 2.0
+avoidance_enabled = true
 
 [node name="BTBlackboard" type="Node" parent="." index="2"]
 script = ExtResource("2_1cj6b")

@@ -27,12 +27,15 @@ func _exit_tree()->void:
 		bs.SetBehaviourTree(null);
 
 func _process(delta: float)->void:
+	print("BehaviourTree::_process");
 	dt = delta;
 	internalAbsoluteTime += delta;
-	for b in blackboards.keys():
+	var ar = blackboards.keys();
+	for b in ar:
 		bb = b;
 		bb.Process(delta);
 	bb = null;
 
 func GetTime()->float:
+	print("BehaviourTree::GetTime");
 	return internalAbsoluteTime;

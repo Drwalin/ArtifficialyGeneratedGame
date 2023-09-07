@@ -23,22 +23,27 @@ var moveDirection : Vector3 = Vector3(0,0,0).normalized();
 var rotateTowardMovementDirection : bool = false;
 
 func SetRelativeMoveDirection(dir: Vector2)->void:
+	print("CharacterBaseController::SetRelativeMoveDirection");
 	var d = Vector3(dir.x, 0, dir.y);
 	var dd:Vector3 = (transform.basis * collisionShape.transform.basis * d);
 	SetGlobalMoveDirection(dd.normalized());
 
 func SetGlobalMoveDirection(dir: Vector3)->void:
+	print("CharacterBaseController::SetGlobalMoveDirection");
 	moveDirection = dir;
 	
 func SetRotateTowardMovementDirection(_rotate: bool)->void:
+	print("CharacterBaseController::SetRotateTowardMovementDirection");
 	rotateTowardMovementDirection = _rotate;
 	
 func Rotate(x:float, y:float)->void:
-		collisionShape.rotate_y(y);
-		head.rotate_x(x);
-		head.rotation.x = clamp(head.rotation.x, -PI/2, PI/2);
+	print("CharacterBaseController::Rotate");
+	collisionShape.rotate_y(y);
+	head.rotate_x(x);
+	head.rotation.x = clamp(head.rotation.x, -PI/2, PI/2);
 
 func GetSpeed() -> float:
+	print("CharacterBaseController::GetSpeed");
 	if crouching:
 		return CROUCH_SPEED;
 	if running:
@@ -46,12 +51,15 @@ func GetSpeed() -> float:
 	return WALK_SPEED;
 
 func Jump()->void:
+	print("CharacterBaseController::Jump");
 	velocity.y = JUMP_VELOCITY;
 	
 func SetRunning(value: bool)->void:
+	print("CharacterBaseController::SetRunning");
 	running = value;
 	
 func SetCrouching(value: bool)->void:
+	print("CharacterBaseController::SetCrouching");
 	if crouching && !value:
 		capsuleShape.height = STANDING_HEIGHT;
 		transform.origin += Vector3(0, (STANDING_HEIGHT-CROUCHING_HEIGHT)/2, 0);
@@ -62,6 +70,7 @@ func SetCrouching(value: bool)->void:
 		crouching = value;
 	
 func _physics_process(delta:float)->void:
+	print("CharacterBaseController::_physics_process");
 	# Add the gravity.
 	if not is_on_floor():
 		velocity.y -= gravity * delta;
@@ -79,11 +88,15 @@ func _physics_process(delta:float)->void:
 		velocity.z = lerp(velocity.z, moveDirection.z*speed, delta*3);
 		
 	if rotateTowardMovementDirection:
-		if velocity.length_squared() > 0.01:
+		if velocity.length_squared() > 1:
 			var fwdV = (transform.basis*collisionShape.transform.basis * Vector3.FORWARD).normalized();
 			var mvV = velocity.normalized();
-			var sinV = mvV.cross(fwdV).length();
+			var cross = mvV.cross(fwdV);
+			var sinV = cross.length();
 			var angle = asin(sinV);
+			if cross.y>0:
+				angle = -angle;
+			angle *= min(delta*velocity.length(), 1);
 			Rotate(0, angle);
 	move_and_slide();
 

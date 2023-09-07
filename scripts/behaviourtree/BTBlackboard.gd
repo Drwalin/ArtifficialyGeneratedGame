@@ -15,10 +15,12 @@ enum BTNodeFinishState {
 var previousNodeFinishState : int = BTNodeFinishState.SUCCESS;
 
 func _ready()->void:
+	print("Blackboard::_ready");
 	npc = get_parent();
 	SetBehaviourTree(npc.behaviourTree);
 
 func SetBehaviourTree(_bt: BehaviourTree)->void:
+	print("Blackboard::SetBehaviourTree");
 	if bt:
 		RestartBT();
 		bt.blackboards.erase(self);
@@ -27,10 +29,11 @@ func SetBehaviourTree(_bt: BehaviourTree)->void:
 		bt.blackboards[self] = self;
 
 func _ExitCurrentNode(enableImmediateExecutionIfNeeded:bool=false)->void:
+	print("Blackboard::_ExitCurrentNode");
 	if nodesStack.size() > 0:
 		var node:BTNode = nodesStack.back()[0];
-		if npc.name == "CharacterBody3D2":
-			print("Leaving: ", node.name, " at time: ", bt.GetTime());
+#		if npc.name == "CharacterBody3D2":
+#			print("Leaving: ", node.name, " at time: ", bt.GetTime());
 		node.OnExit(npc, nodesStack.back()[1]);
 		nodesStack.pop_back();
 	if nodesStack.size() > 0 && enableImmediateExecutionIfNeeded:
@@ -39,28 +42,28 @@ func _ExitCurrentNode(enableImmediateExecutionIfNeeded:bool=false)->void:
 			node.Execute(npc, nodesStack.back()[1]);
 
 func _EnterNode(node:BTNode)->void:
-	if npc.name == "CharacterBody3D2":
-		print("Entering: ", node.name, " at time: ", bt.GetTime());
+	print("Blackboard::_EnterNode");
+#	if npc.name == "CharacterBody3D2":
+#		print("Entering: ", node.name, " at time: ", bt.GetTime());
 	nodesStack.append([node, {}]);
 	nodesStack.back()[0].OnEnter(npc, nodesStack.back()[1]);
 	if nodesStack.back()[0].executionDelay == 0:
 		nodesStack.back()[0].Execute();
 
 func RestartBT()->void:
-	var i:int = nodesStack.size()-1;
-	while i>=0:
-		nodesStack[i][0].OnExit(npc, nodesStack.back()[1]);
-		i-=1;
-	nodesStack.clear();
-	previousNodeFinishState = BTNodeFinishState.SUCCESS;
+	print("Blackboard::RestartBT");
+	while !nodesStack.is_empty():
+		_ExitCurrentNode(false);
 
 func _exit_tree()->void:
+	print("Blackboard::_exit_tree");
 	RestartBT();
 	nodesStack.clear();
 	if bt:
 		bt.blackboards.erase(self);
 
 func Process(delta: float)->void:
+	print("Blackboard::Process");
 	dt = delta;
 	if nodesStack.size() == 0:
 		nodesStack.append([bt.rootNode, {}]);

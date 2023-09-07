@@ -1,6 +1,6 @@
 extends CharacterBaseController;
 
-const SENSITIVITY = 0.002	;
+const SENSITIVITY = 0.002;
 
 const BOB_FREQ = 2.0;
 const BOB_AMP = 0.08;
