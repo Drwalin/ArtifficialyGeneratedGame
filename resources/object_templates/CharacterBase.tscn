@@ -14,6 +14,7 @@ material = SubResource("StandardMaterial3D_w41vs")
 
 [node name="CharacterBody3D" type="CharacterBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.13075, 3.06077)
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("CapsuleShape3D_tundb")

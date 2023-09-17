@@ -23,27 +23,27 @@ var moveDirection : Vector3 = Vector3(0,0,0).normalized();
 var rotateTowardMovementDirection : bool = false;
 
 func SetRelativeMoveDirection(dir: Vector2)->void:
-	print("CharacterBaseController::SetRelativeMoveDirection");
+	PrintDebug.Print("CharacterBaseController::SetRelativeMoveDirection");
 	var d = Vector3(dir.x, 0, dir.y);
 	var dd:Vector3 = (transform.basis * collisionShape.transform.basis * d);
 	SetGlobalMoveDirection(dd.normalized());
 
 func SetGlobalMoveDirection(dir: Vector3)->void:
-	print("CharacterBaseController::SetGlobalMoveDirection");
+	PrintDebug.Print("CharacterBaseController::SetGlobalMoveDirection");
 	moveDirection = dir;
 	
 func SetRotateTowardMovementDirection(_rotate: bool)->void:
-	print("CharacterBaseController::SetRotateTowardMovementDirection");
+	PrintDebug.Print("CharacterBaseController::SetRotateTowardMovementDirection");
 	rotateTowardMovementDirection = _rotate;
 	
 func Rotate(x:float, y:float)->void:
-	print("CharacterBaseController::Rotate");
+	PrintDebug.Print("CharacterBaseController::Rotate");
 	collisionShape.rotate_y(y);
 	head.rotate_x(x);
 	head.rotation.x = clamp(head.rotation.x, -PI/2, PI/2);
 
 func GetSpeed() -> float:
-	print("CharacterBaseController::GetSpeed");
+	PrintDebug.Print("CharacterBaseController::GetSpeed");
 	if crouching:
 		return CROUCH_SPEED;
 	if running:
@@ -51,15 +51,15 @@ func GetSpeed() -> float:
 	return WALK_SPEED;
 
 func Jump()->void:
-	print("CharacterBaseController::Jump");
+	PrintDebug.Print("CharacterBaseController::Jump");
 	velocity.y = JUMP_VELOCITY;
 	
 func SetRunning(value: bool)->void:
-	print("CharacterBaseController::SetRunning");
+	PrintDebug.Print("CharacterBaseController::SetRunning");
 	running = value;
 	
 func SetCrouching(value: bool)->void:
-	print("CharacterBaseController::SetCrouching");
+	PrintDebug.Print("CharacterBaseController::SetCrouching");
 	if crouching && !value:
 		capsuleShape.height = STANDING_HEIGHT;
 		transform.origin += Vector3(0, (STANDING_HEIGHT-CROUCHING_HEIGHT)/2, 0);
@@ -70,7 +70,7 @@ func SetCrouching(value: bool)->void:
 		crouching = value;
 	
 func _physics_process(delta:float)->void:
-	print("CharacterBaseController::_physics_process");
+	PrintDebug.Print("CharacterBaseController::_physics_process");
 	# Add the gravity.
 	if not is_on_floor():
 		velocity.y -= gravity * delta;

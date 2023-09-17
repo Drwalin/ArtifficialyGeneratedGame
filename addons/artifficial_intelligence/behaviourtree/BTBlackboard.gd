@@ -15,12 +15,12 @@ enum BTNodeFinishState {
 var previousNodeFinishState : int = BTNodeFinishState.SUCCESS;
 
 func _ready()->void:
-	print("Blackboard::_ready");
+	PrintDebug.Print("Blackboard::_ready");
 	npc = get_parent();
 	SetBehaviourTree(npc.behaviourTree);
 
 func SetBehaviourTree(_bt: BehaviourTree)->void:
-	print("Blackboard::SetBehaviourTree");
+	PrintDebug.Print("Blackboard::SetBehaviourTree");
 	if bt:
 		RestartBT();
 		bt.blackboards.erase(self);
@@ -29,7 +29,7 @@ func SetBehaviourTree(_bt: BehaviourTree)->void:
 		bt.blackboards[self] = self;
 
 func _ExitCurrentNode(enableImmediateExecutionIfNeeded:bool=false)->void:
-	print("Blackboard::_ExitCurrentNode");
+	PrintDebug.Print("Blackboard::_ExitCurrentNode");
 	if nodesStack.size() > 0:
 		var node:BTNode = nodesStack.back()[0];
 #		if npc.name == "CharacterBody3D2":
@@ -42,7 +42,7 @@ func _ExitCurrentNode(enableImmediateExecutionIfNeeded:bool=false)->void:
 			node.Execute(npc, nodesStack.back()[1]);
 
 func _EnterNode(node:BTNode)->void:
-	print("Blackboard::_EnterNode");
+	PrintDebug.Print("Blackboard::_EnterNode");
 #	if npc.name == "CharacterBody3D2":
 #		print("Entering: ", node.name, " at time: ", bt.GetTime());
 	nodesStack.append([node, {}]);
@@ -51,19 +51,19 @@ func _EnterNode(node:BTNode)->void:
 		nodesStack.back()[0].Execute();
 
 func RestartBT()->void:
-	print("Blackboard::RestartBT");
+	PrintDebug.Print("Blackboard::RestartBT");
 	while !nodesStack.is_empty():
 		_ExitCurrentNode(false);
 
 func _exit_tree()->void:
-	print("Blackboard::_exit_tree");
+	PrintDebug.Print("Blackboard::_exit_tree");
 	RestartBT();
 	nodesStack.clear();
 	if bt:
 		bt.blackboards.erase(self);
 
 func Process(delta: float)->void:
-	print("Blackboard::Process");
+	PrintDebug.Print("Blackboard::Process");
 	dt = delta;
 	if nodesStack.size() == 0:
 		nodesStack.append([bt.rootNode, {}]);

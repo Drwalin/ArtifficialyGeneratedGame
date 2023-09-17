@@ -5,8 +5,10 @@ class_name CharacterBaseAI;
 @onready var blackboard:BTBlackboard = $BTBlackboard;
 @onready var navigationAgent:NavigationAgent3D = $NavigationAgent3D;
 
+var isNavigationFinished:bool = true;
+
 func _ready()->void:
-	print("CharacterBaseAI::_ready");
+	PrintDebug.Print("CharacterBaseAI::_ready");
 	#navigationAgent.set_navigation_map(get_tree().root.child("NavigationRegion3D").get_region_rid());
 	blackboard.npc = self;
 	blackboard.SetBehaviourTree(behaviourTree);
@@ -14,7 +16,8 @@ func _ready()->void:
 
 var everyOtherFrame:int = 0;
 func _process(delta: float) -> void:
-	print("CharacterBaseAI::_process");
+	isNavigationFinished = navigationAgent.is_navigation_finished();
+	PrintDebug.Print("CharacterBaseAI::_process");
 	everyOtherFrame += 1;
 	if everyOtherFrame%4 == 0:
 		var nextPathPosition: Vector3 = navigationAgent.get_next_path_position();

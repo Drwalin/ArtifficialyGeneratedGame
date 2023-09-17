@@ -13,65 +13,65 @@ var nodeName: String = "Node";
 var executionDelay:int = 1;
 
 func _init()->void:
-	print("Node::_init");
+	PrintDebug.Print("Node::_init");
 	add_theme_color_override("font_color", Color(0.05, 0.9, 0.1));
 				
 
 func SetBT(_bt: BehaviourTree)->void:
-	print("Node::SetBT");
+	PrintDebug.Print("Node::SetBT");
 	#print("Setting BT of: ", name);
 	bt = _bt;
 
 func SetExecutionDelay(value:int)->BTNode:
-	print("Node::SetExecutionDelay");
+	PrintDebug.Print("Node::SetExecutionDelay");
 	executionDelay = value;
 	if executionDelay<0:
 		executionDelay = 0;
 	return self;
 
 func Fail()->void:
-	print("Node::Fail");
+	PrintDebug.Print("Node::Fail");
 	OnExit(bb().npc, bb().nodesStack.back()[1]);
 	bb().previousNodeFinishState = BTBlackboard.BTNodeFinishState.FAILURE;
 	bb()._ExitCurrentNode();
 
 func Success()->void:
-	print("Node::Success");
+	PrintDebug.Print("Node::Success");
 	OnExit(bb().npc, bb().nodesStack.back()[1]);
 	bb().previousNodeFinishState = BTBlackboard.BTNodeFinishState.SUCCESS;
 	bb()._ExitCurrentNode();
 
 func RestartBT()->void:
-	print("Node::RestartBT");
+	PrintDebug.Print("Node::RestartBT");
 	bt.RestartBT();
 
 func OnEnter(npc:CharacterBaseAI, data:Dictionary)->void:
-	print("Node::OnEnter");
+	PrintDebug.Print("Node::OnEnter");
 	pass;
 
 func OnExit(npc:CharacterBaseAI, data:Dictionary)->void:
-	print("Node::OnExit");
+	PrintDebug.Print("Node::OnExit");
 	pass;
 
 func Execute(npc:CharacterBaseAI, data:Dictionary)->void:
-	print("Node::Execute");
+	#PrintDebug.Print("Node::Execute");
 	#print("BTNode::Execute()");
 	#assert("Cannot execute pure virtual BTNode::Execute() code.");
 	pass;
 
 func bb()->BTBlackboard:
-	print("Node::bb()");
+	#PrintDebug.Print("Node::bb()");
 	return bt.bb;
 
 func FindBT()->BehaviourTree:
-	print("Node::FindBT");
+	PrintDebug.Print("Node::FindBT");
 	var p:Node = get_parent();
 	while !p is BehaviourTree && p:
 		p = p.get_parent();
 	return p as BehaviourTree;
 
 func _ready()->void:
-	print("Node::_ready");
+	PrintDebug.Print("Node::_ready");
 	if !Engine.is_editor_hint():
 		if !bt:
 			bt = FindBT();
@@ -85,17 +85,17 @@ func _ready()->void:
 #		self.set_physics_process(false);
 
 func OrientObjects()->void:
-	print("Node::OrientObjects");
+	PrintDebug.Print("Node::OrientObjects");
 	pass;
 
 func GetAABBSize()->Vector2:
-	print("Node::GetAABBSize");
+	PrintDebug.Print("Node::GetAABBSize");
 	return size;
 
 var orientinObjectsCounter:int = 0;
 
 func _process(delta: float)->void:
-	print("Node::_process");
+	#PrintDebug.Print("Node::_process");
 	if OS.is_debug_build() && Engine.is_editor_hint():
 		orientinObjectsCounter += 1;
 		if orientinObjectsCounter%12 == 1:
@@ -106,7 +106,7 @@ func _process(delta: float)->void:
 			text = nodeName;
 
 func CreateLineToParent():
-	print("Node::CreateLineToParent");
+	#PrintDebug.Print("Node::CreateLineToParent");
 	if OS.is_debug_build() && Engine.is_editor_hint():
 		if get_parent():
 			if get_parent() is BTNode:

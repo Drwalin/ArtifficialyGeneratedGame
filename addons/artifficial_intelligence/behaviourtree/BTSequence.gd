@@ -5,33 +5,33 @@ class_name BTSequence;
 var nodes : Array = [];
 
 func _init()->void:
-	print("Sequence::_init");
+	PrintDebug.Print("Sequence::_init");
 	super();
 	nodeName = "Sequence Node";
 	add_theme_color_override("font_color", Color(0.9, 0.1, 0.8));
 
 func SetBT(_bt: BehaviourTree)->void:
-	print("Sequence::SetBT");
+	PrintDebug.Print("Sequence::SetBT");
 	super.SetBT(_bt);
 	for n in nodes:
 		n.SetBT(_bt);
 
 func OnEnter(npc:CharacterBaseAI, data:Dictionary)->void:
-	print("Sequence::OnEnter");
+	PrintDebug.Print("Sequence::OnEnter");
 	data["lastEntered"] = -1;
 	bb().previousNodeFinishState = BTBlackboard.BTNodeFinishState.SUCCESS;
 
 func OnExit(npc:CharacterBaseAI, data:Dictionary)->void:
-	print("Sequence::OnExit");
+	PrintDebug.Print("Sequence::OnExit");
 	data["lastEntered"] = -1;
 
 func Execute(npc:CharacterBaseAI, data:Dictionary)->void:
-	print("Sequence::Execute");
+	PrintDebug.Print("Sequence::Execute");
 	if bb().previousNodeFinishState == BTBlackboard.BTNodeFinishState.FAILURE:
 		return Fail();
 	bb().previousNodeFinishState = BTBlackboard.BTNodeFinishState.SUCCESS;
 	while data["lastEntered"]+1 < nodes.size():
-		print("Sequence::Execute inside while(...)");
+		PrintDebug.Print("Sequence::Execute inside while(...)");
 		data["lastEntered"] += 1;
 #		if npc.name == "CharacterBody3D2":
 #			print("Entering at index: ", data["lastEntered"]);
@@ -42,7 +42,7 @@ func Execute(npc:CharacterBaseAI, data:Dictionary)->void:
 	Success();
 
 func _ready()->void:
-	print("Sequence::_ready");
+	PrintDebug.Print("Sequence::_ready");
 	super._ready();
 	for c in get_children():
 		if c is BTNode:
@@ -50,7 +50,7 @@ func _ready()->void:
 			nodes.append(node);
 	
 func GetAABBSize()->Vector2:
-	print("Sequence::GetAABBSize");
+	PrintDebug.Print("Sequence::GetAABBSize");
 	var w:float = 0;
 	var h:float = 0;
 	for c in get_children():
@@ -65,7 +65,7 @@ func GetAABBSize()->Vector2:
 	return Vector2(w, h);
 
 func OrientObjects()->void:
-	print("Sequence::OrientObjects");
+	PrintDebug.Print("Sequence::OrientObjects");
 	var s = GetAABBSize();
 	var w:float = -s.x/2 + size.x/2;
 	for c in get_children():

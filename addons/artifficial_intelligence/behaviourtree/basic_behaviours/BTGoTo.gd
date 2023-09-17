@@ -8,29 +8,29 @@ class_name BTGoTo;
 @export var retryTimes:int = 0;
 
 func _init()->void:
-	print("GoTo::_init");
+	PrintDebug.Print("GoTo::_init");
 	nodeName = "Go to";
 	super._init();
 
 func OnEnter(npc:CharacterBaseAI, data:Dictionary)->void:
-	print("GoTo::OnEnter");
-	bb().npc.navigationAgent.set_path_max_distance(distanceTolerance);
+	PrintDebug.Print("GoTo::OnEnter");
+	bb().npc.navigationAgent.call_deferred("set_path_max_distance", distanceTolerance);
 	var target:Node3D = bb().data[blackboardFieldNameWithTargetPointer];
 	if target:
-		npc.navigationAgent.set_target_position(target.global_position);
+		npc.navigationAgent.call_deferred("set_target_position", target.global_position);
 		data["lastTargetPosition"] = target.global_position;
 	else:
-		npc.navigationAgent.set_target_position(npc.global_position);
+		npc.navigationAgent.call_deferred("set_target_position", npc.global_position);
 		data["lastTargetPosition"] = npc.global_position;
 
 func OnExit(npc:CharacterBaseAI, data:Dictionary)->void:
-	print("GoTo::OnExit");
+	PrintDebug.Print("GoTo::OnExit");
 	pass;
 
 func Execute(npc:CharacterBaseAI, data:Dictionary)->void:
-	print("GoTo::Execute");
+	PrintDebug.Print("GoTo::Execute");
 	var target:Node3D = bb().data[blackboardFieldNameWithTargetPointer];
-	if npc.navigationAgent.is_navigation_finished() || npc.navigationAgent.is_target_reached():
+	if npc.isNavigationFinished:
 		if target:
 			data["lastTargetPosition"] = npc.global_position;
 #		if npc.name == "CharacterBody3D2":
@@ -39,8 +39,8 @@ func Execute(npc:CharacterBaseAI, data:Dictionary)->void:
 		return;
 	if target:
 		if (target.global_position - data["lastTargetPosition"]).length() > 1:
-			npc.navigationAgent.set_target_position(target.global_position);
+			npc.navigationAgent.call_deferred("set_target_position", target.global_position);
 			data["lastTargetPosition"] = target.global_position;
 	#else: # do retries:
-	#	npc.navigationAgent.set_target_position(npc.global_position);
+	#	npc.navigationAgent.call_deferred("set_target_position", npc.global_position);
 	#	Fail();

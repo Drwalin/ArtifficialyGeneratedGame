@@ -1,94 +1,94 @@
 [gd_scene load_steps=5 format=3 uid="uid://jcwyfc4kaxr"]
 
-[ext_resource type="Script" path="res://scripts/behaviourtree/BTSequence.gd" id="1_0t8a1"]
-[ext_resource type="Script" path="res://scripts/behaviourtree/BehaviourTree.gd" id="1_rqckf"]
-[ext_resource type="Script" path="res://scripts/behaviourtree/basic_behaviours/BTGoTo.gd" id="3_qpsk8"]
-[ext_resource type="Script" path="res://scripts/behaviourtree/basic_behaviours/BTWait.gd" id="4_x8w7c"]
+[ext_resource type="Script" path="res://addons/artifficial_intelligence/behaviourtree/BehaviourTree.gd" id="1_3eq7m"]
+[ext_resource type="Script" path="res://addons/artifficial_intelligence/behaviourtree/BTSequence.gd" id="2_soqsm"]
+[ext_resource type="Script" path="res://addons/artifficial_intelligence/behaviourtree/basic_behaviours/BTGoTo.gd" id="3_kttla"]
+[ext_resource type="Script" path="res://addons/artifficial_intelligence/behaviourtree/basic_behaviours/BTWait.gd" id="4_hu3ta"]
 
 [node name="ExampleBehaviourTree" type="Node"]
-script = ExtResource("1_rqckf")
+script = ExtResource("1_3eq7m")
 
 [node name="BTSequence" type="Label" parent="."]
 offset_right = 121.0
 offset_bottom = 26.0
 theme_override_colors/font_color = Color(0.9, 0.1, 0.8, 1)
 text = "Sequence Node"
-script = ExtResource("1_0t8a1")
+script = ExtResource("2_soqsm")
 
 [node name="BTGoToObject1" type="Label" parent="BTSequence"]
 layout_mode = 0
-offset_left = -165.0
+offset_left = -210.0
 offset_top = 86.0
-offset_right = -123.0
+offset_right = -168.0
 offset_bottom = 112.0
 theme_override_colors/font_color = Color(0.05, 0.9, 0.1, 1)
 text = "Go to"
-script = ExtResource("3_qpsk8")
+script = ExtResource("3_kttla")
 distanceTolerance = 3.0
 
 [node name="BTWait1" type="Label" parent="BTSequence"]
 layout_mode = 0
-offset_left = -93.0
+offset_left = -138.0
 offset_top = 86.0
-offset_right = -36.0
+offset_right = -81.0
 offset_bottom = 112.0
 theme_override_colors/font_color = Color(0.05, 0.9, 0.1, 1)
 text = "Wait 1s"
-script = ExtResource("4_x8w7c")
+script = ExtResource("4_hu3ta")
 
 [node name="BTGoToObject2" type="Label" parent="BTSequence"]
 layout_mode = 0
-offset_left = -6.0
+offset_left = -51.0
 offset_top = 86.0
-offset_right = 36.0
+offset_right = -9.0
 offset_bottom = 112.0
 theme_override_colors/font_color = Color(0.05, 0.9, 0.1, 1)
 text = "Go to"
-script = ExtResource("3_qpsk8")
+script = ExtResource("3_kttla")
 distanceTolerance = 3.0
 blackboardFieldNameWithTargetPointer = "player"
 
 [node name="BTWait2" type="Label" parent="BTSequence"]
 layout_mode = 0
-offset_left = 66.0
+offset_left = 21.0
 offset_top = 86.0
-offset_right = 145.0
+offset_right = 100.0
 offset_bottom = 112.0
 theme_override_colors/font_color = Color(0.05, 0.9, 0.1, 1)
 text = "Wait 1.50s"
-script = ExtResource("4_x8w7c")
+script = ExtResource("4_hu3ta")
 secondsToWait = 1.5
 
 [node name="BTGoTo" type="Label" parent="BTSequence"]
 layout_mode = 0
-offset_left = 175.0
+offset_left = 130.0
 offset_top = 86.0
-offset_right = 217.0
+offset_right = 172.0
 offset_bottom = 112.0
 theme_override_colors/font_color = Color(0.05, 0.9, 0.1, 1)
 text = "Go to"
-script = ExtResource("3_qpsk8")
+script = ExtResource("3_kttla")
 distanceTolerance = 3.0
 blackboardFieldNameWithTargetPointer = "target3"
 
 [node name="BTGoTo2" type="Label" parent="BTSequence"]
 layout_mode = 0
-offset_left = 247.0
+offset_left = 202.0
 offset_top = 86.0
-offset_right = 289.0
+offset_right = 244.0
 offset_bottom = 112.0
 theme_override_colors/font_color = Color(0.05, 0.9, 0.1, 1)
 text = "Go to"
-script = ExtResource("3_qpsk8")
+script = ExtResource("3_kttla")
 distanceTolerance = 3.0
 blackboardFieldNameWithTargetPointer = "target4"
 
 [node name="BTWait" type="Label" parent="BTSequence"]
 layout_mode = 0
-offset_left = 319.0
+offset_left = 274.0
 offset_top = 86.0
-offset_right = 376.0
+offset_right = 331.0
 offset_bottom = 112.0
 theme_override_colors/font_color = Color(0.05, 0.9, 0.1, 1)
 text = "Wait 1s"
-script = ExtResource("4_x8w7c")
+script = ExtResource("4_hu3ta")

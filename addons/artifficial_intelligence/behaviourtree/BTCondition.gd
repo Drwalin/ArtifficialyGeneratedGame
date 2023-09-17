@@ -7,19 +7,19 @@ var conditionExpression:Expression = Expression.new();
 @export var condition: String = "";
 
 func _init()->void:
-	print("Condition::_init");
+	PrintDebug.Print("Condition::_init");
 	super();
 	lineColor = Color(0,0,0.9);
 	nodeName = "Condition Node";
 	add_theme_color_override("font_color", Color(0.9, 0.1, 0.05));
 
 func SetBT(_bt: BehaviourTree)->void:
-	print("Condition::SetBT");
+	PrintDebug.Print("Condition::SetBT");
 	super.SetBT(_bt);
 	node.SetBT(_bt);
 
 func OnEnter(npc:CharacterBaseAI, data:Dictionary)->void:
-	print("Condition::OnEnter");
+	PrintDebug.Print("Condition::OnEnter");
 	if conditionExpression.execute([bb(), npc, data], npc):
 		bb().nodesStack[bb().nodesStack.size()-1][0] = node;
 		node.OnEnter(npc, data);
@@ -27,15 +27,15 @@ func OnEnter(npc:CharacterBaseAI, data:Dictionary)->void:
 	Success();
 
 func OnExit(npc:CharacterBaseAI, data:Dictionary)->void:
-	print("Condition::OnExit");
+	PrintDebug.Print("Condition::OnExit");
 	pass;
 
 func Execute(npc:CharacterBaseAI, data:Dictionary)->void:
-	print("Condition::Execute");
+	PrintDebug.Print("Condition::Execute");
 	assert(false);
 	
 func _ready()->void:
-	print("Condition::_ready");
+	PrintDebug.Print("Condition::_ready");
 	super._ready();
 	set_position(Vector2(0,0));
 	if !(OS.is_debug_build() && Engine.is_editor_hint()):
@@ -46,7 +46,7 @@ func _ready()->void:
 				node = c as BTNode;
 
 func GetAABBSize()->Vector2:
-	print("Condition::GetAABBSize");
+	PrintDebug.Print("Condition::GetAABBSize");
 	for c in get_children():
 		if c is BTNode:
 			node = c;
@@ -57,7 +57,7 @@ func GetAABBSize()->Vector2:
 	return size;
 
 func OrientObjects()->void:
-	print("Condition::OrientObjects");
+	PrintDebug.Print("Condition::OrientObjects");
 	nodeName = "Invalid Condition Node";
 	if condition != "":
 		var err = conditionExpression.parse(condition, ["bb", "npc", "data"]);

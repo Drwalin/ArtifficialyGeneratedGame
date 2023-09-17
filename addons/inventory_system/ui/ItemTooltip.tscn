@@ -1,0 +1,57 @@
+[gd_scene load_steps=2 format=3 uid="uid://c1y2u8yp15muj"]
+
+[ext_resource type="Script" path="res://addons/inventory_system/ui/ItemTooltip.gd" id="1_22n8l"]
+
+[node name="ItemTooltip" type="Control"]
+layout_mode = 3
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1152.0
+offset_bottom = -648.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_22n8l")
+
+[node name="Color1" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.25098, 0.25098, 0.25098, 1)
+
+[node name="Color2" type="ColorRect" parent="."]
+layout_mode = 0
+color = Color(0.501961, 0.501961, 0.501961, 1)
+
+[node name="Container" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 199.0
+offset_bottom = 70.0
+
+[node name="Title" type="HBoxContainer" parent="Container"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Name" type="Label" parent="Container/Title"]
+layout_mode = 2
+text = "Item Name"
+
+[node name="Spacing" type="Label" parent="Container/Title"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.25098, 0.25098, 0.25098, 1)
+text = "|"
+horizontal_alignment = 1
+
+[node name="Amount" type="Label" parent="Container/Title"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.25098, 0.752941, 0.25098, 1)
+text = "3/12"
+horizontal_alignment = 2
+
+[node name="Description" type="Label" parent="Container"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.752941, 0.752941, 0.752941, 1)
+text = "More detailed description"
