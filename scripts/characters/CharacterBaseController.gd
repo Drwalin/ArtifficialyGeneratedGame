@@ -18,13 +18,13 @@ var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 @onready var head:Node3D = $CollisionShape3D/Head;
 @onready var collisionShape:CollisionShape3D = $CollisionShape3D;
 @onready var capsuleShape:CapsuleShape3D = collisionShape.shape;
-@onready var inventoryStorage:InventoryStorage = $InventoryStorage;
+@export var inventoryStorage:InventoryStorage;
 
-#func _ready()->void:
-#	if inventoryStorage == null:
-#		inventoryStorage = InventoryStorage.new();
-#	if inventoryStorage.get_parent() == null:
-#		add_child(inventoryStorage);
+func _ready()->void:
+	if inventoryStorage == null:
+		inventoryStorage = InventoryStorage.new();
+	if inventoryStorage.get_parent() == null:
+		add_child(inventoryStorage);
 
 var moveDirection : Vector3 = Vector3(0,0,0).normalized();
 var rotateTowardMovementDirection : bool = false;

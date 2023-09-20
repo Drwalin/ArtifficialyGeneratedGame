@@ -32,7 +32,7 @@ func EndUse(inv:InventoryStorage, itemStack:ItemStack, target:Node3D)->void:
 
 
 func SetDescription(description:Label, itemStack:ItemStack):
-	description.text = "Default item description";
+	description.text = "Default item description, something longer";
 
 
 func TickDuringUse(dt:float, inv:InventoryStorage, itemStack:ItemStack)->void:

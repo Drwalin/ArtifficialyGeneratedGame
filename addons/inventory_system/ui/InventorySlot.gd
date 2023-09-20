@@ -4,8 +4,6 @@ class_name InventorySlot;
 @onready var icon:TextureRect = $Icon;
 @onready var amountLabel:Label = $Label;
 
-static var preloadedTooltip = preload("res://addons/inventory_system/ui/ItemTooltip.tscn");
-
 var slotId:int = 0;
 var inventoryUI:InventoryUI = null;
 var inventoryStorage:InventoryStorage = null;
@@ -34,14 +32,16 @@ func Close():
 func _get_tooltip(pos:Vector2)->String:
 	var itemStack:ItemStack = GetItemStack();
 	if itemStack:
-		return itemStack.item.fullName;
+		if itemStack.item:
+			return itemStack.item.fullName;
 	return "";
 
 func _make_custom_tooltip(for_text:String)->Object:
 	var itemStack:ItemStack = GetItemStack();
 	if itemStack:
 		if itemStack.item:
-			var tooltip = preloadedTooltip.instantiate();
+			var tooltip = load("res://addons/inventory_system/ui/ItemTooltip.tscn").instantiate();
+			tooltip.set_script(load("res://addons/inventory_system/ui/ItemTooltip.gd"));
 			tooltip.Set(itemStack, inventoryStorage);
 			return tooltip;
 	return null;
@@ -85,7 +85,11 @@ func _get_drag_data(pos:Vector2):
 		if itemStack.item:
 			var rect:TextureRect = TextureRect.new();
 			rect.texture = icon.texture;
+			rect.expand_mode = TextureRect.EXPAND_FIT_WIDTH | TextureRect.EXPAND_FIT_HEIGHT;
+			rect.z_index = 0xFF;
 			set_drag_preview(rect);
+			rect.size = Vector2(48, 48);
+			
 			var data:InventoryDragData = InventoryDragData.new();
 			data.amount = itemStack.amount;
 			data.inventorySlot = self;
