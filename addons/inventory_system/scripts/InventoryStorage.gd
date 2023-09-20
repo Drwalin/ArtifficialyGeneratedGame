@@ -40,10 +40,14 @@ func GetSlotIdToDrop(data, invSlot:InventorySlot)->int:
 
 
 func CanDropIn(data, invSlot:InventorySlot)->bool:
+	if invSlot == data.inventorySlot:
+		return true;
 	var slotId = GetSlotIdToDrop(data, invSlot);
 	return slotId >= 0;
 
 func DropIn(data, invSlot:InventorySlot)->void:
+	if invSlot == data.inventorySlot:
+		return;
 	var slotId = GetSlotIdToDrop(data, invSlot);
 	if slotId < 0:
 		return;

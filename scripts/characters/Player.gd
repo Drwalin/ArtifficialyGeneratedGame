@@ -35,10 +35,12 @@ func _process(delta: float)->void:
 			selfInventoryUI = load("res://addons/inventory_system/ui/InventoryUI.tscn").instantiate();
 			add_child(selfInventoryUI);
 			selfInventoryUI.call_deferred("ConnectToStorage", self.inventoryStorage);
+			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE);
 		else:
 			selfInventoryUI.DisconnectStorage();
 			remove_child(selfInventoryUI);
 			selfInventoryUI = null;
+			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED);
 
 func _physics_process(delta:float)->void:
 	PrintDebug.Print("Player::_physics_process");

@@ -7,6 +7,11 @@ extends Control;
 @onready var description = $Container/Description;
 
 func Set(itemStack:ItemStack, inventoryStorage:InventoryStorage)->void:
+	colorRect1 = $Color1;
+	colorRect2 = $Color2;
+	nameLabel = $Container/Title/Name;
+	amountLabel = $Container/Title/Amount;
+	description = $Container/Description;
 	var item = itemStack.item;
 	amountLabel.text = "%i/%i" % [itemStack.amount, item.maxStackAmount];
 	nameLabel.text = item.fullName;
@@ -14,7 +19,11 @@ func Set(itemStack:ItemStack, inventoryStorage:InventoryStorage)->void:
 	pass;
 
 func _ready():
-	pass;
+	colorRect1 = $Color1;
+	colorRect2 = $Color2;
+	nameLabel = $Container/Title/Name;
+	amountLabel = $Container/Title/Amount;
+	description = $Container/Description;
 
 func _process(delta):
 	pass;

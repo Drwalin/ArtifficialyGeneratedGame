@@ -13,6 +13,10 @@ var inventoryStorage:InventoryStorage = null;
 func GetItemStack()->ItemStack:
 	if inventoryStorage:
 		if slotId < inventoryStorage.items.size():
+			var _is = inventoryStorage.items[slotId];
+			if _is:
+				return _is;
+			inventoryStorage.items[slotId] = ItemStack.new();
 			return inventoryStorage.items[slotId];
 	return null;
 
@@ -59,7 +63,6 @@ func _process(delta):
 					icon.texture = itemStack.item.icon;
 					amountLabel.text = "%d" % [itemStack.amount];
 					return;
-	inventoryStorage = null;
 	icon.texture = null;
 	amountLabel.text = "";
 

@@ -35,6 +35,7 @@ func UpdateItemSlots()->void:
 			var slot = load("res://addons/inventory_system/ui/InventorySlot.tscn").instantiate();
 			slot.Init(self, i);
 			slots.add_child(slot);
+			slot.Init(self, i);
 	elif slots.get_children().size() > storage.items.size():
 		var s = [];
 		var ch = slots.get_children();

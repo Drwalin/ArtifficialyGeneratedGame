@@ -6,7 +6,7 @@
 [resource]
 script = ExtResource("1_fwiv8")
 fullName = "Iron Sword 2"
-maxStackAmount = 1
+maxStackAmount = 4
 primaryCategory = ""
 categories = Array[String]([])
 mass = 1.0

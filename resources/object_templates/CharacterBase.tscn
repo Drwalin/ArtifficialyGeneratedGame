@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://0dhcf3rif6nx"]
+[gd_scene load_steps=13 format=3 uid="uid://0dhcf3rif6nx"]
 
 [ext_resource type="Script" path="res://scripts/characters/CharacterBaseController.gd" id="1_rsris"]
 [ext_resource type="Script" path="res://addons/inventory_system/scripts/InventoryStorage.gd" id="2_hv7o6"]
@@ -28,6 +28,12 @@ tag = {}
 script = ExtResource("4_2sr2v")
 item = ExtResource("5_aokfl")
 amount = 1
+tag = {}
+
+[sub_resource type="Resource" id="Resource_dn5iq"]
+script = ExtResource("4_2sr2v")
+item = ExtResource("3_dkhq6")
+amount = 2
 tag = {}
 
 [node name="CharacterBody3D" type="CharacterBody3D"]
@@ -61,4 +67,4 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.624758, 0)
 
 [node name="InventoryStorage" type="Node" parent="."]
 script = ExtResource("2_hv7o6")
-items = Array[ExtResource("4_2sr2v")]([SubResource("Resource_vpjpe"), SubResource("Resource_l1vx6"), null, null, null, null, null])
+items = Array[ExtResource("4_2sr2v")]([SubResource("Resource_vpjpe"), SubResource("Resource_l1vx6"), SubResource("Resource_dn5iq"), null, null, null, null])

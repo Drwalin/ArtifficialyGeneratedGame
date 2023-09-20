@@ -3,7 +3,7 @@ class_name ItemStack;
 
 @export var item:Item = null;
 @export var amount:int = 0;
-@export var tag:Dictionary;
+@export var tag:Dictionary = {};
 var inUseSince = null;
 
 func GetItemUsageTime():
