@@ -13,3 +13,4 @@ func GetItemUsageTime():
 
 func IsInUse()->bool:
 	return inUseSince != null;
+

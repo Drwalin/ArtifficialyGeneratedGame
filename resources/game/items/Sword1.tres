@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://02ox63heogm0"]
+
+[ext_resource type="Texture2D" uid="uid://venu7qa14fl6" path="res://resources/icons/iconset1/Sword1.png" id="1_67eq5"]
+[ext_resource type="Script" path="res://addons/inventory_system/scripts/Item.gd" id="1_fwiv8"]
+
+[resource]
+script = ExtResource("1_fwiv8")
+fullName = "Iron Sword"
+maxStackAmount = 1
+primaryCategory = ""
+categories = Array[String]([])
+mass = 1.0
+icon = ExtResource("1_67eq5")

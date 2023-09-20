@@ -9,26 +9,32 @@ static var preloadedTooltip = preload("res://addons/inventory_system/ui/ItemTool
 var slotId:int = 0;
 var inventoryUI:InventoryUI = null;
 var inventoryStorage:InventoryStorage = null;
-var itemStack:ItemStack = null;
+
+func GetItemStack()->ItemStack:
+	if inventoryStorage:
+		if slotId < inventoryStorage.items.size():
+			return inventoryStorage.items[slotId];
+	return null;
 
 func Init(inv:InventoryUI, slot:int)->void:
 	slotId = slot;
 	inventoryUI = inv;
-	inventoryStorage = inventoryUI.inventoryStorage;
-	itemStack = inventoryStorage.items[slotId];
+	inventoryStorage = inventoryUI.storage;
 
 func Close():
 	inventoryStorage = null;
-	itemStack = null;
+
 
 
 
 func _get_tooltip(pos:Vector2)->String:
+	var itemStack:ItemStack = GetItemStack();
 	if itemStack:
 		return itemStack.item.fullName;
 	return "";
 
 func _make_custom_tooltip(for_text:String)->Object:
+	var itemStack:ItemStack = GetItemStack();
 	if itemStack:
 		if itemStack.item:
 			var tooltip = preloadedTooltip.instantiate();
@@ -44,17 +50,16 @@ func _ready():
 
 func _process(delta):
 	if inventoryUI:
-		inventoryStorage = inventoryUI.inventoryStorage;
+		inventoryStorage = inventoryUI.storage;
 	if inventoryStorage:
 		if inventoryStorage.items.size() > slotId:
-			itemStack = inventoryStorage.items[slotId];
+			var itemStack:ItemStack = GetItemStack();
 			if itemStack:
 				if itemStack.item:
 					icon.texture = itemStack.item.icon;
 					amountLabel.text = "%d" % [itemStack.amount];
 					return;
 	inventoryStorage = null;
-	itemStack = null;
 	icon.texture = null;
 	amountLabel.text = "";
 
@@ -63,15 +68,16 @@ func _process(delta):
 # dragging data: InventorySlot
 
 func _can_drop_data(pos:Vector2, data)->bool:
-	if itemStack:
+	if GetItemStack():
 		return inventoryStorage.CanDropIn(data, self);
 	return false;
 
 func _drop_data(pos:Vector2, data):
-	if itemStack:
+	if GetItemStack():
 		inventoryStorage.DropIn(data, self);
 
 func _get_drag_data(pos:Vector2):
+	var itemStack:ItemStack = GetItemStack();
 	if itemStack:
 		if itemStack.item:
 			var rect:TextureRect = TextureRect.new();
@@ -80,7 +86,6 @@ func _get_drag_data(pos:Vector2):
 			var data:InventoryDragData = InventoryDragData.new();
 			data.amount = itemStack.amount;
 			data.inventorySlot = self;
-			data.itemStack = itemStack;
 			return data;
 	return null;
 

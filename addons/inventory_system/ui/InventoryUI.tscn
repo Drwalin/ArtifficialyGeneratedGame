@@ -1,15 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://dh3opv33wga6m"]
+[gd_scene load_steps=2 format=3 uid="uid://dh3opv33wga6m"]
 
 [ext_resource type="Script" path="res://addons/inventory_system/ui/InventoryUI.gd" id="1_qo4fk"]
-[ext_resource type="Script" path="res://addons/inventory_system/ui/InventorySlot.gd" id="2_ei7oo"]
 
 [node name="InventoryUI" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = -832.0
-offset_bottom = -408.0
+offset_right = -816.0
+offset_bottom = -424.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_qo4fk")
@@ -19,28 +18,24 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = -480.0
-offset_bottom = -408.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.25098, 0.25098, 0.25098, 1)
+color = Color(0.12549, 0.12549, 0.12549, 1)
 
 [node name="ScrollContainer" type="ScrollContainer" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 2.0
-offset_right = 2.0
+offset_right = 24.0
 grow_horizontal = 2
 grow_vertical = 2
 horizontal_scroll_mode = 0
 
 [node name="GridContainer" type="GridContainer" parent="ScrollContainer"]
 clip_contents = true
+custom_minimum_size = Vector2(336, 224)
 layout_mode = 2
-columns = 4
-
-[node name="InventorySlot" type="ColorRect" parent="ScrollContainer/GridContainer"]
-layout_mode = 2
-script = ExtResource("2_ei7oo")
+size_flags_horizontal = 3
+size_flags_vertical = 3
+columns = 6

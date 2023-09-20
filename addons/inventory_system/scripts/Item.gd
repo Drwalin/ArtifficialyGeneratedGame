@@ -8,7 +8,11 @@ class_name Item;
 @export var mass:float = 1;
 @export var icon:Texture2D;
 
-static var time:Time = Time.new();
+static var time = Time;
+
+func DropOnGround(inv:InventoryStorage, itemStack:ItemStack, pos:Vector3, amount:int)->void:
+	
+	pass;
 
 func Tick(dt:float, inv:InventoryStorage, itemStack:ItemStack)->void:
 	if itemStack.inUse != null:

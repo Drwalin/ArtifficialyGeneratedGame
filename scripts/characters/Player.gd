@@ -7,6 +7,7 @@ const BOB_AMP = 0.08;
 var bob_time = 0.0;
 
 var camera : Camera3D;
+var selfInventoryUI:InventoryUI = null;
 
 func _ready()->void:
 	PrintDebug.Print("Player::_ready");
@@ -29,6 +30,15 @@ func _unhandled_input(event)->void:
 
 func _process(delta: float)->void:
 	delta = delta;
+	if Input.is_action_just_pressed("open_self_inventory"):
+		if selfInventoryUI == null:
+			selfInventoryUI = load("res://addons/inventory_system/ui/InventoryUI.tscn").instantiate();
+			add_child(selfInventoryUI);
+			selfInventoryUI.call_deferred("ConnectToStorage", self.inventoryStorage);
+		else:
+			selfInventoryUI.DisconnectStorage();
+			remove_child(selfInventoryUI);
+			selfInventoryUI = null;
 
 func _physics_process(delta:float)->void:
 	PrintDebug.Print("Player::_physics_process");
