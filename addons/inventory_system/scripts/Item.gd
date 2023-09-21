@@ -3,8 +3,7 @@ class_name Item;
 
 @export var fullName:String;
 @export var maxStackAmount:int = 1;
-@export var primaryCategory:String;
-@export var categories:Array[String] = [];
+@export var categories:Array[ItemCategory] = [];
 @export var mass:float = 1;
 @export var icon:Texture2D;
 

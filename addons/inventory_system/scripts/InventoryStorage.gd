@@ -2,6 +2,7 @@ extends Node;
 class_name InventoryStorage;
 
 @export var items:Array[ItemStack] = [];
+@export var itemCategories:Array[ItemCategory] = [];
 @export var expandableInventory:bool = false;
 @export var infiniteStacks:bool = false;
 
@@ -9,6 +10,7 @@ func _ready()->void:
 	for i in range(0, items.size()):
 		if items[i] == null:
 			items[i] = ItemStack.new();
+	itemCategories.resize(items.size());
 
 func _process(delta:float)->void:
 	pass;
@@ -16,15 +18,24 @@ func _process(delta:float)->void:
 func Sort()->void:
 	pass;
 
+func IsCategoryCompatible(itemStack:ItemStack, slotId:int)->bool:
+	if slotId >= 0 && slotId < itemCategories.size():
+		if itemCategories[slotId]:
+			return itemCategories[slotId].IsCategoryCompatibleWithItem(itemStack.item);
+		return true;
+	return true;
+
 func GetSlotIdToDrop(data, invSlot:InventorySlot)->int:
 	if invSlot:
-		if items[invSlot.slotId].amount == 0 || items[invSlot.slotId].item == null:
+		if IsCategoryCompatible(data.GetItemStack(), invSlot.slotId) == false:
+			return false;
+		if (items[invSlot.slotId].amount == 0 || items[invSlot.slotId].item == null) && IsCategoryCompatible(data.GetItemStack(), invSlot.slotId):
 			return invSlot.slotId;
 		if items[invSlot.slotId].item == data.GetItemStack().item && items[invSlot.slotId].tag == data.GetItemStack().tag:
 			if items[invSlot.slotId].amount < items[invSlot.slotId].item.maxStackAmount:
 				return invSlot.slotId;
-		else:
-			if data.amount == data.GetItemStack().amount:
+		else: # swap
+			if data.amount == data.GetItemStack().amount: # if whole stack was picked
 				return invSlot.slotId;
 	else:
 		for i in range(0, items.size()):
@@ -34,12 +45,12 @@ func GetSlotIdToDrop(data, invSlot:InventorySlot)->int:
 					return i;
 		for i in range(0, items.size()):
 			var it = items[i];
-			if it.amount == 0 || it.item == null:
+			if it.amount == 0 || it.item == null && IsCategoryCompatible(data.GetItemStack(), i):
 				return i;
 	return -1;
 
 
-func CanDropIn(data, invSlot:InventorySlot)->bool:
+func CanDropIn(data:InventoryDragData, invSlot:InventorySlot)->bool:
 	if invSlot == data.inventorySlot:
 		return true;
 	var slotId = GetSlotIdToDrop(data, invSlot);
