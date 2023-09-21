@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://dr22pxft72vjr"]
+[gd_scene load_steps=28 format=3 uid="uid://dr22pxft72vjr"]
 
 [ext_resource type="PackedScene" uid="uid://cs4qisi3jwxfx" path="res://resources/SomeMap.glb" id="1_ddkoo"]
 [ext_resource type="MeshLibrary" uid="uid://b2ico06a1v2kp" path="res://resources/MeshLib.tres" id="3_ppkw4"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://dyaenkyhh1r4n" path="res://resources/object_templates/CharacterAiBase.tscn" id="6_2cu1j"]
 [ext_resource type="PackedScene" uid="uid://jcwyfc4kaxr" path="res://addons/artifficial_intelligence/behaviourtree/example_behaviour_tree.tscn" id="6_q8qyp"]
 [ext_resource type="Script" path="res://addons/inventory_system/scripts/InventoryStorage.gd" id="6_uhp00"]
+[ext_resource type="Script" path="res://addons/inventory_system/scripts/ItemSlot.gd" id="9_01por"]
 [ext_resource type="Resource" uid="uid://02ox63heogm0" path="res://resources/game/items/Sword1.tres" id="9_vivdt"]
 [ext_resource type="Script" path="res://addons/inventory_system/scripts/ItemStack.gd" id="10_xoahs"]
 [ext_resource type="Resource" uid="uid://b8c0ti1uhnh2l" path="res://resources/game/items/Sword2.tres" id="11_mhsho"]
@@ -21,29 +22,71 @@ agent_height = 1.8
 
 [sub_resource type="BoxMesh" id="BoxMesh_huc3n"]
 
-[sub_resource type="Resource" id="Resource_lorbw"]
+[sub_resource type="Resource" id="Resource_bhabe"]
 script = ExtResource("10_xoahs")
-item = ExtResource("9_vivdt")
-amount = 2
+item = ExtResource("11_mhsho")
+amount = 3
 tag = {}
 
-[sub_resource type="Resource" id="Resource_nfnng"]
+[sub_resource type="Resource" id="Resource_14coy"]
+script = ExtResource("9_01por")
+itemStack = SubResource("Resource_bhabe")
+slotId = -1
+
+[sub_resource type="Resource" id="Resource_xhg2q"]
 script = ExtResource("10_xoahs")
 item = ExtResource("9_vivdt")
 amount = 1
 tag = {}
 
-[sub_resource type="Resource" id="Resource_8sa4w"]
-script = ExtResource("10_xoahs")
-item = ExtResource("9_vivdt")
-amount = 2
-tag = {}
+[sub_resource type="Resource" id="Resource_h13oq"]
+script = ExtResource("9_01por")
+itemStack = SubResource("Resource_xhg2q")
+slotId = -1
 
-[sub_resource type="Resource" id="Resource_8w1pi"]
+[sub_resource type="Resource" id="Resource_yxoa7"]
 script = ExtResource("10_xoahs")
 item = ExtResource("11_mhsho")
 amount = 1
 tag = {}
+
+[sub_resource type="Resource" id="Resource_ib8ak"]
+script = ExtResource("9_01por")
+itemStack = SubResource("Resource_yxoa7")
+slotId = -1
+
+[sub_resource type="Resource" id="Resource_euuq8"]
+script = ExtResource("10_xoahs")
+item = ExtResource("11_mhsho")
+amount = 2
+tag = {}
+
+[sub_resource type="Resource" id="Resource_gy61y"]
+script = ExtResource("9_01por")
+itemStack = SubResource("Resource_euuq8")
+slotId = -1
+
+[sub_resource type="Resource" id="Resource_24mwu"]
+script = ExtResource("10_xoahs")
+item = ExtResource("11_mhsho")
+amount = 4
+tag = {}
+
+[sub_resource type="Resource" id="Resource_e4v5r"]
+script = ExtResource("9_01por")
+itemStack = SubResource("Resource_24mwu")
+slotId = -1
+
+[sub_resource type="Resource" id="Resource_taqkv"]
+script = ExtResource("10_xoahs")
+item = ExtResource("9_vivdt")
+amount = 7
+tag = {}
+
+[sub_resource type="Resource" id="Resource_kdx4k"]
+script = ExtResource("9_01por")
+itemStack = SubResource("Resource_taqkv")
+slotId = -1
 
 [node name="SceneRootNode" type="Node3D"]
 
@@ -150,7 +193,7 @@ inventoryStorage = NodePath("InventoryStorage")
 [node name="InventoryStorage" type="Node" parent="Characters/CharacterBody3D3"]
 unique_name_in_owner = true
 script = ExtResource("6_uhp00")
-items = Array[ExtResource("10_xoahs")]([SubResource("Resource_lorbw"), null, null, null, null])
+slots = Array[ExtResource("9_01por")]([SubResource("Resource_14coy"), SubResource("Resource_h13oq"), null, null, null])
 
 [node name="Player" parent="Characters" node_paths=PackedStringArray("inventoryStorage") instance=ExtResource("6_0epqo")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.67393, 2.13075, 3.06077)
@@ -159,7 +202,7 @@ inventoryStorage = NodePath("InventoryStorage")
 
 [node name="InventoryStorage" type="Node" parent="Characters/Player"]
 script = ExtResource("6_uhp00")
-items = Array[ExtResource("10_xoahs")]([SubResource("Resource_nfnng"), SubResource("Resource_8sa4w"), SubResource("Resource_8w1pi"), null, null, null, null])
+slots = Array[ExtResource("9_01por")]([SubResource("Resource_ib8ak"), SubResource("Resource_gy61y"), SubResource("Resource_e4v5r"), SubResource("Resource_kdx4k"), null, null, null, null, null, null, null, null, null, null, null, null])
 
 [node name="BehaviourTrees" type="Node" parent="."]
 

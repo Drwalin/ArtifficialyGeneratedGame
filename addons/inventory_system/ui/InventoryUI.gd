@@ -30,18 +30,24 @@ func _process(delta:float)->void:
 		DisconnectStorage();
 
 func UpdateItemSlots()->void:
-	if slots.get_children().size() < storage.items.size():
-		for i in range(slots.get_children().size(), storage.items.size()):
+	if slots.get_children().size() < storage.slots.size():
+		for i in range(slots.get_children().size(), storage.slots.size()):
 			var slot = load("res://addons/inventory_system/ui/InventorySlot.tscn").instantiate();
-			slot.Init(self, i);
 			slots.add_child(slot);
-			slot.Init(self, i);
-	elif slots.get_children().size() > storage.items.size():
+			slot.inventoryUI = self;
+			slot.slotId = i;
+	elif slots.get_children().size() > storage.slots.size():
 		var s = [];
 		var ch = slots.get_children();
 		for i in range(storage.items.size(), ch.size()):
 			s.append(ch[i]);
 		for c in ch:
 			slots.remove_child(ch);
-		
 
+
+
+func _can_drop_data(pos:Vector2, data)->bool:
+	return storage.CanDropIn(data, null);
+
+func _drop_data(pos:Vector2, data):
+	storage.DropIn(data, null);

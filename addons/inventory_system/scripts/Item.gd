@@ -7,26 +7,23 @@ class_name Item;
 @export var mass:float = 1;
 @export var icon:Texture2D;
 
-static var time = Time;
-
 func DropOnGround(inv:InventoryStorage, itemStack:ItemStack, pos:Vector3, amount:int)->void:
-	
 	pass;
 
 func Tick(dt:float, inv:InventoryStorage, itemStack:ItemStack)->void:
-	if itemStack.inUse != null:
+	if itemStack.inUseSince != null:
 		TickDuringUse(dt, inv, itemStack);
 	else:
 		TickOutsideUse(dt, inv, itemStack);
 
 func BeginUse(inv:InventoryStorage, itemStack:ItemStack, target:Node3D)->void:
-	if itemStack.inUse == false:
-		itemStack.inUse = time.get_unix_time_from_system();
+	if itemStack.inUseSince == false:
+		itemStack.inUseSince = Time.get_unix_time_from_system();
 		OnUseBegin(inv, itemStack, target);
 
 func EndUse(inv:InventoryStorage, itemStack:ItemStack, target:Node3D)->void:
-	if itemStack.inUse:
-		itemStack.inUse = null;
+	if itemStack.inUseSince:
+		itemStack.inUseSince = null;
 		OnUseEnd(inv, itemStack, target);
 
 

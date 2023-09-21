@@ -1,85 +1,59 @@
 extends Node;
 class_name InventoryStorage;
 
-@export var items:Array[ItemStack] = [];
-@export var itemCategories:Array[ItemCategory] = [];
-@export var expandableInventory:bool = false;
-@export var infiniteStacks:bool = false;
+@export var slots:Array[ItemSlot] = [];
 
 func _ready()->void:
-	for i in range(0, items.size()):
-		if items[i] == null:
-			items[i] = ItemStack.new();
-	itemCategories.resize(items.size());
+	Expand(slots.size());
+
+func Expand(newSize:int)->void:
+	slots.resize(newSize);
+	for i in range(0, slots.size()):
+		if slots[i] == null:
+			slots[i] = ItemSlot.new();
+		slots[i].slotId = i;
 
 func _process(delta:float)->void:
-	pass;
+	for s in slots:
+		if s:
+			if s.itemStack:
+				s.itemStack.Tick(delta, self);
 
-func Sort()->void:
-	pass;
-
-func IsCategoryCompatible(itemStack:ItemStack, slotId:int)->bool:
-	if slotId >= 0 && slotId < itemCategories.size():
-		if itemCategories[slotId]:
-			return itemCategories[slotId].IsCategoryCompatibleWithItem(itemStack.item);
-		return true;
-	return true;
-
-func GetSlotIdToDrop(data, invSlot:InventorySlot)->int:
+func GetSlotIdToDrop(dragData:ItemDragData, invSlot:ItemSlot)->int:
 	if invSlot:
-		if IsCategoryCompatible(data.GetItemStack(), invSlot.slotId) == false:
-			return false;
-		if (items[invSlot.slotId].amount == 0 || items[invSlot.slotId].item == null) && IsCategoryCompatible(data.GetItemStack(), invSlot.slotId):
+		if invSlot.CanItemBeDroppedIn(dragData):
 			return invSlot.slotId;
-		if items[invSlot.slotId].item == data.GetItemStack().item && items[invSlot.slotId].tag == data.GetItemStack().tag:
-			if items[invSlot.slotId].amount < items[invSlot.slotId].item.maxStackAmount:
-				return invSlot.slotId;
-		else: # swap
-			if data.amount == data.GetItemStack().amount: # if whole stack was picked
-				return invSlot.slotId;
-	else:
-		for i in range(0, items.size()):
-			var it = items[i];
-			if it.amount != 0 && it.amount < it.item.maxStackAmount:
-				if it.item == data.GetItemStack().item && it.tag == data.GetItemStack().tag:
+	else: # if no item slot specified, find any that applies
+		for i in range(0, slots.size()):
+			var it:ItemSlot = slots[i];
+			if it.itemStack.amount != 0 && it.itemStack.amount < it.itemStack.item.maxStackAmount:
+				if it.CanItemBeAddedHere(dragData.GetStack()):
 					return i;
-		for i in range(0, items.size()):
-			var it = items[i];
-			if it.amount == 0 || it.item == null && IsCategoryCompatible(data.GetItemStack(), i):
+		for i in range(0, slots.size()):
+			var it = slots[i];
+			if it.CanItemBeAddedHere(dragData.GetStack()):
 				return i;
 	return -1;
 
 
-func CanDropIn(data:InventoryDragData, invSlot:InventorySlot)->bool:
-	if invSlot == data.inventorySlot:
-		return true;
-	var slotId = GetSlotIdToDrop(data, invSlot);
+func CanDropIn(dragData:ItemDragData, invSlot:ItemSlot)->bool:
+	if invSlot == dragData.slot:
+		return false;
+	if invSlot == null && self == dragData.storage:
+		return false;
+	var slotId = GetSlotIdToDrop(dragData, invSlot);
 	return slotId >= 0;
 
-func DropIn(data, invSlot:InventorySlot)->void:
-	if invSlot == data.inventorySlot:
+func DropIn(dragData:ItemDragData, invSlot:ItemSlot)->void:
+	if invSlot == dragData.slot:
 		return;
-	var slotId = GetSlotIdToDrop(data, invSlot);
-	if slotId < 0:
-		return;
-	if slotId >= items.size():
-		# do expand if available
-		return;
-	var otherItems = data.GetStorage().items;
-	var otherSlotId = data.inventorySlot.slotId;
-	
-	var stack = items[slotId];
-	var otherStack = otherItems[otherSlotId];
-	
-	if stack.item == otherStack.item && stack.tag == otherStack.tag:
-		var maxAmount = stack.item.maxStackAmount;
-		var transAmount = min(data.amount, maxAmount-stack.amount);
-		stack.amount += transAmount;
-		otherStack.amount -= transAmount;
-		if otherStack.amount == 0:
-			otherStack.item = null;
-			otherStack.tag = {};
-	else:
-		otherItems[otherSlotId] = stack;
-		items[slotId] = otherStack;
+	while dragData.amount > 0:
+		var slotId = GetSlotIdToDrop(dragData, invSlot);
+		if slotId < 0:
+			#@TODO: expand if needed here
+			return;
+		slots[slotId].DropIn(dragData);
+		invSlot = null;
+		if self == dragData.storage:
+			return;
 
