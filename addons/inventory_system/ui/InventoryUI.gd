@@ -2,7 +2,9 @@ extends Control;
 class_name InventoryUI;
 
 var storage:InventoryStorage = null;
-@onready var slots = $ScrollContainer/GridContainer;
+@onready var slots = %GridContainer;
+@onready var color = %ColorRect;
+@onready var scroll = %ScrollContainer;
 
 func ConnectToStorage(_storage:InventoryStorage)->void:
 	show();
@@ -26,6 +28,7 @@ func _process(delta:float)->void:
 			hide();
 		else:
 			UpdateItemSlots();
+			color.size = scroll.size;
 	elif storage:
 		DisconnectStorage();
 
@@ -47,7 +50,10 @@ func UpdateItemSlots()->void:
 
 
 func _can_drop_data(pos:Vector2, data)->bool:
-	return storage.CanDropIn(data, null);
+	if data is ItemDragData:
+		return storage.CanDropIn(data, null);
+	return false;
 
 func _drop_data(pos:Vector2, data):
-	storage.DropIn(data, null);
+	if data is ItemDragData:
+		storage.DropIn(data, null);

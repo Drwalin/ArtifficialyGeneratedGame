@@ -75,13 +75,15 @@ func _process(delta):
 # dragging data: InventorySlot
 
 func _can_drop_data(pos:Vector2, data)->bool:
-	if GetItemStack():
-		return GetStorage().CanDropIn(data, GetItemSlot());
+	if data is ItemDragData:
+		if GetItemStack():
+			return GetStorage().CanDropIn(data, GetItemSlot());
 	return false;
 
 func _drop_data(pos:Vector2, data):
-	if GetItemStack():
-		GetStorage().DropIn(data, GetItemSlot());
+	if data is ItemDragData:
+		if GetItemStack():
+			GetStorage().DropIn(data, GetItemSlot());
 
 func _get_drag_data(pos:Vector2):
 	var itemStack:ItemStack = GetItemStack();

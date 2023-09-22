@@ -202,7 +202,7 @@ inventoryStorage = NodePath("InventoryStorage")
 
 [node name="InventoryStorage" type="Node" parent="Characters/Player"]
 script = ExtResource("6_uhp00")
-slots = Array[ExtResource("9_01por")]([SubResource("Resource_ib8ak"), SubResource("Resource_gy61y"), SubResource("Resource_e4v5r"), SubResource("Resource_kdx4k"), null, null, null, null, null, null, null, null, null, null, null, null])
+slots = Array[ExtResource("9_01por")]([SubResource("Resource_ib8ak"), SubResource("Resource_gy61y"), SubResource("Resource_e4v5r"), SubResource("Resource_kdx4k"), null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null])
 
 [node name="BehaviourTrees" type="Node" parent="."]
 

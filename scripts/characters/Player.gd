@@ -18,16 +18,16 @@ func _ready()->void:
 
 func _unhandled_input(event)->void:
 	PrintDebug.Print("Player::_unhandled_input");
-	if event is InputEventMouseMotion:
-		if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
+	if selfInventoryUI == null:
+		if event is InputEventMouseMotion:
 			Rotate(-event.relative.y * SENSITIVITY, -event.relative.x * SENSITIVITY);
-	elif event is InputEventKey:
+		if event is InputEventMouseButton:
+			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED);
+	if event is InputEventKey:
 		if event.keycode == KEY_ESCAPE:
 			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE);
 			if OS.is_debug_build():
 				get_tree().quit();
-	elif event is InputEventMouseButton:
-		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED);
 
 var ui2;
 func _process(delta: float)->void:
@@ -56,12 +56,15 @@ func _process(delta: float)->void:
 
 func _physics_process(delta:float)->void:
 	PrintDebug.Print("Player::_physics_process");
-	SetRunning(Input.is_action_pressed("movement_run"));
-	SetCrouching(Input.is_action_pressed("movement_crouch"));
-	if Input.is_action_pressed("movement_jump") and is_on_floor():
-		Jump();
-	var input_dir = Input.get_vector("movement_left", "movement_right", "movement_forward", "movement_backward");
-	SetRelativeMoveDirection(input_dir);
+	if selfInventoryUI == null:
+		SetRunning(Input.is_action_pressed("movement_run"));
+		SetCrouching(Input.is_action_pressed("movement_crouch"));
+		if Input.is_action_pressed("movement_jump") and is_on_floor():
+			Jump();
+		var input_dir = Input.get_vector("movement_left", "movement_right", "movement_forward", "movement_backward");
+		SetRelativeMoveDirection(input_dir);
+	else:
+		SetRelativeMoveDirection(Vector2(0,0));
 	super._physics_process(delta);
 
 	bob_time += delta * velocity.length() * float(is_on_floor());
