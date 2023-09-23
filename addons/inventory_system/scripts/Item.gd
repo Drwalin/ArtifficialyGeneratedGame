@@ -21,10 +21,10 @@ func BeginUse(inv:InventoryStorage, itemStack:ItemStack, target:Node3D)->void:
 		itemStack.inUseSince = Time.get_unix_time_from_system();
 		OnUseBegin(inv, itemStack, target);
 
-func EndUse(inv:InventoryStorage, itemStack:ItemStack, target:Node3D)->void:
+func EndUse(itemStack:ItemStack)->void:
 	if itemStack.inUseSince:
 		itemStack.inUseSince = null;
-		OnUseEnd(inv, itemStack, target);
+		OnUseEnd(itemStack);
 
 
 func SetDescription(description:Label, itemStack:ItemStack):
@@ -40,7 +40,7 @@ func TickOutsideUse(dt:float, inv:InventoryStorage, itemStack:ItemStack)->void:
 func OnUseBegin(inv:InventoryStorage, itemStack:ItemStack, target:Node3D)->void:
 	pass;
 
-func OnUseEnd(inv:InventoryStorage, itemStack:ItemStack, target:Node3D)->void:
+func OnUseEnd(itemStack:ItemStack)->void:
 	pass;
 
 func GetTooltip(inv:InventoryStorage, itemStack:ItemStack)->Object:

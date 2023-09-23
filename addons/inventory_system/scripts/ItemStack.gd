@@ -6,6 +6,35 @@ class_name ItemStack;
 @export var tag:Dictionary = {};
 var inUseSince = null;
 
+func IsSame(other:ItemStack)->bool:
+	return item == other.item && tag == other.tag;
+
+func Swap(other:ItemStack)->void:
+	var tmpI:Item = item;
+	item = other.item;
+	other.item = tmpI;
+	
+	var tmpA:int = amount;
+	amount = other.amount;
+	other.amount = tmpA;
+	
+	var tmpT:Dictionary = tag;
+	tag = other.tag;
+	other.tag = tmpT;
+	
+	EndUse();
+	other.EndUse();
+
+func AddAmount(delta:int)->void:
+	if amount + delta <= 0:
+		EndUse();
+		amount = 0;
+		item = null;
+		tag = {};
+	else:
+		amount += delta;
+		
+
 func GetItemUsageTime():
 	if inUseSince != null:
 		return Time.get_unix_time_from_system() - inUseSince;
@@ -21,12 +50,14 @@ func Tick(dt:float, inv:InventoryStorage)->void:
 func BeginUse(inv:InventoryStorage, target:Node3D)->void:
 	if item:
 		item.BeginUse(inv, self, target);
+		inUseSince = Time.get_unix_time_from_system();
 
-func EndUse(inv:InventoryStorage, target:Node3D)->void:
+func EndUse()->void:
 	if item:
-		item.EndUse(inv, self, target);
+		item.EndUse(self);
+		inUseSince = null;
 
 func SetDescription(description:Label):
 	if item:
-		item.etDescription(description, self);
+		item.SetDescription(description, self);
 

@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://cidbasa8wmv1l"]
+
+[ext_resource type="Script" path="res://addons/inventory_system/world/ItemDropped3D.gd" id="1_rch5v"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4kich"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_q1fph"]
+
+[node name="ItemDropped3D" type="Node3D"]
+script = ExtResource("1_rch5v")
+
+[node name="RigidBody3D" type="RigidBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0)
+shape = SubResource("BoxShape3D_4kich")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D/CollisionShape3D"]
+mesh = SubResource("BoxMesh_q1fph")

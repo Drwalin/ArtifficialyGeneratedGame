@@ -50,10 +50,11 @@ func DropIn(dragData:ItemDragData, invSlot:ItemSlot)->void:
 	while dragData.amount > 0:
 		var slotId = GetSlotIdToDrop(dragData, invSlot);
 		if slotId < 0:
-			#@TODO: expand if needed here
+			#@TODO: expand storage if needed and possible here
 			return;
 		slots[slotId].DropIn(dragData);
 		invSlot = null;
 		if self == dragData.storage:
 			return;
+
 

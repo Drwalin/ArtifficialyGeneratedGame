@@ -109,6 +109,6 @@ func InitiateDragging(itemStack:ItemStack):
 	var amount:int = itemStack.amount;
 	if Input.is_action_pressed("inventory_system_dragging_half_stack"):
 		amount = (amount+1)>>1;
-	return ItemDragData.new(GetItemSlot(), GetStorage(), amount);
+	return ItemDragData.new(itemStack, amount, GetItemSlot(), GetStorage(), true);
 	
 
