@@ -1,10 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://cidbasa8wmv1l"]
+[gd_scene load_steps=5 format=3 uid="uid://cidbasa8wmv1l"]
 
 [ext_resource type="Script" path="res://addons/inventory_system/world/ItemDropped3D.gd" id="1_rch5v"]
+[ext_resource type="Script" path="res://addons/inventory_system/scripts/InventoryStorage.gd" id="2_8yoew"]
+[ext_resource type="ArrayMesh" uid="uid://dnbvqghkebm0c" path="res://resources/models/LeatherSackOfItems.res" id="2_cwt58"]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_4kich"]
-
-[sub_resource type="BoxMesh" id="BoxMesh_q1fph"]
+[sub_resource type="SphereShape3D" id="SphereShape3D_2p7sr"]
 
 [node name="ItemDropped3D" type="Node3D"]
 script = ExtResource("1_rch5v")
@@ -13,7 +13,10 @@ script = ExtResource("1_rch5v")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
 transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0)
-shape = SubResource("BoxShape3D_4kich")
+shape = SubResource("SphereShape3D_2p7sr")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D/CollisionShape3D"]
-mesh = SubResource("BoxMesh_q1fph")
+mesh = ExtResource("2_cwt58")
+
+[node name="InventoryStorage" type="Node" parent="."]
+script = ExtResource("2_8yoew")
