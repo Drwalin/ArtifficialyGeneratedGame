@@ -31,16 +31,9 @@ func Execute(npc:CharacterBaseAI, data:Dictionary)->void:
 	PrintDebug.Print("GoTo::Execute");
 	var target:Node3D = bb().data[blackboardFieldNameWithTargetPointer];
 	if npc.isNavigationFinished:
-		if target:
-			data["lastTargetPosition"] = npc.global_position;
-#		if npc.name == "CharacterBody3D2":
-#			print("Goto success");
 		Success();
 		return;
 	if target:
 		if (target.global_position - data["lastTargetPosition"]).length() > 1:
 			npc.navigationAgent.call_deferred("set_target_position", target.global_position);
 			data["lastTargetPosition"] = target.global_position;
-	#else: # do retries:
-	#	npc.navigationAgent.call_deferred("set_target_position", npc.global_position);
-	#	Fail();

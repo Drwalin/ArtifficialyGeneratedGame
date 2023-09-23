@@ -18,22 +18,25 @@ var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 @onready var head:Node3D = $CollisionShape3D/Head;
 @onready var collisionShape:CollisionShape3D = $CollisionShape3D;
 @onready var capsuleShape:CapsuleShape3D = collisionShape.shape;
-@export var inventoryStorage:InventoryStorage;
+@onready var inventoryStorage:InventoryStorage = $InventoryStorage;
 
-func _ready()->void:
-	if inventoryStorage == null:
-		inventoryStorage = InventoryStorage.new();
-	if inventoryStorage.get_parent() == null:
-		add_child(inventoryStorage);
+#func _ready()->void:
+#	if inventoryStorage == null:
+#		inventoryStorage = InventoryStorage.new();
+#	if inventoryStorage.get_parent() == null:
+#		add_child(inventoryStorage);
 
 var moveDirection : Vector3 = Vector3(0,0,0).normalized();
 var rotateTowardMovementDirection : bool = false;
 
 func SetRelativeMoveDirection(dir: Vector2)->void:
 	PrintDebug.Print("CharacterBaseController::SetRelativeMoveDirection");
-	var d = Vector3(dir.x, 0, dir.y);
-	var dd:Vector3 = (transform.basis * collisionShape.transform.basis * d);
-	SetGlobalMoveDirection(dd.normalized());
+	if dir && dir!=Vector2.ZERO:
+		var d = Vector3(dir.x, 0, dir.y);
+		var dd:Vector3 = (transform.basis * collisionShape.transform.basis * d);
+		SetGlobalMoveDirection(dd.normalized());
+	else:
+		SetGlobalMoveDirection(Vector3.ZERO);
 
 func SetGlobalMoveDirection(dir: Vector3)->void:
 	PrintDebug.Print("CharacterBaseController::SetGlobalMoveDirection");
@@ -84,7 +87,7 @@ func _physics_process(delta:float)->void:
 
 	var speed = GetSpeed();
 	if is_on_floor():
-		if moveDirection:
+		if moveDirection && moveDirection!=Vector3.ZERO:
 			velocity.x = moveDirection.x * speed;
 			velocity.z = moveDirection.z * speed;
 		else: # friction

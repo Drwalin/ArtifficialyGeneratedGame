@@ -1,36 +1,14 @@
 extends Control;
 class_name InventoryUI;
 
-var storage:InventoryStorage = null;
+var storage:InventoryStorage;
 @onready var slots = %GridContainer;
 @onready var color = %ColorRect;
 @onready var scroll = %ScrollContainer;
 
-func ConnectToStorage(_storage:InventoryStorage)->void:
-	show();
-	storage = _storage;
-	UpdateItemSlots();
-
-func DisconnectStorage()->void:
-	hide();
-	var children = slots.get_children();
-	for child in children:
-		slots.remove_child(child);
-	storage = null;
-
-func _ready()->void:
-	DisconnectStorage();
-
 func _process(delta:float)->void:
-	if visible:
-		if storage == null:
-			DisconnectStorage()
-			hide();
-		else:
-			UpdateItemSlots();
-			color.size = scroll.size;
-	elif storage:
-		DisconnectStorage();
+	UpdateItemSlots();
+	color.size = scroll.size;
 
 func UpdateItemSlots()->void:
 	if slots.get_children().size() < storage.slots.size():

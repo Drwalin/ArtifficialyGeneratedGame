@@ -35,14 +35,14 @@ func _process(delta: float)->void:
 	if Input.is_action_just_pressed("open_self_inventory"):
 		if selfInventoryUI == null:
 			selfInventoryUI = load("res://addons/inventory_system/ui/InventoryUI.tscn").instantiate();
+			selfInventoryUI.storage = self.inventoryStorage;
 			add_child(selfInventoryUI);
-			selfInventoryUI.call_deferred("ConnectToStorage", self.inventoryStorage);
 			selfInventoryUI.set_position(Vector2(650, 200));
 			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE);
 			
 			ui2 = load("res://addons/inventory_system/ui/InventoryUI.tscn").instantiate();
+			ui2.storage = get_parent().find_child("CharacterBody3D3").inventoryStorage;
 			add_child(ui2);
-			ui2.call_deferred("ConnectToStorage", %InventoryStorage);
 			ui2.set_position(Vector2(150, 200));
 		else:
 			selfInventoryUI.DisconnectStorage();

@@ -7,8 +7,10 @@
 [node name="CharacterBody3D" instance=ExtResource("1_tpiop")]
 script = ExtResource("2_4jrl1")
 
-[node name="NavigationAgent3D" type="NavigationAgent3D" parent="." index="1"]
-path_desired_distance = 2.0
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="CollisionShape3D" index="3"]
+target_desired_distance = 2.0
+path_height_offset = -0.5
+path_max_distance = 3.01
 avoidance_enabled = true
 
 [node name="BTBlackboard" type="Node" parent="." index="2"]

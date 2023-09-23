@@ -1,6 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://0dhcf3rif6nx"]
+[gd_scene load_steps=8 format=3 uid="uid://0dhcf3rif6nx"]
 
 [ext_resource type="Script" path="res://scripts/characters/CharacterBaseController.gd" id="1_rsris"]
+[ext_resource type="Script" path="res://resources/object_templates/EnableCharacterEditableInEditor.gd" id="2_5oi5l"]
+[ext_resource type="Script" path="res://addons/inventory_system/scripts/InventoryStorage.gd" id="3_2c3qr"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_tundb"]
 radius = 0.4
@@ -42,3 +44,9 @@ outline_size = 7
 
 [node name="Head" type="Node3D" parent="CollisionShape3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.624758, 0)
+
+[node name="EnableEditorEditing" type="Node" parent="CollisionShape3D"]
+script = ExtResource("2_5oi5l")
+
+[node name="InventoryStorage" type="Node" parent="."]
+script = ExtResource("3_2c3qr")
