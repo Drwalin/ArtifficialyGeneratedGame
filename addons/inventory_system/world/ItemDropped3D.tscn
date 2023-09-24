@@ -7,18 +7,16 @@
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_0o3oy"]
 points = PackedVector3Array(0.0213474, 0.0111763, -0.140918, 0.00390395, 0.229261, 0.233199, 0.0124835, 0.221324, 0.230712, 0.0899022, 0.548073, -0.0788936, -0.213515, 0.229224, -0.114527, 0.211801, 0.14289, 0.137052, -0.188087, 0.0630913, 0.111985, -0.0231813, 0.545392, 0.0442814, 0.175984, 0.178225, -0.147828, 0.00384511, 0.204417, -0.24161, 0.13611, 0.00822353, 0.0866142, -0.190243, 0.205782, 0.141776, 0.149534, 0.487167, 0.0155126, -0.0223329, 0.0530577, 0.218008, -0.13547, 0.0112443, -0.0711826, 0.204885, 0.106638, -0.11499, -0.0135043, 0.0542929, -0.228527, 0.159275, 0.445489, -0.122346, -0.191797, 0.307048, -0.103656, -0.0131796, 0.298586, 0.219857, -0.0323237, 0.536307, -0.0468357, -0.17705, 0.0660425, -0.11351, -0.0923397, 0.00983944, 0.0948526, 0.210471, 0.195469, 0.136156, -0.00460543, 0.306933, -0.204363, 0.0890732, 0.537163, 0.0324571, 0.186772, 0.0637359, -0.114619, 0.203778, 0.0728974, 0.120115, 0.213595, 0.167856, -0.123711, -0.184431, 0.27299, 0.0840206, -0.213613, 0.177016, -0.12329, -0.195072, 0.177671, 0.145531)
 
-[node name="ItemDropped3D" type="Node3D"]
-script = ExtResource("1_rch5v")
-
-[node name="RigidBody3D" type="RigidBody3D" parent="."]
+[node name="RigidBody3D" type="RigidBody3D"]
 mass = 10.0
 linear_damp = 0.3
 angular_damp = 0.3
+script = ExtResource("1_rch5v")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("ConvexPolygonShape3D_0o3oy")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D/CollisionShape3D"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CollisionShape3D"]
 mesh = ExtResource("2_cwt58")
 
 [node name="InventoryStorage" type="Node" parent="."]

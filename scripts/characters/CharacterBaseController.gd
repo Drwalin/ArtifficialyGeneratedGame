@@ -7,18 +7,23 @@ class_name CharacterBaseController;
 @export var JUMP_VELOCITY:float = 4.5;
 @export var STANDING_HEIGHT:float = 1.75;
 @export var CROUCHING_HEIGHT:float = 1.75/2;
+@export var STEP_HEIGHT:float = 0.5;
+
+@export var enableStairsWalking:bool = true;
 
 @export var characterNickName:String = "";
 @export var handReachRange:float = 4;
 
 var running: bool = false;
 var crouching: bool = false;
+var jumped:bool = false;
+var justJumped:bool = false;
 
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 
 @onready var head:Node3D = $CollisionShape3D/Head;
 @onready var collisionShape:CollisionShape3D = $CollisionShape3D;
-@onready var capsuleShape:CapsuleShape3D = collisionShape.shape;
+@onready var capsuleShape = $CollisionShape3D.shape;
 @onready var inventoryStorage:InventoryStorage = $InventoryStorage;
 
 #func _ready()->void:
@@ -63,7 +68,11 @@ func GetSpeed() -> float:
 
 func Jump()->void:
 	PrintDebug.Print("CharacterBaseController::Jump");
-	velocity.y = JUMP_VELOCITY;
+	if jumped==false:
+		velocity.y = JUMP_VELOCITY;
+		jumped = true;
+		justJumped = true;
+	
 	
 func SetRunning(value: bool)->void:
 	PrintDebug.Print("CharacterBaseController::SetRunning");
@@ -90,7 +99,9 @@ func TryInteractInDirection(from:Vector3, dir:Vector3)->void:
 	query.to = from + dir.normalized()*handReachRange;
 	var result = space.intersect_ray(query);
 	if result:
-		if result.collider.get_parent().has_method("OnUseByCharacter"):
+		if result.collider.has_method("OnUseByCharacter"):
+			result.collider.OnUseByCharacter(self);
+		elif result.collider.get_parent().has_method("OnUseByCharacter"):
 			result.collider.get_parent().OnUseByCharacter(self);
 
 func _physics_process(delta:float)->void:
@@ -122,5 +133,51 @@ func _physics_process(delta:float)->void:
 				angle = -angle;
 			angle *= min(delta*velocity.length(), 1);
 			Rotate(0, angle);
-	move_and_slide();
+	
+	MoveAndSlideAndStairsStep(delta);
 
+func MoveAndSlideAndStairsStep(delta:float)->void:
+	# Code copied from (and further modified by Drwalin):
+	# https://github.com/godotengine/godot-proposals/issues/2751#issuecomment-1648781190
+	# with CC0 License
+	# code provided by https://github.com/wareya
+	
+	if enableStairsWalking && is_on_floor() && !jumped:
+		var start_position:Vector3 = global_position
+		var wall_test_travel = null
+		var wall_collision = null
+		# step 1: upwards trace
+		var ceiling_collision = move_and_collide(STEP_HEIGHT * Vector3.UP)
+		var ceiling_travel_distance:float = STEP_HEIGHT if not ceiling_collision else abs(ceiling_collision.get_travel().y)
+		# step 2: "check if there's a wall" trace
+		wall_test_travel = velocity * delta
+		wall_collision = move_and_collide(wall_test_travel)
+		# step 3: downwards trace
+		var floor_collision = move_and_collide(Vector3.DOWN * (ceiling_travel_distance + (STEP_HEIGHT if is_on_floor() else 0.0)))
+		if floor_collision and floor_collision.get_collision_count() > 0 and acos(floor_collision.get_normal(0).y) < floor_max_angle:
+			# if we found stairs, climb up them
+			var old_velocity = velocity
+			if wall_collision and wall_test_travel.length_squared() > 0.0:
+				# try to apply the remaining travel distance if we hit a wall
+				var remaining_factor = wall_collision.get_remainder().length() / wall_test_travel.length()
+				velocity *= remaining_factor
+				move_and_slide()
+				velocity /= remaining_factor
+			else:
+				# even if we didn't hit a wall, we still need to use move_and_slide to make is_on_floor() work properly
+				var old_vel = velocity
+				velocity = Vector3()
+				move_and_slide()
+				velocity = old_vel
+		else:
+			# no stairs, do "normal" non-stairs movement
+			global_position = start_position
+			move_and_slide()
+	else:
+		move_and_slide();
+		if justJumped:
+			justJumped = false;
+		elif jumped:
+			if is_on_floor() == true:
+				jumped = false;
+	

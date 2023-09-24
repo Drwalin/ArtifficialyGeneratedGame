@@ -33,7 +33,6 @@ func _input(event)->void:
 
 var ui2;
 func _process(delta: float)->void:
-	delta = delta;
 	if Input.is_action_just_pressed("open_self_inventory"):
 		if selfInventoryUI == null:
 			selfInventoryUI = load("res://addons/inventory_system/ui/InventoryUI.tscn").instantiate();
@@ -62,15 +61,13 @@ func _physics_process(delta:float)->void:
 			# start grabbing item here
 		elif Input.is_action_just_released("use_or_grab"):
 			if draggingWorldRigidbodySince+0.2 > Time.get_unix_time_from_system():
-				super.TryInteractInHeadCenterDirection();
+				TryInteractInHeadCenterDirection();
 		if draggingWorldRigidbodySince && Input.is_action_pressed("use_or_grab"):
 			# continue grabbing
 			pass;
 		else:
 			draggingWorldRigidbodySince = null;
 		
-		
-			
 		SetRunning(Input.is_action_pressed("movement_run"));
 		SetCrouching(Input.is_action_pressed("movement_crouch"));
 		if Input.is_action_pressed("movement_jump") and is_on_floor():
@@ -79,9 +76,10 @@ func _physics_process(delta:float)->void:
 		SetRelativeMoveDirection(input_dir);
 	else:
 		SetRelativeMoveDirection(Vector2(0,0));
+	
 	super._physics_process(delta);
 
-	bob_time += delta * velocity.length() * float(is_on_floor());
+	bob_time += delta * Vector3(velocity.x,0,velocity.z).length() * float(is_on_floor());
 	camera.transform.origin = _headbob(bob_time);
 
 func _headbob(time) -> Vector3:
