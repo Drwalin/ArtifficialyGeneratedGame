@@ -6,7 +6,7 @@ var inventoryStorage:InventoryStorage = null;
 
 func Init(items:Array[ItemStack])->void:
 	inventoryStorage = $InventoryStorage;
-	inventoryStorage.slots.resize(items.size());
+	inventoryStorage.slots = [];
 	for it in items:
 		if it.item && it.amount > 0:
 			var slot:ItemSlot = ItemSlot.new();

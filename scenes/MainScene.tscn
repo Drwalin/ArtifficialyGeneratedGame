@@ -1,7 +1,8 @@
-[gd_scene load_steps=33 format=3 uid="uid://dr22pxft72vjr"]
+[gd_scene load_steps=40 format=3 uid="uid://dr22pxft72vjr"]
 
 [ext_resource type="PackedScene" uid="uid://cs4qisi3jwxfx" path="res://resources/SomeMap.glb" id="1_ddkoo"]
 [ext_resource type="MeshLibrary" uid="uid://b2ico06a1v2kp" path="res://resources/MeshLib.tres" id="3_ppkw4"]
+[ext_resource type="Script" path="res://addons/inventory_system/ui/DropInWorld3D.gd" id="4_5dhyx"]
 [ext_resource type="Script" path="res://scenes/Label.gd" id="4_cpldt"]
 [ext_resource type="Script" path="res://scripts/characters/Player.gd" id="4_egoae"]
 [ext_resource type="Script" path="res://addons/artifficial_intelligence/ExampleBlackboardSetup.gd" id="5_dqrsn"]
@@ -87,6 +88,39 @@ tag = {}
 [sub_resource type="Resource" id="Resource_kdx4k"]
 script = ExtResource("9_01por")
 itemStack = SubResource("Resource_taqkv")
+slotId = -1
+
+[sub_resource type="Resource" id="Resource_0i548"]
+script = ExtResource("10_xoahs")
+item = ExtResource("9_vivdt")
+amount = 1
+tag = {}
+
+[sub_resource type="Resource" id="Resource_tfyed"]
+script = ExtResource("9_01por")
+itemStack = SubResource("Resource_0i548")
+slotId = -1
+
+[sub_resource type="Resource" id="Resource_l8hdr"]
+script = ExtResource("10_xoahs")
+item = ExtResource("11_mhsho")
+amount = 1
+tag = {}
+
+[sub_resource type="Resource" id="Resource_yqiaj"]
+script = ExtResource("9_01por")
+itemStack = SubResource("Resource_l8hdr")
+slotId = -1
+
+[sub_resource type="Resource" id="Resource_u2afw"]
+script = ExtResource("10_xoahs")
+item = ExtResource("11_mhsho")
+amount = 1
+tag = {}
+
+[sub_resource type="Resource" id="Resource_rahe8"]
+script = ExtResource("9_01por")
+itemStack = SubResource("Resource_u2afw")
 slotId = -1
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_yqnxs"]
@@ -206,6 +240,59 @@ offset_right = 86.0
 offset_bottom = 23.0
 script = ExtResource("4_cpldt")
 
+[node name="CrossHair" type="Control" parent="GUI"]
+clip_contents = true
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="GUI/CrossHair"]
+custom_minimum_size = Vector2(24, 2)
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -8.0
+offset_right = -16.0
+offset_bottom = -6.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.752941, 0.752941, 0.752941, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="GUI/CrossHair"]
+custom_minimum_size = Vector2(2, 24)
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -8.0
+offset_right = -6.0
+offset_bottom = -16.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.752941, 0.752941, 0.752941, 1)
+
+[node name="DropOn3DWorld" type="Control" parent="GUI"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("4_5dhyx")
+
 [node name="Characters" type="Node3D" parent="."]
 
 [node name="CharacterBody3D2" parent="Characters" node_paths=PackedStringArray("player", "target", "target3", "target4", "behaviourTree") instance=ExtResource("6_2cu1j")]
@@ -236,7 +323,7 @@ script = ExtResource("4_egoae")
 transform = Transform3D(1, 0, 0, 0, 0.862328, 0.50635, 0, -0.50635, 0.862328, 0, 0.624758, 0)
 
 [node name="InventoryStorage" parent="Characters/Player" index="1"]
-slots = Array[ExtResource("9_01por")]([SubResource("Resource_ib8ak"), SubResource("Resource_gy61y"), SubResource("Resource_e4v5r"), SubResource("Resource_kdx4k"), null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null])
+slots = Array[ExtResource("9_01por")]([SubResource("Resource_ib8ak"), SubResource("Resource_gy61y"), SubResource("Resource_e4v5r"), SubResource("Resource_kdx4k"), SubResource("Resource_tfyed"), SubResource("Resource_yqiaj"), SubResource("Resource_rahe8"), null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null])
 
 [node name="BehaviourTrees" type="Node" parent="."]
 
@@ -247,6 +334,7 @@ transform = Transform3D(1, 0, 0, 0, 0.298375, 0.954449, 0, -0.954449, 0.298375, 
 
 [node name="RigidBody3D" parent="ItemDropped3D" index="0"]
 transform = Transform3D(0.768, -0.637809, -0.0580988, 0.627867, 0.731914, 0.264735, -0.126327, -0.239794, 0.96257, 0, 0, 0)
+mass = 1.0
 inertia = Vector3(0.27417, 0.275937, 0.545712)
 
 [node name="CollisionShape3D" parent="ItemDropped3D/RigidBody3D" index="0"]

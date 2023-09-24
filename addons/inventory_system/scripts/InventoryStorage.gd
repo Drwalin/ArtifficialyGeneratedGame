@@ -2,6 +2,7 @@ extends Node;
 class_name InventoryStorage;
 
 @export var slots:Array[ItemSlot] = [];
+@export var canDropOnGround:bool = true;
 
 func _ready()->void:
 	Expand(slots.size());
@@ -9,7 +10,7 @@ func _ready()->void:
 func Expand(newSize:int)->void:
 	slots.resize(newSize);
 	for i in range(0, slots.size()):
-		if slots[i] == null:
+		if !slots[i]:
 			slots[i] = ItemSlot.new();
 		slots[i].slotId = i;
 

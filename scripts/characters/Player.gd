@@ -16,7 +16,7 @@ func _ready()->void:
 	head.add_child(camera);
 	collisionShape.get_child(0).remove_child(collisionShape.get_child(0).get_child(0));
 
-func _unhandled_input(event)->void:
+func _input(event)->void:
 	PrintDebug.Print("Player::_unhandled_input");
 	if selfInventoryUI == null:
 		if event is InputEventMouseMotion:
@@ -45,12 +45,10 @@ func _process(delta: float)->void:
 			add_child(ui2);
 			ui2.set_position(Vector2(150, 200));
 		else:
-			selfInventoryUI.DisconnectStorage();
 			remove_child(selfInventoryUI);
 			selfInventoryUI = null;
 			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED);
 			
-			ui2.DisconnectStorage();
 			remove_child(ui2);
 			ui2 = null;
 
