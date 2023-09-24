@@ -1,3 +1,4 @@
+@tool
 class_name ItemMeshUtil;
 
 var surf:SurfaceTool;
@@ -7,7 +8,7 @@ var tex:Texture2D;
 var im:Image;
 var mat:StandardMaterial3D;
 
-func CreateMinecraftStyleMeshFromIcon():
+func CreateMinecraftStyleMeshFromIcon(item:Item)->void:
 	surf = SurfaceTool.new();
 	mat = StandardMaterial3D.new();
 	mat.albedo_texture = tex;
@@ -18,6 +19,46 @@ func CreateMinecraftStyleMeshFromIcon():
 	im = tex.get_image();
 	ProcessImage();
 	mesh = surf.commit();
+	var aabb = mesh.get_aabb();
+	var trans = -aabb.get_center();
+	surf = SurfaceTool.new();
+	surf.append_from(mesh, 0, Transform3D(Basis(), trans));
+	surf.set_material(mat);
+	mesh = surf.commit();
+	GenerateInertia(item, trans);
+	surf = null;
+
+func GenerateInertia(item:Item, trans:Vector3)->void:
+	var massDivider:float = 0;
+	var w:int = im.get_width();
+	var h:int = im.get_height();
+	for x in range(0,w):
+		for y in range(0,h):
+			if im.get_pixel(x,y).a > 0.1:
+				massDivider += 1.0;
+	if massDivider == 0:
+		item.inertia = Vector3(0,0,0);
+		return;
+	var inertia:Vector3 = Vector3(0,0,0);
+	for x in range(0,w):
+		for y in range(0,h):
+			if im.get_pixel(x,y).a > 0.1:
+				var v:Vector3 = (Vector3(x,y,0)/64.0+trans);
+				var i:Vector3;
+				i.x = Vector3(0,v.y,v.z).length();
+				i.y = Vector3(v.x,0,v.z).length();
+				i.z = Vector3(v.x,v.y,0).length();
+				
+				v = i;
+				v.x *= v.x;
+				v.y *= v.y;
+				v.z *= v.z;
+				inertia += v;
+	item.inertia = inertia*4/massDivider;
+	print("Inertia = ", item.inertia);
+	
+	
+	
 
 func ProcessImage():
 	var w:int = im.get_width();
@@ -42,7 +83,7 @@ func AddPoint(p:Vector2i)->void:
 		
 
 func AddSquare(p:Vector2i, n:Vector3, c:Color)->void:
-	var z:Vector3 = Vector3(p.x, p.y, 0)/16.0;
+	var z:Vector3 = Vector3(p.x, p.y, 0)/64.0;
 	var x:Vector3 = Vector3(1,0,0) if n.x==0 else Vector3(0,1,0);
 	var y:Vector3 = Vector3(1,1,1) - x - Vector3(abs(n.x), abs(n.y), abs(n.z));
 	x *= Vector3(1,1,3);
@@ -77,17 +118,11 @@ func AddFinalSquare(p:Vector3, n:Vector3, c:Color, x:Vector3, y:Vector3)->void:
 func AddFinalPoint(p:Vector3, n:Vector3, c:Color)->void:
 	surf.set_color(c);
 	surf.set_normal(n);
-	surf.add_vertex(p/16.0);
+	surf.add_vertex(p/64.0);
 
-static func GenerateDropMeshForItem(item:Item)->Mesh:
+static func GenerateMeshAndShapeForItem(item:Item)->void:
 	var meshUtil:ItemMeshUtil = ItemMeshUtil.new();
 	meshUtil.item = item
-	meshUtil.CreateMinecraftStyleMeshFromIcon();
-	return meshUtil.mesh;
-
-static func GenerateDropShapeForItem(item:Item)->Shape3D:
-	var mesh:Mesh = item.GetMesh3D();
-	if mesh == null:
-		return null;
-	return mesh.create_convex_shape(true, true);
-
+	meshUtil.CreateMinecraftStyleMeshFromIcon(item);
+	item.mesh3D = meshUtil.mesh;
+	item.shape3D = meshUtil.mesh.create_convex_shape(true, true);
