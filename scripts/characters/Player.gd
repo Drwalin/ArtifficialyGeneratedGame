@@ -9,6 +9,8 @@ var bob_time = 0.0;
 var camera : Camera3D;
 var selfInventoryUI:InventoryUI = null;
 
+var draggingWorldRigidbodySince = null;
+
 func _ready()->void:
 	PrintDebug.Print("Player::_ready");
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED);
@@ -55,6 +57,20 @@ func _process(delta: float)->void:
 func _physics_process(delta:float)->void:
 	PrintDebug.Print("Player::_physics_process");
 	if selfInventoryUI == null:
+		if Input.is_action_just_pressed("use_or_grab"):
+			draggingWorldRigidbodySince = Time.get_unix_time_from_system();
+			# start grabbing item here
+		elif Input.is_action_just_released("use_or_grab"):
+			if draggingWorldRigidbodySince+0.2 > Time.get_unix_time_from_system():
+				super.TryInteractInHeadCenterDirection();
+		if draggingWorldRigidbodySince && Input.is_action_pressed("use_or_grab"):
+			# continue grabbing
+			pass;
+		else:
+			draggingWorldRigidbodySince = null;
+		
+		
+			
 		SetRunning(Input.is_action_pressed("movement_run"));
 		SetCrouching(Input.is_action_pressed("movement_crouch"));
 		if Input.is_action_pressed("movement_jump") and is_on_floor():

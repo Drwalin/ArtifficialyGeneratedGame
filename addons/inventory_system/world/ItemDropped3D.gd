@@ -63,9 +63,14 @@ static func CreateDroppedItems(items:Array[ItemStack], pos:Vector3, node:Node)->
 			return dropped;
 	return null;
 
-func OnUse(instigator:CharacterBaseController)->void:
+func OnUseByCharacter(instigator:CharacterBaseController)->void:
 	var dstStorage:InventoryStorage = instigator.inventoryStorage;
+	var anyLeft:bool = false;
 	for slot in inventoryStorage.slots:
 		if slot.itemStack.amount > 0 && slot.itemStack.item:
 			var dragData:ItemDragData = ItemDragData.new(slot.itemStack, slot.itemStack.amount, slot, inventoryStorage, false);
 			dstStorage.DropIn(dragData, null);
+			if slot.itemStack.amount > 0:
+				anyLeft = true;
+	if anyLeft==false:
+		self.queue_free();

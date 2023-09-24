@@ -318,6 +318,14 @@ slots = Array[ExtResource("9_01por")]([SubResource("Resource_14coy"), SubResourc
 [node name="Player" parent="Characters" instance=ExtResource("6_0epqo")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.67393, 1.10092, 3.12851)
 script = ExtResource("4_egoae")
+WALK_SPEED = null
+RUN_SPEED = null
+CROUCH_SPEED = null
+JUMP_VELOCITY = null
+STANDING_HEIGHT = null
+CROUCHING_HEIGHT = null
+characterNickName = null
+handReachRange = null
 
 [node name="Head" parent="Characters/Player/CollisionShape3D" index="1"]
 transform = Transform3D(1, 0, 0, 0, 0.862328, 0.50635, 0, -0.50635, 0.862328, 0, 0.624758, 0)
