@@ -4,7 +4,7 @@ class_name ItemStack;
 @export var item:Item = null;
 @export var amount:int = 0;
 @export var tag:Dictionary = {};
-var inUseSince = null;
+@export var inUseSince:float = -1;	# negative value means that is not in use currently
 
 func IsSame(other:ItemStack)->bool:
 	return item == other.item && tag == other.tag;
@@ -36,12 +36,12 @@ func AddAmount(delta:int)->void:
 		
 
 func GetItemUsageTime():
-	if inUseSince != null:
+	if inUseSince >= 0:
 		return Time.get_unix_time_from_system() - inUseSince;
 	return null;
 
 func IsInUse()->bool:
-	return inUseSince != null;
+	return inUseSince >= 0;
 
 func Tick(dt:float, inv:InventoryStorage)->void:
 	if item:
@@ -55,7 +55,7 @@ func BeginUse(inv:InventoryStorage, target:Node3D)->void:
 func EndUse()->void:
 	if item:
 		item.EndUse(self);
-		inUseSince = null;
+		inUseSince = -1;
 
 func SetDescription(description:Label):
 	if item:

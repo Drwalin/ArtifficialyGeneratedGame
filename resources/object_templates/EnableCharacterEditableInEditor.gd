@@ -13,3 +13,4 @@ func SetEditableWhenAvailable()->void:
 	character.get_parent().set_editable_instance(character, true);
 	character.set_editable_instance(get_parent(), false);
 	get_parent().set_display_folded(true);
+	character.set_display_folded(true);

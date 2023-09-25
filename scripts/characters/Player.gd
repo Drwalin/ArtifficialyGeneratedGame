@@ -40,10 +40,12 @@ func _process(delta: float)->void:
 			add_child(selfInventoryUI);
 			selfInventoryUI.set_position(Vector2(650, 200));
 			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE);
+			selfInventoryUI.owner = null;
 			
 			ui2 = load("res://addons/inventory_system/ui/InventoryUI.tscn").instantiate();
 			ui2.storage = get_parent().find_child("CharacterBody3D3").inventoryStorage;
 			add_child(ui2);
+			ui2.owner = null;
 			ui2.set_position(Vector2(150, 200));
 		else:
 			remove_child(selfInventoryUI);

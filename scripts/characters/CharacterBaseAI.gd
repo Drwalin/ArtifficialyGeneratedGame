@@ -5,7 +5,8 @@ class_name CharacterBaseAI;
 @onready var blackboard:BTBlackboard = $BTBlackboard;
 @onready var navigationAgent:NavigationAgent3D = $CollisionShape3D/NavigationAgent3D;
 
-var isNavigationFinished:bool = true;
+@export_group("Hidden exports")
+@export var isNavigationFinished:bool = true;
 
 func _ready()->void:
 	PrintDebug.Print("CharacterBaseAI::_ready");

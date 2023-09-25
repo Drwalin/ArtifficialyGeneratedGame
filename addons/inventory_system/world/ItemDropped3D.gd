@@ -2,7 +2,7 @@
 extends RigidBody3D;
 class_name ItemDropped3D;
 
-var inventoryStorage:InventoryStorage = null;
+@onready var inventoryStorage:InventoryStorage = $InventoryStorage;
 
 func Init(items:Array[ItemStack])->void:
 	inventoryStorage = $InventoryStorage;

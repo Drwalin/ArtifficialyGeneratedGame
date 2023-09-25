@@ -8,7 +8,8 @@ func _can_drop_data(pos:Vector2, data)->bool:
 				return true;
 	return false;
 
-var droppedScenePreloaded = preload("res://addons/inventory_system/world/ItemDropped3D.tscn");
+static var droppedScenePreloaded = preload("res://addons/inventory_system/world/ItemDropped3D.tscn");
+
 func _drop_data(pos:Vector2, _data):
 	if _data is ItemDragData:
 		var data:ItemDragData = _data;

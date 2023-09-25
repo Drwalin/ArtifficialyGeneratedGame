@@ -39,19 +39,19 @@ func DropOnGround(inv:InventoryStorage, itemStack:ItemStack, pos:Vector3, amount
 	pass;
 
 func Tick(dt:float, inv:InventoryStorage, itemStack:ItemStack)->void:
-	if itemStack.inUseSince != null:
+	if itemStack.inUseSince >= 0:
 		TickDuringUse(dt, inv, itemStack);
 	else:
 		TickOutsideUse(dt, inv, itemStack);
 
 func BeginUse(inv:InventoryStorage, itemStack:ItemStack, target:Node3D)->void:
-	if itemStack.inUseSince == false:
+	if itemStack.inUseSince < 0:
 		itemStack.inUseSince = Time.get_unix_time_from_system();
 		OnUseBegin(inv, itemStack, target);
 
 func EndUse(itemStack:ItemStack)->void:
 	if itemStack.inUseSince:
-		itemStack.inUseSince = null;
+		itemStack.inUseSince = -1;
 		OnUseEnd(itemStack);
 
 

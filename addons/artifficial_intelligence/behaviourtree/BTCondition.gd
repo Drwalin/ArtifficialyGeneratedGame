@@ -39,6 +39,7 @@ func _ready()->void:
 	super._ready();
 	set_position(Vector2(0,0));
 	if !(OS.is_debug_build() && Engine.is_editor_hint()):
+		conditionExpression = Expression.new();
 		var err = conditionExpression.parse(condition, ["bb", "npc", "data"]);
 		assert(err == OK, conditionExpression.get_error_text());
 		for c in get_children():

@@ -1,22 +1,22 @@
 extends Node;
 class_name BTBlackboard;
 
-var bt : BehaviourTree
-var npc : CharacterBaseAI;
-var nodesStack : Array = []; # [[node, {local_variables}]]
+var bt : BehaviourTree;
+@onready var npc : CharacterBaseAI = get_parent();
 var dt : float;
-var data = {};
+@export var data = {};
+
+@export_group("Hidden exports")
+@export var previousNodeFinishState : BTNodeFinishState = BTNodeFinishState.SUCCESS;
+@export var nodesStack : Array[Array] = []; # [[node, {local_variables}]]
 
 enum BTNodeFinishState {
 	FAILURE,
 	SUCCESS,
 };
 
-var previousNodeFinishState : int = BTNodeFinishState.SUCCESS;
-
 func _ready()->void:
 	PrintDebug.Print("Blackboard::_ready");
-	npc = get_parent();
 	SetBehaviourTree(npc.behaviourTree);
 
 func SetBehaviourTree(_bt: BehaviourTree)->void:
