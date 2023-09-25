@@ -19,6 +19,11 @@ func CanItemBeAddedHere(stack:ItemStack)->bool:
 		return itemStack.amount < itemStack.item.maxStackAmount;
 	return false;
 
+func HowManyCanBeAddedHere(stack:ItemStack)->int:
+	if CanItemBeAddedHere(stack):
+		return stack.item.maxStackAmount - (itemStack.amount if !itemStack.IsEmpty() else 0);
+	return 0;
+
 func CanItemBeDroppedIn(dragData:ItemDragData)->bool:
 	if IsItemCompatibleWithSlot(itemStack.item) == false:
 		return false;

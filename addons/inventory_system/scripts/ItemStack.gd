@@ -6,6 +6,9 @@ class_name ItemStack;
 @export var tag:Dictionary = {};
 @export var inUseSince:float = -1;	# negative value means that is not in use currently
 
+func IsEmpty()->bool:
+	return item==null || amount <= 0;
+
 func IsSame(other:ItemStack)->bool:
 	return item == other.item && tag == other.tag;
 
@@ -33,7 +36,16 @@ func AddAmount(delta:int)->void:
 		tag = {};
 	else:
 		amount += delta;
-		
+
+func TransferTo(other:ItemStack, count:int, ignoreCapacity:bool)->int:
+	if IsSame(other) || other.IsEmpty():
+		if !IsEmpty():
+			count = min(count, amount);
+			if !ignoreCapacity:
+				count = min(count, item.maxStackAmount-(other.amount if !other.IsEmpty() else 0));
+			other.AddAmount(count);
+			AddAmount(-count);
+	return 0;
 
 func GetItemUsageTime():
 	if inUseSince >= 0:
