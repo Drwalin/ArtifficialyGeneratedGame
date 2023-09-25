@@ -33,6 +33,7 @@ func _drop_data(pos:Vector2, _data):
 		var query:PhysicsRayQueryParameters3D = PhysicsRayQueryParameters3D.new();
 		query.from = orig;
 		query.to = rayEnd;
+		query.exclude = [cam.get_parent().get_parent().get_parent()];
 		var result = space.intersect_ray(query);
 		var dropPoint:Vector3 = rayEnd;
 		var rotang:float = randf()*2*PI;

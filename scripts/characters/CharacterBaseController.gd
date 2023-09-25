@@ -97,6 +97,7 @@ func TryInteractInDirection(from:Vector3, dir:Vector3)->void:
 	var query:PhysicsRayQueryParameters3D = PhysicsRayQueryParameters3D.new();
 	query.from = from;
 	query.to = from + dir.normalized()*handReachRange;
+	query.exclude = [self];
 	var result = space.intersect_ray(query);
 	if result:
 		if result.collider.has_method("OnUseByCharacter"):
