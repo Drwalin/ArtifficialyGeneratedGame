@@ -134,7 +134,11 @@ func _physics_process(delta:float)->void:
 			angle *= min(delta*velocity.length(), 1);
 			Rotate(0, angle);
 	
+	if name=="Player":
+		print("On floor before: ", is_on_floor(), "   velocity: ", velocity, "     position: ", global_position);
 	MoveAndSlideAndStairsStep(delta);
+	if name=="Player":
+		print("On floor  after: ", is_on_floor(), "   velocity: ", velocity);
 
 func MoveAndSlideAndStairsStep(delta:float)->void:
 	# Code copied from (and further modified by Drwalin):
@@ -149,14 +153,21 @@ func MoveAndSlideAndStairsStep(delta:float)->void:
 		# step 1: upwards trace
 		var ceiling_collision = move_and_collide(STEP_HEIGHT * Vector3.UP)
 		var ceiling_travel_distance:float = STEP_HEIGHT if not ceiling_collision else abs(ceiling_collision.get_travel().y)
+		
+		if name=="Player":
+			print("ceiling travel: ", ceiling_travel_distance, "   velocity: ", velocity);
 		# step 2: "check if there's a wall" trace
 		wall_test_travel = velocity * delta
 		wall_collision = move_and_collide(wall_test_travel)
+		if name=="Player":
+			print("wall    travel: ", wall_collision.get_travel() if wall_collision else "null");
 		# step 3: downwards trace
 		var floor_collision = move_and_collide(Vector3.DOWN * (ceiling_travel_distance + (STEP_HEIGHT if is_on_floor() else 0.0)))
+		
+		if name=="Player":
+			print("floor travel: ", floor_collision.get_travel() if floor_collision else "null");
 		if floor_collision and floor_collision.get_collision_count() > 0 and acos(floor_collision.get_normal(0).y) < floor_max_angle:
 			# if we found stairs, climb up them
-			var old_velocity = velocity
 			if wall_collision and wall_test_travel.length_squared() > 0.0:
 				# try to apply the remaining travel distance if we hit a wall
 				var remaining_factor = wall_collision.get_remainder().length() / wall_test_travel.length()
