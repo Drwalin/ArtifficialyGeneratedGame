@@ -10,14 +10,15 @@ var mat:StandardMaterial3D;
 
 func CreateMinecraftStyleMeshFromIcon(item:Item)->void:
 	surf = SurfaceTool.new();
-	mat = StandardMaterial3D.new();
-	mat.albedo_texture = tex;
-	mat.vertex_color_use_as_albedo = true;
-	surf.begin(Mesh.PRIMITIVE_TRIANGLES);
-	surf.set_material(mat);
 	tex = item.icon;
 	im = tex.get_image();
+	mat = StandardMaterial3D.new();
+	surf.begin(Mesh.PRIMITIVE_TRIANGLES);
+	surf.set_material(mat);
 	ProcessImage();
+	mat.albedo_texture = tex;
+	mat.texture_filter = BaseMaterial3D.TEXTURE_FILTER_NEAREST;
+	#mat.vertex_color_use_as_albedo = true;
 	mesh = surf.commit();
 	var aabb = mesh.get_aabb();
 	var trans = -aabb.get_center();
@@ -56,9 +57,9 @@ func GenerateInertia(item:Item, trans:Vector3)->void:
 				inertia += v;
 	item.inertia = inertia*4/massDivider;
 	print("Inertia = ", item.inertia);
-	
-	
-	
+
+
+
 
 func ProcessImage():
 	var w:int = im.get_width();
@@ -116,7 +117,11 @@ func AddFinalSquare(p:Vector3, n:Vector3, c:Color, x:Vector3, y:Vector3)->void:
 		AddFinalPoint(p, n, c);
 
 func AddFinalPoint(p:Vector3, n:Vector3, c:Color)->void:
-	surf.set_color(c);
+	if n.y != 0:
+		surf.set_uv(Vector2(p.x/im.get_width(),(p.y-n.y/2)/im.get_height()));
+	else:
+		surf.set_uv(Vector2(p.x/im.get_width(),p.y/im.get_height()));
+	#surf.set_color(c);
 	surf.set_normal(n);
 	surf.add_vertex(p/64.0);
 
