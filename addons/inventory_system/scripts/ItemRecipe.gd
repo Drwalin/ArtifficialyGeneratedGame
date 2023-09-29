@@ -3,6 +3,7 @@ class_name ItemRecipe;
 
 @export var requiredItems:Array[ItemStack] = [];
 @export var result:Array[ItemStack] = [];
+#@export var craftableIn:Array[Resource] = []; # replace Resource with type of CraftingStation
 
 func DuplicateCraftedResult(count:int)->Array[ItemStack]:
 	var ret:Array[ItemStack] = [];
@@ -15,10 +16,10 @@ func DuplicateCraftedResult(count:int)->Array[ItemStack]:
 	return ret;
 
 # returns amount of crafted items
-func TryCrafting(source:InventoryStorage, destiny:InventoryStorage, amount:int)->int:
+func TryCrafting(source:InventoryStorage, destiny:InventoryStorage, crafter:CharacterBaseController, amount:int)->int:
 	var crafted:int = 0;
 	for i in range(0, amount):
-		if TryCraftingSingle(source, destiny):
+		if TryCraftingSingle(source, destiny, crafter):
 			++crafted;
 		else:
 			break;
@@ -29,14 +30,14 @@ func CanResultBeStoredIn(inventory:InventoryStorage)->bool:
 	return inventory.CanAllBeStored(result);
 
 # returns amount that can be crafted
-func CanBeCraftedFrom(inventory:InventoryStorage)->bool:
+func CanBeCraftedFrom(inventory:InventoryStorage, crafter:CharacterBaseController)->bool:
 	for stack in requiredItems:
 		if inventory.CountItems(stack) < stack.amount:
 			return false;
 	return true;
 
-func TryCraftingSingle(source:InventoryStorage, destiny:InventoryStorage)->bool:
-	if CanBeCraftedFrom(source) && CanResultBeStoredIn(destiny):
+func TryCraftingSingle(source:InventoryStorage, destiny:InventoryStorage, crafter:CharacterBaseController)->bool:
+	if CanBeCraftedFrom(source, crafter) && CanResultBeStoredIn(destiny):
 		# no fail safe, due to above checks
 		for s in requiredItems:
 			var extracted = source.TryExtractItemStack(s, s.amount);

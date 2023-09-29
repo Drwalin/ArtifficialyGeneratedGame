@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=2 format=3 uid="uid://dfjgf1u273gn8"]
+
+[ext_resource type="Script" path="res://addons/inventory_system/scripts/Item.gd" id="1_iflxv"]
+
+[resource]
+script = ExtResource("1_iflxv")
+fullName = ""
+maxStackAmount = 1
+categories = Array[Resource("res://addons/inventory_system/scripts/ItemCategory.gd")]([])
+mass = 1.0
+inertia = Vector3(0, 0, 0)
