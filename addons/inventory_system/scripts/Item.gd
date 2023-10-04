@@ -20,8 +20,8 @@ func GetInertia()->Vector3:
 func GenerateMeshes()->void:
 	if mesh3D==null || shape3D==null:
 		ItemMeshUtil.GenerateMeshAndShapeForItem(self);
-		if resource_path != "":
-			ResourceSaver.save(self, resource_path);
+		#if resource_path != "":
+		#	ResourceSaver.save(self, resource_path);
 			#ResourceSaver.save(mesh3D, resource_path.replace(".tres", ".mesh.res"));
 			#ResourceSaver.save(shape3D, resource_path.replace(".tres", ".shape.res"));
 

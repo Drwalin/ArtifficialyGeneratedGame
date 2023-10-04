@@ -6,6 +6,7 @@
 
 [node name="CharacterBody3D" instance=ExtResource("1_tpiop")]
 script = ExtResource("2_4jrl1")
+isNavigationFinished = true
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="CollisionShape3D" index="3"]
 target_desired_distance = 2.0

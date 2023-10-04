@@ -8,7 +8,6 @@ offset_right = 56.0
 offset_bottom = 56.0
 color = Color(0.752941, 0.752941, 0.752941, 1)
 script = ExtResource("1_ig8fh")
-slotId = null
 
 [node name="ColorRect2" type="ColorRect" parent="."]
 layout_mode = 0
@@ -25,6 +24,7 @@ offset_bottom = 54.0
 color = Color(0.501961, 0.501961, 0.501961, 1)
 
 [node name="Icon" type="TextureRect" parent="."]
+texture_filter = 1
 layout_mode = 0
 offset_left = 4.0
 offset_top = 4.0

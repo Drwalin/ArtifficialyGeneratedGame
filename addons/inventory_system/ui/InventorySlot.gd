@@ -103,6 +103,7 @@ func InitiateDragging(itemStack:ItemStack):
 	rect.texture = icon.texture;
 	rect.expand_mode = TextureRect.EXPAND_FIT_WIDTH | TextureRect.EXPAND_FIT_HEIGHT;
 	rect.z_index = 0xFF;
+	rect.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST;
 	set_drag_preview(rect);
 	rect.size = Vector2(48, 48);
 	

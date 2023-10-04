@@ -11,12 +11,15 @@ var mat:StandardMaterial3D;
 func CreateMinecraftStyleMeshFromIcon(item:Item)->void:
 	surf = SurfaceTool.new();
 	tex = item.icon;
-	im = tex.get_image();
+	if tex is AtlasTexture:
+		im = tex.atlas.get_image().get_region(tex.region);
+	else:
+		im = tex.get_image();
 	mat = StandardMaterial3D.new();
 	surf.begin(Mesh.PRIMITIVE_TRIANGLES);
 	surf.set_material(mat);
 	ProcessImage();
-	mat.albedo_texture = tex;
+	mat.albedo_texture = tex if !(tex is AtlasTexture) else tex.atlas;
 	mat.texture_filter = BaseMaterial3D.TEXTURE_FILTER_NEAREST;
 	#mat.vertex_color_use_as_albedo = true;
 	mesh = surf.commit();
@@ -44,7 +47,7 @@ func GenerateInertia(item:Item, trans:Vector3)->void:
 	for x in range(0,w):
 		for y in range(0,h):
 			if im.get_pixel(x,y).a > 0.1:
-				var v:Vector3 = (Vector3(x,y,0)/64.0+trans);
+				var v:Vector3 = (Vector3(x,y,0)/16.0+trans);
 				var i:Vector3;
 				i.x = Vector3(0,v.y,v.z).length();
 				i.y = Vector3(v.x,0,v.z).length();
@@ -62,10 +65,17 @@ func GenerateInertia(item:Item, trans:Vector3)->void:
 
 
 func ProcessImage():
+	var _x:int = 0;
+	var _y:int = 0;
 	var w:int = im.get_width();
 	var h:int = im.get_height();
-	for x in range(0,w):
-		for y in range(0,h):
+#	if tex is AtlasTexture:
+#		_x = tex.region.position.x;
+#		_y = tex.region.position.y;
+#		w = tex.region.size.x;
+#		h = tex.region.size.y;
+	for x in range(_x,w):
+		for y in range(_y,h):
 			AddPoint(Vector2i(x, y));
 	
 func AddPoint(p:Vector2i)->void:
@@ -87,14 +97,14 @@ func AddSquare(p:Vector2i, n:Vector3, c:Color)->void:
 	var z:Vector3 = Vector3(p.x, p.y, 0)/64.0;
 	var x:Vector3 = Vector3(1,0,0) if n.x==0 else Vector3(0,1,0);
 	var y:Vector3 = Vector3(1,1,1) - x - Vector3(abs(n.x), abs(n.y), abs(n.z));
-	x *= Vector3(1,1,3);
-	y *= Vector3(1,1,3);
+	#x *= Vector3(1,1,3);
+	#y *= Vector3(1,1,3);
 	if n.x > 0:
 		AddFinalSquare(Vector3(p.x+1,p.y,0), n, c, x, y);
 	elif n.y > 0:
 		AddFinalSquare(Vector3(p.x,p.y+1,0), n, c, x, y);
 	elif n.z > 0:
-		AddFinalSquare(Vector3(p.x,p.y,3), n, c, x, y);
+		AddFinalSquare(Vector3(p.x,p.y,1), n, c, x, y);
 	else:
 		AddFinalSquare(Vector3(p.x,p.y,0), n, c, x, y);
 	
@@ -117,13 +127,20 @@ func AddFinalSquare(p:Vector3, n:Vector3, c:Color, x:Vector3, y:Vector3)->void:
 		AddFinalPoint(p, n, c);
 
 func AddFinalPoint(p:Vector3, n:Vector3, c:Color)->void:
+	var uv:Vector2;
 	if n.y != 0:
-		surf.set_uv(Vector2(p.x/im.get_width(),(p.y-n.y/2)/im.get_height()));
+		uv = Vector2(p.x/im.get_width(),(p.y-n.y/2)/im.get_height());
 	else:
-		surf.set_uv(Vector2(p.x/im.get_width(),p.y/im.get_height()));
+		uv = Vector2(p.x/im.get_width(),p.y/im.get_height());
+	if tex is AtlasTexture:
+		var at:AtlasTexture = tex;
+		var reg = at.region;
+		uv = (reg.size * uv + reg.position) / Vector2(tex.get_size() if !(tex is AtlasTexture) else tex.atlas.get_size());
+		print("uv: ", uv);
+	surf.set_uv(uv);
 	#surf.set_color(c);
 	surf.set_normal(n);
-	surf.add_vertex(p/64.0);
+	surf.add_vertex(p/16.0);
 
 static func GenerateMeshAndShapeForItem(item:Item)->void:
 	var meshUtil:ItemMeshUtil = ItemMeshUtil.new();
