@@ -30,14 +30,17 @@ func CanResultBeStoredIn(inventory:InventoryStorage)->bool:
 	return inventory.CanAllBeStored(result);
 
 # returns amount that can be crafted
-func CanBeCraftedFrom(inventory:InventoryStorage, crafter:CharacterBaseController)->bool:
+func CanBeCraftedFrom(inventory:InventoryStorage, crafter:CharacterBaseController)->int:
+	var craftable:int = (1<<62)-1;
 	for stack in requiredItems:
-		if inventory.CountItems(stack) < stack.amount:
-			return false;
-	return true;
+		var amountInInventory:int = inventory.CountItems(stack);
+		craftable = min(craftable, amountInInventory/stack.amount);
+		if amountInInventory < stack.amount:
+			return 0;
+	return craftable;
 
 func TryCraftingSingle(source:InventoryStorage, destiny:InventoryStorage, crafter:CharacterBaseController)->bool:
-	if CanBeCraftedFrom(source, crafter) && CanResultBeStoredIn(destiny):
+	if CanBeCraftedFrom(source, crafter)>0 && CanResultBeStoredIn(destiny):
 		# no fail safe, due to above checks
 		for s in requiredItems:
 			var extracted = source.TryExtractItemStack(s, s.amount);

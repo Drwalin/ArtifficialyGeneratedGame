@@ -1,0 +1,39 @@
+[gd_scene load_steps=3 format=3 uid="uid://c7okmvetki2iu"]
+
+[ext_resource type="Script" path="res://addons/inventory_system/ui/scripts/CraftingStationBase.gd" id="1_pbmxp"]
+[ext_resource type="PackedScene" uid="uid://b1r2gc325oovm" path="res://addons/inventory_system/ui/scenes/ListOfRecipes.tscn" id="2_fm4su"]
+
+[node name="BoxContainer" type="BoxContainer"]
+offset_right = 392.0
+offset_bottom = 275.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+script = ExtResource("1_pbmxp")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+color = Color(0.501961, 0.501961, 0.501961, 1)
+
+[node name="ListOfRecipes" parent="." instance=ExtResource("2_fm4su")]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="CraftingSide" type="VBoxContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CraftingSide"]
+layout_mode = 2
+
+[node name="HSlider" type="HSlider" parent="CraftingSide"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CraftingSide"]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="Button" type="Button" parent="CraftingSide"]
+layout_mode = 2
+text = "Craft"

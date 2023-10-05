@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Item" load_steps=4 format=3 uid="uid://02ox63heogm0"]
+
+[ext_resource type="Texture2D" uid="uid://cbv56b5f3dsyu" path="res://resources/icons/ClockworkRaven/Weapons_and_Potions.png" id="1_87iuy"]
+[ext_resource type="Script" path="res://addons/inventory_system/scripts/Item.gd" id="1_fwiv8"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xh3op"]
+atlas = ExtResource("1_87iuy")
+region = Rect2(112, 0, 16, 16)
+
+[resource]
+script = ExtResource("1_fwiv8")
+fullName = "Iron Sword"
+maxStackAmount = 8
+categories = Array[Resource("res://addons/inventory_system/scripts/ItemCategory.gd")]([])
+mass = 2.0
+icon = SubResource("AtlasTexture_xh3op")
+inertia = Vector3(0, 0, 0)

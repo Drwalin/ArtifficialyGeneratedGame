@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="ItemRecipeDatabase" load_steps=4 format=3 uid="uid://clf1wfwhstkco"]
+
+[ext_resource type="Script" path="res://addons/inventory_system/scripts/ItemRecipeDatabase.gd" id="1_2d7pf"]
+[ext_resource type="Resource" uid="uid://bdp1vew8vjv63" path="res://resources/game/recipes/IronSword1.tres" id="1_eh2pg"]
+[ext_resource type="Resource" uid="uid://blx5nrhkabg1w" path="res://resources/game/recipes/IronSword2.tres" id="2_tgbcn"]
+
+[resource]
+script = ExtResource("1_2d7pf")
+recipes = Array[Resource("res://addons/inventory_system/scripts/ItemRecipe.gd")]([ExtResource("1_eh2pg"), ExtResource("2_tgbcn")])

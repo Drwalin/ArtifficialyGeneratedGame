@@ -6,6 +6,15 @@ class_name InventoryStorage;
 
 func _ready()->void:
 	Expand(slots.size());
+	
+func Expand(newSize:int)->void:
+	slots.resize(newSize);
+	for i in range(0, slots.size()):
+		if !slots[i]:
+			slots[i] = ItemSlot.new();
+		if !slots[i].itemStack:
+			slots[i].itemStack = ItemStack.new();
+		slots[i].slotId = i;
 
 func CountItems(stack:ItemStack)->int:
 	var count:int = 0;
@@ -78,26 +87,22 @@ func TryPutAsMuchItemsAsPossible(stack:ItemStack, amount:int)->int:
 	assert(stack.amount >= amount);
 	var count:int = 0;
 	for s in slots:
-		if count == 0:
+		if count == amount:
 			return count;
 		var it:ItemSlot = s;
-		if it.itemStack.amount != 0 && it.itemStack.amount < it.itemStack.item.maxStackAmount:
+		if !it.itemStack:
+			it.itemStack = ItemStack.new();
+		if it.itemStack.amount != 0 && it.itemStack.item && it.itemStack.amount < it.itemStack.item.maxStackAmount:
 			if it.CanItemBeAddedHere(stack):
 				count += stack.TransferTo(it.itemStack, amount-count, false);
 	for s in slots:
-		if count == 0:
+		if count == amount:
 			return count;
 		var it:ItemSlot = s;
 		if it.CanItemBeAddedHere(stack):
 			count += stack.TransferTo(it.itemStack, amount-count, false);
 	return count;
 
-func Expand(newSize:int)->void:
-	slots.resize(newSize);
-	for i in range(0, slots.size()):
-		if !slots[i]:
-			slots[i] = ItemSlot.new();
-		slots[i].slotId = i;
 
 func _process(delta:float)->void:
 	for s in slots:
@@ -112,7 +117,9 @@ func GetSlotIdToDrop(dragData:ItemDragData, invSlot:ItemSlot)->int:
 	else: # if no item slot specified, find any that applies
 		for i in range(0, slots.size()):
 			var it:ItemSlot = slots[i];
-			if it.itemStack.amount != 0 && it.itemStack.amount < it.itemStack.item.maxStackAmount:
+			if !it.itemStack:
+				it.itemStack = ItemStack.new();
+			if it.itemStack.amount != 0 && it.itemStack.item && it.itemStack.amount < it.itemStack.item.maxStackAmount:
 				if it.CanItemBeAddedHere(dragData.GetStack()):
 					return i;
 		for i in range(0, slots.size()):

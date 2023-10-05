@@ -59,7 +59,6 @@ func GenerateInertia(item:Item, trans:Vector3)->void:
 				v.z *= v.z;
 				inertia += v;
 	item.inertia = inertia*4/massDivider;
-	print("Inertia = ", item.inertia);
 
 
 
@@ -136,7 +135,6 @@ func AddFinalPoint(p:Vector3, n:Vector3, c:Color)->void:
 		var at:AtlasTexture = tex;
 		var reg = at.region;
 		uv = (reg.size * uv + reg.position) / Vector2(tex.get_size() if !(tex is AtlasTexture) else tex.atlas.get_size());
-		print("uv: ", uv);
 	surf.set_uv(uv);
 	#surf.set_color(c);
 	surf.set_normal(n);

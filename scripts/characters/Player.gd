@@ -32,21 +32,29 @@ func _input(event)->void:
 				get_tree().quit();
 
 var ui2;
+var craftStation;
 func _process(delta: float)->void:
 	if Input.is_action_just_pressed("open_self_inventory"):
 		if selfInventoryUI == null:
-			selfInventoryUI = load("res://addons/inventory_system/ui/InventoryUI.tscn").instantiate();
+			selfInventoryUI = load("res://addons/inventory_system/ui/scenes/InventoryUI.tscn").instantiate();
 			selfInventoryUI.storage = self.inventoryStorage;
 			add_child(selfInventoryUI);
-			selfInventoryUI.set_position(Vector2(650, 200));
+			selfInventoryUI.set_position(Vector2(650, 300));
 			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE);
 			selfInventoryUI.owner = null;
 			
-			ui2 = load("res://addons/inventory_system/ui/InventoryUI.tscn").instantiate();
+			ui2 = load("res://addons/inventory_system/ui/scenes/InventoryUI.tscn").instantiate();
 			ui2.storage = get_parent().find_child("CharacterBody3D3").inventoryStorage;
 			add_child(ui2);
 			ui2.owner = null;
-			ui2.set_position(Vector2(150, 200));
+			ui2.set_position(Vector2(150, 300));
+			
+			craftStation = load("res://addons/inventory_system/ui/scenes/CraftingStationBase.tscn").instantiate();
+			craftStation.storage = self.inventoryStorage;
+			craftStation.recipeDatabase = load("res://resources/game/recipe_database/WeaponsRecipes.tres");
+			add_child(craftStation);
+			craftStation.owner = null;
+			craftStation.set_position(Vector2(100, 10));
 		else:
 			remove_child(selfInventoryUI);
 			selfInventoryUI = null;
@@ -54,6 +62,9 @@ func _process(delta: float)->void:
 			
 			remove_child(ui2);
 			ui2 = null;
+			
+			remove_child(craftStation);
+			craftStation = null;
 
 func _physics_process(delta:float)->void:
 	PrintDebug.Print("Player::_physics_process");
