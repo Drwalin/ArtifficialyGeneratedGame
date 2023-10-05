@@ -86,19 +86,19 @@ func CountFreeSpaceFor(stack:ItemStack, ignoreFreeSlots:bool)->int:
 func TryPutAsMuchItemsAsPossible(stack:ItemStack, amount:int)->int:
 	assert(stack.amount >= amount);
 	var count:int = 0;
-	for s in slots:
+	for it in slots:
 		if count == amount:
 			return count;
-		var it:ItemSlot = s;
 		if !it.itemStack:
 			it.itemStack = ItemStack.new();
 		if it.itemStack.amount != 0 && it.itemStack.item && it.itemStack.amount < it.itemStack.item.maxStackAmount:
 			if it.CanItemBeAddedHere(stack):
 				count += stack.TransferTo(it.itemStack, amount-count, false);
-	for s in slots:
+	for it in slots:
 		if count == amount:
 			return count;
-		var it:ItemSlot = s;
+		if !it.itemStack:
+			it.itemStack = ItemStack.new();
 		if it.CanItemBeAddedHere(stack):
 			count += stack.TransferTo(it.itemStack, amount-count, false);
 	return count;

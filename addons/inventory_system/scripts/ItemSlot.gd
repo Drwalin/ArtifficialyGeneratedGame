@@ -1,7 +1,7 @@
 extends Resource;
 class_name ItemSlot;
 
-@export var itemStack:ItemStack = null;
+@export var itemStack:ItemStack = ItemStack.new();
 @export var category:ItemCategory = null;
 @export var slotId:int = -1;
 
@@ -21,7 +21,10 @@ func CanItemBeAddedHere(stack:ItemStack)->bool:
 
 func HowManyCanBeAddedHere(stack:ItemStack)->int:
 	if CanItemBeAddedHere(stack):
-		return stack.item.maxStackAmount - (itemStack.amount if !itemStack.IsEmpty() else 0);
+		if itemStack.IsEmpty():
+			return stack.item.maxStackAmount;
+		else:
+			return max(min(stack.item.maxStackAmount - itemStack.amount, stack.item.maxStackAmount), 0);
 	return 0;
 
 func CanItemBeDroppedIn(dragData:ItemDragData)->bool:
@@ -39,11 +42,10 @@ func DropIn(dragData:ItemDragData):
 	if CanItemBeDroppedIn(dragData) == false:
 		return;
 	elif itemStack.item==null || itemStack.amount<=0 || dragData.GetStack().IsSame(itemStack):
-		var amount:int = min(dragData.amount, dragData.GetItem().maxStackAmount-itemStack.amount);
+		#var amount:int = min(dragData.amount, dragData.GetItem().maxStackAmount-itemStack.amount);
+		var amount:int = min(dragData.amount, HowManyCanBeAddedHere(dragData.itemStack));
 		amount = max(amount, 0);
-		if amount == 0:
-			print("Should not happen? ItemSlot::DropIn{amount==0};  dragData.amount=%d, dragData.GetItem().maxStackAmount=%d, itemStack.amount=%d"%[dragData.amount, dragData.GetItem().maxStackAmount, itemStack.amount]);
-			return;
+		assert(amount>0, "Should not happen? ItemSlot::DropIn{amount==0};  dragData.amount=%d, dragData.GetItem().maxStackAmount=%d, itemStack.amount=%d"%[dragData.amount, dragData.GetItem().maxStackAmount, itemStack.amount]);
 		if itemStack.amount == 0:
 			itemStack.item = dragData.GetStack().item;
 			itemStack.tag = dragData.GetStack().tag;

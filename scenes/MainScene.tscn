@@ -152,7 +152,7 @@ slotId = -1
 [sub_resource type="Resource" id="Resource_yivnp"]
 script = ExtResource("8_irned")
 item = ExtResource("13_ovtud")
-amount = 17
+amount = 64
 tag = {}
 inUseSince = -1.0
 
@@ -164,7 +164,7 @@ slotId = -1
 [sub_resource type="Resource" id="Resource_nsyki"]
 script = ExtResource("8_irned")
 item = ExtResource("14_ajc8o")
-amount = 77
+amount = 64
 tag = {}
 inUseSince = -1.0
 
@@ -428,7 +428,7 @@ slots = Array[ExtResource("9_v65fp")]([SubResource("Resource_ib8ak"), SubResourc
 [node name="ItemDropped3D" parent="." instance=ExtResource("14_edfki")]
 transform = Transform3D(1, 0, 0, 0, 0.298375, 0.954449, 0, -0.954449, 0.298375, -5.691, 10, 1.587)
 mass = 2.0
-inertia = Vector3(0.551342, 0.565479, 1.10119)
+inertia = Vector3(0.551342, 0.565478, 1.10119)
 
 [node name="CollisionShape3D" parent="ItemDropped3D" index="0"]
 shape = SubResource("ConvexPolygonShape3D_kmoma")

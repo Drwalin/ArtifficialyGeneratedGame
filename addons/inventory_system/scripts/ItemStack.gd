@@ -43,8 +43,11 @@ func TransferTo(other:ItemStack, count:int, ignoreCapacity:bool)->int:
 			count = min(count, amount);
 			if !ignoreCapacity:
 				count = min(count, item.maxStackAmount-(other.amount if !other.IsEmpty() else 0));
-			other.AddAmount(count);
-			AddAmount(-count);
+			if count > 0:
+				if other.IsEmpty():
+					other.item = item;
+				other.AddAmount(count);
+				AddAmount(-count);
 	return 0;
 
 func GetItemUsageTime():
